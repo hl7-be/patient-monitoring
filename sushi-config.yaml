@@ -11,8 +11,8 @@ id: my-ig
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
 name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+title: "HR Monitoring Apps FHIR Implementation Guide"
+description: HR Monitoring Apps FHIR Implementation Guide.
 status: active
 license: CC0-1.0
 date: 2020-02-26
