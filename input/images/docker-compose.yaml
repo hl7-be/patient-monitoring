@@ -3,13 +3,14 @@ version: "3.9"
 services:
   fhir-server:
     image: costateixeira/hapi-fhir-jpaserver-starter:latest
+    #image: hapiproject/hapi:latest
     restart: always
     container_name: ${server_name}
     ports:
       - ${server_port:-8080}:8080
     environment:
       - spring.config.location=${ig_url}/application.yaml
-      - hapi.fhir.fhir_version=${FHIRversion}
+      - hapi.fhir.fhir_version=${fhir_version}
       - hapi.fhir.implementationguides.${ig_code}.url=${ig_url}/package.tgz
       - hapi.fhir.implementationguides.${ig_code}.name=${ig_package_name}
       - hapi.fhir.implementationguides.${ig_code}.ig_version=${ig_version}
