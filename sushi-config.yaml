@@ -53,8 +53,7 @@ contact:
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
-
+jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced

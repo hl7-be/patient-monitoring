@@ -1,5 +1,5 @@
 Logical:        FibricheckMeasurementModel
-Id:             fibricheck-measurement-model
+Id:             FibricheckMeasurementModel
 Title:          "Fibricheck Measurement Logical Model"
 Description:    "The data structure for Fibricheck measurement events."
 
@@ -40,6 +40,8 @@ CodeSystem:  FCHRIndicatorCS
 Id: FCHRIndicatorCS
 Title: "HR Indicator Code System"
 Description:  "FCHRIndicator"
+* ^experimental = false
+* ^caseSensitive = true
 * #normal "Normal"
 * #warning "warning"
 * #urgent "Urgent"
@@ -51,12 +53,15 @@ Id: FCHRIndicatorVS
 Title: "Heart Rate Indicator Value Set"
 Description: "Codes representing the"
 * include codes from system FCHRIndicatorCS
+* ^experimental = false
 
 
 CodeSystem:  FCHRFindingCS
 Id: FCHRFindingCS
 Title: "HR Finding Code System"
 Description:  "FCHRFinding"
+* ^experimental = false
+* ^caseSensitive = true
 * #1 "sinus_arrhythmia"
 * #2 "extrasystoles_trig_episode"
 * #3 "undiagnosable"
@@ -88,12 +93,15 @@ Id: FCHRFindingVS
 Title: "Heart Rate Finding Value Set"
 Description: "Codes representing the"
 * include codes from system FCHRFindingCS
+* ^experimental = false
 
 
 CodeSystem:  FCContextSymptomsCS
 Id: FCContextSymptomsCS
 Title: "HR Context Symptoms Code System"
 Description:  "Context Symptoms"
+* ^experimental = false
+* ^caseSensitive = true
 * #1 "no_symptoms"
 * #2 "lightheaded"
 * #3 "confused"
@@ -109,6 +117,7 @@ Id: FCContextSymptomsVS
 Title: "Context findings Value Set"
 Description: "Codes representing the"
 * include codes from system FCContextSymptomsCS
+* ^experimental = false
 
 
 
@@ -116,6 +125,8 @@ CodeSystem:  FCContextActivityCS
 Id: FCContextActivityCS
 Title: "HR Context Activity Code System"
 Description:  "Context Activity"
+* ^experimental = false
+* ^caseSensitive = true
 * #1 "activity"
 * #2  "resting"
 * #3  "sleeping"
@@ -132,3 +143,5 @@ Id: FCContextActivityVS
 Title: "Context Activity Value Set"
 Description: "Codes representing the"
 * include codes from system FCContextActivityCS
+* ^experimental = false
+
