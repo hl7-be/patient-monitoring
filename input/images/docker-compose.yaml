@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   fhir-server:
-    image: costateixeira/hapi-fhir-jpaserver-starter:latest
+    image: costateixeira/hapi:test
     #image: hapiproject/hapi:latest
     restart: always
     container_name: ${server_name}
@@ -13,9 +13,9 @@ services:
       - hapi.fhir.fhir_version=${fhir_version}
       - hapi.fhir.implementationguides.${ig_code}.url=${ig_url}/package.tgz
       - hapi.fhir.implementationguides.${ig_code}.name=${ig_package_name}
-      - hapi.fhir.implementationguides.${ig_code}.ig_version=${ig_version}
+      - hapi.fhir.implementationguides.${ig_code}.version=${ig_version}
     volumes:
-      - /mnt/c/work/ProdViewer/serverhome:/apps
+      - /mnt/c/work/implementationguides/monitoring-apps/input/images/apps:/apps
 
   ember:
     image: jkiddo/ember:latest

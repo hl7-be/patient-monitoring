@@ -1,4 +1,19 @@
+#Adds the option to go to eg. http://localhost:8080/actuator/health for seeing the running configuration
+#see https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
 
+
+server:
+  servlet:
+    context-path: /
 
 spring:
   main:
@@ -33,33 +48,21 @@ spring:
   #      hibernate.cache.use_second_level_cache: false
   #      hibernate.cache.use_structured_entries: false
   #      hibernate.cache.use_minimal_puts: false
-  ###    These settings will enable fulltext search with lucene
+
+  ###    These settings will enable fulltext search with lucene or elastic
       hibernate.search.enabled: true
+  ### lucene parameters
       hibernate.search.backend.type: lucene
       hibernate.search.backend.analysis.configurer: ca.uhn.fhir.jpa.search.HapiHSearchAnalysisConfigurers$HapiLuceneAnalysisConfigurer
       hibernate.search.backend.directory.type: local-filesystem
       hibernate.search.backend.directory.root: target/lucenefiles
       hibernate.search.backend.lucene_version: lucene_current
+  ### elastic parameters ===> see also elasticsearch section below <===
+#      hibernate.search.backend.type: elasticsearch
+#      hibernate.search.backend.analysis.configurer: ca.uhn.fhir.jpa.search.HapiHSearchAnalysisConfigurers$HapiElasticAnalysisConfigurer
   batch:
     job:
       enabled: false
-
-
-server:
-  servlet:
-    context-path: /
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      probes:
-        enabled: true
-
-
 hapi:
   fhir:
 
@@ -76,21 +79,15 @@ hapi:
     ### forces the use of the https:// protocol for the returned server address.
     ### alternatively, it may be set using the X-Forwarded-Proto header.
     #   use_apache_address_strategy_https: false
-    ### enables the server to host content like HTML, css, etc. under the url pattern of /static/**
+    ### enables the server to host content like HTML, css, etc. under the url pattern of eg. /static/**
+    # staticLocationPrefix: /static
     ### the deepest folder level will be used. E.g. - if you put file:/foo/bar/bazz as value then the files are resolved under /static/bazz/**
     #staticLocation: file:/foo/bar/bazz
     ### enable to set the Server URL
     staticLocation: file:/apps/
     server_address: http://localhost:8083
     defer_indexing_for_codesystems_of_size: 101
-
-
     install_transitive_ig_dependencies: false
-#    implementationguides:
-#      r5demo:
-#        url: https://hl7-eu.github.io/unicom-ig/branches/r5-r4b/package.tgz
-#        name: hl7.eu.fhir.unicom
-#        version: 0.1.0
     ###    example from registry (packages.fhir.org)
     #      swiss:
     #        name: swiss.mednet.fhir
