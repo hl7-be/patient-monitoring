@@ -39,7 +39,7 @@ Parent: Observation
   * value[x] only integer
 
 
-
+* device only Reference(SWDevice)
 
 
 
