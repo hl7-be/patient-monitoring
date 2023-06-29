@@ -79,3 +79,4 @@ Parent: Device
 * version contains software-version 1..1
 
 * version[software-version].type = urn:iso:std:iso:11073:10101#531975
+* version[software-version].value MS
