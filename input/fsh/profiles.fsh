@@ -67,6 +67,14 @@ Parent: BePatient
   * type = #username
   * system = "http://somesystem/identifiertypes/username"
 
+* identifier[byteflies-userid] 
+  * type = #userid
+  * system = "http://somesystem/identifiertypes/userid"
+
+* identifier[byteflies-username]
+  * type = #username
+  * system = "http://somesystem/identifiertypes/username"
+
 
 Profile: SWDevice
 Parent: Device
