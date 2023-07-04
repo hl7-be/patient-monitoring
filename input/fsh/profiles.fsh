@@ -1,5 +1,8 @@
-Profile: HRMonitoringObs
+Profile: PatientMonitoringObservation
 Parent: Observation
+
+Profile: HRMonitoringObs
+Parent: PatientMonitoringObservation
 
 * subject 1..1 
 * subject only Reference(HRMonitoringPatient)
@@ -41,15 +44,17 @@ Parent: Observation
 
 * device only Reference(SWDevice)
 
-
-
 * code = #fibricheck
 * effective[x] only dateTime 
 * effectiveDateTime 1..1 MS
 
 
+Profile: MonitoringPatient
+Parent: Patient
+
+
 Profile: HRMonitoringPatient
-Parent: BePatient
+Parent: MonitoringPatient
 
 * identifier MS
 
