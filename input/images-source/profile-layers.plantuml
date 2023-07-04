@@ -1,0 +1,108 @@
+@startuml
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+package "FHIR Base" as F {
+    class "**FHIR Observation**" as FO<<TM>> {
+        |_ identifier 1..*
+        --
+    }
+    class "**FHIR Patient**" as FP<<TM>> {
+        |_ identifier 1..*
+        --
+    }
+}
+
+package "BE Base" as BE {
+    class "**BE Patient**" as BEP<<TM>> {
+        |_ identifier 1..*
+        --
+    }
+    class "**BE Observation**" as BEO<<TM>> {
+        |_ identifier 1..*
+        --
+    }
+}
+
+package "Monitoring" as M {
+    class "**[BE] Monitoring Patient**" as MP<<TM>> {
+        |_ identifier 1..*
+        --
+    }
+    class "**[BE] Monitoring Observation**" as MO<<TM>> {
+        |_ identifier 1..*
+        --
+    }
+}
+
+
+package "HeartRate Monitoring" as HR {
+  class "**HR Monitoring Patient**" as HRP<<TM>> {
+      |_ identifier 1..*
+      --
+  }
+  class "**HR Monitoring Observation**" as HRO<<TM>> {
+      |_ identifier 1..*
+      --
+  }
+}
+
+package "Fibricheck" as FC {
+  class "**FC Observation**" as FCO<<TM>> {
+      |_ identifier 1..*
+      --
+  }
+  class "**ValueSet**" as FVS<<TM>> {
+      |_ identifier 1..*
+      --
+  }
+}
+package "Byteflies" as BF {
+  class "**BF Observation**" as BFO<<TM>> {
+      |_ identifier 1..*
+      --
+  }
+  class "**ValueSet**" as BFVS<<TM>> {
+      |_ identifier 1..*
+      --
+  }
+
+
+}
+
+
+FP <|-u- BEP
+BEP .u. MP
+FO <|-u- BEO
+BEO .u. MO
+
+FO <|-u- MO
+MO <|-u- HRO
+MP <|-u- HRP
+FP <|-u- MP
+HRO <|-u- FCO
+HRO <|-u- BFO
+FO -r[hidden]- FP: "         " 
+
+FCO -l[hidden]- FVS
+BFO -r[hidden]- BFVS
+
+
+@enduml
