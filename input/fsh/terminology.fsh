@@ -100,6 +100,7 @@ Description:  "Context Activity"
 * #7  "exercising"
 * #8  "other"
 * #9  "standing"
+* #10 "housekeeping"
 
 
 ValueSet: FCContextActivityVS
