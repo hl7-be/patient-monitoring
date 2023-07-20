@@ -18,28 +18,35 @@ Parent: PatientMonitoringObservation
 * component[hrIndicator]
   * value[x] only CodeableConcept
   * valueCodeableConcept from FCHRIndicatorVS
+  * code = #fibricheck-hr-indicator
 
 * component[hrReviewFinding]
   * value[x] only CodeableConcept
   * valueCodeableConcept from FCHRFindingVS
+  * code = #fibricheck-hr-review-finding
 
 * component[rmssd]
   * value[x] only Quantity
+  * code = #fibricheck-rmssd
 
 * component[symptoms]
   * value[x] only CodeableConcept
   * valueCodeableConcept from FCContextSymptomsVS
+  * code = #fibricheck-symptoms
 
 * component[activityStatus]
   * value[x] only CodeableConcept
   * valueCodeableConcept from FCContextActivityVS
+  * code = #fibricheck-activity-status
 
 * component[chadvasc]
   * value[x] only CodeableConcept
+  * code = #fibricheck-chadvasc
 //  * valueCodeableConcept from 
 
 * component[measurementAttempts]
   * value[x] only integer
+  * code = #fibricheck-measurement-attempts
 
 
 * device only Reference(SWDevice)
