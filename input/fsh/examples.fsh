@@ -2,11 +2,11 @@ Instance: ExampleHRMonitoringObs
 InstanceOf: HRMonitoringObs
 Usage: #example
 * subject = Reference(ExampleHRMonitoringPatient)
-* component[hrIndicator].valueCodeableConcept = #normal
-* component[hrReviewFinding].valueCodeableConcept = #no_diagnosis
+* component[hrIndicator].valueCodeableConcept = FCHRIndicatorCS#normal
+* component[hrReviewFinding].valueCodeableConcept = FCHRFindingCS#25
 * component[rmssd].valueQuantity = 25 'ms'
-* component[symptoms].valueCodeableConcept = #fatigue
-* component[activityStatus].valueCodeableConcept = #sleeping
+* component[symptoms].valueCodeableConcept = FCContextSymptomsCS#4
+* component[activityStatus].valueCodeableConcept = FCContextActivityCS#3
 * component[chadvasc].valueCodeableConcept = #LowRisk
 * component[measurementAttempts].valueInteger = 2
 * device = Reference(ExampleSWDevice)
