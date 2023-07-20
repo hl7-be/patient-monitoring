@@ -2,17 +2,17 @@ Instance: ExampleHRMonitoringObs
 InstanceOf: HRMonitoringObs
 Usage: #example
 * subject = Reference(ExampleHRMonitoringPatient)
-* component[hrIndicator].valueCodeableConcept = #HRNormal
-* component[hrReviewFinding].valueCodeableConcept = #FindingNormal
+* component[hrIndicator].valueCodeableConcept = #normal
+* component[hrReviewFinding].valueCodeableConcept = #no_diagnosis
 * component[rmssd].valueQuantity = 25 'ms'
-* component[symptoms].valueCodeableConcept = #NoSymptoms
-* component[activityStatus].valueCodeableConcept = #Active
+* component[symptoms].valueCodeableConcept = #fatigue
+* component[activityStatus].valueCodeableConcept = #sleeping
 * component[chadvasc].valueCodeableConcept = #LowRisk
 * component[measurementAttempts].valueInteger = 2
 * device = Reference(ExampleSWDevice)
 * code = #fibricheck
 * effectiveDateTime = "2023-07-20T14:30:00Z"
-* status = #active
+* status = #final
 
 
 Instance: ExampleHRMonitoringPatient
