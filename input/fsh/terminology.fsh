@@ -7,7 +7,7 @@ Description:  "FCHRIndicator"
 * ^experimental = false
 * ^caseSensitive = true
 * #normal "Normal"
-* #warning "warning"
+* #warning "Warning"
 * #urgent "Urgent"
 * #quality "Quality"
 
