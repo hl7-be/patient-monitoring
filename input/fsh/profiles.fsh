@@ -7,6 +7,8 @@ Parent: PatientMonitoringObservation
 * subject 1..1 
 * subject only Reference(HRMonitoringPatient)
 
+* identifier 1..1 Identifier "Unique measurement identifier"
+
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
