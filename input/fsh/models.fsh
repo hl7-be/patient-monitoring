@@ -13,7 +13,7 @@ Description:    "The data structure for Fibricheck measurement events."
 * status 1..1 code "Measurement status" "Measurement status"
 * measurementTimeStamp 1..1 dateTime  "Measurement timestamp" "Measurement timestamp"
 * heartRhythm 0..1 BackboneElement "heart rhythm" "heart rhythm"
-  * hr-indicator 0..1 code "the result of the finding and review" "the result of the finding and review"
+  * hrindicator 0..1 code "the result of the finding and review" "the result of the finding and review"
     * ^binding.valueSet = Canonical (FCHRIndicatorVS)
     * ^binding.strength = #required
   * hrReviewFinding 0..1 code "the finding after review"

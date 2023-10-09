@@ -1,5 +1,5 @@
 Profile: PatientMonitoringObservation
-Parent: Observation
+Parent: http://hl7.org/fhir/StructureDefinition/vitalsigns
 
 Profile: HRMonitoringObs
 Parent: PatientMonitoringObservation
