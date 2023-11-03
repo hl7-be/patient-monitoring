@@ -127,10 +127,12 @@ dependencies:
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-#pages:
-#  index.md:
-#    title: Example Home
-#  implementation.xml:
+pages:
+  index.xml:
+    title: Example Home
+  test.md:
+    title: Test Page
+
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:
