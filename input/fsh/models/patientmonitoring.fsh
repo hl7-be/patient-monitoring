@@ -1,7 +1,7 @@
 Logical:        PatientMonitoring
 Id:             PatientMonitoring
-Title:          "Vital Signs"
-Description:    "The data structure for Vital Signs."
+Title:          "Patient Monitoring"
+Description:    "The data structure for Patient monitoring."
 
 * status 1..1 code "Measurement status" "Measurement status"
 * code 1..1 CodeableConcept "Code for the sign"
@@ -19,7 +19,7 @@ Description:    "The data structure for Vital Signs."
 
 * dataAbsentReason 1..1 period  "Measurement Period" "Measurement Period"
 
-* hasMember 0..* Reference(VitalSigns) "Component results, if separate" "Component results"
+* hasMember 0..* Reference(PatientMonitoring) "Component results, if separate" "Component results"
 * derivedFrom 0..* Reference "Related signs from which this is obtained" "Related signs from which this is obtained"
 
 * timestamp 0..1 dateTime "When the sign was observed" "When the sign was observed"
