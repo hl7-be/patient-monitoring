@@ -130,8 +130,8 @@ dependencies:
 pages:
   index.xml:
     title: Example Home
-  test.md:
-    title: Test Page
+  overview.md:
+    title: Overview
 
 #  examples.xml:
 #    title: Examples Overview
