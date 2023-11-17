@@ -7,7 +7,7 @@ Parent: PatientMonitoringObservation
 * subject 1..1 
 * subject only Reference(HRMonitoringPatient)
 
-* identifier 1..1 Identifier "Unique measurement identifier"
+* identifier 1..1
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -42,7 +42,7 @@ Parent: PatientMonitoringObservation
   * code = #fibricheck-activity-status
 
 * component[hrReport]
-  * value[x] only url
+  * value[x] only CodeableConcept
   * code = #fibricheck-report
 
 * code = #fibricheck

@@ -2,6 +2,7 @@ Logical:        PatientMonitoring
 Id:             PatientMonitoring
 Title:          "Patient Monitoring"
 Description:    "The data structure for Patient monitoring."
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 
 * identifier 1..1 Identifier "Measurement Identifier" "Measurement Identifier"
 * status 1..1 code "Measurement status" "Measurement status"
@@ -9,7 +10,7 @@ Description:    "The data structure for Patient monitoring."
 
 * patient 1..1 BackboneElement "patient data" "patient data"
   * identfier 1..1 string "user id" "user id"
-  * niss_number 1..1 string "Patient NISS Number" "Patient NISS Number"
+  * nissNumber 1..1 string "Patient NISS Number" "Patient NISS Number"
   * otherId 0..* string "Patient NISS Number" "Patient NISS Number"
   * userName 1..1 Identifier "user name" "user name"
    

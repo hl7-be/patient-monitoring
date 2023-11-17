@@ -1,10 +1,11 @@
 Instance: ExampleHRMonitoringObs
 InstanceOf: HRMonitoringObs
 Usage: #example
+* identifier.value = "1234567890"
+
 * subject = Reference(ExampleHRMonitoringPatient)
-* component[hrValue].valueCodeableConcept = FCHRIndicatorCS#normal
+* component[hrValue].valueQuantity = 25 'ms'
 * component[hrIndicator].valueCodeableConcept = FCHRFindingCS#25
-* component[hrReviewFinding].valueQuantity = 25 'ms'
 * component[symptoms].valueCodeableConcept = FCContextSymptomsCS#4
 * component[activityStatus].valueCodeableConcept = FCContextActivityCS#3
 * component[hrReport].valueCodeableConcept = #LowRisk
