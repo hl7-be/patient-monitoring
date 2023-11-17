@@ -7,13 +7,19 @@ Parent: PatientMonitoringObservation
 * subject 1..1 
 * subject only Reference(HRMonitoringPatient)
 
+* identifier 1..1 Identifier "Unique measurement identifier"
+
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.description = "Observation components"
 
-* component contains hrIndicator 0..1 and hrReviewFinding 0..1 and rmssd 0..1 and symptoms 0..* and activityStatus 0..1 and chadvasc 0..1 and measurementAttempts 0..1
+* component contains hrValue 0..1 and hrIndicator 0..1 and hrReviewFinding 0..1 and symptoms 0..* and activityStatus 0..1 and hrReport 0..1
 // note that one of these may be upgraded to be the main observation value
+
+* component[hrValue]
+  * value[x] only Quantity
+  * code = #fibricheck-hr-value
 
 * component[hrIndicator]
   * value[x] only CodeableConcept
@@ -25,10 +31,6 @@ Parent: PatientMonitoringObservation
   * valueCodeableConcept from FCHRFindingVS
   * code = #fibricheck-hr-review-finding
 
-* component[rmssd]
-  * value[x] only Quantity
-  * code = #fibricheck-rmssd
-
 * component[symptoms]
   * value[x] only CodeableConcept
   * valueCodeableConcept from FCContextSymptomsVS
@@ -39,17 +41,9 @@ Parent: PatientMonitoringObservation
   * valueCodeableConcept from FCContextActivityVS
   * code = #fibricheck-activity-status
 
-* component[chadvasc]
-  * value[x] only CodeableConcept
-  * code = #fibricheck-chadvasc
-//  * valueCodeableConcept from 
-
-* component[measurementAttempts]
-  * value[x] only integer
-  * code = #fibricheck-measurement-attempts
-
-
-* device only Reference(SWDevice)
+* component[hrReport]
+  * value[x] only url
+  * code = #fibricheck-report
 
 * code = #fibricheck
 * effective[x] only dateTime 
@@ -86,17 +80,3 @@ Parent: MonitoringPatient
 // * identifier[fibricheck-username]
 //   * type = #username
 //   * system = "http://somesystem/identifiertypes/username"
-
-
-Profile: SWDevice
-Parent: Device
-
-
-* version ^slicing.discriminator.type = #pattern
-* version ^slicing.discriminator.path = "type"
-* version ^slicing.rules = #open
-* version ^slicing.description = "Types of versions"
-* version contains software-version 1..1
-
-* version[software-version].type = urn:iso:std:iso:11073:10101#531975
-* version[software-version].value MS
