@@ -1,0 +1,23 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json	6764	-	0	0	0	0	0	0	3	69	0	0	1	0	0	0	0	1	0	0	104	144	0	0	0	5	0	1
+fsh-generated/resources/CodeSystem-FCContextActivityCS.json	1002	16	1	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	16	2335	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-FCContextSymptomsCS.json	901	14	0	0	0	0	0	0	1	9	0	0	0	0	0	0	0	0	0	0	15	66	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-FCHRFindingCS.json	2075	18	0	0	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	24	70	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-FCHRIndicatorCS.json	635	13	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	13	52	0	0	0	0	0	0
+fsh-generated/resources/Device-ExampleSWDevice.json	397	12	0	0	0	0	0	0	0	93	0	0	0	0	0	0	0	0	0	0	7	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-ExampleHRMonitoringObs.json	2344	17	1	0	0	0	0	0	0	465	0	0	0	0	0	0	0	0	0	0	20	15	0	0	0	0	0	0
+fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.json	883	13	0	0	0	0	0	0	0	40	0	0	0	0	0	0	0	0	0	0	9	7	0	0	0	0	0	0
+fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.json	892	13	0	0	0	0	0	0	0	39	0	0	0	0	0	0	0	0	0	0	10	6	0	0	0	0	0	0
+fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.json	1475	15	0	0	0	0	0	0	0	76	0	0	0	0	0	0	0	0	0	0	12	7	0	0	0	0	0	0
+fsh-generated/resources/Patient-ExampleHRMonitoringPatient.json	641	9	0	0	0	0	0	0	0	63	0	0	0	0	0	0	0	0	0	0	6	6	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-FibricheckMeasurementModel.json	9313	22	0	0	0	0	0	78	0	137	0	0	0	0	0	0	0	1	0	0	260	924	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-HRMonitoringObs.json	7131	19	0	0	0	0	0	558	1	283	0	0	1	0	0	0	0	2	0	0	782	1433	0	0	0	15	1	2
+fsh-generated/resources/StructureDefinition-HRMonitoringPatient.json	2751	9	0	0	0	0	0	205	0	116	0	0	0	0	0	0	0	1	0	0	335	562	0	0	0	7	0	0
+fsh-generated/resources/StructureDefinition-MonitoringPatient.json	1085	5	0	0	0	0	0	0	0	79	0	0	0	0	0	0	0	1	0	0	209	305	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-PatientMonitoring.json	18683	42	0	0	0	0	0	129	0	108	0	0	0	0	0	0	0	0	0	0	436	348	0	0	0	7	0	0
+fsh-generated/resources/StructureDefinition-PatientMonitoringObservation.json	1319	5	0	0	0	0	0	0	0	112	0	0	0	0	0	0	0	1	0	0	306	564	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-SWDevice.json	1746	6	0	0	0	0	0	140	0	106	0	0	0	0	0	0	0	1	0	0	296	434	0	0	0	6	0	1
+fsh-generated/resources/ValueSet-FCContextActivityVS.json	471	3	0	0	0	0	0	0	0	53	0	0	0	0	0	0	0	0	0	0	8	5274	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-FCContextSymptomsVS.json	471	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	7	50	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-FCHRFindingVS.json	449	3	1	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	8	63	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-FCHRIndicatorVS.json	459	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	8	35	0	0	0	0	0	0

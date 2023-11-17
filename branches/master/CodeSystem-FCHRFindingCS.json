@@ -1,0 +1,146 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "FCHRFindingCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"FCHRFindingCS-1\"> </a></td><td>sinus_arrhythmia</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"FCHRFindingCS-2\"> </a></td><td>extrasystoles_trig_episode</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"FCHRFindingCS-3\"> </a></td><td>undiagnosable</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"FCHRFindingCS-4\"> </a></td><td>extrasystoles_isolated</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"FCHRFindingCS-5\"> </a></td><td>dubious_rhythm</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"FCHRFindingCS-6\"> </a></td><td>extrasystoles</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"FCHRFindingCS-7\"> </a></td><td>extrasystoles_trigeminy</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"FCHRFindingCS-8\"> </a></td><td>tachy_episode</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"FCHRFindingCS-9\"> </a></td><td>extrasystoles_frequent</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"FCHRFindingCS-10\"> </a></td><td>phone_incompatible</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"FCHRFindingCS-11\"> </a></td><td>extrasystoles_big_episode</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"FCHRFindingCS-12\"> </a></td><td>increased_hrv</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"FCHRFindingCS-13\"> </a></td><td>sinus</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"FCHRFindingCS-14\"> </a></td><td>atrial_flutter</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"FCHRFindingCS-15\"> </a></td><td>brady_episode</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"FCHRFindingCS-16\"> </a></td><td>tachycardia</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"FCHRFindingCS-17\"> </a></td><td>extrasystoles_bigminy</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"FCHRFindingCS-18\"> </a></td><td>tachy_arrhytmia</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"FCHRFindingCS-19\"> </a></td><td>pacemaker_rhythm</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"FCHRFindingCS-20\"> </a></td><td>bradycardia</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"FCHRFindingCS-21\"> </a></td><td>brady_arrhytmia</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"FCHRFindingCS-22\"> </a></td><td>quality_to_low</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"FCHRFindingCS-23\"> </a></td><td>atrial_fibrillation</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"FCHRFindingCS-24\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"FCHRFindingCS-25\"> </a></td><td>no_diagnosis</td></tr></table></div>"
+  },
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS",
+  "version" : "0.1.0",
+  "name" : "FCHRFindingCS",
+  "title" : "HR Finding Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-11-17T09:45:56+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "FCHRFinding",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 25,
+  "concept" : [{
+    "code" : "1",
+    "display" : "sinus_arrhythmia"
+  },
+  {
+    "code" : "2",
+    "display" : "extrasystoles_trig_episode"
+  },
+  {
+    "code" : "3",
+    "display" : "undiagnosable"
+  },
+  {
+    "code" : "4",
+    "display" : "extrasystoles_isolated"
+  },
+  {
+    "code" : "5",
+    "display" : "dubious_rhythm"
+  },
+  {
+    "code" : "6",
+    "display" : "extrasystoles"
+  },
+  {
+    "code" : "7",
+    "display" : "extrasystoles_trigeminy"
+  },
+  {
+    "code" : "8",
+    "display" : "tachy_episode"
+  },
+  {
+    "code" : "9",
+    "display" : "extrasystoles_frequent"
+  },
+  {
+    "code" : "10",
+    "display" : "phone_incompatible"
+  },
+  {
+    "code" : "11",
+    "display" : "extrasystoles_big_episode"
+  },
+  {
+    "code" : "12",
+    "display" : "increased_hrv"
+  },
+  {
+    "code" : "13",
+    "display" : "sinus"
+  },
+  {
+    "code" : "14",
+    "display" : "atrial_flutter"
+  },
+  {
+    "code" : "15",
+    "display" : "brady_episode"
+  },
+  {
+    "code" : "16",
+    "display" : "tachycardia"
+  },
+  {
+    "code" : "17",
+    "display" : "extrasystoles_bigminy"
+  },
+  {
+    "code" : "18",
+    "display" : "tachy_arrhytmia"
+  },
+  {
+    "code" : "19",
+    "display" : "pacemaker_rhythm"
+  },
+  {
+    "code" : "20",
+    "display" : "bradycardia"
+  },
+  {
+    "code" : "21",
+    "display" : "brady_arrhytmia"
+  },
+  {
+    "code" : "22",
+    "display" : "quality_to_low"
+  },
+  {
+    "code" : "23",
+    "display" : "atrial_fibrillation"
+  },
+  {
+    "code" : "24",
+    "display" : "other"
+  },
+  {
+    "code" : "25",
+    "display" : "no_diagnosis"
+  }]
+}

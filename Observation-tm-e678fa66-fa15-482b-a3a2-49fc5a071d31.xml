@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="tm-e678fa66-fa15-482b-a3a2-49fc5a071d31"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="tm-e678fa66-fa15-482b-a3a2-49fc5a071d31"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;tm-e678fa66-fa15-482b-a3a2-49fc5a071d31&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href="FR_FL_3304">FR_FL_3304</a></p><p><b>effective</b>: 2023-08-18 07:05:35+0000</p><p><b>value</b>: 80.2 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg = 'kg')</span></p><p><b>device</b>: <a href="Bytelies - Vital Signs Service">Bytelies - Vital Signs Service</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="FR_FL_3304"/>
+  </subject>
+  <effectiveDateTime value="2023-08-18T07:05:35+00:00"/>
+  <valueQuantity>
+    <value value="80.2"/>
+    <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+  <device>
+    <reference value="Bytelies - Vital Signs Service"/>
+  </device>
+</Observation>

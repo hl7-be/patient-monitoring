@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FCContextActivityVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-FCContextActivityCS.html\"><code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextActivityVS",
+  "version" : "0.1.0",
+  "name" : "FCContextActivityVS",
+  "title" : "Context Activity Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-11-17T09:45:56+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes representing the",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"
+    }]
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="ExampleSWDevice"/>
+  <meta>
+    <profile value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/SWDevice"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="ExampleSWDevice"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Device &quot;ExampleSWDevice&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SWDevice.html">SWDevice</a></p></div><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>531975 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531975)</span></td><td>1.2.0</td></tr></table></div>
+  </text>
+  <version>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="531975"/>
+      </coding>
+    </type>
+    <value value="1.2.0"/>
+  </version>
+</Device>
