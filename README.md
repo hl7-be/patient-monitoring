@@ -6,7 +6,9 @@ IG
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/hl7-be/patient-monitoring/branches/main/index.html__  
+Continuous Build: 
+__https://hl7-be.github.io/patient-monitoring/__
+__http://build.fhir.org/ig/hl7-be/patient-monitoring/branches/main/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
