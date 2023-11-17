@@ -16,7 +16,7 @@ description: Patient Monitoring Apps FHIR Implementation Guide.
 status: active
 license: CC0-1.0
 date: 2020-02-26
-version: 1.0.0
+version: 0.1.0
 
 fhirVersion: 4.0.1
 
