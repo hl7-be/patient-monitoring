@@ -7,20 +7,17 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: hl7.fhir.be.hrmonitor
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
+id: hl7.fhir.be.patient-monitoring
+canonical: http://hl7belgium.org/fhir/patient-monitoring
+# url: http://example.com/fhir/example
+name: Patient-Monitoring
 title: "HR Monitoring Apps FHIR Implementation Guide"
-description: HR Monitoring Apps FHIR Implementation Guide.
+description: Patient Monitoring Apps FHIR Implementation Guide.
 status: active
 license: CC0-1.0
 date: 2020-02-26
 version: 1.0.0
 
-# Although fhirVersions is 0..* in the ImplementationGuide resource
-# it can be a single item OR and array here (but so far SUSHI only
-# supports 4.0.1 anyway).
 fhirVersion: 4.0.1
 
 # The following two lines correspond to items that used to be in
