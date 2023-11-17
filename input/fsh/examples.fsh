@@ -2,13 +2,13 @@ Instance: ExampleHRMonitoringObs
 InstanceOf: HRMonitoringObs
 Usage: #example
 * subject = Reference(ExampleHRMonitoringPatient)
-* component[hrIndicator].valueCodeableConcept = FCHRIndicatorCS#normal
-* component[hrReviewFinding].valueCodeableConcept = FCHRFindingCS#25
-* component[rmssd].valueQuantity = 25 'ms'
+* component[hrValue].valueCodeableConcept = FCHRIndicatorCS#normal
+* component[hrIndicator].valueCodeableConcept = FCHRFindingCS#25
+* component[hrReviewFinding].valueQuantity = 25 'ms'
 * component[symptoms].valueCodeableConcept = FCContextSymptomsCS#4
 * component[activityStatus].valueCodeableConcept = FCContextActivityCS#3
-* component[chadvasc].valueCodeableConcept = #LowRisk
-* component[measurementAttempts].valueInteger = 2
+* component[hrReport].valueCodeableConcept = #LowRisk
+//* component[measurementAttempts].valueInteger = 2
 * device = Reference(ExampleSWDevice)
 * code = #fibricheck
 * effectiveDateTime = "2023-07-20T14:30:00Z"

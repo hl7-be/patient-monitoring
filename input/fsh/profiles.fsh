@@ -80,3 +80,17 @@ Parent: MonitoringPatient
 // * identifier[fibricheck-username]
 //   * type = #username
 //   * system = "http://somesystem/identifiertypes/username"
+
+
+Profile: SWDevice
+Parent: Device
+
+
+* version ^slicing.discriminator.type = #pattern
+* version ^slicing.discriminator.path = "type"
+* version ^slicing.rules = #open
+* version ^slicing.description = "Types of versions"
+* version contains software-version 1..1
+
+* version[software-version].type = urn:iso:std:iso:11073:10101#531975
+* version[software-version].value MS
