@@ -18,7 +18,7 @@ Description:    "The data structure for Patient monitoring."
   * dateOfBirth 1..1 date "Date of Birth" "Date of Birth"
 
 
-* device 0..1 BackboneElement "The device used to aquire or interpret the signals"
+* device 0..1 BackboneElement "The device used to acquire or interpret the signals"
   * model 0..1 string "Model name" "Model name"
   * serialNumber 0..1 string "Serial number of the device" "Serial number of the device"
   * manufacturer 0..1 string "Name of the manufacturer" "Name of the manufacturer"
