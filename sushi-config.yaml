@@ -125,15 +125,12 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.xml:
-    title: Example Home
-  overview.md:
-    title: Overview
-
-#  examples.xml:
-#    title: Examples Overview
-#    simpleExamples.xml:
-#    complexExamples.xml:
+  Home: index.html
+  Use cases: use-cases.html
+  Usage: usage.html
+  Artifacts: artifacts.html
+  Downloads: downloads.html
+  History: history.html
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
