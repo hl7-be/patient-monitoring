@@ -174,7 +174,7 @@ menu:
   Artifact Index: artifacts.html
   History: changes.html
   Support:
-    FHIR Spec: https://build.fhir.org/branches/R4B/index.html
+    FHIR Spec: https://hl7.org/fhir/R4/
     Downloads: downloads.html
     Copyrights: copyrights.html
 
