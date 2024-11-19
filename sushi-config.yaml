@@ -10,12 +10,11 @@
 id: hl7.fhir.be.patient-monitoring
 canonical: http://hl7belgium.org/fhir/patient-monitoring
 # url: http://example.com/fhir/example
-status: active
-license: CC0-1.0
-date: 2020-02-26
 name: Patient-Monitoring-Outcome
 title: "Patient Monitoring Outcome FHIR Implementation Guide"
 description: Patient Monitoring Outcome FHIR Implementation Guide.
+status: draft
+date: 2024-11-20
 version: 0.1.0
 
 fhirVersion: 4.0.1
@@ -26,7 +25,7 @@ fhirVersion: 4.0.1
 # camelcase, but if authors use the formal parameter names, SUSHI
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
-copyrightYear: 2021+
+copyrightYear: 2024+
 releaseLabel: STU1
 
 # The publisher can be a single item or a list, each with a name and
@@ -124,13 +123,13 @@ dependencies:
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-pages:
-  Home: index.html
-  Use cases: use-cases.html
-  Usage: usage.html
-  Artifacts: artifacts.html
-  Downloads: downloads.html
-  History: history.html
+# pages:
+#   Home: index.html
+#   Use cases: use-cases.html
+#   Usage: usage.html
+#   Artifacts: artifacts.html
+#   Downloads: downloads.html
+#   History: history.html
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -153,14 +152,13 @@ pages:
 # currently only supports one level deep on sub-menus.
 # To provide a custom menu.xml file, do not include this property and
 # include a `menu.xml` file in input/includes.
-#menu:
-#  Home: index.html
-#  Artifacts:
-#    Profiles: artifacts.html#2
-#    Extensions: artifacts.html#3
-#    Value Sets: artifacts.html#4
-#  Downloads: downloads.html
-#  History: http://hl7.org/fhir/us/example/history.html
+menu:
+  Home: index.html
+  Use cases: use-cases.html
+  Usage: usage.html
+  Artifacts: artifacts.html
+  Downloads: downloads.html
+  History: history.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
