@@ -10,12 +10,12 @@
 id: hl7.fhir.be.patient-monitoring
 canonical: http://hl7belgium.org/fhir/patient-monitoring
 # url: http://example.com/fhir/example
-name: Patient-Monitoring
-title: "HR Monitoring Apps FHIR Implementation Guide"
-description: Patient Monitoring Apps FHIR Implementation Guide.
 status: active
 license: CC0-1.0
 date: 2020-02-26
+name: Patient-Monitoring-Outcome
+title: "Patient Monitoring Outcome FHIR Implementation Guide"
+description: Patient Monitoring Outcome FHIR Implementation Guide.
 version: 0.1.0
 
 fhirVersion: 4.0.1
