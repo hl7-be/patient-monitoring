@@ -171,6 +171,8 @@ menu:
   Real World Cases:
     Overview: rw-overview.html
     Telemonitoring Prescription: telemonitoring-prescription.html
+    Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
+  Logical Model: StructureDefinition-PatientMonitoring.html
   Guidelines:
     General Recommendations: recommendations.html
     Terminologies: terminology.html 
@@ -178,6 +180,7 @@ menu:
   History: changes.html
   Support:
     FHIR Spec: https://hl7.org/fhir/R4/
+    Transversal Clinical Core: https://build.fhir.org/ig/hl7-be/core-clinical/
     Downloads: downloads.html
     Copyrights: copyrights.html
 
