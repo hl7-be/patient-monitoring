@@ -139,6 +139,8 @@ pages:
     title: Acknowledgments, licenses and copyrights
   changes.md:
     title: IG Change History
+  telemonitoring-prescription.md:
+    title: Telemonitoring Prescription
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -168,6 +170,7 @@ menu:
     About this version: about-this-version.html
   Real World Cases:
     Overview: rw-overview.html
+    Telemonitoring Prescription: telemonitoring-prescription.html
   Guidelines:
     General Recommendations: recommendations.html
     Terminologies: terminology.html 
