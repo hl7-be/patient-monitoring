@@ -125,9 +125,7 @@ dependencies:
 pages:
   index.md:
     title: Patient Monitoring Outcome Home Page
-  about-this-version.md:
-    title: About this version
-  rw-overview.md:
+  overview.md:
     title: Overview
   recommendations.md:
     title: General Recommendations
@@ -141,6 +139,14 @@ pages:
     title: IG Change History
   telemonitoring-prescription.md:
     title: Telemonitoring Prescription
+  heartfailure.md:
+    title: Heart failure
+  heartwise.md:
+    title: HEARTwise
+  overview-loinc.md:
+    title: Overview LOINC
+  totem.md:
+    title: TOTem
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -164,18 +170,20 @@ pages:
 # To provide a custom menu.xml file, do not include this property and
 # include a `menu.xml` file in input/includes.
 menu:
-  IG Home: index.html
-  Table of Contents: toc.html
-  Background:
-    About this version: about-this-version.html
-  Real World Cases:
-    Overview: rw-overview.html
+  Home: 
+    Home: index.html
     Telemonitoring Prescription: telemonitoring-prescription.html
-    Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
-  Logical Model: StructureDefinition-PatientMonitoring.html
   Guidelines:
     General Recommendations: recommendations.html
     Terminologies: terminology.html 
+  Use Cases:
+    Overview: overview.html
+    Heart failure: heartfailure.html
+    HEARTwise: heartwise.html
+    TOTem: totem.html
+    Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
+    Overview LOINC: overview-loinc.html
+
   Artifact Index: artifacts.html
   History: changes.html
   Support:
