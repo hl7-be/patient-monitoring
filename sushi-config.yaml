@@ -146,7 +146,7 @@ pages:
   overview-loinc.md:
     title: Overview LOINC
   totem.md:
-    title: TOTem
+    title: TOTeM
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -180,7 +180,7 @@ menu:
     Overview: overview.html
     Heart failure: heartfailure.html
     EWS: ews.html
-    TOTem: totem.html
+    TOTeM: totem.html
     Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
     Overview LOINC: overview-loinc.html
 

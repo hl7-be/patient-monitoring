@@ -2,7 +2,7 @@
 
 ### Care Pathway Overview
 
-ToTem stands for Transmurale Opvolging met TeleMonitoring na chirurgie.
+TOTeM stands for Transmurale Opvolging met TeleMonitoring na chirurgie.
 
 Improved surgical techniques allow patients to go home earlier and earlier after their surgery. Complications are possible with any surgery. It is important that they are noticed in time so that the necessary action can be taken by the appropriate healthcare provider.
 
