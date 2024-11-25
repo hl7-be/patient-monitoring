@@ -12,19 +12,14 @@ The patient can recover in a familiar environment and is more involved in the re
 
 With support from the FPS Public Health, some TOTeM projects are being rolled out in 6 hospitals in a pilot project; and this for specific types of surgery (depending on the hospital's choice): colon surgery, obesity surgery, kidney surgery, bladder surgery, pancreatic surgery and anti-reflux surgery.
 
-### Patient monitoring
-
-The following registrations will be made by patients and/or care providers that will be available in the prescription portal.
-
-
 ### Process and Workflow Description
 
 #### Start-Up
 
 - **Parameters Monitored**:
-  - Heart Rate (HR)
-  - Blood Pressure (BP)
-  - Weight (BW)
+  - Heart Rate
+  - Blood Pressure
+  - Body weight
   - Respiratory rate
   - Saturation
   - Body temperature
@@ -34,12 +29,12 @@ The following registrations will be made by patients and/or care providers that 
   - Pain during urination
   - Pain in calves
   - Pain medication taken
-  - Wellbeing
+  - Well-being
   - Flatulence
-  - Bowl movement
+  - Bowel movement
   - Distended abdomen
   - Nausea
-  - Vomitting
+  - Vomiting
   - Water intake last 24h
   - Meals last 24h
   - Coughing
@@ -65,12 +60,34 @@ The following registrations will be made by patients and/or care providers that 
 - **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
 - **LOINC Codes**:
 
-  | Description                     | LOINC Code(s)         |
-  | ------------------------------- | --------------------- |
-  | Heart rate (HR) measurement     | LOINC 8867-4          |
-  | Blood pressure (BP) measurement | LOINC 8480-6 / 8463-4 |
-  | Body weight (BW) measurement    | LOINC 29463-7         |
-  ---
+  | Description               | LOINC Code(s)            |
+  | --------------------------| ------------------------ |
+  | Heart rate                | LOINC 8867-4             |
+  | Blood pressure            | LOINC 8480-6 / 8463-4    |
+  | Body weight               | LOINC 29463-7            |
+  | Respiratory rate          | LOINC 9279-1             |
+  | Saturation                | LOINC 2708-6             |
+  | Body temperature          | LOINC 8310-5             |
+  | Abdominal pain            | LOINC 72514-3 ? 28538-7? |
+  | Pain surgical wound       | LOINC 72514-3 ??         |
+  | Pain puncture wounds      | LOINC 72514-3 ??         |
+  | Pain during urination     | LOINC 72514-3 ??         |
+  | Pain in calves            | LOINC 72514-3 ??         |
+  | Pain medication taken     | ??                       |
+  | Well-being                 | SNOMEDCT 365275006       |
+  | Flatulence                | SNOMEDCT 249504006       |
+  | Bowel movement            | SNOMEDCT 39211005        |
+  | Distended abdomen         | SNOMEDCT 60728008        |
+  | Nausea                    | SNOMEDCT 422587007       |
+  | Vomiting                  | SNOMEDCT 300359004       |
+  | Water intake last 24h     | LOINC 9007-6             |
+  | Meals last 24h            | ??                       |
+  | Coughing                  | SNOMEDCT 263731006       |
+  | Product cough             | SNOMEDCT 28743005        |
+  | Pressure in chest         | SNOMEDCT 23924001        |
+  | Shortness of breath       | SNOMEDCT 267036007       |
+  | Walking daily             | ??                       |
+  | Shoulder pain             | LOINC 72514-3 ??         |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
