@@ -60,7 +60,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 - **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
 - **LOINC Codes**:
 
-  | Description               | LOINC Code(s)            |
+  | Description               | Code(s)            |
   | --------------------------| ------------------------ |
   | Heart rate                | LOINC 8867-4             |
   | Blood pressure            | LOINC 8480-6 / 8463-4    |
@@ -68,13 +68,13 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   | Respiratory rate          | LOINC 9279-1             |
   | Saturation                | LOINC 2708-6             |
   | Body temperature          | LOINC 8310-5             |
-  | Abdominal pain            | LOINC 72514-3 ? 28538-7? |
+  | Abdominal pain            | SNOMEDCT 21522001        |
   | Pain surgical wound       | LOINC 72514-3 ??         |
   | Pain puncture wounds      | LOINC 72514-3 ??         |
-  | Pain during urination     | LOINC 72514-3 ??         |
-  | Pain in calves            | LOINC 72514-3 ??         |
+  | Pain during urination     | SNOMEDCT 49650001        |
+  | Pain in calves            | SNOMEDCT 1264028004      |
   | Pain medication taken     | ??                       |
-  | Well-being                 | SNOMEDCT 365275006       |
+  | Well-being                | SNOMEDCT 365275006       |
   | Flatulence                | SNOMEDCT 249504006       |
   | Bowel movement            | SNOMEDCT 39211005        |
   | Distended abdomen         | SNOMEDCT 60728008        |
