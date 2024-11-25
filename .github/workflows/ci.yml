@@ -1,0 +1,94 @@
+name: Build And Publish base
+on: 
+  workflow_call: 
+    inputs:
+      ig:
+        type: string
+        description: "Name of the implementation guide"
+        required: true
+      depends:
+        type: string
+        description: "Name of the dependency implementation guide to build also"
+jobs:
+  build-and-publish:
+    strategy:
+      matrix:
+        ig: ["${{ inputs.ig }}"]
+        depends: ["${{ inputs.depends }}"]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Runner Info
+        run: |
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          echo "🐧 Now running on a ${{ runner.os }} server hosted by GitHub!"
+          echo "🔎 Branch is ${{ github.ref }} ${{ github.repository }} repo"
+          echo "💡 The ${{ github.repository }} repo has been cloned to the runner."
+          echo "The event_name is ${{ github.event_name }}"
+          echo "The event.pull_request.merged is ${{ github.event.pull_request.merged}}"
+          echo "The ref is ${{ github.ref }}"
+          echo "Provided IG is  ${{ inputs.ig }}"
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3'
+
+      - name: Setup Java / Maven
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+
+      - name: Install Jekyll
+        run:  |
+          gem install jekyll
+
+      - name: Version Info
+        run:  |
+          java -version
+          npm --version
+          jekyll --version
+          mvn --version
+
+      - name: Install graphviz to support extra plantuml diagrams
+        run:  |
+          sudo apt install graphviz
+      
+      - name: Build dependency
+        if: ${{ matrix.depends }}
+        run:  |
+          npm install -g fsh-sushi  
+          cd ${{ matrix.depends }}
+          sushi .
+          ./_updatePublisher.sh -y && ./_genonce.sh
+          cd ..
+
+      - name: Build IG
+        run:  |
+          npm install -g fsh-sushi  
+          cd ${{ matrix.ig }}
+          sushi .
+          ./_updatePublisher.sh -y && ./_genonce.sh
+  
+      - name: Deploy IG
+        uses: JamesIves/github-pages-deploy-action@v4.4.2
+        with:
+          branch: gh-pages
+          folder: ./${{ matrix.ig }}/output
+          commit-message: Deploy IG ${{ github.ref_name }}/${{ matrix.ig }}
+          target-folder: ${{ github.ref_name }}/${{ matrix.ig }}
+          single-commit: true
+          clean: false 
+
+      - name: Deploy history
+        uses: JamesIves/github-pages-deploy-action@v4.4.2
+        with:
+          branch: gh-pages
+          folder: ./${{ matrix.ig }}/history
+          commit-message: Deploy IG history ${{ github.ref_name }}/${{ matrix.ig }}
+          target-folder: ${{ github.ref_name }}/${{ matrix.ig }}
+          single-commit: true
+          clean: false

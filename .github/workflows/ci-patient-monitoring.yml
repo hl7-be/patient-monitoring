@@ -1,0 +1,9 @@
+name: Build And Publish Patient Monitoring Outcome IG
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  call-workflow-passing-data:
+    uses: RemeCare/patient-monitoring/.github/workflows/ci.yml@wip
+    with:
+      ig: patient-monitoring-ig
