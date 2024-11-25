@@ -1,20 +1,9 @@
 name: Build And Publish base
 on: 
-  workflow_call: 
-    inputs:
-      ig:
-        type: string
-        description: "Name of the implementation guide"
-        required: true
-      depends:
-        type: string
-        description: "Name of the dependency implementation guide to build also"
+  workflow_dispatch:
+  push:
 jobs:
   build-and-publish:
-    strategy:
-      matrix:
-        ig: ["${{ inputs.ig }}"]
-        depends: ["${{ inputs.depends }}"]
     runs-on: ubuntu-latest
     steps:
       - name: Runner Info
@@ -56,20 +45,10 @@ jobs:
       - name: Install graphviz to support extra plantuml diagrams
         run:  |
           sudo apt install graphviz
-      
-      - name: Build dependency
-        if: ${{ matrix.depends }}
-        run:  |
-          npm install -g fsh-sushi  
-          cd ${{ matrix.depends }}
-          sushi .
-          ./_updatePublisher.sh -y && ./_genonce.sh
-          cd ..
 
       - name: Build IG
         run:  |
           npm install -g fsh-sushi  
-          cd ${{ matrix.ig }}
           sushi .
           ./_updatePublisher.sh -y && ./_genonce.sh
   
@@ -77,9 +56,9 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
           branch: gh-pages
-          folder: ./${{ matrix.ig }}/output
-          commit-message: Deploy IG ${{ github.ref_name }}/${{ matrix.ig }}
-          target-folder: ${{ github.ref_name }}/${{ matrix.ig }}
+          folder: ./output
+          commit-message: Deploy IG ${{ github.ref_name }}
+          target-folder: ${{ github.ref_name }}
           single-commit: true
           clean: false 
 
@@ -88,7 +67,7 @@ jobs:
         with:
           branch: gh-pages
           folder: ./${{ matrix.ig }}/history
-          commit-message: Deploy IG history ${{ github.ref_name }}/${{ matrix.ig }}
-          target-folder: ${{ github.ref_name }}/${{ matrix.ig }}
+          commit-message: Deploy IG history ${{ github.ref_name }}
+          target-folder: ${{ github.ref_name }}
           single-commit: true
           clean: false
