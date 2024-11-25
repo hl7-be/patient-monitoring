@@ -11,19 +11,5 @@ Usage: #example
 * contained[0] = vital-signs-box
 * contained[+] = byteflies
 * device = Reference(vital-signs-box)
-* effectiveDateTime = "2024-11-19T06:48:20+00:00"
 * performer = Reference(byteflies)
-
-Instance: vital-signs-box
-InstanceOf: Device
-Usage: #inline
-* identifier.value = "240822yti3tgeyay"
-* deviceName.name = "VS-4"
-* deviceName.type = #other
-* manufacturer = "Byteflies"
-* meta.tag = https://api-vitalsigns.byteflies.net/version#20241028-1511 "API Version 20241028-1511"
-
-Instance: byteflies
-InstanceOf: Organization
-Usage: #inline
-* name = "Byteflies"
+* effectiveDateTime = "2024-11-19T06:48:20+00:00"
