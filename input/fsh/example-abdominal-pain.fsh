@@ -1,5 +1,5 @@
 Instance: AbdominalPainExample
-InstanceOf: $vitalsigns
+InstanceOf: Observation
 Usage: #example
 * status = #final
 * code = $snomed#21522001 "Abdominal pain"
@@ -8,3 +8,4 @@ Usage: #example
 * valueCodeableConcept.coding = $loinc#LA10138-8
 * effectivePeriod.start = "2024-11-15T09:56:00+00:00"
 * effectivePeriod.end = "2024-11-15T09:57:00+00:00"
+* performer = Reference(practitionerRole1)
