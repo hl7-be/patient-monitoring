@@ -3,7 +3,7 @@ InstanceOf: $vitalsigns
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
-* code = $loinc#85354-9 "Blood pressure"
+* code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * subject.identifier.system = $fhir
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
 * component[0].code = $loinc#8480-6 "Systolic blood pressure"

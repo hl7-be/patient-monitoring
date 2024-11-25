@@ -3,7 +3,7 @@ InstanceOf: $vitalsigns
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
-* code = $loinc#59408-5 "Oxygen saturation"
+* code = $loinc#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * subject.identifier.system = $fhir
 * subject.identifier.value = "BE84DC42-2B5D-464C-AFFD-57DB87BD7D48"
 * component.code = $loinc#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
