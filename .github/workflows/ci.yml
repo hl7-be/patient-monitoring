@@ -62,12 +62,12 @@ jobs:
           single-commit: true
           clean: false 
 
-      - name: Deploy history
-        uses: JamesIves/github-pages-deploy-action@v4.4.2
-        with:
-          branch: gh-pages
-          folder: ./history
-          commit-message: Deploy IG history ${{ github.ref_name }}
-          target-folder: ${{ github.ref_name }}
-          single-commit: true
-          clean: false
+      # - name: Deploy history
+      #   uses: JamesIves/github-pages-deploy-action@v4.4.2
+      #   with:
+      #     branch: gh-pages
+      #     folder: ./history
+      #     commit-message: Deploy IG history ${{ github.ref_name }}
+      #     target-folder: ${{ github.ref_name }}
+      #     single-commit: true
+      #     clean: false
