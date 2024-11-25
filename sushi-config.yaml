@@ -10,7 +10,7 @@ id: hl7.fhir.be.patient-monitoring
 canonical: http://hl7belgium.org/fhir/patient-monitoring
 # url: http://example.com/fhir/example
 name: Patient-Monitoring-Outcome
-title: "Patient Monitoring Outcome FHIR Implementation Guide"
+title: 'Patient Monitoring Outcome FHIR Implementation Guide'
 description: Patient Monitoring Outcome FHIR Implementation Guide.
 status: draft
 date: 2024-11-20
@@ -141,8 +141,8 @@ pages:
     title: Telemonitoring Prescription
   heartfailure.md:
     title: Heart failure
-  heartwise.md:
-    title: HEARTwise
+  ews.md:
+    title: EWS (Early Warning Score)
   overview-loinc.md:
     title: Overview LOINC
   totem.md:
@@ -170,16 +170,16 @@ pages:
 # To provide a custom menu.xml file, do not include this property and
 # include a `menu.xml` file in input/includes.
 menu:
-  Home: 
+  Home:
     Home: index.html
     Telemonitoring Prescription: telemonitoring-prescription.html
   Guidelines:
     General Recommendations: recommendations.html
-    Terminologies: terminology.html 
+    Terminologies: terminology.html
   Use Cases:
     Overview: overview.html
     Heart failure: heartfailure.html
-    HEARTwise: heartwise.html
+    EWS: ews.html
     TOTem: totem.html
     Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
     Overview LOINC: overview-loinc.html
