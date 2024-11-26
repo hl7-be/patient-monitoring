@@ -2,7 +2,7 @@ Instance: PainDuringUrinationExample
 InstanceOf: Observation
 Usage: #example
 Title: "Pain during urination example"
-Description: "Pain during urination example description" //TODO: Needs description
+Description: "Possible answers are yes or no"
 * status = #final
 * code = $snomed#49650001 "Urination painful"
 * subject.identifier.system = $fhir
