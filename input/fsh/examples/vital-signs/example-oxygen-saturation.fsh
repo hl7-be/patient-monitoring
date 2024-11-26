@@ -1,6 +1,7 @@
 Instance: OxygenSaturationExample
 InstanceOf: $vitalsigns
 Usage: #example
+Description: "Oxygen saturation example" //TODO: Needs description
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#2708-6 "Oxygen saturation in Arterial blood"

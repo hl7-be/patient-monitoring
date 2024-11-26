@@ -1,6 +1,7 @@
 Instance: BodyWeightExample
 InstanceOf: $vitalsigns
 Usage: #example
+Description: "Body Weight example" //TODO: Needs description
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#29463-7 "Body Weight"
