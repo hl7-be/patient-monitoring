@@ -63,46 +63,49 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 ###### General
 <div class="table-md"></div>
 
-  | Description               | Code(s)                  |
-  | ------------------------- | ------------------------ |
-  | Heart rate                | LOINC 8867-4             |
-  | Blood pressure            | LOINC 8480-6 / 8463-4    |
-  | Body weight               | LOINC 29463-7            |
-  | Respiratory rate          | LOINC 9279-1             |
-  | Saturation                | LOINC 2708-6             |
-  | Body temperature          | LOINC 8310-5             |
-  | Abdominal pain            | SNOMEDCT 21522001        |
-  | Pain puncture wounds      | LOINC 72514-3 ??         |
-  | Pain during urination     | SNOMEDCT 49650001        |
-  | Pain in calves            | SNOMEDCT 1264028004      |
-  | Pain medication taken     | ??                       |
-  | Well-being                | SNOMEDCT 365275006       |
-  | Flatulence                | SNOMEDCT 249504006       |
-  | Bowel movement            | SNOMEDCT 39211005        |
-  | Nausea                    | SNOMEDCT 422587007       |
-  | Vomiting                  | SNOMEDCT 300359004       |
-  | Water intake last 24h     | LOINC 9007-6             |
-  | Meals last 24h            | ??                       |
-  | Coughing                  | SNOMEDCT 263731006       |
-  | Product cough             | SNOMEDCT 28743005        |
-  | Pressure in chest         | SNOMEDCT 23924001        |
-  | Shortness of breath       | SNOMEDCT 267036007       |
-  | Walking daily             | ??                       |
+  | Description               | Code(s)                  | Possible answers     |
+  | ------------------------- | ------------------------ | -------------------- |
+  | Heart rate                | LOINC 8867-4             |                      |
+  | Blood pressure            | LOINC 8480-6 / 8463-4    |                      |
+  | Body weight               | LOINC 29463-7            |                      |
+  | Respiratory rate          | LOINC 9279-1             |                      |
+  | Saturation                | LOINC 2708-6             |                      |
+  | Body temperature          | LOINC 8310-5             |                      |
+  | Abdominal pain            | SNOMEDCT 21522001        | LOINC 72514-3        |
+  | Pain puncture wounds      | LOINC 72514-3 ??         | LOINC 72514-3        |
+  | Pain during urination     | SNOMEDCT 49650001        | SNOMED 373066001 - ??|
+  | Pain in calves            | SNOMEDCT 1264028004      | SNOMED 373066001 - ??|
+  | Pain medication taken     | ??                       | ??                   |
+  | Well-being                | SNOMEDCT 365275006       | ??                   |
+  | Flatulence                | SNOMEDCT 249504006       |                      |
+  | Bowel movement            | SNOMEDCT 39211005        |                      |
+  | Nausea                    | SNOMEDCT 422587007       |                      |
+  | Vomiting                  | SNOMEDCT 300359004       |                      |
+  | Water intake last 24h     | LOINC 9007-6             |                      |
+  | Meals last 24h            | ??                       |                      |
+  | Coughing                  | SNOMEDCT 263731006       |                      |
+  | Product cough             | SNOMEDCT 28743005        |                      |
+  | Pressure in chest         | SNOMEDCT 23924001        |                      |
+  | Shortness of breath       | SNOMEDCT 267036007       |                      |
+  | Walking daily             | ??                       |                      |
+  | Wound appearance          |                          | SNOMED 17621005 - ???|
+  | Concern about patient     | ??                       | SNOMED 373066001 - ??|
+  | Fraxiparine               | ??                       |                      |
 
 ###### Colon surgery specific
 <div class="table-md"></div>
 
-  | Description               | Code(s)                  |
-  | ------------------------- | ------------------------ |
-  | Pain surgical wound       | LOINC 72514-3 ??         |
-  | Distended abdomen         | SNOMEDCT 60728008        |
+  | Description               | Code(s)                  | Possible answers     |
+  | ------------------------- | ------------------------ | ---------------------|
+  | Pain surgical wound       | LOINC 72514-3 ??         | LOINC 72514-3        |
+  | Distended abdomen         | SNOMEDCT 60728008        |                      |
 
 ###### Bariatric surgery specific
 <div class="table-md"></div>
 
-  | Description               | Code(s)                  |
-  | ------------------------- | ------------------------ |        |
-  | Shoulder pain             | LOINC 72514-3 ??         |
+  | Description               | Code(s)                  | Possible answers     |
+  | ------------------------- | ------------------------ | ---------------------|
+  | Shoulder pain             | LOINC 72514-3 ??         |                      |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
