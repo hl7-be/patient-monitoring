@@ -61,6 +61,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 - **LOINC Codes**:
 
 ###### General
+<div class="table-md"></div>
 
   | Description               | Code(s)                  |
   | ------------------------- | ------------------------ |
@@ -89,6 +90,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   | Walking daily             | ??                       |
 
 ###### Colon surgery specific
+<div class="table-md"></div>
 
   | Description               | Code(s)                  |
   | ------------------------- | ------------------------ |
@@ -96,6 +98,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   | Distended abdomen         | SNOMEDCT 60728008        |
 
 ###### Bariatric surgery specific
+<div class="table-md"></div>
 
   | Description               | Code(s)                  |
   | ------------------------- | ------------------------ |        |

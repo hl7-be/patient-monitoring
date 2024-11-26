@@ -59,6 +59,7 @@
 
 - **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
 - **LOINC Codes**:
+<div class="table-md"></div>
 
   | Description                     | LOINC Code(s)         |
   | ------------------------------- | --------------------- |
