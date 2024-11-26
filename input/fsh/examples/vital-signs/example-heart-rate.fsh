@@ -1,6 +1,7 @@
 Instance: HeartRateExample
 InstanceOf: $vitalsigns
 Usage: #example
+Description: "Heart Rate example" //TODO: Needs description
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#8867-4 "Heart rate"

@@ -1,6 +1,7 @@
 Instance: BloodPressureExample
 InstanceOf: $vitalsigns
 Usage: #example
+Description: "Blood Pressure example" //TODO: Needs description
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
