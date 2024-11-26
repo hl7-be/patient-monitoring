@@ -1,8 +1,8 @@
-Instance: PainSurgicalWoundExample	
+Instance: PainSurgicalWoundsExample	
 InstanceOf: Observation
 Usage: #example
-Title: "Pain surgical wound example"
-Description: "Pain surgical wound example description" //TODO: Needs description
+Title: "Pain surgical wounds example"
+Description: "Pain surgical wounds example description" //TODO: Needs description
 * status = #final
 * code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" //TODO: Needs correct code
 * subject.identifier.system = $fhir
