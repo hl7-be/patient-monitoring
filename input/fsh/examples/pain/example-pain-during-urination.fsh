@@ -11,4 +11,5 @@ Description: "Pain during urination example description" //TODO: Needs descripti
 * effectivePeriod.start = "2024-11-15T09:56:00+00:00"
 * effectivePeriod.end = "2024-11-15T09:57:00+00:00"
 * contained[0] = nurse
-* performer = Reference(nurse)
+* performer.identifier.system = $fhir
+* performer.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
