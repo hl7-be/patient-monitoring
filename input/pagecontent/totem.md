@@ -71,24 +71,24 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   | Respiratory rate          | LOINC 9279-1             |                      |
   | Saturation                | LOINC 2708-6             |                      |
   | Body temperature          | LOINC 8310-5             |                      |
-  | Abdominal pain            | SNOMEDCT 21522001        | LOINC 72514-3        |
-  | Pain puncture wounds      | LOINC 72514-3 ??         | LOINC 72514-3        |
-  | Pain during urination     | SNOMEDCT 49650001        | SNOMED 373066001 - ??|
-  | Pain in calves            | SNOMEDCT 1264028004      | SNOMED 373066001 - ??|
+  | Abdominal pain            | SNOMED 21522001          | LOINC 72514-3        |
+  | Pain puncture wounds      | ??                       | LOINC 72514-3        |
+  | Pain during urination     | SNOMED 49650001          | SNOMED 373066001 - ??|
+  | Pain in calves            | SNOMED 1264028004        | SNOMED 373066001 - ??|
   | Pain medication taken     | ??                       | ??                   |
-  | Well-being                | SNOMEDCT 365275006       | ??                   |
-  | Flatulence                | SNOMEDCT 249504006       |                      |
-  | Bowel movement            | SNOMEDCT 39211005        |                      |
-  | Nausea                    | SNOMEDCT 422587007       |                      |
-  | Vomiting                  | SNOMEDCT 300359004       |                      |
-  | Water intake last 24h     | LOINC 9007-6             |                      |
-  | Meals last 24h            | ??                       |                      |
-  | Coughing                  | SNOMEDCT 263731006       |                      |
-  | Product cough             | SNOMEDCT 28743005        |                      |
-  | Pressure in chest         | SNOMEDCT 23924001        |                      |
-  | Shortness of breath       | SNOMEDCT 267036007       |                      |
-  | Walking daily             | ??                       |                      |
-  | Wound appearance          |                          | SNOMED 17621005 - ???|
+  | Well-being                | SNOMED 365275006         | ??                   |
+  | Flatulence                | SNOMED 249504006         | ??                   |
+  | Bowel movement            | SNOMED 39211005          | ??                   |
+  | Nausea                    | SNOMED 422587007         | ??                   |
+  | Vomiting                  | SNOMED 300359004         | ??                   |
+  | Water intake last 24h     | LOINC 9007-6             | ??                   |
+  | Meals last 24h            | ??                       | ??                   |
+  | Coughing                  | SNOMED 263731006         | ??                   |
+  | Product cough             | SNOMED 28743005          | ??                   |
+  | Pressure in chest         | SNOMED 23924001          | ??                   |
+  | Shortness of breath       | SNOMED 267036007         | ??                   |
+  | Walking daily             | ??                       | ??                   |
+  | Wound appearance          |                          | SNOMED 17621005      |
   | Concern about patient     | ??                       | SNOMED 373066001 - ??|
   | Fraxiparine               | ??                       |                      |
 
@@ -97,15 +97,15 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
   | Description               | Code(s)                  | Possible answers     |
   | ------------------------- | ------------------------ | ---------------------|
-  | Pain surgical wound       | LOINC 72514-3 ??         | LOINC 72514-3        |
-  | Distended abdomen         | SNOMEDCT 60728008        |                      |
+  | Pain surgical wound       | ?              ?         | LOINC 72514-3        |
+  | Distended abdomen         | SNOMED 60728008          | ???                  |
 
 ###### Bariatric surgery specific
 <div class="table-md"></div>
 
-  | Description               | Code(s)                  | Possible answers     |
-  | ------------------------- | ------------------------ | ---------------------|
-  | Shoulder pain             | LOINC 72514-3 ??         |                      |
+  | Description               | Code(s)                  | Possible answers                                 |
+  | ------------------------- | ------------------------ | ------------------------------------------------ |
+  | Shoulder pain             | ??                       | SNOMED 24028007 (right) <br> SNOMED 7771000 (left) <br> SNOMED 51440002 (right and left) <br> SNOMED 260413007 (no) |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
