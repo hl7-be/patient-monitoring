@@ -2,7 +2,7 @@ Instance: AbdominalPainExample
 InstanceOf: Observation
 Usage: #example
 Title: "Abdominal pain example"
-Description: "Pain scale is used as answer."
+Description: "Pain scale is used as answer"
 * status = #final
 * code = $snomed#21522001 "Abdominal pain"
 * subject.identifier.system = $fhir
