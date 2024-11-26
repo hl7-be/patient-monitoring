@@ -1,8 +1,8 @@
 Instance: ShoulderPainExample
 InstanceOf: Observation
 Usage: #example
-Title: "Shoulder pain example"
-Description: "Pain scale is used as answer."
+Title: "INCOMPLETE: Shoulder pain example"
+Description: "NEEDS ATTENTION: No LOINC or SNOMEDCT code currently exists for shoulder pain. Pain scale is used as answer."
 * status = #final
 * code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" //TODO: Needs correct code
 * subject.identifier.system = $fhir
