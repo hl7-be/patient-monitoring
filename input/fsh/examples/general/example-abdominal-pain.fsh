@@ -1,6 +1,8 @@
 Instance: AbdominalPainExample
 InstanceOf: Observation
 Usage: #example
+Title: "Abdominal pain example"
+Description: "Abdominal pain example description" //TODO: Needs description
 * status = #final
 * code = $snomed#21522001 "Abdominal pain"
 * subject.identifier.system = $fhir

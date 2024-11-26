@@ -1,6 +1,8 @@
 Instance: ShortnessOfBreathExample
 InstanceOf: Observation
 Usage: #example
+Title: "Shortness of breath example"
+Description: "Shortness of breath example description" //TODO: Needs description
 * status = #final
 * code = $snomed#267036007 "Shortness of breath"
 * subject.identifier.system = $fhir
