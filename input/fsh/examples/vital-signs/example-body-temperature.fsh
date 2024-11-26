@@ -1,6 +1,7 @@
 Instance: BodyTemperatureExample
 InstanceOf: $vitalsigns
 Usage: #example
+Description: "Temperature example" //TODO: Needs description
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#8310-5 "Body Temperature"
