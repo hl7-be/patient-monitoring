@@ -60,6 +60,8 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 - **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
 - **LOINC Codes**:
 
+###### General
+
   | Description               | Code(s)                  |
   | ------------------------- | ------------------------ |
   | Heart rate                | LOINC 8867-4             |
@@ -69,7 +71,6 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   | Saturation                | LOINC 2708-6             |
   | Body temperature          | LOINC 8310-5             |
   | Abdominal pain            | SNOMEDCT 21522001        |
-  | Pain surgical wound       | LOINC 72514-3 ??         |
   | Pain puncture wounds      | LOINC 72514-3 ??         |
   | Pain during urination     | SNOMEDCT 49650001        |
   | Pain in calves            | SNOMEDCT 1264028004      |
@@ -77,7 +78,6 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   | Well-being                | SNOMEDCT 365275006       |
   | Flatulence                | SNOMEDCT 249504006       |
   | Bowel movement            | SNOMEDCT 39211005        |
-  | Distended abdomen         | SNOMEDCT 60728008        |
   | Nausea                    | SNOMEDCT 422587007       |
   | Vomiting                  | SNOMEDCT 300359004       |
   | Water intake last 24h     | LOINC 9007-6             |
@@ -87,6 +87,18 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   | Pressure in chest         | SNOMEDCT 23924001        |
   | Shortness of breath       | SNOMEDCT 267036007       |
   | Walking daily             | ??                       |
+
+###### Colon surgery specific
+
+  | Description               | Code(s)                  |
+  | ------------------------- | ------------------------ |
+  | Pain surgical wound       | LOINC 72514-3 ??         |
+  | Distended abdomen         | SNOMEDCT 60728008        |
+
+###### Bariatric surgery specific
+
+  | Description               | Code(s)                  |
+  | ------------------------- | ------------------------ |        |
   | Shoulder pain             | LOINC 72514-3 ??         |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
