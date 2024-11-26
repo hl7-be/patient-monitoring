@@ -2,7 +2,7 @@ Instance: DistendedAbdomenExample
 InstanceOf: Observation
 Usage: #example
 Title: "INCOMPLETE: Distended abdomen example"
-Description: "NEEDS ATTENTION: Current answer options are no / a little / fierce. These cannot be found in LOINC or SNOMEDCT currently. Change answer options or request new LOINC codes. " //TODO: Needs description
+Description: "NEEDS ATTENTION: Current answer options are no / a little / fierce. These cannot be found in LOINC or SNOMEDCT currently. Change answer options or request new LOINC codes."
 * status = #final
 * code = $snomed#60728008 "Swollen abdomen" 
 * subject.identifier.system = $fhir
