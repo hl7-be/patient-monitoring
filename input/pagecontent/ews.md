@@ -69,7 +69,7 @@
 - **LOINC Codes**:
 <div class="table-md"></div>
 
-  | Description                          | LOINC Code(s)         |
+  | Description                          | Code(s)         |
   | ------------------------------------ | --------------------- |
   | Heart rate (HR) measurement          | LOINC 8867-4          |
   | Blood pressure (BP) measurement      | LOINC 8480-6 / 8463-4 |
@@ -77,6 +77,8 @@
   | Respiratory (RESP) measurement       | LOINC 9279-1          |
   | Temperature (TEMP) measurement       | LOINC 8310-5          |
   | Oxygen Saturation (SPO2) measurement | LOINC 59408-5         |
+  | Level of responsiveness (AVPU scale) | LOINC 67775-7         |
+  | National Early Warning Score (NEWS)  | SNOMED 1287358002     |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
@@ -90,5 +92,5 @@ For detailed specifications, refer to the
 - [Oxygen Saturation Example](./Observation-OxygenSaturationExample.html)
 - [Respiratory Rate Example](./Observation-RespiratoryRateExample.html)
 - [Temperature Example](./Observation-BodyTemperatureExample.html)
-
+//- TODO add examples AVPU and NEWS
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
