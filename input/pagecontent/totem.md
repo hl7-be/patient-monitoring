@@ -113,6 +113,29 @@ These FHIR modules ensure standardized data exchange between systems and guarant
 
 For detailed specifications, refer to the
 
+- [Heart Rate Example](./Observation-HeartRateExample.html)
 - [Blood Pressure Example](./Observation-BloodPressureExample.html)
 - [Weight Example](./Observation-BodyWeightExample.html)
-- [Heart Rate Example](./Observation-HeartRateExample.html)
+- [Respiratory rate Example](./Observation-RespiratoryRateExample.html)
+- [Saturation Example](./Observation-OxygenSaturationExample.html)
+- [Abdominal pain Example](./Observation-AbdominalPainExample.html)
+- [Pain surgical wound Example](./Observation-PainSurgicalWoundsExample.html)
+- Pain puncture wounds Example
+- [Pain during urination Example](./Observation-PainDuringUrinationExample.html)
+- [Pain in calves Example](./Observation-PainInCalvesExample.html)
+- [Pain medication taken Example](./Observation-PainMedicationTakenExample.html)
+- Well-being Example
+- Flatulence Example
+- Bowel movement Example
+- [Distended abdomen Example](./Observation-DistendedAbdomenExample.html)
+- Nausea Example
+- Vomiting Example
+- Water intake last 24h Example
+- Meals last 24h Example
+- Coughing Example
+- Mucus when coughing Example
+- Pression on chest Example
+- [Shortness of breath Example](./Observation-ShortnessOfBreathExample.html)
+- Walking daily Example
+- [Shoulder pain Example](./Observation-ShoulderPainExample.html)
+
