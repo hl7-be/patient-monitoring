@@ -1,10 +1,10 @@
-Instance: PainDuringUrinationExample
+Instance: PainInCalvesExample
 InstanceOf: Observation
 Usage: #example
-Title: "Pain during urination example"
-Description: "Pain during urination example description" //TODO: Needs description
+Title: "Pain in calves example"
+Description: "Pain in calves example description" //TODO: Needs description
 * status = #final
-* code = $snomed#49650001 "Urination painful"
+* code = $snomed#1264028004 "Pain in muscle of lower leg"
 * subject.identifier.system = $fhir
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
 * valueCodeableConcept.coding = $snomed#373066001
