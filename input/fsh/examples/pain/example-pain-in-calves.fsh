@@ -2,7 +2,7 @@ Instance: PainInCalvesExample
 InstanceOf: Observation
 Usage: #example
 Title: "Pain in calves example"
-Description: "Pain in calves example description" //TODO: Needs description
+Description: "Answer optiona are yes and no"
 * status = #final
 * code = $snomed#1264028004 "Pain in muscle of lower leg"
 * subject.identifier.system = $fhir
