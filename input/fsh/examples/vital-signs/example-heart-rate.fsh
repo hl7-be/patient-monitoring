@@ -7,8 +7,8 @@ Description: "Heart Rate example" //TODO: Needs description
 * code = $loinc#8867-4 "Heart rate"
 * subject.identifier.system = $fhir
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
-* component.code = $loinc#8867-4 "Heart rate"
-* component.valueQuantity = 78 '/min' "beats/min"
+* valueQuantity.value = 78
+* valueQuantity = $UCUM#/min "/min"
 * contained[0] = vital-signs-box
 * contained[+] = byteflies
 * device = Reference(vital-signs-box)

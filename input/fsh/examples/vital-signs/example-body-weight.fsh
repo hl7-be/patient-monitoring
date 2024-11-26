@@ -7,8 +7,8 @@ Description: "Body Weight example" //TODO: Needs description
 * code = $loinc#29463-7 "Body Weight"
 * subject.identifier.system = $fhir
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
-* component.code = $loinc#29463-7 "Body weight"
-* component.valueQuantity = 89.3 'kg' "kg"
+* valueQuantity.value = 89.3
+* valueQuantity = $UCUM#kg "kg"
 * contained[0] = vital-signs-box
 * contained[+] = byteflies
 * device = Reference(vital-signs-box)

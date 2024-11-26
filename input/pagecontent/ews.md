@@ -92,5 +92,6 @@ For detailed specifications, refer to the
 - [Oxygen Saturation Example](./Observation-OxygenSaturationExample.html)
 - [Respiratory Rate Example](./Observation-RespiratoryRateExample.html)
 - [Temperature Example](./Observation-BodyTemperatureExample.html)
-//- TODO add examples AVPU and NEWS
-These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
+- [Level of responsiveness Example](./Observation-LevelOfResponsivenessExample.html)
+- [National Early Warning Score Example](./Observation-NationalEarlyWarningScoreExample.html)
+
