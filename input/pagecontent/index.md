@@ -1,101 +1,27 @@
-# Introduction
+## Implementation Guide for Telemonitoring Prescription
 
-# Purpose
+### Introduction
 
-# Scope
+This Implementation Guide (IG) provides standardized guidance for Electronic Health Record (EHR) systems and Telemonitoring (TM) Providers. Developed in alignment with HL7 standards, it offers a unified framework for seamless data integration between EHRs and TM Providers. The guide is fully aligned with the Telemonitoring Prescription initiative. Additional information can be found at [telemonitoring-prescription.com](https://www.telemonitoring-prescription.com).
 
-# Audience
+### Purpose
 
-# Intellectual Property Considerations
+The primary goal of this IG is to standardize the use of FHIR outputs within the Telemonitoring Hub. By providing clear guidelines, it ensures that EHR systems can effectively interpret data sent by Telemonitoring Providers and received by prescribers (typically EHR systems). This facilitates streamlined and consistent communication across the healthcare ecosystem.
 
-While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
-as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
-any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
-licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
-  
-# Disclaimer
+### Scope
 
-The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
-This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-No liability can be inferred from the use or misuse of this specification, or its consequences.
-  
+The Telemonitoring Prescription focuses on integrating patient monitoring data into hospital and healthcare systems, regardless of where the data is collected—inside or outside a hospital. This guide emphasizes interoperability between hospital systems and external providers, ensuring that patient monitoring outcomes are seamlessly incorporated into clinical workflows.
 
-# Use Cases and Scenarios
-## Overview  
-## Common Scenarios  
-### Monitoring Chronic Conditions (e.g., Diabetes, Hypertension)  
-### Post-Surgical Recovery Monitoring  
-### COVID-19 or Infectious Disease Monitoring
-### Behavioral Health Monitoring  
+### Topics Covered
 
-# Key Concepts and Definitions
-## FHIR Basics for RPM  
-## Observation Resource Overview  
-## Profiles, Extensions, and Value Sets  
-## Terminologies and Coding Systems (e.g., LOINC, SNOMED CT)  
+- **Use Cases and Scenarios**: Practical examples to demonstrate the implementation of Telemonitoring in real-world settings.
+- **Key Concepts and Definitions**: Clear explanations of core terms and concepts relevant to the Telemonitoring Prescription.
+- **Interoperability**: Guidelines for achieving seamless data exchange between EHRs and TM Providers.
+- **FHIR Profiles and Terminology Bindings**: Detailed specifications for consistent use of FHIR standards.
+- **Sample Resources**: Examples of FHIR resources to facilitate implementation.
+- **Security and Privacy**: Best practices for ensuring compliance with privacy regulations and securing patient data.
+- **Implementation Guidance**:
+  - Handling errors and exceptions
+  - Best practices for deployment and integration
 
-# RPM Observation Profiles
-## General Structure of Observation Profiles  
-## Core RPM Observations  
-### Vital Signs (e.g., Heart Rate, Blood Pressure, Body Temperature)  
-### Physical Measurements (e.g., Weight, BMI)  
-### Activity Data (e.g., Steps, Calories Burned)  
-### Cardiovascular Monitoring (e.g., ECG, Pulse Oximetry)  
-### Respiratory Monitoring (e.g., Spirometry, Peak Flow)  
-### Behavioral and Mood Assessments  
-### Device-Specific Observations  
-
-# Data Flow and Interoperability
-## Data Collection and Transmission  
-## Data Transformation and Storage  
-## Interoperability with EHR Systems  
-## Handling Data from Multiple Sources  
-## Security and Privacy Considerations  
-
-# FHIR Profiles and Extensions
-## Profiles for RPM Observations  
-## Custom Extensions for Specialized Data  
-## Best Practices for Defining Extensions  
-## Example Profiles and Extensions  
-
-# Implementation Guidance
-## Conformance and Validation Requirements  
-## Handling Errors and Exceptions  
-## Workflow Integration Tips  
-## Best Practices for RPM Implementation  
-
-# Sample Transactions and Bundles
-## Patient Resource Example  
-## Observation Resource Example  
-## Bundled Transactions for RPM Scenarios  
-## Test Data Examples  
-
-# Terminology Bindings
-## Standardized Codes for RPM Observations  
-## Value Set Definitions  
-## Mapping Local Codes to Standard Codes  
-
-# Security and Privacy
-## Securing RPM Data Transfers  
-## Managing Patient Consent  
-## Access Control and Authentication  
-## Compliance with HIPAA, GDPR, or Other Regulations  
-
-# Testing and Validation
-## Tools for Validation (e.g., FHIR Validator)  
-## Test Scripts for RPM Observations  
-## Example Test Cases  
-
-# Appendix
-## Glossary of Terms  
-## References and Resources  
-## Change Log for the Guide  
-## FAQs  
-
-# Acknowledgments
-## Contributors  
-## Organizations and Stakeholders  
-
-# Contact Information
-## Feedback and Support  
-## IG Maintenance and Updates  
+This guide serves as a critical resource for ensuring the success of the Telemonitoring Prescription initiative by promoting consistency, interoperability, and security in patient monitoring data exchange.

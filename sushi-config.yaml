@@ -6,12 +6,11 @@
 # │  specific packageId is also provided in this file.                                             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-
 id: hl7.fhir.be.patient-monitoring
 canonical: http://hl7belgium.org/fhir/patient-monitoring
 # url: http://example.com/fhir/example
 name: Patient-Monitoring-Outcome
-title: "Patient Monitoring Outcome FHIR Implementation Guide"
+title: 'Patient Monitoring Outcome FHIR Implementation Guide'
 description: Patient Monitoring Outcome FHIR Implementation Guide.
 status: draft
 date: 2024-11-20
@@ -33,7 +32,7 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
+  name: My Organization
   url: http://example.com/committees
   email: my-group@example.com
 
@@ -123,13 +122,31 @@ dependencies:
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-# pages:
-#   Home: index.html
-#   Use cases: use-cases.html
-#   Usage: usage.html
-#   Artifacts: artifacts.html
-#   Downloads: downloads.html
-#   History: history.html
+pages:
+  index.md:
+    title: Patient Monitoring Outcome Home Page
+  overview.md:
+    title: Overview
+  recommendations.md:
+    title: General Recommendations
+  terminology.md:
+    title: Terminologies
+  downloads.md:
+    title: Useful Downloads
+  copyrights.md:
+    title: Acknowledgments, licenses and copyrights
+  changes.md:
+    title: IG Change History
+  telemonitoring-prescription.md:
+    title: Telemonitoring Prescription
+  heartfailure.md:
+    title: Heart failure
+  ews.md:
+    title: EWS (Early Warning Score)
+  overview-loinc.md:
+    title: Overview LOINC
+  totem.md:
+    title: TOTeM
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -153,12 +170,27 @@ dependencies:
 # To provide a custom menu.xml file, do not include this property and
 # include a `menu.xml` file in input/includes.
 menu:
-  Home: index.html
-  Use cases: use-cases.html
-  Usage: usage.html
-  Artifacts: artifacts.html
-  Downloads: downloads.html
-  History: history.html
+  Home:
+    Home: index.html
+    Telemonitoring Prescription: telemonitoring-prescription.html
+  Guidelines:
+    General Recommendations: recommendations.html
+    Terminologies: terminology.html
+  Use Cases:
+    Overview: overview.html
+    Heart failure: heartfailure.html
+    EWS: ews.html
+    TOTeM: totem.html
+    Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
+    Overview LOINC: overview-loinc.html
+
+  Artifact Index: artifacts.html
+  History: changes.html
+  Support:
+    FHIR Spec: https://hl7.org/fhir/R4/
+    Transversal Clinical Core: https://build.fhir.org/ig/hl7-be/core-clinical/
+    Downloads: downloads.html
+    Copyrights: copyrights.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -174,7 +206,6 @@ menu:
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
 FSHOnly: false
-
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
