@@ -1,4 +1,4 @@
-**DRAFT: 2024-11-25**
+**DRAFT: 2024-11-27**
 
 ### Care Pathway Overview
 
@@ -55,7 +55,7 @@
 
 #### Outcome Module - PDF
 
-- **Daily Updates**: Updated daily per measurement.
+- **Daily Updates**: Updated hourly.
 - **Content**: Overview of the questions and vital parameters.
 - **File Size**: ±100KB per PDF, max: 10MB per PDF.
 
@@ -65,7 +65,7 @@
 
 ##### Vital Signs
 
-- **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
+- **Frequency**: Maximum of 1 update per minute.
 - **LOINC Codes**:
   <div class="table-md"></div>
 
