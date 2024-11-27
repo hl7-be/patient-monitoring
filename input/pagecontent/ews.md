@@ -67,18 +67,18 @@
 
 - **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
 - **LOINC Codes**:
-<div class="table-md"></div>
+  <div class="table-md"></div>
 
-  | Description                          | Code(s)               | Possible answers     |
-  | ------------------------------------ | --------------------- | -------------------- |
-  | Heart rate (HR) measurement          | LOINC 8867-4          |                      |
-  | Blood pressure (BP) measurement      | LOINC 8480-6 / 8463-4 |                      |
-  | Body weight (BW) measurement         | LOINC 29463-7         |                      |
-  | Respiratory (RESP) measurement       | LOINC 9279-1          |                      |
-  | Temperature (TEMP) measurement       | LOINC 8310-5          |                      |
-  | Oxygen Saturation (SPO2) measurement | LOINC 59408-5         |                      |
-  | Level of responsiveness (AVPU scale) | LOINC 67775-7         | LOINC LL1845-8       |
-  | National Early Warning Score (NEWS)  | SNOMED 1287358002     |                      |
+  | Description                          | Code(s)                    | Possible answers |
+  | ------------------------------------ | -------------------------- | ---------------- |
+  | Heart rate (HR) measurement          | LOINC 8867-4               |                  |
+  | Blood pressure (BP) measurement      | LOINC 8480-6 / 8463-4      |                  |
+  | Body weight (BW) measurement         | LOINC 29463-7              |                  |
+  | Respiratory (RESP) measurement       | LOINC 9279-1               |                  |
+  | Temperature (TEMP) measurement       | LOINC 8310-5               |                  |
+  | Oxygen Saturation (SPO2) measurement | LOINC 2708-6 (sub 59408-5) |                  |
+  | Level of responsiveness (AVPU scale) | LOINC 67775-7              | LOINC LL1845-8   |
+  | National Early Warning Score (NEWS)  | SNOMED 1287358002          |                  |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
@@ -94,4 +94,3 @@ For detailed specifications, refer to the
 - [Temperature Example](./Observation-BodyTemperatureExample.html)
 - [Level of responsiveness Example](./Observation-LevelOfResponsivenessExample.html)
 - [National Early Warning Score Example](./Observation-NationalEarlyWarningScoreExample.html)
-
