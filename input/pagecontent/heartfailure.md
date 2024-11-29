@@ -61,11 +61,20 @@
 - **LOINC Codes**:
 <div class="table-md"></div>
 
+  | Description                     | Code(s)               |
+  | ------------------------------- | --------------------- |
+  | Heart rate (HR) measurement     | LOINC 8867-4          |
+  | Blood pressure (BP) measurement | LOINC 8480-6 / 8463-4 |
+  | Body weight (BW) measurement    | LOINC 29463-7         |
+
+  ##### Symptoms
+
+- **Frequency**: As frequent as registered by the patient. Average of 1 per day per symptom.
+- **Codes**:
+<div class="table-md"></div>
+
   | Description                     | Code(s)               | Possible answers                                                                                                              |
   | ------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-  | Heart rate (HR) measurement     | LOINC 8867-4          | Not applicable                                                                                                                |
-  | Blood pressure (BP) measurement | LOINC 8480-6 / 8463-4 | Not applicable                                                                                                                |
-  | Body weight (BW) measurement    | LOINC 29463-7         | Not applicable                                                                                                                |
   | Palpitations                    | SNOMED 80313002       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
   | Reduced appetite                | SNOMED 64379006       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
   | Shortness of breath             | SNOMED 267036007      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
