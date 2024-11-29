@@ -65,43 +65,43 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 <div class="table-md"></div>
 
-| Description              | Code(s)                    | Possible answers      |
-| ------------------------ | -------------------------- | --------------------- |
-| Heart rate               | LOINC 8867-4               |                       |
-| Blood pressure           | LOINC 8480-6 / 8463-4      |                       |
-| Body weight              | LOINC 29463-7              |                       |
-| Respiratory rate         | LOINC 9279-1               |                       |
-| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5) |                       |
-| Body temperature         | LOINC 8310-5               |                       |
-| Abdominal pain           | SNOMED 21522001            | LOINC 72514-3         |
-| Pain puncture wounds     | ??                         | LOINC 72514-3         |
-| Pain during urination    | SNOMED 49650001            | SNOMED 373066001 - ?? |
-| Pain in calves           | SNOMED 1264028004          | SNOMED 373066001 - ?? |
-| Pain medication taken    | ??                         | ??                    |
-| Well-being               | SNOMED 365275006           | ??                    |
-| Flatulence               | SNOMED 249504006           | ??                    |
-| Bowel movement           | SNOMED 39211005            | ??                    |
-| Nausea                   | SNOMED 422587007           | ??                    |
-| Vomiting                 | SNOMED 300359004           | ??                    |
-| Water intake last 24h    | LOINC 9007-6               | ??                    |
-| Meals last 24h           | ??                         | ??                    |
-| Coughing                 | SNOMED 263731006           | ??                    |
-| Product cough            | SNOMED 28743005            | ??                    |
-| Pressure in chest        | SNOMED 23924001            | ??                    |
-| Shortness of breath      | SNOMED 267036007           | ??                    |
-| Walking daily            | ??                         | ??                    |
-| Wound appearance         |                            | SNOMED 17621005       |
-| Concern about patient    | ??                         | SNOMED 373066001 - ?? |
-| Fraxiparine              | ??                         |                       |
+| Description              | Code(s)                    | Possible answers                                                                                                     |
+| ------------------------ | -------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Heart rate               | LOINC 8867-4               |                                                                                                                      |
+| Blood pressure           | LOINC 8480-6 / 8463-4      |                                                                                                                      |
+| Body weight              | LOINC 29463-7              |                                                                                                                      |
+| Respiratory rate         | LOINC 9279-1               |                                                                                                                      |
+| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5) |                                                                                                                      |
+| Body temperature         | LOINC 8310-5               |                                                                                                                      |
+| Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (pain scale 0-10)                                                                                      |
+| Pain puncture wounds     | ??                         | LOINC 72514-3 (pain scale 0-10)                                                                                      |
+| Pain during urination    | SNOMED 49650001            | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Pain in calves           | SNOMED 1264028004          | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Pain medication taken    | ??                         | ? (same amount as yesterday) <br> - ? (less than yesterday) <br> - ? (more than yesterday)                           |
+| Well-being               | SNOMED 365275006           | ? (same as yesterday) <br> - ? (better than yesterday) <br> - ? (worse than yesterday)                               |
+| Flatulence               | SNOMED 249504006           | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Bowel movement           | SNOMED 39211005            | SNOMED 2667000? (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                              |
+| Nausea                   | SNOMED 422587007           | ? (score 0-10)                                                                                                       |
+| Vomiting                 | SNOMED 300359004           | SNOMED 2667000? (no) <br> - ? (yes, 1 time) <br> - ? (yes, multiple times)                                           |
+| Water intake last 24h    | LOINC 9007-6               | ? (>2l) <br> - ? (1.5 to 2l) <br> - ? (1 to 1.5l ) <br> - ? (<1l)                                                    |
+| Meals last 24h           | ??                         | ? (no meals last 24h) <br> - ? (yes, normal (3 or more per day)) <br> - ? (yes, difficult (between 1 and 3 per day)) |
+| Coughing                 | SNOMED 263731006           | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Productive cough         | SNOMED 28743005            | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Pressure in chest        | SNOMED 23924001            | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Shortness of breath      | SNOMED 267036007           | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Walking daily            | ??                         | SNOMED 373066001 (yes) <br> - ? (no)                                                                                 |
+| Wound appearance         | ??                         | SNOMED 17621005 (normal) <br> - ? (clear exudate) <br> - ? (signs of infection)                                      |
+| Concern about patient    | ??                         | SNOMED 373066001 (yes) <br> - 2667000? (no)                                                                          |
+| Fraxiparine              | ??                         | ? (yes) <br> - ? (no)                                                                                                |
 
 ###### Colon surgery specific
 
 <div class="table-md"></div>
 
-| Description         | Code(s)         | Possible answers |
-| ------------------- | --------------- | ---------------- |
-| Pain surgical wound | ? ?             | LOINC 72514-3    |
-| Distended abdomen   | SNOMED 60728008 | ???              |
+| Description         | Code(s)         | Possible answers                        |
+| ------------------- | --------------- | --------------------------------------- |
+| Pain surgical wound | ? ?             | LOINC 72514-3 (pain scale 0-10)         |
+| Distended abdomen   | SNOMED 60728008 | ? (no) <br> ? (a little) <br> ? (fierce)|
 
 ###### Bariatric surgery specific
 
