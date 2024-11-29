@@ -75,33 +75,33 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Body temperature         | LOINC 8310-5               |  Not applicable                                                                                                        |
 | Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (pain scale 0-10)                                                                                        |
 | Pain puncture wounds     | ??                         | LOINC 72514-3 (pain scale 0-10)                                                                                        |
-| Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                     |
-| Pain in calves           | SNOMED 1264028004          | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                     |
-| Pain medication taken    | ??                         | - ? (same amount as yesterday) <br> - ? (less than yesterday) <br> - ? (more than yesterday)                           |
-| Well-being               | SNOMED 365275006           | - ? (same as yesterday) <br> - ? (better than yesterday) <br> - ? (worse than yesterday)                               |
-| Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (yes) <br> - 2667000? (no)                                                                     |
-| Bowel movement           | SNOMED 39211005            | SNOMED <br> - 2667000? (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                         |
+| Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Pain in calves           | SNOMED 1264028004          | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Pain medication taken    | ??                         | SNOMED <br> - 268910001 (unchanged) <br> - 27762005 (improved) <br> - 230993007                                        |
+| Well-being               | SNOMED 73595000            | SNOMED <br> - 268910001 (unchanged) <br> - 27762005 (improved) <br> - 230993007                                        |
+| Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Bowel movement           | SNOMED 39211005            | SNOMED <br> - 373067005 (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                        |
 | Nausea                   | SNOMED 422587007           | ? (score 0-10)                                                                                                         |
-| Vomiting                 | SNOMED 300359004           | SNOMED <br> - 2667000? (no) <br> - ? (yes, 1 time) <br> - ? (yes, multiple times)                                      |
+| Vomiting                 | SNOMED 300359004           | SNOMED <br> - 373067005 (no) <br> - ? (yes, 1 time) <br> - ? (yes, multiple times)                                     |
 | Water intake last 24h    | LOINC 9007-6               | - ? (>2l) <br> - ? (1.5 to 2l) <br> - ? (1 to 1.5l ) <br> - ? (<1l)                                                    |
 | Meals last 24h           | ??                         | - ? (no meals last 24h) <br> - ? (yes, normal (3 or more per day)) <br> - ? (yes, difficult (between 1 and 3 per day)) |
-| Coughing                 | SNOMED 263731006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                     |
-| Productive cough         | SNOMED 28743005            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                     |
-| Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                     |
-| Shortness of breath      | SNOMED 267036007           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                     |
-| Walking daily            | ??                         | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                            |
+| Coughing                 | SNOMED 263731006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Productive cough         | SNOMED 28743005            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Shortness of breath      | SNOMED 267036007           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Walking daily            | ??                         | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Wound appearance         | ??                         | SNOMED <br> - 17621005 (normal) <br> - ? (clear exudate) <br> - ? (signs of infection)                                 |
-| Concern about patient    | ??                         | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                     |
-| Fraxiparine              | ??                         | - ? (yes) <br> - ? (no)                                                                                                |
+| Concern about patient    | ??                         | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Fraxiparine              | ??                         | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 
 ###### Colon surgery specific
 
 <div class="table-md"></div>
 
-| Description         | Code(s)         | Possible answers                        |
-| ------------------- | --------------- | --------------------------------------- |
-| Pain surgical wound | ? ?             | LOINC 72514-3 (pain scale 0-10)         |
-| Distended abdomen   | SNOMED 60728008 | ? (no) <br> ? (a little) <br> ? (fierce)|
+| Description         | Code(s)         | Possible answers                                    |
+| ------------------- | --------------- | --------------------------------------------------- |
+| Pain surgical wound | ? ?             | LOINC 72514-3 (pain scale 0-10)                     |
+| Distended abdomen   | SNOMED 60728008 | 373067005 (no) <br> - ? (a little) <br> - ? (fierce)|
 
 ###### Bariatric surgery specific
 
@@ -109,7 +109,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 | Description   | Code(s) | Possible answers                                                                                                    |
 | ------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
-| Shoulder pain | ??      | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 260413007? (no) |
+| Shoulder pain | ??      | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no)        |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
