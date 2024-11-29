@@ -66,8 +66,8 @@
   | Heart rate (HR) measurement     | LOINC 8867-4          |
   | Blood pressure (BP) measurement | LOINC 8480-6 / 8463-4 |
   | Body weight (BW) measurement    | LOINC 29463-7         |
-
-  ##### Symptoms
+ 
+##### Symptoms
 
 - **Frequency**: As frequent as registered by the patient. Average of 1 per day per symptom.
 - **Codes**:
