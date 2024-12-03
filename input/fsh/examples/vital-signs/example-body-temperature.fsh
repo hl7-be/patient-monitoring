@@ -1,5 +1,5 @@
 Instance: BodyTemperatureExample
-InstanceOf: $vitalsigns
+InstanceOf: http://hl7.org/fhir/StructureDefinition/bodytemp
 Usage: #example
 Description: "Temperature example" //TODO: Needs description
 * status = #final

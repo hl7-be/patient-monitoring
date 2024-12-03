@@ -1,5 +1,5 @@
 Instance: BloodPressureExample
-InstanceOf: $vitalsigns
+InstanceOf: http://hl7.org/fhir/StructureDefinition/bp
 Usage: #example
 Description: "Blood Pressure example" //TODO: Needs description
 * status = #final

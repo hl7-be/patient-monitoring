@@ -1,5 +1,5 @@
 Instance: OxygenSaturationExample
-InstanceOf: $vitalsigns
+InstanceOf: http://hl7.org/fhir/StructureDefinition/oxygensat
 Usage: #example
 Description: "Oxygen saturation example" //TODO: Needs description
 * status = #final

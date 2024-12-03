@@ -1,5 +1,5 @@
 Instance: BodyWeightExample
-InstanceOf: $vitalsigns
+InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
 Usage: #example
 Description: "Body Weight example" //TODO: Needs description
 * status = #final
