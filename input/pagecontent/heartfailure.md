@@ -105,3 +105,4 @@ For detailed specifications, refer to the
 - [Blood Pressure Example](./Observation-BloodPressureExample.html)
 - [Weight Example](./Observation-BodyWeightExample.html)
 - [Heart Rate Example](./Observation-HeartRateExample.html)
+- [Reduced Appetite Example](./Observation-ReducedAppetiteExample.html)
