@@ -90,7 +90,7 @@
   | Dizziness                       | SNOMED 404640003      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
   | Confusion                       | SNOMED 40917007       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
   | Foot swelling                   | SNOMED 297142003      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Fear or depression              | ?                     | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
+  | Fear or depression              | <span class="warning">??</span> | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
