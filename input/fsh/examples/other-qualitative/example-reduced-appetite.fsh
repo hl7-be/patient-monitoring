@@ -4,7 +4,7 @@ Usage: #example
 Title: "Reduced appetite example"
 Description: "Answer options are absent / mild / moderate / severe."
 * status = #final
-* code = $snomed#664379006 "Reduced appetite" 
+* code = $snomed#64379006 "Reduced appetite" 
 * subject.identifier.system = $fhir
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
 * valueCodeableConcept = $snomed#255604002
