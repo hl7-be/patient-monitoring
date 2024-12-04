@@ -86,6 +86,39 @@ This FHIR implementation content is currently under development and may be subje
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
+- **Blood Pressure BodySite**
+  <div class="table-md"></div>
+
+  | Location  | SNOMED-CT Code(s) |
+  | --------- | ----------------- |
+  | Right Arm | SNOMED 368209003  |
+  | Left Arm  | SNOMED 368208006  |
+
+- **Blood Pressure Specifics**
+  <div class="table-md"></div>
+
+  | Type                              | SNOMED-CT Code(s) |
+  | --------------------------------- | ----------------- |
+  | Standing diastolic blood pressure | 400975005         |
+  | Lying diastolic blood pressure    | 407557002         |
+  | Sitting diastolic blood pressure  | 407555005         |
+  | Diastolic blood pressure          | 271650006         |
+  |                                   |                   |
+  | Standing systolic blood pressure  | 400974009         |
+  | Lying systolic blood pressure     | 407556006         |
+  | Sitting systolic blood pressure   | 407554009         |
+  | Systolic blood pressure           | 271649006         |
+
+- **Temperature BodySite**
+    <div class="table-md"></div>
+
+  | Location                 | SNOMED-CT Code(s) |
+  | ------------------------ | ----------------- |
+  | Ear                      | 117590005         |
+  | Forehead                 | 52795006          |
+  | Oral cavity (sublingual) | 74262004          |
+  | Axillary fossa           | 422543003         |
+
 ##### Specification:
 
 For detailed specifications, refer to the
