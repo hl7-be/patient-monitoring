@@ -1,5 +1,5 @@
 Instance: HeartRateExample
-InstanceOf: $vitalsigns
+InstanceOf: http://hl7.org/fhir/StructureDefinition/heartrate
 Usage: #example
 Description: "Heart Rate example" //TODO: Needs description
 * status = #final

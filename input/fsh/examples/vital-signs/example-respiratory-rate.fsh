@@ -1,5 +1,5 @@
 Instance: RespiratoryRateExample
-InstanceOf: $vitalsigns
+InstanceOf: http://hl7.org/fhir/StructureDefinition/resprate
 Usage: #example
 Description: "Respiration example" //TODO: Needs description
 * status = #final
