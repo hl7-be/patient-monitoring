@@ -140,7 +140,7 @@ pages:
   heartfailure.md:
     title: Heart failure
   ews.md:
-    title: EWS (Early Warning Score)
+    title: NEWS (National Early Warning Score)
   overview-loinc.md:
     title: Overview LOINC
   totem.md:
