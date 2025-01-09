@@ -81,7 +81,7 @@ This FHIR implementation content is currently under development and may be subje
   | Respiratory (RESP) measurement       | LOINC 9279-1               |                  |
   | Temperature (TEMP) measurement       | LOINC 8310-5               |                  |
   | Oxygen Saturation (SPO2) measurement | LOINC 2708-6 (sub 59408-5) |                  |
-  | Level of responsiveness (AVPU scale) | LOINC 67775-7              | LOINC LL1845-8   |
+  | Level of responsiveness (AVPU scale) | LOINC 67775-7              | LOINC LA9340-6 (Alert) <br> LOINC LA17108-4 (Verbal) <br> LOINC  LA17107-6 (Painful) <br> LOINC LA9343-0 (Unresponsive) <br> LOINC LA6560-2 (Confused) <br>|
   | National Early Warning Score (NEWS)  | SNOMED 1287358002          |                  |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
