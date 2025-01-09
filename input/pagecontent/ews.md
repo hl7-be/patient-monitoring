@@ -39,7 +39,7 @@ This FHIR implementation content is currently under development and may be subje
   - Temperature
   - Respiratory Rate
   - Oxygen
-  - AVPU
+  - ACVPU
     - Frequency: Daily, 3 times per day, 10 days.
 
 #### Data Collection
