@@ -86,8 +86,8 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Well-being               | SNOMED 73595000            | SNOMED <br> - 268910001 (unchanged) <br> - 27762005 (improved) <br> - 230993007                                        |
 | Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Bowel movement           | SNOMED 39211005            | SNOMED <br> - 373067005 (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                        |
-| Nausea                   | SNOMED 422587007           | LOINC LA137-2 (None) <br> LOINC LA6752-5 (Mild) <br> LOINC LA6751-7 (Moderate) <br> LOINC LA6750-9 (Severe)            |
-| Vomiting                 | SNOMED 300359004           | LOINC LA137-2 (None) <br> LOINC LA6752-5 (Mild) <br> LOINC LA6751-7 (Moderate) <br> LOINC LA6750-9 (Severe)            |
+| Nausea                   | SNOMED 422587007           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
+| Vomiting                 | SNOMED 300359004           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
 | Coughing                 | SNOMED 263731006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Productive cough         | SNOMED 28743005            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
@@ -100,7 +100,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Description         | Code(s)         | Possible answers                                    |
 | ------------------- | --------------- | --------------------------------------------------- |
 | Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                     |
-| Distended abdomen   | SNOMED 60728008 | LOINC LA137-2 (None) <br> LOINC LA6752-5 (Mild) <br> LOINC LA6751-7 (Moderate) <br> LOINC LA6750-9 (Severe) |
+| Distended abdomen   | SNOMED 60728008 | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)       |
 
 ###### Bariatric surgery specific
 
@@ -123,21 +123,9 @@ For detailed specifications, refer to the
 - [Saturation Example](./Observation-OxygenSaturationExample.html)
 - [Abdominal pain Example](./Observation-AbdominalPainExample.html)
 - [Pain surgical wound Example](./Observation-PainSurgicalWoundsExample.html)
-- Pain puncture wounds Example
 - [Pain during urination Example](./Observation-PainDuringUrinationExample.html)
 - [Pain in calves Example](./Observation-PainInCalvesExample.html)
 - [Pain medication taken Example](./Observation-PainMedicationTakenExample.html)
-- Well-being Example
-- Flatulence Example
-- Bowel movement Example
 - [Distended abdomen Example](./Observation-DistendedAbdomenExample.html)
-- Nausea Example
-- Vomiting Example
-- Water intake last 24h Example
-- Meals last 24h Example
-- Coughing Example
-- Mucus when coughing Example
-- Pression on chest Example
 - [Shortness of breath Example](./Observation-ShortnessOfBreathExample.html)
-- Walking daily Example
 - [Shoulder pain Example](./Observation-ShoulderPainExample.html)
