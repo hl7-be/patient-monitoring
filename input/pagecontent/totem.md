@@ -80,23 +80,18 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (pain scale 0-10)                                                                                        |
 | Pain puncture wounds     | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                                   |
 | Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Renal pain               | SNOMED 274279008           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Pain in calves           | SNOMED 1264028004          | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Pain medication taken    | <span class="warning">??</span> | SNOMED <br> - 268910001 (unchanged) <br> - 27762005 (improved) <br> - 230993007                                   |
+| Pain provoked by eating  | SNOMED 426277009           | LOINC 72514-3 (pain scale 0-10)                                                                                        |
 | Well-being               | SNOMED 73595000            | SNOMED <br> - 268910001 (unchanged) <br> - 27762005 (improved) <br> - 230993007                                        |
 | Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Bowel movement           | SNOMED 39211005            | SNOMED <br> - 373067005 (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                        |
 | Nausea                   | SNOMED 422587007           | LOINC LA137-2 (None) <br> LOINC LA6752-5 (Mild) <br> LOINC LA6751-7 (Moderate) <br> LOINC LA6750-9 (Severe)            |
 | Vomiting                 | SNOMED 300359004           | LOINC LA137-2 (None) <br> LOINC LA6752-5 (Mild) <br> LOINC LA6751-7 (Moderate) <br> LOINC LA6750-9 (Severe)            |
-| Water intake last 24h    | LOINC 9007-6               | - <span class="warning">??</span> (>2l) <br> - <span class="warning">??</span> (1.5 to 2l) <br> - <span class="warning">??</span> (1 to 1.5l ) <br> - <span class="warning">??</span> (<1l)                                                    |
-| Meals last 24h           | <span class="warning">??</span> | - <span class="warning">??</span> (no meals last 24h) <br> - <span class="warning">??</span> (yes, normal (3 or more per day)) <br> - <span class="warning">??</span> (yes, difficult (between 1 and 3 per day)) |
 | Coughing                 | SNOMED 263731006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Productive cough         | SNOMED 28743005            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Shortness of breath      | SNOMED 267036007           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Walking daily            | <span class="warning">??</span> | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                               |
-| Wound appearance         | <span class="warning">??</span> | SNOMED <br> - 17621005 (normal) <br> - <span class="warning">??</span> (clear exudate) <br> - <span class="warning">??</span> (signs of infection)                                 |
-| Concern about patient    | <span class="warning">??</span> | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                               |
-| Fraxiparine              | <span class="warning">??</span> | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                               |
 
 ###### Colon surgery specific
 
@@ -105,7 +100,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Description         | Code(s)         | Possible answers                                    |
 | ------------------- | --------------- | --------------------------------------------------- |
 | Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                     |
-| Distended abdomen   | SNOMED 60728008 | 373067005 (no) <br> - <span class="warning">??</span> (a little) <br> - <span class="warning">??</span> (fierce)|
+| Distended abdomen   | SNOMED 60728008 | LOINC LA137-2 (None) <br> LOINC LA6752-5 (Mild) <br> LOINC LA6751-7 (Moderate) <br> LOINC LA6750-9 (Severe) |
 
 ###### Bariatric surgery specific
 
