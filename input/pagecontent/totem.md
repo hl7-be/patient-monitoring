@@ -32,21 +32,19 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   - Pain surgical wound
   - Pain puncture wounds
   - Pain during urination
+  - Renal pain
   - Pain in calves
-  - Pain medication taken
+  - Pain provoked by eating
   - Well-being
   - Flatulence
   - Bowel movement
   - Distended abdomen
   - Nausea
   - Vomiting
-  - Water intake last 24h
-  - Meals last 24h
   - Coughing
-  - Mucus when coughing
+  - Productive cough
   - Pression on chest
   - Shortness of breath
-  - Walking daily
   - Shoulder pain
 
 - **Frequency**: 3 times a day, 7 days a week.

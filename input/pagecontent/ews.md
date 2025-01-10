@@ -40,6 +40,7 @@ This FHIR implementation content is currently under development and may be subje
   - Respiratory Rate
   - Oxygen
   - ACVPU
+  - NEWS
     - Frequency: Daily, 3 times per day, 10 days.
 
 #### Data Collection
