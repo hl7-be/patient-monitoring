@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/PainInCalvesExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PainInCalvesExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PainInCalvesExample</b></p><a name=\"PainInCalvesExample\"> </a><a name=\"hcPainInCalvesExample\"> </a><a name=\"PainInCalvesExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1264028004}\">Pain in muscle of lower leg</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-15 09:56:00+0000 --&gt; 2024-11-15 09:57:00+0000</p><p><b>performer</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes (qualifier value)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1264028004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1264028004" ] ;
+       fhir:display [ fhir:v "Pain in muscle of lower leg" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://remecare.github.io/patient-monitoring/wip/"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2024-11-15T09:56:00+00:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-11-15T09:57:00+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://remecare.github.io/patient-monitoring/wip/"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:373066001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "373066001" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

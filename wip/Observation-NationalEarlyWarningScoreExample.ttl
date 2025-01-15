@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/NationalEarlyWarningScoreExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NationalEarlyWarningScoreExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation NationalEarlyWarningScoreExample</b></p><a name=\"NationalEarlyWarningScoreExample\"> </a><a name=\"hcNationalEarlyWarningScoreExample\"> </a><a name=\"NationalEarlyWarningScoreExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1287358002}\">National Early Warning Score</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-19 06:48:20+0000</p><p><b>performer</b>: <a href=\"#hcNationalEarlyWarningScoreExample/nurse\">PractitionerRole Nurse</a></p><p><b>value</b>: 6</p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #nurse</b></p><a name=\"NationalEarlyWarningScoreExample/nurse\"> </a><a name=\"hcNationalEarlyWarningScoreExample/nurse\"> </a><a name=\"NationalEarlyWarningScoreExample/nurse-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persnurse}\">Nurse</span></p></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:PractitionerRole ;
+     fhir:id [ fhir:v "nurse" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole>
+       ] )
+     ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "persnurse" ] ;
+         fhir:display [ fhir:v "Nurse" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1287358002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1287358002" ] ;
+       fhir:display [ fhir:v "National Early Warning Score" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://remecare.github.io/patient-monitoring/wip/"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-11-19T06:48:20+00:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:reference [ fhir:v "#nurse" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "6"^^xsd:decimal ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

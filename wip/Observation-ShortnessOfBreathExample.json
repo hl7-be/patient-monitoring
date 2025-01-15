@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ShortnessOfBreathExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ShortnessOfBreathExample</b></p><a name=\"ShortnessOfBreathExample\"> </a><a name=\"hcShortnessOfBreathExample\"> </a><a name=\"ShortnessOfBreathExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 267036007}\">Shortness of breath</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-19 06:48:20+0000</p><p><b>performer</b>: <a href=\"#hcShortnessOfBreathExample/nurse\">PractitionerRole Nurse</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes (qualifier value)</span></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #nurse</b></p><a name=\"ShortnessOfBreathExample/nurse\"> </a><a name=\"hcShortnessOfBreathExample/nurse\"> </a><a name=\"ShortnessOfBreathExample/nurse-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persnurse}\">Nurse</span></p></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "PractitionerRole",
+    "id" : "nurse",
+    "meta" : {
+      "profile" : ["https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"]
+    },
+    "code" : [{
+      "coding" : [{
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+        "code" : "persnurse",
+        "display" : "Nurse"
+      }]
+    }]
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "267036007",
+      "display" : "Shortness of breath"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://remecare.github.io/patient-monitoring/wip/",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectiveDateTime" : "2024-11-19T06:48:20+00:00",
+  "performer" : [{
+    "reference" : "#nurse"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "373066001"
+    }]
+  }
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BodyTemperatureExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/bodytemp"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation BodyTemperatureExample</b></p><a name="BodyTemperatureExample"> </a><a name="hcBodyTemperatureExample"> </a><a name="BodyTemperatureExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8310-5}">Body Temperature</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2024-11-19 19:30:42+0000</p><p><b>performer</b>: <a href="#hcBodyTemperatureExample/byteflies">Organization Byteflies</a></p><p><b>value</b>: 35.29 C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>device</b>: <a href="#hcBodyTemperatureExample/vital-signs-box">Device: identifier = 240822yti3tgeyay; manufacturer = Byteflies</a></p><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Device #vital-signs-box</b></p><a name="BodyTemperatureExample/vital-signs-box"> </a><a name="hcBodyTemperatureExample/vital-signs-box"> </a><a name="BodyTemperatureExample/vital-signs-box-en-US"> </a><p><b>identifier</b>: 240822yti3tgeyay</p><p><b>manufacturer</b>: Byteflies</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>VS-4</td><td>other</td></tr></table></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Organization #byteflies</b></p><a name="BodyTemperatureExample/byteflies"> </a><a name="hcBodyTemperatureExample/byteflies"> </a><a name="BodyTemperatureExample/byteflies-en-US"> </a><p><b>name</b>: Byteflies</p></blockquote></div>
+  </text>
+  <contained>
+    <Device>
+      <id value="vital-signs-box"/>
+      <meta>
+        <tag>
+          <system value="https://api-vitalsigns.byteflies.net/version"/>
+          <code value="20241028-1511"/>
+          <display value="API Version 20241028-1511"/>
+        </tag>
+      </meta>
+      <identifier>
+        <value value="240822yti3tgeyay"/>
+      </identifier>
+      <manufacturer value="Byteflies"/>
+      <deviceName>
+        <name value="VS-4"/>
+        <type value="other"/>
+      </deviceName>
+    </Device>
+  </contained>
+  <contained>
+    <Organization>
+      <id value="byteflies"/>
+      <name value="Byteflies"/>
+    </Organization>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8310-5"/>
+      <display value="Body Temperature"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://remecare.github.io/patient-monitoring/wip/"/>
+      <value value="EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2024-11-19T19:30:42+00:00"/>
+  <performer>
+    <reference value="#byteflies"/>
+  </performer>
+  <valueQuantity>
+    <value value="35.29"/>
+    <unit value="C"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="Cel"/>
+  </valueQuantity>
+  <device>
+    <reference value="#vital-signs-box"/>
+  </device>
+</Observation>

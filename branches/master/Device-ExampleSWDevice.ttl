@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Device/ExampleSWDevice> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleSWDevice"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/SWDevice"^^xsd:anyURI ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/SWDevice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"ExampleSWDevice\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;ExampleSWDevice&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SWDevice.html\">SWDevice</a></p></div><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>531975 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531975)</span></td><td>1.2.0</td></tr></table></div>"
+  ] ; # 
+  fhir:version ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531975" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1.2.0" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

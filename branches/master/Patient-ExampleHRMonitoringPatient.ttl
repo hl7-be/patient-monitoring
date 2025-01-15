@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Patient/ExampleHRMonitoringPatient> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleHRMonitoringPatient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringPatient"^^xsd:anyURI ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( username: johndoe)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">userid: 123456</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "username" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://somesystem/identifiertypes/username"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "johndoe" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "userid" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://somesystem/identifiertypes/userid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

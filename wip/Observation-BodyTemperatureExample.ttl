@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyTemperatureExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BodyTemperatureExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/bodytemp"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/bodytemp>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BodyTemperatureExample</b></p><a name=\"BodyTemperatureExample\"> </a><a name=\"hcBodyTemperatureExample\"> </a><a name=\"BodyTemperatureExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body Temperature</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2024-11-19 19:30:42+0000</p><p><b>performer</b>: <a href=\"#hcBodyTemperatureExample/byteflies\">Organization Byteflies</a></p><p><b>value</b>: 35.29 C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>device</b>: <a href=\"#hcBodyTemperatureExample/vital-signs-box\">Device: identifier = 240822yti3tgeyay; manufacturer = Byteflies</a></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Device #vital-signs-box</b></p><a name=\"BodyTemperatureExample/vital-signs-box\"> </a><a name=\"hcBodyTemperatureExample/vital-signs-box\"> </a><a name=\"BodyTemperatureExample/vital-signs-box-en-US\"> </a><p><b>identifier</b>: 240822yti3tgeyay</p><p><b>manufacturer</b>: Byteflies</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>VS-4</td><td>other</td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization #byteflies</b></p><a name=\"BodyTemperatureExample/byteflies\"> </a><a name=\"hcBodyTemperatureExample/byteflies\"> </a><a name=\"BodyTemperatureExample/byteflies-en-US\"> </a><p><b>name</b>: Byteflies</p></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Device ;
+     fhir:id [ fhir:v "vital-signs-box" ] ;
+     fhir:meta [
+       fhir:tag ( [
+         fhir:system [ fhir:v "https://api-vitalsigns.byteflies.net/version"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20241028-1511" ] ;
+         fhir:display [ fhir:v "API Version 20241028-1511" ]
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:value [ fhir:v "240822yti3tgeyay" ]
+     ] ) ;
+     fhir:manufacturer [ fhir:v "Byteflies" ] ;
+     fhir:deviceName ( [
+       fhir:name [ fhir:v "VS-4" ] ;
+       fhir:type [ fhir:v "other" ]
+     ] )
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "byteflies" ] ;
+     fhir:name [ fhir:v "Byteflies" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8310-5" ] ;
+       fhir:display [ fhir:v "Body Temperature" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://remecare.github.io/patient-monitoring/wip/"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "EFD5E060-9522-48BE-9ECC-3BFA54EA3666" ]
+     ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-11-19T19:30:42+00:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:reference [ fhir:v "#byteflies" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "35.29"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "C" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] ; # 
+  fhir:device [
+     fhir:reference [ fhir:v "#vital-signs-box" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,314 @@
+{
+  "date" : "Wed, 20 Nov, 2024 10:37:18 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json",
+      "size" : 3866,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 56,
+          "length" : 13
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 56,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 56,
+          "length" : 418
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 1079
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 86
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 67
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 85,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-BloodPressureExample.json",
+      "size" : 1525,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 282
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 1183
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-BodyTemperatureExample.json",
+      "size" : 1153,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 155
+        },
+        {
+          "activity" : "validate",
+          "start" : 62,
+          "length" : 461
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-BodyWeightExample.json",
+      "size" : 1139,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 159
+        },
+        {
+          "activity" : "validate",
+          "start" : 62,
+          "length" : 601
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-HeartRateExample.json",
+      "size" : 1141,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 10
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 159
+        },
+        {
+          "activity" : "validate",
+          "start" : 63,
+          "length" : 537
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-OxygenSaturationExample.json",
+      "size" : 1191,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 58,
+          "length" : 159
+        },
+        {
+          "activity" : "validate",
+          "start" : 63,
+          "length" : 644
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RespiratoryRateExample.json",
+      "size" : 1224,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 9
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 58,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 64,
+          "length" : 312
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PatientMonitoring.json",
+      "size" : 18565,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 22
+        },
+        {
+          "activity" : "load",
+          "start" : 56,
+          "length" : 22
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 94
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 58,
+          "length" : 73
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 1498
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 432
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 2292
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 85,
+          "length" : 13
+        }
+      ]
+    }
+  ]
+}

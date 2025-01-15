@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Observation",
+  "id" : "BodyWeightExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/vitalsigns"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BodyWeightExample</b></p><a name=\"BodyWeightExample\"> </a><a name=\"hcBodyWeightExample\"> </a><a name=\"BodyWeightExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body Weight</span></p><p><b>subject</b>: <a href=\"Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9\">Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9</a></p><p><b>effective</b>: 2024-11-19 06:48:20+0000</p><p><b>device</b>: <a href=\"Device/Byteflies Vital Signs\">Device/Byteflies Vital Signs</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></td><td>39.3 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></td></tr></table></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7",
+      "display" : "Body Weight"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9"
+  },
+  "effectiveDateTime" : "2024-11-19T06:48:20+00:00",
+  "device" : {
+    "reference" : "Device/Byteflies Vital Signs"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29463-7",
+        "display" : "Body weight"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 39.3,
+      "unit" : "kg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kg"
+    }
+  }]
+}

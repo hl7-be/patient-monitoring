@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "FCContextSymptomsCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem FCContextSymptomsCS</b></p><a name=\"FCContextSymptomsCS\"> </a><a name=\"hcFCContextSymptomsCS\"> </a><a name=\"FCContextSymptomsCS-en-US\"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"FCContextSymptomsCS-1\"> </a></td><td>no_symptoms</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"FCContextSymptomsCS-2\"> </a></td><td>lightheaded</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"FCContextSymptomsCS-3\"> </a></td><td>confused</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"FCContextSymptomsCS-4\"> </a></td><td>fatigue</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"FCContextSymptomsCS-5\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"FCContextSymptomsCS-6\"> </a></td><td>palpitations</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"FCContextSymptomsCS-7\"> </a></td><td>chest_pains</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"FCContextSymptomsCS-8\"> </a></td><td>shortness_of_breath</td></tr></table></div>"
+  },
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS",
+  "version" : "0.1.0",
+  "name" : "FCContextSymptomsCS",
+  "title" : "HR Context Symptoms Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-23T09:12:19+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Context Symptoms",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "1",
+    "display" : "no_symptoms"
+  },
+  {
+    "code" : "2",
+    "display" : "lightheaded"
+  },
+  {
+    "code" : "3",
+    "display" : "confused"
+  },
+  {
+    "code" : "4",
+    "display" : "fatigue"
+  },
+  {
+    "code" : "5",
+    "display" : "other"
+  },
+  {
+    "code" : "6",
+    "display" : "palpitations"
+  },
+  {
+    "code" : "7",
+    "display" : "chest_pains"
+  },
+  {
+    "code" : "8",
+    "display" : "shortness_of_breath"
+  }]
+}

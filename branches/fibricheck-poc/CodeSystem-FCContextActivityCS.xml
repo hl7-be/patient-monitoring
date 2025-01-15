@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="FCContextActivityCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem FCContextActivityCS</b></p><a name="FCContextActivityCS"> </a><a name="hcFCContextActivityCS"> </a><a name="FCContextActivityCS-en-US"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="FCContextActivityCS-1"> </a></td><td>activity</td></tr><tr><td style="white-space:nowrap">2<a name="FCContextActivityCS-2"> </a></td><td>resting</td></tr><tr><td style="white-space:nowrap">3<a name="FCContextActivityCS-3"> </a></td><td>sleeping</td></tr><tr><td style="white-space:nowrap">4<a name="FCContextActivityCS-4"> </a></td><td>sitting</td></tr><tr><td style="white-space:nowrap">5<a name="FCContextActivityCS-5"> </a></td><td>walking</td></tr><tr><td style="white-space:nowrap">6<a name="FCContextActivityCS-6"> </a></td><td>working</td></tr><tr><td style="white-space:nowrap">7<a name="FCContextActivityCS-7"> </a></td><td>exercising</td></tr><tr><td style="white-space:nowrap">8<a name="FCContextActivityCS-8"> </a></td><td>other</td></tr><tr><td style="white-space:nowrap">9<a name="FCContextActivityCS-9"> </a></td><td>standing</td></tr><tr><td style="white-space:nowrap">10<a name="FCContextActivityCS-10"> </a></td><td>housekeeping</td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+  <version value="0.1.0"/>
+  <name value="FCContextActivityCS"/>
+  <title value="HR Context Activity Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-10-23T09:12:19+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Context Activity"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="1"/>
+    <display value="activity"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="resting"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="sleeping"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="sitting"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="walking"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="working"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="exercising"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="other"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="standing"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="housekeeping"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="LevelOfResponsivenessExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation LevelOfResponsivenessExample</b></p><a name="LevelOfResponsivenessExample"> </a><a name="hcLevelOfResponsivenessExample"> </a><a name="LevelOfResponsivenessExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 67775-7}">Level of responsiveness</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-19 06:48:20+0000</p><p><b>performer</b>: <a href="#hcLevelOfResponsivenessExample/nurse">PractitionerRole Nurse</a></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA17108-4}">Verbal</span></p><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: PractitionerRole #nurse</b></p><a name="LevelOfResponsivenessExample/nurse"> </a><a name="hcLevelOfResponsivenessExample/nurse"> </a><a name="LevelOfResponsivenessExample/nurse-en-US"> </a><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persnurse}">Nurse</span></p></blockquote></div>
+  </text>
+  <contained>
+    <PractitionerRole>
+      <id value="nurse"/>
+      <meta>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+      </meta>
+      <code>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+          <code value="persnurse"/>
+          <display value="Nurse"/>
+        </coding>
+      </code>
+    </PractitionerRole>
+  </contained>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="67775-7"/>
+      <display value="Level of responsiveness"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://remecare.github.io/patient-monitoring/wip/"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2024-11-19T06:48:20+00:00"/>
+  <performer>
+    <reference value="#nurse"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA17108-4"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

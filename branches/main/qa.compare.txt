@@ -1,0 +1,19 @@
+PatientMonitoring : Validation Results
+=========================================
+
+err = 0, warn = 6, info = 0
+$--
+Generated $--. FHIR version $-- for hl7.fhir.be.patient-monitoring#$-- (canonical = http://hl7belgium.org/fhir/patient-monitoring)
+ Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientMonitoring : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json ==
+== fsh-generated/resources/StructureDefinition-PatientMonitoring.json ==
+WARNING: StructureDefinition/PatientMonitoring: StructureDefinition.snapshot.element[62]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/PatientMonitoring: StructureDefinition.differential.element[41]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'

@@ -1,0 +1,108 @@
+{
+  "date" : "Wed, 20 Nov, 2024 10:33:46 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json",
+      "size" : 2301,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 43,
+          "length" : 22
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 204
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 1078
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 90
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 57
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 59,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PatientMonitoring.json",
+      "size" : 18566,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 24
+        },
+        {
+          "activity" : "load",
+          "start" : 43,
+          "length" : 33
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 43,
+          "length" : 72
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 80
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 1502
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 476
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 2183
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 59,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 63,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

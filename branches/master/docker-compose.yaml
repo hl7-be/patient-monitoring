@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  fhir-server:
+    image: costateixeira/hapi:test
+    #image: hapiproject/hapi:latest
+    restart: always
+    container_name: ${server_name}
+    ports:
+      - ${server_port:-8080}:8080
+    environment:
+      - spring.config.location=${ig_url}/application.yaml
+      - hapi.fhir.fhir_version=${fhir_version}
+      - hapi.fhir.implementationguides.${ig_code}.url=${ig_url}/package.tgz
+      - hapi.fhir.implementationguides.${ig_code}.name=${ig_package_name}
+      - hapi.fhir.implementationguides.${ig_code}.version=${ig_version}
+    volumes:
+      - /mnt/c/work/implementationguides/monitoring-apps/input/images/apps:/apps
+
+  ember:
+    image: jkiddo/ember:latest
+    environment:
+      - location=${ig_url}/package.tgz
+      - serverBase=http://fhir-server:8080/fhir  # Leave this as is, this is ember stuff
