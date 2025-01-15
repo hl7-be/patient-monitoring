@@ -2,7 +2,7 @@ Instance: LevelOfResponsivenessExample
 InstanceOf: Observation
 Usage: #example
 Title: "Level of responsiveness example"
-Description: "Level of responsiveness (AVPU scale)"
+Description: "Level of responsiveness (ACVPU scale)"
 * status = #final
 * code = $loinc#67775-7 "Level of responsiveness"
 * subject.identifier.system = $fhir

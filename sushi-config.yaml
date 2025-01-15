@@ -137,12 +137,10 @@ pages:
     title: Acknowledgments, licenses and copyrights
   changes.md:
     title: IG Change History
-  telemonitoring-prescription.md:
-    title: Telemonitoring Prescription
   heartfailure.md:
     title: Heart failure
   ews.md:
-    title: EWS (Early Warning Score)
+    title: NEWS (National Early Warning Score)
   overview-loinc.md:
     title: Overview LOINC
   totem.md:
@@ -170,20 +168,17 @@ pages:
 # To provide a custom menu.xml file, do not include this property and
 # include a `menu.xml` file in input/includes.
 menu:
-  Home:
-    Home: index.html
-    Telemonitoring Prescription: telemonitoring-prescription.html
+  Home: index.html
   Guidelines:
     General Recommendations: recommendations.html
     Terminologies: terminology.html
   Use Cases:
     Overview: overview.html
     Heart failure: heartfailure.html
-    EWS: ews.html
+    NEWS: ews.html
     TOTeM: totem.html
     Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
     Overview LOINC: overview-loinc.html
-
   Artifact Index: artifacts.html
   History: changes.html
   Support:

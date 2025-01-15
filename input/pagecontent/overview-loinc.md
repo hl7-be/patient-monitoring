@@ -1,18 +1,12 @@
-### Ongoing
-
-| LOINC      | SNOMED CT        | Short Display     |
-|------------|------------------|-------------------|
-|            | 29463-7          | Body weight       |
-|            | 8310-5           | Body temperature  |
-|            | 8480-6           | BP sys            |
-|            | 8462-4           | BP dia            |
-|            | 59408-5          | Oxygen saturation |
-|            | 8867-4           | Heart rate        |
+<div class="stu-note">
+This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
+</div>
 
 ### TO-DO
+<div class="table-md"></div>
 
 | Observations Patient Monitoring |                              |                             |                                                                                                                                                                                                                                                           |        |                                  |                                  |                  |              |                |                 |              |
-|---------------------------------|------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------|----------------------------------|------------------|--------------|----------------|-----------------|--------------|
+| ------------------------------- | ---------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------------------------- | -------------------------------- | ---------------- | ------------ | -------------- | --------------- | ------------ |
 | Snomed CT Code                  | LOINC code                   | Short Display               | Long Description (EN)                                                                                                                                                                                                                                     | Status | translation NL available (nl-BE) | translation FR available (fr-BE) | Fibricheck (Y/N) | MoveUp (Y/N) | Remecare (Y/N) | Byteflies (Y/N) | Abbott (Y/N) |
 |                                 | 29463-7                      | Weight                      | Body weight                                                                                                                                                                                                                                               |        | No                               | Yes                              |                  | Y            | Y              | Y               |              |
 |                                 | 8310-5                       | Body temperature            | Body temperature                                                                                                                                                                                                                                          |        | No                               | Yes                              |                  | Y            | Y              | Y               |              |

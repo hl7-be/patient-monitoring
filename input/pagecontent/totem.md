@@ -1,3 +1,7 @@
+<div class="stu-note">
+This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
+</div>
+
 **DRAFT: 2024-11-25**
 
 ### Care Pathway Overview
@@ -6,7 +10,7 @@ TOTeM stands for Transmurale Opvolging met TeleMonitoring na chirurgie.
 
 Improved surgical techniques allow patients to go home earlier and earlier after their surgery. Complications are possible with any surgery. It is important that they are noticed in time so that the necessary action can be taken by the appropriate healthcare provider.
 
-TOTeM aims to send patients home after surgery as early as medically possible, with quality and specialised follow-up in the home environment. 
+TOTeM aims to send patients home after surgery as early as medically possible, with quality and specialised follow-up in the home environment.
 
 The patient can recover in a familiar environment and is more involved in the recovery process. For the hospital, faster discharge offers the opportunity to optimise length of stay and bed occupancy. The social cost of care falls.
 
@@ -17,6 +21,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 #### Start-Up
 
 - **Parameters Monitored**:
+
   - Heart Rate
   - Blood Pressure
   - Body weight
@@ -27,21 +32,19 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   - Pain surgical wound
   - Pain puncture wounds
   - Pain during urination
+  - Renal pain
   - Pain in calves
-  - Pain medication taken
+  - Pain provoked by eating
   - Well-being
   - Flatulence
   - Bowel movement
   - Distended abdomen
   - Nausea
   - Vomiting
-  - Water intake last 24h
-  - Meals last 24h
   - Coughing
-  - Mucus when coughing
+  - Productive cough
   - Pression on chest
   - Shortness of breath
-  - Walking daily
   - Shoulder pain
 
 - **Frequency**: 3 times a day, 7 days a week.
@@ -61,51 +64,49 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 - **LOINC Codes**:
 
 ###### General
+
 <div class="table-md"></div>
 
-  | Description               | Code(s)                  | Possible answers     |
-  | ------------------------- | ------------------------ | -------------------- |
-  | Heart rate                | LOINC 8867-4             |                      |
-  | Blood pressure            | LOINC 8480-6 / 8463-4    |                      |
-  | Body weight               | LOINC 29463-7            |                      |
-  | Respiratory rate          | LOINC 9279-1             |                      |
-  | Saturation                | LOINC 2708-6             |                      |
-  | Body temperature          | LOINC 8310-5             |                      |
-  | Abdominal pain            | SNOMED 21522001          | LOINC 72514-3        |
-  | Pain puncture wounds      | ??                       | LOINC 72514-3        |
-  | Pain during urination     | SNOMED 49650001          | SNOMED 373066001 - ??|
-  | Pain in calves            | SNOMED 1264028004        | SNOMED 373066001 - ??|
-  | Pain medication taken     | ??                       | ??                   |
-  | Well-being                | SNOMED 365275006         | ??                   |
-  | Flatulence                | SNOMED 249504006         | ??                   |
-  | Bowel movement            | SNOMED 39211005          | ??                   |
-  | Nausea                    | SNOMED 422587007         | ??                   |
-  | Vomiting                  | SNOMED 300359004         | ??                   |
-  | Water intake last 24h     | LOINC 9007-6             | ??                   |
-  | Meals last 24h            | ??                       | ??                   |
-  | Coughing                  | SNOMED 263731006         | ??                   |
-  | Product cough             | SNOMED 28743005          | ??                   |
-  | Pressure in chest         | SNOMED 23924001          | ??                   |
-  | Shortness of breath       | SNOMED 267036007         | ??                   |
-  | Walking daily             | ??                       | ??                   |
-  | Wound appearance          |                          | SNOMED 17621005      |
-  | Concern about patient     | ??                       | SNOMED 373066001 - ??|
-  | Fraxiparine               | ??                       |                      |
+| Description              | Code(s)                    | Possible answers                                                                                                       |
+| ------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Heart rate               | LOINC 8867-4               |  Not applicable                                                                                                        |
+| Blood pressure           | LOINC 8480-6 / 8463-4      |  Not applicable                                                                                                        |
+| Body weight              | LOINC 29463-7              |  Not applicable                                                                                                        |
+| Respiratory rate         | LOINC 9279-1               |  Not applicable                                                                                                        |
+| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5) |  Not applicable                                                                                                        |
+| Body temperature         | LOINC 8310-5               |  Not applicable                                                                                                        |
+| Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (pain scale 0-10)                                                                                        |
+| Pain puncture wounds     | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                                   |
+| Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Renal pain               | SNOMED 274279008           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Pain in calves           | SNOMED 1264028004          | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Pain provoked by eating  | SNOMED 426277009           | LOINC 72514-3 (pain scale 0-10)                                                                                        |
+| Well-being               | SNOMED 73595000            | SNOMED <br> - 268910001 (unchanged) <br> - 27762005 (improved) <br> - 230993007                                        |
+| Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Bowel movement           | SNOMED 39211005            | SNOMED <br> - 373067005 (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                        |
+| Nausea                   | SNOMED 422587007           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
+| Vomiting                 | SNOMED 300359004           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
+| Coughing                 | SNOMED 263731006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Productive cough         | SNOMED 28743005            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Shortness of breath      | SNOMED 267036007           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 
 ###### Colon surgery specific
+
 <div class="table-md"></div>
 
-  | Description               | Code(s)                  | Possible answers     |
-  | ------------------------- | ------------------------ | ---------------------|
-  | Pain surgical wound       | ?              ?         | LOINC 72514-3        |
-  | Distended abdomen         | SNOMED 60728008          | ???                  |
+| Description         | Code(s)         | Possible answers                                    |
+| ------------------- | --------------- | --------------------------------------------------- |
+| Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                     |
+| Distended abdomen   | SNOMED 60728008 | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)       |
 
 ###### Bariatric surgery specific
+
 <div class="table-md"></div>
 
-  | Description               | Code(s)                  | Possible answers                                 |
-  | ------------------------- | ------------------------ | ------------------------------------------------ |
-  | Shoulder pain             | ??                       | SNOMED 24028007 (right) <br> SNOMED 7771000 (left) <br> SNOMED 51440002 (right and left) <br> SNOMED 260413007 (no) |
+| Description   | Code(s) | Possible answers                                                                                                    |
+| ------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| Shoulder pain | <span class="warning">??</span> | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no)        |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
@@ -120,22 +121,9 @@ For detailed specifications, refer to the
 - [Saturation Example](./Observation-OxygenSaturationExample.html)
 - [Abdominal pain Example](./Observation-AbdominalPainExample.html)
 - [Pain surgical wound Example](./Observation-PainSurgicalWoundsExample.html)
-- Pain puncture wounds Example
 - [Pain during urination Example](./Observation-PainDuringUrinationExample.html)
 - [Pain in calves Example](./Observation-PainInCalvesExample.html)
 - [Pain medication taken Example](./Observation-PainMedicationTakenExample.html)
-- Well-being Example
-- Flatulence Example
-- Bowel movement Example
 - [Distended abdomen Example](./Observation-DistendedAbdomenExample.html)
-- Nausea Example
-- Vomiting Example
-- Water intake last 24h Example
-- Meals last 24h Example
-- Coughing Example
-- Mucus when coughing Example
-- Pression on chest Example
 - [Shortness of breath Example](./Observation-ShortnessOfBreathExample.html)
-- Walking daily Example
 - [Shoulder pain Example](./Observation-ShoulderPainExample.html)
-
