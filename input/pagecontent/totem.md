@@ -46,6 +46,10 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
   - Pression on chest
   - Shortness of breath
   - Shoulder pain
+  - Color of urine
+  - Hematoma
+  - Volume of 24-hour Urine
+  - Skin surrounding stoma red
 
 - **Frequency**: 3 times a day, 7 days a week.
 
@@ -69,19 +73,21 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 | Description              | Code(s)                    | Possible answers                                                                                                       |
 | ------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Heart rate               | LOINC 8867-4               |  Not applicable                                                                                                        |
-| Blood pressure           | LOINC 8480-6 / 8463-4      |  Not applicable                                                                                                        |
-| Body weight              | LOINC 29463-7              |  Not applicable                                                                                                        |
-| Respiratory rate         | LOINC 9279-1               |  Not applicable                                                                                                        |
-| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5) |  Not applicable                                                                                                        |
-| Body temperature         | LOINC 8310-5               |  Not applicable                                                                                                        |
+| Heart rate               | LOINC 8867-4               | Not applicable                                                                                                        |
+| Blood pressure           | LOINC 8480-6 / 8462-4      | Not applicable                                                                                                        |
+| Body weight              | LOINC 29463-7              | Not applicable                                                                                                        |
+| Respiratory rate         | LOINC 9279-1               | Not applicable                                                                                                        |
+| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5) | Not applicable                                                                                                        |
+| Patient on oxygen        | SNOMED 371825009           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)  |
+| Inhaled oxygen flow rate | LOINC 3151-8               | Not applicable   |  
+| Body temperature         | LOINC 8310-5               | Not applicable                                                                                                        |
 | Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (pain scale 0-10)                                                                                        |
 | Pain puncture wounds     | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                                   |
 | Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Renal pain               | SNOMED 274279008           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Pain in calves           | SNOMED 1264028004          | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Pain provoked by eating  | SNOMED 426277009           | LOINC 72514-3 (pain scale 0-10)                                                                                        |
-| Well-being               | SNOMED 73595000            | SNOMED <br> - 268910001 (unchanged) <br> - 27762005 (improved) <br> - 230993007                                        |
+| Well-being               | SNOMED 365275006           | SNOMED <br> - 260388006 (No status change) <br> - 268910001 (Patient's condition improved) <br> - 230993007 (Worsening)|
 | Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Bowel movement           | SNOMED 39211005            | SNOMED <br> - 373067005 (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                        |
 | Nausea                   | SNOMED 422587007           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
@@ -104,9 +110,27 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 <div class="table-md"></div>
 
-| Description   | Code(s) | Possible answers                                                                                                    |
-| ------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
-| Shoulder pain | <span class="warning">??</span> | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no)        |
+| Description   | Code(s) | Possible answers                                                                                                                     |
+| ------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------|
+| Shoulder pain | <span class="warning">??</span> | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
+
+###### Nefrectomy specific
+
+<div class="table-md"></div>
+
+| Description    | Code(s)          | Possible answers                                                                                                                                               |
+| -------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Color of urine | SNOMED 430327009 | SNOMED <br> - 167236000 (Urine looks clear) <br> - 720001001 (Dark yellow urine) <br> - 720003003 (Reddish color urine) <br> - 167235001 (Urine: red – blood)  |
+| Hematoma       | SNOMED 385494008 | SNOMED <br> - 2667000 (Absent) <br> - 19776001 (Decreased size) <br> - 260388006 (No status change) <br> - 15454001 (Inscreased size)                          |
+
+###### Cystectomy specific
+
+<div class="table-md"></div>
+
+| Description                      | Code(s)          | Possible answers                                                                                                    |
+| ---------------------------------| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Volume of 24-hour Urine          | LOINC 3167-4     | Not applicable                                                                                                      |
+| Skin surrounding stoma red       | SNOMED 407549000 | SNOMED <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)  |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 

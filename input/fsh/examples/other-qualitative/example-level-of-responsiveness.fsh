@@ -4,7 +4,7 @@ Usage: #example
 Title: "Level of responsiveness example"
 Description: "Level of responsiveness (ACVPU scale)"
 * status = #final
-* code = $loinc#67775-7 "Level of responsiveness"
+* code = $loinc#67775-7 
 * subject.identifier.system = $fhir
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
 * valueCodeableConcept = $loinc#LA17108-4

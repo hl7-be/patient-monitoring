@@ -76,16 +76,16 @@ This FHIR implementation content is currently under development and may be subje
 
   | Description                          | Code(s)                    | Possible answers |
   | ------------------------------------ | -------------------------- | ---------------- |
-  | Heart rate (HR) measurement          | LOINC 8867-4               |                  |
-  | Blood pressure (BP) measurement      | LOINC 8480-6 / 8463-4      |                  |
-  | Body weight (BW) measurement         | LOINC 29463-7              |                  |
-  | Respiratory (RESP) measurement       | LOINC 9279-1               |                  |
-  | Temperature (TEMP) measurement       | LOINC 8310-5               |                  |
-  | Oxygen Saturation (SPO2) measurement | LOINC 2708-6 (sub 59408-5) |                  |
-  | Patient on oxygen                    | SNOMED 371825009           |                  |
-  | Inhaled oxygen flow rate             | LOINC 3151-8               | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no) |    
+  | Heart rate (HR) measurement          | LOINC 8867-4               | Not applicable   |
+  | Blood pressure (BP) measurement      | LOINC 8480-6 / 8462-4      | Not applicable   |
+  | Body weight (BW) measurement         | LOINC 29463-7              | Not applicable   |
+  | Respiratory (RESP) measurement       | LOINC 9279-1               | Not applicable   |
+  | Temperature (TEMP) measurement       | LOINC 8310-5               | Not applicable   |
+  | Oxygen Saturation (SPO2) measurement | LOINC 2708-6 (sub 59408-5) | Not applicable   |
+  | Patient on oxygen                    | SNOMED 371825009           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)  |
+  | Inhaled oxygen flow rate             | LOINC 3151-8               | Not applicable   |    
   | Level of responsiveness (ACVPU scale) | LOINC 67775-7             | LOINC <br> - LA9340-6 (Alert) <br> - LA6560-2 (Confused) <br> - LA17108-4 (Verbal) <br> - LA17107-6 (Painful) <br> - LA9343-0 (Unresponsive) |
-  | National Early Warning Score (NEWS)  | SNOMED 1287358002          |                  |
+  | National Early Warning Score (NEWS)  | SNOMED 1287358002          | Not applicable   |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 

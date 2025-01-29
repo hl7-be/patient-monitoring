@@ -4,7 +4,7 @@ Usage: #example
 Title: "Pain in calves example"
 Description: "Possible answers are yes and no"
 * status = #final
-* code = $snomed#1264028004 "Pain in muscle of lower leg"
+* code = $snomed#1264028004 
 * subject.identifier.system = $fhir
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
 * valueCodeableConcept = $snomed#373066001
