@@ -112,7 +112,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 | Description   | Code(s) | Possible answers                                                                                                                     |
 | ------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------|
-| Shoulder pain | <span class="warning">??</span> | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
+| Shoulder pain | SNOMED 45326000 | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
 
 ###### Nefrectomy specific
 
