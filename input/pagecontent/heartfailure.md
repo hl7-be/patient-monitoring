@@ -2,7 +2,12 @@
 This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
 </div>
 
-**DRAFT: 2024-11-25**
+**DRAFT: 2025-02-10**
+
+### Telemonitoring Hub Identifier
+
+**Carepath Identifier**: hl7-be/patient-monitoring/heartfailure  
+**Carepath Version**: 1.0.0
 
 ### Care Pathway Overview
 
@@ -63,38 +68,38 @@ This FHIR implementation content is currently under development and may be subje
 
 - **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
 - **LOINC Codes**:
-<div class="table-md"></div>
+  <div class="table-md"></div>
 
   | Description                     | Code(s)               |
   | ------------------------------- | --------------------- |
   | Heart rate (HR) measurement     | LOINC 8867-4          |
   | Blood pressure (BP) measurement | LOINC 8480-6 / 8463-4 |
   | Body weight (BW) measurement    | LOINC 29463-7         |
- 
+
 ##### Symptoms
 
 - **Frequency**: As frequent as registered by the patient. Average of 1 per day per symptom.
 - **Codes**:
-<div class="table-md"></div>
+  <div class="table-md"></div>
 
-  | Description                     | Code(s)               | Possible answers                                                                                                              |
-  | ------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-  | Palpitations                    | SNOMED 80313002       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Reduced appetite                | SNOMED 64379006       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Shortness of breath             | SNOMED 267036007      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Constipation                    | SNOMED 14760008       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Diarrhea                        | SNOMED 62315008       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Nocturnal shortness of breath   | SNOMED 248548009      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Disturbed sleep pattern         | SNOMED 26677001       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Tickly cough                    | SNOMED 901000172101   | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Social isolation                | SNOMED 422650009      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Oedema                          | SNOMED 267038008      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Fatigue                         | SNOMED 84229001       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Chest pain                      | SNOMED 29857009       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Dizziness                       | SNOMED 404640003      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Confusion                       | SNOMED 40917007       | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Foot swelling                   | SNOMED 297142003      | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
-  | Fear or depression              | <span class="warning">??</span> | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe)                  |
+  | Description                   | Code(s)                         | Possible answers                                                                                             |
+  | ----------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+  | Palpitations                  | SNOMED 80313002                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Reduced appetite              | SNOMED 64379006                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Shortness of breath           | SNOMED 267036007                | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Constipation                  | SNOMED 14760008                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Diarrhea                      | SNOMED 62315008                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Nocturnal shortness of breath | SNOMED 248548009                | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Disturbed sleep pattern       | SNOMED 26677001                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Tickly cough                  | SNOMED 901000172101             | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Social isolation              | SNOMED 422650009                | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Oedema                        | SNOMED 267038008                | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Fatigue                       | SNOMED 84229001                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Chest pain                    | SNOMED 29857009                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Dizziness                     | SNOMED 404640003                | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Confusion                     | SNOMED 40917007                 | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Foot swelling                 | SNOMED 297142003                | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
+  | Fear or depression            | <span class="warning">??</span> | SNOMED <br> - 2667000 (absent) <br> - 255604002 (mild) <br> - 1255665007 (moderate) <br> - 24484000 (severe) |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
