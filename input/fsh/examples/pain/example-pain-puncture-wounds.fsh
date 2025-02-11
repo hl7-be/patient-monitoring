@@ -1,4 +1,4 @@
-Instance: PainPunctureWoundExample
+Instance: PainPunctureWoundsExample
 InstanceOf: Observation
 Usage: #example
 Title: "Pain puncture wound example"
