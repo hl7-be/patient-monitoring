@@ -1,8 +1,8 @@
-Instance: PainSurgicalWoundsExample	
+Instance: RednessPunctureWoundsExample	
 InstanceOf: Observation
 Usage: #example
-Title: "Pain surgical wounds example"
-Description: "NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer."
+Title: "Redness puncture wounds example"
+Description: "NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined."
 * status = #final
 * code = $loinc#72514-3 //TODO: Needs correct code
 * subject.identifier.system = $tmp_patientId
