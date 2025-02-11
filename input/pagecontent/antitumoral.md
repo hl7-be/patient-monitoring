@@ -40,15 +40,15 @@ Specifically, subcutaneous or intramuscular administration will be done at the p
 
 <div class="table-md"></div>
 
-| Description              | Code(s)                    | Possible answers                                                                                                       |
-| ------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Heart rate               | LOINC 8867-4               | Not applicable                                                                                                        |
-| Blood pressure           | LOINC 8480-6 / 8462-4      | Not applicable                                                                                                        |
-| Body weight              | LOINC 29463-7              | Not applicable                                                                                                        |
-| Body temperature         | LOINC 8310-5               | Not applicable                                                                                                        |
-| Swelling of bilateral feet                   | SNOMED 762917000           | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)                |
-| Orthopneu                   | SNOMED 62744007           | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)                |
-| njection site pain                   | SNOMED 95388000           | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)                |
+| Description                | Code(s)               | Possible answers                                           |
+| -------------------------- | --------------------- | ---------------------------------------------------------- |
+| Heart rate                 | LOINC 8867-4          | Not applicable                                             |
+| Blood pressure             | LOINC 8480-6 / 8462-4 | Not applicable                                             |
+| Body weight                | LOINC 29463-7         | Not applicable                                             |
+| Body temperature           | LOINC 8310-5          | Not applicable                                             |
+| Swelling of bilateral feet | SNOMED 762917000      | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe) |
+| Orthopneu                  | SNOMED 62744007       | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe) |
+| Injection site pain        | SNOMED 95388000       | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe) |
 
 ##### Specification:
 

@@ -17,6 +17,14 @@ The OPAT (Outpatient Parenteral Antimicrobial Therapy) care pathway involves the
   - Heart Rate
   - Blood Pressure
   - Body temperature
+  - Nausea
+  - Diarrhea
+  - Eruption of skin
+  - Pain infection side 
+  - Catheter moved or removed
+  - Redness puncture wounds
+  - Pain puncture wounds
+  - Leakage  
 
 - **Frequency**: 1 time a day, 7 days a week.
 
@@ -28,28 +36,28 @@ The OPAT (Outpatient Parenteral Antimicrobial Therapy) care pathway involves the
 
 #### Outcome Module - FHIR Integration
 
-##### Vital Signs
+##### Vital Signs & symptoms
 
-- **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
-- **LOINC Codes**:
+- **Frequency**: Ad hoc registrations by patients and healthcare providers.
+- **LOINC & SNOMED Codes**:
 
 ###### General
 
 <div class="table-md"></div>
 
-| Description              | Code(s)                    | Possible answers                                                                                                       |
-| ------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Heart rate               | LOINC 8867-4               | Not applicable                                                                                                        |
-| Blood pressure           | LOINC 8480-6 / 8462-4      | Not applicable                                                                                                        |
-| Body temperature         | LOINC 8310-5               | Not applicable                                                                                                        |
-| Nausea                   | SNOMED 422587007           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
-| Diarrhea                   | SNOMED 62315008           | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)                |
-| Eruption of skin                   | SNOMED 271807003           | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)                |
-| Pain infection side     | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                                   |
-| Catheter moved or removed     | <span class="warning">??</span> | <span class="warning">??</span>                                                                                  |
-| Redness puncture wounds      | <span class="warning">??</span> | <span class="warning">??</span>                                                                                  |
-| Pain puncture wounds     | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                                   |
-| Leakage     | <span class="warning">??</span> | <span class="warning">??</span>                                                                                  |
+| Description               | Code(s)                    | Possible answers                                             |
+| ------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Heart rate                | LOINC 8867-4               | Not applicable                                                                                              |
+| Blood pressure            | LOINC 8480-6 / 8462-4      | Not applicable                                                                                              |
+| Body temperature          | LOINC 8310-5               | Not applicable                                                                                              |
+| Nausea                    | SNOMED 422587007           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)     |
+| Diarrhea                  | SNOMED 62315008           | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)                |
+| Eruption of skin          | SNOMED 271807003           | SNOMED  <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)                |
+| Pain infection side       | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                        |
+| Catheter moved or removed | <span class="warning">??</span> | <span class="warning">??</span>                                                                        |
+| Redness puncture wounds   | <span class="warning">??</span> | <span class="warning">??</span>                                                                        |
+| Pain puncture wounds      | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                        |
+| Leakage                   | <span class="warning">??</span> | <span class="warning">??</span>                                                                        |
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
@@ -57,5 +65,5 @@ These FHIR modules ensure standardized data exchange between systems and guarant
 
 For detailed specifications, refer to the
 
-- [Heart Rate Example](./Observation-HeartRateExample.html)
-- [Blood Pressure Example](./Observation-BloodPressureExample.html)
+- [Heart Rate Example](./Observation-HeartRateExample2.html)
+- [Blood Pressure Example](./Observation-BloodPressureExample2.html)
