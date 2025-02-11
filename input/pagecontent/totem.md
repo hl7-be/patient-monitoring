@@ -143,6 +143,7 @@ For detailed specifications, refer to the
 - [Weight Example](./Observation-BodyWeightExample2.html)
 - [Respiratory rate Example](./Observation-RespiratoryRateExample2.html)
 - [Saturation Example](./Observation-OxygenSaturationExample2.html)
+- [Nausea Example](./Observation-NauseaExample.html)
 - [Abdominal pain Example](./Observation-AbdominalPainExample.html)
 - [Pain surgical wound Example](./Observation-PainSurgicalWoundsExample.html)
 - [Pain during urination Example](./Observation-PainDuringUrinationExample.html)

@@ -65,6 +65,7 @@ For detailed specifications, refer to the
 
 - [Heart Rate Example](./Observation-HeartRateExample2.html)
 - [Blood Pressure Example](./Observation-BloodPressureExample2.html)
+- [Nausea Example](./Observation-NauseaExample.html)
 - [Diarrhea Example](./Observation-DiarrheaExample.html)
 - [Pain infection site Example](./Observation-PainInfectionSiteExample.html)
 - [Redness puncture wounds Example](./Observation-RednessPunctureWoundsExample.html)
