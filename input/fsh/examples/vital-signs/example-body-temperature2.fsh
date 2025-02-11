@@ -9,6 +9,7 @@ Description: "Temperature example without device"
 * subject.identifier.value = "EFD5E060-9522-48BE-9ECC-3BFA54EA3666"
 * valueQuantity.value = 35.29
 * valueQuantity = $UCUM#Cel "C"
-* effectiveDateTime = "2024-11-19T19:30:42+00:00"
+* effectivePeriod.start = "2024-11-15T09:56:00+00:00"
+* effectivePeriod.end = "2024-11-15T09:57:00+00:00"
 * performer.identifier.system = $tmp_patientId
 * performer.identifier.value = "EFD5E060-9522-48BE-9ECC-3BFA54EA3666"

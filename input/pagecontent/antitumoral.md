@@ -19,22 +19,22 @@ Specifically, subcutaneous or intramuscular administration will be done at the p
   - Blood Pressure
   - Body weight
   - Body temperature
-
-- **Frequency**: 1 time a day, 7 days a week.
+  - Swelling of bilateral feet
+  - Orthopneu
+  - Injection site pain 
 
 #### Data Collection
 
-- Data is automatically collected via connected devices or manually entered into the system.
 - Technology is CE-certified, with end-to-end encryption and GDPR compliance.
 
 ### Integration Modules for EPD
 
 #### Outcome Module - FHIR Integration
 
-##### Vital Signs
+##### Vital Signs & symptoms
 
-- **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
-- **LOINC Codes**:
+- **Frequency**: Ad hoc registrations by patients and healthcare providers.
+- **LOINC & SNOMED Codes**:
 
 ###### General
 
@@ -54,6 +54,7 @@ Specifically, subcutaneous or intramuscular administration will be done at the p
 
 For detailed specifications, refer to the
 
-- [Heart Rate Example](./Observation-HeartRateExample.html)
-- [Blood Pressure Example](./Observation-BloodPressureExample.html)
-- [Weight Example](./Observation-BodyWeightExample.html)
+- [Heart Rate Example](./Observation-HeartRateExample2.html)
+- [Blood Pressure Example](./Observation-BloodPressureExample2.html)
+- [Weight Example](./Observation-BodyWeightExample2.html)
+- [Orthopneu Example](./Observation-OrthopneuExample.html)
