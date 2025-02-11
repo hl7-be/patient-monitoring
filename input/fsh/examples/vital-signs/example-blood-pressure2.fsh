@@ -11,6 +11,7 @@ Description: "Blood Pressure example without device"
 * component[=].valueQuantity = 140 'mm[Hg]' "mmHg"
 * component[+].code = $loinc#8462-4 "Diastolic blood pressure"
 * component[=].valueQuantity = 74 'mm[Hg]' "mmHg"
-* effectiveDateTime = "2024-11-18T09:38:52+00:00"
+* effectivePeriod.start = "2024-11-15T09:56:00+00:00"
+* effectivePeriod.end = "2024-11-15T09:57:00+00:00"
 * contained[0] = nurse
 * performer = Reference(nurse)
