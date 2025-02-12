@@ -112,7 +112,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 | Description   | Code(s) | Possible answers                                                                                                                     |
 | ------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------|
-| Shoulder pain | <span class="warning">??</span> | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
+| Shoulder pain | SNOMED 45326000 | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
 
 ###### Nefrectomy specific
 
@@ -138,16 +138,18 @@ These FHIR modules ensure standardized data exchange between systems and guarant
 
 For detailed specifications, refer to the
 
-- [Heart Rate Example](./Observation-HeartRateExample.html)
-- [Blood Pressure Example](./Observation-BloodPressureExample.html)
-- [Weight Example](./Observation-BodyWeightExample.html)
-- [Respiratory rate Example](./Observation-RespiratoryRateExample.html)
-- [Saturation Example](./Observation-OxygenSaturationExample.html)
+- [Heart Rate Example](./Observation-HeartRateExample2.html)
+- [Blood Pressure Example](./Observation-BloodPressureExample2.html)
+- [Weight Example](./Observation-BodyWeightExample2.html)
+- [Respiratory rate Example](./Observation-RespiratoryRateExample2.html)
+- [Saturation Example](./Observation-OxygenSaturationExample2.html)
+- [Nausea Example](./Observation-NauseaExample.html)
 - [Abdominal pain Example](./Observation-AbdominalPainExample.html)
 - [Pain surgical wound Example](./Observation-PainSurgicalWoundsExample.html)
 - [Pain during urination Example](./Observation-PainDuringUrinationExample.html)
 - [Pain in calves Example](./Observation-PainInCalvesExample.html)
-- [Pain medication taken Example](./Observation-PainMedicationTakenExample.html)
 - [Distended abdomen Example](./Observation-DistendedAbdomenExample.html)
 - [Shortness of breath Example](./Observation-ShortnessOfBreathExample.html)
 - [Shoulder pain Example](./Observation-ShoulderPainExample.html)
+- [Pain puncture wounds Example](./Observation-PainPunctureWoundsExample.html)
+- [Leakage catheter Example](./Observation-LeakageCatheterExample.html)

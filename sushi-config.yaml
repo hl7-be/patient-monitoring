@@ -145,6 +145,10 @@ pages:
     title: Overview LOINC
   totem.md:
     title: TOTeM
+  opat.md:
+    title: OPAT
+  antitumoral.md:
+    title: Antitumoral therapy
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -177,6 +181,8 @@ menu:
     Heart failure: heartfailure.html
     NEWS: ews.html
     TOTeM: totem.html
+    OPAT: opat.html
+    Antitumoral: antitumoral.html
     Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
     Overview LOINC: overview-loinc.html
   Artifact Index: artifacts.html

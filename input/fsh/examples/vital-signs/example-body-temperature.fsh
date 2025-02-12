@@ -5,7 +5,7 @@ Description: "Temperature example" //TODO: Needs description
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#8310-5 "Body Temperature"
-* subject.identifier.system = $fhir
+* subject.identifier.system = $vital_patientId
 * subject.identifier.value = "EFD5E060-9522-48BE-9ECC-3BFA54EA3666"
 * valueQuantity.value = 35.29
 * valueQuantity = $UCUM#Cel "C"

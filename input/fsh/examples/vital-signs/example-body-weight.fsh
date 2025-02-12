@@ -5,7 +5,7 @@ Description: "Body Weight example" //TODO: Needs description
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#29463-7 "Body Weight"
-* subject.identifier.system = $fhir
+* subject.identifier.system = $vital_patientId
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
 * valueQuantity.value = 89.3
 * valueQuantity = $UCUM#kg "kg"
