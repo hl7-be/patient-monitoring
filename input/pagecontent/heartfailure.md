@@ -6,7 +6,7 @@ This FHIR implementation content is currently under development and may be subje
 
 ### Telemonitoring Hub Identifier
 
-**Carepath Identifier**: hl7-be/patient-monitoring/heartfailure  
+**Carepath Identifier**: https://hl7belgium.org/fhir/patient-monitoring/carepath/heart-failure
 **Carepath Version**: 1.0.0
 
 ### Care Pathway Overview
