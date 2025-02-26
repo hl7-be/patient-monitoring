@@ -4,6 +4,8 @@ This FHIR implementation content is currently under development and may be subje
 
 **DRAFT: 2024-11-25**
 
+Note : This is currently a project that exists out of multiple carepaths. This will eventually be split up into multiple carepaths.
+
 ### Care Pathway Overview
 
 TOTeM stands for Transmurale Opvolging met TeleMonitoring na chirurgie.
@@ -101,10 +103,10 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 <div class="table-md"></div>
 
-| Description         | Code(s)         | Possible answers                                    |
-| ------------------- | --------------- | --------------------------------------------------- |
-| Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                     |
-| Distended abdomen   | SNOMED 60728008 | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)       |
+| Description         | Code(s)                         | Possible answers                                                                                       |
+| ------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                        |
+| Distended abdomen   | SNOMED 60728008                 | LOINC <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe) |
 
 ###### Bariatric surgery specific
 
@@ -131,6 +133,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | ---------------------------------| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Volume of 24-hour Urine          | LOINC 3167-4     | Not applicable                                                                                                      |
 | Skin surrounding stoma red       | SNOMED 407549000 | SNOMED <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)  |
+
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
 
