@@ -199,8 +199,10 @@ menu:
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#parameters:
+parameters:
 #  excludettl: true
+#  show-inherited-invariants: false
+  auto-oid-root: 2.16.840.1.113883.4.642.40.54
 #  validation: [allow-any-extensions, no-broken-links]
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
