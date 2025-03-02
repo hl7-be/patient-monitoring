@@ -1,0 +1,62 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "FCHRIndicatorCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem FCHRIndicatorCS</b></p><a name=\"FCHRIndicatorCS\"> </a><a name=\"hcFCHRIndicatorCS\"> </a><a name=\"FCHRIndicatorCS-en-US\"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">normal<a name=\"FCHRIndicatorCS-normal\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">warning<a name=\"FCHRIndicatorCS-warning\"> </a></td><td>Warning</td></tr><tr><td style=\"white-space:nowrap\">urgent<a name=\"FCHRIndicatorCS-urgent\"> </a></td><td>Urgent</td></tr><tr><td style=\"white-space:nowrap\">quality<a name=\"FCHRIndicatorCS-quality\"> </a></td><td>Quality</td></tr></table></div>"
+  },
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS",
+  "version" : "0.1.0",
+  "name" : "FCHRIndicatorCS",
+  "title" : "HR Indicator Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-23T09:12:19+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "FCHRIndicator",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "normal",
+    "display" : "Normal"
+  },
+  {
+    "code" : "warning",
+    "display" : "Warning"
+  },
+  {
+    "code" : "urgent",
+    "display" : "Urgent"
+  },
+  {
+    "code" : "quality",
+    "display" : "Quality"
+  }]
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="FCHRIndicatorCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">normal<a name="FCHRIndicatorCS-normal"> </a></td><td>Normal</td></tr><tr><td style="white-space:nowrap">warning<a name="FCHRIndicatorCS-warning"> </a></td><td>Warning</td></tr><tr><td style="white-space:nowrap">urgent<a name="FCHRIndicatorCS-urgent"> </a></td><td>Urgent</td></tr><tr><td style="white-space:nowrap">quality<a name="FCHRIndicatorCS-quality"> </a></td><td>Quality</td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS"/>
+  <version value="0.1.0"/>
+  <name value="FCHRIndicatorCS"/>
+  <title value="HR Indicator Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-17T09:45:56+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="FCHRIndicator"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="normal"/>
+    <display value="Normal"/>
+  </concept>
+  <concept>
+    <code value="warning"/>
+    <display value="Warning"/>
+  </concept>
+  <concept>
+    <code value="urgent"/>
+    <display value="Urgent"/>
+  </concept>
+  <concept>
+    <code value="quality"/>
+    <display value="Quality"/>
+  </concept>
+</CodeSystem>

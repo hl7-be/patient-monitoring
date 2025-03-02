@@ -1,0 +1,19 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json	7809	-	0	0	0	0	0	0	6	248	0	0	0	0	0	0	0	0	0	0	100	123	0	0	1	5	0	2
+fsh-generated/resources/Observation-AbdominalPainExample.json	1254	9	0	0	0	0	0	1	0	623	0	0	0	0	0	0	0	1	0	0	19	27	0	0	0	0	0	0
+fsh-generated/resources/Observation-BloodPressureExample.json	2349	7	0	0	0	0	0	0	1	100	0	0	0	0	0	0	0	0	0	0	15	30	0	0	0	0	0	0
+fsh-generated/resources/Observation-BodyTemperatureExample.json	1700	7	0	0	1	0	0	0	0	90	0	0	0	0	0	0	0	0	0	0	17	20	0	0	0	0	0	0
+fsh-generated/resources/Observation-BodyWeightExample.json	1692	6	0	0	0	0	0	0	0	83	0	0	0	0	0	0	0	0	0	0	13	16	0	0	0	0	0	0
+fsh-generated/resources/Observation-DistendedAbdomenExample.json	1258	8	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	12	15	0	0	0	0	0	0
+fsh-generated/resources/Observation-HeartRateExample.json	1690	6	0	0	0	0	0	0	1	98	0	0	0	0	0	0	0	0	0	0	12	17	0	0	0	0	0	0
+fsh-generated/resources/Observation-LevelOfResponsivenessExample.json	1207	7	0	0	0	0	0	0	0	89	0	0	0	0	0	0	0	0	0	0	12	15	0	0	0	0	0	0
+fsh-generated/resources/Observation-NationalEarlyWarningScoreExample.json	1129	6	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	11	15	0	0	0	0	0	0
+fsh-generated/resources/Observation-OxygenSaturationExample.json	1875	7	0	0	0	0	0	0	0	81	0	0	0	0	0	0	0	0	0	0	12	13	0	0	0	0	0	0
+fsh-generated/resources/Observation-PainDuringUrinationExample.json	875	6	0	0	0	0	0	0	3	90	0	0	0	0	0	0	0	0	0	0	11	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-PainInCalvesExample.json	880	5	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	9	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-PainMedicationTakenExample.json	906	6	0	0	1	0	0	0	0	21	0	0	0	0	0	0	0	0	0	0	10	13	0	0	0	0	0	0
+fsh-generated/resources/Observation-PainSurgicalWoundsExample.json	1299	7	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	10	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-ReducedAppetiteExample.json	1264	6	0	0	0	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	10	10	0	0	0	0	0	0
+fsh-generated/resources/Observation-RespiratoryRateExample.json	1771	6	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	12	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-ShortnessOfBreathExample.json	1213	5	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	11	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-ShoulderPainExample.json	1293	6	0	0	1	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	12	16	0	0	0	0	0	0

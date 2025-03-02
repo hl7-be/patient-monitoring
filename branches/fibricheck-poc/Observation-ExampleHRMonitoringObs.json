@@ -1,0 +1,96 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleHRMonitoringObs",
+  "meta" : {
+    "profile" : ["http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringObs"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleHRMonitoringObs</b></p><a name=\"ExampleHRMonitoringObs\"> </a><a name=\"hcExampleHRMonitoringObs\"> </a><a name=\"ExampleHRMonitoringObs-en-US\"> </a><p><b>identifier</b>: 1234567890</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:\">fibricheck</span></p><p><b>subject</b>: <a href=\"Patient-ExampleHRMonitoringPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( username)</a></p><p><b>effective</b>: 2023-07-20 14:30:00+0000</p><p><b>device</b>: <a href=\"Device-ExampleSWDevice.html\">Device</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">fibricheck-hr-value</span></p><p><b>value</b>: 25 ms<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codems = 'ms')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">fibricheck-hr-indicator</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS 25}\">no_diagnosis</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">fibricheck-symptoms</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS 4}\">fatigue</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">fibricheck-activity-status</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS 3}\">sleeping</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">fibricheck-report</span></p><p><b>value</b>: <span title=\"Codes:\">LowRisk</span></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "value" : "1234567890"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "code" : "fibricheck"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleHRMonitoringPatient"
+  },
+  "effectiveDateTime" : "2023-07-20T14:30:00Z",
+  "device" : {
+    "reference" : "Device/ExampleSWDevice"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "code" : "fibricheck-hr-value"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 25,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "ms"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "fibricheck-hr-indicator"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS",
+        "code" : "25"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "fibricheck-symptoms"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS",
+        "code" : "4"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "fibricheck-activity-status"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS",
+        "code" : "3"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "fibricheck-report"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "LowRisk"
+      }]
+    }
+  }]
+}

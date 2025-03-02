@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 12, errors = 33, warn = 18, info = 0-->
+<head>
+  <title>PatientMonitoringOutcome : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for PatientMonitoringOutcome</h1>
+ <p>Generated Wed Nov 20 10:37:54 UTC 2024, FHIR version 4.0.1 for hl7.fhir.be.patient-monitoring#0.1.0 (canonical = <a href="http://hl7belgium.org/fhir/patient-monitoring">http://hl7belgium.org/fhir/patient-monitoring</a> (<a href="http://hl7belgium.org/fhir/patient-monitoring/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.3</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.patient-monitoring, Canonical = http://hl7belgium.org/fhir/patient-monitoring</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.be.patient-monitoring</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7belgium.org/fhir/patient-monitoring</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.be.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.1 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.ehealth.fgov.be/standards/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.ehealth.fgov.be/standards/fhir/core/2.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 2.1.2</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 6.1.0</td></tr>
+</table><para>Templates: hl7.fhir.be.my.template#0.0.1 -&gt; hl7.be.fhir.template#current -&gt; fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/vitalsigns.html">observation-vitalsigns</a>
+ (6 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (7 uses),     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-logical-target.html">LogicalTarget</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7belgium.org/fhir/patient-monitoring (Problem #1 with package-list.json at http://hl7belgium.org/fhir/patient-monitoring: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 33, warn = 18, info = 0, broken links = 12</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>12</b></td><td><b>10</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-BloodPressureExample"><b>/github/workspace/fsh-generated/resources/Observation-BloodPressureExample</b></a></td><td><b>6</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-BodyTemperatureExample"><b>/github/workspace/fsh-generated/resources/Observation-BodyTemperatureExample</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-BodyWeightExample"><b>/github/workspace/fsh-generated/resources/Observation-BodyWeightExample</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-HeartRateExample"><b>/github/workspace/fsh-generated/resources/Observation-HeartRateExample</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-OxygenSaturationExample"><b>/github/workspace/fsh-generated/resources/Observation-OxygenSaturationExample</b></a></td><td><b>7</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-RespiratoryRateExample"><b>/github/workspace/fsh-generated/resources/Observation-RespiratoryRateExample</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PatientMonitoring"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PatientMonitoring</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BloodPressureExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BodyTemperatureExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BodyWeightExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/HeartRateExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/OxygenSaturationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/RespiratoryRateExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BloodPressureExample.html#l353">output&#8203;/Observation-BloodPressureExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 520</a></b></td><td><b>error</b></td><td><b>The link 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' for &quot;Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BloodPressureExample.html#l363">output&#8203;/Observation-BloodPressureExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 694</a></b></td><td><b>error</b></td><td><b>The link 'Device/Byteflies Vital Signs' for &quot;Device/Byteflies Vital Signs&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BodyTemperatureExample.html#l353">output&#8203;/Observation-BodyTemperatureExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 529</a></b></td><td><b>error</b></td><td><b>The link 'Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666' for &quot;Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BodyTemperatureExample.html#l363">output&#8203;/Observation-BodyTemperatureExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 703</a></b></td><td><b>error</b></td><td><b>The link 'Device/Byteflies Vital Signs' for &quot;Device/Byteflies Vital Signs&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BodyWeightExample.html#l353">output&#8203;/Observation-BodyWeightExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 505</a></b></td><td><b>error</b></td><td><b>The link 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' for &quot;Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BodyWeightExample.html#l363">output&#8203;/Observation-BodyWeightExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 679</a></b></td><td><b>error</b></td><td><b>The link 'Device/Byteflies Vital Signs' for &quot;Device/Byteflies Vital Signs&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HeartRateExample.html#l353">output&#8203;/Observation-HeartRateExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 499</a></b></td><td><b>error</b></td><td><b>The link 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' for &quot;Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HeartRateExample.html#l363">output&#8203;/Observation-HeartRateExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 673</a></b></td><td><b>error</b></td><td><b>The link 'Device/Byteflies Vital Signs' for &quot;Device/Byteflies Vital Signs&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-OxygenSaturationExample.html#l353">output&#8203;/Observation-OxygenSaturationExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 535</a></b></td><td><b>error</b></td><td><b>The link 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48' for &quot;Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-OxygenSaturationExample.html#l363">output&#8203;/Observation-OxygenSaturationExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 709</a></b></td><td><b>error</b></td><td><b>The link 'Device/Byteflies Vital Signs' for &quot;Device/Byteflies Vital Signs&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-RespiratoryRateExample.html#l353">output&#8203;/Observation-RespiratoryRateExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 529</a></b></td><td><b>error</b></td><td><b>The link 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48' for &quot;Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-RespiratoryRateExample.html#l363">output&#8203;/Observation-RespiratoryRateExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 228, column 735</a></b></td><td><b>error</b></td><td><b>The link 'Device/Byteflies Vital Signs' for &quot;Device/Byteflies Vital Signs&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-BloodPressureExample"> </a>
+<h2><a href="Observation-BloodPressureExample.html">fsh-generated/resources/Observation-BloodPressureExample.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title="XHTML_URL_INVALID"><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.display (l21&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Blood pressure' for http://loinc.org#85354-9. There are no valid display names found for language(s) 'en'. Default display is 'Blood pressure panel with all children optional'</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.device (l69/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' at 'div/p/a' for 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Device/Byteflies Vital Signs' at 'div/p/a' for 'Device/Byteflies Vital Signs' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-BodyTemperatureExample"> </a>
+<h2><a href="Observation-BodyTemperatureExample.html">fsh-generated/resources/Observation-BodyTemperatureExample.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title="XHTML_URL_INVALID"><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.device (l52/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666' at 'div/p/a' for 'Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Device/Byteflies Vital Signs' at 'div/p/a' for 'Device/Byteflies Vital Signs' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-BodyWeightExample"> </a>
+<h2><a href="Observation-BodyWeightExample.html">fsh-generated/resources/Observation-BodyWeightExample.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title="XHTML_URL_INVALID"><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.device (l52/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' at 'div/p/a' for 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Device/Byteflies Vital Signs' at 'div/p/a' for 'Device/Byteflies Vital Signs' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-HeartRateExample"> </a>
+<h2><a href="Observation-HeartRateExample.html">fsh-generated/resources/Observation-HeartRateExample.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title="XHTML_URL_INVALID"><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.device (l52/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' at 'div/p/a' for 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Device/Byteflies Vital Signs' at 'div/p/a' for 'Device/Byteflies Vital Signs' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-OxygenSaturationExample"> </a>
+<h2><a href="Observation-OxygenSaturationExample.html">fsh-generated/resources/Observation-OxygenSaturationExample.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title="XHTML_URL_INVALID"><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.display (l21&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Oxygen saturation' for http://loinc.org#59408-5. There are no valid display names found for language(s) 'en'. Default display is 'Oxygen saturation in Arterial blood by Pulse oximetry'</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.device (l52/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l21/c4)</b></td><td><b>error</b></td><td title="VALIDATION_VAL_PROFILE_MINIMUM_MAGIC"><b>OxygenSatCode: magic LOINC code 2708-6 required, but not found (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1). Note that other Observation codes are allowed in addition to this required magic code</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48' at 'div/p/a' for 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Device/Byteflies Vital Signs' at 'div/p/a' for 'Device/Byteflies Vital Signs' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-RespiratoryRateExample"> </a>
+<h2><a href="Observation-RespiratoryRateExample.html">fsh-generated/resources/Observation-RespiratoryRateExample.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title="XHTML_URL_INVALID"><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.device (l52/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48' at 'div/p/a' for 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Device/Byteflies Vital Signs' at 'div/p/a' for 'Device/Byteflies Vital Signs' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PatientMonitoring"> </a>
+<h2><a href="StructureDefinition-PatientMonitoring.html">fsh-generated/resources/StructureDefinition-PatientMonitoring.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[62] (l1&#8203;/c139011)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[41] (l1&#8203;/c156096)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="All_observations_should_have_a_performer"> </a>
+<h2>All_observations_should_have_a_performer</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-BloodPressureExample.html">fsh-generated/resources/Observation-BloodPressureExample.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-BodyTemperatureExample.html">fsh-generated/resources/Observation-BodyTemperatureExample.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-BodyWeightExample.html">fsh-generated/resources/Observation-BodyWeightExample.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-HeartRateExample.html">fsh-generated/resources/Observation-HeartRateExample.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-OxygenSaturationExample.html">fsh-generated/resources/Observation-OxygenSaturationExample.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-RespiratoryRateExample.html">fsh-generated/resources/Observation-RespiratoryRateExample.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BloodPressureExample.html">fsh-generated/resources/Observation-BloodPressureExample.json</a></td><td><b>Unable to resolve resource with reference 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BloodPressureExample.html">fsh-generated/resources/Observation-BloodPressureExample.json</a></td><td><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BodyTemperatureExample.html">fsh-generated/resources/Observation-BodyTemperatureExample.json</a></td><td><b>Unable to resolve resource with reference 'Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BodyTemperatureExample.html">fsh-generated/resources/Observation-BodyTemperatureExample.json</a></td><td><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BodyWeightExample.html">fsh-generated/resources/Observation-BodyWeightExample.json</a></td><td><b>Unable to resolve resource with reference 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BodyWeightExample.html">fsh-generated/resources/Observation-BodyWeightExample.json</a></td><td><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HeartRateExample.html">fsh-generated/resources/Observation-HeartRateExample.json</a></td><td><b>Unable to resolve resource with reference 'Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HeartRateExample.html">fsh-generated/resources/Observation-HeartRateExample.json</a></td><td><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-OxygenSaturationExample.html">fsh-generated/resources/Observation-OxygenSaturationExample.json</a></td><td><b>Unable to resolve resource with reference 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-OxygenSaturationExample.html">fsh-generated/resources/Observation-OxygenSaturationExample.json</a></td><td><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-RespiratoryRateExample.html">fsh-generated/resources/Observation-RespiratoryRateExample.json</a></td><td><b>Unable to resolve resource with reference 'Patient/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-RespiratoryRateExample.html">fsh-generated/resources/Observation-RespiratoryRateExample.json</a></td><td><b>Unable to resolve resource with reference 'Device/Byteflies Vital Signs'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_PROFILE_MINIMUM_MAGIC"> </a>
+<h2>VALIDATION_VAL_PROFILE_MINIMUM_MAGIC</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-OxygenSaturationExample.html">fsh-generated/resources/Observation-OxygenSaturationExample.json</a></td><td><b>OxygenSatCode: magic LOINC code 2708-6 required, but not found (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1). Note that other Observation codes are allowed in addition to this required magic code</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="XHTML_URL_INVALID"> </a>
+<h2>XHTML_URL_INVALID</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BloodPressureExample.html">fsh-generated/resources/Observation-BloodPressureExample.json</a></td><td><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BodyTemperatureExample.html">fsh-generated/resources/Observation-BodyTemperatureExample.json</a></td><td><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-BodyWeightExample.html">fsh-generated/resources/Observation-BodyWeightExample.json</a></td><td><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HeartRateExample.html">fsh-generated/resources/Observation-HeartRateExample.json</a></td><td><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-OxygenSaturationExample.html">fsh-generated/resources/Observation-OxygenSaturationExample.json</a></td><td><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-RespiratoryRateExample.html">fsh-generated/resources/Observation-RespiratoryRateExample.json</a></td><td><b>The URL is not valid because '(URL contains 2 Invalid Characters ([ ]))': Device/Byteflies Vital Signs</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+PatientMonitoringOutcome
+=========================================
+
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters (BUSINESSRULE)
+/home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-BloodPressureExample.json: line 78, col 12, Info - A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-BodyTemperatureExample.json: line 48, col 12, Info - A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-BodyWeightExample.json: line 48, col 12, Info - A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-HeartRateExample.json: line 48, col 12, Info - A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-OxygenSaturationExample.json: line 53, col 12, Info - A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-RespiratoryRateExample.json: line 48, col 12, Info - A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated (UNKNOWN)
+
+err = 0, warn = 5, info = 6
+IG Publisher Version: 1.8.12

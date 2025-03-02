@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="FCContextSymptomsCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem FCContextSymptomsCS</b></p><a name="FCContextSymptomsCS"> </a><a name="hcFCContextSymptomsCS"> </a><a name="FCContextSymptomsCS-en-US"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="FCContextSymptomsCS-1"> </a></td><td>no_symptoms</td></tr><tr><td style="white-space:nowrap">2<a name="FCContextSymptomsCS-2"> </a></td><td>lightheaded</td></tr><tr><td style="white-space:nowrap">3<a name="FCContextSymptomsCS-3"> </a></td><td>confused</td></tr><tr><td style="white-space:nowrap">4<a name="FCContextSymptomsCS-4"> </a></td><td>fatigue</td></tr><tr><td style="white-space:nowrap">5<a name="FCContextSymptomsCS-5"> </a></td><td>other</td></tr><tr><td style="white-space:nowrap">6<a name="FCContextSymptomsCS-6"> </a></td><td>palpitations</td></tr><tr><td style="white-space:nowrap">7<a name="FCContextSymptomsCS-7"> </a></td><td>chest_pains</td></tr><tr><td style="white-space:nowrap">8<a name="FCContextSymptomsCS-8"> </a></td><td>shortness_of_breath</td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+  <version value="0.1.0"/>
+  <name value="FCContextSymptomsCS"/>
+  <title value="HR Context Symptoms Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-10-23T09:12:19+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Context Symptoms"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="1"/>
+    <display value="no_symptoms"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="lightheaded"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="confused"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="fatigue"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="other"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="palpitations"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="chest_pains"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="shortness_of_breath"/>
+  </concept>
+</CodeSystem>

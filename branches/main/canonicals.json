@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "hl7.fhir.be.patient-monitoring",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring",
+    "version" : "0.1.0",
+    "name" : "PatientMonitoring"
+  },
+  {
+    "id" : "PatientMonitoring",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/PatientMonitoring",
+    "version" : "0.1.0",
+    "name" : "PatientMonitoring"
+  }
+]

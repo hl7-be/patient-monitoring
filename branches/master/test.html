@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Test Page - HR Monitoring Apps FHIR Implementation Guide v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/hl7-be.css"/>
+  <!-- Placeholder for child template CSS declarations -->
+  <!-- My Organization -->
+  <!-- active -->
+
+  <!-- no fitting stylesheet found (status/publisher) -->
+
+<link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        
+  <!-- My Organization -->
+  <!-- active -->
+
+<div id="ig-nav">
+  <a no-external="true" id="hl7-logo" href="https://hl7belgium.org">
+    <img src="assets/images/hl7be-logo-header.png" alt="HL7 Belgium" height="65"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+</div>
+<div id="ig-search">
+  <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HR Monitoring Apps FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img src="assets/images/bel.svg" alt="Belgium flag" title="Belgium" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+  <!-- <li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li> -->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a name="l211">​</a><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Test Page</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">HR Monitoring Apps FHIR Implementation Guide, published by My Organization. This is not an authorized publication; it is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/hl7-be/patient-monitoring">https://github.com/hl7-be/patient-monitoring</a> and changes regularly. See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Test Page</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#reading-the-c-cda--fhir-mapping-tables" id="markdown-toc-reading-the-c-cda--fhir-mapping-tables">Reading the C-CDA ↔ FHIR Mapping Tables</a></li>
+  <li><a href="#cda-id--fhir-identifier" id="markdown-toc-cda-id--fhir-identifier">CDA id ↔ FHIR identifier</a></li>
+  <li><a href="#cda--fhir-timedates" id="markdown-toc-cda--fhir-timedates">CDA ↔ FHIR Time/Dates</a></li>
+  <li><a href="#cda-coding--fhir-codeableconcept" id="markdown-toc-cda-coding--fhir-codeableconcept">CDA Coding ↔ FHIR CodeableConcept</a></li>
+  <li><a href="#cda--fhir-provenance" id="markdown-toc-cda--fhir-provenance">CDA ↔ FHIR Provenance</a></li>
+  <li><a href="#name-address-telecom" id="markdown-toc-name-address-telecom">Name, Address, Telecom</a></li>
+  <li><a href="#missing-data-in-c-cda-vs-fhir" id="markdown-toc-missing-data-in-c-cda-vs-fhir">Missing Data in C-CDA vs. FHIR</a></li>
+  <li><a href="#narrative-text" id="markdown-toc-narrative-text">Narrative Text</a></li>
+  <li><a href="#terminology-mapping" id="markdown-toc-terminology-mapping">Terminology Mapping</a></li>
+</ul>
+
+</div>
+<style>
+td, th {
+   border: 1px solid black!important;
+}
+</style>
+
+<h3 id="reading-the-c-cda--fhir-mapping-tables">Reading the C-CDA ↔ FHIR Mapping Tables</h3>
+
+<h4 id="how-to-read-mapping-tables-and-transform-steps">How to Read Mapping Tables and Transform Steps?</h4>
+
+<p>The header row of the mapping table provides links to the respective profiles in FHIR (e.g. <strong><a href="https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance</a></strong>) and templates in C-CDA (e.g. <strong><a href="http://hl7.org/cda/stds/ccda/draft1/StructureDefinition-2.16.840.1.113883.10.20.22.4.7.html">Allergy Intolerance observation</a></strong>)and specifies the “base” that each of the rows will build on.  All FHIR elements use a simplified dot notation and the CDA elements use simplified slash notation. Always use the underlying standards, provided via header row links, to ensure conformance when building FHIR resources or C-CDA clinical documents.</p>
+
+<p><a name="l360">​</a>Rather than repeating cardinality, conformance, and other criteria from FHIR Resources or a C-CDA templates defined outside this implementaiton guide, external references are shown in tables as bold hyperlinks (e.g. <strong><a href="https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-patient.html">US Core Patient</a></strong> or <strong><a href="http://hl7.org/cda/stds/ccda/draft1/StructureDefinition-2.16.840.1.113883.10.20.22.1.1.html">C-CDA US Realm Header</a></strong>). Unbolded links refer to guidance contained within this guide (e.g. <a href="mappingGuidance.html#name-address-telecom">CDA ↔ FHIR Name, Address, and Telecom mapping</a>).</p>
+
+<p>The “Transform Steps” column of the table will provide guidance for mapping content between C-CDA and FHIR, those steps will be listed in the following order:</p>
+
+<ol>
+  <li><strong>Constraint (labeled in bold)</strong>: Only perform the action when this constraint is fulfilled</li>
+  <li><strong>Structural Guidance (Bidirectional guidance shown as ↔)</strong>: Generalized narrative guidance on structural transform between CDA and FHIR elements. This links to sections on this current page</li>
+  <li><a name="l389">​</a><strong>ConceptMap (Terminology mapping direction shown as →)</strong>: Link to a computable map between CDA and FHIR vocabularies. This links to <a href="conceptMaps.html">conceptMaps developed in this guide</a></li>
+  <li><strong>Notes (no label)</strong>: Other notes specific to this element mapping</li>
+</ol>
+
+<h4 id="what-examples-are-included">What Examples are Included?</h4>
+
+<p>Examples for C-CDA to FHIR transforms are provided based on a consensus of various vendors performing mappings. All vendors received the sample input (e.g. C-CDA Document) and generated output (e.g. FHIR Resource) which were then iterated through group discussion to a consensus. For FHIR to C-CDA, a single vendor provided examples which are included.</p>
+
+<p>The highlighted output images were created using an <a href="https://github.com/jddamore/cda-fhir-compare">open source tool for C-CDA ↔ FHIR Mapping</a> developed as part of this project.</p>
+
+<h3 id="cda-id--fhir-identifier">CDA id ↔ FHIR identifier</h3>
+
+<p>Identifiers in both FHIR and CDA can divide the identifier value from its namespace: FHIR as the identifier.system and CDA as the id.root. In many cases, this correspondence works well.</p>
+
+<p>However, the FHIR system can be any URI, including OIDs &amp; UUIDs as well as URLs. CDA roots must be UIDs, which consist of OIDs and UUIDs only. CDA roots can often be used as FHIR systems, but FHIR systems must often be translated. In some cases, the URI has a registered equivalent OID, for example, an identifier with a FHIR system of http://hl7.org/fhir/sid/us-ssn can be represented with a CDA root of 2.16.840.1.113883.4.1.</p>
+
+<p>If there is no such OID, and if the FHIR identifier is a URL, we can use the URL specification itself as the system, and that specification - urn:ietf:rfc:3986 - has a registered OID equivalent, 2.16.840.1.113883.4.873. The FHIR identifier.value can be appended to the system for the CDA extension. These ids can be represented as below.</p>
+
+<p>Cases where the FHIR system uses a scheme with no OID present a problem. The UID type is primitive, represented only as an XML attribute, and it cannot have a null flavor. One solution may be to generate a UUID, but expectations around the UUID’s persistence and recognizability may vary.</p>
+
+<h4 id="cda-id--fhir-identifier-with-example-mapping">CDA id → FHIR Identifier with Example Mapping</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Case</th>
+      <th style="text-align: left">Approach</th>
+      <th style="text-align: left">CDA id@root</th>
+      <th style="text-align: left">CDA id@extension</th>
+      <th style="text-align: left">identifier.system</th>
+      <th style="text-align: left">identifier.value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">URL exists</td>
+      <td style="text-align: left">translate</td>
+      <td style="text-align: left">2.16.840.1.113883.4.1</td>
+      <td style="text-align: left">123-45-6789</td>
+      <td style="text-align: left">http://hl7.org/fhir/sid/us-ssn</td>
+      <td style="text-align: left">123-45-6789</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">No URL exists</td>
+      <td style="text-align: left">use OID</td>
+      <td style="text-align: left">2.16.840.1.113883.4.500</td>
+      <td style="text-align: left">12345V7890</td>
+      <td style="text-align: left">urn:oid:2.16.840.1.113883.4.500</td>
+      <td style="text-align: left">12345V7890</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">No URL exists and no extension<sup>1</sup></td>
+      <td style="text-align: left">use URI system, prepend with urn:oid:</td>
+      <td style="text-align: left">2.16.840.1.123.4.50.123456789</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">urn:ietf:rfc:3986</td>
+      <td style="text-align: left">urn:oid:2.16.840.1.123.4.50.123456789</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UUID-only</td>
+      <td style="text-align: left">use URI system, prepend with urn:uuid:</td>
+      <td style="text-align: left">67265ED2-35BB-43F8-B9DE-91C5935625E0<sup>2</sup></td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">urn:ietf:rfc:3986</td>
+      <td style="text-align: left">urn:uuid:67265ed2-35bb-43f8-b9de-91c5935625e0<sup>2</sup></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UUID with extension<sup>3</sup></td>
+      <td style="text-align: left">use UUID, prepend value</td>
+      <td style="text-align: left">67265ED2-35BB-43F8-B9DE-91C5935625E0</td>
+      <td style="text-align: left">abcd</td>
+      <td style="text-align: left">urn:uuid:67265ed2-35bb-43f8-b9de-91c5935625e0</td>
+      <td style="text-align: left">abcd</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Extension-only</td>
+      <td style="text-align: left">only set value</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">Z1124</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">Z1124</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Root = URI OID, Value = URL</td>
+      <td style="text-align: left">split value on /</td>
+      <td style="text-align: left">2.16.840.1.113883.4.873<sup>4</sup></td>
+      <td style="text-align: left">http://myorg.com/patient/1234</td>
+      <td style="text-align: left">http://myorg.com/patient</td>
+      <td style="text-align: left">1234</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Root = URI OID, Value = URN</td>
+      <td style="text-align: left">split value on :</td>
+      <td style="text-align: left">2.16.840.1.113883.4.873<sup>4</sup></td>
+      <td style="text-align: left">urn:myNID:myOrg:Z3321</td>
+      <td style="text-align: left">urn:myNID:myOrg</td>
+      <td style="text-align: left">Z3321</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>This approach should not be used for known identifier systems like SSN or NPI. Even if there is no nullFlavor, sending the system OID as a value is inappropriate.</li>
+  <li>UUIDs from CDA are uppercase (per Abstract Datatypes 2.1.5.1); UUIDs from FHIR are lowercase (per <a href="https://hl7.org/fhir/R4/datatypes.html#uri">FHIR uri Datatype</a>). Transform case when converting.</li>
+  <li>UUID’s are unique by themselves and rarely have extensions, so this scenario is rare.</li>
+  <li>This is the URN OID equivalent of urn:ietf:rfc:3598. These examples are the reverse of the concatenation example listed below.</li>
+</ol>
+
+<p>If a CDA id contains a <code class="language-plaintext highlighter-rouge">@nullFlavor</code> (or a known coding system such as SSN or NPI with no extension), a FHIR Identifier may be created using a data-absent-reason extension explaining the missing data. If the CDA id has a <code class="language-plaintext highlighter-rouge">@root</code>, place the extension on the <code class="language-plaintext highlighter-rouge">Identifier.value</code> element (for example, to indicate an unknown NPI); if the CDA id has only a <code class="language-plaintext highlighter-rouge">@nullFlavor</code>, the extension may be placed on the Identifier element itself.</p>
+
+<h4 id="fhir-identifier--cda-id-with-example-mapping">FHIR Identifier → CDA id with Example Mapping</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Case</th>
+      <th style="text-align: left">Approach</th>
+      <th style="text-align: left">identifier.system</th>
+      <th style="text-align: left">identifier.value</th>
+      <th style="text-align: left">CDA id@root</th>
+      <th style="text-align: left">CDA id@extension</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">OID exists</td>
+      <td style="text-align: left">translate</td>
+      <td style="text-align: left">http://hl7.org/fhir/sid/us-ssn</td>
+      <td style="text-align: left">123-45-6789</td>
+      <td style="text-align: left">2.16.840.1.113883.4.1</td>
+      <td style="text-align: left">123-45-6789</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OID value</td>
+      <td style="text-align: left">use OID as root</td>
+      <td style="text-align: left">urn:ietf:rfc:3986</td>
+      <td style="text-align: left">urn:oid:2.16.840.1.123.4.50.123456789</td>
+      <td style="text-align: left">2.16.840.1.123.4.50.123456789</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UUID value</td>
+      <td style="text-align: left">use UUID as root</td>
+      <td style="text-align: left">urn:ietf:rfc:3986</td>
+      <td style="text-align: left">urn:uuid:67265ed2-35bb-43f8-b9de-91c5935625e0</td>
+      <td style="text-align: left">67265ED2-35BB-43F8-B9DE-91C5935625E0</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">No OID exists</td>
+      <td style="text-align: left">concatenate; use URL specification URI for root</td>
+      <td style="text-align: left">http://www.myOrg.com/patients</td>
+      <td style="text-align: left">123456789</td>
+      <td style="text-align: left">2.16.840.1.113883.4.873 <br/> (OID for urn:ietf:rfc:3986)</td>
+      <td style="text-align: left">http://www.myOrg.com/patients/123456789</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">No OID exists</td>
+      <td style="text-align: left">concatenate; use URL specification URI for root</td>
+      <td style="text-align: left">urn:myNID:myOrganization</td>
+      <td style="text-align: left">123456789</td>
+      <td style="text-align: left">2.16.840.1.113883.4.873</td>
+      <td style="text-align: left">urn:myNID:myOrganization:123456789</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OID in system</td>
+      <td style="text-align: left">remove prefix</td>
+      <td style="text-align: left">urn:oid:2.16.840.1.113883.4.500</td>
+      <td style="text-align: left">12345V7890</td>
+      <td style="text-align: left">2.16.840.1.113883.4.500</td>
+      <td style="text-align: left">12345V7890</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">One-value pattern</td>
+      <td style="text-align: left">introspect steward organization OID</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">123456789</td>
+      <td style="text-align: left">2.16.840.1.113883.4.349</td>
+      <td style="text-align: left">123456789</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In some cases, a CDA template requires an id, and the source FHIR resource may not have an identifier. In these cases, use of nullFlavor or UUID generation approach may be reasonable options.</p>
+
+<h4 id="fhir-ids">FHIR ids</h4>
+
+<p>FHIR ids (i.e. resource ids and element ids) are strings: they have no system. We propose not preserving them. They could be used in II.extension but we have no way to identify a root. If someone can ascertain a reliable, repeatable way to do that, we might be able to keep the id.</p>
+
+<h3 id="cda--fhir-timedates">CDA ↔ FHIR Time/Dates</h3>
+
+<p>CDA timestamp values are based on a pattern of YYYYMMDDHHmmss+zzzz and <a href="https://hl7.org/fhir/datatypes.html#dateTime">FHIR dateTime values</a> are based on a YYYY-MM-DDThh:mm:ss+zz:zz. Partial expressions (e.g. 202305 for CDA or 2023-05 for FHIR) are allowed in both standards.</p>
+
+<p>To convert between the standards, systems should deploy programming logic that converts formats and preserves the level of precision. For example, “20230531” from CDA would become “2023-05-31” in FHIR (not 2023-05-31T00:00:00+00:00). Additional examples below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">CDA Date Time</th>
+      <th style="text-align: left">FHIR Date Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">2023</td>
+      <td style="text-align: left">2023</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">202305</td>
+      <td style="text-align: left">2023-05</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">20230531</td>
+      <td style="text-align: left">2023-05-31</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">202305312205-0500</td>
+      <td style="text-align: left">2023-05-31T22:05-05:00</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note that in C-CDA, timezone offset is a SHOULD, while in FHIR, time zone offset is required when more specific than the day. There may be instances where a CDA date-time value omits a time zone offset and other data from the document may be necessary to populate FHIR dateTime requirements.</p>
+
+<p>The following are possible approaches to map CDA timestamps without offset to a FHIR dateTime or instant datatype. Selecting an approach depends on various factors including the criticality of the data, the age of the document, and the level of information the transformation process has about the location where the particular element was recorded.</p>
+
+<ul>
+  <li>Omit the time portion of the date entirely, optionally sending the time as an extension or use the <a href="http://hl7.org/fhir/extensions/StructureDefinition-uncertainPeriod.html">Uncertain period  extension</a>
+    <ul>
+      <li>Note - this only works for FHIR fields with a dateTime datatype; the instant datatype must be precise to the second</li>
+    </ul>
+  </li>
+  <li>Use the same offset as a different timestamp within the same entry or section (or ClinicalDocument/effectiveTime)</li>
+  <li>Use contextual knowledge of the source document’s location (e.g. if the document came from a health system serving only New England and the date was in December, the offset is likely “-05:00”)</li>
+  <li>Default the offset to 00:00</li>
+</ul>
+
+<p>Beware that any approach which manufactures an offset could have clinical implications, but this is likely less critical the older (and thus, more likely to be missing offsets) the document is.</p>
+
+<h3 id="cda-coding--fhir-codeableconcept">CDA Coding ↔ FHIR CodeableConcept</h3>
+
+<p>The structure for coding in CDA and FHIR are fundamentally different. CDA  employs a mechanism (xsi:type <a href="http://hl7.org/cda/stds/core/draft1/StructureDefinition-CD.html">CD</a> or <a href="http://hl7.org/cda/stds/core/draft1/StructureDefinition-CE.html">CE</a>) where the code is included in the element and then originalText and translations elements may be provided as child elements. In FHIR, <a href="http://hl7.org/fhir/datatypes.html#codeableconcept">CodeableConcept</a> places all codes in a coding list with a separate element for the text representation.</p>
+
+<h4 id="cda-coding--fhir-codeableconcept-1">CDA Coding → FHIR CodeableConcept</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">CDA Property</th>
+      <th style="text-align: left">FHIR Target</th>
+      <th style="text-align: left">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">@code</td>
+      <td style="text-align: left">coding.code</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">@codeSystem</td>
+      <td style="text-align: left">coding.system</td>
+      <td style="text-align: left"><a name="l1022">​</a>Requires <a href="mappingGuidance.html#mapping-oid--uri">mapping OID → URI</a> or adding <code class="language-plaintext highlighter-rouge">urn:oid:</code> prefix</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">@displayName</td>
+      <td style="text-align: left">coding.display</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">originalText</td>
+      <td style="text-align: left">text</td>
+      <td style="text-align: left">CDA references must be resolved since <a href="http://hl7.org/fhir/datatypes-definitions.html#CodeableConcept.text">text</a> is a string in FHIR</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">translation@code</td>
+      <td style="text-align: left">coding.code</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">translation@codeSystem</td>
+      <td style="text-align: left">coding.system</td>
+      <td style="text-align: left"><a name="l1079">​</a>Requires <a href="mappingGuidance.html#mapping-oid--uri">mapping OID → URI</a> or adding <code class="language-plaintext highlighter-rouge">urn:oid:</code> prefix</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">translation@displayName</td>
+      <td style="text-align: left">coding.display</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fhir-codeableconcept--cda-coding">FHIR CodeableConcept → CDA Coding</h4>
+
+<p>In addition to the context of the previous section, CDA often requires elements to be present but the usage of a null value (@nullFlavor) is allowed. Generally when a CDA element is required (i.e. SHALL [1..1]), implementers will need to do one of the following when converting data into CDA:</p>
+<ul>
+  <li>If the data fulfills the target valueset, use the code and translate system</li>
+  <li>If the data can be mapped into the target valueset, use a mapping and the translated system</li>
+  <li>When the above is not possible:
+    <ul>
+      <li>If you have coded data and CDA nullFlavor is allowed, use “OTH” and put the source data in translation and provide originalText if possible. Note that <a href="http://hl7.org/cda/stds/core/draft1/StructureDefinition-CE.html">CD</a> and <a href="http://hl7.org/cda/stds/core/draft1/StructureDefinition-CE.html">CE</a> CDA elements generally allow translation and originalText.</li>
+      <li><a name="l1130">​</a>If you have missing data with <a href="https://hl7.org/fhir/extension-data-absent-reason.html">data-absent-reason</a>, use a <a href="ConceptMap-FC-DataAbsentReasonNullFlavor.html">mapped nullFlavor</a> if allowed. If not allowed, find the best match in the permitted valueset.</li>
+      <li>If you have missing data without <a href="https://hl7.org/fhir/extension-data-absent-reason.html">data-absent-reason</a>, select a nullFlavor if allowed. If not allowed, find the best match in the permitted valueset.</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">FHIR Property</th>
+      <th style="text-align: left">CDA Target</th>
+      <th style="text-align: left">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">coding.code</td>
+      <td style="text-align: left">@code<br/>or<br/>translation@code</td>
+      <td style="text-align: left">The criteria for mapping to @code varies by valueset binding within CDA templates. When no coding.code matches the target valueset, the @code should be omitted and @nullFlavor=”OTH” used placing all coding as translation elements</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">coding.display</td>
+      <td style="text-align: left">coding.displayName<br/>or<br/>translation@displayName</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">coding.system</td>
+      <td style="text-align: left">@codeSystem<br/>or<br/>translation@codeSystem</td>
+      <td style="text-align: left"><a name="l1211">​</a>Requires <a href="mappingGuidance.html#mapping-oid--uri">URI → OID mapping</a> or removing <code class="language-plaintext highlighter-rouge">urn:oid:</code> prefix</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">text</td>
+      <td style="text-align: left">originalText</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="mapping-oid--uri">Mapping OID ↔ URI</h4>
+
+<p>FHIR requires that certain terminologies use a specific uniform resource identifier (URI) while CDA always uses object identifiers (OIDs) for codeSystems. This means:</p>
+<ul>
+  <li>For CDA → FHIR mapping
+    <ul>
+      <li>Translation to URIs is required where possible. One source of translations is available <a href="http://hl7.org/fhir/terminologies-systems.html">in FHIR terminologies</a> which also includes information about other sources of translation.</li>
+      <li>For OIDs that have no URI equivalent is known, add the <code class="language-plaintext highlighter-rouge">urn:oid:</code> prefix to OID</li>
+    </ul>
+  </li>
+  <li>For FHIR → CDA mapping
+    <ul>
+      <li>Translation of URIs to OIDs is always required for FHIR → CDA mapping</li>
+      <li>Remove <code class="language-plaintext highlighter-rouge">urn:oid:</code> prefix for OIDs</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Two example are shown in the table below. Since LOINC is a terminology with a defined URI in FHIR, it is not allowed to add <code class="language-plaintext highlighter-rouge">urn:oid:</code> when mapping from CDA (<del>urn:oid:2.16.840.1.113883.6.1</del>). This is allowed, however, for other terminologies where no URI is known.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">CDA @codeSystem</th>
+      <th style="text-align: left">FHIR coding.system</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">2.16.840.1.113883.6.1</td>
+      <td style="text-align: left">http://loinc.org</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2.16.840.1.113883.4.123456789</td>
+      <td style="text-align: left">urn:oid:2.16.840.1.113883.4.123456789</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Additional guidance on <a href="http://hl7.org/fhir/terminologies-systems.html">FHIR terminologies available here</a>.</p>
+
+<h4 id="originaltext">OriginalText</h4>
+
+<p><a name="l1331">​</a>The <code class="language-plaintext highlighter-rouge">&lt;originalText&gt;</code> element in CDA can contain mixed XML content or a reference to a portion of the narrative. When converting to a FHIR data type that contains a text field, like <a href="http://hl7.org/fhir/datatypes.html#codeableconcept">CodeableConcept</a>, this is a direct map. For other cases, the <a href="http://hl7.org/fhir/R4B/extension-originaltext.html">originalText extension</a> may be used to convey this information. In either instance, the CDA narrative must be de-referenced, any markup removed, and stored as plain text into <code class="language-plaintext highlighter-rouge">CodeableConcept.text</code> or the originalText’s <code class="language-plaintext highlighter-rouge">.valueString</code>.</p>
+
+<p><a name="l1349">​</a>FHIR also includes a <a href="http://hl7.org/fhir/R4B/extension-narrativelink.html">narrativeLink extension</a> which functions similarly to the <code class="language-plaintext highlighter-rouge">&lt;reference value="#..."&gt;</code> attribute underneath originalText. If the section or resource narrative has been converted to FHIR (see <a href="#narrative-text">Narrative Text</a>), this extension can be added to indicate the portion of narrative corresponding to the extended FHIR field.</p>
+
+<h3 id="cda--fhir-provenance">CDA ↔ FHIR Provenance</h3>
+
+<p>CDA provides a repeated set of elements within each activity which may be used in populating data to/from FHIR <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-provenance.html">Provenance.Agent</a></p>
+
+<ul>
+  <li><strong>author</strong>: Represents the humans and/or machines that authored the [document/section/entry/act].</li>
+  <li><strong>performer</strong>: A person who actually and principally carries out an action.</li>
+  <li><strong>informant</strong>: An informant (or source of information) is a person that provides relevant information, such as the parent of a comatose patient who describes the patient’s behavior prior to the onset of coma.</li>
+  <li><strong>participant</strong> Used to represent other participants not explicitly mentioned by other classes, that were somehow involved in the documented activities</li>
+</ul>
+
+<p>FHIR, however, provides different elements within resources (e.g. Condition.recorder) that convey some information on provenance and a dedicated <a href="http://hl7.org/fhir/R4/provenance.html">Provenance resource</a> which references a  target resource. In addition, FHIR documents do not provide context conduction, so all FHIR resources in a FHIR document should have explicit <a href="https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-provenance.html">Provenance</a>. See Context conduction under <a href="http://hl7.org/fhir/R4/comparison-v3.html#7.17.2.1">v3 Similarities and Differences</a> for more information.</p>
+
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<blockquote class="stu-note">
+		<b>Provenance Mapping</b>
+		<p>This publication does <b>not</b> provide definitive CDA ↔ FHIR guidance on when resource attributes (e.g. AllergyIntolerance.recorder) vs. dedicated Provenance resources (e.g. Provenance targeting an AllergyIntolerance resource) should be used for documenting data provenance.</p>
+    <p>In addition, this guide does not address how author and other provenance context conduction should work from C-CDA to FHIR. We welcome feedback on the topic of provenance from implementers.</p>
+	</blockquote>
+</div>
+
+<p>At a minimum, it is recommended that when <a href="https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-provenance.html">Provenance</a> resources are present in a FHIR document, that they should be mapped to provenance as defined in the <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=447">C-CDA Companion Guide</a> and <a href="http://hl7.org/fhir/us/core/STU4/basic-provenance.html">Basic Provenance in US Core</a>.</p>
+
+<p>Preliminary guidelines for documents may include:</p>
+<ol>
+  <li>Assembler generated documents
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">entity.what</code> reference either a <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-documentreference.html">DocumentReference</a> or <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html">DiagnosticReport</a></li>
+      <li><code class="language-plaintext highlighter-rouge">agent.type.coding.code</code> = assembler</li>
+      <li><code class="language-plaintext highlighter-rouge">agent.onBehalfOf</code> reference the <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html">Organization</a> that the document was assembled under the auspices of</li>
+    </ul>
+  </li>
+  <li>Device generated document templates
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">entity.what</code> reference either a <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-documentreference.html">DocumentReference</a> or <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html">DiagnosticReport</a></li>
+      <li><code class="language-plaintext highlighter-rouge">agent.type.coding.code</code> = assembler</li>
+      <li><code class="language-plaintext highlighter-rouge">agent.onBehalfOf</code> reference the <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html">Organization</a> that the document was assembled under the auspices of</li>
+      <li>A role of Informant is not permitted in Device Generated Document template.</li>
+    </ul>
+  </li>
+  <li>Patient Generated Document
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">entity.what</code> reference either a <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-documentreference.html">DocumentReference</a> or <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html">DiagnosticReport</a></li>
+      <li><code class="language-plaintext highlighter-rouge">agent.type</code> of author</li>
+      <li><code class="language-plaintext highlighter-rouge">agent.who</code> reference to the <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">Patient</a>. Optionally, it may include a participating device composer when created from a patient portal, and/or a participating assembeler; or a participating informant.</li>
+      <li><code class="language-plaintext highlighter-rouge">onBehalfOf</code> valued to the authorizing provider’s organization</li>
+    </ul>
+  </li>
+  <li>Provider Generated Document
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">entity.what</code> reference either a <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-documentreference.html">DocumentReference</a> or <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html">DiagnosticReport</a></li>
+      <li><code class="language-plaintext highlighter-rouge">agent.type</code> of author</li>
+      <li><code class="language-plaintext highlighter-rouge">agent.who</code> reference the <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner.html">Practitioner</a> or <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-practitionerrole.html">PractitionerRole</a> (when organization is included along with roles form the source C-CDA)</li>
+      <li><code class="language-plaintext highlighter-rouge">onBehalfOf</code> reference to an <a href="https://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html">Organization</a> that the provider is authorized by</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="name-address-telecom">Name, Address, Telecom</h3>
+
+<p><a name="l1578">​</a>The mappings of name, address and telecom information are useful in many part of C-CDA ↔ FHIR mapping. These are a combination of string, code and date mappings as shown below and may be re-used across many templates/resources.  For examples of these transformations, please see the <a href="./CF-patient.html">CDA → FHIR Patient mapping</a> and <a href="./FC-patient.html">FHIR → CDA Patient mapping</a> pages.</p>
+
+<h4 id="cda-name--fhir-name">CDA name → FHIR name</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">CDA name</th>
+      <th style="text-align: left">FHIR name</th>
+      <th style="text-align: left">Transform Steps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">@use</td>
+      <td style="text-align: left">.use</td>
+      <td style="text-align: left"><a name="l1617">​</a><a href="./ConceptMap-CF-NameUse.html">Name use (CDA) → Name use (FHIR)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">prefix</td>
+      <td style="text-align: left">.prefix</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">given</td>
+      <td style="text-align: left">.given</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">family</td>
+      <td style="text-align: left">.family</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">suffix</td>
+      <td style="text-align: left">.suffix</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">validTime/low@value</td>
+      <td style="text-align: left">.period.start</td>
+      <td style="text-align: left"><a name="l1678">​</a><a href="mappingGuidance.html#cda--fhir-timedates">CDA ↔ FHIR Time/Dates</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">validTime/high@value</td>
+      <td style="text-align: left">.period.end</td>
+      <td style="text-align: left"><a name="l1691">​</a><a href="mappingGuidance.html#cda--fhir-timedates">CDA ↔ FHIR Time/Dates</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cda-addr--fhir-address">CDA addr → FHIR address</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">CDA addr</th>
+      <th style="text-align: left">FHIR address</th>
+      <th style="text-align: left">Transform Steps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">@use</td>
+      <td style="text-align: left">.use</td>
+      <td style="text-align: left"><a name="l1728">​</a><a href="./ConceptMap-CF-AddressUse.html">Addr use  (CDA) → Address use (FHIR)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">streetAddressLine</td>
+      <td style="text-align: left">.line</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">city</td>
+      <td style="text-align: left">.city</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">state</td>
+      <td style="text-align: left">.state</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">postalCode</td>
+      <td style="text-align: left">.postalCode</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">country</td>
+      <td style="text-align: left">.country</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">useablePeriod/low@value</td>
+      <td style="text-align: left">.period.start</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">useablePeriod/high@value</td>
+      <td style="text-align: left">.period.end</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cda-telecom--fhir-telecom">CDA telecom → FHIR telecom</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">CDA telecom</th>
+      <th style="text-align: left">FHIR telecom</th>
+      <th style="text-align: left">Transform Steps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">@use</td>
+      <td style="text-align: left">.use</td>
+      <td style="text-align: left"><a name="l1849">​</a><a href="./ConceptMap-CF-TelecomUse.html">CDA telecom use → FHIR contact point use</a><br/>Note that CDA’s <code class="language-plaintext highlighter-rouge">@use='PG'</code> is equivalent to FHIR’s <code class="language-plaintext highlighter-rouge">.system='pager'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">@value</td>
+      <td style="text-align: left">.system<br/>&amp;<br/>.value</td>
+      <td style="text-align: left"><a name="l1873">​</a><a href="./ConceptMap-CF-TelecomType.html">CDA telecom value → FHIR contact point system</a><br/>Only include information in FHIR value which comes after the CDA system prefix</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fhir-name--cda-name">FHIR name → CDA name</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">FHIR name</th>
+      <th style="text-align: left">CDA name</th>
+      <th style="text-align: left">Transform Steps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">.use</td>
+      <td style="text-align: left">@use</td>
+      <td style="text-align: left"><a name="l1912">​</a><a href="./ConceptMap-FC-NameUse.html">Name use (FHIR) → Name use (CDA)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.family</td>
+      <td style="text-align: left">family</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.given</td>
+      <td style="text-align: left">given</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.prefix</td>
+      <td style="text-align: left">prefix</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.suffix</td>
+      <td style="text-align: left">suffix</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.period.start</td>
+      <td style="text-align: left">validTime/low@value</td>
+      <td style="text-align: left"><a name="l1973">​</a><a href="mappingGuidance.html#cda--fhir-timedates">CDA ↔ FHIR Time/Dates</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.period.end</td>
+      <td style="text-align: left">validTime/high@value</td>
+      <td style="text-align: left"><a name="l1986">​</a><a href="mappingGuidance.html#cda--fhir-timedates">CDA ↔ FHIR Time/Dates</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fhir-address---cda-addr">FHIR address  → CDA addr</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">FHIR address</th>
+      <th style="text-align: left">CDA addr</th>
+      <th style="text-align: left">Transform Steps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">.use</td>
+      <td style="text-align: left">@use</td>
+      <td style="text-align: left"><a name="l2023">​</a><a href="./ConceptMap-FC-AddressUse.html">Address use (FHIR) → Addr use (CDA)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.line</td>
+      <td style="text-align: left">streetAddressLine</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.city</td>
+      <td style="text-align: left">city</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.state</td>
+      <td style="text-align: left">state</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.postalCode</td>
+      <td style="text-align: left">postalCode</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.country</td>
+      <td style="text-align: left">country</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.period.start</td>
+      <td style="text-align: left">useablePeriod/low@value</td>
+      <td style="text-align: left"><a name="l2096">​</a><a href="mappingGuidance.html#cda--fhir-timedates">CDA ↔ FHIR Time/Dates</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.period.end</td>
+      <td style="text-align: left">useablePeriod/high@value</td>
+      <td style="text-align: left"><a name="l2109">​</a><a href="mappingGuidance.html#cda--fhir-timedates">CDA ↔ FHIR Time/Dates</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fhir-telecom--cda-telecom">FHIR telecom → CDA telecom</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">FHIR telecom</th>
+      <th style="text-align: left">CDA telecom</th>
+      <th style="text-align: left">Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">.system<br/>&amp;<br/>.value</td>
+      <td style="text-align: left">@value</td>
+      <td style="text-align: left"><a name="l2150">​</a><a href="./ConceptMap-FC-TelecomType.html">FHIR contact point system → CDA telecom value</a><br/>Insert FHIR value after the CDA system prefix mapped from FHIR system<br/>Note that FHIR’s <code class="language-plaintext highlighter-rouge">.system='pager'</code> is equivalent to CDA’s <code class="language-plaintext highlighter-rouge">@use='PG'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.use</td>
+      <td style="text-align: left">@use</td>
+      <td style="text-align: left"><a name="l2172">​</a><a href="./ConceptMap-FC-TelecomUse.html">FHIR contact point use → CDA use</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="missing-data-in-c-cda-vs-fhir">Missing Data in C-CDA vs. FHIR</h3>
+
+<p>CDA and FHIR address missing data and null usage in different ways:</p>
+<ul>
+  <li>The use of nullFlavor in CDA is explained in depth in Volume 1 of the <a href="http://hl7.org/cda/stds/ccda/draft1/designconsiderations.html#unknown-and-no-known-information">C-CDA Implementation Guide</a> and in the <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=447">C-CDA Companion Guide</a>.</li>
+  <li>The use of the data absent reason extension is explained in depth in the <a href="https://build.fhir.org/ig/HL7/US-Core/general-requirements.html#missing-data">US Core Implementation Guide</a> and also in the <a href="http://hl7.org/fhir/extension-data-absent-reason.html">base extension</a>.</li>
+</ul>
+
+<p>In this publication, we include a mapping between missing data concepts. <strong>Importantly, it should be noted that several mappings include non-equivalence (wider or narrower or unsupported) and that each standard may allow data elements to be omitted while the other requires</strong>. Feedback to improve implementer guidance is welcome on the handling of missing data between C-CDA and FHIR:</p>
+<ul>
+  <li><a name="l2214">​</a><a href="./ConceptMap-CF-NullFlavorDataAbsentReason.html">NullFlavor (CDA) → Data Absent Reason code (FHIR)</a></li>
+  <li><a name="l2218">​</a><a href="./ConceptMap-FC-DataAbsentReasonNullFlavor.html">Data Absent Reason code (FHIR) → NullFlavor (CDA)</a></li>
+</ul>
+
+<h3 id="narrative-text">Narrative Text</h3>
+
+<p>The CDA section narrative text is an authoritative portion of the document and must be preserved when transforming to FHIR. When creating a FHIR Composition resource (or converting a FHIR Composition back into CDA), this is a straightforward mapping between CDA’s <code class="language-plaintext highlighter-rouge">section/text</code> and the FHIR Composition <code class="language-plaintext highlighter-rouge">section.text</code> field. There is a slight difference in allowed elements - CDA defines a limited set of elements in its NarrativeBlock schema, and FHIR limits narratives to a subset of XHTML - but these two fields can generally be mapped 1:1. These differences are described below.</p>
+
+<h4 id="c-cda-entrytext--fhir-resourcetext">C-CDA Entry/Text → FHIR Resource.text</h4>
+
+<p>When mapping C-CDA entires to individual FHIR resources, the entry text should also be converted to a FHIR narrative. Every CDA ClinicalStatement (e.g. <code class="language-plaintext highlighter-rouge">&lt;act&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;observation&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;encounter&gt;</code>, etc) contains a <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code> field, and C-CDA Volume 1 contains the following constraint which is applied to all of these ClinicalStatements:</p>
+
+<blockquote>
+  <p>SHOULD contain zero or one [0..1] text<br/>&nbsp;&nbsp;
+ a. The text, if present, SHOULD contain zero or one [0..1] reference/@value<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+    i. This reference/@value SHALL begin with a ‘#’ and SHALL point to its corresponding narrative (using the approach defined in CDA R2.0, section 4.3.5.1)</p>
+</blockquote>
+
+<p>When this element is present on a C-CDA entry, the FHIR resource SHOULD be created with a narrative (<code class="language-plaintext highlighter-rouge">.text</code>) corresponding to the portion of the section narrative referenced by the <code class="language-plaintext highlighter-rouge">reference/@value</code> attribute. This attribute will match an <code class="language-plaintext highlighter-rouge">@ID</code> attribute on an element in the section narrative. That element and all of its children should be used as the basis for the FHIR resource’s narrative. Additionally, the <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code> node may contain mixed content alongside the <code class="language-plaintext highlighter-rouge">&lt;reference&gt;</code> element. In this case, the FHIR resource should also include the mixed content in its narrative.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> Sometimes the <code class="language-plaintext highlighter-rouge">@ID</code> element will appear on a portion of a table, such as a <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code> or a <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code>, or some other narrative element like <code class="language-plaintext highlighter-rouge">&lt;item&gt;</code> which may not stand well on its own when converted to XHTML. When a situation like this occurs, include appropriate context from other elements outside the primary element containing <code class="language-plaintext highlighter-rouge">@ID</code>. For example, if the <code class="language-plaintext highlighter-rouge">@ID</code> appears on a <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, create a table for the FHIR resource narrative and repeat the header row(s) before including the <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>.</p>
+</blockquote>
+
+<p>Example mappings - assume CDA narrative contains an element with <code class="language-plaintext highlighter-rouge">ID="id1"</code> that contains “tagged text”.</p>
+<table>
+  <thead>
+    <tr>
+      <th>CDA Structure</th>
+      <th>FHIR Narrative Div</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+ <div>
+
+          <figure class="highlight"><pre><code data-lang="xml" class="language-xml"><span class="nt">&lt;act&gt;</span>
+  <span class="nt">&lt;text&gt;</span>
+    <span class="nt">&lt;reference</span> <span class="na">value=</span><span class="s">"#id1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/text&gt;</span>
+<span class="nt">&lt;/act&gt;</span></code></pre></figure>
+        </div>
+      </td>
+      <td>
+<figure class="highlight"><pre><code data-lang="xml" class="language-xml"><span class="nt">&lt;div</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span><span class="nt">&gt;</span>
+  tagged text
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+      </td>
+    </tr>
+    <tr>
+      <td>
+ <div>
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ```xml
+    &lt;act&gt;
+      &lt;text&gt;Mixed content&lt;/text&gt;
+    &lt;/act&gt;
+    ```
+</code></pre></div>          </div>
+        </div>
+      </td>
+      <td>
+ <div>
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ```xml
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
+      Mixed content
+    &lt;/div&gt;
+    ```
+</code></pre></div>          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+ <div>
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ```xml
+    &lt;act&gt;
+      &lt;text&gt;Mixed with reference!
+        &lt;reference value="#id1"&gt;
+      &lt;/text&gt;
+    &lt;/act&gt;
+    ```
+</code></pre></div>          </div>
+        </div>
+      </td>
+      <td>
+ <div>
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ```xml
+    &lt;!-- Surrounding either part with an extra &lt;div&gt; is
+         one possible suggestion to improve readability --&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
+      Mixed with reference!
+      &lt;div&gt;tagged text&lt;/div&gt;
+    &lt;/div&gt;
+    ```
+</code></pre></div>          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fhir-resourcetext--c-cda-section-narratives">FHIR Resource.text → C-CDA Section Narratives</h4>
+
+<p>If a FHIR Composition is being converted to CDA, its <code class="language-plaintext highlighter-rouge">section.text</code> can be converted to CDA <code class="language-plaintext highlighter-rouge">section/text</code> directly. If FHIR resources are being assembled into a new document, the narrative from each resource included in a section should be included as that section’s text, as well as referenced from the specific C-CDA entry created from the conversion.</p>
+
+<h4 id="difference-between-cda-narrative-and-fhir-narrative">Difference between CDA Narrative and FHIR Narrative</h4>
+<p>The following is general guidance for mapping CDA Narrative elements and attributes to XHTML used by FHIR. For a specific example, see the informative <a href="https://github.com/HL7/CDA-core-xsl">CDA R2 Stylesheet</a>. Table elements (<code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;thead&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tfoot&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;colgroup&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;col&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code>) are not included in the table because they are generally the same between CDA Narrative and XHTML.</p>
+
+<p>The reverse conversion (from FHIR HTML to CDA Narrative) is also possible, but only the elements allowed by the CDA Narrative may be used.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CDA Narrative</th>
+      <th>HTML</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>content</td>
+      <td>span</td>
+      <td>Inline content</td>
+    </tr>
+    <tr>
+      <td>paragraph</td>
+      <td>div (or p)</td>
+      <td>Block content</td>
+    </tr>
+    <tr>
+      <td>list</td>
+      <td>ul / ol</td>
+      <td>Choice depends on list/@listType attribute which can be <code class="language-plaintext highlighter-rouge">ordered</code> or <code class="language-plaintext highlighter-rouge">unordered</code></td>
+    </tr>
+    <tr>
+      <td>item</td>
+      <td>li</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>br</td>
+      <td>br</td>
+      <td>No child content, @styleCode attribute, or @ID attribute allowed</td>
+    </tr>
+    <tr>
+      <td>sub/sup</td>
+      <td>sub/sup</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>caption</td>
+      <td>caption</td>
+      <td>XHTML only allows caption after <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code>. Other occurrences may need to be converted to div or other elements</td>
+    </tr>
+    <tr>
+      <td>linkHtml</td>
+      <td>a</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>footnote/footnoteRef</td>
+      <td>stylized div/span</td>
+      <td>Represents footnotes which could be rendered at the bottom of the text</td>
+    </tr>
+    <tr>
+      <td>renderMultiMedia</td>
+      <td>img</td>
+      <td>The @referencedObject attribute matches an ID on an <code class="language-plaintext highlighter-rouge">&lt;observationMedia&gt;</code> entry in the section. The value of this entry represents the binary content of the image.</td>
+    </tr>
+    <tr>
+      <td>@styleCode</td>
+      <td>@style or @class</td>
+      <td>Standard CDA styleCode values like <code class="language-plaintext highlighter-rouge">Bold</code>, <code class="language-plaintext highlighter-rouge">Underline</code>, <code class="language-plaintext highlighter-rouge">Italics</code> can be rendered as style attributes. Others are equivalent to @class and may not have a specific interpretation outside of local exchanges.</td>
+    </tr>
+    <tr>
+      <td>@ID</td>
+      <td>@id</td>
+      <td>Note the difference in capitalization</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Though included in NarrativeBlock.xsd, the <code class="language-plaintext highlighter-rouge">Title</code>, <code class="language-plaintext highlighter-rouge">TitleContent</code>, and <code class="language-plaintext highlighter-rouge">TitleFootnote</code> elements are not actually used in CDA Narrative text.</p>
+
+<h3 id="terminology-mapping">Terminology Mapping</h3>
+
+<p><a name="l2702">​</a><a href="conceptMaps.html">Access terminology mappings between C-CDA and FHIR</a></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package hl7.fhir.be.hrmonitor#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 6, 2023 20:04+0000">2023-11-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+              <!-- My Organization -->
+  <!-- active -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://example.com/fhir/example/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a>
+  <!-- no fitting stylesheet found (status/publisher) -->
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
