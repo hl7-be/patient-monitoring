@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- My Organization -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- My Organization -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+<!--
+		<ul class="dropdown-menu">
+			<li><a href="downloads.html">Downloads</a></li>
+		</ul>
+-->		
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide, published by My Organization. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/patient-monitoring">https://github.com/hl7-be/patient-monitoring</a> and changes regularly. See the <a href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-11-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PatientMonitoringOutcome</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+  <li><a href="#audience" id="markdown-toc-audience">Audience</a></li>
+  <li><a href="#intellectual-property-considerations" id="markdown-toc-intellectual-property-considerations">Intellectual Property Considerations</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+  <li><a href="#use-cases-and-scenarios" id="markdown-toc-use-cases-and-scenarios">Use Cases and Scenarios</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#common-scenarios" id="markdown-toc-common-scenarios">Common Scenarios</a>        <ul>
+          <li><a href="#monitoring-chronic-conditions-eg-diabetes-hypertension" id="markdown-toc-monitoring-chronic-conditions-eg-diabetes-hypertension">Monitoring Chronic Conditions (e.g., Diabetes, Hypertension)</a></li>
+          <li><a href="#post-surgical-recovery-monitoring" id="markdown-toc-post-surgical-recovery-monitoring">Post-Surgical Recovery Monitoring</a></li>
+          <li><a href="#covid-19-or-infectious-disease-monitoring" id="markdown-toc-covid-19-or-infectious-disease-monitoring">COVID-19 or Infectious Disease Monitoring</a></li>
+          <li><a href="#behavioral-health-monitoring" id="markdown-toc-behavioral-health-monitoring">Behavioral Health Monitoring</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#key-concepts-and-definitions" id="markdown-toc-key-concepts-and-definitions">Key Concepts and Definitions</a>    <ul>
+      <li><a href="#fhir-basics-for-rpm" id="markdown-toc-fhir-basics-for-rpm">FHIR Basics for RPM</a></li>
+      <li><a href="#observation-resource-overview" id="markdown-toc-observation-resource-overview">Observation Resource Overview</a></li>
+      <li><a href="#profiles-extensions-and-value-sets" id="markdown-toc-profiles-extensions-and-value-sets">Profiles, Extensions, and Value Sets</a></li>
+      <li><a href="#terminologies-and-coding-systems-eg-loinc-snomed-ct" id="markdown-toc-terminologies-and-coding-systems-eg-loinc-snomed-ct">Terminologies and Coding Systems (e.g., LOINC, SNOMED CT)</a></li>
+    </ul>
+  </li>
+  <li><a href="#rpm-observation-profiles" id="markdown-toc-rpm-observation-profiles">RPM Observation Profiles</a>    <ul>
+      <li><a href="#general-structure-of-observation-profiles" id="markdown-toc-general-structure-of-observation-profiles">General Structure of Observation Profiles</a></li>
+      <li><a href="#core-rpm-observations" id="markdown-toc-core-rpm-observations">Core RPM Observations</a>        <ul>
+          <li><a href="#vital-signs-eg-heart-rate-blood-pressure-body-temperature" id="markdown-toc-vital-signs-eg-heart-rate-blood-pressure-body-temperature">Vital Signs (e.g., Heart Rate, Blood Pressure, Body Temperature)</a></li>
+          <li><a href="#physical-measurements-eg-weight-bmi" id="markdown-toc-physical-measurements-eg-weight-bmi">Physical Measurements (e.g., Weight, BMI)</a></li>
+          <li><a href="#activity-data-eg-steps-calories-burned" id="markdown-toc-activity-data-eg-steps-calories-burned">Activity Data (e.g., Steps, Calories Burned)</a></li>
+          <li><a href="#cardiovascular-monitoring-eg-ecg-pulse-oximetry" id="markdown-toc-cardiovascular-monitoring-eg-ecg-pulse-oximetry">Cardiovascular Monitoring (e.g., ECG, Pulse Oximetry)</a></li>
+          <li><a href="#respiratory-monitoring-eg-spirometry-peak-flow" id="markdown-toc-respiratory-monitoring-eg-spirometry-peak-flow">Respiratory Monitoring (e.g., Spirometry, Peak Flow)</a></li>
+          <li><a href="#behavioral-and-mood-assessments" id="markdown-toc-behavioral-and-mood-assessments">Behavioral and Mood Assessments</a></li>
+          <li><a href="#device-specific-observations" id="markdown-toc-device-specific-observations">Device-Specific Observations</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#data-flow-and-interoperability" id="markdown-toc-data-flow-and-interoperability">Data Flow and Interoperability</a>    <ul>
+      <li><a href="#data-collection-and-transmission" id="markdown-toc-data-collection-and-transmission">Data Collection and Transmission</a></li>
+      <li><a href="#data-transformation-and-storage" id="markdown-toc-data-transformation-and-storage">Data Transformation and Storage</a></li>
+      <li><a href="#interoperability-with-ehr-systems" id="markdown-toc-interoperability-with-ehr-systems">Interoperability with EHR Systems</a></li>
+      <li><a href="#handling-data-from-multiple-sources" id="markdown-toc-handling-data-from-multiple-sources">Handling Data from Multiple Sources</a></li>
+      <li><a href="#security-and-privacy-considerations" id="markdown-toc-security-and-privacy-considerations">Security and Privacy Considerations</a></li>
+    </ul>
+  </li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a>    <ul>
+      <li><a href="#profiles-for-rpm-observations" id="markdown-toc-profiles-for-rpm-observations">Profiles for RPM Observations</a></li>
+      <li><a href="#custom-extensions-for-specialized-data" id="markdown-toc-custom-extensions-for-specialized-data">Custom Extensions for Specialized Data</a></li>
+      <li><a href="#best-practices-for-defining-extensions" id="markdown-toc-best-practices-for-defining-extensions">Best Practices for Defining Extensions</a></li>
+      <li><a href="#example-profiles-and-extensions" id="markdown-toc-example-profiles-and-extensions">Example Profiles and Extensions</a></li>
+    </ul>
+  </li>
+  <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a>    <ul>
+      <li><a href="#conformance-and-validation-requirements" id="markdown-toc-conformance-and-validation-requirements">Conformance and Validation Requirements</a></li>
+      <li><a href="#handling-errors-and-exceptions" id="markdown-toc-handling-errors-and-exceptions">Handling Errors and Exceptions</a></li>
+      <li><a href="#workflow-integration-tips" id="markdown-toc-workflow-integration-tips">Workflow Integration Tips</a></li>
+      <li><a href="#best-practices-for-rpm-implementation" id="markdown-toc-best-practices-for-rpm-implementation">Best Practices for RPM Implementation</a></li>
+    </ul>
+  </li>
+  <li><a href="#sample-transactions-and-bundles" id="markdown-toc-sample-transactions-and-bundles">Sample Transactions and Bundles</a>    <ul>
+      <li><a href="#patient-resource-example" id="markdown-toc-patient-resource-example">Patient Resource Example</a></li>
+      <li><a href="#observation-resource-example" id="markdown-toc-observation-resource-example">Observation Resource Example</a></li>
+      <li><a href="#bundled-transactions-for-rpm-scenarios" id="markdown-toc-bundled-transactions-for-rpm-scenarios">Bundled Transactions for RPM Scenarios</a></li>
+      <li><a href="#test-data-examples" id="markdown-toc-test-data-examples">Test Data Examples</a></li>
+    </ul>
+  </li>
+  <li><a href="#terminology-bindings" id="markdown-toc-terminology-bindings">Terminology Bindings</a>    <ul>
+      <li><a href="#standardized-codes-for-rpm-observations" id="markdown-toc-standardized-codes-for-rpm-observations">Standardized Codes for RPM Observations</a></li>
+      <li><a href="#value-set-definitions" id="markdown-toc-value-set-definitions">Value Set Definitions</a></li>
+      <li><a href="#mapping-local-codes-to-standard-codes" id="markdown-toc-mapping-local-codes-to-standard-codes">Mapping Local Codes to Standard Codes</a></li>
+    </ul>
+  </li>
+  <li><a href="#security-and-privacy" id="markdown-toc-security-and-privacy">Security and Privacy</a>    <ul>
+      <li><a href="#securing-rpm-data-transfers" id="markdown-toc-securing-rpm-data-transfers">Securing RPM Data Transfers</a></li>
+      <li><a href="#managing-patient-consent" id="markdown-toc-managing-patient-consent">Managing Patient Consent</a></li>
+      <li><a href="#access-control-and-authentication" id="markdown-toc-access-control-and-authentication">Access Control and Authentication</a></li>
+      <li><a href="#compliance-with-hipaa-gdpr-or-other-regulations" id="markdown-toc-compliance-with-hipaa-gdpr-or-other-regulations">Compliance with HIPAA, GDPR, or Other Regulations</a></li>
+    </ul>
+  </li>
+  <li><a href="#testing-and-validation" id="markdown-toc-testing-and-validation">Testing and Validation</a>    <ul>
+      <li><a href="#tools-for-validation-eg-fhir-validator" id="markdown-toc-tools-for-validation-eg-fhir-validator">Tools for Validation (e.g., FHIR Validator)</a></li>
+      <li><a href="#test-scripts-for-rpm-observations" id="markdown-toc-test-scripts-for-rpm-observations">Test Scripts for RPM Observations</a></li>
+      <li><a href="#example-test-cases" id="markdown-toc-example-test-cases">Example Test Cases</a></li>
+    </ul>
+  </li>
+  <li><a href="#appendix" id="markdown-toc-appendix">Appendix</a>    <ul>
+      <li><a href="#glossary-of-terms" id="markdown-toc-glossary-of-terms">Glossary of Terms</a></li>
+      <li><a href="#references-and-resources" id="markdown-toc-references-and-resources">References and Resources</a></li>
+      <li><a href="#change-log-for-the-guide" id="markdown-toc-change-log-for-the-guide">Change Log for the Guide</a></li>
+      <li><a href="#faqs" id="markdown-toc-faqs">FAQs</a></li>
+    </ul>
+  </li>
+  <li><a href="#acknowledgments" id="markdown-toc-acknowledgments">Acknowledgments</a>    <ul>
+      <li><a href="#contributors" id="markdown-toc-contributors">Contributors</a></li>
+      <li><a href="#organizations-and-stakeholders" id="markdown-toc-organizations-and-stakeholders">Organizations and Stakeholders</a></li>
+    </ul>
+  </li>
+  <li><a href="#contact-information" id="markdown-toc-contact-information">Contact Information</a>    <ul>
+      <li><a href="#feedback-and-support" id="markdown-toc-feedback-and-support">Feedback and Support</a></li>
+      <li><a href="#ig-maintenance-and-updates" id="markdown-toc-ig-maintenance-and-updates">IG Maintenance and Updates</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="introduction">Introduction</h1>
+
+<h1 id="purpose">Purpose</h1>
+
+<h1 id="scope">Scope</h1>
+
+<h1 id="audience">Audience</h1>
+
+<h1 id="intellectual-property-considerations">Intellectual Property Considerations</h1>
+
+<p>While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
+as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
+any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
+licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.</p>
+
+<h1 id="disclaimer">Disclaimer</h1>
+
+<p>The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
+This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
+No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
+
+<h1 id="use-cases-and-scenarios">Use Cases and Scenarios</h1>
+<h2 id="overview">Overview</h2>
+<h2 id="common-scenarios">Common Scenarios</h2>
+<h3 id="monitoring-chronic-conditions-eg-diabetes-hypertension">Monitoring Chronic Conditions (e.g., Diabetes, Hypertension)</h3>
+<h3 id="post-surgical-recovery-monitoring">Post-Surgical Recovery Monitoring</h3>
+<h3 id="covid-19-or-infectious-disease-monitoring">COVID-19 or Infectious Disease Monitoring</h3>
+<h3 id="behavioral-health-monitoring">Behavioral Health Monitoring</h3>
+
+<h1 id="key-concepts-and-definitions">Key Concepts and Definitions</h1>
+<h2 id="fhir-basics-for-rpm">FHIR Basics for RPM</h2>
+<h2 id="observation-resource-overview">Observation Resource Overview</h2>
+<h2 id="profiles-extensions-and-value-sets">Profiles, Extensions, and Value Sets</h2>
+<h2 id="terminologies-and-coding-systems-eg-loinc-snomed-ct">Terminologies and Coding Systems (e.g., LOINC, SNOMED CT)</h2>
+
+<h1 id="rpm-observation-profiles">RPM Observation Profiles</h1>
+<h2 id="general-structure-of-observation-profiles">General Structure of Observation Profiles</h2>
+<h2 id="core-rpm-observations">Core RPM Observations</h2>
+<h3 id="vital-signs-eg-heart-rate-blood-pressure-body-temperature">Vital Signs (e.g., Heart Rate, Blood Pressure, Body Temperature)</h3>
+<h3 id="physical-measurements-eg-weight-bmi">Physical Measurements (e.g., Weight, BMI)</h3>
+<h3 id="activity-data-eg-steps-calories-burned">Activity Data (e.g., Steps, Calories Burned)</h3>
+<h3 id="cardiovascular-monitoring-eg-ecg-pulse-oximetry">Cardiovascular Monitoring (e.g., ECG, Pulse Oximetry)</h3>
+<h3 id="respiratory-monitoring-eg-spirometry-peak-flow">Respiratory Monitoring (e.g., Spirometry, Peak Flow)</h3>
+<h3 id="behavioral-and-mood-assessments">Behavioral and Mood Assessments</h3>
+<h3 id="device-specific-observations">Device-Specific Observations</h3>
+
+<h1 id="data-flow-and-interoperability">Data Flow and Interoperability</h1>
+<h2 id="data-collection-and-transmission">Data Collection and Transmission</h2>
+<h2 id="data-transformation-and-storage">Data Transformation and Storage</h2>
+<h2 id="interoperability-with-ehr-systems">Interoperability with EHR Systems</h2>
+<h2 id="handling-data-from-multiple-sources">Handling Data from Multiple Sources</h2>
+<h2 id="security-and-privacy-considerations">Security and Privacy Considerations</h2>
+
+<h1 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h1>
+<h2 id="profiles-for-rpm-observations">Profiles for RPM Observations</h2>
+<h2 id="custom-extensions-for-specialized-data">Custom Extensions for Specialized Data</h2>
+<h2 id="best-practices-for-defining-extensions">Best Practices for Defining Extensions</h2>
+<h2 id="example-profiles-and-extensions">Example Profiles and Extensions</h2>
+
+<h1 id="implementation-guidance">Implementation Guidance</h1>
+<h2 id="conformance-and-validation-requirements">Conformance and Validation Requirements</h2>
+<h2 id="handling-errors-and-exceptions">Handling Errors and Exceptions</h2>
+<h2 id="workflow-integration-tips">Workflow Integration Tips</h2>
+<h2 id="best-practices-for-rpm-implementation">Best Practices for RPM Implementation</h2>
+
+<h1 id="sample-transactions-and-bundles">Sample Transactions and Bundles</h1>
+<h2 id="patient-resource-example">Patient Resource Example</h2>
+<h2 id="observation-resource-example">Observation Resource Example</h2>
+<h2 id="bundled-transactions-for-rpm-scenarios">Bundled Transactions for RPM Scenarios</h2>
+<h2 id="test-data-examples">Test Data Examples</h2>
+
+<h1 id="terminology-bindings">Terminology Bindings</h1>
+<h2 id="standardized-codes-for-rpm-observations">Standardized Codes for RPM Observations</h2>
+<h2 id="value-set-definitions">Value Set Definitions</h2>
+<h2 id="mapping-local-codes-to-standard-codes">Mapping Local Codes to Standard Codes</h2>
+
+<h1 id="security-and-privacy">Security and Privacy</h1>
+<h2 id="securing-rpm-data-transfers">Securing RPM Data Transfers</h2>
+<h2 id="managing-patient-consent">Managing Patient Consent</h2>
+<h2 id="access-control-and-authentication">Access Control and Authentication</h2>
+<h2 id="compliance-with-hipaa-gdpr-or-other-regulations">Compliance with HIPAA, GDPR, or Other Regulations</h2>
+
+<h1 id="testing-and-validation">Testing and Validation</h1>
+<h2 id="tools-for-validation-eg-fhir-validator">Tools for Validation (e.g., FHIR Validator)</h2>
+<h2 id="test-scripts-for-rpm-observations">Test Scripts for RPM Observations</h2>
+<h2 id="example-test-cases">Example Test Cases</h2>
+
+<h1 id="appendix">Appendix</h1>
+<h2 id="glossary-of-terms">Glossary of Terms</h2>
+<h2 id="references-and-resources">References and Resources</h2>
+<h2 id="change-log-for-the-guide">Change Log for the Guide</h2>
+<h2 id="faqs">FAQs</h2>
+
+<h1 id="acknowledgments">Acknowledgments</h1>
+<h2 id="contributors">Contributors</h2>
+<h2 id="organizations-and-stakeholders">Organizations and Stakeholders</h2>
+
+<h1 id="contact-information">Contact Information</h1>
+<h2 id="feedback-and-support">Feedback and Support</h2>
+<h2 id="ig-maintenance-and-updates">IG Maintenance and Updates</h2>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 20, 2024 10:37+0000">2024-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- My Organization -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

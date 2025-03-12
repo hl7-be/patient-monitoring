@@ -1,0 +1,56 @@
+PatientMonitoringOutcome : Validation Results
+=========================================
+
+err = 0, warn = 5, info = 6
+$--
+Generated $--. FHIR version $-- for hl7.fhir.be.patient-monitoring#$-- (canonical = http://hl7belgium.org/fhir/patient-monitoring)
+ Build Errors : 0 / 5 / 0
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring : 0 / 0 / 1
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-AbdominalPainExample : 0 / 0 / 3
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-BloodPressureExample : 0 / 0 / 5
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-BodyTemperatureExample : 0 / 0 / 5
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-BodyWeightExample : 0 / 0 / 5
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-DistendedAbdomenExample : 0 / 0 / 3
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-HeartRateExample : 0 / 0 / 5
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-LevelOfResponsivenessExample : 0 / 0 / 3
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-NationalEarlyWarningScoreExample : 0 / 0 / 3
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-OxygenSaturationExample : 0 / 0 / 5
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-PainDuringUrinationExample : 0 / 0 / 1
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-PainInCalvesExample : 0 / 0 / 1
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-PainMedicationTakenExample : 0 / 0 / 1
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-PainSurgicalWoundsExample : 0 / 0 / 3
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-ReducedAppetiteExample : 0 / 0 / 3
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-RespiratoryRateExample : 0 / 0 / 5
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-ShortnessOfBreathExample : 0 / 0 / 3
+ /home/runner/work/patient-monitoring/patient-monitoring/fsh-generated/resources/Observation-ShoulderPainExample : 0 / 0 / 3
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json ==
+== fsh-generated/resources/Observation-AbdominalPainExample.json ==
+== fsh-generated/resources/Observation-BloodPressureExample.json ==
+INFORMATION: Observation/BloodPressureExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0]: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-BodyTemperatureExample.json ==
+INFORMATION: Observation/BodyTemperatureExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0]: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-BodyWeightExample.json ==
+INFORMATION: Observation/BodyWeightExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0]: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-DistendedAbdomenExample.json ==
+== fsh-generated/resources/Observation-HeartRateExample.json ==
+INFORMATION: Observation/HeartRateExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0]: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-LevelOfResponsivenessExample.json ==
+== fsh-generated/resources/Observation-NationalEarlyWarningScoreExample.json ==
+== fsh-generated/resources/Observation-OxygenSaturationExample.json ==
+INFORMATION: Observation/OxygenSaturationExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0]: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-PainDuringUrinationExample.json ==
+== fsh-generated/resources/Observation-PainInCalvesExample.json ==
+== fsh-generated/resources/Observation-PainMedicationTakenExample.json ==
+== fsh-generated/resources/Observation-PainSurgicalWoundsExample.json ==
+== fsh-generated/resources/Observation-ReducedAppetiteExample.json ==
+== fsh-generated/resources/Observation-RespiratoryRateExample.json ==
+INFORMATION: Observation/RespiratoryRateExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0]: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-ShortnessOfBreathExample.json ==
+== fsh-generated/resources/Observation-ShoulderPainExample.json ==

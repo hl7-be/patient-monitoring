@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BodyTemperatureExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation BodyTemperatureExample</b></p><a name="BodyTemperatureExample"> </a><a name="hcBodyTemperatureExample"> </a><a name="BodyTemperatureExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8310-5}">Body Temperature</span></p><p><b>subject</b>: <a href="Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666">Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</a></p><p><b>effective</b>: 2024-11-19 19:30:42+0000</p><p><b>device</b>: <a href="Device/Byteflies Vital Signs">Device/Byteflies Vital Signs</a></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 8310-5}">Body Temperature</span></td><td>35.29 C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8310-5"/>
+      <display value="Body Temperature"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+  </subject>
+  <effectiveDateTime value="2024-11-19T19:30:42+00:00"/>
+  <device>
+    <reference value="Device/Byteflies Vital Signs"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8310-5"/>
+        <display value="Body Temperature"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="35.29"/>
+      <unit value="C"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="Cel"/>
+    </valueQuantity>
+  </component>
+</Observation>

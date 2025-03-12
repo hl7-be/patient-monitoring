@@ -1,0 +1,93 @@
+{
+  "resourceType" : "Observation",
+  "id" : "BloodPressureExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/bp"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BloodPressureExample</b></p><a name=\"BloodPressureExample\"> </a><a name=\"hcBloodPressureExample\"> </a><a name=\"BloodPressureExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-18 09:38:52+0000</p><p><b>performer</b>: <a href=\"#hcBloodPressureExample/byteflies\">Organization Byteflies</a></p><p><b>device</b>: <a href=\"#hcBloodPressureExample/vital-signs-box\">Device: identifier = 240822yti3tgeyay; manufacturer = Byteflies</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 140 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 74 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Device #vital-signs-box</b></p><a name=\"BloodPressureExample/vital-signs-box\"> </a><a name=\"hcBloodPressureExample/vital-signs-box\"> </a><a name=\"BloodPressureExample/vital-signs-box-en-US\"> </a><p><b>identifier</b>: 240822yti3tgeyay</p><p><b>manufacturer</b>: Byteflies</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>VS-4</td><td>other</td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization #byteflies</b></p><a name=\"BloodPressureExample/byteflies\"> </a><a name=\"hcBloodPressureExample/byteflies\"> </a><a name=\"BloodPressureExample/byteflies-en-US\"> </a><p><b>name</b>: Byteflies</p></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "Device",
+    "id" : "vital-signs-box",
+    "meta" : {
+      "tag" : [{
+        "system" : "https://api-vitalsigns.byteflies.net/version",
+        "code" : "20241028-1511",
+        "display" : "API Version 20241028-1511"
+      }]
+    },
+    "identifier" : [{
+      "value" : "240822yti3tgeyay"
+    }],
+    "manufacturer" : "Byteflies",
+    "deviceName" : [{
+      "name" : "VS-4",
+      "type" : "other"
+    }]
+  },
+  {
+    "resourceType" : "Organization",
+    "id" : "byteflies",
+    "name" : "Byteflies"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "85354-9",
+      "display" : "Blood pressure panel with all children optional"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://remecare.github.io/patient-monitoring/wip/",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectiveDateTime" : "2024-11-18T09:38:52+00:00",
+  "performer" : [{
+    "reference" : "#byteflies"
+  }],
+  "device" : {
+    "reference" : "#vital-signs-box"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 140,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 74,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  }]
+}

@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextActivityVS,0.1.0,active,,FCContextActivityVS,Context Activity Value Set,"Codes representing the",,"Internal"
+http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextSymptomsVS,0.1.0,active,,FCContextSymptomsVS,Context findings Value Set,"Codes representing the",,"Internal"
+http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRFindingVS,0.1.0,active,,FCHRFindingVS,Heart Rate Finding Value Set,"Codes representing the",,"Internal"
+http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRIndicatorVS,0.1.0,active,,FCHRIndicatorVS,Heart Rate Indicator Value Set,"Codes representing the",,"Internal"

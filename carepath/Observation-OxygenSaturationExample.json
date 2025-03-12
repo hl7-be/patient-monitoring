@@ -1,0 +1,74 @@
+{
+  "resourceType" : "Observation",
+  "id" : "OxygenSaturationExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/oxygensat"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation OxygenSaturationExample</b></p><a name=\"OxygenSaturationExample\"> </a><a name=\"hcOxygenSaturationExample\"> </a><a name=\"OxygenSaturationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2708-6}, {http://loinc.org 59408-5}\">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48</p><p><b>effective</b>: 2024-11-19 11:16:55+0000</p><p><b>performer</b>: <a href=\"#hcOxygenSaturationExample/byteflies\">Organization Byteflies</a></p><p><b>value</b>: 98 %O2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>device</b>: <a href=\"#hcOxygenSaturationExample/vital-signs-box\">Device: identifier = 240822yti3tgeyay; manufacturer = Byteflies</a></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Device #vital-signs-box</b></p><a name=\"OxygenSaturationExample/vital-signs-box\"> </a><a name=\"hcOxygenSaturationExample/vital-signs-box\"> </a><a name=\"OxygenSaturationExample/vital-signs-box-en-US\"> </a><p><b>identifier</b>: 240822yti3tgeyay</p><p><b>manufacturer</b>: Byteflies</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>VS-4</td><td>other</td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization #byteflies</b></p><a name=\"OxygenSaturationExample/byteflies\"> </a><a name=\"hcOxygenSaturationExample/byteflies\"> </a><a name=\"OxygenSaturationExample/byteflies-en-US\"> </a><p><b>name</b>: Byteflies</p></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "Device",
+    "id" : "vital-signs-box",
+    "meta" : {
+      "tag" : [{
+        "system" : "https://api-vitalsigns.byteflies.net/version",
+        "code" : "20241028-1511",
+        "display" : "API Version 20241028-1511"
+      }]
+    },
+    "identifier" : [{
+      "value" : "240822yti3tgeyay"
+    }],
+    "manufacturer" : "Byteflies",
+    "deviceName" : [{
+      "name" : "VS-4",
+      "type" : "other"
+    }]
+  },
+  {
+    "resourceType" : "Organization",
+    "id" : "byteflies",
+    "name" : "Byteflies"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2708-6",
+      "display" : "Oxygen saturation in Arterial blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "59408-5",
+      "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://remecare.github.io/patient-monitoring/wip/",
+      "value" : "BE84DC42-2B5D-464C-AFFD-57DB87BD7D48"
+    }
+  },
+  "effectiveDateTime" : "2024-11-19T11:16:55+00:00",
+  "performer" : [{
+    "reference" : "#byteflies"
+  }],
+  "valueQuantity" : {
+    "value" : 98,
+    "unit" : "%O2",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "%"
+  },
+  "device" : {
+    "reference" : "#vital-signs-box"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Observation",
+  "id" : "AbdominalPainExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation AbdominalPainExample</b></p><a name=\"AbdominalPainExample\"> </a><a name=\"hcAbdominalPainExample\"> </a><a name=\"AbdominalPainExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 21522001}\">Abdominal pain</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-15 09:56:00+0000 --&gt; 2024-11-15 09:57:00+0000</p><p><b>performer</b>: <a href=\"#hcAbdominalPainExample/nurse\">PractitionerRole Nurse</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA10138-8}\">6</span></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #nurse</b></p><a name=\"AbdominalPainExample/nurse\"> </a><a name=\"hcAbdominalPainExample/nurse\"> </a><a name=\"AbdominalPainExample/nurse-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persnurse}\">Nurse</span></p></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "PractitionerRole",
+    "id" : "nurse",
+    "meta" : {
+      "profile" : ["https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"]
+    },
+    "code" : [{
+      "coding" : [{
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+        "code" : "persnurse",
+        "display" : "Nurse"
+      }]
+    }]
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "21522001",
+      "display" : "Abdominal pain"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://remecare.github.io/patient-monitoring/wip/",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectivePeriod" : {
+    "start" : "2024-11-15T09:56:00+00:00",
+    "end" : "2024-11-15T09:57:00+00:00"
+  },
+  "performer" : [{
+    "reference" : "#nurse"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA10138-8"
+    }]
+  }
+}

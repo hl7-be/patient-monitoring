@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCContextActivityCS",
+      "title" : "HR Context Activity Code System",
+      "description" : "Context Activity"
+    },
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCContextSymptomsCS",
+      "title" : "HR Context Symptoms Code System",
+      "description" : "Context Symptoms"
+    },
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCHRFindingCS",
+      "title" : "HR Finding Code System",
+      "description" : "FCHRFinding"
+    },
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCHRIndicatorCS",
+      "title" : "HR Indicator Code System",
+      "description" : "FCHRIndicator"
+    }
+  ]
+}

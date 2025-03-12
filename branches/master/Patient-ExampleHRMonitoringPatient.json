@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ExampleHRMonitoringPatient",
+  "meta" : {
+    "profile" : ["http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringPatient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( username: johndoe)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">userid: 123456</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "code" : "username"
+      }]
+    },
+    "system" : "http://somesystem/identifiertypes/username",
+    "value" : "johndoe"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "code" : "userid"
+      }]
+    },
+    "system" : "http://somesystem/identifiertypes/userid",
+    "value" : "123456"
+  }]
+}

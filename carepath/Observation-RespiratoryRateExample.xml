@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="RespiratoryRateExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/resprate"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation RespiratoryRateExample</b></p><a name="RespiratoryRateExample"> </a><a name="hcRespiratoryRateExample"> </a><a name="RespiratoryRateExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 9279-1}">Respiratory rate</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/BE84DC42-2B5D-464C-AFFD-57DB87BD7D48</p><p><b>effective</b>: 2024-11-15 09:56:00+0000 --&gt; 2024-11-15 09:57:00+0000</p><p><b>performer</b>: <a href="#hcRespiratoryRateExample/byteflies">Organization Byteflies</a></p><p><b>value</b>: 17.35 breaths/minute<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/min = '/min')</span></p><p><b>device</b>: <a href="#hcRespiratoryRateExample/vital-signs-box">Device: identifier = 240822yti3tgeyay; manufacturer = Byteflies</a></p><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Device #vital-signs-box</b></p><a name="RespiratoryRateExample/vital-signs-box"> </a><a name="hcRespiratoryRateExample/vital-signs-box"> </a><a name="RespiratoryRateExample/vital-signs-box-en-US"> </a><p><b>identifier</b>: 240822yti3tgeyay</p><p><b>manufacturer</b>: Byteflies</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>VS-4</td><td>other</td></tr></table></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Organization #byteflies</b></p><a name="RespiratoryRateExample/byteflies"> </a><a name="hcRespiratoryRateExample/byteflies"> </a><a name="RespiratoryRateExample/byteflies-en-US"> </a><p><b>name</b>: Byteflies</p></blockquote></div>
+  </text>
+  <contained>
+    <Device>
+      <id value="vital-signs-box"/>
+      <meta>
+        <tag>
+          <system value="https://api-vitalsigns.byteflies.net/version"/>
+          <code value="20241028-1511"/>
+          <display value="API Version 20241028-1511"/>
+        </tag>
+      </meta>
+      <identifier>
+        <value value="240822yti3tgeyay"/>
+      </identifier>
+      <manufacturer value="Byteflies"/>
+      <deviceName>
+        <name value="VS-4"/>
+        <type value="other"/>
+      </deviceName>
+    </Device>
+  </contained>
+  <contained>
+    <Organization>
+      <id value="byteflies"/>
+      <name value="Byteflies"/>
+    </Organization>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="9279-1"/>
+      <display value="Respiratory rate"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://remecare.github.io/patient-monitoring/wip/"/>
+      <value value="BE84DC42-2B5D-464C-AFFD-57DB87BD7D48"/>
+    </identifier>
+  </subject>
+  <effectivePeriod>
+    <start value="2024-11-15T09:56:00+00:00"/>
+    <end value="2024-11-15T09:57:00+00:00"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="#byteflies"/>
+  </performer>
+  <valueQuantity>
+    <value value="17.35"/>
+    <unit value="breaths/minute"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/min"/>
+  </valueQuantity>
+  <device>
+    <reference value="#vital-signs-box"/>
+  </device>
+</Observation>

@@ -1,0 +1,64 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextActivityVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCContextActivityVS",
+      "title" : "Context Activity Value Set",
+      "description" : "Codes representing the",
+      "systems" : [
+        "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FibricheckMeasurementModel.html" : "Fibricheck Measurement Logical Model",
+      "StructureDefinition-HRMonitoringObs.html" : "HRMonitoringObs"
+    },
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextSymptomsVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCContextSymptomsVS",
+      "title" : "Context findings Value Set",
+      "description" : "Codes representing the",
+      "systems" : [
+        "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FibricheckMeasurementModel.html" : "Fibricheck Measurement Logical Model",
+      "StructureDefinition-HRMonitoringObs.html" : "HRMonitoringObs"
+    },
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRFindingVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCHRFindingVS",
+      "title" : "Heart Rate Finding Value Set",
+      "description" : "Codes representing the",
+      "systems" : [
+        "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FibricheckMeasurementModel.html" : "Fibricheck Measurement Logical Model",
+      "StructureDefinition-HRMonitoringObs.html" : "HRMonitoringObs"
+    },
+    {
+      "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRIndicatorVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FCHRIndicatorVS",
+      "title" : "Heart Rate Indicator Value Set",
+      "description" : "Codes representing the",
+      "systems" : [
+        "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FibricheckMeasurementModel.html" : "Fibricheck Measurement Logical Model",
+      "StructureDefinition-HRMonitoringObs.html" : "HRMonitoringObs"
+    }
+  ]
+}

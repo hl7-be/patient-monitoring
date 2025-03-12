@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="FCHRFindingCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="FCHRFindingCS-1"> </a></td><td>sinus_arrhythmia</td></tr><tr><td style="white-space:nowrap">2<a name="FCHRFindingCS-2"> </a></td><td>extrasystoles_trig_episode</td></tr><tr><td style="white-space:nowrap">3<a name="FCHRFindingCS-3"> </a></td><td>undiagnosable</td></tr><tr><td style="white-space:nowrap">4<a name="FCHRFindingCS-4"> </a></td><td>extrasystoles_isolated</td></tr><tr><td style="white-space:nowrap">5<a name="FCHRFindingCS-5"> </a></td><td>dubious_rhythm</td></tr><tr><td style="white-space:nowrap">6<a name="FCHRFindingCS-6"> </a></td><td>extrasystoles</td></tr><tr><td style="white-space:nowrap">7<a name="FCHRFindingCS-7"> </a></td><td>extrasystoles_trigeminy</td></tr><tr><td style="white-space:nowrap">8<a name="FCHRFindingCS-8"> </a></td><td>tachy_episode</td></tr><tr><td style="white-space:nowrap">9<a name="FCHRFindingCS-9"> </a></td><td>extrasystoles_frequent</td></tr><tr><td style="white-space:nowrap">10<a name="FCHRFindingCS-10"> </a></td><td>phone_incompatible</td></tr><tr><td style="white-space:nowrap">11<a name="FCHRFindingCS-11"> </a></td><td>extrasystoles_big_episode</td></tr><tr><td style="white-space:nowrap">12<a name="FCHRFindingCS-12"> </a></td><td>increased_hrv</td></tr><tr><td style="white-space:nowrap">13<a name="FCHRFindingCS-13"> </a></td><td>sinus</td></tr><tr><td style="white-space:nowrap">14<a name="FCHRFindingCS-14"> </a></td><td>atrial_flutter</td></tr><tr><td style="white-space:nowrap">15<a name="FCHRFindingCS-15"> </a></td><td>brady_episode</td></tr><tr><td style="white-space:nowrap">16<a name="FCHRFindingCS-16"> </a></td><td>tachycardia</td></tr><tr><td style="white-space:nowrap">17<a name="FCHRFindingCS-17"> </a></td><td>extrasystoles_bigminy</td></tr><tr><td style="white-space:nowrap">18<a name="FCHRFindingCS-18"> </a></td><td>tachy_arrhytmia</td></tr><tr><td style="white-space:nowrap">19<a name="FCHRFindingCS-19"> </a></td><td>pacemaker_rhythm</td></tr><tr><td style="white-space:nowrap">20<a name="FCHRFindingCS-20"> </a></td><td>bradycardia</td></tr><tr><td style="white-space:nowrap">21<a name="FCHRFindingCS-21"> </a></td><td>brady_arrhytmia</td></tr><tr><td style="white-space:nowrap">22<a name="FCHRFindingCS-22"> </a></td><td>quality_to_low</td></tr><tr><td style="white-space:nowrap">23<a name="FCHRFindingCS-23"> </a></td><td>atrial_fibrillation</td></tr><tr><td style="white-space:nowrap">24<a name="FCHRFindingCS-24"> </a></td><td>other</td></tr><tr><td style="white-space:nowrap">25<a name="FCHRFindingCS-25"> </a></td><td>no_diagnosis</td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+  <version value="0.1.0"/>
+  <name value="FCHRFindingCS"/>
+  <title value="HR Finding Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-17T09:45:56+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="FCHRFinding"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="25"/>
+  <concept>
+    <code value="1"/>
+    <display value="sinus_arrhythmia"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="extrasystoles_trig_episode"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="undiagnosable"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="extrasystoles_isolated"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="dubious_rhythm"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="extrasystoles"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="extrasystoles_trigeminy"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="tachy_episode"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="extrasystoles_frequent"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="phone_incompatible"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="extrasystoles_big_episode"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="increased_hrv"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="sinus"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="atrial_flutter"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="brady_episode"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="tachycardia"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="extrasystoles_bigminy"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="tachy_arrhytmia"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="pacemaker_rhythm"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="bradycardia"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="brady_arrhytmia"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="quality_to_low"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="atrial_fibrillation"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="other"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="no_diagnosis"/>
+  </concept>
+</CodeSystem>

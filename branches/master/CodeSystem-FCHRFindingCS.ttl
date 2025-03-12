@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FCHRFindingCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"FCHRFindingCS-1\"> </a></td><td>sinus_arrhythmia</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"FCHRFindingCS-2\"> </a></td><td>extrasystoles_trig_episode</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"FCHRFindingCS-3\"> </a></td><td>undiagnosable</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"FCHRFindingCS-4\"> </a></td><td>extrasystoles_isolated</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"FCHRFindingCS-5\"> </a></td><td>dubious_rhythm</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"FCHRFindingCS-6\"> </a></td><td>extrasystoles</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"FCHRFindingCS-7\"> </a></td><td>extrasystoles_trigeminy</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"FCHRFindingCS-8\"> </a></td><td>tachy_episode</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"FCHRFindingCS-9\"> </a></td><td>extrasystoles_frequent</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"FCHRFindingCS-10\"> </a></td><td>phone_incompatible</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"FCHRFindingCS-11\"> </a></td><td>extrasystoles_big_episode</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"FCHRFindingCS-12\"> </a></td><td>increased_hrv</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"FCHRFindingCS-13\"> </a></td><td>sinus</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"FCHRFindingCS-14\"> </a></td><td>atrial_flutter</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"FCHRFindingCS-15\"> </a></td><td>brady_episode</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"FCHRFindingCS-16\"> </a></td><td>tachycardia</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"FCHRFindingCS-17\"> </a></td><td>extrasystoles_bigminy</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"FCHRFindingCS-18\"> </a></td><td>tachy_arrhytmia</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"FCHRFindingCS-19\"> </a></td><td>pacemaker_rhythm</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"FCHRFindingCS-20\"> </a></td><td>bradycardia</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"FCHRFindingCS-21\"> </a></td><td>brady_arrhytmia</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"FCHRFindingCS-22\"> </a></td><td>quality_to_low</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"FCHRFindingCS-23\"> </a></td><td>atrial_fibrillation</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"FCHRFindingCS-24\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"FCHRFindingCS-25\"> </a></td><td>no_diagnosis</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FCHRFindingCS"] ; # 
+  fhir:title [ fhir:v "HR Finding Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-17T09:45:56+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "FCHRFinding"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "25"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "sinus_arrhythmia" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "extrasystoles_trig_episode" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "undiagnosable" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "extrasystoles_isolated" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "dubious_rhythm" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "extrasystoles" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "extrasystoles_trigeminy" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "tachy_episode" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "extrasystoles_frequent" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "phone_incompatible" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "extrasystoles_big_episode" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "increased_hrv" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "sinus" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "atrial_flutter" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "brady_episode" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "tachycardia" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "extrasystoles_bigminy" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "tachy_arrhytmia" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "pacemaker_rhythm" ]
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "bradycardia" ]
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "brady_arrhytmia" ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "quality_to_low" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "atrial_fibrillation" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "other" ]
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "no_diagnosis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

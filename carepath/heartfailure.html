@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Heart failure - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- My Organization -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+<link href="assets/css/tables.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- My Organization -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidelines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recommendations.html">General Recommendations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Carepaths
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="heartfailure.html">Heart failure</a>
+      </li>
+      <li>
+        <a href="ews.html">NEWS</a>
+      </li>
+      <li>
+        <a href="totem.html">TOTeM</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html">Diabetes</a>
+      </li>
+      <li>
+        <a href="overview-loinc.html">Overview LOINC</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="changes.html">History</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://hl7.org/fhir/R4/">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/">Transversal Clinical Core</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="copyrights.html">Copyrights</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Heart failure</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Heart failure</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#telemonitoring-hub-identifier" id="markdown-toc-telemonitoring-hub-identifier">Telemonitoring Hub Identifier</a></li>
+  <li><a href="#care-pathway-overview" id="markdown-toc-care-pathway-overview">Care Pathway Overview</a></li>
+  <li><a href="#process-and-workflow-description" id="markdown-toc-process-and-workflow-description">Process and Workflow Description</a></li>
+  <li><a href="#integration-modules-for-epd" id="markdown-toc-integration-modules-for-epd">Integration Modules for EPD</a></li>
+</ul>
+
+</div>
+<div class="stu-note">
+This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
+</div>
+
+<p><strong>DRAFT: 2025-02-10</strong></p>
+
+<h3 id="telemonitoring-hub-identifier">Telemonitoring Hub Identifier</h3>
+
+<p><strong>Carepath Identifier</strong>: https://hl7belgium.org/fhir/patient-monitoring/carepath/heart-failure
+<strong>Carepath Version</strong>: 1.0.0</p>
+
+<h3 id="care-pathway-overview">Care Pathway Overview</h3>
+
+<ul>
+  <li><strong>Duration</strong>: 4 years</li>
+  <li><strong>Central Care Facility</strong>: Specialized heart failure center with a telemonitoring team.</li>
+  <li><strong>Minimal Capacity</strong>: 0.5 FTE heart failure nurse per 100 patients.</li>
+  <li><strong>Educational Material</strong>: Available for self-management and adherence.</li>
+  <li><strong>Accessibility</strong>: Reachable during office hours.</li>
+</ul>
+
+<h4 id="patient-criteria">Patient Criteria</h4>
+
+<ul>
+  <li><strong>NYHA Classification</strong>: II or III (85% of all new patients, ~21,000 per year).</li>
+  <li><strong>Informed Consent</strong>: Signed informed consent required.</li>
+  <li><strong>Physical Consultation</strong>: At least 1 physical consultation 2 years before the start of telemonitoring.</li>
+</ul>
+
+<hr />
+
+<h3 id="process-and-workflow-description">Process and Workflow Description</h3>
+
+<h4 id="start-up">Start-Up</h4>
+
+<ul>
+  <li><strong>Screening and Risk Assessment</strong>: Performed by the heart failure center.</li>
+  <li><strong>Informed Consent</strong>: Collected and securely stored.</li>
+  <li><strong>Involvement</strong>: General practitioner or home nurse involved in the workflow.</li>
+  <li><strong>Parameters Monitored</strong>:
+    <ul>
+      <li>Heart Rate (HR)</li>
+      <li>Blood Pressure (BP)</li>
+      <li>Weight (BW)</li>
+    </ul>
+  </li>
+  <li><strong>Frequency</strong>: Daily, once per day, 7 days a week, 6 months.</li>
+</ul>
+
+<h4 id="data-collection">Data Collection</h4>
+
+<ul>
+  <li>Data is automatically collected via connected devices or manually entered into the system.</li>
+  <li>Technology is CE-certified, with end-to-end encryption and GDPR compliance.</li>
+</ul>
+
+<h4 id="alarm-management">Alarm Management</h4>
+
+<ul>
+  <li><strong>Thresholds</strong>: Heart failure alarm thresholds predefined on the digital platform.</li>
+  <li><strong>Monitoring</strong>: Data checked daily during working hours by the heart failure team.</li>
+  <li><strong>Alarm Notification</strong>:
+    <ul>
+      <li>General practitioner or home nurse informed within 5 working days (or within 48 hours if urgent).</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="integration-modules-for-epd">Integration Modules for EPD</h3>
+
+<h4 id="outcome-module---pdf">Outcome Module - PDF</h4>
+
+<ul>
+  <li><strong>Daily Updates</strong>: Updated daily per measurement.</li>
+  <li><strong>Content</strong>: Overview of the questions and vital parameters.</li>
+  <li><strong>File Size</strong>: ±100KB per PDF, max: 10MB per PDF.</li>
+</ul>
+
+<hr />
+
+<h4 id="outcome-module---fhir-integration">Outcome Module - FHIR Integration</h4>
+
+<h5 id="vital-signs">Vital Signs</h5>
+
+<ul>
+  <li><strong>Frequency</strong>: Maximum of 5 updates per day, on average 1 update per day (per measurement).</li>
+  <li><strong>LOINC Codes</strong>:
+    <div class="table-md"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Code(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Heart rate (HR) measurement</td>
+          <td>LOINC 8867-4</td>
+        </tr>
+        <tr>
+          <td>Blood pressure (BP) measurement</td>
+          <td>LOINC 8480-6 / 8463-4</td>
+        </tr>
+        <tr>
+          <td>Body weight (BW) measurement</td>
+          <td>LOINC 29463-7</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h5 id="symptoms">Symptoms</h5>
+
+<ul>
+  <li><strong>Frequency</strong>: As frequent as registered by the patient. Average of 1 per day per symptom.</li>
+  <li><strong>Codes</strong>:
+    <div class="table-md"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Code(s)</th>
+          <th>Possible answers</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Palpitations</td>
+          <td>SNOMED 80313002</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Reduced appetite</td>
+          <td>SNOMED 64379006</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Shortness of breath</td>
+          <td>SNOMED 267036007</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Constipation</td>
+          <td>SNOMED 14760008</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Diarrhea</td>
+          <td>SNOMED 62315008</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Nocturnal shortness of breath</td>
+          <td>SNOMED 248548009</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Disturbed sleep pattern</td>
+          <td>SNOMED 26677001</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Tickly cough</td>
+          <td>SNOMED 901000172101</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Social isolation</td>
+          <td>SNOMED 422650009</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Oedema</td>
+          <td>SNOMED 267038008</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Fatigue</td>
+          <td>SNOMED 84229001</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Chest pain</td>
+          <td>SNOMED 29857009</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Dizziness</td>
+          <td>SNOMED 404640003</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Confusion</td>
+          <td>SNOMED 40917007</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Foot swelling</td>
+          <td>SNOMED 297142003</td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+        <tr>
+          <td>Fear or depression</td>
+          <td><span class="warning">??</span></td>
+          <td>SNOMED <br /> - 2667000 (absent) <br /> - 255604002 (mild) <br /> - 1255665007 (moderate) <br /> - 24484000 (severe)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.</p>
+
+<h5 id="specification">Specification:</h5>
+
+<p>For detailed specifications, refer to the</p>
+
+<ul>
+  <li><a href="./Observation-BloodPressureExample.html">Blood Pressure Example</a></li>
+  <li><a href="./Observation-BodyWeightExample.html">Weight Example</a></li>
+  <li><a href="./Observation-HeartRateExample.html">Heart Rate Example</a></li>
+  <li><a href="./Observation-ReducedAppetiteExample.html">Reduced Appetite Example</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 12, 2025 11:29+0000">2025-02-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- My Organization -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

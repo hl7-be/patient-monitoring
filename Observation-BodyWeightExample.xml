@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BodyWeightExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation BodyWeightExample</b></p><a name="BodyWeightExample"> </a><a name="hcBodyWeightExample"> </a><a name="BodyWeightExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Body Weight</span></p><p><b>subject</b>: <a href="Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9">Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9</a></p><p><b>effective</b>: 2024-11-19 06:48:20+0000</p><p><b>device</b>: <a href="Device/Byteflies Vital Signs">Device/Byteflies Vital Signs</a></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 29463-7}">Body weight</span></td><td>39.3 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body Weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+  </subject>
+  <effectiveDateTime value="2024-11-19T06:48:20+00:00"/>
+  <device>
+    <reference value="Device/Byteflies Vital Signs"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29463-7"/>
+        <display value="Body weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="39.3"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="kg"/>
+    </valueQuantity>
+  </component>
+</Observation>

@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/ExampleHRMonitoringObs> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleHRMonitoringObs"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringObs"^^xsd:anyURI ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringObs>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleHRMonitoringObs\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleHRMonitoringObs&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HRMonitoringObs.html\">HRMonitoringObs</a></p></div><p><b>identifier</b>: id: 1234567890</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: fibricheck <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#fibricheck)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleHRMonitoringPatient.html\">Patient/ExampleHRMonitoringPatient</a></p><p><b>effective</b>: 2023-07-20 14:30:00+0000</p><p><b>device</b>: <a href=\"Device-ExampleSWDevice.html\">Device/ExampleSWDevice</a></p><blockquote><p><b>component</b></p><p><b>code</b>: fibricheck-hr-value <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#fibricheck-hr-value)</span></p><p><b>value</b>: 25 ms<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ms = 'ms')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: fibricheck-hr-indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#fibricheck-hr-indicator)</span></p><p><b>value</b>: no_diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FCHRFindingCS.html\">HR Finding Code System</a>#25)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: fibricheck-symptoms <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#fibricheck-symptoms)</span></p><p><b>value</b>: fatigue <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FCContextSymptomsCS.html\">HR Context Symptoms Code System</a>#4)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: fibricheck-activity-status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#fibricheck-activity-status)</span></p><p><b>value</b>: sleeping <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FCContextActivityCS.html\">HR Context Activity Code System</a>#3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: fibricheck-report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#fibricheck-report)</span></p><p><b>value</b>: LowRisk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#LowRisk)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1234567890" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "fibricheck" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/ExampleHRMonitoringPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleHRMonitoringPatient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-07-20T14:30:00Z"^^xsd:dateTime] ; # 
+  fhir:device [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Device/ExampleSWDevice> ;
+     fhir:reference [ fhir:v "Device/ExampleSWDevice" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "fibricheck-hr-value" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "25"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ms" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "fibricheck-hr-indicator" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "25" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "fibricheck-symptoms" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "fibricheck-activity-status" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "fibricheck-report" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "LowRisk" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

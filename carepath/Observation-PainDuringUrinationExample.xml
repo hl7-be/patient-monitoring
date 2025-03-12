@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PainDuringUrinationExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation PainDuringUrinationExample</b></p><a name="PainDuringUrinationExample"> </a><a name="hcPainDuringUrinationExample"> </a><a name="PainDuringUrinationExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 49650001}">Urination painful</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-15 09:56:00+0000 --&gt; 2024-11-15 09:57:00+0000</p><p><b>performer</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 373066001}">Yes (qualifier value)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="49650001"/>
+      <display value="Urination painful"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://remecare.github.io/patient-monitoring/wip/"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <effectivePeriod>
+    <start value="2024-11-15T09:56:00+00:00"/>
+    <end value="2024-11-15T09:57:00+00:00"/>
+  </effectivePeriod>
+  <performer>
+    <identifier>
+      <system value="https://remecare.github.io/patient-monitoring/wip/"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="373066001"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,270 @@
+PatientMonitoring : Validation Results
+=========================================
+
+err = 16, warn = 50, info = 0
+$--
+Generated $--. FHIR version $-- for hl7.fhir.be.patient-monitoring#$-- (canonical = http://hl7belgium.org/fhir/patient-monitoring)
+ Build Errors : 151 / 15 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-FCContextActivityCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-FCContextSymptomsCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-FCHRFindingCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-FCHRIndicatorCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Device-ExampleSWDevice : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-ExampleHRMonitoringObs : 1 / 8 / 1
+ /github/workspace/fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31 : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32 : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33 : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/Patient-ExampleHRMonitoringPatient : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FibricheckMeasurementModel : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HRMonitoringObs : 0 / 14 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HRMonitoringPatient : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringPatient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientMonitoring : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientMonitoringObservation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SWDevice : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-FCContextActivityVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-FCContextSymptomsVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-FCHRFindingVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-FCHRIndicatorVS : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HRMonitoringObs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HRMonitoringPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MonitoringPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PatientMonitoringObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SWDevice.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ExampleHRMonitoringObs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExampleHRMonitoringPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/ExampleSWDevice.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/CodeSystem-FCContextActivityCS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextActivityCS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextActivityCS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextActivityCS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextActivityCS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextActivityCS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextSymptomsCS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextSymptomsCS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextSymptomsCS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextSymptomsCS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextSymptomsCS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCContextSymptomsCS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRFindingCS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRFindingCS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRFindingCS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRFindingCS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRFindingCS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRFindingCS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRIndicatorCS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRIndicatorCS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRIndicatorCS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRIndicatorCS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRIndicatorCS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-FCHRIndicatorCS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-ExampleSWDevice.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-ExampleSWDevice.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-ExampleSWDevice.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-ExampleSWDevice.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-ExampleSWDevice.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-ExampleHRMonitoringObs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-ExampleHRMonitoringObs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-ExampleHRMonitoringObs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-ExampleHRMonitoringObs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-ExampleHRMonitoringObs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.html#/html/body/div/div/div/div/div/div/p/a at Line 226, column 554: The link 'FR_FL_3304' for "FR_FL_3304" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.html#/html/body/div/div/div/div/div/div/p/a at Line 226, column 773: The link 'Bytelies - Vital Signs Service' for "Bytelies - Vital Signs Service" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.html#/html/body/div/div/div/div/div/div/p/a at Line 226, column 552: The link 'FR_FL_3304' for "FR_FL_3304" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.html#/html/body/div/div/div/div/div/div/p/a at Line 226, column 783: The link 'Byteflies - Vital Signs Service' for "Byteflies - Vital Signs Service" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.html#/html/body/div/div/div/div/div/div/p/a at Line 226, column 590: The link 'FR_FL_3304' for "FR_FL_3304" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.html#/html/body/div/div/div/div/div/div/p/a at Line 226, column 696: The link 'Bytelies - Vital Signs Service' for "Bytelies - Vital Signs Service" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Patient-ExampleHRMonitoringPatient.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Patient-ExampleHRMonitoringPatient.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Patient-ExampleHRMonitoringPatient.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Patient-ExampleHRMonitoringPatient.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Patient-ExampleHRMonitoringPatient.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-FibricheckMeasurementModel.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringObs.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-HRMonitoringPatient.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringPatient.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoring.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientMonitoringObservation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SWDevice.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 149, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextActivityVS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextActivityVS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextActivityVS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextActivityVS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextActivityVS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextActivityVS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextSymptomsVS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextSymptomsVS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextSymptomsVS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextSymptomsVS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextSymptomsVS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCContextSymptomsVS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRFindingVS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRFindingVS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRFindingVS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRFindingVS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRFindingVS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRFindingVS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRIndicatorVS-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRIndicatorVS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRIndicatorVS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRIndicatorVS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRIndicatorVS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-FCHRIndicatorVS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/overview.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-FCContextActivityCS.json ==
+== fsh-generated/resources/CodeSystem-FCContextSymptomsCS.json ==
+== fsh-generated/resources/CodeSystem-FCHRFindingCS.json ==
+== fsh-generated/resources/CodeSystem-FCHRIndicatorCS.json ==
+== fsh-generated/resources/Device-ExampleSWDevice.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json ==
+== fsh-generated/resources/Observation-ExampleHRMonitoringObs.json ==
+WARNING: Observation/ExampleHRMonitoringObs: Observation.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/ExampleHRMonitoringObs: Observation.component[0].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/ExampleHRMonitoringObs: Observation.component[1].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Observation/ExampleHRMonitoringObs: Observation.component[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Heart Rate Indicator Value Set' (http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRIndicatorVS|0.1.0), and a coding from this value set is required) (codes = http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS#25)
+WARNING: Observation/ExampleHRMonitoringObs: Observation.component[2].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/ExampleHRMonitoringObs: Observation.component[3].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/ExampleHRMonitoringObs: Observation.component[4].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/ExampleHRMonitoringObs: Observation.component[4].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/ExampleHRMonitoringObs: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d31.json ==
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d31: Observation.text.div: The URL is not valid because '(URL contains 4 Invalid Characters ([ ]))': Bytelies - Vital Signs Service
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d31: Observation.subject: Unable to resolve resource with reference 'FR_FL_3304'
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d31: Observation.device: Unable to resolve resource with reference 'Bytelies - Vital Signs Service'
+WARNING: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d31: Observation: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Observation.text.div: Hyperlink 'FR_FL_3304' at 'div/p/a' for 'FR_FL_3304' does not resolve
+ERROR: Observation.text.div: Hyperlink 'Bytelies - Vital Signs Service' at 'div/p/a' for 'Bytelies - Vital Signs Service' does not resolve
+== fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d32.json ==
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d32: Observation.text.div: The URL is not valid because '(URL contains 4 Invalid Characters ([ ]))': Byteflies - Vital Signs Service
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d32: Observation.subject: Unable to resolve resource with reference 'FR_FL_3304'
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d32: Observation.device: Unable to resolve resource with reference 'Byteflies - Vital Signs Service'
+WARNING: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d32: Observation: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Observation.text.div: Hyperlink 'FR_FL_3304' at 'div/p/a' for 'FR_FL_3304' does not resolve
+ERROR: Observation.text.div: Hyperlink 'Byteflies - Vital Signs Service' at 'div/p/a' for 'Byteflies - Vital Signs Service' does not resolve
+== fsh-generated/resources/Observation-tm-e678fa66-fa15-482b-a3a2-49fc5a071d33.json ==
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d33: Observation.text.div: The URL is not valid because '(URL contains 4 Invalid Characters ([ ]))': Bytelies - Vital Signs Service
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d33: Observation.subject: Unable to resolve resource with reference 'FR_FL_3304'
+ERROR: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d33: Observation.device: Unable to resolve resource with reference 'Bytelies - Vital Signs Service'
+WARNING: Observation/tm-e678fa66-fa15-482b-a3a2-49fc5a071d33: Observation: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Observation.text.div: Hyperlink 'FR_FL_3304' at 'div/p/a' for 'FR_FL_3304' does not resolve
+ERROR: Observation.text.div: Hyperlink 'Bytelies - Vital Signs Service' at 'div/p/a' for 'Bytelies - Vital Signs Service' does not resolve
+== fsh-generated/resources/Patient-ExampleHRMonitoringPatient.json ==
+WARNING: Patient/ExampleHRMonitoringPatient: Patient.identifier[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Patient/ExampleHRMonitoringPatient: Patient.identifier[1].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-FibricheckMeasurementModel.json ==
+== fsh-generated/resources/StructureDefinition-HRMonitoringObs.json ==
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.snapshot.element[26].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.snapshot.element[66].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.snapshot.element[75].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.snapshot.element[84].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.snapshot.element[93].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.snapshot.element[111].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringObs: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-HRMonitoringPatient.json ==
+WARNING: StructureDefinition/HRMonitoringPatient: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringPatient: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringPatient: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/HRMonitoringPatient: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-MonitoringPatient.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/MonitoringPatient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PatientMonitoring.json ==
+WARNING: StructureDefinition/PatientMonitoring: StructureDefinition.snapshot.element[62]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/PatientMonitoring: StructureDefinition.differential.element[41]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-PatientMonitoringObservation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/PatientMonitoringObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-SWDevice.json ==
+== fsh-generated/resources/ValueSet-FCContextActivityVS.json ==
+== fsh-generated/resources/ValueSet-FCContextSymptomsVS.json ==
+== fsh-generated/resources/ValueSet-FCHRFindingVS.json ==
+== fsh-generated/resources/ValueSet-FCHRIndicatorVS.json ==

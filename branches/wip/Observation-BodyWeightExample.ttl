@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyWeightExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BodyWeightExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/vitalsigns"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/vitalsigns>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BodyWeightExample</b></p><a name=\"BodyWeightExample\"> </a><a name=\"hcBodyWeightExample\"> </a><a name=\"BodyWeightExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body Weight</span></p><p><b>subject</b>: <a href=\"Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9\">Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9</a></p><p><b>effective</b>: 2024-11-19 06:48:20+0000</p><p><b>device</b>: <a href=\"Device/Byteflies Vital Signs\">Device/Byteflies Vital Signs</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></td><td>39.3 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ] ;
+       fhir:display [ fhir:v "Body Weight" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9> ;
+     fhir:reference [ fhir:v "Patient/D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-11-19T06:48:20+00:00"^^xsd:dateTime] ; # 
+  fhir:device [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Device/Byteflies Vital Signs> ;
+     fhir:reference [ fhir:v "Device/Byteflies Vital Signs" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:29463-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "29463-7" ] ;
+         fhir:display [ fhir:v "Body weight" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "39.3"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "kg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "kg" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

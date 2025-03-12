@@ -1,0 +1,114 @@
+[
+  {
+    "id" : "FCContextActivityCS",
+    "type" : "CodeSystem",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS",
+    "version" : "0.1.0",
+    "name" : "FCContextActivityCS"
+  },
+  {
+    "id" : "FCContextSymptomsCS",
+    "type" : "CodeSystem",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS",
+    "version" : "0.1.0",
+    "name" : "FCContextSymptomsCS"
+  },
+  {
+    "id" : "FCHRFindingCS",
+    "type" : "CodeSystem",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS",
+    "version" : "0.1.0",
+    "name" : "FCHRFindingCS"
+  },
+  {
+    "id" : "FCHRIndicatorCS",
+    "type" : "CodeSystem",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS",
+    "version" : "0.1.0",
+    "name" : "FCHRIndicatorCS"
+  },
+  {
+    "id" : "hl7.fhir.be.patient-monitoring",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring",
+    "version" : "0.1.0",
+    "name" : "PatientMonitoring"
+  },
+  {
+    "id" : "FibricheckMeasurementModel",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/FibricheckMeasurementModel",
+    "version" : "0.1.0",
+    "name" : "FibricheckMeasurementModel"
+  },
+  {
+    "id" : "HRMonitoringObs",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringObs",
+    "version" : "0.1.0",
+    "name" : "HRMonitoringObs"
+  },
+  {
+    "id" : "HRMonitoringPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/HRMonitoringPatient",
+    "version" : "0.1.0",
+    "name" : "HRMonitoringPatient"
+  },
+  {
+    "id" : "MonitoringPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/MonitoringPatient",
+    "version" : "0.1.0",
+    "name" : "MonitoringPatient"
+  },
+  {
+    "id" : "PatientMonitoring",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/PatientMonitoring",
+    "version" : "0.1.0",
+    "name" : "PatientMonitoring"
+  },
+  {
+    "id" : "PatientMonitoringObservation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/PatientMonitoringObservation",
+    "version" : "0.1.0",
+    "name" : "PatientMonitoringObservation"
+  },
+  {
+    "id" : "SWDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/SWDevice",
+    "version" : "0.1.0",
+    "name" : "SWDevice"
+  },
+  {
+    "id" : "FCContextActivityVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextActivityVS",
+    "version" : "0.1.0",
+    "name" : "FCContextActivityVS"
+  },
+  {
+    "id" : "FCContextSymptomsVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextSymptomsVS",
+    "version" : "0.1.0",
+    "name" : "FCContextSymptomsVS"
+  },
+  {
+    "id" : "FCHRFindingVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRFindingVS",
+    "version" : "0.1.0",
+    "name" : "FCHRFindingVS"
+  },
+  {
+    "id" : "FCHRIndicatorVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRIndicatorVS",
+    "version" : "0.1.0",
+    "name" : "FCHRIndicatorVS"
+  }
+]

@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="983e4840-ccc6-4d23-8fe0-9adbefd6c4db"/>
+  <meta>
+    <lastUpdated value="2024-10-23T09:12:19.715+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextActivityVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-FCContextActivityCS.html">codesystem HR Context Activity Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-1"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-1">1</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>activity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-2"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-2">2</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>resting</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-3"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-3">3</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>sleeping</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-4"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-4">4</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>sitting</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-5"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-5">5</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>walking</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-6"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-6">6</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>working</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-7"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-7">7</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>exercising</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-8"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-8">8</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-9"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-9">9</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>standing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS-10"> </a>  
+                  <a href="CodeSystem-FCContextActivityCS.html#FCContextActivityCS-10">10</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</td>
+                <td>housekeeping</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextActivityVS"/>
+        <version value="0.1.0"/>
+        <name value="FCContextActivityVS"/>
+        <title value="Context Activity Value Set"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-10-23T09:12:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f84e327b-baf9-4319-a487-491b1d4e559b"/>
+          <timestamp value="2024-10-23T09:12:49+00:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="1"/>
+            <display value="activity"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="2"/>
+            <display value="resting"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="3"/>
+            <display value="sleeping"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="4"/>
+            <display value="sitting"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="5"/>
+            <display value="walking"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="6"/>
+            <display value="working"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="7"/>
+            <display value="exercising"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="8"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="9"/>
+            <display value="standing"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS"/>
+            <code value="10"/>
+            <display value="housekeeping"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextSymptomsVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-FCContextSymptomsCS.html">codesystem HR Context Symptoms Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 8 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-1"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-1">1</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>no_symptoms</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-2"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-2">2</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>lightheaded</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-3"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-3">3</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>confused</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-4"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-4">4</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>fatigue</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-5"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-5">5</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-6"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-6">6</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>palpitations</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-7"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-7">7</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>chest_pains</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS-8"> </a>  
+                  <a href="CodeSystem-FCContextSymptomsCS.html#FCContextSymptomsCS-8">8</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS</td>
+                <td>shortness_of_breath</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCContextSymptomsVS"/>
+        <version value="0.1.0"/>
+        <name value="FCContextSymptomsVS"/>
+        <title value="Context findings Value Set"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-10-23T09:12:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6030efc5-6374-4c99-98a6-f46996ae284f"/>
+          <timestamp value="2024-10-23T09:12:50+00:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="1"/>
+            <display value="no_symptoms"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="2"/>
+            <display value="lightheaded"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="3"/>
+            <display value="confused"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="4"/>
+            <display value="fatigue"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="5"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="6"/>
+            <display value="palpitations"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="7"/>
+            <display value="chest_pains"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS"/>
+            <code value="8"/>
+            <display value="shortness_of_breath"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRFindingVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-FCHRFindingCS.html">codesystem HR Finding Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 25 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-1"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-1">1</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>sinus_arrhythmia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-2"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-2">2</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>extrasystoles_trig_episode</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-3"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-3">3</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>undiagnosable</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-4"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-4">4</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>extrasystoles_isolated</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-5"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-5">5</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>dubious_rhythm</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-6"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-6">6</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>extrasystoles</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-7"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-7">7</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>extrasystoles_trigeminy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-8"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-8">8</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>tachy_episode</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-9"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-9">9</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>extrasystoles_frequent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-10"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-10">10</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>phone_incompatible</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-11"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-11">11</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>extrasystoles_big_episode</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-12"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-12">12</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>increased_hrv</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-13"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-13">13</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>sinus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-14"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-14">14</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>atrial_flutter</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-15"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-15">15</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>brady_episode</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-16"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-16">16</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>tachycardia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-17"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-17">17</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>extrasystoles_bigminy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-18"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-18">18</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>tachy_arrhytmia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-19"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-19">19</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>pacemaker_rhythm</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-20"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-20">20</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>bradycardia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-21"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-21">21</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>brady_arrhytmia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-22"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-22">22</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>quality_to_low</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-23"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-23">23</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>atrial_fibrillation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-24"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-24">24</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS-25"> </a>  
+                  <a href="CodeSystem-FCHRFindingCS.html#FCHRFindingCS-25">25</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS</td>
+                <td>no_diagnosis</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRFindingVS"/>
+        <version value="0.1.0"/>
+        <name value="FCHRFindingVS"/>
+        <title value="Heart Rate Finding Value Set"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-10-23T09:12:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:34e0c005-d592-44bf-85ce-4f115cc904b8"/>
+          <timestamp value="2024-10-23T09:12:50+00:00"/>
+          <total value="25"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="1"/>
+            <display value="sinus_arrhythmia"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="2"/>
+            <display value="extrasystoles_trig_episode"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="3"/>
+            <display value="undiagnosable"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="4"/>
+            <display value="extrasystoles_isolated"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="5"/>
+            <display value="dubious_rhythm"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="6"/>
+            <display value="extrasystoles"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="7"/>
+            <display value="extrasystoles_trigeminy"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="8"/>
+            <display value="tachy_episode"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="9"/>
+            <display value="extrasystoles_frequent"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="10"/>
+            <display value="phone_incompatible"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="11"/>
+            <display value="extrasystoles_big_episode"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="12"/>
+            <display value="increased_hrv"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="13"/>
+            <display value="sinus"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="14"/>
+            <display value="atrial_flutter"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="15"/>
+            <display value="brady_episode"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="16"/>
+            <display value="tachycardia"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="17"/>
+            <display value="extrasystoles_bigminy"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="18"/>
+            <display value="tachy_arrhytmia"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="19"/>
+            <display value="pacemaker_rhythm"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="20"/>
+            <display value="bradycardia"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="21"/>
+            <display value="brady_arrhytmia"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="22"/>
+            <display value="quality_to_low"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="23"/>
+            <display value="atrial_fibrillation"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="24"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS"/>
+            <code value="25"/>
+            <display value="no_diagnosis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRIndicatorVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-FCHRIndicatorCS.html">codesystem HR Indicator Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS-normal"> </a>  
+                  <a href="CodeSystem-FCHRIndicatorCS.html#FCHRIndicatorCS-normal">normal</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS</td>
+                <td>Normal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS-warning"> </a>  
+                  <a href="CodeSystem-FCHRIndicatorCS.html#FCHRIndicatorCS-warning">warning</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS</td>
+                <td>Warning</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS-urgent"> </a>  
+                  <a href="CodeSystem-FCHRIndicatorCS.html#FCHRIndicatorCS-urgent">urgent</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS</td>
+                <td>Urgent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS-quality"> </a>  
+                  <a href="CodeSystem-FCHRIndicatorCS.html#FCHRIndicatorCS-quality">quality</a>
+                </td>
+                <td>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS</td>
+                <td>Quality</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FCHRIndicatorVS"/>
+        <version value="0.1.0"/>
+        <name value="FCHRIndicatorVS"/>
+        <title value="Heart Rate Indicator Value Set"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-10-23T09:12:19+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5026049c-a330-4609-817e-a3fdf91a2c39"/>
+          <timestamp value="2024-10-23T09:12:50+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS"/>
+            <code value="normal"/>
+            <display value="Normal"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS"/>
+            <code value="warning"/>
+            <display value="Warning"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS"/>
+            <code value="urgent"/>
+            <display value="Urgent"/>
+          </contains>
+          <contains>
+            <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS"/>
+            <code value="quality"/>
+            <display value="Quality"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

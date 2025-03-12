@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS,0.1.0,active,,FCContextActivityCS,HR Context Activity Code System,"Context Activity","ValueSet/FCContextActivityVS"
+http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextSymptomsCS,0.1.0,active,,FCContextSymptomsCS,HR Context Symptoms Code System,"Context Symptoms","ValueSet/FCContextSymptomsVS"
+http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRFindingCS,0.1.0,active,,FCHRFindingCS,HR Finding Code System,"FCHRFinding","ValueSet/FCHRFindingVS"
+http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCHRIndicatorCS,0.1.0,active,,FCHRIndicatorCS,HR Indicator Code System,"FCHRIndicator","ValueSet/FCHRIndicatorVS"

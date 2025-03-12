@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="DiarrheaExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation DiarrheaExample</b></p><a name="DiarrheaExample"> </a><a name="hcDiarrheaExample"> </a><a name="DiarrheaExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 62315008}">Diarrhea</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-18 09:38:52+0000 --&gt; 2024-11-18 09:38:52+0000</p><p><b>performer</b>: <a href="#hcDiarrheaExample/nurse">PractitionerRole Nurse</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 2667000}">Absent</span></p><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: PractitionerRole #nurse</b></p><a name="DiarrheaExample/nurse"> </a><a name="hcDiarrheaExample/nurse"> </a><a name="DiarrheaExample/nurse-en-US"> </a><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persnurse}">Nurse</span></p></blockquote></div>
+  </text>
+  <contained>
+    <PractitionerRole>
+      <id value="nurse"/>
+      <meta>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+      </meta>
+      <code>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+          <code value="persnurse"/>
+          <display value="Nurse"/>
+        </coding>
+      </code>
+    </PractitionerRole>
+  </contained>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="62315008"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <effectivePeriod>
+    <start value="2024-11-18T09:38:52+00:00"/>
+    <end value="2024-11-18T09:38:52+00:00"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="#nurse"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="2667000"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

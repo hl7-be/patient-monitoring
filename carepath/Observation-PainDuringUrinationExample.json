@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "PainDuringUrinationExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PainDuringUrinationExample</b></p><a name=\"PainDuringUrinationExample\"> </a><a name=\"hcPainDuringUrinationExample\"> </a><a name=\"PainDuringUrinationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 49650001}\">Urination painful</span></p><p><b>subject</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-15 09:56:00+0000 --&gt; 2024-11-15 09:57:00+0000</p><p><b>performer</b>: Identifier: <code>https://remecare.github.io/patient-monitoring/wip/</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes (qualifier value)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "49650001",
+      "display" : "Urination painful"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://remecare.github.io/patient-monitoring/wip/",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectivePeriod" : {
+    "start" : "2024-11-15T09:56:00+00:00",
+    "end" : "2024-11-15T09:57:00+00:00"
+  },
+  "performer" : [{
+    "identifier" : {
+      "system" : "https://remecare.github.io/patient-monitoring/wip/",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "373066001"
+    }]
+  }
+}

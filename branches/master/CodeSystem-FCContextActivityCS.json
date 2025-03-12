@@ -1,0 +1,86 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "FCContextActivityCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"FCContextActivityCS-1\"> </a></td><td>activity</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"FCContextActivityCS-2\"> </a></td><td>resting</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"FCContextActivityCS-3\"> </a></td><td>sleeping</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"FCContextActivityCS-4\"> </a></td><td>sitting</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"FCContextActivityCS-5\"> </a></td><td>walking</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"FCContextActivityCS-6\"> </a></td><td>working</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"FCContextActivityCS-7\"> </a></td><td>exercising</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"FCContextActivityCS-8\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"FCContextActivityCS-9\"> </a></td><td>standing</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"FCContextActivityCS-10\"> </a></td><td>housekeeping</td></tr></table></div>"
+  },
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/FCContextActivityCS",
+  "version" : "0.1.0",
+  "name" : "FCContextActivityCS",
+  "title" : "HR Context Activity Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-11-17T09:45:56+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Context Activity",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "1",
+    "display" : "activity"
+  },
+  {
+    "code" : "2",
+    "display" : "resting"
+  },
+  {
+    "code" : "3",
+    "display" : "sleeping"
+  },
+  {
+    "code" : "4",
+    "display" : "sitting"
+  },
+  {
+    "code" : "5",
+    "display" : "walking"
+  },
+  {
+    "code" : "6",
+    "display" : "working"
+  },
+  {
+    "code" : "7",
+    "display" : "exercising"
+  },
+  {
+    "code" : "8",
+    "display" : "other"
+  },
+  {
+    "code" : "9",
+    "display" : "standing"
+  },
+  {
+    "code" : "10",
+    "display" : "housekeeping"
+  }]
+}
