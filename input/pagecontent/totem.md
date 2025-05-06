@@ -4,7 +4,7 @@ This FHIR implementation content is currently under development and may be subje
 
 **DRAFT: 2024-11-25**
 
-Note : This is currently a project that exists out of multiple carepaths. This will eventually be split up into multiple carepaths.
+Note : This is currently a project that exists out of multiple carepaths. The different carepaths can be found below in the outcome module.
 
 ### Care Pathway Overview
 
@@ -22,38 +22,10 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 #### Start-Up
 
+- **Informed consent**: Collected and securely stored.
 - **Parameters Monitored**:
 
-  - Heart Rate
-  - Blood Pressure
-  - Body weight
-  - Respiratory rate
-  - Saturation
-  - Body temperature
-  - Abdominal pain
-  - Pain surgical wound
-  - Pain puncture wounds
-  - Pain during urination
-  - Renal pain
-  - Pain in calves
-  - Pain provoked by eating
-  - Well-being
-  - Flatulence
-  - Bowel movement
-  - Distended abdomen
-  - Nausea
-  - Vomiting
-  - Coughing
-  - Productive cough
-  - Pression on chest
-  - Shortness of breath
-  - Shoulder pain
-  - Color of urine
-  - Hematoma
-  - Volume of 24-hour Urine
-  - Skin surrounding stoma red
-
-- **Frequency**: 3 times a day, 7 days a week.
+See outcome module for parameters monitored in all carepath variants (general) and additional parameters per carepath variant if relevant. 
 
 #### Data Collection
 
@@ -64,12 +36,10 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 
 #### Outcome Module - FHIR Integration
 
-##### Vital Signs
+##### General
 
 - **Frequency**: Maximum of 5 updates per day, on average 1 update per day (per measurement).
-- **LOINC Codes**:
-
-###### General
+- **LOINC and SNOMED CT Codes**:
 
 <div class="table-md"></div>
 
@@ -83,6 +53,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Patient on oxygen        | SNOMED 371825009           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)  |
 | Inhaled oxygen flow rate | LOINC 3151-8               | Not applicable   |  
 | Body temperature         | LOINC 8310-5               | Not applicable                                                                                                        |
+  | Level of responsiveness (ACVPU scale) | LOINC 67775-7             | LOINC <br> - LA9340-6 (Alert) <br> - LA6560-2 (Confused) <br> - LA17108-4 (Verbal) <br> - LA17107-6 (Painful) <br> - LA9343-0 (Unresponsive) |
 | Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (pain scale 0-10)                                                                                        |
 | Pain puncture wounds     | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                                   |
 | Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
@@ -99,7 +70,17 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 | Shortness of breath      | SNOMED 267036007           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
 
-###### Colon surgery specific
+##### Abdominal surgery
+
+##### Bariatrics
+
+<div class="table-md"></div>
+
+| Description   | Code(s) | Possible answers                                                                                                                     |
+| ------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------|
+| Shoulder pain | SNOMED 45326000 | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
+
+##### Colon surgery
 
 <div class="table-md"></div>
 
@@ -108,24 +89,7 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                        |
 | Distended abdomen   | SNOMED 60728008                 | LOINC <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe) |
 
-###### Bariatric surgery specific
-
-<div class="table-md"></div>
-
-| Description   | Code(s) | Possible answers                                                                                                                     |
-| ------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------|
-| Shoulder pain | SNOMED 45326000 | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
-
-###### Nefrectomy specific
-
-<div class="table-md"></div>
-
-| Description    | Code(s)          | Possible answers                                                                                                                                               |
-| -------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Color of urine | SNOMED 430327009 | SNOMED <br> - 167236000 (Urine looks clear) <br> - 720001001 (Dark yellow urine) <br> - 720003003 (Reddish color urine) <br> - 167235001 (Urine: red – blood)  |
-| Hematoma       | SNOMED 385494008 | SNOMED <br> - 2667000 (Absent) <br> - 19776001 (Decreased size) <br> - 260388006 (No status change) <br> - 15454001 (Inscreased size)                          |
-
-###### Cystectomy specific
+##### Cystectomy
 
 <div class="table-md"></div>
 
@@ -134,10 +98,24 @@ With support from the FPS Public Health, some TOTeM projects are being rolled ou
 | Volume of 24-hour Urine          | LOINC 3167-4     | Not applicable                                                                                                      |
 | Skin surrounding stoma red       | SNOMED 407549000 | SNOMED <br> - 2667000 (Absent) <br> - 255604002 (Mild) <br> - 6736007 (Moderate severity) <br> - 24484000 (Severe)  |
 
+##### Distal pancreatic surgery
 
-These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
+##### Hemicolectomy
 
-##### Specification:
+##### Gastric bypass
+
+##### Nefrectomy
+
+<div class="table-md"></div>
+
+| Description    | Code(s)          | Possible answers                                                                                                                                               |
+| -------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Color of urine | SNOMED 430327009 | SNOMED <br> - 167236000 (Urine looks clear) <br> - 720001001 (Dark yellow urine) <br> - 720003003 (Reddish color urine) <br> - 167235001 (Urine: red – blood)  |
+| Hematoma       | SNOMED 385494008 | SNOMED <br> - 2667000 (Absent) <br> - 19776001 (Decreased size) <br> - 260388006 (No status change) <br> - 15454001 (Inscreased size)                          |
+
+##### Radical prostatectomy and adenomectomy
+
+### Specification:
 
 For detailed specifications, refer to the
 
@@ -156,3 +134,5 @@ For detailed specifications, refer to the
 - [Shoulder pain Example](./Observation-ShoulderPainExample.html)
 - [Pain puncture wounds Example](./Observation-PainPunctureWoundsExample.html)
 - [Leakage catheter Example](./Observation-LeakageCatheterExample.html)
+
+These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
