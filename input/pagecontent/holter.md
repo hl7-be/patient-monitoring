@@ -100,6 +100,7 @@ Each DiagnosticReport includes references to structured Observations.
 ## Example References
 
 - [Diagnostic Report – Holter](./Observation-HolterReport.html)
+- [Holter Diagnostic Report](./DiagnosticReport-holter-report.html)
 
 ---
 
