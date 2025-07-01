@@ -50,25 +50,27 @@ See outcome module for parameters monitored in all carepath variants (general) a
 | Body weight              | LOINC 29463-7              | Not applicable                                                                                                        |
 | Respiratory rate         | LOINC 9279-1               | Not applicable                                                                                                        |
 | Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5) | Not applicable                                                                                                        |
-| Patient on oxygen        | SNOMED 371825009           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)  |
+| Patient on oxygen        | SNOMED 371825009           | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)  |
 | Inhaled oxygen flow rate | LOINC 3151-8               | Not applicable   |  
 | Body temperature         | LOINC 8310-5               | Not applicable                                                                                                        |
-  | Level of responsiveness (ACVPU scale) | LOINC 67775-7             | LOINC <br> - LA9340-6 (Alert) <br> - LA6560-2 (Confused) <br> - LA17108-4 (Verbal) <br> - LA17107-6 (Painful) <br> - LA9343-0 (Unresponsive) |
-| Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (pain scale 0-10)                                                                                        |
-| Pain puncture wounds     | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                                   |
-| Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Renal pain               | SNOMED 274279008           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Pain in calves           | SNOMED 1264028004          | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Pain provoked by eating  | SNOMED 426277009           | LOINC 72514-3 (pain scale 0-10)                                                                                        |
+| Level of responsiveness (ACVPU scale) | LOINC 67775-7             | LOINC <br> - LA9340-6 (Alert) <br> - LA6560-2 (Confused) <br> - LA17108-4 (Verbal) <br> - LA17107-6 (Painful) <br> - LA9343-0 (Unresponsive) |
+| Abdominal pain           | SNOMED 21522001            | LOINC 72514-3 (Pain scale 0-10)                                                                                        |
+| Pain puncture wounds     | <span class="warning">??</span> | LOINC 72514-3 (Pain scale 0-10)                                                                                   |
+| Pain during urination    | SNOMED 49650001            | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Renal pain               | SNOMED 274279008           | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Pain in calves           | SNOMED 1264028004          | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Pain provoked by eating  | SNOMED 426277009           | LOINC 72514-3 (Pain scale 0-10)                                                                                        |
 | Well-being               | SNOMED 365275006           | SNOMED <br> - 260388006 (No status change) <br> - 268910001 (Patient's condition improved) <br> - 230993007 (Worsening)|
-| Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Bowel movement           | SNOMED 39211005            | SNOMED <br> - 373067005 (no) <br> - 264312008 (liquid) <br> - 300585004 (solid)                                        |
+| Flatulence               | SNOMED 249504006           | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Bowel movement           | SNOMED 39211005            | SNOMED <br> - 373067005 (No) <br> - 264312008 (Liquid) <br> - 300585004 (Solid)                                        |
 | Nausea                   | SNOMED 422587007           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
 | Vomiting                 | SNOMED 300359004           | LOINC  <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe)                |
-| Coughing                 | SNOMED 263731006           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Productive cough         | SNOMED 28743005            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
-| Shortness of breath      | SNOMED 267036007           | SNOMED <br> - 373066001 (yes) <br> - 373067005 (no)                                                                    |
+| Coughing                 | SNOMED 263731006           | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Productive cough         | SNOMED 28743005            | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Pressure in chest        | SNOMED 23924001            | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Shortness of breath      | SNOMED 267036007           | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Contact with patient     | SNOMED 712553007           | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                    |
+| Action                   | SNOMED 129264002           | SNOMED <br> - 2667000 (Absent) <br> - 313184003 (Patient given telephone advice) -  304561000 (Informing health care professional)
 
 ##### Abdominal surgery
 
@@ -78,7 +80,7 @@ See outcome module for parameters monitored in all carepath variants (general) a
 
 | Description   | Code(s) | Possible answers                                                                                                                     |
 | ------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------|
-| Shoulder pain | SNOMED 45326000 | SNOMED  <br> - 24028007 (right) <br> - 7771000 (left) <br> - 51440002 (right and left) <br> - 373067005 (no) |
+| Shoulder pain | SNOMED 45326000 | SNOMED  <br> - 24028007 (Right) <br> - 7771000 (Left) <br> - 51440002 (Right and left) <br> - 373067005 (No) |
 
 ##### Colon surgery
 
@@ -86,7 +88,7 @@ See outcome module for parameters monitored in all carepath variants (general) a
 
 | Description         | Code(s)                         | Possible answers                                                                                       |
 | ------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (pain scale 0-10)                                                                        |
+| Pain surgical wound | <span class="warning">??</span> | LOINC 72514-3 (Pain scale 0-10)                                                                        |
 | Distended abdomen   | SNOMED 60728008                 | LOINC <br> - LA137-2 (None) <br> - LA6752-5 (Mild) <br> - LA6751-7 (Moderate) <br> - LA6750-9 (Severe) |
 
 ##### Cystectomy
