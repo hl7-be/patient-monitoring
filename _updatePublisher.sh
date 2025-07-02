@@ -43,7 +43,7 @@ if [ ! -d "$input_cache_path" ] ; then
     echo "$input_cache_path does not exist"
     message="create it?"
     read -r -p "$message" response
-    else
+  else
     response=y
   fi
 fi
