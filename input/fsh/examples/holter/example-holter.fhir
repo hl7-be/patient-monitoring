@@ -1,0 +1,712 @@
+{
+  "resourceType": "Bundle",
+  "id": "holter-cpr-id-1",
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:report-1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-1",
+        "status": "final",
+        "issued": "2025-03-03T10:34:00+01:00",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18754-2",
+              "display": "Ambulatory cardiac rhythm monitor (Holter)"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-08-14T00:00:00+02:00",
+          "end": "2024-08-15T00:00:00+02:00"
+        },
+        "conclusion": "Structured raw annotations for Holter monitoring",
+        "result": [
+          { "reference": "urn:uuid:afib-group" },
+          { "reference": "urn:uuid:pause-brady-group" },
+          { "reference": "urn:uuid:vt-group" },
+          { "reference": "urn:uuid:obs-heartrate" },
+          { "reference": "urn:uuid:sve-group" },
+          { "reference": "urn:uuid:ve-group" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:afib-group",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "afib-group",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+              "code": "afib-group",
+              "display": "AFib episode group"
+            }
+          ]
+        },
+        "hasMember": [
+          { "reference": "urn:uuid:afib-ep-1" },
+          { "reference": "urn:uuid:afib-ep-2" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:afib-ep-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "afib-ep-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "164889003",
+              "display": "Atrial fibrillation"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-08-14T12:14:59+02:00",
+          "end": "2024-08-14T12:16:54+02:00"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8867-4",
+                  "display": "Average heart rate"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 79,
+              "unit": "beats/minute"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:afib-ep-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "afib-ep-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "164889003",
+              "display": "Atrial fibrillation"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-08-14T14:22:00+02:00",
+          "end": "2024-08-14T14:23:45+02:00"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8867-4",
+                  "display": "Average heart rate"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 82,
+              "unit": "beats/minute"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:pause-group",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "pause-brady-group",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+              "code": "pause-group",
+              "display": "Pause episode group"
+            }
+          ]
+        },
+        "hasMember": [
+          { "reference": "urn:uuid:pause-ep-1" },
+          { "reference": "urn:uuid:brady-ep-1" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:pause-ep-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "pause-ep-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "698247007",
+              "display": "Sinus Pause"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-08-14T08:53:00+02:00",
+          "end": "2024-08-14T08:53:16+02:00"
+        },
+        "valueQuantity": {
+          "value": 16,
+          "unit": "seconds"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:brady-ep-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "pause-ep-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "48867003",
+              "display": "Bradycardia"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-08-14T08:56:00+02:00",
+          "end": "2024-08-14T08:56:16+02:00"
+        },
+        "valueQuantity": {
+          "value": 16,
+          "unit": "seconds"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8867-4",
+                  "display": "Average heart rate"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 42,
+              "unit": "beats/minute"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:vt-group",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vt-group",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+              "code": "vt-group",
+              "display": "Ventricular Tachycardia episode group"
+            }
+          ]
+        },
+        "hasMember": [
+          { "reference": "urn:uuid:vt-ep-1" },
+          { "reference": "urn:uuid:vt-ep-2" }
+        ]
+      }
+    },
+
+    {
+      "fullUrl": "urn:uuid:vt-ep-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vt-ep-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "164893009",
+              "display": "Ventricular tachycardia"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-08-15T03:29:42+02:00",
+          "end": "2024-08-15T03:29:48.5+02:00"
+        },
+        "valueQuantity": {
+          "value": 6.5,
+          "unit": "seconds"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8867-4",
+                  "display": "Median heart rate"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "beats/minute"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:vt-ep-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vt-ep-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "164893009",
+              "display": "Ventricular tachycardia"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-08-14T21:32:59+02:00",
+          "end": "2024-08-14T21:33:00+02:00"
+        },
+        "valueQuantity": {
+          "value": 1,
+          "unit": "seconds"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8867-4",
+                  "display": "Median heart rate"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 152,
+              "unit": "beats/minute"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-heartrate",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-heartrate",
+        "effectiveDateTime": "2024-08-14T09:01:24+02:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8867-4",
+                  "display": "Median heart rate (daytime)"
+                }
+              ],
+              "text": "Median heart rate (daytime)"
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "beats/minute"
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/observation-time-period",
+                "valuePeriod": {
+                  "start": "2024-08-14T06:00:00+02:00",
+                  "end": "2024-08-14T22:00:00+02:00"
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8867-4",
+                  "display": "Median Heart rate (nighttime)"
+                }
+              ],
+              "text": "Median heart rate (nighttime)"
+            },
+            "valueQuantity": {
+              "value": 60,
+              "unit": "beats/minute"
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/observation-time-period",
+                "valuePeriod": {
+                  "start": "2024-08-14T22:00:00+02:00",
+                  "end": "2024-08-15T06:00:00+02:00"
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "101692-2",
+                  "display": "Maximum Heart rate"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 136,
+              "unit": "beats/minute"
+            },
+            "effectiveDateTime": "2024-08-14T09:01:24+02:00"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "103222-6",
+                  "display": "Minimum Heart rate"
+                }
+              ],
+              "text": "Minimum heart rate"
+            },
+            "valueQuantity": {
+              "value": 40,
+              "unit": "beats/minute"
+            },
+            "effectiveDateTime": "2024-08-15T06:13:56+02:00"
+          }
+        ]
+      }
+    },
+
+    {
+      "resourceType": "Observation",
+      "id": "sve-group",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "sve-group",
+            "display": "Supraventricular Events Group"
+          }
+        ]
+      },
+      "hasMember": [
+        { "reference": "urn:uuid:sve-1" },
+        { "reference": "urn:uuid:sve-2" },
+        { "reference": "urn:uuid:sve-3" },
+        { "reference": "urn:uuid:svt-1" }
+      ]
+    },
+
+    {
+      "resourceType": "Observation",
+      "id": "sve-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "164887001",
+            "display": "Supraventricular ectopic beat"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T08:15:03+02:00"
+    },
+
+    {
+      "resourceType": "Observation",
+      "id": "sve-2",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "sve-couplet",
+            "display": "Supraventricular couplet"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T12:32:45+02:00"
+    },
+
+    {
+      "resourceType": "Observation",
+      "id": "sve-3",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "sve-run",
+            "display": "Short supraventricular run"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T15:10:22+02:00"
+    },
+
+    {
+      "resourceType": "Observation",
+      "id": "svt-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "164873001",
+            "display": "Supraventricular tachycardia"
+          }
+        ]
+      },
+      "effectivePeriod": {
+        "start": "2024-08-14T23:31:15+02:00",
+        "end": "2024-08-14T23:31:16.1+02:00"
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "8867-4",
+                "display": "Median heart rate"
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 128,
+            "unit": "beats/minute"
+          }
+        }
+      ]
+    },
+
+    {
+      "resourceType": "Observation",
+      "id": "ve-group",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "ve-group",
+            "display": "Ventricular Events Group"
+          }
+        ]
+      },
+      "hasMember": [
+        { "reference": "urn:uuid:ves-1" },
+        { "reference": "urn:uuid:ves-2" },
+        { "reference": "urn:uuid:ves-couplet-1" },
+        { "reference": "urn:uuid:ves-triplet-1" },
+        { "reference": "urn:uuid:ves-bigeminy-1" },
+        { "reference": "urn:uuid:ves-trigeminy-1" },
+        { "reference": "urn:uuid:vt-1" },
+        { "reference": "urn:uuid:vt-2" }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "ves-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "251175005",
+            "display": "Ventricular ectopic beat"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T08:01:00+02:00"
+    },
+    {
+      "resourceType": "Observation",
+      "id": "ves-2",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "251175005",
+            "display": "Ventricular ectopic beat"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T08:04:00+02:00"
+    },
+    {
+      "resourceType": "Observation",
+      "id": "ves-couplet-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "ves-couplets",
+            "display": "VES Couplets"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T09:23:00+02:00"
+    },
+    {
+      "resourceType": "Observation",
+      "id": "ves-triplet-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "ves-triplets",
+            "display": "VES Triplets"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T14:03:00+02:00"
+    },
+    {
+      "resourceType": "Observation",
+      "id": "ves-bigeminy-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "ves-bigeminies",
+            "display": "VES Bigeminies"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T19:00:00+02:00"
+    },
+    {
+      "resourceType": "Observation",
+      "id": "ves-trigeminy-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/holter",
+            "code": "ves-trigeminies",
+            "display": "VES Trigeminies"
+          }
+        ]
+      },
+      "effectiveDateTime": "2024-08-14T19:02:00+02:00"
+    },
+    {
+      "resourceType": "Observation",
+      "id": "vt-1",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "25569003",
+            "display": "Ventricular tachycardia"
+          }
+        ]
+      },
+      "effectivePeriod": {
+        "start": "2024-08-15T03:29:42+02:00",
+        "end": "2024-08-15T03:29:48.5+02:00"
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "8867-4",
+                "display": "Median heart rate"
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 88,
+            "unit": "beats/minute"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "vt-2",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "25569003",
+            "display": "Ventricular tachycardia"
+          }
+        ]
+      },
+      "effectivePeriod": {
+        "start": "2024-08-14T21:32:59+02:00",
+        "end": "2024-08-14T21:33:00+02:00"
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "8867-4",
+                "display": "Median heart rate"
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 152,
+            "unit": "beats/minute"
+          }
+        }
+      ]
+    }
+  ]
+}
