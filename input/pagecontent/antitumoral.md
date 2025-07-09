@@ -2,7 +2,7 @@
 This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
 </div>
 
-**DRAFT: 2025-02-07**
+**DRAFT: 2025-07-09**
 
 ### Care Pathway Overview
 
@@ -15,13 +15,32 @@ Specifically, subcutaneous or intramuscular administration will be done at the p
 
 - **Parameters Monitored**:
 
-  - Heart Rate
-  - Blood Pressure
-  - Body weight
   - Body temperature
+  - Heart rate
+  - Blood pressure
+  - Body weight
   - Swelling of bilateral feet
   - Orthopneu
-  - Injection site pain 
+  - Injection site pain
+  - Nausea
+  - Diarrhea
+  - Eruption of skin
+  - Vomiting symptom
+  - Decrease in appetite
+  - Constipation
+  - Tired
+  - Dry cough
+  - Pain of joint
+  - Dyspnea
+  - Mental state, behavior and/or psychosocial function finding
+  - Oedema
+  - Fever, chills, feeling sick
+  - Blood pressure repeatedly lower than 100/60 mmHg
+  - Resting heart rate greater than 100 bpm or irregular heart rhythm, unless a chronic known problem
+  - Weight increased
+  - Sensory neuropathy
+  - Peripheral motor neuropathy
+  - Pain
 
 #### Data Collection
 

@@ -2,7 +2,7 @@
 This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
 </div>
 
-**DRAFT: 2025-02-07**
+**DRAFT: 2025-07-09**
 
 ### Care Pathway Overview
 
@@ -15,22 +15,44 @@ The OPAT (Outpatient Parenteral Antimicrobial Therapy) care pathway involves the
 
 - **Parameters Monitored**:
 
-  - Heart Rate
-  - Blood Pressure
   - Body temperature
-  - Body weight
-  - Oxygen saturation
+  - Heart rate
+  - Blood pressure
   - Nausea
   - Diarrhea
-  - Eruption of skin
-  - Pain infection site
-  - Blocked catheter
-  - Catheter moved or removed
-  - Redness of skin over lesion
-  - Pain puncture wounds
-  - Leakage
   - Pain of shoulder region
-
+  - Pain at insertion site
+  - Lokalised pain
+  - Eruption of skin
+  - Itching
+  - Peeling of skin
+  - Vomiting symptom
+  - Constipation
+  - Decrease in appetite
+  - Pain on flushing of implanted venous access device
+  - Tired
+  - Chill
+  - Candidiasis
+  - Pain of joint
+  - Dyspnea
+  - Facial swelling
+  - Observation insertion site
+  - Leakage
+  - Accidental removal of catheter
+  - Medication administration
+  - Problem
+  - Problems functionality injection
+  - Problems insertion site
+  - Problem fixation
+  - Problem infection
+  - Redness of skin over lesion
+  - Problem swelling upper arm
+  - Reaction to antibiotics
+  - Allergic reaction
+  - Care of central venous catheter
+  - Site of intravenous insertion
+  - Blocked catheter
+  
 #### Data Collection
 
 - Technology is CE-certified, with end-to-end encryption and GDPR compliance.
