@@ -1,0 +1,133 @@
+{
+  "resourceType": "Observation",
+  "id": "ppg-afib-screening-2024",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "xxx-xx",
+        "display": "Heart rhythm"
+      }
+    ],
+    "text": "PPG Heart Rhythm Screening"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2024-07-11T10:32:00+02:00",
+  "issued": "2024-07-11T10:35:00+02:00",
+  "performer": [
+    {
+      "display": "FibriCheck algorithm v1.4.0"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "xxxx-x",
+            "display": "Heart rhythm"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "xxxx",
+            "display": "Regular rhythm"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "xxxx-x",
+            "display": "Heart rate"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 67,
+        "unit": "beats/minute",
+        "system": "http://unitsofmeasure.org",
+        "code": "/min"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/observation-codes",
+            "code": "measurement-context",
+            "display": "Measurement context"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "xxxx",
+                "display": "Walking"
+            }
+        ]
+
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7belgium.org/fhir/CodeSystem/observation-codes",
+            "code": "ppg-signal-quality",
+            "display": "PPG signal quality"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "xxxx",
+            "display": "Symptoms"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "xxxx",
+            "display": "No symptoms"
+          }
+        ]
+      }
+    }
+  ]
+}
