@@ -66,13 +66,13 @@ Each measurement is exposed as a FHIR `Observation`.
 
 ## Vital Signs and Rhythm Observations (FHIR)
 
-| Measurement             | Code System | Code / Display                                                |
-| ----------------------- | ----------- | ------------------------------------------------------------- |
-| **Heart Rhythm**        | LOINC       | `xxx` – Atrial fibrillation                                   |
-| **Heart Rate**          | LOINC       | `xx-xx` – Average HR during PPG recording                     |
-| **Signal Quality**      | Custom      | `ppg-signal-quality` – % of insufficient signal               |
-| **Symptom Reporting**   | HL7 Belgium | `symptoms` – e.g. shortness of breath, palpitations           |
-| **Measurement Context** | HL7 Belgium | `measurement-context` – e.g. resting, sleeping, post-exercise |
+| Measurement                      | Code System | Code / Display                                                |
+| -------------------------------- | ----------- | ------------------------------------------------------------- |
+| **Heart Rhythm**                 | LOINC       | `8884-9` – Heart rate rhythm                                  |
+| **Heart Rate**                   | LOINC       | `8867-4` – Average HR during PPG recording                    |
+| **Symptom Reporting**            | LOINC       | `75325-1` – e.g. shortness of breath, palpitations            |
+| **Symptom Severity**             | LOINC       | `64750-3` – e.g. shortness of breath, palpitations            |
+| **Measurement Context**          | HL7 Belgium | `measurement-context` – e.g. resting, sleeping, post-exercise |
 
 ---
 
