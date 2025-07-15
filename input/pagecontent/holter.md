@@ -109,8 +109,7 @@ The **Holter Observation** profile is based on the FHIR `Observation` resource a
 
 ### Example References
 
-- [Diagnostic Report – Holter](./Observation-HolterReport.html)
-- [Holter Diagnostic Report](./DiagnosticReport-holter-report.html)
+- [Holter Diagnostic Report](./DiagnosticReport-example-holter-diagnosticreport.html)
 
 ---
 

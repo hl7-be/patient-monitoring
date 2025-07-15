@@ -14,7 +14,7 @@ Usage: #example
 
 Instance: example-holter-afib
 InstanceOf: HolterObservation
-Title: "AFib Episode"
+Title: "Holter AFib Episode"
 Description: "Detected AFib event"
 Usage: #example
 * status = #final
@@ -29,7 +29,7 @@ Usage: #example
 
 Instance: example-holter-sv
 InstanceOf: HolterObservation
-Title: "Supraventricular Event"
+Title: "Holter Supraventricular Event"
 Description: "Supraventricular arrhythmia"
 Usage: #example
 * status = #final
