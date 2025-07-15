@@ -30,6 +30,7 @@ By reducing unnecessary hospital days and supporting safe recovery at home, the 
     - Stool
     - Redon
     - Weight (BW)
+    - Remarks HCP (free text)
 
 #### Data Collection
 
@@ -54,13 +55,15 @@ By reducing unnecessary hospital days and supporting safe recovery at home, the 
 | Heart rate               | LOINC 8867-4                    | Not applicable                  |
 | Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5)      | Not applicable                  |
 | Respiratory rate         | LOINC 9279-1                    | Not applicable                  |
-| General Wellbeing        | <span class="warning">??</span> | Not applicable                  |
+| General Wellbeing        | <span class="warning">??</span> | <span class="warning">??</span> |
 | Pain Surgical Wound      | <span class="warning">??</span> | LOINC 72514-3 (Pain scale 0-10) |
-| Nausea                   | <span class="warning">??</span> | Not applicable                  |
-| Food Intake              | <span class="warning">??</span> | Not applicable                  |
+| Nausea                   | <span class="warning">??</span> | <span class="warning">??</span> |
+| Food Intake              | <span class="warning">??</span> | <span class="warning">??</span> |
 | Stool                    | <span class="warning">??</span> | LOINC 29636-8 OR 11029-6        |
-| Redon                    | <span class="warning">??</span> | Not applicable                  |
+| Redon                    | <span class="warning">??</span> | <span class="warning">??</span> |
 | Body weight              | LOINC 29463-7                   | Not applicable                  |
+| Remarks HCP              | <span class="warning">??</span> | <span class="warning">??</span> |
+
 
 ### Specification:
 
@@ -77,5 +80,6 @@ For detailed specifications, refer to the
 - Stool Example
 - Redon Example
 - [Weight Example](./Observation-BodyWeightExample2.html)
+- Remarks HCP Example
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.
