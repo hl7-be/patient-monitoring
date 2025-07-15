@@ -24,7 +24,7 @@ By reducing unnecessary hospital days and supporting safe recovery at home, the 
     - Oxygen Saturation (SPO2)
     - Respiratory Rate
     - General Wellbeing (NRS)
-    - Pain (NRS)
+    - Pain Surgical Wound (NRS)
     - Nausea (NRS)
     - Food Intake
     - Stool
@@ -48,19 +48,19 @@ By reducing unnecessary hospital days and supporting safe recovery at home, the 
 
 <div class="table-md"></div>
 
-| Description              | Code(s)                    | Possible answers                                                                                                       |
-|--------------------------| -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Blood pressure           | LOINC 8480-6 / 8462-4      | Not applicable                                                                                                        |
-| Heart rate               | LOINC 8867-4               | Not applicable                                                                                                        |
-| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5) | Not applicable                                                                                                        |
-| Respiratory rate         | LOINC 9279-1               | Not applicable                                                                                                        |
-| General Wellbeing        | <span class="warning">??</span>              | Not applicable                                                                                                        |
-| Pain                     | <span class="warning">??</span>              | LOINC 72514-3 (Pain scale 0-10)                                                                                                        |
-| Nausea                   | <span class="warning">??</span>              | Not applicable                                                                                                        |
-| Food Intake              | <span class="warning">??</span>              | Not applicable                                                                                                        |
-| Stool                    | <span class="warning">??</span>              | LOINC 29636-8                                                                                                        |
-| Redon                    | <span class="warning">??</span>              | Not applicable                                                                                                        |
-| Body weight              | LOINC 29463-7              | Not applicable                                                                                                        |
+| Description              | Code(s)                         | Possible answers                |
+|--------------------------|---------------------------------|---------------------------------|
+| Blood pressure           | LOINC 8480-6 / 8462-4           | Not applicable                  |
+| Heart rate               | LOINC 8867-4                    | Not applicable                  |
+| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5)      | Not applicable                  |
+| Respiratory rate         | LOINC 9279-1                    | Not applicable                  |
+| General Wellbeing        | <span class="warning">??</span> | Not applicable                  |
+| Pain Surgical Wound      | <span class="warning">??</span> | LOINC 72514-3 (Pain scale 0-10) |
+| Nausea                   | <span class="warning">??</span> | Not applicable                  |
+| Food Intake              | <span class="warning">??</span> | Not applicable                  |
+| Stool                    | <span class="warning">??</span> | LOINC 29636-8                   |
+| Redon                    | <span class="warning">??</span> | Not applicable                  |
+| Body weight              | LOINC 29463-7                   | Not applicable                  |
 
 ### Specification:
 
@@ -71,7 +71,7 @@ For detailed specifications, refer to the
 - [Saturation Example](./Observation-OxygenSaturationExample2.html)
 - [Respiratory rate Example](./Observation-RespiratoryRateExample2.html)
 - General Wellbeing Example
-- [Pain Example](./Observation-PainExample.html)
+- [Pain surgical wound Example](./Observation-PainSurgicalWoundsExample.html)
 - Nausea Example
 - Food Intake Example
 - Stool Example
