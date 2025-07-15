@@ -10,5 +10,3 @@ Description: "Pain scale is used as answer"
 * valueCodeableConcept = $loinc#LA10138-8
 * effectivePeriod.start = "2025-07-15T15:49:00+00:00"
 * effectivePeriod.end = "2025-07-15T15:50:00+00:00"
-* contained[0] = nurse
-* performer = Reference(nurse)
