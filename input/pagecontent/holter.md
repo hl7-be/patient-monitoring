@@ -113,4 +113,4 @@ The **Holter Observation** profile is based on the FHIR `Observation` resource a
 
 ---
 
-These FHIR resources are designed to support structured, interoperable ECG data exchange. Each finding is encoded using HL7 Belgium and standard terminologies to promote clarity and consistency in digital health environments.
+These FHIR resources are designed to support structured, interoperable Holter Report data exchange. Each finding is encoded using HL7 Belgium and standard terminologies to promote clarity and consistency in digital health environments.
