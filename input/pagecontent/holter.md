@@ -3,22 +3,22 @@
 > Use this information with caution, as it may not yet reflect finalized or fully validated guidance.  
 > Always verify details before relying on them for production use.
 
-# Holter Monitoring – FHIR Implementation Guide
+**DRAFT: 2025-07-14**
 
-**DRAFT: 2025-03-03**  
 **Carepath Identifier**: https://hl7belgium.org/fhir/patient-monitoring/carepath/holter-monitoring
+
 **Carepath Version**: 1.0.0
 
 ---
 
-## Care Pathway Overview
+### Care Pathway Overview
 
 - **Monitoring Duration**: 24–72 hours
 - **Facility Type**: Hospital or diagnostic center
 - **Device Type**: Holter ECG (1–3 lead, continuous)
 - **Data Review**: By cardiologist or certified ECG analyst
 
-### Patient Eligibility
+#### Patient Eligibility
 
 - **Indications**: Suspected arrhythmias (e.g., palpitations, syncope, bradycardia)
 - **Consent**: Signed informed consent prior to monitoring
@@ -26,14 +26,14 @@
 
 ---
 
-## Process & Workflow
+### Process & Workflow
 
-### Start-Up
+#### Start-Up
 
 - **Device Placement**: On-site or outpatient setting
 - **Instructions**: Provided on wearing and returning the device
 
-### Data Collection
+#### Data Collection
 
 - **Recording**: Locally on Holter device
 - **Upload & Analysis**: Uploaded securely and interpreted using CE-certified tools
@@ -41,16 +41,14 @@
 
 ---
 
-## Alarm & Escalation
+### Alarm & Escalation
 
 - **Thresholds**: System flags critical findings (e.g. AFib, VT, pauses)
 - **Human Review**: All flagged findings are clinically reviewed
 
 ---
 
-## Integration Modules
-
-### 📄 Outcome Module - PDF
+### 📄 Outcome : PDF
 
 - **Generated After Review**
 - **Contents**: Summary, rhythm findings, annotated ECG strips
@@ -58,46 +56,58 @@
 
 ---
 
-### 🧬 Outcome Module - FHIR (Bundle, Document Type)
+### 🧬 Outcome : FHIR
 
-Each DiagnosticReport includes references to structured Observations.
+This Implementation Guide defines two core profiles for representing structured Holter ECG monitoring results:
 
-#### Key DiagnosticReport
+#### 📄 [Holter Diagnostic Report](./StructureDefinition-holter-diagnostic-report.html)
 
-- **LOINC**: `18754-2` – Ambulatory cardiac rhythm monitor (Holter)
-- **Conclusion**: Structured raw annotations for Holter monitoring
-- **Results Referenced**:
-  - AFib episodes (`afib-group`)
-  - Pauses and bradycardia (`pause-brady-group`)
-  - Supraventricular events (`sve-group`)
-  - Ventricular events (`ve-group`)
-  - VT episodes (`vt-group`)
-  - Heart rate summary (`obs-heartrate`)
+The **Holter Diagnostic Report** is a profile based on the FHIR `DiagnosticReport` resource. It serves as the **container** for a complete ambulatory cardiac rhythm analysis, such as a 24- or 48-hour Holter ECG report.
+
+**Key elements:**
+
+- `status`: The lifecycle status of the report (e.g., final, amended)
+- `code`: Fixed to **LOINC `18754-2`**, identifying this as a Holter rhythm report
+- `effectivePeriod`: The time range over which ECG monitoring was performed
+- `result`: References to one or more `HolterObservation` resources, each representing a specific rhythm event or episode
+- `conclusion`: An optional free-text summary by the reporting clinician or algorithm
+
+> 📌 This report acts as the entry point for interpreting a Holter study and links to all rhythm-related findings detected during the monitoring period.
+
+#### 📈 [Holter Observation](./StructureDefinition-holter-observation.html)
+
+The **Holter Observation** profile is based on the FHIR `Observation` resource and represents an **individual rhythm event** or episode detected during the Holter recording, such as an atrial fibrillation episode, ventricular tachycardia, pause, or supraventricular run.
+
+**Each observation includes:**
+
+- `status`: Typically `final` once confirmed
+- `code`: A SNOMED CT code identifying the arrhythmia type (e.g., atrial fibrillation)
+- `valueCodeableConcept`: Also constrained to SNOMED CT, representing the same event type as `code`
+- `effectivePeriod`: The **start and end time** of the arrhythmia episode
+- `component` _(optional)_:
+  - **Average heart rate**, using `LOINC:8867-4` (expressed in beats per minute)
+  - Additional metrics like burden, duration, or RR intervals may be included in the future
+
+> 🫀 Each `HolterObservation` provides structured, time-specific detail about one episode — for example, "an atrial fibrillation episode from 14:03 to 14:07 with an average HR of 79 bpm".
+
+#### 🧩 Relationship between Report and Observations
+
+- The **`HolterDiagnosticReport`** references one or more **`HolterObservation`** entries.
+- This design enables systems to access both a **summary report** and a complete list of **structured, time-stamped rhythm events**.
+- This supports:
+  - Visualization of arrhythmia timelines
+  - Quantitative reporting (e.g., total burden)
+  - Decision support and auditability
 
 ---
 
-## Vital Signs and Episode Summaries (Observations)
+### Terminology
 
-| Measurement                        | Code System | Code / Display                                                                |
-| ---------------------------------- | ----------- | ----------------------------------------------------------------------------- |
-| **Heart Rate**                     | LOINC       | `8867-4` – Median HR (day/night), avg, max, min                               |
-|                                    | LOINC       | `101692-2` – Maximum HR                                                       |
-|                                    | LOINC       | `103222-6` – Minimum HR                                                       |
-| **Atrial Fibrillation**            | SNOMED      | `164889003` – Atrial fibrillation                                             |
-|                                    | HL7 Belgium | `afib-group`                                                                  |
-| **Pauses & Bradycardia**           | SNOMED      | `698247007` – Sinus Pause                                                     |
-|                                    | SNOMED      | `48867003` – Bradycardia                                                      |
-|                                    | HL7 Belgium | `pause-group`                                                                 |
-| **Supraventricular Events (SVEs)** | SNOMED      | `164887001` – Supraventricular ectopic beat                                   |
-|                                    | SNOMED      | `164873001` – Supraventricular tachycardia                                    |
-|                                    | HL7 Belgium | `sve-group`                                                                   |
-| **Ventricular Events (VES/VT)**    | SNOMED      | `25569003` – Ventricular tachycardia                                          |
-|                                    | SNOMED      | `251175005` – Ventricular ectopic beats                                       |
-|                                    | HL7 Belgium | `ve-group`, `ves-couplets`, `ves-triplets`, `ves-bigemnies`,`ves-trigeminies` |
+- [Holter Report Code](./ValueSet-holter-report-code.html)
+- [Holter Event Codes](./ValueSet-holter-event-codes.html)
+- [Holter Event Component Codes](./ValueSet-holter-event-component-codes.html)
 
----
-
-## Example References
+### Example References
 
 - [Diagnostic Report – Holter](./Observation-HolterReport.html)
 - [Holter Diagnostic Report](./DiagnosticReport-holter-report.html)
