@@ -58,7 +58,7 @@ By reducing unnecessary hospital days and supporting safe recovery at home, the 
 | Pain Surgical Wound      | <span class="warning">??</span> | LOINC 72514-3 (Pain scale 0-10) |
 | Nausea                   | <span class="warning">??</span> | Not applicable                  |
 | Food Intake              | <span class="warning">??</span> | Not applicable                  |
-| Stool                    | <span class="warning">??</span> | LOINC 29636-8                   |
+| Stool                    | <span class="warning">??</span> | LOINC 29636-8 OR 11029-6        |
 | Redon                    | <span class="warning">??</span> | Not applicable                  |
 | Body weight              | LOINC 29463-7                   | Not applicable                  |
 
