@@ -33,4 +33,4 @@ Run Locally:
 java -jar input-cache/publisher.jar -ig ig.ini
 ```
 
-The output will be availalbe in `output/index.html`
+The output will be available in `output/index.html`
