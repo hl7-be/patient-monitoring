@@ -22,14 +22,15 @@ By reducing unnecessary hospital days and supporting safe recovery at home, the 
     - Blood Pressure (BP)
     - Heart Rate (HR)
     - Oxygen Saturation (SPO2)
-    - Respiratory Rate
-    - General Wellbeing (NRS)
+    - Body temperature
+    - Redon drain fluid (ml)
+    - Appetite (VAS)
     - Pain Surgical Wound (NRS)
-    - Nausea (NRS)
-    - Food Intake
-    - Stool
-    - Redon
-    - Weight (BW)
+    - Painkillers (Y/N)
+    - Nausea (VAS)
+    - Stool (Bristol Stool Scale)
+    - Wexner Continence score
+    - Incontince severity index (Urine)
     - Remarks HCP (free text)
 
 #### Data Collection
@@ -49,20 +50,21 @@ By reducing unnecessary hospital days and supporting safe recovery at home, the 
 
 <div class="table-md"></div>
 
-| Description              | Code(s)                         | Possible answers                |
-|--------------------------|---------------------------------|---------------------------------|
-| Blood pressure           | LOINC 8480-6 / 8462-4           | Not applicable                  |
-| Heart rate               | LOINC 8867-4                    | Not applicable                  |
-| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5)      | Not applicable                  |
-| Respiratory rate         | LOINC 9279-1                    | Not applicable                  |
-| General Wellbeing        | <span class="warning">??</span> | <span class="warning">??</span> |
-| Pain Surgical Wound      | <span class="warning">??</span> | LOINC 72514-3 (Pain scale 0-10) |
-| Nausea                   | <span class="warning">??</span> | <span class="warning">??</span> |
-| Food Intake              | <span class="warning">??</span> | <span class="warning">??</span> |
-| Stool                    | <span class="warning">??</span> | LOINC 29636-8 OR 11029-6        |
-| Redon                    | <span class="warning">??</span> | <span class="warning">??</span> |
-| Body weight              | LOINC 29463-7                   | Not applicable                  |
-| Remarks HCP              | <span class="warning">??</span> | <span class="warning">??</span> |
+| Description              | Code(s)                         | Possible answers                                    |
+|--------------------------|---------------------------------|-----------------------------------------------------|
+| Blood pressure           | LOINC 8480-6 / 8462-4           | Not applicable                                      |
+| Heart rate               | LOINC 8867-4                    | Not applicable                                      |
+| Oxygen Saturation (SPO2) | LOINC 2708-6 (sub 59408-5)      | Not applicable                                      |
+| Body temperature         | LOINC 8310-5                    | Not applicable                                      |
+| Redon drain fluid (ml)   | <span class="warning">??</span> | Not applicable                                      |
+| Appetite                 | <span class="warning">??</span> | 0-10                                                |
+| Pain Surgical Wound      | <span class="warning">??</span> | LOINC 72514-3 (Pain scale 0-10)                     |
+| Painkillers              | <span class="warning">??</span> | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No) |
+| Nausea                   | <span class="warning">??</span> | 0-10                                                |
+| Stool                    | LOINC 29636-8                   | Bristol Stool Scale                                 |
+| Wexner Continence score  | <span class="warning">??</span> | 0-20                                                |
+| Bladder continence       | LOINC 45619-4                   | LOINC LL31-6                                        |
+| Remarks HCP              | <span class="warning">??</span> | Free text                                           |
 
 
 ### Specification:
@@ -72,14 +74,14 @@ For detailed specifications, refer to the
 - [Blood Pressure Example](./Observation-BloodPressureExample2.html)
 - [Heart Rate Example](./Observation-HeartRateExample2.html)
 - [Saturation Example](./Observation-OxygenSaturationExample2.html)
-- [Respiratory rate Example](./Observation-RespiratoryRateExample2.html)
-- General Wellbeing Example
+- [Temperature Example](./Observation-BodyTemperatureExample.html)
+- Redon drain fluid Example
+- Appetite Example
 - [Pain surgical wound Example](./Observation-PainSurgicalWoundsExample.html)
+- Painkillers Example
 - Nausea Example
-- Food Intake Example
-- Stool Example
-- Redon Example
-- [Weight Example](./Observation-BodyWeightExample2.html)
+- Wexner Continence score Example
+- Bladder continence Example
 - Remarks HCP Example
 
 These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the vital parameters.

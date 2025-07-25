@@ -24,3 +24,4 @@ Thumbs.db
 *.bak
 
 node_modules
+.idea
