@@ -28,8 +28,8 @@ jobs:
       - name: Setup Java / Maven
         uses: actions/setup-java@v2
         with:
-          java-version: '11'
-          distribution: 'adopt'
+          java-version: '12'
+          distribution: 'temurin'
 
       - name: Install Jekyll
         run: |
