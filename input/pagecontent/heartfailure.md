@@ -72,7 +72,7 @@ This FHIR implementation content is currently under development and may be subje
 
   | Vital Sign          | FHIR Profile                                                                   |
   | ------------------- | ------------------------------------------------------------------------------ |
-  | Heart Rate (HR)     | [`Observation-hr`](http://hl7.org/fhir/StructureDefinition/heart-rate)         |
+  | Heart Rate (HR)     | [`Observation-hr`](http://hl7.org/fhir/StructureDefinition/heartrate)          |
   | Blood Pressure (BP) | [`Observation-bp`](http://hl7.org/fhir/StructureDefinition/bp)                 |
   | Body Weight (BW)    | [`Observation-bodyweight`](http://hl7.org/fhir/StructureDefinition/bodyweight) |
 
