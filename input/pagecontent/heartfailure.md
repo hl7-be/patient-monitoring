@@ -98,6 +98,7 @@ These FHIR modules ensure standardized data exchange between systems and guarant
 For detailed specifications, refer to the
 
 - [Blood Pressure Example](./Observation-BloodPressureExample.html)
+- [Blood Pressure Example - with bodySite](./Observation-BloodPressureExample2.html)
 - [Weight Example](./Observation-BodyWeightExample.html)
 - [Heart Rate Example](./Observation-HeartRateExample.html)
 - [Reduced Appetite Example](./Observation-ReducedAppetiteExample.html)

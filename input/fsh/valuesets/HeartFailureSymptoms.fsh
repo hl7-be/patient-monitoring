@@ -3,6 +3,7 @@ Id: heart-failure-symptoms
 Title: "Heart Failure Symptom Codes"
 Description: "SNOMED CT codes representing common patient-reported symptoms in heart failure"
 * ^status = #active
+* ^experimental = false
 * include http://snomed.info/sct#80313002 "Palpitations"
 * include http://snomed.info/sct#64379006 "Reduced appetite"
 * include http://snomed.info/sct#267036007 "Shortness of breath"
