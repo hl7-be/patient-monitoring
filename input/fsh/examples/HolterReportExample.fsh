@@ -8,7 +8,7 @@ Usage: #example
 * code = http://loinc.org#18754-2 "Holter monitor study"
 * effectivePeriod.start = "2025-07-15T08:00:00+02:00"
 * effectivePeriod.end = "2025-07-15T12:00:00+02:00"
-* subject.identifier.system = $vital_patientId
+* subject.identifier.system = $tmp_patientId
 * subject.identifier.value = "D358D4B4-6007-4C3E-A33B-056773F45DC9"
 * issued = "2025-07-15T12:00:00+02:00"
 * result[+] = Reference(example-holter-afib)
