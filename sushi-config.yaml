@@ -151,6 +151,8 @@ pages:
     title: OPAT
   antitumoral.md:
     title: Antitumoral therapy
+  perioperative-abdominal.md:
+    title: Perioperative care - abdominal
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -187,6 +189,7 @@ menu:
     Holter Monitoring: holter.html
     Antitumoral: antitumoral.html
     Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
+    Perioperative Care - abdominal: perioperative-abdominal.html
     Overview LOINC: overview-loinc.html
   Artifact Index: artifacts.html
   History: changes.html
