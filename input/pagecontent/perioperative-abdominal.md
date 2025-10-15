@@ -4,6 +4,11 @@ This FHIR implementation content is currently under development and may be subje
 
 **DRAFT: 2025-10-06**
 
+### Telemonitoring Hub Identifier
+
+- **Carepath Identifier**: https://hl7belgium.org/fhir/patient-monitoring/carepath/heart-failure
+- **Carepath Version**: 1.0.0
+
 ### Care Pathway Overview
 
 The perioperative care path for abdominal surgery refers to the care of a patient who received abdominal surgery.
@@ -50,21 +55,28 @@ The care path typically contains following phases
 
 <div class="table-md"></div>
 
-| Description                 | Code(s)                         | Possible answers                                                                                                                                                                                         |
-|-----------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Blood pressure              | LOINC 8480-6 / 8462-4           | Not applicable                                                                                                                                                                                           |
-| Heart rate (BPM)            | LOINC 8867-4                    | Not applicable                                                                                                                                                                                           |
-| Oxygen Saturation (SPO2)    | LOINC 2708-6 (sub 59408-5)      | Not applicable                                                                                                                                                                                           |
-| Body temperature (C)        | LOINC 8310-5                    | Not applicable                                                                                                                                                                                           |
-| Redon drain fluid (mL/24h ) | SNOMED 251843005                | Not applicable                                                                                                                                                                                           |
-| Appetite                    | SNOMED 709263008                | LOINC LL3092-5 (very wel 0 to 10 very poor scale)                                                                                                                                                        |
-| Pain Surgical Wound         | SNOMED 112633009                | LOINC 72514-3 (Pain scale 0-10)                                                                                                                                                                          |
-| Painkillers                 | SNOMED 52685006                 | SNOMED <br> - 373066001 (Yes) <br> - 373067005 (No)                                                                                                                                                      |
-| Nausea                      | SNOMED 700471003                | LOINC LL3092-5 (very wel 0 to 10 very poor scale)                                                                                                                                                        |
-| Stool                       | SNOMED 443172007                | Bristol Stool Scale (value 1 to 7)                                                                                                                                                                       |
-| Wexner/CCIS score           | <span class="warning">??</span> | Score (value 0 to 20)                                                                                                                                                                                    |
-| Bladder continence          | LOINC 45619-4                   | LOINC LL31-6<br>- LA126-5 (0 - CONTINENT)<br>- LA127-3 (1 - USUALLY CONTINENT)<br>- LA128-1 (2 - OCCASIONALLY INCONTINENT)<br>- LA129-9 (3 - FREQUENTLY INCONTINENTR)<br>- LA130-7 (4 - INCONTINENT)<br> |
-| Remarks HCP                 | LOINC 107903-7                  | Free text                                                                                                                                                                                                |
+| Description                 | FHIR Profile                                                                                |
+|-----------------------------|---------------------------------------------------------------------------------------------|
+| Blood pressure              | [`Observation-bp`](http://hl7.org/fhir/StructureDefinition/bp)                              |
+| Heart rate (BPM)            | [`Observation-hr`](http://hl7.org/fhir/StructureDefinition/heartrate)                       |
+| Oxygen Saturation (SPO2)    | [`Observation-oxygensat`](https://hl7.org/fhir/oxygensat.html)                              |
+| Body temperature (C)        | [`Observation-bodytemp`](https://hl7.org/fhir/bodytemp.html)                                |
+| Redon drain fluid (mL/24h ) | [`Observation-drain-fluid`](./StructureDefinition-drain-fluid-observation.html)             |
+| Appetite                    | [`Observation-appetite`](./StructureDefinition-appetite-observation.html)                   |
+| Pain Surgical Wound         | [`Observation-wound-pain`](./StructureDefinition-surgical-wound-pain-observation.html)      |
+| Painkillers                 | [`Observation-painkiller`](./StructureDefinition-painkiller-usage-observation.html)         |
+| Nausea                      | [`Observation-nausea`](./StructureDefinition-nausea-observation.html)                       |
+| Stool                       | [`Observation-stool`](./StructureDefinition-stool-observation.html)                         |
+| Wexner/CCIS score           | [`Observation-wexner-ccis-score`](./StructureDefinition-wexner-ccis-score-observation.html) |
+| Bladder continence          | [`Observation-continence-level`](./StructureDefinition-bladder-continence-observation.html) |
+| Remarks HCP                 | [`Clinical-note`](./StructureDefinition-clinical-note-observation.html)                     |                                                                       
+
+- To be decided codes
+<div class="table-md"></div>
+
+| Description       | Code(s)                         | Possible Answers     |
+|-------------------|---------------------------------|----------------------|
+| Wexner/CCIS score | <span class="warning">??</span> | ValueInteger 1 to 20 |
 
 ### Specification:
 

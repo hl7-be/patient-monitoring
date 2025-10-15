@@ -1,0 +1,27 @@
+ValueSet: WellPoorScale
+Id: well-poor-scale
+Title: "0-10 scale, 0.5 increments, Very well to Very poor"
+Description: "Scale going from 0 to 10 in increments of 0.5. Indicating values very well to very port (see https://loinc.org/LL3092-5)"
+* ^status = #active
+* ^experimental = false
+* include http://loinc.org#LA21651-7 "0 - Very well"
+* include http://loinc.org#LA16632-4 "0.5"
+* include http://loinc.org#LA6112-2 "1"
+* include http://loinc.org#LA15765-3 "1.5"
+* include http://loinc.org#LA6113-0 "2 or more"
+* include http://loinc.org#LA15766-1 "2.5"
+* include http://loinc.org#LA6114-8 "3"
+* include http://loinc.org#LA15767-9 "3.5"
+* include http://loinc.org#LA6115-5 "4"
+* include http://loinc.org#LA15768-7 "4.5"
+* include http://loinc.org#LA10137-0 "5"
+* include http://loinc.org#LA15769-5 "5.5"
+* include http://loinc.org#LA10138-8 "6"
+* include http://loinc.org#LA15770-3 "6.5"
+* include http://loinc.org#LA10139-6 "7"
+* include http://loinc.org#LA21653-3 "7.5"
+* include http://loinc.org#LA10140-4 "8"
+* include http://loinc.org#LA21654-1 "8.5"
+* include http://loinc.org#LA10141-2 "9"
+* include http://loinc.org#LA21655-8 "9.5"
+* include http://loinc.org#LA21652-5 "10 - Very poor"
