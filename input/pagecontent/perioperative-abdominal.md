@@ -6,7 +6,7 @@ This FHIR implementation content is currently under development and may be subje
 
 ### Telemonitoring Hub Identifier
 
-- **Carepath Identifier**: https://hl7belgium.org/fhir/patient-monitoring/carepath/heart-failure
+- **Carepath Identifier**: https://hl7belgium.org/fhir/patient-monitoring/carepath/perioperative-abdominal
 - **Carepath Version**: 1.0.0
 
 ### Care Pathway Overview
