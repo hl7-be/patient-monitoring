@@ -1,0 +1,89 @@
+{
+    "resourceType": "Bundle",
+    "id": "example-bundle-12345",
+    "type": "transaction",
+    "meta": {
+        "lastUpdated": "2024-05-15T11:05:00Z"
+    },
+    "entry": [{
+            "fullUrl": "urn:uuid:001a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "example-patient-001"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
+        }, {
+            "fullUrl": "urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "example-surgeon-001"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Practitioner"
+            }
+        }, {
+            "fullUrl": "urn:uuid:3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "example-ortho-proc",
+                "status": "completed",
+                "code": {
+                    "coding": [{
+                            "system": "http://snomed.info/sct",
+                            "code": "609588000"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:001a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"
+                },
+                "performer": [{
+                        "actor": {
+                            "reference": "urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"
+                        }
+                    }
+                ],
+                "report": [{
+                        "reference": "urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        }, {
+            "fullUrl": "urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "id": "example-procedure-report",
+                "status": "current",
+                "subject": {
+                    "reference": "urn:uuid:001a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"
+                },
+                "type": {
+                    "coding": [{
+                            "system": "http://loinc.org",
+                            "code": "11504-8"
+                        }
+                    ]
+                },
+                "content": [{
+                        "attachment": {
+                            "contentType": "application/pdf",
+                            "data": "JVBERi0xLjQKJSVFT0Y="
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "DocumentReference"
+            }
+        }
+    ]
+}
