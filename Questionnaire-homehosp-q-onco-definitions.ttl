@@ -1,0 +1,1609 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-onco-definitions> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "homehosp-q-onco-definitions"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire homehosp-q-onco-definitions</b></p><a name=\"homehosp-q-onco-definitions\"> </a><a name=\"hchomehosp-q-onco-definitions\"> </a><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-onco-definitions#0.1.0</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.NursingAssessment\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> NursingAssessment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nursing assessment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.MedicationStorage\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> MedicationStorage</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Medication storage</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.A1_MedicationStorage\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> A1_MedicationStorage</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Are there any comments or concerns about the (correct) home storage of the medication?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Options: <a href=\"#opt-item.A1_MedicationStorage\">2 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.A2_MedicationStorageSpecify\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> A2_MedicationStorageSpecify</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; If comments or concerns: specify</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.note.text\">Observation.note.text</a><br/>Enable When: <span><a href=\"#item.A1_MedicationStorage\">A1_MedicationStorage</a> = Improper storage of medication (SNOMED CT#424363005)</span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.ObservationParameters\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> ObservationParameters</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Observation parameters</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.B1_BodyTemperature\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B1_BodyTemperature</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Body temperature:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueQuantity.value\">Observation.valueQuantity.value</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.B2_HeartRate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B2_HeartRate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Heart rate:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueQuantity.value\">Observation.valueQuantity.value</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.B3_SystolicBloodPressure\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B3_SystolicBloodPressure</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Systolic blood pressure:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueQuantity.value\">Observation.valueQuantity.value</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.B4_DiastolicBloodPressure\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B4_DiastolicBloodPressure</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Diastolic blood pressure:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueQuantity.value\">Observation.valueQuantity.value</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.B5_BodyWeight\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B5_BodyWeight</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Body weight:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueQuantity.value\">Observation.valueQuantity.value</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.Contraindications\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Contraindications</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Contraindications</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C1_ContraindicationPresent\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C1_ContraindicationPresent</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Are there any contraindications for administration?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C2_ContraindicationSpecify\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> C2_ContraindicationSpecify</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; If 'yes': specify</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.C1_ContraindicationPresent\">C1_ContraindicationPresent</a> = Yes (qualifier value) (SNOMED CT#373066001)</span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C3_FeverChills\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C3_FeverChills</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Fever, chills, feeling ill</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C4_LowBloodPressure\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C4_LowBloodPressure</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Blood pressure repeatedly below 100/60 mmHg</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C5_ElevatedOrIrregularHeartRate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C5_ElevatedOrIrregularHeartRate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Heart rate above 100 bpm at rest or irregular heart rhythm, unless a chronically known problem.</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C6_WeightGain\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C6_WeightGain</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A weight gain of 3 kg / 3 weeks or 5 kg / 6 weeks, especially in combination with increased edema.</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C7_Edema\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C7_Edema</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Increased edema of the hands and/or feet.</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C8_SevereDyspnea\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C8_SevereDyspnea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Increased breathlessness and/or severe breathlessness (i.e. breathlessness at rest/without exertion and/or breathlessness that interferes with daily activities) (Trastuzumab, Azacitidine)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C9_Other\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> C9_Other</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other: (if applicable)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.note.text\">Observation.note.text</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C10_ContactCareTeam\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> C10_ContactCareTeam</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; If contraindication(s): please contact the hospital care team</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.C1_ContraindicationPresent\">C1_ContraindicationPresent</a> = Yes (qualifier value) (SNOMED CT#373066001)</span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C11_Decision\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C11_Decision</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Decision after consultation with hospital</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Options: <a href=\"#opt-item.C11_Decision\">3 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.C12_DecisionSpecify\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> C12_DecisionSpecify</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; If 'other': specify</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.note.text\">Observation.note.text</a><br/>Enable When: <span><a href=\"#item.C11_Decision\">C11_Decision</a> = other</span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" id=\"item.SymptomBurden\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> SymptomBurden</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symptom burden</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D1_Nausea\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D1_Nausea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nausea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D2_Vomiting\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D2_Vomiting</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vomiting</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D3_DecreasedAppetite\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D3_DecreasedAppetite</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Decreased appetite or taste change</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D4_Diarrhea\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D4_Diarrhea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Diarrhea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D5_Constipation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D5_Constipation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Constipation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D6_Fatigue\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D6_Fatigue</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Fatigue/lethargy</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D7_Pain\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D7_Pain</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pain</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D8_SkinRash\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D8_SkinRash</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Skin rash</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D9_PsychosocialBurden\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D9_PsychosocialBurden</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Psychosocial burden</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D10_Dyspnea\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D10_Dyspnea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dyspnea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D11_Edema\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D11_Edema</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Edema</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-onco-symptom-grade.html\">ONCO Symptom Grade Scale (CTCAE 0–3)</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" id=\"item.D12_OtherObservations\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> D12_OtherObservations</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other side effects or relevant clinical and psychosocial observations\n(in case of clinical concerns, please contact the hospital for discussion)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.note.text\">Observation.note.text</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.Assignment\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Assignment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Assignment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.MedicationPreparation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> MedicationPreparation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Medication preparation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.E1_PreparationCorrect\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E1_PreparationCorrect</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Could the medication be prepared according to the procedure?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.E2_ContactCareTeam\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> E2_ContactCareTeam</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; If 'no': please contact the hospital care team</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.E1_PreparationCorrect\">E1_PreparationCorrect</a> = No (qualifier value) (SNOMED CT#373067005)</span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.MedicationAdministration\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> MedicationAdministration</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Medication administration</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.E3_AdministrationCorrect\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E3_AdministrationCorrect</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Could the medication be administered exactly according to the procedure (there were no deviations)?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.E4_SpecifyNo\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> E4_SpecifyNo</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; If 'no': specify</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.note.text\">Observation.note.text</a><br/>Enable When: <span><a href=\"#item.E3_AdministrationCorrect\">E3_AdministrationCorrect</a> = No (qualifier value) (SNOMED CT#373067005)</span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" id=\"item.Aftercare\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Aftercare</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Aftercare</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.E5_ReactionDuringHomeObservation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E5_ReactionDuringHomeObservation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Was there a reaction during the home observation period?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.E6a_Fever\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E6a_Fever</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Fever</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Enable When: <span><a href=\"#item.E5_ReactionDuringHomeObservation\">E5_ReactionDuringHomeObservation</a> = Yes (qualifier value) (SNOMED CT#373066001)</span><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.E6b_Nausea\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E6b_Nausea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nausea</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Enable When: <span><a href=\"#item.E5_ReactionDuringHomeObservation\">E5_ReactionDuringHomeObservation</a> = Yes (qualifier value) (SNOMED CT#373066001)</span><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.E6c_TightnessSensation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E6c_TightnessSensation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Tightness sensation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Enable When: <span><a href=\"#item.E5_ReactionDuringHomeObservation\">E5_ReactionDuringHomeObservation</a> = Yes (qualifier value) (SNOMED CT#373066001)</span><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.E6d_Chills\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E6d_Chills</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Chills</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Enable When: <span><a href=\"#item.E5_ReactionDuringHomeObservation\">E5_ReactionDuringHomeObservation</a> = Yes (qualifier value) (SNOMED CT#373066001)</span><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" id=\"item.E6e_InfluenzaLikeSyndrome\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E6e_InfluenzaLikeSyndrome</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Influenza-like syndromes</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0/StructureDefinition-be-observation.html#Observation.valueCodeableConcept\">Observation.valueCodeableConcept</a><br/>Enable When: <span><a href=\"#item.E5_ReactionDuringHomeObservation\">E5_ReactionDuringHomeObservation</a> = Yes (qualifier value) (SNOMED CT#373066001)</span><br/>Value Set: <a href=\"ValueSet-YesNoVS.html\">Yes / No Value Set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" id=\"item.QualityMonitoring\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> QualityMonitoring</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(Quality) monitoring</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" id=\"item.F1_CommentsRegistration\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> F1_CommentsRegistration</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please note any comments or concerns regarding the registration of this patient, the sharing of data from the hospital, the communication by and contact with the hospital, the availability of materials, or other aspects of the transmural collaboration around home hospitalization oncology. Thank you.</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.conclusion\">DiagnosticReport.conclusion</a></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name=\"opt-item.A1_MedicationStorage\"> </a><p><b>Answer options for A1_MedicationStorage </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#710977001 (\"Safe storage and management of medication\")</li><li style=\"font-size: 11px\">http://snomed.info/sct#424363005 (\"Improper storage of medication\")</li></ul><a name=\"opt-item.C11_Decision\"> </a><p><b>Answer options for C11_Decision </b></p><ul><li style=\"font-size: 11px\">administration</li><li style=\"font-size: 11px\">no administration</li><li style=\"font-size: 11px\">other</li></ul><h2>Contained Resources</h2><hr/><p class=\"res-header-id\"><b>Patient #patient-placeholder</b></p><a name=\"homehosp-q-onco-definitions/patient-placeholder\"> </a><a name=\"hchomehosp-q-onco-definitions/patient-placeholder\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-patient.html\">BePatient</a></p><p style=\"margin-bottom: 0px\">Tag: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html\">subsetted (Details: ObservationValue code SUBSETTED = 'subsetted')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Patient Unknown  (no stated gender), DoB Unknown ( http://terminology.hl7.org/CodeSystem/v2-0203#UNKNOWN)</p><hr/></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Patient ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "patient-placeholder" ] ;
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient" ;
+         fhir:index 0 ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient>
+       ] ;
+       fhir:Meta.tag [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationValue" ] ;
+         fhir:Coding.code [ fhir:value "SUBSETTED" ] ;
+         fhir:Coding.display [ fhir:value "subsetted" ]
+       ]
+     ] ;
+     fhir:Patient.identifier [
+       fhir:index 0 ;
+       fhir:Identifier.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+       fhir:Identifier.value [ fhir:value "UNKNOWN" ]
+     ] ;
+     fhir:Patient.name [
+       fhir:index 0 ;
+       fhir:HumanName.family [ fhir:value "Unknown" ] ;
+       fhir:HumanName.given [
+         fhir:value "Patient" ;
+         fhir:index 0
+       ]
+     ]
+  ] ;
+  fhir:Questionnaire.url [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-onco-definitions"] ;
+  fhir:Questionnaire.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113883.4.642.40.54.35.8" ]
+  ] ;
+  fhir:Questionnaire.version [ fhir:value "0.1.0"] ;
+  fhir:Questionnaire.status [ fhir:value "active"] ;
+  fhir:Questionnaire.date [ fhir:value "2026-07-22T07:37:58+00:00"^^xsd:dateTime] ;
+  fhir:Questionnaire.publisher [ fhir:value "HL7 Belgium"] ;
+  fhir:Questionnaire.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Belgium" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Bob Smith" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:Questionnaire.item [
+     fhir:index 0 ;
+     fhir:Questionnaire.item.linkId [ fhir:value "NursingAssessment" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Nursing assessment" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+     fhir:Questionnaire.item.item [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueCanonical [
+             fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation" ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation>
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.status" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCode [ fhir:value "final" ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.category" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0 ;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+               fhir:Coding.code [ fhir:value "survey" ] ;
+               fhir:Coding.display [ fhir:value "Survey" ]
+             ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.subject" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueReference [
+             fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "MedicationStorage" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Medication storage" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+       fhir:Questionnaire.item.item [
+         fhir:index 0 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "A1_MedicationStorage" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:422413002 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "422413002" ] ;
+           fhir:Coding.display [ fhir:value "Ability to store medications (observable entity)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Are there any comments or concerns about the (correct) home storage of the medication?" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerOption [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.answerOption.valueCoding [
+             a sct:710977001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "710977001" ] ;
+             fhir:Coding.display [ fhir:value "Safe storage and management of medication" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Questionnaire.item.answerOption.valueCoding [
+             a sct:424363005 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "424363005" ] ;
+             fhir:Coding.display [ fhir:value "Improper storage of medication" ]
+           ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "A2_MedicationStorageSpecify" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.note.text" ] ;
+         fhir:Questionnaire.item.text [ fhir:value "> If comments or concerns: specify" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "string" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "A1_MedicationStorage" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:424363005 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "424363005" ] ;
+             fhir:Coding.display [ fhir:value "Improper storage of medication" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueCanonical [
+             fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation" ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation>
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.status" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCode [ fhir:value "final" ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.category" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0 ;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+               fhir:Coding.code [ fhir:value "vital-signs" ] ;
+               fhir:Coding.display [ fhir:value "Vital Signs" ]
+             ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.subject" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueReference [
+             fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "ObservationParameters" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Observation parameters" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+       fhir:Questionnaire.item.item [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-unit" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Coding.code [ fhir:value "Cel" ] ;
+             fhir:Coding.display [ fhir:value "Cel" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.system" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueUri [ fhir:value "http://unitsofmeasure.org" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.code" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueCode [ fhir:value "Cel" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 3 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.unit" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueString [ fhir:value "°C" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ] ;
+         fhir:Questionnaire.item.linkId [ fhir:value "B1_BodyTemperature" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.value" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a loinc:8310-5 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "8310-5" ] ;
+           fhir:Coding.display [ fhir:value "Body temperature" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Body temperature:" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "decimal" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-unit" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Coding.code [ fhir:value "{beats}/min" ] ;
+             fhir:Coding.display [ fhir:value "{beats}/min" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.system" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueUri [ fhir:value "http://unitsofmeasure.org" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.code" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueCode [ fhir:value "{beats}/min" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 3 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.unit" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueString [ fhir:value "bpm" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ] ;
+         fhir:Questionnaire.item.linkId [ fhir:value "B2_HeartRate" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.value" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:364075005 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "364075005" ] ;
+           fhir:Coding.display [ fhir:value "Heart rate (observable entity)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Heart rate:" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "decimal" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-unit" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Coding.code [ fhir:value "mm[Hg]" ] ;
+             fhir:Coding.display [ fhir:value "mm[Hg]" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.system" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueUri [ fhir:value "http://unitsofmeasure.org" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.code" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueCode [ fhir:value "mm[Hg]" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 3 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.unit" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueString [ fhir:value "mmHg" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ] ;
+         fhir:Questionnaire.item.linkId [ fhir:value "B3_SystolicBloodPressure" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.value" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a loinc:8480-6 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "8480-6" ] ;
+           fhir:Coding.display [ fhir:value "Systolic blood pressure" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Systolic blood pressure:" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "decimal" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-unit" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Coding.code [ fhir:value "mm[Hg]" ] ;
+             fhir:Coding.display [ fhir:value "mm[Hg]" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.system" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueUri [ fhir:value "http://unitsofmeasure.org" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.code" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueCode [ fhir:value "mm[Hg]" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 3 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.unit" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueString [ fhir:value "mmHg" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ] ;
+         fhir:Questionnaire.item.linkId [ fhir:value "B4_DiastolicBloodPressure" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.value" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a loinc:8462-4 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "8462-4" ] ;
+           fhir:Coding.display [ fhir:value "Diastolic blood pressure" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Diastolic blood pressure:" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "decimal" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ]
+       ], [
+         fhir:index 4 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-unit" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Coding.code [ fhir:value "kg" ] ;
+             fhir:Coding.display [ fhir:value "kg" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.system" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueUri [ fhir:value "http://unitsofmeasure.org" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.code" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueCode [ fhir:value "kg" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ], [
+           fhir:index 3 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "definition" ] ;
+             fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.unit" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Extension.url [ fhir:value "fixed-value" ] ;
+             fhir:Extension.valueString [ fhir:value "kg" ]
+           ] ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+         ] ;
+         fhir:Questionnaire.item.linkId [ fhir:value "B5_BodyWeight" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueQuantity.value" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a loinc:29463-7 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "29463-7" ] ;
+           fhir:Coding.display [ fhir:value "Body weight" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Body weight:" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "decimal" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueCanonical [
+             fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation" ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation>
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.status" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCode [ fhir:value "final" ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.category" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0 ;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+               fhir:Coding.code [ fhir:value "survey" ] ;
+               fhir:Coding.display [ fhir:value "Survey" ]
+             ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.subject" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueReference [
+             fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "Contraindications" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Contraindications" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+       fhir:Questionnaire.item.item [
+         fhir:index 0 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C1_ContraindicationPresent" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:395008009 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "395008009" ] ;
+           fhir:Coding.display [ fhir:value "Medication stopped - contra-indication (situation)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Are there any contraindications for administration?" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C2_ContraindicationSpecify" ] ;
+         fhir:Questionnaire.item.text [ fhir:value "> If 'yes': specify" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "display" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "C1_ContraindicationPresent" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373066001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373066001" ] ;
+             fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+           ]
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C3_FeverChills" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:39104002 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "39104002" ] ;
+           fhir:Coding.display [ fhir:value "Illness (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Fever, chills, feeling ill" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C4_LowBloodPressure" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:12763006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "12763006" ] ;
+           fhir:Coding.display [ fhir:value "Decreased blood pressure" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Blood pressure repeatedly below 100/60 mmHg" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C5_ElevatedOrIrregularHeartRate" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:361137007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "361137007" ] ;
+           fhir:Coding.display [ fhir:value "Irregular heart beat (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Heart rate above 100 bpm at rest or irregular heart rhythm, unless a chronically known problem." ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C6_WeightGain" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:262286000 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "262286000" ] ;
+           fhir:Coding.display [ fhir:value "Weight increased (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "A weight gain of 3 kg / 3 weeks or 5 kg / 6 weeks, especially in combination with increased edema." ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 6 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C7_Edema" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:267038008 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "267038008" ] ;
+           fhir:Coding.display [ fhir:value "Edema (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Increased edema of the hands and/or feet." ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 7 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C8_SevereDyspnea" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:297216006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "297216006" ] ;
+           fhir:Coding.display [ fhir:value "Increasing breathlessness (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Increased breathlessness and/or severe breathlessness (i.e. breathlessness at rest/without exertion and/or breathlessness that interferes with daily activities) (Trastuzumab, Azacitidine)" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 8 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C9_Other" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.note.text" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:438833006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "438833006" ] ;
+           fhir:Coding.display [ fhir:value "Administration of drug or medicament contraindicated (situation)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Other: (if applicable)" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ], [
+         fhir:index 9 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C10_ContactCareTeam" ] ;
+         fhir:Questionnaire.item.text [ fhir:value "> If contraindication(s): please contact the hospital care team" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "display" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "C1_ContraindicationPresent" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373066001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373066001" ] ;
+             fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+           ]
+         ]
+       ], [
+         fhir:index 10 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C11_Decision" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:182836005 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "182836005" ] ;
+           fhir:Coding.display [ fhir:value "Review of medication (procedure)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Decision after consultation with hospital" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerOption [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.answerOption.valueString [ fhir:value "administration" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Questionnaire.item.answerOption.valueString [ fhir:value "no administration" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Questionnaire.item.answerOption.valueString [ fhir:value "other" ]
+         ]
+       ], [
+         fhir:index 11 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "C12_DecisionSpecify" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.note.text" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:1156698007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "1156698007" ] ;
+           fhir:Coding.display [ fhir:value "Review of current supply of medication (procedure)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "> If 'other': specify" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "string" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "C11_Decision" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerString [ fhir:value "other" ]
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueCanonical [
+             fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation" ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation>
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.status" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCode [ fhir:value "final" ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.category" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0 ;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+               fhir:Coding.code [ fhir:value "survey" ] ;
+               fhir:Coding.display [ fhir:value "Survey" ]
+             ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.subject" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueReference [
+             fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "SymptomBurden" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Symptom burden" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+       fhir:Questionnaire.item.item [
+         fhir:index 0 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D1_Nausea" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:422587007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "422587007" ] ;
+           fhir:Coding.display [ fhir:value "Nausea (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Nausea" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D2_Vomiting" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:249497008 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "249497008" ] ;
+           fhir:Coding.display [ fhir:value "Vomiting symptom (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Vomiting" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D3_DecreasedAppetite" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:64379006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "64379006" ] ;
+           fhir:Coding.display [ fhir:value "Decrease in appetite (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Decreased appetite or taste change" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D4_Diarrhea" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:62315008 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "62315008" ] ;
+           fhir:Coding.display [ fhir:value "Diarrhea (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Diarrhea" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D5_Constipation" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:14760008 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "14760008" ] ;
+           fhir:Coding.display [ fhir:value "Constipation (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Constipation" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D6_Fatigue" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:224960004 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "224960004" ] ;
+           fhir:Coding.display [ fhir:value "Tired (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Fatigue/lethargy" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 6 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D7_Pain" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:112104007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "112104007" ] ;
+           fhir:Coding.display [ fhir:value "Localized pain (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Pain" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 7 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D8_SkinRash" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:271807003 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "271807003" ] ;
+           fhir:Coding.display [ fhir:value "Eruption of skin (disorder)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Skin rash" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 8 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D9_PsychosocialBurden" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:384821006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "384821006" ] ;
+           fhir:Coding.display [ fhir:value "Mental state, behavior and/or psychosocial function finding (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Psychosocial burden" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 9 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D10_Dyspnea" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:267036007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "267036007" ] ;
+           fhir:Coding.display [ fhir:value "Dyspnea (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Dyspnea" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 10 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D11_Edema" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:79654002 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "79654002" ] ;
+           fhir:Coding.display [ fhir:value "Edema (morphologic abnormality)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Edema" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade>
+         ]
+       ], [
+         fhir:index 11 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "D12_OtherObservations" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.note.text" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:365275006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "365275006" ] ;
+           fhir:Coding.display [ fhir:value "General well-being finding (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Other side effects or relevant clinical and psychosocial observations\n(in case of clinical concerns, please contact the hospital for discussion)" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Assignment" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Assignment" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+     fhir:Questionnaire.item.item [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueCanonical [
+             fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation" ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation>
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.status" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCode [ fhir:value "final" ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.category" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0 ;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+               fhir:Coding.code [ fhir:value "survey" ] ;
+               fhir:Coding.display [ fhir:value "Survey" ]
+             ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.subject" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueReference [
+             fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "MedicationPreparation" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Medication preparation" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+       fhir:Questionnaire.item.item [
+         fhir:index 0 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E1_PreparationCorrect" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:385796006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "385796006" ] ;
+           fhir:Coding.display [ fhir:value "Medication prefill preparation (procedure)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Could the medication be prepared according to the procedure?" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E2_ContactCareTeam" ] ;
+         fhir:Questionnaire.item.text [ fhir:value "> If 'no': please contact the hospital care team" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "display" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "E1_PreparationCorrect" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373067005 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373067005" ] ;
+             fhir:Coding.display [ fhir:value "No (qualifier value)" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueCanonical [
+             fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation" ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation>
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.status" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCode [ fhir:value "final" ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.category" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0 ;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+               fhir:Coding.code [ fhir:value "survey" ] ;
+               fhir:Coding.display [ fhir:value "Survey" ]
+             ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.subject" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueReference [
+             fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "MedicationAdministration" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Medication administration" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+       fhir:Questionnaire.item.item [
+         fhir:index 0 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E3_AdministrationCorrect" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:373149000 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "373149000" ] ;
+           fhir:Coding.display [ fhir:value "Medication administered following procedure (situation)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Could the medication be administered exactly according to the procedure (there were no deviations)?" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E4_SpecifyNo" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.note.text" ] ;
+         fhir:Questionnaire.item.text [ fhir:value "> If 'no': specify" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "string" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "E3_AdministrationCorrect" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373067005 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373067005" ] ;
+             fhir:Coding.display [ fhir:value "No (qualifier value)" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueCanonical [
+             fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation" ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation>
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.status" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCode [ fhir:value "final" ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.category" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueCodeableConcept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0 ;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+               fhir:Coding.code [ fhir:value "survey" ] ;
+               fhir:Coding.display [ fhir:value "Survey" ]
+             ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "definition" ] ;
+           fhir:Extension.valueUri [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.subject" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "fixed-value" ] ;
+           fhir:Extension.valueReference [
+             fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+           ]
+         ] ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "Aftercare" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Aftercare" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+       fhir:Questionnaire.item.item [
+         fhir:index 0 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E5_ReactionDuringHomeObservation" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:281647001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "281647001" ] ;
+           fhir:Coding.display [ fhir:value "Adverse reaction (disorder)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Was there a reaction during the home observation period?" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E6a_Fever" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:386661006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "386661006" ] ;
+           fhir:Coding.display [ fhir:value "Fever (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Fever" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "E5_ReactionDuringHomeObservation" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373066001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373066001" ] ;
+             fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+           ]
+         ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E6b_Nausea" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:422587007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "422587007" ] ;
+           fhir:Coding.display [ fhir:value "Nausea (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Nausea" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "E5_ReactionDuringHomeObservation" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373066001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373066001" ] ;
+             fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+           ]
+         ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E6c_TightnessSensation" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:255365009 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "255365009" ] ;
+           fhir:Coding.display [ fhir:value "Tightness sensation quality (qualifier value)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Tightness sensation" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "E5_ReactionDuringHomeObservation" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373066001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373066001" ] ;
+             fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+           ]
+         ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E6d_Chills" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:43724002 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "43724002" ] ;
+           fhir:Coding.display [ fhir:value "Chill (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Chills" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "E5_ReactionDuringHomeObservation" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373066001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373066001" ] ;
+             fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+           ]
+         ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:Questionnaire.item.linkId [ fhir:value "E6e_InfluenzaLikeSyndrome" ] ;
+         fhir:Questionnaire.item.definition [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation#Observation.valueCodeableConcept" ] ;
+         fhir:Questionnaire.item.code [
+           fhir:index 0 ;
+           a sct:95891005 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "95891005" ] ;
+           fhir:Coding.display [ fhir:value "Influenza-like illness (finding)" ]
+         ] ;
+         fhir:Questionnaire.item.text [ fhir:value "Influenza-like syndromes" ] ;
+         fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+         fhir:Questionnaire.item.enableWhen [
+           fhir:index 0 ;
+           fhir:Questionnaire.item.enableWhen.question [ fhir:value "E5_ReactionDuringHomeObservation" ] ;
+           fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ] ;
+           fhir:Questionnaire.item.enableWhen.answerCoding [
+             a sct:373066001 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.code [ fhir:value "373066001" ] ;
+             fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+           ]
+         ] ;
+         fhir:Questionnaire.item.answerValueSet [
+           fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS" ;
+           fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "definition" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/DiagnosticReport" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "definition" ] ;
+         fhir:Extension.valueUri [ fhir:value "http://hl7.org/fhir/StructureDefinition/DiagnosticReport#DiagnosticReport.status" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "fixed-value" ] ;
+         fhir:Extension.valueCode [ fhir:value "final" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "definition" ] ;
+         fhir:Extension.valueUri [ fhir:value "http://hl7.org/fhir/StructureDefinition/DiagnosticReport#DiagnosticReport.category" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "fixed-value" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ] ;
+             fhir:Coding.code [ fhir:value "OTH" ] ;
+             fhir:Coding.display [ fhir:value "Other" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "definition" ] ;
+         fhir:Extension.valueUri [ fhir:value "http://hl7.org/fhir/StructureDefinition/DiagnosticReport#DiagnosticReport.subject" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "fixed-value" ] ;
+         fhir:Extension.valueReference [
+           fhir:Reference.reference [ fhir:value "#patient-placeholder" ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue" ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "QualityMonitoring" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "(Quality) monitoring" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "group" ] ;
+     fhir:Questionnaire.item.item [
+       fhir:index 0 ;
+       fhir:Questionnaire.item.linkId [ fhir:value "F1_CommentsRegistration" ] ;
+       fhir:Questionnaire.item.definition [ fhir:value "http://hl7.org/fhir/StructureDefinition/DiagnosticReport#DiagnosticReport.conclusion" ] ;
+       fhir:Questionnaire.item.code [
+         fhir:index 0 ;
+         a sct:276238005 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "276238005" ] ;
+         fhir:Coding.display [ fhir:value "Comments on own writing (finding)" ]
+       ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Please note any comments or concerns regarding the registration of this patient, the sharing of data from the hospital, the communication by and contact with the hospital, the availability of materials, or other aspects of the transmural collaboration around home hospitalization oncology. Thank you." ] ;
+       fhir:Questionnaire.item.type [ fhir:value "string" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-onco-definitions.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

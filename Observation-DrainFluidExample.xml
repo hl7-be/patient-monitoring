@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="DrainFluidExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation DrainFluidExample</b></p><a name="DrainFluidExample"> </a><a name="hcDrainFluidExample"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 251843005}">Fluid output from drain</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: 35.29 mL/d<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL/d = 'mL/d')</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="251843005"/>
+      <display value="Fluid output from drain"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2025-10-08T10:00:00Z"/>
+  <valueQuantity>
+    <value value="35.29"/>
+    <unit value="mL/d"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mL/d"/>
+  </valueQuantity>
+</Observation>

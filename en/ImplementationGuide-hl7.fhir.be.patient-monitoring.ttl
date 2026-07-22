@@ -1,0 +1,3069 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "hl7.fhir.be.patient-monitoring"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.patient-monitoring</b></p><a name=\"hl7.fhir.be.patient-monitoring\"> </a><a name=\"hchl7.fhir.be.patient-monitoring\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>PatientMonitoringOutcome</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring</pre><div><p>Patient Monitoring Outcome FHIR Implementation Guide.</p>\n</div></div>"
+  ] ;
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
+  fhir:ImplementationGuide.name [ fhir:value "PatientMonitoringOutcome"] ;
+  fhir:ImplementationGuide.title [ fhir:value "Patient Monitoring Outcome FHIR Implementation Guide"] ;
+  fhir:ImplementationGuide.status [ fhir:value "draft"] ;
+  fhir:ImplementationGuide.date [ fhir:value "2024-11-20"^^xsd:date] ;
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"] ;
+  fhir:ImplementationGuide.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Belgium" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Bob Smith" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ImplementationGuide.description [ fhir:value "Patient Monitoring Outcome FHIR Implementation Guide."] ;
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.be.patient-monitoring"] ;
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1" ;
+     fhir:index -1
+  ] ;
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7tx" ] ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.2.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7ext" ] ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_be_core" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.be.core" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.1.2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_be_core_clinical" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ImplementationGuide/hl7.fhir.be.core-clinical" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/ImplementationGuide/hl7.fhir.be.core-clinical>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.be.core-clinical" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc" ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
+  ] ;
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2024+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "STU1" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "auto-oid-root" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2.16.840.1.113883.4.642.40.54" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "validation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "allow-any-extensions" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "pin-canonicals" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "pin-multiples" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
+       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.1.2" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2024+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "STU1" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "auto-oid-root" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2.16.840.1.113883.4.642.40.54" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "validation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "allow-any-extensions" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "pin-canonicals" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "pin-multiples" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-qa" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-temp" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-output" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-history" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-html" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-md" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-context" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-license" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-version" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "active-tables" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ] ;
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/well-poor-scale> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/well-poor-scale" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "0-10 scale, 0.5 increments, Very well to Very poor" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Scale going from 0 to 10 in increments of 0.5. Indicating values very well to very port (see https://loinc.org/LL3092-5)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/appetite-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/appetite-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Appetite Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation of how well or poor the appetite of a patient is." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Appointment" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Appointment/Appointment-testapp> ;
+         fhir:Reference.reference [ fhir:value "Appointment/Appointment-testapp" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Appointment: OPAT Hospital Follow-up" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Future hospital appointment at UZL for the OPAT patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/bladder-continence-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/bladder-continence-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bladder Continence Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation of bladder continence." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CareTeam" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Katheter> ;
+         fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-Katheter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CareTeam: Catheter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catheter team with contact details" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CareTeam" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Spoed> ;
+         fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-Spoed" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CareTeam: Emergency" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Emergency reception with contact details" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CareTeam" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-F-7766077> ;
+         fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-F-7766077" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CareTeam: Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Containing OPAT team, catheter team and emergency reception as participants" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CareTeam" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-OPAT> ;
+         fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-OPAT" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CareTeam: OPAT" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "OPAT team with contact details" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/lumen-color> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/lumen-color" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Catheter Lumen Color" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes for the color label of a catheter lumen, used in OPAT home-hospitalization questionnaires to distinguish multi-lumen catheters." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/catheter-patency> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/catheter-patency" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Catheter Patency Scale" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes representing the ease of blood aspiration or infusion through a vascular catheter, used in OPAT home-hospitalization questionnaires." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/catheter-type> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/catheter-type" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Catheter Type" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes identifying the type of vascular catheter in place, used in OPAT home-hospitalization questionnaires." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/clinical-note-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/clinical-note-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Clinical Note Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A clinical note" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-MED-medischeVG> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-MED-medischeVG" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Relevant Medical History" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Relevant medical history (OPAT 3.0 template field MED_medischeVG)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Blaren> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Blaren" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Blisters" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: blisters" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Candidiase> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Candidiase" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Candidiasis" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: candidiasis" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Rillingen> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Rillingen" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Chills" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: chills" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Obstipatie> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Obstipatie" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Constipation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: constipation" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Diarree> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Diarree" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Diarrhea" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: diarrhea" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Moe> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Moe" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Fatigue" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: fatigue" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Jeuk> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Jeuk" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Itching" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: itching" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Joint Pain" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: joint pain" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Misselijkheid> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Misselijkheid" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Nausea" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: nausea" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Andere> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Andere" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Other" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: other symptom" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Other (Specify)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: other observation (free text)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Pijn> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Pijn" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Pain" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: pain" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Huiduitslag> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Huiduitslag" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Rash" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: rash" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Reduced Appetite" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: reduced appetite" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Respiratory Problems" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: respiratory problems" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Zwelling> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Zwelling" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Swelling" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: swelling" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ClinicalImpression" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Braken> ;
+         fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Braken" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClinicalImpression: Symptom - Vomiting" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Side effect assessment during OPAT home hospitalization: vomiting" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Composition/OPAT-Document> ;
+         fhir:Reference.reference [ fhir:value "Composition/OPAT-Document" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Composition: OPAT Document" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR document containing necessary information for an OPAT treatment at home" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/continence-level> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/continence-level" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Continence Level" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes to represent the level of continence reported" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/DiagnosticReport/example-holter-diagnosticreport> ;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/example-holter-diagnosticreport" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReport: Holter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This diagnostic report summarizes Holter rhythm findings including AFib and a supraventricular episode." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report" ;
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/drain-fluid-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/drain-fluid-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Drain Fluid Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation drain fluid observations. Drain fluid is measured in mL per 24h" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Encounter/Encounter-3441> ;
+         fhir:Reference.reference [ fhir:value "Encounter/Encounter-3441" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter: Home Hospitalization (Subcutaneous Injection)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "First line encounter" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Encounter/CT-259690079> ;
+         fhir:Reference.reference [ fhir:value "Encounter/CT-259690079" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter: OPAT Consultation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hospital consultation encounter for the OPAT patient at UZ Leuven" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FluidDrainVS> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/FluidDrainVS" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fluid Drain Value Set" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valid UCUM units for drain fluid measurement" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/heart-failure-symptoms> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/heart-failure-symptoms" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Heart Failure Symptom Codes" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes representing common patient-reported symptoms in heart failure" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/holter-diagnostic-report" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Holter Diagnostic Report" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile for ambulatory cardiac rhythm monitoring reports (Holter)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/holter-event-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Holter Event Codes" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used to classify Holter-detected rhythm events" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/holter-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Holter Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation for rhythm events detected in Holter recordings" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-component-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/holter-event-component-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Holter Observation Component Codes" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for component observations in Holter events (e.g., heart rate)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-report-code> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/holter-report-code" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Holter Report Code" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ambulatory cardiac rhythm monitor report (Holter)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-encounter> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Home Hospitalization Careset Encounter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the FHIR Encounter resource for use in OPAT and ONCO home hospitalization caresets. The Encounter records whether the home visit took place and the status of each ordered care activity. Only hospital-ordered procedures should be reported back via this Encounter. See logical model: [CarestEncounter](StructureDefinition-homehosp-encounter-lm.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-questionnaire-response> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-questionnaire-response" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Home Hospitalization Careset Questionnaire Response" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on QuestionnaireResponse for OPAT and ONCO home hospitalization caresets. Links the filled-in nursing observation to the originating Encounter and the canonical Questionnaire. See logical model: [CarestQuestionnaireResponse](StructureDefinition-homehosp-questionnaire-response-lm.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-encounter-lm> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-encounter-lm" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Home Hospitalization Encounter Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the FHIR Encounter resource as used in the OPAT and ONCO home hospitalization caresets. The Encounter serves two purposes: (1) recording whether the home visit took place and whether the patient was home, and (2) communicating the status of each ordered care activity back to the hospital. Only orders given by the hospital should be communicated back via this Encounter; other nursing activities are excluded." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-questionnaire-response-lm> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-questionnaire-response-lm" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Home Hospitalization QuestionnaireResponse Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the FHIR QuestionnaireResponse resource as used in the OPAT and ONCO home hospitalization caresets. Each home nurse visit produces exactly one QuestionnaireResponse if the visit was not cancelled, which corresponds to a single Encounter. The QuestionnaireResponse references the canonical Questionnaire URL and contains the nurse's answers. It can be used as-is for clinical review or as input to an SDC Definition-based extraction pipeline that generates discrete FHIR Observations." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/homehosp-side-effect-severity> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/homehosp-side-effect-severity" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Home Hospitalization Side Effect Severity Scale" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes representing the severity of side effects in OPAT home-hospitalization questionnaires: Absent, Mild, Moderate and Severe." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Location/testloc> ;
+         fhir:Reference.reference [ fhir:value "Location/testloc" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Location: UZL Consultation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example hospital consultation location at UZ Leuven for the OPAT appointment" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/decision> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/decision" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Administration Decision" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for the nurse's decision after contraindication assessment — whether to administer, withhold, or take another action following consultation with the hospital care team." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/decision-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Administration Decision Codes" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Local codes for the nurse's decision following contraindication assessment in ONCO home-hospitalization questionnaires." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/medication-storage> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/medication-storage" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Storage Status" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes representing whether the home medication storage of a patient is appropriate or has issues, used in OPAT and ONCO home-hospitalization questionnaires." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/nausea-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nausea-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nausea Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation of how well or poor the nausea of a patient is." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/normal-abnormal> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/normal-abnormal" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Normal / Abnormal Finding" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes to represent a binary normal vs. abnormal clinical finding, used for dressing, insertion-site, and catheter observation items in OPAT home-hospitalization questionnaires." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/AbdominalPainExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/AbdominalPainExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Abdominal Pain" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain scale is used as answer" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/AppetiteExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/AppetiteExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Appetite" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Answer scaled 0 to 10 with steps of 0.5. 0 being being very poor, 10 being very well." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/BladderContinenceExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/BladderContinenceExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Bladder Continence" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example observation of a patient's bladder continence level." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/BloodPressureExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/BloodPressureExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Blood Pressure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Blood pressure vital sign observation with device" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/BloodPressureExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/BloodPressureExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Blood Pressure (Without Device)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Blood Pressure example without device and with bodysite" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyTemperatureExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/BodyTemperatureExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Body Temperature" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body temperature vital sign observation with device" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/Observation-Temperatuur> ;
+         fhir:Reference.reference [ fhir:value "Observation/Observation-Temperatuur" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Body Temperature (OPAT Document)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temperature vital sign observation" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyTemperatureExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/BodyTemperatureExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Body Temperature (Without Device)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temperature example without device" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyWeightExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/BodyWeightExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Body Weight" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body weight vital sign observation with device" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyWeightExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/BodyWeightExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Body Weight (Registered by Patient)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body weight vital sign observation registered by the patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/StoolScoreExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/StoolScoreExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Bristol Stool Form Score" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score from 1 to 7" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/Observation-Katheter-7938866> ;
+         fhir:Reference.reference [ fhir:value "Observation/Observation-Katheter-7938866" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Catheter (OPAT Document)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Home hospitalization catheter observation example" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/CatheterMovedOrRemovedExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/CatheterMovedOrRemovedExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Catheter Moved or Removed" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/ClinicalNoteExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/ClinicalNoteExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Clinical Note" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Free text clinical note" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/DiarrheaExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/DiarrheaExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Diarrhea" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible answers are absent, mild, moderate, severe" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/DistendedAbdomenExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/DistendedAbdomenExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Distended Abdomen" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Answer options are none, mild, moderate, severe." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/DrainFluidExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/DrainFluidExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Drain Fluid Output" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Drain fluid volume measured in mL per day" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/HeartRateExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/HeartRateExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Heart Rate" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Heart rate vital sign observation with device" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/HeartRateExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/HeartRateExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Heart Rate (Registered by Patient)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Heart Rate example registered by patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/example-holter-afib> ;
+         fhir:Reference.reference [ fhir:value "Observation/example-holter-afib" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Holter AFib Episode" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Detected AFib event" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation" ;
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/example-holter-sv> ;
+         fhir:Reference.reference [ fhir:value "Observation/example-holter-sv" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Holter Supraventricular Event" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supraventricular arrhythmia" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation" ;
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/LeakageCatheterExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/LeakageCatheterExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Leakage Catheter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/LevelOfResponsivenessExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/LevelOfResponsivenessExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Level of Responsiveness" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Level of responsiveness (ACVPU scale)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/NationalEarlyWarningScoreExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/NationalEarlyWarningScoreExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: National Early Warning Score (NEWS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Early Warning Score (NEWS)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/NauseaExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/NauseaExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Nausea" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Answer options are none, mild, moderate, severe." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/NauseaExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/NauseaExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Nausea (2)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Answers 0-10 scale, 0.5 increments, Very well to Very poor" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/OrthopneuExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/OrthopneuExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Orthopnea" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible answers are absent, mild, moderate, severe" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/OxygenSaturationExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/OxygenSaturationExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Oxygen Saturation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Oxygen saturation vital sign observation with device" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/OxygenSaturationExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/OxygenSaturationExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Oxygen Saturation (Registered by Patient)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Oxygen saturation example registered by patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/PainInfectionSiteExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/PainInfectionSiteExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Pain at Infection Site" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/PainPunctureWoundsExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/PainPunctureWoundsExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Pain at Puncture Wounds" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/PainSurgicalWoundsExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/PainSurgicalWoundsExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Pain at Surgical Wounds" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/PainSurgicalWoundsExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/PainSurgicalWoundsExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Pain at Surgical Wounds (2)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain score related to the surgical wound" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/PainDuringUrinationExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/PainDuringUrinationExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Pain During Urination" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible answers are yes and no" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/PainInCalvesExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/PainInCalvesExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Pain in Calves" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible answers are yes and no" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/PainKillerExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/PainKillerExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Painkiller Usage" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Did the patient take any painkillers (Yes/No)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/RednessPunctureWoundsExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/RednessPunctureWoundsExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Redness at Puncture Wounds" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/ReducedAppetiteExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/ReducedAppetiteExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Reduced Appetite" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Answer options are absent / mild / moderate / severe." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/RespiratoryRateExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/RespiratoryRateExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Respiratory Rate" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Respiratory rate vital sign observation with device" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/RespiratoryRateExample2> ;
+         fhir:Reference.reference [ fhir:value "Observation/RespiratoryRateExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Respiratory Rate (Registered by Patient)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Respiration example registered by patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/ShortnessOfBreathExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/ShortnessOfBreathExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Shortness of Breath" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible answers are yes and no" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/ShoulderPainExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/ShoulderPainExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Shoulder Pain" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain scale is used as answer." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/IncontinenceScoreExample> ;
+         fhir:Reference.reference [ fhir:value "Observation/IncontinenceScoreExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Wexner/CCIS Incontinence Score" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score from 0 to 20" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-azacitidine> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-onco-azacitidine" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Azacitidine Nursing Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on Questionnaire for the ONCO Azacitidine (Vidaza®) nursing observation form. Captures vital signs (including conditional SpO2), medication dissolution check, GI/pulmonary contraindications and side-effect monitoring. See logical model: [ONCOAzacitidineQuestionnaire](StructureDefinition-onco-azacitidine-questionnaire.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-azacitidine-questionnaire> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/onco-azacitidine-questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Azacitidine Questionnaire Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Azacitidine. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes oxygen saturation (conditional, only when cough or shortness of breath), contraindications focused on GI symptoms and general deterioration, and a medication dissolution check." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-bortezomib> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-onco-bortezomib" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Bortezomib Nursing Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on Questionnaire for the ONCO Bortezomib (Velcade®) nursing observation form. Captures vital signs, medication checks, sensory/motor neuropathy contraindication assessment and post-administration side-effect monitoring. See logical model: [ONCOBortezomibQuestionnaire](StructureDefinition-onco-bortezomib-questionnaire.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-bortezomib-questionnaire> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/onco-bortezomib-questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Bortezomib Questionnaire Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Bortezomib. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes neuropathy-focused contraindications (severe sensory and motor neuropathy) and symptom burden items for peripheral neuropathy." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-daratumumab> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-onco-daratumumab" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Daratumumab Nursing Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on Questionnaire for the ONCO Daratumumab (Darzalex®) nursing observation form. Captures pre-medication intake (dexamethasone, H1 antihistamine, paracetamol), medication checks, vital signs, administration, contraindications and side effects. See logical model: [ONCODaratumumabQuestionnaire](StructureDefinition-onco-daratumumab-questionnaire.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-daratumumab-questionnaire> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/onco-daratumumab-questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Daratumumab Questionnaire Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Daratumumab. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes pre-medication intake verification and aftercare reaction monitoring." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-fulvestrant> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-onco-fulvestrant" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Fulvestrant Nursing Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on Questionnaire for the ONCO Fulvestrant (Faslodex®) nursing observation form. Captures vital signs, contraindication check, administration (bilateral IM injections) and muscle/joint pain side-effect follow-up. See logical model: [ONCOFulvestrantQuestionnaire](StructureDefinition-onco-fulvestrant-questionnaire.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-fulvestrant-questionnaire> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/onco-fulvestrant-questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Fulvestrant Questionnaire Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Fulvestrant. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: simplified contraindications checklist (fever/chills/unwell only), and includes muscle/joint pain in side effects." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-base> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-onco-base" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Home Hospitalization Base Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Base profile for all ONCO home hospitalization nursing questionnaires. Defines the mandatory top-level group structure (NursingAssessment, Assignment, QualityMonitoring) and sub-groups common across all ONCO medications: MedicationStorage, ObservationParameters, Contraindications, and MedicationAdministration. Medication-specific sub-groups and questions are added by child profiles." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/onco-symptom-grade" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Symptom Grade Scale (CTCAE 0–3)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes representing the Common Terminology Criteria for Adverse Events (CTCAE) grade scale 0 to 3, used to score symptom severity in ONCO home-hospitalization questionnaires." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-trastuzumab> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-onco-trastuzumab" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Trastuzumab Nursing Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on Questionnaire for the ONCO Trastuzumab (Herceptin®) nursing observation form. Captures body weight check, aftercare protocol, cardiac contraindications (LVEF, respiratory symptoms, oedema), vital signs and CTCAE-graded side effects. See logical model: [ONCOTrastuzumabQuestionnaire](StructureDefinition-onco-trastuzumab-questionnaire.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-trastuzumab-questionnaire> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/onco-trastuzumab-questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ONCO Trastuzumab Questionnaire Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Trastuzumab. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes body weight, aftercare/reaction monitoring, and cardiac-focused contraindication checklist." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-continuous-infusion> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-opat-continuous-infusion" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OPAT Continuous Infusion Nursing Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on Questionnaire for the OPAT continuous-infusion (elastomeric pump / infusor) nursing observation form. Captures medication storage, infusor weights, administration, vitals, dressing/insertion-site/catheter observations, side effects and quality follow-up. See logical model: [OPATContinuousInfusionQuestionnaire](StructureDefinition-opat-continuous-infusion-questionnaire.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/opat-continuous-infusion-questionnaire> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/opat-continuous-infusion-questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OPAT Continuous Infusion Questionnaire Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the nursing assessment questionnaire for OPAT home hospitalization patients receiving continuous infusion. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-base> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-opat-base" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OPAT Home Hospitalization Base Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Base profile for all OPAT home hospitalization nursing questionnaires. Defines the mandatory top-level group structure (NursingAssessment, QualityMonitoring) and all eight sub-groups common to both OPAT questionnaires: MedicationStorage, MedicationPreparation, MedicationAdministration, VitalParameters, DressingInsertionSite, InsertionSite, Catheter, and SideEffects." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/opat-short-iv-questionnaire> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/opat-short-iv-questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OPAT Short IV Questionnaire Logical Model" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model representing the nursing assessment questionnaire for OPAT home hospitalization patients receiving short IV administration. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Compared to the continuous infusion questionnaire, this model does not include infusor weight measurements." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-short-iv> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/homehosp-opat-short-iv" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OPAT Short-Duration IV Nursing Questionnaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on Questionnaire for the OPAT short-duration IV administration nursing observation form. Captures medication storage, administration, vitals, dressing/insertion-site/catheter observations, side effects and quality follow-up (no infusor weight fields). See logical model: [OPATShortIVQuestionnaire](StructureDefinition-opat-short-iv-questionnaire.html)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+         fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization: UZ Leuven" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "UZ Leuven - authoring and custodian organization" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/pain-scale> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/pain-scale" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pain severity - 0-10 verbal numeric rating" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain severity scale, where 0 is no pain and 10 is the worst pain imaginable. See https://loinc.org/72514-3" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/painkiller-usage-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/painkiller-usage-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Painkiller Usage Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation if the patient uses pain killers or not" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+         fhir:Reference.reference [ fhir:value "Patient/Patient-123" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient: OPAT Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example patient for the OPAT document" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/PractitionerRole/PractitionerRole-16500> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/PractitionerRole-16500" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole: General Practitioner" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example general practitioner (huisarts) for the OPAT patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-azacitidine> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-azacitidine" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: Azacitidine Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire containing the necessary information for the home hospitalization of a patient treated with Azacitidine." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-bortezomib> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-bortezomib" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: Bortezomib Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire containing the necessary information for the home hospitalization of a patient treated with Bortezomib (Velcade®)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-daratumumab> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-daratumumab" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: Daratumumab Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire containing the necessary information for the home hospitalization of a patient treated with Daratumumab (Darzalex®)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-fulvestrant> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-fulvestrant" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: Fulvestrant Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire containing the necessary information for the home hospitalization of a patient treated with Fulvestrant (Faslodex®)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-onco-definitions> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-q-onco-definitions" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: ONCO SDC Questionnaire with Extraction Definitions (Trastuzumab)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ONCO Trastuzumab Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-opat-continuous-infusion> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-opat-continuous-infusion" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: OPAT Continuous Infusion Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire containing the necessary information for the home hospitalization of a patient treated with a continuous infusion in the context of an OPAT treatment" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-opat-definitions> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-q-opat-definitions" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: OPAT SDC Questionnaire with Extraction Definitions" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The OPAT continuous infusion Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-opat-short-iv> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-opat-short-iv" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: OPAT Short IV Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire containing the necessary information for the home hospitalization of a patient treated with a short-duration IV administration in the context of an OPAT treatment" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-trastuzumab> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/homehosp-trastuzumab" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire: Trastuzumab Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire containing the necessary information for the home hospitalization of a patient treated with Trastuzumab (Herceptin®)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/QuestionnaireResponse/HomehospAzacitidineQuestionnaireResponseExample> ;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/HomehospAzacitidineQuestionnaireResponseExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QuestionnaireResponse: Azacitidine Home Hospitalization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Response to questionnaire containing the necessary information for the home hospitalization of a patient treated with Azacitidine." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/QuestionnaireResponse/HomehospOpatContinuousInfusionQRMultiLumenExample> ;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/HomehospOpatContinuousInfusionQRMultiLumenExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QuestionnaireResponse: OPAT continuous infusion QR - 2-lumen tunneled catheter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "QuestionnaireResponse for OPAT home hospitalization (continuous infusion) demonstrating per-lumen catheter observation with a 2-lumen tunneled catheter. Lumen 2 (white) shows difficult blood aspiration, triggering an Abnormal catheter observation. Uses the SDC definitions questionnaire which carries a repeating G_Lumen group." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/QuestionnaireResponse/HomehospOpatContinuousInfusionQuestionnaireResponseExample> ;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/HomehospOpatContinuousInfusionQuestionnaireResponseExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QuestionnaireResponse: OPAT Home Hospitalization - continuous infusion" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Response to questionnaire containing the necessary information for the home hospitalization of a patient treated with a continuous infusion in the context of an OPAT treatment" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/QuestionnaireResponse/HomehospOpatShortIVQRMultiLumenExample> ;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/HomehospOpatShortIVQRMultiLumenExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QuestionnaireResponse: OPAT short IV QR - 3-lumen tunneled catheter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "QuestionnaireResponse for OPAT home hospitalization (short IV) with a 3-lumen tunneled catheter, demonstrating per-lumen catheter observation. The red lumen (lumen 3) is completely obstructed — blood aspiration and infusion both impossible. Administration was completed via the gray lumen (lumen 1) after telephone consultation with the hospital team. Uses the homehosp-opat-short-iv questionnaire, which carries a repeating G_Lumen group." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/stool-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/stool-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Stool Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation of stool according to the Bristol stool scale" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/surgical-wound-pain-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/surgical-wound-pain-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Surgical Wound Pain Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation of the pain reported by the patient in a surgical wound." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/symptom-severity> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/symptom-severity" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Symptom Severity Scale" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes to represent severity of patient-reported symptoms" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/true-false> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/true-false" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "True / False Value Set" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes for a simple true or false answer." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/wexner-ccis-score-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/wexner-ccis-score-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Wexner/CCIS Score Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Wexner/CCIS score observation" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/YesNoVS" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes / No Value Set" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT codes for a simple yes or no answer, used across all home-hospitalization questionnaires." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ] ;
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ] ;
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ] ;
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ] ;
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ] ;
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Patient Monitoring Outcome Home Page" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "recommendations.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "recommendations.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "General Recommendations" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "terminology.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminologies" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-overview.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-overview.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Overview Carepaths" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-heartfailure.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-heartfailure.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Carepath Heart failure" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-holter.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-holter.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Carepath Holter Monitoring" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-ews.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-ews.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Carepath NEWS (National Early Warning Score)" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-totem.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-totem.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Carepath TOTeM" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-opat.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-opat.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Carepath OPAT" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-antitumoral.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-antitumoral.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Carepath Antitumoral therapy" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-perioperative-abdominal.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-perioperative-abdominal.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Carepath Perioperative care - abdominal" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "carepath-overview-loinc.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "carepath-overview-loinc.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Overview carepath LOINC" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "careset-overview.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "careset-overview.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Overview caresets" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "legal-guidelines-home-hospitalization.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "legal-guidelines-home-hospitalization.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Special careset - home hospitalization" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "home-hospitalization-opat.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "home-hospitalization-opat.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home hosp - OPAT" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "home-hospitalization-antitumoral.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "home-hospitalization-antitumoral.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home hosp - Antitumoral therapy" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "home-hospitalization-mappingtable.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "home-hospitalization-mappingtable.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home hosp - Mappingtables" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Useful Downloads" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "copyrights.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "copyrights.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Acknowledgments, licenses and copyrights" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "changes.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "IG Change History" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ] ;
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/assets" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

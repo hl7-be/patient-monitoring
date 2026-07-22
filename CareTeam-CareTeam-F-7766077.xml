@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CareTeam xmlns="http://hl7.org/fhir">
+  <id value="CareTeam-F-7766077"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CareTeam CareTeam-F-7766077</b></p><a name="CareTeam-F-7766077"> </a><a name="hcCareTeam-F-7766077"> </a><p><b>status</b>: Active</p><p><b>category</b>: <span title="Codes:{http://loinc.org LA27977-0}">Episode of care-focused care team</span></p><p><b>name</b>: Home hospitalization care team</p><p><b>subject</b>: <a href="Patient-Patient-123.html">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><blockquote><p><b>participant</b></p><p><b>member</b>: <a href="CareTeam-CareTeam-OPAT.html">CareTeam OPAT team</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href="CareTeam-CareTeam-Katheter.html">CareTeam Catheter team</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href="CareTeam-CareTeam-Spoed.html">CareTeam Emergency reception</a></p></blockquote><p><b>managingOrganization</b>: <a href="Organization-Organization-UZL.html">Organization UZ Leuven</a></p></div>
+  </text>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA27977-0"/>
+      <display value="Episode of care-focused care team"/>
+    </coding>
+  </category>
+  <name value="Home hospitalization care team"/>
+  <subject>
+    <reference value="Patient/Patient-123"/>
+  </subject>
+  <participant>
+    <member>
+      <reference value="CareTeam/CareTeam-OPAT"/>
+    </member>
+  </participant>
+  <participant>
+    <member>
+      <reference value="CareTeam/CareTeam-Katheter"/>
+    </member>
+  </participant>
+  <participant>
+    <member>
+      <reference value="CareTeam/CareTeam-Spoed"/>
+    </member>
+  </participant>
+  <managingOrganization>
+    <reference value="Organization/Organization-UZL"/>
+  </managingOrganization>
+</CareTeam>

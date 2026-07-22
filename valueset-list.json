@@ -1,0 +1,211 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FluidDrainVS",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FluidDrainVS",
+    "title" : "Fluid Drain Value Set",
+    "description" : "Valid UCUM units for drain fluid measurement",
+    "systems" : ["http://unitsofmeasure.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.10"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.10"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "YesNoVS",
+    "title" : "Yes / No Value Set",
+    "description" : "SNOMED CT codes for a simple yes or no answer, used across all home-hospitalization questionnaires.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.11"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.11"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/catheter-patency",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "CatheterPatencyVS",
+    "title" : "Catheter Patency Scale",
+    "description" : "SNOMED CT codes representing the ease of blood aspiration or infusion through a vascular catheter, used in OPAT home-hospitalization questionnaires.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.14"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.14"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/catheter-type",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "CatheterTypeVS",
+    "title" : "Catheter Type",
+    "description" : "SNOMED CT codes identifying the type of vascular catheter in place, used in OPAT home-hospitalization questionnaires.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.18"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.18"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/continence-level",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "ContinenceLevel",
+    "title" : "Continence Level",
+    "description" : "LOINC codes to represent the level of continence reported",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.7"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.7"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/decision",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "DecisionVS",
+    "title" : "Medication Administration Decision",
+    "description" : "Codes for the nurse's decision after contraindication assessment — whether to administer, withhold, or take another action following consultation with the hospital care team.",
+    "systems" : ["http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.20"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.20"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/heart-failure-symptoms",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartFailureSymptoms",
+    "title" : "Heart Failure Symptom Codes",
+    "description" : "SNOMED CT codes representing common patient-reported symptoms in heart failure",
+    "systems" : ["http://snomed.info/sct/11000172109", "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.5"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.5"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-codes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HolterEventCodes",
+    "title" : "Holter Event Codes",
+    "description" : "Codes used to classify Holter-detected rhythm events",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.1"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.1"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-component-codes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HolterEventComponentCodes",
+    "title" : "Holter Observation Component Codes",
+    "description" : "LOINC codes for component observations in Holter events (e.g., heart rate)",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.3"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.3"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-report-code",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "HolterReportCode",
+    "title" : "Holter Report Code",
+    "description" : "Ambulatory cardiac rhythm monitor report (Holter)",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.4"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.4"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/homehosp-side-effect-severity",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HomehospSideEffectSeverityVS",
+    "title" : "Home Hospitalization Side Effect Severity Scale",
+    "description" : "SNOMED CT codes representing the severity of side effects in OPAT home-hospitalization questionnaires: Absent, Mild, Moderate and Severe.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.13"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.13"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/lumen-color",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "LumenColorVS",
+    "title" : "Catheter Lumen Color",
+    "description" : "SNOMED CT codes for the color label of a catheter lumen, used in OPAT home-hospitalization questionnaires to distinguish multi-lumen catheters.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.19"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.19"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/medication-storage",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "MedicationStorageVS",
+    "title" : "Medication Storage Status",
+    "description" : "SNOMED CT codes representing whether the home medication storage of a patient is appropriate or has issues, used in OPAT and ONCO home-hospitalization questionnaires.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.17"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.17"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/normal-abnormal",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "NormalAbnormalVS",
+    "title" : "Normal / Abnormal Finding",
+    "description" : "SNOMED CT codes to represent a binary normal vs. abnormal clinical finding, used for dressing, insertion-site, and catheter observation items in OPAT home-hospitalization questionnaires.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.15"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.15"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/onco-symptom-grade",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "ONCOSymptomGradeVS",
+    "title" : "ONCO Symptom Grade Scale (CTCAE 0–3)",
+    "description" : "SNOMED CT codes representing the Common Terminology Criteria for Adverse Events (CTCAE) grade scale 0 to 3, used to score symptom severity in ONCO home-hospitalization questionnaires.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.12"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.12"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/pain-scale",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "PainScale",
+    "title" : "Pain severity - 0-10 verbal numeric rating",
+    "description" : "Pain severity scale, where 0 is no pain and 10 is the worst pain imaginable. See https://loinc.org/72514-3",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.9"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.9"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/symptom-severity",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SymptomSeverity",
+    "title" : "Symptom Severity Scale",
+    "description" : "SNOMED CT codes to represent severity of patient-reported symptoms",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.6"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.6"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/true-false",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "TrueFalseVS",
+    "title" : "True / False Value Set",
+    "description" : "SNOMED CT codes for a simple true or false answer.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.16"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.16"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/well-poor-scale",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "WellPoorScale",
+    "title" : "0-10 scale, 0.5 increments, Very well to Very poor",
+    "description" : "Scale going from 0 to 10 in increments of 0.5. Indicating values very well to very port (see https://loinc.org/LL3092-5)",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.54.48.8"],
+    "sources" : ["2.16.840.1.113883.4.642.40.54.48.8"]
+  }]
+}

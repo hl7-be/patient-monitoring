@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CareTeam xmlns="http://hl7.org/fhir">
+  <id value="CareTeam-OPAT"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CareTeam CareTeam-OPAT</b></p><a name="CareTeam-OPAT"> </a><a name="hcCareTeam-OPAT"> </a><p><b>status</b>: Active</p><p><b>name</b>: OPAT team</p><p><b>telecom</b>: <a href="mailto:opat@uzleuven.be">opat@uzleuven.be</a>, ph: 016/34 32 74</p></div>
+  </text>
+  <status value="active"/>
+  <name value="OPAT team"/>
+  <telecom>
+    <system value="email"/>
+    <value value="opat@uzleuven.be"/>
+    <rank value="1"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="016/34 32 74"/>
+    <rank value="1"/>
+  </telecom>
+</CareTeam>

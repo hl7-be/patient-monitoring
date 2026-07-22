@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Observation",
+  "id" : "NauseaExample2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation NauseaExample2</b></p><a name=\"NauseaExample2\"> </a><a name=\"hcNauseaExample2\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 700471003}\">Level of nausea</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA10140-4}\">8</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "700471003",
+      "display" : "Level of nausea"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://www.telemonitoring-prescription.com/FHIR/patient",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectiveDateTime" : "2025-10-08T10:00:00Z",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA10140-4",
+      "display" : "8"
+    }]
+  }
+}

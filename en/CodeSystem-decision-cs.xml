@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="decision-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem decision-cs</b></p><a name="decision-cs"> </a><a name="hcdecision-cs"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">administration<a name="decision-cs-administration"> </a></td><td>Medication administered</td><td>Medication could be administered according to the procedure.</td></tr><tr><td style="white-space:nowrap">no-administration<a name="decision-cs-no-administration"> </a></td><td>Medication NOT administered</td><td>Medication was not administered due to contraindications.</td></tr><tr><td style="white-space:nowrap">other<a name="decision-cs-other"> </a></td><td>Other</td><td>A different outcome was agreed upon after consultation with the hospital care team.</td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.54.16.1"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="DecisionCS"/>
+  <title value="Medication Administration Decision Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-22T07:37:58+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local codes for the nurse's decision following contraindication assessment in ONCO home-hospitalization questionnaires."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="administration"/>
+    <display value="Medication administered"/>
+    <definition value="Medication could be administered according to the procedure."/>
+  </concept>
+  <concept>
+    <code value="no-administration"/>
+    <display value="Medication NOT administered"/>
+    <definition value="Medication was not administered due to contraindications."/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="A different outcome was agreed upon after consultation with the hospital care team."/>
+  </concept>
+</CodeSystem>

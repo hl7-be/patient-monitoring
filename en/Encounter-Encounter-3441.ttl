@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Encounter/Encounter-3441> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Encounter-3441"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter Encounter-3441</b></p><a name=\"Encounter-3441\"> </a><a name=\"hcEncounter-3441\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">primary performer</span></td><td>John Doe rizivnr</td></tr></table><p><b>period</b>: 2025-11-19 11:07:52+0000 --&gt; (ongoing)</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 18629005}, {http://snomed.info/sct 276844002}\">subcutane inspuiting</span></p><p><b>serviceProvider</b>: Wit-Gele Kruis Vlaams-Brabant</p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "HH" ] ;
+     fhir:Coding.display [ fhir:value "home health" ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index -1 ;
+     fhir:Encounter.participant.type [
+       fhir:index -1 ;
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+         fhir:Coding.code [ fhir:value "PPRF" ] ;
+         fhir:Coding.display [ fhir:value "primary performer" ]
+       ]
+     ] ;
+     fhir:Encounter.participant.individual [
+       fhir:Reference.display [ fhir:value "John Doe rizivnr" ]
+     ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2025-11-19T11:07:52+00:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.reasonCode [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:18629005 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "18629005" ] ;
+       fhir:Coding.display [ fhir:value "Administration of drug or medicament (procedure)" ]
+     ], [
+       fhir:index -1 ;
+       a sct:276844002 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "276844002" ] ;
+       fhir:Coding.display [ fhir:value "Injection to subcutaneous drug delivery port (procedure)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "subcutane inspuiting" ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:Reference.display [ fhir:value "Wit-Gele Kruis Vlaams-Brabant" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Encounter/Encounter-3441.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

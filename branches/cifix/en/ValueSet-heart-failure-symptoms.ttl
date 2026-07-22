@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ValueSet/heart-failure-symptoms> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "heart-failure-symptoms"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet heart-failure-symptoms</b></p><a name=\"heart-failure-symptoms\"> </a><a name=\"hcheart-failure-symptoms\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/80313002\">80313002</a></td><td>Palpitations</td></tr><tr><td><a href=\"http://snomed.info/id/64379006\">64379006</a></td><td>Reduced appetite</td></tr><tr><td><a href=\"http://snomed.info/id/267036007\">267036007</a></td><td>Shortness of breath</td></tr><tr><td><a href=\"http://snomed.info/id/14760008\">14760008</a></td><td>Constipation</td></tr><tr><td><a href=\"http://snomed.info/id/62315008\">62315008</a></td><td>Diarrhea</td></tr><tr><td><a href=\"http://snomed.info/id/248548009\">248548009</a></td><td>Nocturnal dyspnea</td></tr><tr><td><a href=\"http://snomed.info/id/26677001\">26677001</a></td><td>Disturbed sleep pattern</td></tr><tr><td><a href=\"http://snomed.info/id/422650009\">422650009</a></td><td>Social isolation</td></tr><tr><td><a href=\"http://snomed.info/id/267038008\">267038008</a></td><td>Oedema</td></tr><tr><td><a href=\"http://snomed.info/id/84229001\">84229001</a></td><td>Fatigue</td></tr><tr><td><a href=\"http://snomed.info/id/29857009\">29857009</a></td><td>Chest pain</td></tr><tr><td><a href=\"http://snomed.info/id/404640003\">404640003</a></td><td>Dizziness</td></tr><tr><td><a href=\"http://snomed.info/id/40917007\">40917007</a></td><td>Confusion</td></tr><tr><td><a href=\"http://snomed.info/id/297142003\">297142003</a></td><td>Foot swelling</td></tr></table></li><li>Include these codes as defined in <code>http://snomed.info/sct/11000172109</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>901000172101</td><td>Tickly cough</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/heart-failure-symptoms"^^xsd:anyURI ;
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/heart-failure-symptoms>
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:l <urn:ietf:rfc:3986>
+     ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.40.54.48.5" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HeartFailureSymptoms"] ; # 
+  fhir:title [ fhir:v "Heart Failure Symptom Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-19T06:47:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SNOMED CT codes representing common patient-reported symptoms in heart failure"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "SNOMED CT is copyright (C) 2002+ International Health Terminology Standards Development Organisation (SNOMED International). Use of SNOMED CT requires the appropriate licence."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "80313002" ] ;
+         fhir:display [ fhir:v "Palpitations" ]
+       ] [
+         fhir:code [ fhir:v "64379006" ] ;
+         fhir:display [ fhir:v "Reduced appetite" ]
+       ] [
+         fhir:code [ fhir:v "267036007" ] ;
+         fhir:display [ fhir:v "Shortness of breath" ]
+       ] [
+         fhir:code [ fhir:v "14760008" ] ;
+         fhir:display [ fhir:v "Constipation" ]
+       ] [
+         fhir:code [ fhir:v "62315008" ] ;
+         fhir:display [ fhir:v "Diarrhea" ]
+       ] [
+         fhir:code [ fhir:v "248548009" ] ;
+         fhir:display [ fhir:v "Nocturnal dyspnea" ]
+       ] [
+         fhir:code [ fhir:v "26677001" ] ;
+         fhir:display [ fhir:v "Disturbed sleep pattern" ]
+       ] [
+         fhir:code [ fhir:v "422650009" ] ;
+         fhir:display [ fhir:v "Social isolation" ]
+       ] [
+         fhir:code [ fhir:v "267038008" ] ;
+         fhir:display [ fhir:v "Oedema" ]
+       ] [
+         fhir:code [ fhir:v "84229001" ] ;
+         fhir:display [ fhir:v "Fatigue" ]
+       ] [
+         fhir:code [ fhir:v "29857009" ] ;
+         fhir:display [ fhir:v "Chest pain" ]
+       ] [
+         fhir:code [ fhir:v "404640003" ] ;
+         fhir:display [ fhir:v "Dizziness" ]
+       ] [
+         fhir:code [ fhir:v "40917007" ] ;
+         fhir:display [ fhir:v "Confusion" ]
+       ] [
+         fhir:code [ fhir:v "297142003" ] ;
+         fhir:display [ fhir:v "Foot swelling" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct/11000172109"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct/11000172109>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "901000172101" ] ;
+         fhir:display [ fhir:v "Tickly cough" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

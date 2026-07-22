@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="OPAT-Document"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition OPAT-Document</b></p><a name="OPAT-Document"> </a><a name="hcOPAT-Document"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:">OPAT</span></p><p><b>date</b>: 2025-08-11 16:31:20+0200</p><p><b>author</b>: <a href="Organization-Organization-UZL.html">Organization UZ Leuven</a></p><p><b>title</b>: Outpatient Parenteral Antimicrobial Therapy (OPAT)</p><p><b>custodian</b>: <a href="Organization-Organization-UZL.html">Organization UZ Leuven</a></p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <text value="OPAT"/>
+  </type>
+  <subject>
+    <reference value="Patient/Patient-123"/>
+  </subject>
+  <date value="2025-08-11T16:31:20+02:00"/>
+  <author>
+    <reference value="Organization/Organization-UZL"/>
+  </author>
+  <title value="Outpatient Parenteral Antimicrobial Therapy (OPAT)"/>
+  <custodian>
+    <reference value="Organization/Organization-UZL"/>
+  </custodian>
+  <section>
+    <title value="Patient data"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <entry>
+      <reference value="Patient/Patient-123"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Care team contact details"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <entry>
+      <reference value="CareTeam/CareTeam-F-7766077"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Relevant medical history"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-MED-medischeVG"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Upcoming hospital appointments at UZL"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <entry>
+      <reference value="Appointment/Appointment-testapp"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Blood pressure"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <text>
+      <status value="empty"/><div xmlns="http://www.w3.org/1999/xhtml">No data available</div>
+    </text>
+    <emptyReason>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
+        <code value="nilknown"/>
+        <display value="Nil Known"/>
+      </coding>
+    </emptyReason>
+  </section>
+  <section>
+    <title value="Heart rate"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <text>
+      <status value="empty"/><div xmlns="http://www.w3.org/1999/xhtml">No data available</div>
+    </text>
+    <emptyReason>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
+        <code value="nilknown"/>
+        <display value="Nil Known"/>
+      </coding>
+    </emptyReason>
+  </section>
+  <section>
+    <title value="Temperature"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <entry>
+      <reference value="Observation/Observation-Temperatuur"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Weight"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <text>
+      <status value="empty"/><div xmlns="http://www.w3.org/1999/xhtml">No data available</div>
+    </text>
+    <emptyReason>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
+        <code value="nilknown"/>
+        <display value="Nil Known"/>
+      </coding>
+    </emptyReason>
+  </section>
+  <section>
+    <title value="Side effects / symptom burden"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Obstipatie"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Rillingen"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Pijn"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Jeuk"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Andere"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Huiduitslag"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Moe"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Zwelling"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Braken"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Misselijkheid"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Blaren"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Diarree"/>
+    </entry>
+    <entry>
+      <reference value="ClinicalImpression/ClinicalImpression-OBS-Candidiase"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Catheter type"/>
+    <author>
+      <reference value="Organization/Organization-UZL"/>
+    </author>
+    <entry>
+      <reference value="Observation/Observation-Katheter-7938866"/>
+    </entry>
+  </section>
+</Composition>

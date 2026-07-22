@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Carepath Perioperative care - abdominal - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+<link href="assets/css/tables.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <span title="">BE</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidelines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recommendations.html">General Recommendations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Carepaths
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="carepath-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="carepath-heartfailure.html">Heart failure</a>
+      </li>
+      <li>
+        <a href="carepath-ews.html">NEWS</a>
+      </li>
+      <li>
+        <a href="carepath-totem.html">TOTeM</a>
+      </li>
+      <li>
+        <a href="carepath-opat.html">OPAT</a>
+      </li>
+      <li>
+        <a href="carepath-holter.html">Holter Monitoring</a>
+      </li>
+      <li>
+        <a href="carepath-antitumoral.html">Antitumoral</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html">Diabetes</a>
+      </li>
+      <li>
+        <a href="carepath-perioperative-abdominal.html">Perioperative Care - abdominal</a>
+      </li>
+      <li>
+        <a href="carepath-overview-loinc.html">Overview LOINC</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Caresets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="careset-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="legal-guidelines-home-hospitalization.html">Special careset - home hospitalization</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-opat.html">Home hosp - OPAT</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-antitumoral.html">Home hosp - Antitumoral Therapy</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-mappingtable.html">Home hosp - Mappingtables</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li>
+        <a href="artifacts.html#1">Logical Models</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">History</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://hl7.org/fhir/R4/">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/">Transversal Clinical Core</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="copyrights.html">Copyrights</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Carepath Perioperative care - abdominal</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/patient-monitoring/tree/71/merge'>https://github.com/hl7-be/patient-monitoring/tree/71/merge</a> and changes regularly. See the <a href='http://hl7belgium.org/fhir/patient-monitoring/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-be/patient-monitoring/commit/7e4b752f55c9297f7ed1bdd13494333a41ab22f6"><code>7e4b752f</code></a>. &nbsp; Branch: <a href="https://github.com/hl7-be/patient-monitoring/tree/cifix"><code>cifix</code></a>.</span></p><!--EndReleaseHeader-->
+  <h2>Carepath Perioperative care - abdominal</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#telemonitoring-hub-identifier" id="markdown-toc-telemonitoring-hub-identifier">Telemonitoring Hub Identifier</a></li>
+  <li><a href="#care-pathway-overview" id="markdown-toc-care-pathway-overview">Care Pathway Overview</a></li>
+  <li><a href="#process-and-workflow-description" id="markdown-toc-process-and-workflow-description">Process and Workflow Description</a></li>
+  <li><a href="#integration-modules-for-epd" id="markdown-toc-integration-modules-for-epd">Integration Modules for EPD</a></li>
+  <li><a href="#specification" id="markdown-toc-specification">Specification:</a></li>
+</ul>
+
+</div>
+<div class="stu-note">
+This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
+</div>
+
+<p><strong>DRAFT: 2025-10-06</strong></p>
+
+<h3 id="telemonitoring-hub-identifier">Telemonitoring Hub Identifier</h3>
+
+<ul>
+  <li><strong>Carepath Identifier</strong>: https://hl7belgium.org/fhir/patient-monitoring/carepath/perioperative-abdominal</li>
+  <li><strong>Carepath Version</strong>: 1.0.0</li>
+</ul>
+
+<h3 id="care-pathway-overview">Care Pathway Overview</h3>
+
+<p>The perioperative care path for abdominal surgery refers to the care of a patient who received abdominal surgery.</p>
+
+<p>The care path typically contains following phases</p>
+
+<ul>
+  <li>Preoperative Phase (Before Surgery)</li>
+  <li>Intraoperative Phase (During Surgery)</li>
+  <li>Postoperative Phase (After Surgery)</li>
+</ul>
+
+<h3 id="process-and-workflow-description">Process and Workflow Description</h3>
+
+<h4 id="start-up">Start-Up</h4>
+
+<ul>
+  <li><strong>Informed consent</strong>: Collected and securely stored.</li>
+  <li><strong>Parameters Monitored</strong>:
+    <ul>
+      <li>Blood Pressure</li>
+      <li>Heart Rate</li>
+      <li>Oxygen Saturation</li>
+      <li>Body temperature</li>
+      <li>Redon drain fluid</li>
+      <li>Appetite</li>
+      <li>Pain Surgical Wound</li>
+      <li>Painkillers</li>
+      <li>Nausea</li>
+      <li>Stool (Bristol Stool Scale)</li>
+      <li>Wexner Continence score</li>
+      <li>Incontince severity index</li>
+      <li>Remarks HCP</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="data-collection">Data Collection</h4>
+
+<ul>
+  <li>Data is manually entered into the system by patient or health care provider.</li>
+  <li>Technology is CE-certified, with end-to-end encryption and GDPR compliance.</li>
+</ul>
+
+<h3 id="integration-modules-for-epd">Integration Modules for EPD</h3>
+
+<h4 id="outcome-module---fhir-integration">Outcome Module - FHIR Integration</h4>
+
+<h5 id="general">General</h5>
+
+<ul>
+  <li><strong>Frequency</strong>: Maximum of 5 updates per day, on average 1 update per day (per measurement).</li>
+  <li><strong>LOINC and SNOMED CT Codes</strong>:</li>
+</ul>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>FHIR Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blood pressure</td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/bp"><code class="language-plaintext highlighter-rouge">Observation-bp</code></a></td>
+    </tr>
+    <tr>
+      <td>Heart rate (BPM)</td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/heartrate"><code class="language-plaintext highlighter-rouge">Observation-hr</code></a></td>
+    </tr>
+    <tr>
+      <td>Oxygen Saturation (SPO2)</td>
+      <td><a href="https://hl7.org/fhir/oxygensat.html"><code class="language-plaintext highlighter-rouge">Observation-oxygensat</code></a></td>
+    </tr>
+    <tr>
+      <td>Body temperature (C)</td>
+      <td><a href="https://hl7.org/fhir/bodytemp.html"><code class="language-plaintext highlighter-rouge">Observation-bodytemp</code></a></td>
+    </tr>
+    <tr>
+      <td>Redon drain fluid (mL/24h )</td>
+      <td><a href="./StructureDefinition-drain-fluid-observation.html"><code class="language-plaintext highlighter-rouge">Observation-drain-fluid</code></a></td>
+    </tr>
+    <tr>
+      <td>Appetite</td>
+      <td><a href="./StructureDefinition-appetite-observation.html"><code class="language-plaintext highlighter-rouge">Observation-appetite</code></a></td>
+    </tr>
+    <tr>
+      <td>Pain Surgical Wound</td>
+      <td><a href="./StructureDefinition-surgical-wound-pain-observation.html"><code class="language-plaintext highlighter-rouge">Observation-wound-pain</code></a></td>
+    </tr>
+    <tr>
+      <td>Painkillers</td>
+      <td><a href="./StructureDefinition-painkiller-usage-observation.html"><code class="language-plaintext highlighter-rouge">Observation-painkiller</code></a></td>
+    </tr>
+    <tr>
+      <td>Nausea</td>
+      <td><a href="./StructureDefinition-nausea-observation.html"><code class="language-plaintext highlighter-rouge">Observation-nausea</code></a></td>
+    </tr>
+    <tr>
+      <td>Stool</td>
+      <td><a href="./StructureDefinition-stool-observation.html"><code class="language-plaintext highlighter-rouge">Observation-stool</code></a></td>
+    </tr>
+    <tr>
+      <td>Wexner/CCIS score</td>
+      <td><a href="./StructureDefinition-wexner-ccis-score-observation.html"><code class="language-plaintext highlighter-rouge">Observation-wexner-ccis-score</code></a></td>
+    </tr>
+    <tr>
+      <td>Bladder continence</td>
+      <td><a href="./StructureDefinition-bladder-continence-observation.html"><code class="language-plaintext highlighter-rouge">Observation-continence-level</code></a></td>
+    </tr>
+    <tr>
+      <td>Remarks HCP</td>
+      <td><a href="./StructureDefinition-clinical-note-observation.html"><code class="language-plaintext highlighter-rouge">Clinical-note</code></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>To be decided codes</li>
+</ul>
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Code(s)</th>
+      <th>Possible Answers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wexner/CCIS score</td>
+      <td><span class="warning">??</span></td>
+      <td>ValueInteger 1 to 20</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="specification">Specification:</h3>
+
+<p>For detailed specifications, refer to the</p>
+
+<ul>
+  <li><a href="./Observation-BloodPressureExample2.html">Blood Pressure Example</a></li>
+  <li><a href="./Observation-HeartRateExample2.html">Heart Rate Example</a></li>
+  <li><a href="./Observation-OxygenSaturationExample2.html">Saturation Example</a></li>
+  <li><a href="./Observation-BodyTemperatureExample.html">Temperature Example</a></li>
+  <li><a href="./Observation-DrainFluidExample.html">Redon drain fluid Example</a></li>
+  <li><a href="./Observation-AppetiteExample.html">Appetite Example</a></li>
+  <li><a href="./Observation-PainSurgicalWoundsExample2.html">Pain surgical wound Example</a></li>
+  <li><a href="./Observation-PainKillerExample.html">Painkillers Example</a></li>
+  <li><a href="./Observation-NauseaExample2.html">Nausea Example</a></li>
+  <li><a href="./Observation-StoolScoreExample.html">Stool Example</a></li>
+  <li><a href="./Observation-IncontinenceScoreExample.html">Wexner Continence score Example</a></li>
+  <li><a href="./Observation-BladderContinenceExample.html">Bladder continence Example</a></li>
+  <li><a href="./Observation-ClinicalNoteExample.html">Remarks HCP Example</a></li>
+</ul>
+
+<p>These FHIR modules ensure standardized data exchange between systems and guarantee consistency of the parameters.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">HL7 Belgium</a>.  
+          Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-05-19 06:47:00 +0000">
+    2026-05-19
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- HL7 Belgium -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

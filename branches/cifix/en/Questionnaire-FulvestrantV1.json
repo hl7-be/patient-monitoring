@@ -1,0 +1,794 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "FulvestrantV1",
+  "meta" : {
+    "profile" : ["http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-fulvestrant"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire FulvestrantV1</b></p><a name=\"FulvestrantV1\"> </a><a name=\"hcFulvestrantV1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-homehosp-onco-fulvestrant.html\">ONCO Fulvestrant Nursing Questionnaire</a></p></div><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> FulvestrantV1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/FulvestrantV1#0.1.0</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.Verpleegkundigassessment\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Verpleegkundigassessment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Verpleegkundig assessment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.Bewaring\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Bewaring</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Bewaring</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.A1_Bewaring\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> A1_Bewaring</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Zijn er opmerkingen of bezorgdheden omtrent de (correcte) thuisbewaring van de medicatie?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.A1_Bewaring\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.A2_BewaringSpecifieer\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> A2_BewaringSpecifieer</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; Indien opmerkingen of bezorgdheid: specifieer</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.A1_Bewaring\">A1_Bewaring</a> = Improper storage of medication (SNOMED CT#424363005)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.Observatieparameters\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Observatieparameters</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Observatie parameters</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.B1_Temperatuur\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B1_Temperatuur</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Lichaamstemperatuur:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.B2_Pols\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B2_Pols</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pols:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.B3_BloeddrukSystolisch\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B3_BloeddrukSystolisch</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Bloeddruk systolisch:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.B4_BloeddrukDiastolisch\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> B4_BloeddrukDiastolisch</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Bloeddruk diastolisch:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" id=\"item.Tegenindicaties\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Tegenindicaties</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Tegenindicaties</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C1_Tegenindicatie\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C1_Tegenindicatie</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Zijn er tegenindicaties voor toediening?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.C1_Tegenindicatie\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C2_SpecifieerTegenindicatie\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> C2_SpecifieerTegenindicatie</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; Indien 'ja': specifieer</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.C1_Tegenindicatie\">C1_Tegenindicatie</a> = Yes (SNOMED CT#373066001)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C3_KoortsRillingen\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C3_KoortsRillingen</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Koorts, koude rillingen, zich ziek voelen</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.C3_KoortsRillingen\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C4_ContactZorgteam\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> C4_ContactZorgteam</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; Indien tegenindicatie(s): gelieve contact op te nemen met het zorgteam in het ziekenhuis</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.C1_Tegenindicatie\">C1_Tegenindicatie</a> = Yes (SNOMED CT#373066001)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" id=\"item.C5_Beslissing\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C5_Beslissing</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Beslissing na overleg ziekenhuis</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.C5_Beslissing\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" id=\"item.C6_BeslissingSpecifieer\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> C6_BeslissingSpecifieer</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; Indien andere: specifieer</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.C5_Beslissing\">C5_Beslissing</a> = andere</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" id=\"item.Nevenwerkingen\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Nevenwerkingen</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nevenwerkingen</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D1_Misselijkheid\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D1_Misselijkheid</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Misselijkheid</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D1_Misselijkheid\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D2_Braken\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D2_Braken</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Braken</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D2_Braken\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D3_VerminderdeEetlust\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D3_VerminderdeEetlust</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Verminderde eetlust of smaakverandering</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D3_VerminderdeEetlust\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D4_Buikloop\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D4_Buikloop</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Buikloop</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D4_Buikloop\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D5_Verstopping\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D5_Verstopping</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Verstopping</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D5_Verstopping\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D6_Vermoeidheid\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D6_Vermoeidheid</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vermoeidheid/futloosheid</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D6_Vermoeidheid\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D7_Pijn\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D7_Pijn</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pijn</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D7_Pijn\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D8_Huiduitslag\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D8_Huiduitslag</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Huiduitslag</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D8_Huiduitslag\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D9_Psychosociaal\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D9_Psychosociaal</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Psychosociale belasting</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D9_Psychosociaal\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D10_Kortademigheid\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D10_Kortademigheid</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Kortademigheid</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D10_Kortademigheid\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.D11_SpierEnGewrichtspijn\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D11_SpierEnGewrichtspijn</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Spier- en gewrichtspijn</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D11_SpierEnGewrichtspijn\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" id=\"item.D12_AndereObservaties\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> D12_AndereObservaties</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Andere nevenwerkingen of relevante klinische en psychosociale observaties\n(gelieve bij klinische bezorgdheid contact te nemen met het ziekenhuis voor bespreking)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.Opdracht\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Opdracht</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Opdracht</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" id=\"item.Medicatietoediening\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Medicatietoediening</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Medicatietoediening</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" id=\"item.E1_ToedieningCorrect\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E1_ToedieningCorrect</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Kon de medicatie exact volgens de procedure worden toegediend (er waren geen afwijkingen)?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.E1_ToedieningCorrect\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" id=\"item.E2_SpecifieerNee\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> E2_SpecifieerNee</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">&gt; Indien 'nee': specifieer</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.E1_ToedieningCorrect\">E1_ToedieningCorrect</a> = No (SNOMED CT#373067005)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" id=\"item.Kwaliteitsopvolging\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> Kwaliteitsopvolging</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(Kwaliteits)opvolging</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" id=\"item.F1_OpmerkingenAanmelding\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> F1_OpmerkingenAanmelding</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Zijn er opmerkingen of bezorgdheden omtrent de aanmelding van deze patient, de gegevensdeling vanuit het ziekenhuis, de communicatie door en het contact met het ziekenhuis, de beschikbaarheid van de materialen, of andere aspecten van de transmurale samenwerking rond thuishospitalisatie oncologie, dan kan je deze hier noteren. Alvast dank.</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name=\"opt-item.A1_Bewaring\"> </a><p><b>Answer options for A1_Bewaring </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#710977001 (&quot;Safe storage and management of medication&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#424363005 (&quot;Improper storage of medication&quot;)</li></ul><a name=\"opt-item.C1_Tegenindicatie\"> </a><p><b>Answer options for C1_Tegenindicatie </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name=\"opt-item.C3_KoortsRillingen\"> </a><p><b>Answer options for C3_KoortsRillingen </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name=\"opt-item.C5_Beslissing\"> </a><p><b>Answer options for C5_Beslissing </b></p><ul><li style=\"font-size: 11px\">toediening</li><li style=\"font-size: 11px\">geen toediening</li><li style=\"font-size: 11px\">andere</li></ul><a name=\"opt-item.D1_Misselijkheid\"> </a><p><b>Answer options for D1_Misselijkheid </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D2_Braken\"> </a><p><b>Answer options for D2_Braken </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D3_VerminderdeEetlust\"> </a><p><b>Answer options for D3_VerminderdeEetlust </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D4_Buikloop\"> </a><p><b>Answer options for D4_Buikloop </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D5_Verstopping\"> </a><p><b>Answer options for D5_Verstopping </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D6_Vermoeidheid\"> </a><p><b>Answer options for D6_Vermoeidheid </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D7_Pijn\"> </a><p><b>Answer options for D7_Pijn </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D8_Huiduitslag\"> </a><p><b>Answer options for D8_Huiduitslag </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D9_Psychosociaal\"> </a><p><b>Answer options for D9_Psychosociaal </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D10_Kortademigheid\"> </a><p><b>Answer options for D10_Kortademigheid </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.D11_SpierEnGewrichtspijn\"> </a><p><b>Answer options for D11_SpierEnGewrichtspijn </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name=\"opt-item.E1_ToedieningCorrect\"> </a><p><b>Answer options for E1_ToedieningCorrect </b></p><ul><li style=\"font-size: 11px\">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style=\"font-size: 11px\">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul></div>"
+  },
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/FulvestrantV1",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.54.35.5"
+  }],
+  "version" : "0.1.0",
+  "name" : "FulvestrantV1",
+  "title" : "Fulvestrant",
+  "status" : "active",
+  "subjectType" : ["Patient"],
+  "date" : "2026-05-19T06:47:26+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "item" : [{
+    "linkId" : "Verpleegkundigassessment",
+    "text" : "Verpleegkundig assessment",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Bewaring",
+      "text" : "Bewaring",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "A1_Bewaring",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "422413002",
+          "display" : "Ability to store medications"
+        }],
+        "text" : "Zijn er opmerkingen of bezorgdheden omtrent de (correcte) thuisbewaring van de medicatie?",
+        "type" : "choice",
+        "required" : true,
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "710977001",
+            "display" : "Safe storage and management of medication"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "424363005",
+            "display" : "Improper storage of medication"
+          }
+        }]
+      },
+      {
+        "linkId" : "A2_BewaringSpecifieer",
+        "text" : "> Indien opmerkingen of bezorgdheid: specifieer",
+        "type" : "string",
+        "enableWhen" : [{
+          "question" : "A1_Bewaring",
+          "operator" : "=",
+          "answerCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "424363005",
+            "display" : "Improper storage of medication"
+          }
+        }]
+      }]
+    },
+    {
+      "linkId" : "Observatieparameters",
+      "text" : "Observatie parameters",
+      "type" : "group",
+      "item" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding" : {
+            "system" : "http://unitsofmeasure.org",
+            "code" : "Cel",
+            "display" : "Cel"
+          }
+        }],
+        "linkId" : "B1_Temperatuur",
+        "code" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }],
+        "text" : "Lichaamstemperatuur:",
+        "type" : "decimal",
+        "required" : true
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding" : {
+            "system" : "http://unitsofmeasure.org",
+            "code" : "{beats}/min",
+            "display" : "{beats}/min"
+          }
+        }],
+        "linkId" : "B2_Pols",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "364075005",
+          "display" : "Heart rate"
+        }],
+        "text" : "Pols:",
+        "type" : "decimal",
+        "required" : true
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding" : {
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mm[Hg]",
+            "display" : "mm[Hg]"
+          }
+        }],
+        "linkId" : "B3_BloeddrukSystolisch",
+        "code" : [{
+          "system" : "http://loinc.org",
+          "code" : "8480-6",
+          "display" : "Systolic blood pressure"
+        }],
+        "text" : "Bloeddruk systolisch:",
+        "type" : "decimal",
+        "required" : true
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding" : {
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mm[Hg]",
+            "display" : "mm[Hg]"
+          }
+        }],
+        "linkId" : "B4_BloeddrukDiastolisch",
+        "code" : [{
+          "system" : "http://loinc.org",
+          "code" : "8462-4",
+          "display" : "Diastolic blood pressure"
+        }],
+        "text" : "Bloeddruk diastolisch:",
+        "type" : "decimal",
+        "required" : true
+      }]
+    },
+    {
+      "linkId" : "Tegenindicaties",
+      "text" : "Tegenindicaties",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "C1_Tegenindicatie",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "395008009",
+          "display" : "Medication stopped - contra-indication"
+        }],
+        "text" : "Zijn er tegenindicaties voor toediening?",
+        "type" : "choice",
+        "required" : true,
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C2_SpecifieerTegenindicatie",
+        "text" : "> Indien 'ja': specifieer",
+        "type" : "display",
+        "enableWhen" : [{
+          "question" : "C1_Tegenindicatie",
+          "operator" : "=",
+          "answerCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }
+        }]
+      },
+      {
+        "linkId" : "C3_KoortsRillingen",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "39104002",
+          "display" : "Illness"
+        }],
+        "text" : "Koorts, koude rillingen, zich ziek voelen",
+        "type" : "choice",
+        "required" : true,
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C4_ContactZorgteam",
+        "text" : "> Indien tegenindicatie(s): gelieve contact op te nemen met het zorgteam in het ziekenhuis",
+        "type" : "display",
+        "enableWhen" : [{
+          "question" : "C1_Tegenindicatie",
+          "operator" : "=",
+          "answerCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }
+        }]
+      },
+      {
+        "linkId" : "C5_Beslissing",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "182836005",
+          "display" : "Medication review"
+        }],
+        "text" : "Beslissing na overleg ziekenhuis",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueString" : "toediening"
+        },
+        {
+          "valueString" : "geen toediening"
+        },
+        {
+          "valueString" : "andere"
+        }]
+      },
+      {
+        "linkId" : "C6_BeslissingSpecifieer",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1156698007",
+          "display" : "Review of current supply of medication"
+        }],
+        "text" : "> Indien andere: specifieer",
+        "type" : "string",
+        "enableWhen" : [{
+          "question" : "C5_Beslissing",
+          "operator" : "=",
+          "answerString" : "andere"
+        }]
+      }]
+    },
+    {
+      "linkId" : "Nevenwerkingen",
+      "text" : "Nevenwerkingen",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "D1_Misselijkheid",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "422587007",
+          "display" : "Nausea"
+        }],
+        "text" : "Misselijkheid",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D2_Braken",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "249497008",
+          "display" : "Vomiting symptom"
+        }],
+        "text" : "Braken",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D3_VerminderdeEetlust",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "64379006",
+          "display" : "Decrease in appetite"
+        }],
+        "text" : "Verminderde eetlust of smaakverandering",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D4_Buikloop",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "62315008",
+          "display" : "Diarrhea"
+        }],
+        "text" : "Buikloop",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D5_Verstopping",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "14760008",
+          "display" : "Constipation"
+        }],
+        "text" : "Verstopping",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D6_Vermoeidheid",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "224960004",
+          "display" : "Tired"
+        }],
+        "text" : "Vermoeidheid/futloosheid",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D7_Pijn",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "112104007",
+          "display" : "Localized pain"
+        }],
+        "text" : "Pijn",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D8_Huiduitslag",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "271807003",
+          "display" : "Eruption"
+        }],
+        "text" : "Huiduitslag",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D9_Psychosociaal",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "384821006",
+          "display" : "Mental state, behaviour and/or psychosocial function finding"
+        }],
+        "text" : "Psychosociale belasting",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D10_Kortademigheid",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "267036007",
+          "display" : "Dyspnea"
+        }],
+        "text" : "Kortademigheid",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D11_SpierEnGewrichtspijn",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "57676002",
+          "display" : "Joint pain"
+        }],
+        "text" : "Spier- en gewrichtspijn",
+        "type" : "choice",
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444457005",
+            "display" : "Grade 2 on a scale of 0 to 3"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444447009",
+            "display" : "Grade 3 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D12_AndereObservaties",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "365275006",
+          "display" : "General well-being finding"
+        }],
+        "text" : "Andere nevenwerkingen of relevante klinische en psychosociale observaties\n(gelieve bij klinische bezorgdheid contact te nemen met het ziekenhuis voor bespreking)",
+        "type" : "string"
+      }]
+    }]
+  },
+  {
+    "linkId" : "Opdracht",
+    "text" : "Opdracht",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "Medicatietoediening",
+      "text" : "Medicatietoediening",
+      "type" : "group",
+      "item" : [{
+        "linkId" : "E1_ToedieningCorrect",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373149000",
+          "display" : "Medication administered following procedure"
+        }],
+        "text" : "Kon de medicatie exact volgens de procedure worden toegediend (er waren geen afwijkingen)?",
+        "type" : "choice",
+        "required" : true,
+        "answerOption" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }
+        },
+        {
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "E2_SpecifieerNee",
+        "text" : "> Indien 'nee': specifieer",
+        "type" : "string",
+        "enableWhen" : [{
+          "question" : "E1_ToedieningCorrect",
+          "operator" : "=",
+          "answerCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      }]
+    }]
+  },
+  {
+    "linkId" : "Kwaliteitsopvolging",
+    "text" : "(Kwaliteits)opvolging",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "F1_OpmerkingenAanmelding",
+      "code" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "276238005",
+        "display" : "Comments on own writing"
+      }],
+      "text" : "Zijn er opmerkingen of bezorgdheden omtrent de aanmelding van deze patient, de gegevensdeling vanuit het ziekenhuis, de communicatie door en het contact met het ziekenhuis, de beschikbaarheid van de materialen, of andere aspecten van de transmurale samenwerking rond thuishospitalisatie oncologie, dan kan je deze hier noteren. Alvast dank.",
+      "type" : "string"
+    }]
+  }]
+}

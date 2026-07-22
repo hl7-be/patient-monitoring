@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/BladderContinenceExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BladderContinenceExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BladderContinenceExample</b></p><a name=\"BladderContinenceExample\"> </a><a name=\"hcBladderContinenceExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45619-4}\">Bladder continence [Minimum Data Set]</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA127-3}\">USUALLY CONTINENT-BLADDER, incontinent episodes once a week or less; BOWEL, less than weekly</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:45619-4 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "45619-4" ] ;
+       fhir:display [ fhir:v "Bladder continence [Minimum Data Set]" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "https://www.telemonitoring-prescription.com/FHIR/patient"^^xsd:anyURI ;
+         fhir:l <https://www.telemonitoring-prescription.com/FHIR/patient>
+       ] ;
+       fhir:value [ fhir:v "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-10-08T10:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a loinc:LA127-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "LA127-3" ] ;
+       fhir:display [ fhir:v "USUALLY CONTINENT-BLADDER, incontinent episodes once a week or less; BOWEL, less than weekly" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

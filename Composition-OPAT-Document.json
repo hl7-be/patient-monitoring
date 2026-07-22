@@ -1,0 +1,185 @@
+{
+  "resourceType" : "Composition",
+  "id" : "OPAT-Document",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition OPAT-Document</b></p><a name=\"OPAT-Document\"> </a><a name=\"hcOPAT-Document\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:\">OPAT</span></p><p><b>date</b>: 2025-08-11 16:31:20+0200</p><p><b>author</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p><p><b>title</b>: Outpatient Parenteral Antimicrobial Therapy (OPAT)</p><p><b>custodian</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "text" : "OPAT"
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-123"
+  },
+  "date" : "2025-08-11T16:31:20+02:00",
+  "author" : [{
+    "reference" : "Organization/Organization-UZL"
+  }],
+  "title" : "Outpatient Parenteral Antimicrobial Therapy (OPAT)",
+  "custodian" : {
+    "reference" : "Organization/Organization-UZL"
+  },
+  "section" : [{
+    "title" : "Patient data",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "entry" : [{
+      "reference" : "Patient/Patient-123"
+    }]
+  },
+  {
+    "title" : "Care team contact details",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "entry" : [{
+      "reference" : "CareTeam/CareTeam-F-7766077"
+    }]
+  },
+  {
+    "title" : "Relevant medical history",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "entry" : [{
+      "reference" : "ClinicalImpression/ClinicalImpression-MED-medischeVG"
+    }]
+  },
+  {
+    "title" : "Upcoming hospital appointments at UZL",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "entry" : [{
+      "reference" : "Appointment/Appointment-testapp"
+    }]
+  },
+  {
+    "title" : "Blood pressure",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "text" : {
+      "status" : "empty",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No data available</div>"
+    },
+    "emptyReason" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+        "code" : "nilknown",
+        "display" : "Nil Known"
+      }]
+    }
+  },
+  {
+    "title" : "Heart rate",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "text" : {
+      "status" : "empty",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No data available</div>"
+    },
+    "emptyReason" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+        "code" : "nilknown",
+        "display" : "Nil Known"
+      }]
+    }
+  },
+  {
+    "title" : "Temperature",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "entry" : [{
+      "reference" : "Observation/Observation-Temperatuur"
+    }]
+  },
+  {
+    "title" : "Weight",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "text" : {
+      "status" : "empty",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">No data available</div>"
+    },
+    "emptyReason" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+        "code" : "nilknown",
+        "display" : "Nil Known"
+      }]
+    }
+  },
+  {
+    "title" : "Side effects / symptom burden",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "entry" : [{
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Obstipatie"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Rillingen"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Pijn"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Jeuk"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Andere"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Huiduitslag"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Moe"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Zwelling"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Braken"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Misselijkheid"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Blaren"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Diarree"
+    },
+    {
+      "reference" : "ClinicalImpression/ClinicalImpression-OBS-Candidiase"
+    }]
+  },
+  {
+    "title" : "Catheter type",
+    "author" : [{
+      "reference" : "Organization/Organization-UZL"
+    }],
+    "entry" : [{
+      "reference" : "Observation/Observation-Katheter-7938866"
+    }]
+  }]
+}

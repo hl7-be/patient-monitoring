@@ -1,0 +1,397 @@
+PatientMonitoringOutcome : Validation Results
+=========================================
+
+err = 27, warn = 92, info = 19
+$--
+Generated $--. FHIR version $-- for hl7.fhir.be.patient-monitoring#$-- (canonical = http://hl7belgium.org/fhir/patient-monitoring)
+ Build Errors : 0 / 6 / 0
+ /work/fsh-generated/resources/Appointment-Appointment-testapp : 0 / 1 / 1
+ /work/fsh-generated/resources/CareTeam-CareTeam-F-7766077 : 0 / 0 / 1
+ /work/fsh-generated/resources/CareTeam-CareTeam-Katheter : 0 / 0 / 1
+ /work/fsh-generated/resources/CareTeam-CareTeam-OPAT : 0 / 0 / 1
+ /work/fsh-generated/resources/CareTeam-CareTeam-Spoed : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-MED-medischeVG : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Ademhalingsproblemen : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Andere : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Blaren : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Braken : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Candidiase : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Diarree : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Gewrichtspijn : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Huiduitslag : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Jeuk : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Misselijkheid : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Moe : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Observatie-andere-specifieer : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Obstipatie : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Pijn : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Rillingen : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Verminderdeeetlust : 0 / 0 / 1
+ /work/fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Zwelling : 0 / 0 / 1
+ /work/fsh-generated/resources/Composition-OPAT-Document : 0 / 0 / 1
+ /work/fsh-generated/resources/DiagnosticReport-example-holter-diagnosticreport : 0 / 1 / 1
+ /work/fsh-generated/resources/Encounter-CT-259690079 : 0 / 0 / 1
+ /work/fsh-generated/resources/Encounter-Encounter-3441 : 0 / 0 / 1
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring : 0 / 0 / 1
+ /work/fsh-generated/resources/Location-testloc : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-AbdominalPainExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-AppetiteExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-BladderContinenceExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-BloodPressureExample : 0 / 1 / 5
+ /work/fsh-generated/resources/Observation-BloodPressureExample2 : 0 / 1 / 4
+ /work/fsh-generated/resources/Observation-BodyTemperatureExample : 0 / 1 / 5
+ /work/fsh-generated/resources/Observation-BodyTemperatureExample2 : 0 / 2 / 2
+ /work/fsh-generated/resources/Observation-BodyWeightExample : 0 / 1 / 5
+ /work/fsh-generated/resources/Observation-BodyWeightExample2 : 0 / 2 / 2
+ /work/fsh-generated/resources/Observation-CatheterMovedOrRemovedExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-ClinicalNoteExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-DiarrheaExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-DistendedAbdomenExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-DrainFluidExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-HeartRateExample : 0 / 1 / 5
+ /work/fsh-generated/resources/Observation-HeartRateExample2 : 0 / 2 / 2
+ /work/fsh-generated/resources/Observation-IncontinenceScoreExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-LeakageCatheterExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-LevelOfResponsivenessExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-NationalEarlyWarningScoreExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-NauseaExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-NauseaExample2 : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-Observation-Katheter-7938866 : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-Observation-Temperatuur : 0 / 1 / 2
+ /work/fsh-generated/resources/Observation-OrthopneuExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-OxygenSaturationExample : 0 / 1 / 5
+ /work/fsh-generated/resources/Observation-OxygenSaturationExample2 : 0 / 2 / 2
+ /work/fsh-generated/resources/Observation-PainDuringUrinationExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-PainInCalvesExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-PainInfectionSiteExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-PainKillerExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-PainPunctureWoundsExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-PainSurgicalWoundsExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-PainSurgicalWoundsExample2 : 0 / 3 / 2
+ /work/fsh-generated/resources/Observation-RednessPunctureWoundsExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-ReducedAppetiteExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-RespiratoryRateExample : 0 / 1 / 5
+ /work/fsh-generated/resources/Observation-RespiratoryRateExample2 : 0 / 2 / 2
+ /work/fsh-generated/resources/Observation-ShortnessOfBreathExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-ShoulderPainExample : 0 / 1 / 3
+ /work/fsh-generated/resources/Observation-StoolScoreExample : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-example-holter-afib : 0 / 2 / 1
+ /work/fsh-generated/resources/Observation-example-holter-sv : 0 / 2 / 1
+ /work/fsh-generated/resources/Organization-Organization-UZL : 0 / 0 / 1
+ /work/fsh-generated/resources/Patient-Patient-123 : 0 / 2 / 1
+ /work/fsh-generated/resources/PractitionerRole-PractitionerRole-16500 : 0 / 2 / 3
+ /work/fsh-generated/resources/Questionnaire-AzacitidineV1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Questionnaire-BortezomibV1 : 0 / 1 / 1
+ /work/fsh-generated/resources/Questionnaire-DaratumumabV1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Questionnaire-FulvestrantV1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Questionnaire-OPATContinuInfuusV1 : 8 / 0 / 1
+ /work/fsh-generated/resources/Questionnaire-OPATKortIVV1 : 8 / 0 / 1
+ /work/fsh-generated/resources/Questionnaire-TrastuzumabV1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Questionnaire-homehosp-q-onco-definitions : 0 / 0 / 4
+ /work/fsh-generated/resources/Questionnaire-homehosp-q-opat-definitions : 10 / 2 / 6
+ /work/fsh-generated/resources/QuestionnaireResponse-AzacitidineV1response : 0 / 0 / 1
+ /work/fsh-generated/resources/QuestionnaireResponse-OPATContinuInfuusV1response : 1 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-appetite-observation : 0 / 1 / 2
+ /work/fsh-generated/resources/StructureDefinition-bladder-continence-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-clinical-note-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-drain-fluid-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-holter-diagnostic-report : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-holter-observation : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-encounter : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-encounter-lm : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-onco-azacitidine : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-onco-bortezomib : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-onco-daratumumab : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-onco-fulvestrant : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-onco-trastuzumab : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-opat-continuous-infusion : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-opat-short-iv : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-questionnaire-response : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-homehosp-questionnaire-response-lm : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-nausea-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-onco-azacitidine-questionnaire : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-onco-bortezomib-questionnaire : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-onco-daratumumab-questionnaire : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-onco-fulvestrant-questionnaire : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-onco-trastuzumab-questionnaire : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-opat-continuous-infusion-questionnaire : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-opat-short-iv-questionnaire : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-painkiller-usage-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-stool-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-surgical-wound-pain-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-wexner-ccis-score-observation : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-FluidDrainVS : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-YesNoVS : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-continence-level : 0 / 0 / 6
+ /work/fsh-generated/resources/ValueSet-heart-failure-symptoms : 0 / 3 / 2
+ /work/fsh-generated/resources/ValueSet-holter-event-codes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-holter-event-component-codes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-holter-report-code : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-pain-scale : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-symptom-severity : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-well-poor-scale : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BladderContinenceExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/Appointment-Appointment-testapp.json ==
+WARNING: Appointment/Appointment-testapp: Appointment.identifier[0].system: No definition could be found for URL value 'https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr'
+== fsh-generated/resources/CareTeam-CareTeam-F-7766077.json ==
+== fsh-generated/resources/CareTeam-CareTeam-Katheter.json ==
+== fsh-generated/resources/CareTeam-CareTeam-OPAT.json ==
+== fsh-generated/resources/CareTeam-CareTeam-Spoed.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-MED-medischeVG.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Ademhalingsproblemen.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Andere.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Blaren.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Braken.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Candidiase.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Diarree.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Gewrichtspijn.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Huiduitslag.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Jeuk.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Misselijkheid.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Moe.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Observatie-andere-specifieer.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Obstipatie.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Pijn.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Rillingen.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Verminderdeeetlust.json ==
+== fsh-generated/resources/ClinicalImpression-ClinicalImpression-OBS-Zwelling.json ==
+== fsh-generated/resources/Composition-OPAT-Document.json ==
+== fsh-generated/resources/DiagnosticReport-example-holter-diagnosticreport.json ==
+WARNING: DiagnosticReport/example-holter-diagnosticreport: DiagnosticReport.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Encounter-CT-259690079.json ==
+== fsh-generated/resources/Encounter-Encounter-3441.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.patient-monitoring.json ==
+== fsh-generated/resources/Location-testloc.json ==
+== fsh-generated/resources/Observation-AbdominalPainExample.json ==
+WARNING: Observation/AbdominalPainExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-AppetiteExample.json ==
+WARNING: Observation/AppetiteExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/AppetiteExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-BladderContinenceExample.json ==
+WARNING: Observation/BladderContinenceExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/BladderContinenceExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-BloodPressureExample.json ==
+INFORMATION: Observation/BloodPressureExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0].system: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+WARNING: Observation/BloodPressureExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://vitalsigns.byteflies.net/FHIR/patient'
+== fsh-generated/resources/Observation-BloodPressureExample2.json ==
+WARNING: Observation/BloodPressureExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-BodyTemperatureExample.json ==
+INFORMATION: Observation/BodyTemperatureExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0].system: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+WARNING: Observation/BodyTemperatureExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://vitalsigns.byteflies.net/FHIR/patient'
+== fsh-generated/resources/Observation-BodyTemperatureExample2.json ==
+WARNING: Observation/BodyTemperatureExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/BodyTemperatureExample2: Observation.performer[0].identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-BodyWeightExample.json ==
+INFORMATION: Observation/BodyWeightExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0].system: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+WARNING: Observation/BodyWeightExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://vitalsigns.byteflies.net/FHIR/patient'
+== fsh-generated/resources/Observation-BodyWeightExample2.json ==
+WARNING: Observation/BodyWeightExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/BodyWeightExample2: Observation.performer[0].identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-CatheterMovedOrRemovedExample.json ==
+WARNING: Observation/CatheterMovedOrRemovedExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-ClinicalNoteExample.json ==
+WARNING: Observation/ClinicalNoteExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/ClinicalNoteExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-DiarrheaExample.json ==
+WARNING: Observation/DiarrheaExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-DistendedAbdomenExample.json ==
+WARNING: Observation/DistendedAbdomenExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-DrainFluidExample.json ==
+WARNING: Observation/DrainFluidExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/DrainFluidExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-HeartRateExample.json ==
+INFORMATION: Observation/HeartRateExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0].system: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+WARNING: Observation/HeartRateExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://vitalsigns.byteflies.net/FHIR/patient'
+== fsh-generated/resources/Observation-HeartRateExample2.json ==
+WARNING: Observation/HeartRateExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/HeartRateExample2: Observation.performer[0].identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-IncontinenceScoreExample.json ==
+WARNING: Observation/IncontinenceScoreExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/IncontinenceScoreExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-LeakageCatheterExample.json ==
+WARNING: Observation/LeakageCatheterExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-LevelOfResponsivenessExample.json ==
+WARNING: Observation/LevelOfResponsivenessExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-NationalEarlyWarningScoreExample.json ==
+WARNING: Observation/NationalEarlyWarningScoreExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-NauseaExample.json ==
+WARNING: Observation/NauseaExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-NauseaExample2.json ==
+WARNING: Observation/NauseaExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/NauseaExample2: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Observation-Katheter-7938866.json ==
+WARNING: Observation/Observation-Katheter-7938866: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/Observation-Katheter-7938866: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-Observation-Temperatuur.json ==
+WARNING: Observation/Observation-Temperatuur: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-OrthopneuExample.json ==
+WARNING: Observation/OrthopneuExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-OxygenSaturationExample.json ==
+INFORMATION: Observation/OxygenSaturationExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0].system: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+WARNING: Observation/OxygenSaturationExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://vitalsigns.byteflies.net/FHIR/patient'
+== fsh-generated/resources/Observation-OxygenSaturationExample2.json ==
+WARNING: Observation/OxygenSaturationExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/OxygenSaturationExample2: Observation.performer[0].identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-PainDuringUrinationExample.json ==
+WARNING: Observation/PainDuringUrinationExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/PainDuringUrinationExample: Observation.performer[0].identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-PainInCalvesExample.json ==
+WARNING: Observation/PainInCalvesExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/PainInCalvesExample: Observation.performer[0].identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-PainInfectionSiteExample.json ==
+WARNING: Observation/PainInfectionSiteExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-PainKillerExample.json ==
+WARNING: Observation/PainKillerExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/PainKillerExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-PainPunctureWoundsExample.json ==
+WARNING: Observation/PainPunctureWoundsExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-PainSurgicalWoundsExample.json ==
+WARNING: Observation/PainSurgicalWoundsExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-PainSurgicalWoundsExample2.json ==
+WARNING: Observation/PainSurgicalWoundsExample2: Observation.contained[0]/*Condition/surgicalWound*/.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/PainSurgicalWoundsExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/PainSurgicalWoundsExample2: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-RednessPunctureWoundsExample.json ==
+WARNING: Observation/RednessPunctureWoundsExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-ReducedAppetiteExample.json ==
+WARNING: Observation/ReducedAppetiteExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-RespiratoryRateExample.json ==
+INFORMATION: Observation/RespiratoryRateExample: Observation.contained[0]/*Device/vital-signs-box*/.meta.tag[0].system: A definition for CodeSystem 'https://api-vitalsigns.byteflies.net/version' could not be found, so the code cannot be validated
+WARNING: Observation/RespiratoryRateExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://vitalsigns.byteflies.net/FHIR/patient'
+== fsh-generated/resources/Observation-RespiratoryRateExample2.json ==
+WARNING: Observation/RespiratoryRateExample2: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/RespiratoryRateExample2: Observation.performer[0].identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-ShortnessOfBreathExample.json ==
+WARNING: Observation/ShortnessOfBreathExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-ShoulderPainExample.json ==
+WARNING: Observation/ShoulderPainExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+== fsh-generated/resources/Observation-StoolScoreExample.json ==
+WARNING: Observation/StoolScoreExample: Observation.subject.identifier.system: No definition could be found for URL value 'https://www.telemonitoring-prescription.com/FHIR/patient'
+WARNING: Observation/StoolScoreExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-example-holter-afib.json ==
+WARNING: Observation/example-holter-afib: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/example-holter-afib: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-example-holter-sv.json ==
+WARNING: Observation/example-holter-sv: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/example-holter-sv: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Organization-Organization-UZL.json ==
+== fsh-generated/resources/Patient-Patient-123.json ==
+WARNING: Patient/Patient-123: Patient.identifier[0].system: No definition could be found for URL value 'https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/eadnr'
+WARNING: Patient/Patient-123: Patient.identifier[1].system: No definition could be found for URL value 'https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/emdnr'
+== fsh-generated/resources/PractitionerRole-PractitionerRole-16500.json ==
+INFORMATION: PractitionerRole/PractitionerRole-16500: PractitionerRole.specialty[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: PractitionerRole/PractitionerRole-16500: PractitionerRole.identifier[0].system: No definition could be found for URL value 'https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id'
+WARNING: PractitionerRole/PractitionerRole-16500: PractitionerRole.specialty[0].coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty' could not be found, so the code cannot be validated
+INFORMATION: PractitionerRole/PractitionerRole-16500: PractitionerRole.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set (codes = https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#drgeneralphysician)
+== fsh-generated/resources/Questionnaire-AzacitidineV1.json ==
+== fsh-generated/resources/Questionnaire-BortezomibV1.json ==
+WARNING: Questionnaire/BortezomibV1: Questionnaire.item[0].item[3].item[11].code[0].display: 'Motor neuropathy' is no longer considered a correct display for code '95663000' (status = inactive). The correct display is one of Motor peripheral neuropathy,Motor neuritis,Peripheral motor neuropathy,Peripheral motor neuropathy (disorder)
+== fsh-generated/resources/Questionnaire-DaratumumabV1.json ==
+== fsh-generated/resources/Questionnaire-FulvestrantV1.json ==
+== fsh-generated/resources/Questionnaire-OPATContinuInfuusV1.json ==
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[2].answerOption[1].value.ofType(Coding).code: Unknown code '1396546006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[2].answerOption[2].value.ofType(Coding).code: Unknown code '1396570005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[2].answerOption[3].value.ofType(Coding).code: Unknown code '1396538005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[2].answerOption[4].value.ofType(Coding).code: Unknown code '1396531004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[2].answerOption[5].value.ofType(Coding).code: Unknown code '1396527005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[2].answerOption[6].value.ofType(Coding).code: Unknown code '1396526001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[2].answerOption[7].value.ofType(Coding).code: Unknown code '1396489007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATContinuInfuusV1: Questionnaire.item[0].item[6].item[3].code[0].code: Unknown code '1396483008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+== fsh-generated/resources/Questionnaire-OPATKortIVV1.json ==
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[2].answerOption[1].value.ofType(Coding).code: Unknown code '1396546006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[2].answerOption[2].value.ofType(Coding).code: Unknown code '1396570005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[2].answerOption[3].value.ofType(Coding).code: Unknown code '1396538005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[2].answerOption[4].value.ofType(Coding).code: Unknown code '1396531004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[2].answerOption[5].value.ofType(Coding).code: Unknown code '1396527005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[2].answerOption[6].value.ofType(Coding).code: Unknown code '1396526001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[2].answerOption[7].value.ofType(Coding).code: Unknown code '1396489007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/OPATKortIVV1: Questionnaire.item[0].item[6].item[3].code[0].code: Unknown code '1396483008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+== fsh-generated/resources/Questionnaire-TrastuzumabV1.json ==
+== fsh-generated/resources/Questionnaire-homehosp-q-onco-definitions.json ==
+INFORMATION: Questionnaire/homehosp-q-onco-definitions: Questionnaire.contained[0]/*Patient/patient-placeholder*/.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Questionnaire-homehosp-q-opat-definitions.json ==
+INFORMATION: Questionnaire/homehosp-q-opat-definitions: Questionnaire.contained[0]/*Patient/patient-placeholder*/.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[1].item[2].extension[1]: Unknown extension http://fhir.wgk.com/StructureDefinition/wgk-ext-helptext
+WARNING: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[1].item[2].extension[1].url: No definition could be found for URL value 'http://fhir.wgk.com/StructureDefinition/wgk-ext-helptext'
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[1].item[2].code[0].code: Unknown code '1381257004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[1].item[3].extension[1]: Unknown extension http://fhir.wgk.com/StructureDefinition/wgk-ext-helptext
+WARNING: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[1].item[3].extension[1].url: No definition could be found for URL value 'http://fhir.wgk.com/StructureDefinition/wgk-ext-helptext'
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[1].item[3].code[0].code: Unknown code '1381260006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[2].answerOption[1].value.ofType(Coding).code: Unknown code '1396546006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[2].answerOption[2].value.ofType(Coding).code: Unknown code '1396570005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[2].answerOption[3].value.ofType(Coding).code: Unknown code '1396538005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[2].answerOption[4].value.ofType(Coding).code: Unknown code '1396531004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[2].answerOption[5].value.ofType(Coding).code: Unknown code '1396527005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[2].answerOption[6].value.ofType(Coding).code: Unknown code '1396526001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[2].answerOption[7].value.ofType(Coding).code: Unknown code '1396489007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: Questionnaire/homehosp-q-opat-definitions: Questionnaire.item[0].item[6].item[3].item[0].code[0].code: Unknown code '1396483008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+== fsh-generated/resources/QuestionnaireResponse-AzacitidineV1response.json ==
+== fsh-generated/resources/QuestionnaireResponse-OPATContinuInfuusV1response.json ==
+ERROR: QuestionnaireResponse/OPATContinuInfuusV1response: QuestionnaireResponse.item[0].item[6].item[1].answer[0].value.ofType(Coding).code: Unknown code '1396546006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+== fsh-generated/resources/StructureDefinition-appetite-observation.json ==
+INFORMATION: StructureDefinition/appetite-observation: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/appetite-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-bladder-continence-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/bladder-continence-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-clinical-note-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/clinical-note-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-drain-fluid-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/drain-fluid-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-holter-diagnostic-report.json ==
+== fsh-generated/resources/StructureDefinition-holter-observation.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-encounter.json ==
+WARNING: StructureDefinition/homehosp-encounter: StructureDefinition.snapshot.element[65].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0092'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0 (from hl7.terminology.r4#6.0.2), 3.0.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v2-0092' to 'http://terminology.hl7.org/ValueSet/v2-0092|3.0.0'
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-encounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-homehosp-encounter-lm.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-onco-azacitidine.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-onco-bortezomib.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-onco-daratumumab.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-onco-fulvestrant.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-onco-trastuzumab.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-opat-continuous-infusion.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-opat-short-iv.json ==
+== fsh-generated/resources/StructureDefinition-homehosp-questionnaire-response.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-questionnaire-response'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-homehosp-questionnaire-response-lm.json ==
+== fsh-generated/resources/StructureDefinition-nausea-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/nausea-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onco-azacitidine-questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-onco-bortezomib-questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-onco-daratumumab-questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-onco-fulvestrant-questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-onco-trastuzumab-questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-opat-continuous-infusion-questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-opat-short-iv-questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-painkiller-usage-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/painkiller-usage-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-stool-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/stool-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-surgical-wound-pain-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/surgical-wound-pain-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-wexner-ccis-score-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/wexner-ccis-score-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-FluidDrainVS.json ==
+== fsh-generated/resources/ValueSet-YesNoVS.json ==
+== fsh-generated/resources/ValueSet-continence-level.json ==
+INFORMATION: ValueSet/continence-level: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'CONTINENT' for http://loinc.org#LA126-5. Valid display is 'CONTINENT-Complete control [includes use of indwelling urinary catheter or ostomy device that does not leak urine or stool]' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/continence-level: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'USUALLY CONTINENT' for http://loinc.org#LA127-3. Valid display is 'USUALLY CONTINENT-BLADDER, incontinent episodes once a week or less; BOWEL, less than weekly' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/continence-level: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'OCCASIONALLY INCONTINENT' for http://loinc.org#LA128-1. Valid display is 'OCCASIONALLY INCONTINENT-BLADDER, 2 or more times a week but not daily; BOWEL, once a week' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/continence-level: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'FREQUENTLY INCONTINENT' for http://loinc.org#LA129-9. Valid display is 'FREQUENTLY INCONTINENT-BLADDER, tended to be incontinent daily, but some control present (e.g., on day shift); BOWEL, 2-3 times a week' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/continence-level: ValueSet.compose.include[0].concept[4]: Wrong Display Name 'INCONTINENT' for http://loinc.org#LA130-7. Valid display is 'INCONTINENT-Had inadequate control BLADDER, multiple daily episodes; BOWEL, all (or almost all) of the time' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+== fsh-generated/resources/ValueSet-heart-failure-symptoms.json ==
+WARNING: ValueSet/heart-failure-symptoms: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://snomed.info/sct/11000172109'
+INFORMATION: ValueSet/heart-failure-symptoms: ValueSet.compose.include[1].concept[0]: A definition for CodeSystem 'http://snomed.info/sct/11000172109' could not be found, so the code cannot be validated
+WARNING: ValueSet.where(id = 'heart-failure-symptoms'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://snomed.info/sct/11000172109' could not be found, so the value set cannot be expanded
+== fsh-generated/resources/ValueSet-holter-event-codes.json ==
+== fsh-generated/resources/ValueSet-holter-event-component-codes.json ==
+== fsh-generated/resources/ValueSet-holter-report-code.json ==
+== fsh-generated/resources/ValueSet-pain-scale.json ==
+== fsh-generated/resources/ValueSet-symptom-severity.json ==
+== fsh-generated/resources/ValueSet-well-poor-scale.json ==

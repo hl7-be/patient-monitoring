@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyTemperatureExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BodyTemperatureExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/bodytemp" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/bodytemp>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BodyTemperatureExample</b></p><a name=\"BodyTemperatureExample\"> </a><a name=\"hcBodyTemperatureExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/bodytemp.html\">Observation Body Temperature Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body Temperature</span></p><p><b>subject</b>: Identifier: <code>https://vitalsigns.byteflies.net/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2024-11-19 19:30:42+0000</p><p><b>performer</b>: <a href=\"#hcBodyTemperatureExample/byteflies\">Organization Byteflies</a></p><p><b>value</b>: 35.29 C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>device</b>: <a href=\"#hcBodyTemperatureExample/vital-signs-box\">Device: identifier = 240822yti3tgeyay; manufacturer = Byteflies</a></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Device #vital-signs-box</b></p><a name=\"BodyTemperatureExample/vital-signs-box\"> </a><a name=\"hcBodyTemperatureExample/vital-signs-box\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Tag: </p></div><p><b>identifier</b>: 240822yti3tgeyay</p><p><b>manufacturer</b>: Byteflies</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>VS-4</td><td>other</td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization #byteflies</b></p><a name=\"BodyTemperatureExample/byteflies\"> </a><a name=\"hcBodyTemperatureExample/byteflies\"> </a><p><b>name</b>: Byteflies</p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Device ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "vital-signs-box" ] ;
+     fhir:Resource.meta [
+       fhir:Meta.tag [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://api-vitalsigns.byteflies.net/version" ] ;
+         fhir:Coding.code [ fhir:value "20241028-1511" ] ;
+         fhir:Coding.display [ fhir:value "API Version 20241028-1511" ]
+       ]
+     ] ;
+     fhir:Device.identifier [
+       fhir:index 0 ;
+       fhir:Identifier.value [ fhir:value "240822yti3tgeyay" ]
+     ] ;
+     fhir:Device.manufacturer [ fhir:value "Byteflies" ] ;
+     fhir:Device.deviceName [
+       fhir:index 0 ;
+       fhir:Device.deviceName.name [ fhir:value "VS-4" ] ;
+       fhir:Device.deviceName.type [ fhir:value "other" ]
+     ]
+  ], [
+     a fhir:Organization ;
+     fhir:index 1 ;
+     fhir:Resource.id [ fhir:value "byteflies" ] ;
+     fhir:Organization.name [ fhir:value "Byteflies" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ] ;
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:8310-5 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "8310-5" ] ;
+       fhir:Coding.display [ fhir:value "Body Temperature" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://vitalsigns.byteflies.net/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "EFD5E060-9522-48BE-9ECC-3BFA54EA3666" ]
+     ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2024-11-19T19:30:42+00:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:Reference.reference [ fhir:value "#byteflies" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "35.29"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "C" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "Cel" ]
+  ] ;
+  fhir:Observation.device [
+     fhir:Reference.reference [ fhir:value "#vital-signs-box" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/BodyTemperatureExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

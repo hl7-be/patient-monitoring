@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Spoed> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CareTeam-Spoed"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-Spoed</b></p><a name=\"CareTeam-Spoed\"> </a><a name=\"hcCareTeam-Spoed\"> </a><p><b>status</b>: Active</p><p><b>name</b>: Receptie spoed</p><p><b>telecom</b>: ph: 016/34 39 00</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Receptie spoed"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "016/34 39 00" ] ;
+     fhir:rank [ fhir:v "11"^^xsd:positiveInteger ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

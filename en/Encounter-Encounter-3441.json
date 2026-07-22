@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "Encounter-3441",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter Encounter-3441</b></p><a name=\"Encounter-3441\"> </a><a name=\"hcEncounter-3441\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">primary performer</span></td><td>John Doe rizivnr</td></tr></table><p><b>period</b>: 2025-11-19 11:07:52+0000 --&gt; (ongoing)</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 18629005}, {http://snomed.info/sct 276844002}\">subcutane inspuiting</span></p><p><b>serviceProvider</b>: Wit-Gele Kruis Vlaams-Brabant</p></div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "HH",
+    "display" : "home health"
+  },
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PPRF",
+        "display" : "primary performer"
+      }]
+    }],
+    "individual" : {
+      "display" : "John Doe rizivnr"
+    }
+  }],
+  "period" : {
+    "start" : "2025-11-19T11:07:52+00:00"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "18629005",
+      "display" : "Administration of drug or medicament (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "276844002",
+      "display" : "Injection to subcutaneous drug delivery port (procedure)"
+    }],
+    "text" : "subcutane inspuiting"
+  }],
+  "serviceProvider" : {
+    "display" : "Wit-Gele Kruis Vlaams-Brabant"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CareTeam",
+  "id" : "CareTeam-OPAT",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-OPAT</b></p><a name=\"CareTeam-OPAT\"> </a><a name=\"hcCareTeam-OPAT\"> </a><p><b>status</b>: Active</p><p><b>name</b>: OPAT team</p><p><b>telecom</b>: <a href=\"mailto:opat@uzleuven.be\">opat@uzleuven.be</a>, ph: 016/34 32 74</p></div>"
+  },
+  "status" : "active",
+  "name" : "OPAT team",
+  "telecom" : [{
+    "system" : "email",
+    "value" : "opat@uzleuven.be",
+    "rank" : 1
+  },
+  {
+    "system" : "phone",
+    "value" : "016/34 32 74",
+    "rank" : 1
+  }]
+}

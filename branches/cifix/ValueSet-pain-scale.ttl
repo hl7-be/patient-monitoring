@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ValueSet/pain-scale> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pain-scale"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet pain-scale</b></p><a name=\"pain-scale\"> </a><a name=\"hcpain-scale\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6111-4/\">LA6111-4</a></td><td>0</td></tr><tr><td><a href=\"https://loinc.org/LA6112-2/\">LA6112-2</a></td><td>1</td></tr><tr><td><a href=\"https://loinc.org/LA6113-0/\">LA6113-0</a></td><td>2 or more</td></tr><tr><td><a href=\"https://loinc.org/LA6114-8/\">LA6114-8</a></td><td>3</td></tr><tr><td><a href=\"https://loinc.org/LA6115-5/\">LA6115-5</a></td><td>4</td></tr><tr><td><a href=\"https://loinc.org/LA10137-0/\">LA10137-0</a></td><td>5</td></tr><tr><td><a href=\"https://loinc.org/LA10138-8/\">LA10138-8</a></td><td>6</td></tr><tr><td><a href=\"https://loinc.org/LA10139-6/\">LA10139-6</a></td><td>7</td></tr><tr><td><a href=\"https://loinc.org/LA10140-4/\">LA10140-4</a></td><td>8</td></tr><tr><td><a href=\"https://loinc.org/LA10141-2/\">LA10141-2</a></td><td>9</td></tr><tr><td><a href=\"https://loinc.org/LA13942-0/\">LA13942-0</a></td><td>10</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/pain-scale"^^xsd:anyURI ;
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/pain-scale>
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:l <urn:ietf:rfc:3986>
+     ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.40.54.48.9" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PainScale"] ; # 
+  fhir:title [ fhir:v "Pain severity - 0-10 verbal numeric rating"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-19T06:47:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Pain severity scale, where 0 is no pain and 10 is the worst pain imaginable. See https://loinc.org/72514-3"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA6111-4" ] ;
+         fhir:display [ fhir:v "0" ]
+       ] [
+         fhir:code [ fhir:v "LA6112-2" ] ;
+         fhir:display [ fhir:v "1" ]
+       ] [
+         fhir:code [ fhir:v "LA6113-0" ] ;
+         fhir:display [ fhir:v "2 or more" ]
+       ] [
+         fhir:code [ fhir:v "LA6114-8" ] ;
+         fhir:display [ fhir:v "3" ]
+       ] [
+         fhir:code [ fhir:v "LA6115-5" ] ;
+         fhir:display [ fhir:v "4" ]
+       ] [
+         fhir:code [ fhir:v "LA10137-0" ] ;
+         fhir:display [ fhir:v "5" ]
+       ] [
+         fhir:code [ fhir:v "LA10138-8" ] ;
+         fhir:display [ fhir:v "6" ]
+       ] [
+         fhir:code [ fhir:v "LA10139-6" ] ;
+         fhir:display [ fhir:v "7" ]
+       ] [
+         fhir:code [ fhir:v "LA10140-4" ] ;
+         fhir:display [ fhir:v "8" ]
+       ] [
+         fhir:code [ fhir:v "LA10141-2" ] ;
+         fhir:display [ fhir:v "9" ]
+       ] [
+         fhir:code [ fhir:v "LA13942-0" ] ;
+         fhir:display [ fhir:v "10" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

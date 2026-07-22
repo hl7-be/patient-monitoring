@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Appointment/Appointment-testapp> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Appointment-testapp"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment Appointment-testapp</b></p><a name=\"Appointment-testapp\"> </a><a name=\"hcAppointment-testapp\"> </a><p><b>identifier</b>: <code>https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr</code>/123456 (use: usual, )</p><p><b>status</b>: Fulfilled</p><p><b>start</b>: 2025-08-11 09:15:00+0200</p><p><b>end</b>: 2025-08-11 09:25:00+0200</p><p><b>minutesDuration</b>: 10</p><p><b>created</b>: 2025-08-06 13:16:41+0200</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Location-testloc.html\">Location UZ Leuven - Raadpleging</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>status</b>: Accepted</p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [
+       fhir:v "https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr"^^xsd:anyURI ;
+       fhir:l <https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr>
+     ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "fulfilled"] ; # 
+  fhir:start [ fhir:v "2025-08-11T09:15:00.000+02:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2025-08-11T09:25:00.000+02:00"^^xsd:dateTime] ; # 
+  fhir:minutesDuration [ fhir:v "10"^^xsd:positiveInteger] ; # 
+  fhir:created [ fhir:v "2025-08-06T13:16:41+02:00"^^xsd:dateTime] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Location/testloc> ;
+       fhir:reference [ fhir:v "Location/testloc" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+       fhir:reference [ fhir:v "Patient/Patient-123" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

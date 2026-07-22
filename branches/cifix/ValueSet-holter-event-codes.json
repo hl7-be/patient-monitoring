@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "holter-event-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet holter-event-codes</b></p><a name=\"holter-event-codes\"> </a><a name=\"hcholter-event-codes\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 301120008 (ECG: presence findings)</li></ul></div>"
+  },
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.54.48.1"
+  }],
+  "version" : "0.1.0",
+  "name" : "HolterEventCodes",
+  "title" : "Holter Event Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-05-19T06:47:26+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes used to classify Holter-detected rhythm events",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "301120008"
+      }]
+    }]
+  }
+}
