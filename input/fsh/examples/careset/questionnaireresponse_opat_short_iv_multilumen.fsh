@@ -2,8 +2,8 @@ Alias: $sct = http://snomed.info/sct
 
 Instance: HomehospOpatShortIVQRMultiLumenExample
 InstanceOf: QuestionnaireResponse
-Title: "OPAT short IV QR - 3-lumen tunneled catheter"
-Description: "QuestionnaireResponse for OPAT home hospitalization (short IV) with a 3-lumen tunneled catheter. The red lumen (lumen 3) is completely obstructed — blood aspiration and infusion both impossible. Administration was completed via the gray lumen (lumen 1) after telephone consultation with the hospital team. The short IV questionnaire records one set of lumen items; observations for the other two functioning lumens are captured in the free-text field."
+Title: "QuestionnaireResponse: OPAT short IV QR - 3-lumen tunneled catheter"
+Description: "QuestionnaireResponse for OPAT home hospitalization (short IV) with a 3-lumen tunneled catheter, demonstrating per-lumen catheter observation. The red lumen (lumen 3) is completely obstructed — blood aspiration and infusion both impossible. Administration was completed via the gray lumen (lumen 1) after telephone consultation with the hospital team. Uses the homehosp-opat-short-iv questionnaire, which carries a repeating G_Lumen group."
 Usage: #example
 
 * questionnaire = "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-opat-short-iv"
@@ -68,8 +68,8 @@ Usage: #example
 
 // --- Subgroup 6: Observatie katheter ---
 // 3-lumen tunneled catheter. Red lumen (lumen 3) fully obstructed — both blood aspiration and
-// infusion impossible. Lumens 1 (gray) and 2 (purple) are functioning normally; their observations
-// are described in G6_Other because the questionnaire carries a single set of per-lumen items.
+// infusion impossible. Lumens 1 (gray) and 2 (purple) are functioning normally. Each lumen is
+// recorded as its own repeated G_Lumen group instance.
 * item[0].item[6].linkId = "Catheter"
 * item[0].item[6].text = "Observatie katheter"
 
@@ -83,18 +83,44 @@ Usage: #example
 * item[0].item[6].item[1].text = "Kies kathetertype"
 * item[0].item[6].item[1].answer.valueCoding = $sct#1396538005 "3-lumen tunneled catheter"
 
-// Documenting the obstructed lumen (red, lumen 3) in the single lumen observation set
-* item[0].item[6].item[2].linkId = "G_KleurLumen"
-* item[0].item[6].item[2].text = "Kleur lumen"
-* item[0].item[6].item[2].answer.valueCoding = $sct#371240000 "Red colour"
+// Lumen 1 — Gray: easy blood aspiration and easy infusion
+* item[0].item[6].item[2].linkId = "G_Lumen"
+* item[0].item[6].item[2].text = "Per-lumen observation"
+* item[0].item[6].item[2].item[0].linkId = "G_LumenColor"
+* item[0].item[6].item[2].item[0].text = "Kleur lumen"
+* item[0].item[6].item[2].item[0].answer.valueCoding = $sct#371253002 "Gray color"
+* item[0].item[6].item[2].item[1].linkId = "G3_BloodAspiration"
+* item[0].item[6].item[2].item[1].text = "Bloedaspiratie"
+* item[0].item[6].item[2].item[1].answer.valueCoding = $sct#36203004 "Easy"
+* item[0].item[6].item[2].item[2].linkId = "G4_Infusion"
+* item[0].item[6].item[2].item[2].text = "Infusie"
+* item[0].item[6].item[2].item[2].answer.valueCoding = $sct#36203004 "Easy"
 
-* item[0].item[6].item[3].linkId = "G3_BloodAspiration"
-* item[0].item[6].item[3].text = "Bloedaspiratie"
-* item[0].item[6].item[3].answer.valueCoding = $sct#385671000 "Unsuccessful"
+// Lumen 2 — Purple: easy blood aspiration and easy infusion
+* item[0].item[6].item[3].linkId = "G_Lumen"
+* item[0].item[6].item[3].text = "Per-lumen observation"
+* item[0].item[6].item[3].item[0].linkId = "G_LumenColor"
+* item[0].item[6].item[3].item[0].text = "Kleur lumen"
+* item[0].item[6].item[3].item[0].answer.valueCoding = $sct#371250004 "Purple colour"
+* item[0].item[6].item[3].item[1].linkId = "G3_BloodAspiration"
+* item[0].item[6].item[3].item[1].text = "Bloedaspiratie"
+* item[0].item[6].item[3].item[1].answer.valueCoding = $sct#36203004 "Easy"
+* item[0].item[6].item[3].item[2].linkId = "G4_Infusion"
+* item[0].item[6].item[3].item[2].text = "Infusie"
+* item[0].item[6].item[3].item[2].answer.valueCoding = $sct#36203004 "Easy"
 
-* item[0].item[6].item[4].linkId = "G4_Infusion"
-* item[0].item[6].item[4].text = "Infusie"
-* item[0].item[6].item[4].answer.valueCoding = $sct#385671000 "Unsuccessful"
+// Lumen 3 — Red: fully obstructed, blood aspiration and infusion both impossible
+* item[0].item[6].item[4].linkId = "G_Lumen"
+* item[0].item[6].item[4].text = "Per-lumen observation"
+* item[0].item[6].item[4].item[0].linkId = "G_LumenColor"
+* item[0].item[6].item[4].item[0].text = "Kleur lumen"
+* item[0].item[6].item[4].item[0].answer.valueCoding = $sct#371240000 "Red colour"
+* item[0].item[6].item[4].item[1].linkId = "G3_BloodAspiration"
+* item[0].item[6].item[4].item[1].text = "Bloedaspiratie"
+* item[0].item[6].item[4].item[1].answer.valueCoding = $sct#385671000 "Unsuccessful"
+* item[0].item[6].item[4].item[2].linkId = "G4_Infusion"
+* item[0].item[6].item[4].item[2].text = "Infusie"
+* item[0].item[6].item[4].item[2].answer.valueCoding = $sct#385671000 "Unsuccessful"
 
 * item[0].item[6].item[5].linkId = "G5_DamagedCatheter"
 * item[0].item[6].item[5].text = "Beschadigde katheter"
@@ -102,7 +128,7 @@ Usage: #example
 
 * item[0].item[6].item[6].linkId = "G6_Other"
 * item[0].item[6].item[6].text = "Andere: (indien van toepassing)"
-* item[0].item[6].item[6].answer.valueString = "Grijs lumen (lumen 1): bloedaspiratie vlot, infusie vlot. Paars lumen (lumen 2): bloedaspiratie vlot, infusie vlot. Rood lumen (lumen 3): bloedaspiratie en infusie niet mogelijk — volledig geobstrueerd. Zorgteam verwittigd."
+* item[0].item[6].item[6].answer.valueString = "Rood lumen (lumen 3) volledig geobstrueerd. Zorgteam verwittigd."
 
 // --- Subgroup 7: Nevenwerkingen ---
 * item[0].item[7].linkId = "SideEffects"

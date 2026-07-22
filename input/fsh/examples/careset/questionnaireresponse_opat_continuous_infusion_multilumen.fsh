@@ -2,7 +2,7 @@ Alias: $sct = http://snomed.info/sct
 
 Instance: HomehospOpatContinuousInfusionQRMultiLumenExample
 InstanceOf: QuestionnaireResponse
-Title: "OPAT continuous infusion QR - 2-lumen tunneled catheter"
+Title: "QuestionnaireResponse: OPAT continuous infusion QR - 2-lumen tunneled catheter"
 Description: "QuestionnaireResponse for OPAT home hospitalization (continuous infusion) demonstrating per-lumen catheter observation with a 2-lumen tunneled catheter. Lumen 2 (white) shows difficult blood aspiration, triggering an Abnormal catheter observation. Uses the SDC definitions questionnaire which carries a repeating G_Lumen group."
 Usage: #example
 

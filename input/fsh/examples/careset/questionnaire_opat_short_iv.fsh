@@ -257,26 +257,32 @@ Usage: #definition
 * item[nursingAssessment].item[=].item[=].code = $sct#246138005 "Type of catheter"
 * item[nursingAssessment].item[=].item[=].answerValueSet = Canonical(CatheterTypeVS)
 
-* item[nursingAssessment].item[=].item[+].linkId = "G_KleurLumen"
-* item[nursingAssessment].item[=].item[=].text = "Kleur lumen"
-* item[nursingAssessment].item[=].item[=].type = #choice
-* item[nursingAssessment].item[=].item[=].code = $sct#1396483008 "Color of intravascular catheter lumen hub"
-* item[nursingAssessment].item[=].item[=].answerOption[0].valueCoding = $sct#371253002 "Gray color"
-* item[nursingAssessment].item[=].item[=].answerOption[+].valueCoding = $sct#371251000 "White colour"
-* item[nursingAssessment].item[=].item[=].answerOption[+].valueCoding = $sct#371240000 "Red colour"
-* item[nursingAssessment].item[=].item[=].answerOption[+].valueCoding = $sct#371250004 "Purple colour"
+// G_Lumen is a repeating sub-group: one instance per catheter lumen
+* item[nursingAssessment].item[=].item[+].linkId = "G_Lumen"
+* item[nursingAssessment].item[=].item[=].text = "Per-lumen observation"
+* item[nursingAssessment].item[=].item[=].type = #group
+* item[nursingAssessment].item[=].item[=].repeats = true
 
-* item[nursingAssessment].item[=].item[+].linkId = "G3_BloodAspiration"
-* item[nursingAssessment].item[=].item[=].text = "Bloedaspiratie"
-* item[nursingAssessment].item[=].item[=].type = #choice
-* item[nursingAssessment].item[=].item[=].code = $sct#25797006 "Blood aspiration"
-* item[nursingAssessment].item[=].item[=].answerValueSet = Canonical(CatheterPatencyVS)
+* item[nursingAssessment].item[=].item[=].item[0].linkId = "G_LumenColor"
+* item[nursingAssessment].item[=].item[=].item[=].text = "Kleur lumen"
+* item[nursingAssessment].item[=].item[=].item[=].type = #choice
+* item[nursingAssessment].item[=].item[=].item[=].code = $sct#1396483008 "Color of intravascular catheter lumen hub"
+* item[nursingAssessment].item[=].item[=].item[=].answerOption[0].valueCoding = $sct#371253002 "Gray color"
+* item[nursingAssessment].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#371251000 "White colour"
+* item[nursingAssessment].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#371240000 "Red colour"
+* item[nursingAssessment].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#371250004 "Purple colour"
 
-* item[nursingAssessment].item[=].item[+].linkId = "G4_Infusion"
-* item[nursingAssessment].item[=].item[=].text = "Infusie"
-* item[nursingAssessment].item[=].item[=].type = #choice
-* item[nursingAssessment].item[=].item[=].code = $sct#36576007 "Infusion"
-* item[nursingAssessment].item[=].item[=].answerValueSet = Canonical(CatheterPatencyVS)
+* item[nursingAssessment].item[=].item[=].item[+].linkId = "G3_BloodAspiration"
+* item[nursingAssessment].item[=].item[=].item[=].text = "Bloedaspiratie"
+* item[nursingAssessment].item[=].item[=].item[=].type = #choice
+* item[nursingAssessment].item[=].item[=].item[=].code = $sct#25797006 "Blood aspiration"
+* item[nursingAssessment].item[=].item[=].item[=].answerValueSet = Canonical(CatheterPatencyVS)
+
+* item[nursingAssessment].item[=].item[=].item[+].linkId = "G4_Infusion"
+* item[nursingAssessment].item[=].item[=].item[=].text = "Infusie"
+* item[nursingAssessment].item[=].item[=].item[=].type = #choice
+* item[nursingAssessment].item[=].item[=].item[=].code = $sct#36576007 "Infusion"
+* item[nursingAssessment].item[=].item[=].item[=].answerValueSet = Canonical(CatheterPatencyVS)
 
 * item[nursingAssessment].item[=].item[+].linkId = "G5_DamagedCatheter"
 * item[nursingAssessment].item[=].item[=].text = "Beschadigde katheter"

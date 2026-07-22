@@ -16,7 +16,7 @@ Alias: $unitsofmeasure = http://unitsofmeasure.org
 Instance: OpatContinuousInfusionDefinitions
 InstanceOf: Questionnaire
 Title: "Questionnaire: OPAT SDC Extraction (Continuous Infusion)"
-Description: "Questionnaire for home hospitalization OPAT (continuous infusion) with SDC definition-based extraction mappings."
+Description: "The OPAT continuous infusion Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations."
 Usage: #example
 * id = "homehosp-q-opat-definitions"
 * status = #active

@@ -88,11 +88,11 @@ dependencies:
 # look like:
 resources:
   Questionnaire/homehosp-q-opat-definitions:
-    name: "OPAT SDC Questionnaire with Extraction Definitions"
+    name: "Questionnaire: OPAT SDC Questionnaire with Extraction Definitions"
     description: "The OPAT continuous infusion Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations."
     exampleBoolean: true
   Questionnaire/homehosp-q-onco-definitions:
-    name: "ONCO SDC Questionnaire with Extraction Definitions (Trastuzumab)"
+    name: "Questionnaire: ONCO SDC Questionnaire with Extraction Definitions (Trastuzumab)"
     description: "The ONCO Trastuzumab Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations."
     exampleBoolean: true
 

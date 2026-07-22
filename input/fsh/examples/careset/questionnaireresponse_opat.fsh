@@ -2,7 +2,7 @@ Alias: $sct = http://snomed.info/sct
 
 Instance: HomehospOpatContinuousInfusionQuestionnaireResponseExample
 InstanceOf: QuestionnaireResponse
-Title: "QuestionnaireResponse: OPAT Home Hospitalization"
+Title: "QuestionnaireResponse: OPAT Home Hospitalization - continuous infusion"
 Description: "Response to questionnaire containing the necessary information for the home hospitalization of a patient treated with a continuous infusion in the context of an OPAT treatment"
 Usage: #example
 
@@ -86,24 +86,24 @@ Usage: #example
 * item[0].item[6].item[1].text = "Kies kathetertype"
 * item[0].item[6].item[1].answer.valueCoding = $sct#1396546006 "Tunneled catheter with 1 lumen"
 
-* item[0].item[6].item[2].linkId = "G_LumenColor"
-* item[0].item[6].item[2].text = "Kleur lumen"
-* item[0].item[6].item[2].answer.valueCoding = $sct#371253002 "Gray color"
+* item[0].item[6].item[2].linkId = "G_Lumen"
+* item[0].item[6].item[2].text = "Per-lumen observation"
+* item[0].item[6].item[2].item[0].linkId = "G_LumenColor"
+* item[0].item[6].item[2].item[0].text = "Kleur lumen"
+* item[0].item[6].item[2].item[0].answer.valueCoding = $sct#371253002 "Gray color"
+* item[0].item[6].item[2].item[1].linkId = "G3_BloodAspiration"
+* item[0].item[6].item[2].item[1].text = "Bloedaspiratie"
+* item[0].item[6].item[2].item[1].answer.valueCoding = $sct#36203004 "Easy"
+* item[0].item[6].item[2].item[2].linkId = "G4_Infusion"
+* item[0].item[6].item[2].item[2].text = "Infusie"
+* item[0].item[6].item[2].item[2].answer.valueCoding = $sct#36203004 "Easy"
 
-* item[0].item[6].item[3].linkId = "G3_BloodAspiration"
-* item[0].item[6].item[3].text = "Bloedaspiratie"
-* item[0].item[6].item[3].answer.valueCoding = $sct#36203004 "Easy"
+* item[0].item[6].item[3].linkId = "G5_DamagedCatheter"
+* item[0].item[6].item[3].text = "Beschadigde katheter"
+* item[0].item[6].item[3].answer.valueCoding = $sct#373067005 "No"
 
-* item[0].item[6].item[4].linkId = "G4_Infusion"
-* item[0].item[6].item[4].text = "Infusie"
-* item[0].item[6].item[4].answer.valueCoding = $sct#36203004 "Easy"
-
-* item[0].item[6].item[5].linkId = "G5_DamagedCatheter"
-* item[0].item[6].item[5].text = "Beschadigde katheter"
-* item[0].item[6].item[5].answer.valueCoding = $sct#373067005 "No"
-
-* item[0].item[6].item[6].linkId = "G6_Other"
-* item[0].item[6].item[6].text = "Andere: (indien van toepassing)"
+* item[0].item[6].item[4].linkId = "G6_Other"
+* item[0].item[6].item[4].text = "Andere: (indien van toepassing)"
 
 // --- Subgroup 7: Nevenwerkingen ---
 * item[0].item[7].linkId = "SideEffects"

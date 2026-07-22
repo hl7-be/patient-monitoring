@@ -16,7 +16,7 @@ Alias: $unitsofmeasure = http://unitsofmeasure.org
 Instance: OncoContinuousInfusionDefinitions
 InstanceOf: Questionnaire
 Title: "Questionnaire: ONCO SDC Extraction (Trastuzumab)"
-Description: "Questionnaire for home hospitalization oncology (Trastuzumab) with SDC definition-based extraction mappings."
+Description: "The ONCO Trastuzumab Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations."
 Usage: #example
 * id = "homehosp-q-onco-definitions"
 * status = #active
