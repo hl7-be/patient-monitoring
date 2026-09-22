@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Appointment/Appointment-testapp> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Appointment-testapp"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment Appointment-testapp</b></p><a name=\"Appointment-testapp\"> </a><a name=\"hcAppointment-testapp\"> </a><p><b>identifier</b>: <code>https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr</code>/123456 (use: usual, )</p><p><b>status</b>: Fulfilled</p><p><b>start</b>: 2025-08-11 09:15:00+0200</p><p><b>end</b>: 2025-08-11 09:25:00+0200</p><p><b>minutesDuration</b>: 10</p><p><b>created</b>: 2025-08-06 13:16:41+0200</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Location-testloc.html\">Location UZ Leuven - Consultation</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>status</b>: Accepted</p></blockquote></div>"
+  ] ;
+  fhir:Appointment.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr" ] ;
+     fhir:Identifier.value [ fhir:value "123456" ]
+  ] ;
+  fhir:Appointment.status [ fhir:value "fulfilled"] ;
+  fhir:Appointment.start [ fhir:value "2025-08-11T09:15:00.000+02:00"^^xsd:dateTime] ;
+  fhir:Appointment.end [ fhir:value "2025-08-11T09:25:00.000+02:00"^^xsd:dateTime] ;
+  fhir:Appointment.minutesDuration [ fhir:value "10"^^xsd:positiveInteger] ;
+  fhir:Appointment.created [ fhir:value "2025-08-06T13:16:41+02:00"^^xsd:dateTime] ;
+  fhir:Appointment.participant [
+     fhir:index 0 ;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Location/testloc> ;
+       fhir:Reference.reference [ fhir:value "Location/testloc" ]
+     ] ;
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+       fhir:Reference.reference [ fhir:value "Patient/Patient-123" ]
+     ] ;
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Appointment/Appointment-testapp.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="PractitionerRole-16500"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole PractitionerRole-16500</b></p><a name="PractitionerRole-16500"> </a><a name="hcPractitionerRole-16500"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-practitionerrole.html">BePractitionerRole</a></p></div><p><b>identifier</b>: <code>https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id</code>/16500</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persphysician}">Physician</span></p><p><b>specialty</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty drgeneralphysician}">General Physician</span></p></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id"/>
+    <value value="16500"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+      <code value="persphysician"/>
+      <display value="Physician"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+      <code value="drgeneralphysician"/>
+      <display value="General Physician"/>
+    </coding>
+  </specialty>
+</PractitionerRole>

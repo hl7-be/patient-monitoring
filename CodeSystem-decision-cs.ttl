@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "decision-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem decision-cs</b></p><a name=\"decision-cs\"> </a><a name=\"hcdecision-cs\"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">administration<a name=\"decision-cs-administration\"> </a></td><td>Medication administered</td><td>Medication could be administered according to the procedure.</td></tr><tr><td style=\"white-space:nowrap\">no-administration<a name=\"decision-cs-no-administration\"> </a></td><td>Medication NOT administered</td><td>Medication was not administered due to contraindications.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"decision-cs-other\"> </a></td><td>Other</td><td>A different outcome was agreed upon after consultation with the hospital care team.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113883.4.642.40.54.16.1" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DecisionCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Medication Administration Decision Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-22T07:37:58+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Belgium"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Belgium" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Bob Smith" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local codes for the nurse's decision following contraindication assessment in ONCO home-hospitalization questionnaires."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "administration" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication administered" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medication could be administered according to the procedure." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "no-administration" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication NOT administered" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medication was not administered due to contraindications." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A different outcome was agreed upon after consultation with the hospital care team." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

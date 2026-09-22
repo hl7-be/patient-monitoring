@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Spoed> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CareTeam-Spoed"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-Spoed</b></p><a name=\"CareTeam-Spoed\"> </a><a name=\"hcCareTeam-Spoed\"> </a><p><b>status</b>: Active</p><p><b>name</b>: Emergency reception</p><p><b>telecom</b>: ph: 016/34 39 00</p></div>"
+  ] ;
+  fhir:CareTeam.status [ fhir:value "active"] ;
+  fhir:CareTeam.name [ fhir:value "Emergency reception"] ;
+  fhir:CareTeam.telecom [
+     fhir:index -1 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "016/34 39 00" ] ;
+     fhir:ContactPoint.rank [ fhir:value "11"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Spoed.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,390 @@
+[{
+  "id" : "hl7.fhir.be.patient-monitoring",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring",
+  "version" : "0.1.0",
+  "name" : "PatientMonitoringOutcome",
+  "oids" : ["2.16.840.1.113883.4.642.40.54"]
+},
+{
+  "id" : "AzacitidineV1",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/AzacitidineV1",
+  "version" : "0.1.0",
+  "name" : "AzacitidineV1",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.1"]
+},
+{
+  "id" : "BortezomibV1",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/BortezomibV1",
+  "version" : "0.1.0",
+  "name" : "BortezomibV1",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.3"]
+},
+{
+  "id" : "DaratumumabV1",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/DaratumumabV1",
+  "version" : "0.1.0",
+  "name" : "DaratumumabV1",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.4"]
+},
+{
+  "id" : "FulvestrantV1",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/FulvestrantV1",
+  "version" : "0.1.0",
+  "name" : "FulvestrantV1",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.5"]
+},
+{
+  "id" : "OPATContinuInfuusV1",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/OPATContinuInfuusV1",
+  "version" : "0.1.0",
+  "name" : "OPATContinuInfuusV1",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.2"]
+},
+{
+  "id" : "OPATKortIVV1",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/OPATKortIVV1",
+  "version" : "0.1.0",
+  "name" : "OPATKortIVV1",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.6"]
+},
+{
+  "id" : "TrastuzumabV1",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/TrastuzumabV1",
+  "version" : "0.1.0",
+  "name" : "TrastuzumabV1",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.7"]
+},
+{
+  "id" : "homehosp-q-onco-definitions",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-onco-definitions",
+  "version" : "0.1.0",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.8"]
+},
+{
+  "id" : "homehosp-q-opat-definitions",
+  "type" : "Questionnaire",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-q-opat-definitions",
+  "version" : "0.1.0",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.35.9"]
+},
+{
+  "id" : "appetite-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/appetite-observation",
+  "version" : "0.1.0",
+  "name" : "AppetiteObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.5"]
+},
+{
+  "id" : "bladder-continence-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/bladder-continence-observation",
+  "version" : "0.1.0",
+  "name" : "BladderContinenceObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.4"]
+},
+{
+  "id" : "clinical-note-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/clinical-note-observation",
+  "version" : "0.1.0",
+  "name" : "ClinicalNoteObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.12"]
+},
+{
+  "id" : "drain-fluid-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/drain-fluid-observation",
+  "version" : "0.1.0",
+  "name" : "DrainFluidObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.3"]
+},
+{
+  "id" : "holter-diagnostic-report",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report",
+  "version" : "0.1.0",
+  "name" : "HolterDiagnosticReport",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.1"]
+},
+{
+  "id" : "holter-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation",
+  "version" : "0.1.0",
+  "name" : "HolterObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.2"]
+},
+{
+  "id" : "homehosp-encounter",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-encounter",
+  "version" : "0.1.0",
+  "name" : "HomehospEncounter",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.13"]
+},
+{
+  "id" : "homehosp-encounter-lm",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-encounter-lm",
+  "version" : "0.1.0",
+  "name" : "HomeHospEncounter",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.22"]
+},
+{
+  "id" : "homehosp-onco-azacitidine",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-azacitidine",
+  "version" : "0.1.0",
+  "name" : "HomehospOncoAzacitidineQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.23"]
+},
+{
+  "id" : "homehosp-onco-bortezomib",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-bortezomib",
+  "version" : "0.1.0",
+  "name" : "HomehospOncoBortezomibQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.24"]
+},
+{
+  "id" : "homehosp-onco-daratumumab",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-daratumumab",
+  "version" : "0.1.0",
+  "name" : "HomehospOncoDaratumumabQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.25"]
+},
+{
+  "id" : "homehosp-onco-fulvestrant",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-fulvestrant",
+  "version" : "0.1.0",
+  "name" : "HomehospOncoFulvestrantQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.26"]
+},
+{
+  "id" : "homehosp-onco-trastuzumab",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-trastuzumab",
+  "version" : "0.1.0",
+  "name" : "HomehospOncoTrastuzumabQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.27"]
+},
+{
+  "id" : "homehosp-opat-continuous-infusion",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-continuous-infusion",
+  "version" : "0.1.0",
+  "name" : "HomehospOpatContinuousInfusionQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.28"]
+},
+{
+  "id" : "homehosp-opat-short-iv",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-short-iv",
+  "version" : "0.1.0",
+  "name" : "HomehospOpatShortIVQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.29"]
+},
+{
+  "id" : "homehosp-questionnaire-response",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-questionnaire-response",
+  "version" : "0.1.0",
+  "name" : "HomehospQuestionnaireResponse",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.14"]
+},
+{
+  "id" : "homehosp-questionnaire-response-lm",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-questionnaire-response-lm",
+  "version" : "0.1.0",
+  "name" : "HomeHospQuestionnaireResponse",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.30"]
+},
+{
+  "id" : "nausea-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/nausea-observation",
+  "version" : "0.1.0",
+  "name" : "NauseaObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.7"]
+},
+{
+  "id" : "onco-azacitidine-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-azacitidine-questionnaire",
+  "version" : "0.1.0",
+  "name" : "ONCOAzacitidineQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.15"]
+},
+{
+  "id" : "onco-bortezomib-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-bortezomib-questionnaire",
+  "version" : "0.1.0",
+  "name" : "ONCOBortezomibQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.16"]
+},
+{
+  "id" : "onco-daratumumab-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-daratumumab-questionnaire",
+  "version" : "0.1.0",
+  "name" : "ONCODaratumumabQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.17"]
+},
+{
+  "id" : "onco-fulvestrant-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-fulvestrant-questionnaire",
+  "version" : "0.1.0",
+  "name" : "ONCOFulvestrantQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.18"]
+},
+{
+  "id" : "onco-trastuzumab-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/onco-trastuzumab-questionnaire",
+  "version" : "0.1.0",
+  "name" : "ONCOTrastuzumabQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.19"]
+},
+{
+  "id" : "opat-continuous-infusion-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/opat-continuous-infusion-questionnaire",
+  "version" : "0.1.0",
+  "name" : "OPATContinuousInfusionQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.20"]
+},
+{
+  "id" : "opat-short-iv-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/opat-short-iv-questionnaire",
+  "version" : "0.1.0",
+  "name" : "OPATShortIVQuestionnaire",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.21"]
+},
+{
+  "id" : "painkiller-usage-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/painkiller-usage-observation",
+  "version" : "0.1.0",
+  "name" : "PainkillerUsageObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.9"]
+},
+{
+  "id" : "stool-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/stool-observation",
+  "version" : "0.1.0",
+  "name" : "StoolObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.10"]
+},
+{
+  "id" : "surgical-wound-pain-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/surgical-wound-pain-observation",
+  "version" : "0.1.0",
+  "name" : "SurgicalWoundPainObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.6"]
+},
+{
+  "id" : "wexner-ccis-score-observation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/wexner-ccis-score-observation",
+  "version" : "0.1.0",
+  "name" : "WexnerCCISScoreObservation",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.42.11"]
+},
+{
+  "id" : "FluidDrainVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/FluidDrainVS",
+  "version" : "0.1.0",
+  "name" : "FluidDrainVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.10"]
+},
+{
+  "id" : "YesNoVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS",
+  "version" : "0.1.0",
+  "name" : "YesNoVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.11"]
+},
+{
+  "id" : "continence-level",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/continence-level",
+  "version" : "0.1.0",
+  "name" : "ContinenceLevel",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.7"]
+},
+{
+  "id" : "heart-failure-symptoms",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/heart-failure-symptoms",
+  "version" : "0.1.0",
+  "name" : "HeartFailureSymptoms",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.5"]
+},
+{
+  "id" : "holter-event-codes",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-codes",
+  "version" : "0.1.0",
+  "name" : "HolterEventCodes",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.1"]
+},
+{
+  "id" : "holter-event-component-codes",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-component-codes",
+  "version" : "0.1.0",
+  "name" : "HolterEventComponentCodes",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.3"]
+},
+{
+  "id" : "holter-report-code",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-report-code",
+  "version" : "0.1.0",
+  "name" : "HolterReportCode",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.4"]
+},
+{
+  "id" : "pain-scale",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/pain-scale",
+  "version" : "0.1.0",
+  "name" : "PainScale",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.9"]
+},
+{
+  "id" : "symptom-severity",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/symptom-severity",
+  "version" : "0.1.0",
+  "name" : "SymptomSeverity",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.6"]
+},
+{
+  "id" : "well-poor-scale",
+  "type" : "ValueSet",
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/well-poor-scale",
+  "version" : "0.1.0",
+  "name" : "WellPoorScale",
+  "oids" : ["2.16.840.1.113883.4.642.40.54.48.8"]
+}]

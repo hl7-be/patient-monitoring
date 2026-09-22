@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Encounter/CT-259690079> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CT-259690079"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter CT-259690079</b></p><a name=\"CT-259690079\"> </a><a name=\"hcCT-259690079\"> </a><p><b>status</b>: finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>period</b>: 2025-07-11 13:09:50+0200 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [
+       fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+       fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+     ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:reference [ fhir:v "Patient/Patient-123" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-07-11T13:09:50+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+     fhir:reference [ fhir:v "Organization/Organization-UZL" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="heart-failure-symptoms"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet heart-failure-symptoms</b></p><a name="heart-failure-symptoms"> </a><a name="hcheart-failure-symptoms"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/80313002">80313002</a></td><td>Palpitations</td></tr><tr><td><a href="http://snomed.info/id/64379006">64379006</a></td><td>Reduced appetite</td></tr><tr><td><a href="http://snomed.info/id/267036007">267036007</a></td><td>Shortness of breath</td></tr><tr><td><a href="http://snomed.info/id/14760008">14760008</a></td><td>Constipation</td></tr><tr><td><a href="http://snomed.info/id/62315008">62315008</a></td><td>Diarrhea</td></tr><tr><td><a href="http://snomed.info/id/248548009">248548009</a></td><td>Nocturnal dyspnea</td></tr><tr><td><a href="http://snomed.info/id/26677001">26677001</a></td><td>Disturbed sleep pattern</td></tr><tr><td><a href="http://snomed.info/id/422650009">422650009</a></td><td>Social isolation</td></tr><tr><td><a href="http://snomed.info/id/267038008">267038008</a></td><td>Oedema</td></tr><tr><td><a href="http://snomed.info/id/84229001">84229001</a></td><td>Fatigue</td></tr><tr><td><a href="http://snomed.info/id/29857009">29857009</a></td><td>Chest pain</td></tr><tr><td><a href="http://snomed.info/id/404640003">404640003</a></td><td>Dizziness</td></tr><tr><td><a href="http://snomed.info/id/40917007">40917007</a></td><td>Confusion</td></tr><tr><td><a href="http://snomed.info/id/297142003">297142003</a></td><td>Foot swelling</td></tr></table></li><li>Include these codes as defined in <code>http://snomed.info/sct/11000172109</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>901000172101</td><td>Tickly cough</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/heart-failure-symptoms"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.54.48.5"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="HeartFailureSymptoms"/>
+  <title value="Heart Failure Symptom Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-05-18T09:41:30+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="SNOMED CT codes representing common patient-reported symptoms in heart failure"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="SNOMED CT is copyright (C) 2002+ International Health Terminology Standards Development Organisation (SNOMED International). Use of SNOMED CT requires the appropriate licence."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="80313002"/>
+        <display value="Palpitations"/>
+      </concept>
+      <concept>
+        <code value="64379006"/>
+        <display value="Reduced appetite"/>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Shortness of breath"/>
+      </concept>
+      <concept>
+        <code value="14760008"/>
+        <display value="Constipation"/>
+      </concept>
+      <concept>
+        <code value="62315008"/>
+        <display value="Diarrhea"/>
+      </concept>
+      <concept>
+        <code value="248548009"/>
+        <display value="Nocturnal dyspnea"/>
+      </concept>
+      <concept>
+        <code value="26677001"/>
+        <display value="Disturbed sleep pattern"/>
+      </concept>
+      <concept>
+        <code value="422650009"/>
+        <display value="Social isolation"/>
+      </concept>
+      <concept>
+        <code value="267038008"/>
+        <display value="Oedema"/>
+      </concept>
+      <concept>
+        <code value="84229001"/>
+        <display value="Fatigue"/>
+      </concept>
+      <concept>
+        <code value="29857009"/>
+        <display value="Chest pain"/>
+      </concept>
+      <concept>
+        <code value="404640003"/>
+        <display value="Dizziness"/>
+      </concept>
+      <concept>
+        <code value="40917007"/>
+        <display value="Confusion"/>
+      </concept>
+      <concept>
+        <code value="297142003"/>
+        <display value="Foot swelling"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct/11000172109"/>
+      <concept>
+        <code value="901000172101"/>
+        <display value="Tickly cough"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

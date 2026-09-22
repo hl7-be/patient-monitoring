@@ -1,0 +1,184 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Patient-123"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient-123</b></p><a name=\"Patient-123\"> </a><a name=\"hcPatient-123\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Medical record number/15 (use: usual, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 02/1234567</li><li><a href=\"mailto:test.test@1234.betestann\">test.test@1234.betestann</a></li><li><a href=\"mailto:ditistest@testface.com\">ditistest@testface.com</a></li><li><a href=\"mailto:face@tkklkljklklmlks.com\">face@tkklkljklklmlks.com</a></li><li>ITALIESTRAAT 171 B Helecine 1357 (home)</li><li>AAA X DEN HAAG 4544 NL NL (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Languages:</td><td colspan=\"3\"><ul><li><span title=\"Codes:{urn:ietf:bcp:47 fr}\">French</span> (preferred)</li><li><span title=\"Codes:{urn:ietf:bcp:47 nl}\">Dutch</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Teacher (occupation)\">Teacher (occupation):</td><td colspan=\"3\"><ul><li>+3212345678</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Companion (occupation)\">Companion (occupation):</td><td colspan=\"3\"><ul><li><a href=\"tel:+32473444444\">+32473444444</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Child (person)\">Child (person):</td><td colspan=\"3\"><ul><li><a href=\"tel:+3216622552\">+3216622552</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"PractitionerRole-PractitionerRole-16500.html\">PractitionerRole Physician</a></li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical record number" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/eadnr"^^xsd:anyURI ;
+       fhir:l <https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/eadnr>
+     ] ;
+     fhir:value [ fhir:v "15" ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical record number" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/emdnr"^^xsd:anyURI ;
+       fhir:l <https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/emdnr>
+     ] ;
+     fhir:value [ fhir:v "310419V999" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "KWS-TESTPATIENT" ] ;
+     fhir:given ( [ fhir:v "NUMMER 15" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "02/1234567" ] ;
+     fhir:rank [ fhir:v "9"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "test.test@1234.betestann" ] ;
+     fhir:rank [ fhir:v "9"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "ditistest@testface.com" ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "face@tkklkljklklmlks.com" ] ;
+     fhir:rank [ fhir:v "9"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1931-04-19"^^xsd:date] ; # 
+  fhir:deceased [
+     a fhir:Boolean ;
+     fhir:v false
+  ] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "ITALIESTRAAT 171 B" ] ) ;
+     fhir:city [ fhir:v "Helecine" ] ;
+     fhir:postalCode [ fhir:v "1357" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2006-03-07"^^xsd:date ] ;
+       fhir:end [ fhir:v "2020-10-15"^^xsd:date ]
+     ]
+  ] [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "AAA X" ] ) ;
+     fhir:city [ fhir:v "DEN HAAG" ] ;
+     fhir:postalCode [ fhir:v "4544 NL" ] ;
+     fhir:country [ fhir:v "NL" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-10-16"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:multipleBirth [
+     a fhir:Boolean ;
+     fhir:v false
+  ] ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         a sct:106304008 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "106304008" ] ;
+         fhir:display [ fhir:v "Teacher (occupation)" ]
+       ] )
+     ] ) ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "sms" ] ;
+       fhir:value [ fhir:v "+3212345678" ] ;
+       fhir:rank [ fhir:v "9"^^xsd:positiveInteger ]
+     ] )
+  ] [
+     fhir:relationship ( [
+       fhir:coding ( [
+         a sct:62071000 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "62071000" ] ;
+         fhir:display [ fhir:v "Companion (occupation)" ]
+       ] )
+     ] ) ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+32473444444" ] ;
+       fhir:rank [ fhir:v "9"^^xsd:positiveInteger ]
+     ] )
+  ] [
+     fhir:relationship ( [
+       fhir:coding ( [
+         a sct:67822003 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "67822003" ] ;
+         fhir:display [ fhir:v "Child (person)" ]
+       ] )
+     ] ) ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+3216622552" ] ;
+       fhir:rank [ fhir:v "9"^^xsd:positiveInteger ]
+     ] )
+  ] ) ; # 
+  fhir:communication ( [
+     fhir:language [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:l <urn:ietf:bcp:47>
+         ] ;
+         fhir:code [ fhir:v "fr" ]
+       ] )
+     ] ;
+     fhir:preferred [ fhir:v true ]
+  ] [
+     fhir:language [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:l <urn:ietf:bcp:47>
+         ] ;
+         fhir:code [ fhir:v "nl" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:generalPractitioner ( [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/PractitionerRole/PractitionerRole-16500> ;
+     fhir:reference [ fhir:v "PractitionerRole/PractitionerRole-16500" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

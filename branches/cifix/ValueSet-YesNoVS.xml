@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="YesNoVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet YesNoVS</b></p><a name="YesNoVS"> </a><a name="hcYesNoVS"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/373066001">373066001</a></td><td>Yes</td></tr><tr><td><a href="http://snomed.info/id/373067005">373067005</a></td><td>No</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/YesNoVS"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.54.48.11"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="YesNoVS"/>
+  <title value="Yes/No Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-05-19T06:47:26+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Simple yes or no answer value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="373066001"/>
+        <display value="Yes"/>
+      </concept>
+      <concept>
+        <code value="373067005"/>
+        <display value="No"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

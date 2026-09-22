@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="TrastuzumabV1"/>
+  <meta>
+    <profile value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-trastuzumab"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Questionnaire TrastuzumabV1</b></p><a name="TrastuzumabV1"> </a><a name="hcTrastuzumabV1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-homehosp-onco-trastuzumab.html">ONCO Trastuzumab Nursing Questionnaire</a></p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> TrastuzumabV1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/TrastuzumabV1#0.1.0</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.Verpleegkundigassessment" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> Verpleegkundigassessment</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Verpleegkundig assessment</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" id="item.Bewaring" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> Bewaring</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Bewaring</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.A1_Bewaring" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A1_Bewaring</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Zijn er opmerkingen of bezorgdheden omtrent de (correcte) thuisbewaring van de medicatie?</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A1_Bewaring">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" id="item.A2_BewaringSpecifieer" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="string" class="hierarchy"/> A2_BewaringSpecifieer</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&gt; Indien opmerkingen of bezorgdheid: specifieer</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.A1_Bewaring">A1_Bewaring</a> = Improper storage of medication (SNOMED CT#424363005)</span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" id="item.Observatieparameters" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> Observatieparameters</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Observatie parameters</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.B1_Temperatuur" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: white; background-color: inherit" title="decimal" class="hierarchy"/> B1_Temperatuur</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lichaamstemperatuur:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.B2_Pols" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="decimal" class="hierarchy"/> B2_Pols</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pols:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.B3_BloeddrukSystolisch" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: white; background-color: inherit" title="decimal" class="hierarchy"/> B3_BloeddrukSystolisch</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Bloeddruk systolisch:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.B4_BloeddrukDiastolisch" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="decimal" class="hierarchy"/> B4_BloeddrukDiastolisch</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Bloeddruk diastolisch:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" id="item.B5_Lichaamsgewicht" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: white; background-color: inherit" title="decimal" class="hierarchy"/> B5_Lichaamsgewicht</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lichaamsgewicht:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" id="item.Tegenindicaties" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> Tegenindicaties</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tegenindicaties</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C1_Tegenindicatie" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> C1_Tegenindicatie</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Zijn er tegenindicaties voor toediening?</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C1_Tegenindicatie">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C2_SpecifieerTegenindicatie" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="display" class="hierarchy"/> C2_SpecifieerTegenindicatie</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&gt; Indien 'ja': specifieer</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.C1_Tegenindicatie">C1_Tegenindicatie</a> = Yes (SNOMED CT#373066001)</span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C3_KoortsRillingen" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> C3_KoortsRillingen</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Koorts, koude rillingen, zich ziek voelen</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C3_KoortsRillingen">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C4_LageBloeddruk" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C4_LageBloeddruk</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Herhaaldelijk bloeddruk lager dan 100/60 mmHg</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C4_LageBloeddruk">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C5_HartslagHoog" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> C5_HartslagHoog</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Hartslag boven 100 slagen per minuut in rust of onregelmatig hartritme, tenzij chronisch gekend</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C5_HartslagHoog">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C6_GewichtstoeName" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C6_GewichtstoeName</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Toename van het lichaamsgewicht van 3 kg/3 weken of 5 kg/6 weken, zeker met toegenomen oedeem</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C6_GewichtstoeName">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C7_OedeemHandenVoeten" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> C7_OedeemHandenVoeten</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Toegenomen oedeem in handen en/of voeten</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C7_OedeemHandenVoeten">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C8_Kortademigheid" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C8_Kortademigheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Toegenomen kortademigheid en/of ernstige kortademigheid (dwz kortademigheid in rust/zonder inspanning en/of kortademigheid die hindert bij de dagelijkse activiteiten)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C8_Kortademigheid">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C9_ContactZorgteam" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: white; background-color: inherit" title="display" class="hierarchy"/> C9_ContactZorgteam</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&gt; Indien tegenindicatie(s): gelieve contact op te nemen met het zorgteam in het ziekenhuis</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.C1_Tegenindicatie">C1_Tegenindicatie</a> = Yes (SNOMED CT#373066001)</span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.C10_Beslissing" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C10_Beslissing</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Beslissing na overleg ziekenhuis</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C10_Beslissing">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" id="item.C11_BeslissingSpecifieer" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="string" class="hierarchy"/> C11_BeslissingSpecifieer</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&gt; Indien andere: specifieer</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.C10_Beslissing">C10_Beslissing</a> = andere</span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" id="item.Symptoomlast" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> Symptoomlast</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Symptoomlast</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D1_Misselijkheid" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D1_Misselijkheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Misselijkheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D1_Misselijkheid">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D2_Braken" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> D2_Braken</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Braken</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D2_Braken">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D3_VerminderdeEetlust" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D3_VerminderdeEetlust</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Verminderde eetlust of smaakverandering</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D3_VerminderdeEetlust">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D4_Buikloop" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> D4_Buikloop</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Buikloop</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D4_Buikloop">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D5_Verstopping" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D5_Verstopping</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Verstopping</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D5_Verstopping">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D6_Vermoeidheid" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> D6_Vermoeidheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vermoeidheid/futloosheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D6_Vermoeidheid">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D7_Pijn" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D7_Pijn</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pijn</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D7_Pijn">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D8_Huiduitslag" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> D8_Huiduitslag</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Huiduitslag</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D8_Huiduitslag">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D9_Psychosociaal" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D9_Psychosociaal</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Psychosociale belasting</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D9_Psychosociaal">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D10_Kortademigheid" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> D10_Kortademigheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kortademigheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D10_Kortademigheid">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.D11_Oedeem" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D11_Oedeem</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Oedeem</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D11_Oedeem">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" id="item.D12_AndereObservaties" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="string" class="hierarchy"/> D12_AndereObservaties</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Andere nevenwerkingen of relevante klinische en psychosociale observaties
+(gelieve bij klinische bezorgdheid contact te nemen met het ziekenhuis voor bespreking)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.Opdracht" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> Opdracht</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Opdracht</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" id="item.Voorbereidingmedicatietoediening" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> Voorbereidingmedicatietoediening</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Voorbereiding medicatietoediening</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.E1_BereidingCorrect" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> E1_BereidingCorrect</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kon de medicatie worden bereid volgens de procedure?</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.E1_BereidingCorrect">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" id="item.E2_ContactZorgteam" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="display" class="hierarchy"/> E2_ContactZorgteam</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&gt; Indien 'nee': gelieve contact op te nemen met het zorgteam in het ziekenhuis</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.E1_BereidingCorrect">E1_BereidingCorrect</a> = No (SNOMED CT#373067005)</span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" id="item.Medicatietoediening" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> Medicatietoediening</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medicatietoediening</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" id="item.E3_ToedieningCorrect" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> E3_ToedieningCorrect</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kon de medicatie exact volgens de procedure worden toegediend (er waren geen afwijkingen)?</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.E3_ToedieningCorrect">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" id="item.E4_SpecifieerNee" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="string" class="hierarchy"/> E4_SpecifieerNee</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&gt; Indien 'nee': specifieer</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.E3_ToedieningCorrect">E3_ToedieningCorrect</a> = No (SNOMED CT#373067005)</span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" id="item.Nazorg" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> Nazorg</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nazorg</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.F1_ReactieTijdensObservatie" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> F1_ReactieTijdensObservatie</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Was er een reactie tijdens de thuisobservatieperiode?</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.F1_ReactieTijdensObservatie">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.F2_SpecifieerReactie" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="display" class="hierarchy"/> F2_SpecifieerReactie</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&gt; Indien 'ja': specifieer</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Enable When: <span><a href="#item.F1_ReactieTijdensObservatie">F1_ReactieTijdensObservatie</a> = Yes (SNOMED CT#373066001)</span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.F3_Koorts" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> F3_Koorts</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Koorts</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.F3_Koorts">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.F4_Misselijkheid" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> F4_Misselijkheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Misselijkheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.F4_Misselijkheid">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.F5_Kortademigheid" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> F5_Kortademigheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kortademigheid</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.F5_Kortademigheid">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" id="item.F6_Rillingen" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> F6_Rillingen</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rillingen</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.F6_Rillingen">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" id="item.F7_GriepachtigeSymptomen" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> F7_GriepachtigeSymptomen</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Griepachtige symptomen</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.F7_GriepachtigeSymptomen">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" id="item.Kwaliteitsopvolging" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> Kwaliteitsopvolging</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">(Kwaliteits)opvolging</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" id="item.G1_OpmerkingenAanmelding" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="string" class="hierarchy"/> G1_OpmerkingenAanmelding</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Zijn er opmerkingen of bezorgdheden omtrent de aanmelding van deze patient, de gegevensdeling vanuit het ziekenhuis, de communicatie door en het contact met het ziekenhuis, de beschikbaarheid van de materialen, of andere aspecten van de transmurale samenwerking rond thuishospitalisatie oncologie, dan kan je deze hier noteren. Alvast dank.</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.A1_Bewaring"> </a><p><b>Answer options for A1_Bewaring </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#710977001 (&quot;Safe storage and management of medication&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#424363005 (&quot;Improper storage of medication&quot;)</li></ul><a name="opt-item.C1_Tegenindicatie"> </a><p><b>Answer options for C1_Tegenindicatie </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.C3_KoortsRillingen"> </a><p><b>Answer options for C3_KoortsRillingen </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.C4_LageBloeddruk"> </a><p><b>Answer options for C4_LageBloeddruk </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.C5_HartslagHoog"> </a><p><b>Answer options for C5_HartslagHoog </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.C6_GewichtstoeName"> </a><p><b>Answer options for C6_GewichtstoeName </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.C7_OedeemHandenVoeten"> </a><p><b>Answer options for C7_OedeemHandenVoeten </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.C8_Kortademigheid"> </a><p><b>Answer options for C8_Kortademigheid </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.C10_Beslissing"> </a><p><b>Answer options for C10_Beslissing </b></p><ul><li style="font-size: 11px">toediening</li><li style="font-size: 11px">geen toediening</li><li style="font-size: 11px">andere</li></ul><a name="opt-item.D1_Misselijkheid"> </a><p><b>Answer options for D1_Misselijkheid </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D2_Braken"> </a><p><b>Answer options for D2_Braken </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D3_VerminderdeEetlust"> </a><p><b>Answer options for D3_VerminderdeEetlust </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D4_Buikloop"> </a><p><b>Answer options for D4_Buikloop </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D5_Verstopping"> </a><p><b>Answer options for D5_Verstopping </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D6_Vermoeidheid"> </a><p><b>Answer options for D6_Vermoeidheid </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D7_Pijn"> </a><p><b>Answer options for D7_Pijn </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D8_Huiduitslag"> </a><p><b>Answer options for D8_Huiduitslag </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D9_Psychosociaal"> </a><p><b>Answer options for D9_Psychosociaal </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D10_Kortademigheid"> </a><p><b>Answer options for D10_Kortademigheid </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.D11_Oedeem"> </a><p><b>Answer options for D11_Oedeem </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#444431007 (&quot;Grade 0 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444456001 (&quot;Grade 1 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444457005 (&quot;Grade 2 on a scale of 0 to 3&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#444447009 (&quot;Grade 3 on a scale of 0 to 3&quot;)</li></ul><a name="opt-item.E1_BereidingCorrect"> </a><p><b>Answer options for E1_BereidingCorrect </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.E3_ToedieningCorrect"> </a><p><b>Answer options for E3_ToedieningCorrect </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.F1_ReactieTijdensObservatie"> </a><p><b>Answer options for F1_ReactieTijdensObservatie </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.F3_Koorts"> </a><p><b>Answer options for F3_Koorts </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.F4_Misselijkheid"> </a><p><b>Answer options for F4_Misselijkheid </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.F5_Kortademigheid"> </a><p><b>Answer options for F5_Kortademigheid </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.F6_Rillingen"> </a><p><b>Answer options for F6_Rillingen </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul><a name="opt-item.F7_GriepachtigeSymptomen"> </a><p><b>Answer options for F7_GriepachtigeSymptomen </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#373066001 (&quot;Yes&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#373067005 (&quot;No&quot;)</li></ul></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/TrastuzumabV1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.54.35.7"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="TrastuzumabV1"/>
+  <title value="Trastuzumab"/>
+  <status value="active"/>
+  <subjectType value="Patient"/>
+  <date value="2026-05-18T09:41:30+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <item>
+    <linkId value="Verpleegkundigassessment"/>
+    <text value="Verpleegkundig assessment"/>
+    <type value="group"/>
+    <item>
+      <linkId value="Bewaring"/>
+      <text value="Bewaring"/>
+      <type value="group"/>
+      <item>
+        <linkId value="A1_Bewaring"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="422413002"/>
+          <display value="Ability to store medications"/>
+        </code>
+        <text value="Zijn er opmerkingen of bezorgdheden omtrent de (correcte) thuisbewaring van de medicatie?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="710977001"/>
+            <display value="Safe storage and management of medication"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="424363005"/>
+            <display value="Improper storage of medication"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="A2_BewaringSpecifieer"/>
+        <text value="&gt; Indien opmerkingen of bezorgdheid: specifieer"/>
+        <type value="string"/>
+        <enableWhen>
+          <question value="A1_Bewaring"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="424363005"/>
+            <display value="Improper storage of medication"/>
+          </answerCoding>
+        </enableWhen>
+      </item>
+    </item>
+    <item>
+      <linkId value="Observatieparameters"/>
+      <text value="Observatie parameters"/>
+      <type value="group"/>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+          <valueCoding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="Cel"/>
+            <display value="Cel"/>
+          </valueCoding>
+        </extension>
+        <linkId value="B1_Temperatuur"/>
+        <code>
+          <system value="http://loinc.org"/>
+          <code value="8310-5"/>
+          <display value="Body temperature"/>
+        </code>
+        <text value="Lichaamstemperatuur:"/>
+        <type value="decimal"/>
+        <required value="true"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+          <valueCoding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{beats}/min"/>
+            <display value="{beats}/min"/>
+          </valueCoding>
+        </extension>
+        <linkId value="B2_Pols"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="364075005"/>
+          <display value="Heart rate"/>
+        </code>
+        <text value="Pols:"/>
+        <type value="decimal"/>
+        <required value="true"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+          <valueCoding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+            <display value="mm[Hg]"/>
+          </valueCoding>
+        </extension>
+        <linkId value="B3_BloeddrukSystolisch"/>
+        <code>
+          <system value="http://loinc.org"/>
+          <code value="8480-6"/>
+          <display value="Systolic blood pressure"/>
+        </code>
+        <text value="Bloeddruk systolisch:"/>
+        <type value="decimal"/>
+        <required value="true"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+          <valueCoding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+            <display value="mm[Hg]"/>
+          </valueCoding>
+        </extension>
+        <linkId value="B4_BloeddrukDiastolisch"/>
+        <code>
+          <system value="http://loinc.org"/>
+          <code value="8462-4"/>
+          <display value="Diastolic blood pressure"/>
+        </code>
+        <text value="Bloeddruk diastolisch:"/>
+        <type value="decimal"/>
+        <required value="true"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+          <valueCoding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+            <display value="kg"/>
+          </valueCoding>
+        </extension>
+        <linkId value="B5_Lichaamsgewicht"/>
+        <code>
+          <system value="http://loinc.org"/>
+          <code value="29463-7"/>
+          <display value="Body weight"/>
+        </code>
+        <text value="Lichaamsgewicht:"/>
+        <type value="decimal"/>
+        <required value="true"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="Tegenindicaties"/>
+      <text value="Tegenindicaties"/>
+      <type value="group"/>
+      <item>
+        <linkId value="C1_Tegenindicatie"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="395008009"/>
+          <display value="Medication stopped - contra-indication"/>
+        </code>
+        <text value="Zijn er tegenindicaties voor toediening?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C2_SpecifieerTegenindicatie"/>
+        <text value="&gt; Indien 'ja': specifieer"/>
+        <type value="display"/>
+        <enableWhen>
+          <question value="C1_Tegenindicatie"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </answerCoding>
+        </enableWhen>
+      </item>
+      <item>
+        <linkId value="C3_KoortsRillingen"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="39104002"/>
+          <display value="Illness"/>
+        </code>
+        <text value="Koorts, koude rillingen, zich ziek voelen"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C4_LageBloeddruk"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="12763006"/>
+          <display value="Low blood pressure, not hypotension"/>
+        </code>
+        <text value="Herhaaldelijk bloeddruk lager dan 100/60 mmHg"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C5_HartslagHoog"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="361137007"/>
+          <display value="Irregular heart beat"/>
+        </code>
+        <text value="Hartslag boven 100 slagen per minuut in rust of onregelmatig hartritme, tenzij chronisch gekend"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C6_GewichtstoeName"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="262286000"/>
+          <display value="Weight increased"/>
+        </code>
+        <text value="Toename van het lichaamsgewicht van 3 kg/3 weken of 5 kg/6 weken, zeker met toegenomen oedeem"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C7_OedeemHandenVoeten"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="267038008"/>
+          <display value="Edema"/>
+        </code>
+        <text value="Toegenomen oedeem in handen en/of voeten"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C8_Kortademigheid"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="297216006"/>
+          <display value="Increasing breathlessness"/>
+        </code>
+        <text value="Toegenomen kortademigheid en/of ernstige kortademigheid (dwz kortademigheid in rust/zonder inspanning en/of kortademigheid die hindert bij de dagelijkse activiteiten)"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C9_ContactZorgteam"/>
+        <text value="&gt; Indien tegenindicatie(s): gelieve contact op te nemen met het zorgteam in het ziekenhuis"/>
+        <type value="display"/>
+        <enableWhen>
+          <question value="C1_Tegenindicatie"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </answerCoding>
+        </enableWhen>
+      </item>
+      <item>
+        <linkId value="C10_Beslissing"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="182836005"/>
+          <display value="Medication review"/>
+        </code>
+        <text value="Beslissing na overleg ziekenhuis"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueString value="toediening"/>
+        </answerOption>
+        <answerOption>
+          <valueString value="geen toediening"/>
+        </answerOption>
+        <answerOption>
+          <valueString value="andere"/>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="C11_BeslissingSpecifieer"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="1156698007"/>
+          <display value="Review of current supply of medication"/>
+        </code>
+        <text value="&gt; Indien andere: specifieer"/>
+        <type value="string"/>
+        <enableWhen>
+          <question value="C10_Beslissing"/>
+          <operator value="="/>
+          <answerString value="andere"/>
+        </enableWhen>
+      </item>
+    </item>
+    <item>
+      <linkId value="Symptoomlast"/>
+      <text value="Symptoomlast"/>
+      <type value="group"/>
+      <item>
+        <linkId value="D1_Misselijkheid"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="422587007"/>
+          <display value="Nausea"/>
+        </code>
+        <text value="Misselijkheid"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D2_Braken"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="249497008"/>
+          <display value="Vomiting symptom"/>
+        </code>
+        <text value="Braken"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D3_VerminderdeEetlust"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="64379006"/>
+          <display value="Decrease in appetite"/>
+        </code>
+        <text value="Verminderde eetlust of smaakverandering"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D4_Buikloop"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="62315008"/>
+          <display value="Diarrhea"/>
+        </code>
+        <text value="Buikloop"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D5_Verstopping"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="14760008"/>
+          <display value="Constipation"/>
+        </code>
+        <text value="Verstopping"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D6_Vermoeidheid"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="224960004"/>
+          <display value="Tired"/>
+        </code>
+        <text value="Vermoeidheid/futloosheid"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D7_Pijn"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="112104007"/>
+          <display value="Localized pain"/>
+        </code>
+        <text value="Pijn"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D8_Huiduitslag"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="271807003"/>
+          <display value="Eruption"/>
+        </code>
+        <text value="Huiduitslag"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D9_Psychosociaal"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="384821006"/>
+          <display value="Mental state, behaviour and/or psychosocial function finding"/>
+        </code>
+        <text value="Psychosociale belasting"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D10_Kortademigheid"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="267036007"/>
+          <display value="Dyspnea"/>
+        </code>
+        <text value="Kortademigheid"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D11_Oedeem"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="79654002"/>
+          <display value="Edema"/>
+        </code>
+        <text value="Oedeem"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444431007"/>
+            <display value="Grade 0 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444456001"/>
+            <display value="Grade 1 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444457005"/>
+            <display value="Grade 2 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="444447009"/>
+            <display value="Grade 3 on a scale of 0 to 3"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="D12_AndereObservaties"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="365275006"/>
+          <display value="General well-being finding"/>
+        </code>
+        <text value="Andere nevenwerkingen of relevante klinische en psychosociale observaties&#xA;(gelieve bij klinische bezorgdheid contact te nemen met het ziekenhuis voor bespreking)"/>
+        <type value="string"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="Opdracht"/>
+    <text value="Opdracht"/>
+    <type value="group"/>
+    <item>
+      <linkId value="Voorbereidingmedicatietoediening"/>
+      <text value="Voorbereiding medicatietoediening"/>
+      <type value="group"/>
+      <item>
+        <linkId value="E1_BereidingCorrect"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="385796006"/>
+          <display value="Medication prefill preparation"/>
+        </code>
+        <text value="Kon de medicatie worden bereid volgens de procedure?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="E2_ContactZorgteam"/>
+        <text value="&gt; Indien 'nee': gelieve contact op te nemen met het zorgteam in het ziekenhuis"/>
+        <type value="display"/>
+        <enableWhen>
+          <question value="E1_BereidingCorrect"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </answerCoding>
+        </enableWhen>
+      </item>
+    </item>
+    <item>
+      <linkId value="Medicatietoediening"/>
+      <text value="Medicatietoediening"/>
+      <type value="group"/>
+      <item>
+        <linkId value="E3_ToedieningCorrect"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="373149000"/>
+          <display value="Medication administered following procedure"/>
+        </code>
+        <text value="Kon de medicatie exact volgens de procedure worden toegediend (er waren geen afwijkingen)?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="E4_SpecifieerNee"/>
+        <text value="&gt; Indien 'nee': specifieer"/>
+        <type value="string"/>
+        <enableWhen>
+          <question value="E3_ToedieningCorrect"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </answerCoding>
+        </enableWhen>
+      </item>
+    </item>
+    <item>
+      <linkId value="Nazorg"/>
+      <text value="Nazorg"/>
+      <type value="group"/>
+      <item>
+        <linkId value="F1_ReactieTijdensObservatie"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="281647001"/>
+          <display value="Adverse reaction"/>
+        </code>
+        <text value="Was er een reactie tijdens de thuisobservatieperiode?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="F2_SpecifieerReactie"/>
+        <text value="&gt; Indien 'ja': specifieer"/>
+        <type value="display"/>
+        <enableWhen>
+          <question value="F1_ReactieTijdensObservatie"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </answerCoding>
+        </enableWhen>
+      </item>
+      <item>
+        <linkId value="F3_Koorts"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="386661006"/>
+          <display value="Fever"/>
+        </code>
+        <text value="Koorts"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="F4_Misselijkheid"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="422587007"/>
+          <display value="Nausea"/>
+        </code>
+        <text value="Misselijkheid"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="F5_Kortademigheid"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="255365009"/>
+          <display value="Tightness"/>
+        </code>
+        <text value="Kortademigheid"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="F6_Rillingen"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="43724002"/>
+          <display value="Shivering"/>
+        </code>
+        <text value="Rillingen"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <linkId value="F7_GriepachtigeSymptomen"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="95891005"/>
+          <display value="Influenza-like illness"/>
+        </code>
+        <text value="Griepachtige symptomen"/>
+        <type value="choice"/>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="Kwaliteitsopvolging"/>
+    <text value="(Kwaliteits)opvolging"/>
+    <type value="group"/>
+    <item>
+      <linkId value="G1_OpmerkingenAanmelding"/>
+      <code>
+        <system value="http://snomed.info/sct"/>
+        <code value="276238005"/>
+        <display value="Comments on own writing"/>
+      </code>
+      <text value="Zijn er opmerkingen of bezorgdheden omtrent de aanmelding van deze patient, de gegevensdeling vanuit het ziekenhuis, de communicatie door en het contact met het ziekenhuis, de beschikbaarheid van de materialen, of andere aspecten van de transmurale samenwerking rond thuishospitalisatie oncologie, dan kan je deze hier noteren. Alvast dank."/>
+      <type value="string"/>
+    </item>
+  </item>
+</Questionnaire>

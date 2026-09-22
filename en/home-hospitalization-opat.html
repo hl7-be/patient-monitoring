@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home hosp - OPAT - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+<link href="assets/css/tables.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img alt="Belgium flag" src="../assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidelines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recommendations.html">General Recommendations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Carepaths
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="carepath-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="carepath-heartfailure.html">Heart failure</a>
+      </li>
+      <li>
+        <a href="carepath-ews.html">NEWS</a>
+      </li>
+      <li>
+        <a href="carepath-totem.html">TOTeM</a>
+      </li>
+      <li>
+        <a href="carepath-opat.html">OPAT</a>
+      </li>
+      <li>
+        <a href="carepath-holter.html">Holter Monitoring</a>
+      </li>
+      <li>
+        <a href="carepath-antitumoral.html">Antitumoral</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html">Diabetes</a>
+      </li>
+      <li>
+        <a href="carepath-perioperative-abdominal.html">Perioperative Care - abdominal</a>
+      </li>
+      <li>
+        <a href="carepath-overview-loinc.html">Overview LOINC</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Caresets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="careset-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="legal-guidelines-home-hospitalization.html">Special careset - home hospitalization</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-opat.html">Home hosp - OPAT</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-antitumoral.html">Home hosp - Antitumoral Therapy</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-mappingtable.html">Home hosp - Mappingtables</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li>
+        <a href="artifacts.html#1">Logical Models</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">History</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://hl7.org/fhir/R4/">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/">Transversal Clinical Core</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="copyrights.html">Copyrights</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home hosp - OPAT</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/patient-monitoring/tree/main'>https://github.com/hl7-be/patient-monitoring/tree/main</a> and changes regularly. See the <a href='http://hl7belgium.org/fhir/patient-monitoring/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-be/patient-monitoring/commit/f96bf7f2436eb28d6578f3e365c613f64bd82644"><code>f96bf7f2</code></a>.</span></p><!--EndReleaseHeader-->
+  <h2>Home hosp - OPAT</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#careset-overview" id="markdown-toc-careset-overview">Careset Overview</a></li>
+  <li><a href="#workflow" id="markdown-toc-workflow">Workflow</a></li>
+  <li><a href="#questionnaire-content" id="markdown-toc-questionnaire-content">Questionnaire Content</a></li>
+  <li><a href="#justification-for-using-questionnaires" id="markdown-toc-justification-for-using-questionnaires">Justification for using Questionnaires</a></li>
+  <li><a href="#encounter" id="markdown-toc-encounter">Encounter</a></li>
+  <li><a href="#fhir-resources" id="markdown-toc-fhir-resources">FHIR Resources</a></li>
+</ul>
+
+</div>
+<h3 id="careset-overview">Careset Overview</h3>
+
+<blockquote>
+  <p><strong><em>NOTE:</em></strong> This page describes the <strong>Careset</strong> for OPAT, detailing the holistic structured report used to communicate
+patient status, Questionnaires, Encounters, and monitoring data between Electronic Patient Dossiers (EPDs) and care
+teams (e.g., between the hospital OPAT team and home nursing organizations). For the specification mapping out the
+direct exchange of individual parameters from telemonitoring providers, see
+the <a href="./carepath-opat.html">OPAT Carepath</a>.*</p>
+</blockquote>
+
+<p>Home hospitalization allows patients to leave the hospital while continuing specialized treatments at home.
+OPAT (Outpatient Parenteral Antimicrobial Therapy) focuses on the home administration of intravenous antibiotics and the
+associated catheter care.</p>
+
+<p>For this careset, there were <strong>four necessary layers of agreements</strong>:</p>
+
+<ol>
+  <li>Substantive <strong>consensus via working group (VZA, NPTV) on the content of the questionnaires</strong> and the overall
+workflow.</li>
+  <li><strong>Semantics (SNOMED CT)</strong>: To ensure uniformity of language across systems, Caresets strictly re-use the SNOMED CT
+and LOINC codes defined in the basic <a href="./carepath-opat.html">OPAT Carepath</a>. Furthermore, because Caresets capture a
+more holistic view of the patient’s care - including nursing interventions, hospital instructions, and specific
+questionnaires - the Careset extends this foundation with additional codes not found in the standalone telemonitoring
+Carepath. For a full overview of mappings, see
+the <a href="./home-hospitalization-mappingtable.html">Home hospitalization mappingtable</a>.</li>
+  <li>Structure (FHIR Profiling): more below, we use a <strong>combination of FHIR resources (Questionnaire,
+QuestionnaireResponse,
+Encounter)</strong> to capture the necessary information and structure it in a way that can be easily processed and
+implemented by the receiving and sending systems.</li>
+  <li><strong>Interaction &amp; Transport</strong>: The agreements on how the packet travels. This could be project dependent. In Belgium,
+for home
+hospitalization, <a href="https://www.witgelekruis.be/nieuws/eerste-versie-gestructureerd-voorschrift-voor-thuishospitalisatie-beschikbaar-ehealthbox">the ehealth box</a>
+is currently the most common transport mechanism, but other mechanisms could be used as well. As an example, we are
+closely following the development of <a href="https://www.ehealth.fgov.be/ehealthplatform/nl/service-ereferral">eReferral</a>.</li>
+</ol>
+
+<p>This careset has been successfully implemented in nexuzhealth hospitals and WGK Vlaams Brabant and is currently being
+implemented in other WGK departments and Corilus CareConnect Nurse.</p>
+
+<h3 id="workflow">Workflow</h3>
+
+<h4 id="hospital-to-home">Hospital to Home</h4>
+
+<ol>
+  <li>Registration: The patient is registered in a virtual home hospitalization unit.</li>
+  <li>Report &amp; Instructions: A specific medical report is created containing medical history, future appointments and
+catheter type.</li>
+  <li>Order: A doctor generates an order in the hospitals EHR, which contains the medication order and specific tasks for
+the home nurse.</li>
+  <li>Communication: The hospital exchanges this information (the order and patient info) as a FHIR document with the home
+nursing organization.</li>
+</ol>
+
+<h4 id="home-to-hospital">Home to Hospital</h4>
+
+<ol>
+  <li>Home Visit: The home nurse performs the requested tasks and records data using their own software.</li>
+  <li>Feedback: The home nursing system generates digital feedback in the form of FHIR resources (Questionnaire,
+QuestionnaireResponse, and Encounter).</li>
+  <li>Communication: This data is exchanged with the hospital.</li>
+  <li>Processing: The hospital can use automated “batch jobs” to process these responses and write the data back into the
+patient’s medical record for physician review.</li>
+</ol>
+
+<h3 id="questionnaire-content">Questionnaire Content</h3>
+
+<h4 id="overview">Overview</h4>
+
+<p>The OPAT questionnaires focus heavily on the technical aspects of intravenous access and basic physical status:</p>
+
+<ul>
+  <li><strong>Catheter care</strong>: Monitoring the stabilization device type and specific care for the access port (e.g., implantable
+port, adhesive tape).</li>
+  <li><strong>Medication administration</strong>: Confirming if the medication could be prepared and administered exactly according to
+the procedure.</li>
+  <li><strong>General assessment</strong>: Checking for specific symptoms such as:
+    <ul>
+      <li>Fever</li>
+      <li>Nausea</li>
+      <li>Shortness of breath</li>
+      <li>Chills</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="dragon">
+The content of these questionnaires was drafted within working groups with representation at the level of the VZA (
+Flemish Association of Hospital Pharmacists) and NPTV (Dutch-speaking Platform for Home Nursing) following the <a href="./legal-guidelines-home-hospitalization.html">legal requirements for home hospitalization</a>.
+
+Changes to the content must be approved by the working group.
+</div>
+
+<h4 id="specific-opat-questionnaires">Specific OPAT Questionnaires</h4>
+
+<h5 id="continuous-infusion">Continuous infusion</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Subsection</th>
+      <th>Question</th>
+      <th>Question Type</th>
+      <th>Possible Choices</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nursing assessment</td>
+      <td>Storage</td>
+      <td>Are there any remarks or concerns regarding the (proper) storage of medication at home?</td>
+      <td>Choice</td>
+      <td>Medication is stored correctly, concern about proper home storage</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If remarks or concerns: specify</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Preparation of medication administration</td>
+      <td>The medication was completely dissolved into a clear solution without visible particles</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If no: please contact the hospital care team</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Weight when disconnecting empty infusor</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>g</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Weight of full infusor just before new administration</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>g</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Additional observation (if applicable)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Medication administration</td>
+      <td>Was the medication administered exactly according to the procedure (no deviations)?</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If no: specify</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Vital parameters</td>
+      <td>Body temperature</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>°C</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pulse</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>beats/min</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blood pressure - systolic</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>mmHg</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blood pressure - diastolic</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>mmHg</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Dressing observation at insertion site</td>
+      <td>Dressing observation at insertion site</td>
+      <td>Choice</td>
+      <td>Normal, abnormal</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If abnormal: specify</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Bloody</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Purulent</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Loose</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Serous</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Moist</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Other (if applicable)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Insertion site observation</td>
+      <td>Insertion site observation</td>
+      <td>Choice</td>
+      <td>Normal, abnormal</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If abnormal: specify</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blistering</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Redness</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Hematoma</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pus</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Crusting</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Swelling</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Extravasation/infiltration</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Other (if applicable)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Catheter observation</td>
+      <td>Type of catheter</td>
+      <td>Choice</td>
+      <td>Port catheter, 1-lumen tunneled catheter, 2-lumen tunneled catheter, 3-lumen tunneled catheter, Single lumen midline, Double lumen midline, Single lumen PICC, Double lumen PICC, Peripheral catheter</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Catheter observation</td>
+      <td>Choice</td>
+      <td>Normal, abnormal</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; Specify <strong>per lumen</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; (per lumen) Color lumen</td>
+      <td>Choice</td>
+      <td>Gray, White, Red, Purple</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; (per lumen) Blood aspiration</td>
+      <td>Choice</td>
+      <td>Easy / difficult / impossible</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; (per lumen) Infusion</td>
+      <td>Choice</td>
+      <td>Easy / difficult / impossible</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Damaged catheter</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Other (if applicable)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Side effects</td>
+      <td>Skin rash</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Itching</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blisters/skin peeling</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Nausea</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Vomiting</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Diarrhea</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Constipation</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Decreased appetite</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pain during administration</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pain (general)</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Fatigue</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Chills</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Candidiasis (fungal infection)</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Joint pain</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Breathing problems</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Swelling of face/tongue</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Are there other symptoms or relevant clinical and/or psychosocial observations? (please contact the hospital care team in case of clinical concern)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>(Quality) follow-up</td>
+      <td>Are there any remarks or concerns regarding the registration of this patient, data sharing from the hospital, communication with the hospital, availability of medication and materials, or other aspects of transmural collaboration around home hospitalization OPAT? Please share them with us. Thank you.</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="short-iv">Short IV</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Subsection</th>
+      <th>Question</th>
+      <th>Question Type</th>
+      <th>Possible Choices</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nursing assessment</td>
+      <td>Storage</td>
+      <td>Are there any remarks or concerns regarding the (proper) storage of medication at home?</td>
+      <td>Choice</td>
+      <td>Medication is stored correctly, concern about proper home storage</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If remarks or concerns: specify</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Preparation of medication administration</td>
+      <td>The medication was completely dissolved into a clear solution without visible particles</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If no: please contact the hospital care team</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Medication administration</td>
+      <td>Was the medication administered exactly according to the procedure (no deviations)?</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If no: specify</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Vital parameters</td>
+      <td>Body temperature</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>°C</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pulse</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>beats/min</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blood pressure - systolic</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>mmHg</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blood pressure - diastolic</td>
+      <td>Numeric</td>
+      <td> </td>
+      <td>mmHg</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Dressing observation at insertion site</td>
+      <td>Dressing observation at insertion site</td>
+      <td>Choice</td>
+      <td>Normal, abnormal</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If abnormal: specify</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Bloody</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Purulent</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Loose</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Serous</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Moist</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Other (if applicable)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Insertion site observation</td>
+      <td>Insertion site observation</td>
+      <td>Choice</td>
+      <td>Normal, abnormal</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; If abnormal: specify</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blistering</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Redness</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Hematoma</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pus</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Crusting</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Swelling</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Extravasation/infiltration</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Other (if applicable)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Catheter observation</td>
+      <td>Type of catheter</td>
+      <td>Choice</td>
+      <td>Port catheter, 1-lumen tunneled catheter, 2-lumen tunneled catheter, 3-lumen tunneled catheter, Single lumen midline, Double lumen midline, Single lumen PICC, Double lumen PICC, Peripheral catheter</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Catheter observation</td>
+      <td>Choice</td>
+      <td>Normal, abnormal</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; Specify <strong>per lumen</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; (per lumen) Color lumen</td>
+      <td>Choice</td>
+      <td>Gray, White, Red, Purple</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; (per lumen) Blood aspiration</td>
+      <td>Choice</td>
+      <td>Easy / difficult / impossible</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>&gt; (per lumen) Infusion</td>
+      <td>Choice</td>
+      <td>Easy / difficult / impossible</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Damaged catheter</td>
+      <td>Choice</td>
+      <td>Yes, No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Other (if applicable)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Side effects</td>
+      <td>Skin rash</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Itching</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Blisters/skin peeling</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Nausea</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Vomiting</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Diarrhea</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Constipation</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Decreased appetite</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pain during administration</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Pain (general)</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Fatigue</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Chills</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Candidiasis (fungal infection)</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Joint pain</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Breathing problems</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Swelling of face/tongue</td>
+      <td>Choice</td>
+      <td>None, mild, moderate, severe</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Are there other symptoms or relevant clinical and/or psychosocial observations? (please contact the hospital care team in case of clinical concern)</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>(Quality) follow-up</td>
+      <td>Are there any remarks or concerns regarding the registration of this patient, data sharing from the hospital, communication with and contact with the hospital, availability of medication and materials, or other aspects of transmural collaboration around home hospitalization OPAT? Please share them with us. Thank you.</td>
+      <td>Text</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="justification-for-using-questionnaires">Justification for using Questionnaires</h3>
+
+<p>The OPAT careset uses FHIR Questionnaire and QuestionnaireResponse as its primary mechanism for structured data capture
+from home nurses. This is a deliberate design choice, justified on several grounds.</p>
+
+<p><strong>It reflects the actual clinical workflow.</strong> A questionnaire is literally what a home nurse fills in during or after a
+visit. The data capture model therefore mirrors reality: each home visit produces one completed QuestionnaireResponse,
+which corresponds to one discrete nursing encounter. Rather than asking implementers to map nursing observations to a
+collection of loosely related FHIR resources (Observation, Condition, Procedure, etc.) during data entry, the
+nurse-facing system can present the questionnaire directly, and the FHIR representation follows naturally.</p>
+
+<p><strong>It preserves context.</strong> Individual FHIR resources such as Observations are powerful for querying and analytics, but
+they
+are inherently atomic. A standalone Observation for a temperature of 38.9°C carries no information about whether the
+dressing at the insertion site was normal, whether the medication was correctly prepared, or whether the nurse noted
+swelling of the face. Grouping observations under a QuestionnaireResponse preserves the full clinical context of a
+single visit as a coherent unit, which is essential when a physician reviews the data.</p>
+
+<p><strong>Loose resources can still be extracted via SDC Definition-based Extraction.</strong> For systems that need individual FHIR
+resources (e.g., for populating a patient’s Observation timeline or triggering CDS alerts),
+the <a href="https://build.fhir.org/ig/HL7/sdc/en/StructureDefinition-sdc-questionnaire-definitionExtract.html">SDC Definition Extract</a>
+mechanism allows individual resources to be derived automatically from a QuestionnaireResponse. Each question item can
+be annotated with a definition extension that maps it to a target resource and element path. This means a single
+QuestionnaireResponse can be both the source of truth and the input to an automated extraction pipeline that produces
+discrete Observations, Conditions, or other resources - without requiring the sending system to produce all of them
+independently. The questionnaire is therefore not a barrier to interoperability; it is the entry point.</p>
+
+<p><strong>It enforces structural completeness.</strong> A Questionnaire defines exactly which items are required, which are
+conditional (
+e.g., “if abnormal: specify”), and which follow a controlled vocabulary. This makes validation straightforward and
+reduces the risk of partial or ambiguous submissions. Compared to accepting a bundle of arbitrary Observations, a
+QuestionnaireResponse validated against its Questionnaire gives the receiving system strong guarantees about what data
+is present and how it is structured.</p>
+
+<p><strong>It simplifies versioning and governance.</strong> The questionnaire content in this careset was established through a formal
+working group process (VZA, NPTV) and is subject to controlled change management. Encoding that content in a FHIR
+Questionnaire resource means the definition, its version, and its approved answer sets are all machine-readable and can
+be referenced explicitly by every QuestionnaireResponse. When the working group approves a change to the questionnaire,
+implementers can unambiguously distinguish responses that were captured under version N from those captured under
+version N+1.</p>
+
+<p><strong>It lowers the implementation bar for home nursing systems.</strong> Home nursing software is often less technically mature
+than
+hospital EPDs. Requiring these systems to produce a semantically correct bundle of typed FHIR resources (with proper
+codes, units, and references) places a significant implementation burden on them. Producing a QuestionnaireResponse -
+essentially a structured form submission - is a substantially simpler task. The complexity of mapping to fine-grained
+FHIR resources can then be handled centrally, either at the receiving hospital system or via an intermediary extraction
+service.</p>
+
+<h3 id="encounter">Encounter</h3>
+
+<p>The <strong>purpose of the FHIR Encounter resource is twofold</strong>:</p>
+
+<ol>
+  <li>Note on the status of the visit: did the visit even happen? Was the patient home?</li>
+  <li>Note on the status of the care that was asked. E.g. for OPAT medication administration was ordered but also the care
+of the catheter. Care of the catheter was done but not the medication administration (e.g. medication could not be
+properly prepared) then caregivers at the hospital want to know for each order/procedure what the status was.
+It is possible that different nurses are involved in the care of the patient and that they have different
+observations to share with the hospital. For example, one nurse could be responsible for the care of the catheter and
+another nurse could be responsible for the medication administration. Both nurses can share their carestatus with the
+hospital using the FHIR Encounter resource.</li>
+</ol>
+
+<div class="dragon">
+
+The FHIR Encounter resource is only used for the orders given by the hospital. Other 'procedures' should
+not be communicated back to the hospital.
+</div>
+<p><br /></p>
+
+<p>Possible <strong>reasonCodes</strong> for the FHIR Encounter resource (with link to the billing code <strong>Tarfac/RIZIV</strong>) are the following:</p>
+
+<ul>
+  <li>82078001 |Collection of blood specimen for laboratory (procedure)| » Bloedname (N/A, Non-reimbursable care)</li>
+  <li>705995006 |Needleless valve-connector (physical object)| » Vervangen naaldloze connector (N/A, Non-reimbursable care)</li>
+  <li>448439004 |Catheter stabilization device (physical object)| » Vervangen statlock (N/A, Non-reimbursable care)</li>
+  <li>103715008 |Removal of catheter (procedure)| » Permanent verwijderen centrale katheter (421072 or 425375 ?)</li>
+  <li>18949003 |Change of dressing (procedure)| » Vervangen katheterverband (424336, Specialized Nursing Care)</li>
+  <li>302358004 |Vascular cannula adjustment (procedure)| » Vervangen grippernaald (423113, Specialized Nursing Care)</li>
+  <li>233553003 |Vascular cannula removal (procedure)| » Verwijderen grippernaald (421072, Specialized Nursing Care)</li>
+  <li>18629005 |Administration of drug or medicament (procedure)| (+ one of the following codes for extra information)
+    <ul>
+      <li>14152002 |Intravenous infusion (procedure)| » Perfusie (425375, Infusion/Perfusion)</li>
+      <li>386358000 |Administration of drug or medicament via intravenous route (procedure)| » Intraveneuze toediening
+(423054, Injection/Administration)</li>
+      <li>76601001 |Intramuscular injection (procedure)| » Intramusculaire toediening (423076, Injection/Administration)</li>
+      <li>1285265006 |Injection into subcutaneous tissue (procedure)|  » Subcutane toediening (423076, Injection/Administration)</li>
+      <li>243132000 |Inhaled drug administration (procedure)| » Inhalatie (? 425213)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="fhir-resources">FHIR Resources</h3>
+
+<h4 id="profiles">Profiles</h4>
+
+<ul>
+  <li><a href="./StructureDefinition-homehosp-encounter.html">Home Hospitalization Careset Encounter</a></li>
+  <li><a href="./StructureDefinition-homehosp-questionnaire-response.html">Home Hospitalization Careset Questionnaire Response</a></li>
+  <li><a href="./StructureDefinition-homehosp-opat-base.html">OPAT Home Hospitalization Base Questionnaire</a></li>
+  <li><a href="./StructureDefinition-homehosp-opat-continuous-infusion.html">OPAT Continuous Infusion Nursing Questionnaire</a></li>
+  <li><a href="./StructureDefinition-homehosp-opat-short-iv.html">OPAT Short-Duration IV Nursing Questionnaire</a></li>
+</ul>
+
+<h4 id="logical-models">Logical Models</h4>
+
+<ul>
+  <li><a href="./StructureDefinition-homehosp-encounter-lm.html">Home Hospitalization Encounter Logical Model</a></li>
+  <li><a href="./StructureDefinition-homehosp-questionnaire-response-lm.html">Home Hospitalization QuestionnaireResponse Logical Model</a></li>
+  <li><a href="./StructureDefinition-opat-continuous-infusion-questionnaire.html">OPAT Continuous Infusion Questionnaire Logical Model</a></li>
+  <li><a href="./StructureDefinition-opat-short-iv-questionnaire.html">OPAT Short IV Questionnaire Logical Model</a></li>
+</ul>
+
+<h4 id="valuesets">ValueSets</h4>
+
+<ul>
+  <li><a href="./ValueSet-medication-storage.html">Medication Storage Status</a></li>
+  <li><a href="./ValueSet-true-false.html">True / False Value Set</a></li>
+  <li><a href="./ValueSet-YesNoVS.html">Yes / No Value Set</a></li>
+  <li><a href="./ValueSet-normal-abnormal.html">Normal / Abnormal Finding</a></li>
+  <li><a href="./ValueSet-catheter-type.html">Catheter Type</a></li>
+  <li><a href="./ValueSet-lumen-color.html">Catheter Lumen Color</a></li>
+  <li><a href="./ValueSet-catheter-patency.html">Catheter Patency Scale</a></li>
+  <li><a href="./ValueSet-homehosp-side-effect-severity.html">Home Hospitalization Side Effect Severity Scale</a></li>
+</ul>
+
+<h4 id="examples">Examples</h4>
+
+<ul>
+  <li><a href="./Composition-OPAT-Document.html">FHIR Document with patient information from hospital</a></li>
+  <li><a href="./Encounter-Encounter-3441.html">FHIR Encounter</a></li>
+  <li><a href="./Questionnaire-homehosp-opat-continuous-infusion.html">FHIR Questionnaire continuous infusion</a></li>
+  <li><a href="./Questionnaire-homehosp-opat-short-iv.html">FHIR Questionnaire short IV</a></li>
+  <li><a href="./QuestionnaireResponse-HomehospOpatContinuousInfusionQuestionnaireResponseExample.html">FHIR QuestionnaireResponse continuous infusion</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">HL7 Belgium</a>.  
+          Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-22 07:37:00 +0000">
+    2026-07-22
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- HL7 Belgium -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

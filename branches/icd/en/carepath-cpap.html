@@ -1,0 +1,1098 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Carepath CPAP / PAP therapy - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/hl7-be.css"/>
+  <!-- Placeholder for child template CSS declarations -->
+  <!-- HL7 Belgium -->
+  <!-- draft -->
+
+<link rel="stylesheet" href="assets/css/colors.css"/>
+
+<link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/tables.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+        
+  <!-- HL7 Belgium -->
+  <!-- draft -->
+
+<div id="ig-nav">
+  <a no-external="true" id="hl7-logo" href="https://hl7belgium.org">
+    <img src="assets/images/hl7be-logo-header.png" alt="HL7 Belgium" height="65"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+</div>
+<div id="ig-search">
+  <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img src="../assets/images/bel.svg" alt="Belgium flag" title="Belgium" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidelines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recommendations.html">General Recommendations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Carepaths
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="carepath-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="carepath-heartfailure.html">Heart failure</a>
+      </li>
+      <li>
+        <a href="carepath-ews.html">NEWS</a>
+      </li>
+      <li>
+        <a href="carepath-totem.html">TOTeM</a>
+      </li>
+      <li>
+        <a href="carepath-opat.html">OPAT</a>
+      </li>
+      <li>
+        <a href="carepath-holter.html">Holter Monitoring</a>
+      </li>
+      <li>
+        <a href="carepath-cied.html">ICD / CIED</a>
+      </li>
+      <li>
+        <a href="carepath-cpap.html">CPAP / PAP therapy</a>
+      </li>
+      <li>
+        <a href="carepath-antitumoral.html">Antitumoral</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html">Diabetes</a>
+      </li>
+      <li>
+        <a href="carepath-perioperative-abdominal.html">Perioperative Care - abdominal</a>
+      </li>
+      <li>
+        <a href="carepath-overview-loinc.html">Overview LOINC</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Caresets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="careset-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="legal-guidelines-home-hospitalization.html">Special careset - home hospitalization</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-opat.html">Home hosp - OPAT</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-antitumoral.html">Home hosp - Antitumoral Therapy</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-mappingtable.html">Home hosp - Mappingtables</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li><a name="l357">​</a>
+        <a href="artifacts.html#1">Logical Models</a>
+      </li>
+      <li><a name="l363">​</a>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li><a name="l369">​</a>
+        <a href="artifacts.html#4">Value Sets</a>
+      </li>
+      <li><a name="l375">​</a>
+        <a href="artifacts.html#6">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">History</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://hl7.org/fhir/R4/">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/">Transversal Clinical Core</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="copyrights.html">Copyrights</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Carepath CPAP / PAP therapy</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/patient-monitoring/tree/81/merge">https://github.com/hl7-be/patient-monitoring/tree/81/merge</a> and changes regularly. See the <a href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-be/patient-monitoring/commit/f4b6962d10021dc187728836582134160aee64c7"><code>f4b6962d</code></a>. &nbsp; Branch: <a href="https://github.com/hl7-be/patient-monitoring/tree/icd"><code>icd</code></a>.</span></p>  <!-- EndReleaseHeader -->
+  <h2>Carepath CPAP / PAP therapy</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#telemonitoring-hub-identifier" id="markdown-toc-telemonitoring-hub-identifier">Telemonitoring Hub Identifier</a></li>
+  <li><a href="#care-pathway-overview" id="markdown-toc-care-pathway-overview">Care Pathway Overview</a></li>
+  <li><a href="#process-and-workflow-description" id="markdown-toc-process-and-workflow-description">Process and Workflow Description</a></li>
+  <li><a href="#reference-implementation-guide" id="markdown-toc-reference-implementation-guide">Reference Implementation Guide</a></li>
+  <li><a href="#integration-modules-for-epd" id="markdown-toc-integration-modules-for-epd">Integration Modules for EPD</a></li>
+  <li><a href="#gap-assessment" id="markdown-toc-gap-assessment">Gap Assessment</a></li>
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a></li>
+  <li><a href="#example-references" id="markdown-toc-example-references">Example References</a></li>
+  <li><a href="#open-items" id="markdown-toc-open-items">Open Items</a></li>
+</ul>
+
+</div>
+<div class="stu-note">
+This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
+</div>
+
+<p><strong>DRAFT: 2026-09-21</strong></p>
+
+<h3 id="telemonitoring-hub-identifier">Telemonitoring Hub Identifier</h3>
+
+<ul>
+  <li><strong>Carepath Identifier</strong>: https://hl7belgium.org/fhir/patient-monitoring/carepath/cpap</li>
+  <li><strong>Carepath Version</strong>: 1.0.0</li>
+</ul>
+
+<h3 id="care-pathway-overview">Care Pathway Overview</h3>
+
+<p>This carepath describes the follow-up of patients treated with <strong>positive airway pressure (PAP) therapy</strong> for sleep
+apnea. CPAP is the most common therapy mode, but the carepath covers the whole family of sleep apnea breathing therapy
+equipment (SABTE).</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Therapy mode</th>
+      <th>Abbreviation</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Continuous positive airway pressure</td>
+      <td>CPAP</td>
+      <td>One fixed therapeutic pressure</td>
+    </tr>
+    <tr>
+      <td>Automatic positive airway pressure</td>
+      <td>APAP</td>
+      <td>Pressure adapted automatically between a minimum and a maximum</td>
+    </tr>
+    <tr>
+      <td>Bilevel positive airway pressure</td>
+      <td>BPAP</td>
+      <td>Separate inspiratory and expiratory pressure (S, T and ST variants)</td>
+    </tr>
+    <tr>
+      <td>Adaptive servo-ventilation</td>
+      <td>ASV</td>
+      <td>Pressure support adapted breath-by-breath, e.g. for central apnea</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>Monitoring Duration</strong>: Continuous, for the duration of the therapy (typically multi-year).</li>
+  <li><strong>Central Care Facility</strong>: Sleep clinic / pneumology department with a dedicated PAP follow-up team.</li>
+  <li><strong>Data Source</strong>: The PAP device, read out through its internal modem or SD card and forwarded by the manufacturer’s
+therapy management platform (e.g. ResMed, Philips, Löwenstein).</li>
+  <li><strong>Reporting Obligation</strong>: Adherence data is reported back to the mutualities, which makes therapy usage time a
+reimbursement-relevant data point rather than only a clinical one.</li>
+</ul>
+
+<h4 id="patient-eligibility">Patient Eligibility</h4>
+
+<ul>
+  <li><strong>Indications</strong>: Diagnosed obstructive, central or mixed sleep apnea with an indication for PAP therapy.</li>
+  <li><strong>Consent</strong>: Signed informed consent for remote follow-up prior to enrolment.</li>
+  <li><strong>Enrolment</strong>: The device is registered on the manufacturer’s therapy management platform and linked to the patient.</li>
+</ul>
+
+<hr/>
+
+<h3 id="process-and-workflow-description">Process and Workflow Description</h3>
+
+<h4 id="start-up">Start-Up</h4>
+
+<ul>
+  <li><strong>Device delivery and mask fitting</strong>: The device and an appropriate mask are fitted; the mask type materially
+affects leak values and is therefore relevant follow-up information.</li>
+  <li><strong>Informed consent</strong>: Collected and securely stored.</li>
+  <li><strong>Initial settings</strong>: Therapy mode and pressure settings are programmed and recorded as the baseline.</li>
+</ul>
+
+<h4 id="data-collection">Data Collection</h4>
+
+<ul>
+  <li>The device records therapy data per session (typically one night) and transmits it to the manufacturer’s platform,
+usually daily.</li>
+  <li>The platform aggregates the sessions into daily and periodic summaries.</li>
+  <li>Technology is CE-certified, with end-to-end encryption and GDPR compliance.</li>
+</ul>
+
+<h4 id="alarm-management">Alarm Management</h4>
+
+<ul>
+  <li><strong>Adherence</strong>: Usage below the agreed threshold (commonly expressed as hours per night over a reporting period) is
+flagged for follow-up and is relevant for continued reimbursement.</li>
+  <li><strong>Residual events</strong>: A residual AHI above threshold indicates insufficiently controlled apnea and triggers review of
+the therapy settings.</li>
+  <li><strong>Leak</strong>: Excessive leak indicates a mask problem and is addressed by the follow-up team.</li>
+  <li><strong>Review</strong>: Data is reviewed by the sleep clinic team during working hours.</li>
+</ul>
+
+<hr/>
+
+<h3 id="reference-implementation-guide">Reference Implementation Guide</h3>
+
+<p>This carepath builds on the HL7 International:</p>
+
+<blockquote>
+  <p><strong>Personal Health Device (PHD) Implementation Guide</strong>
+<a href="https://build.fhir.org/ig/HL7/phd/en/">https://build.fhir.org/ig/HL7/phd/en/</a>
+Package: <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.phd#2.0.0</code> — <strong>based on FHIR 4.0.1</strong></p>
+</blockquote>
+
+<p>The PHD IG defines how measurements from personal health devices are carried in FHIR, using ISO/IEEE 11073-10101 (MDC)
+nomenclature for both the device type and the individual measurements. Sleep apnea breathing therapy equipment is one
+of the device specializations it supports, and the MDC nomenclature contains a dedicated <strong>SABTE</strong> block covering
+usage time, residual events, leak, pressure and therapy mode.</p>
+
+<p>Unlike the <a href="./carepath-cied.html">ICD / CIED carepath</a>, the PHD IG is published against the <strong>same FHIR version as
+this IG (4.0.1)</strong>. Its profiles can therefore be referenced and used directly, and <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.phd</code> can be added to
+this IG’s dependencies when Belgian profiles or examples are added.</p>
+
+<h5 id="profiles">Profiles</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>FHIR Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Numeric measurement (usage, AHI, leak, pressure)</td>
+      <td><a href="https://build.fhir.org/ig/HL7/phd/en/StructureDefinition-PhdNumericObservation.html"><code class="language-plaintext highlighter-rouge">PhdNumericObservation</code></a></td>
+    </tr>
+    <tr>
+      <td>Coded measurement (therapy mode, device mode)</td>
+      <td><a href="https://build.fhir.org/ig/HL7/phd/en/StructureDefinition-PhdCodedEnumerationObservation.html"><code class="language-plaintext highlighter-rouge">PhdCodedEnumerationObservation</code></a></td>
+    </tr>
+    <tr>
+      <td>Grouped measurements reported together</td>
+      <td><a href="https://build.fhir.org/ig/HL7/phd/en/StructureDefinition-PhdCompoundObservation.html"><code class="language-plaintext highlighter-rouge">PhdCompoundObservation</code></a></td>
+    </tr>
+    <tr>
+      <td>The PAP device</td>
+      <td><a href="https://build.fhir.org/ig/HL7/phd/en/StructureDefinition-PhdDevice.html"><code class="language-plaintext highlighter-rouge">PhdDevice</code></a></td>
+    </tr>
+    <tr>
+      <td>The gateway forwarding the data</td>
+      <td><a href="https://build.fhir.org/ig/HL7/phd/en/StructureDefinition-PhgDevice.html"><code class="language-plaintext highlighter-rouge">PhgDevice</code></a></td>
+    </tr>
+    <tr>
+      <td>Patient as reported by the gateway</td>
+      <td><a href="https://build.fhir.org/ig/HL7/phd/en/StructureDefinition-PhdPatient.html"><code class="language-plaintext highlighter-rouge">PhdPatient</code></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">PhdNumericObservation</code> binds <code class="language-plaintext highlighter-rouge">Observation.code</code> extensibly to the MDC nomenclature, constrains <code class="language-plaintext highlighter-rouge">value[x]</code> to a
+<code class="language-plaintext highlighter-rouge">Quantity</code> with a UCUM unit, requires <code class="language-plaintext highlighter-rouge">device</code> to reference a <code class="language-plaintext highlighter-rouge">PhdDevice</code>, and — importantly for this carepath —
+allows <code class="language-plaintext highlighter-rouge">effective[x]</code> to be an <code class="language-plaintext highlighter-rouge">effectivePeriod</code>, which is what a per-night or per-period summary needs.</p>
+
+<hr/>
+
+<h3 id="integration-modules-for-epd">Integration Modules for EPD</h3>
+
+<h4 id="outcome-module---pdf">Outcome Module - PDF</h4>
+
+<ul>
+  <li><strong>Frequency</strong>: One therapy report per reporting period, plus reports on request.</li>
+  <li><strong>Content</strong>: Adherence graph, residual AHI, leak and pressure statistics as produced by the manufacturer’s platform.</li>
+  <li><strong>Use</strong>: Added to the patient file, shared externally and used for reporting back to the mutualities.</li>
+  <li><strong>FHIR</strong>: Attached to the therapy report as <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code>.</li>
+</ul>
+
+<h4 id="outcome-module---fhir-integration">Outcome Module - FHIR Integration</h4>
+
+<h5 id="general">General</h5>
+
+<ul>
+  <li><strong>Frequency</strong>: One set of summary observations per night, plus aggregated summaries per reporting period.</li>
+  <li><strong>Terminology</strong>: <code class="language-plaintext highlighter-rouge">urn:iso:std:iso:11073:10101</code> (MDC), SABTE block, with UCUM units.</li>
+</ul>
+
+<h5 id="therapy-mode-and-device-type">Therapy mode and device type</h5>
+
+<p>The therapy mode is exchanged as a coded observation using <code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_SET</code> with one of the enumerated
+mode values:</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8410888</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_SET</code></td>
+      <td><em>(the observation code itself)</em></td>
+    </tr>
+    <tr>
+      <td>8410890</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_CPAP</code></td>
+      <td>CPAP</td>
+    </tr>
+    <tr>
+      <td>8410891</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_CPAP_AUTO</code></td>
+      <td>APAP</td>
+    </tr>
+    <tr>
+      <td>8410892</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_BPAP_S</code></td>
+      <td>BPAP spontaneous</td>
+    </tr>
+    <tr>
+      <td>8410893</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_BPAP_T</code></td>
+      <td>BPAP timed</td>
+    </tr>
+    <tr>
+      <td>8410894</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_BPAP_ST</code></td>
+      <td>BPAP spontaneous/timed</td>
+    </tr>
+    <tr>
+      <td>8410895</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_BPAP_S_AUTO</code></td>
+      <td>BPAP spontaneous, auto-adjusting</td>
+    </tr>
+    <tr>
+      <td>8410896</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_BPAP_T_AUTO</code></td>
+      <td>BPAP timed, auto-adjusting</td>
+    </tr>
+    <tr>
+      <td>8410897</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_BPAP_ST_AUTO</code></td>
+      <td>BPAP spontaneous/timed, auto-adjusting</td>
+    </tr>
+    <tr>
+      <td>8410898</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_THERAPY_ACSV</code></td>
+      <td>ASV</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In addition, the device itself carries its specialization on <code class="language-plaintext highlighter-rouge">PhdDevice.specialization</code>, bound to the PHD value set
+<a href="https://build.fhir.org/ig/HL7/phd/en/ValueSet-DeviceTypes11073MDC.html"><code class="language-plaintext highlighter-rouge">DeviceTypes11073MDC</code></a>, which contains both
+the SABTE profile and the PAP sub-specializations:</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>528408</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_DEV_SPEC_PROFILE_SABTE</code></td>
+      <td>Sleep apnea breathing therapy equipment</td>
+    </tr>
+    <tr>
+      <td>528532</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_DEV_SUB_SPEC_PROFILE_CPAP</code></td>
+      <td>CPAP device</td>
+    </tr>
+    <tr>
+      <td>528533</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_DEV_SUB_SPEC_PROFILE_CPAP_AUTO</code></td>
+      <td>APAP device</td>
+    </tr>
+    <tr>
+      <td>528534</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_DEV_SUB_SPEC_PROFILE_BPAP</code></td>
+      <td>BPAP device</td>
+    </tr>
+    <tr>
+      <td>528535</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_DEV_SUB_SPEC_PROFILE_BPAP_AUTO</code></td>
+      <td>Auto-adjusting BPAP device</td>
+    </tr>
+    <tr>
+      <td>528536</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_DEV_SUB_SPEC_PROFILE_ACSV</code></td>
+      <td>ASV device</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="therapy-usage-and-adherence">Therapy usage and adherence</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Meaning</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8410708</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_TIME_PD_FLOW_GEN_TOTAL</code></td>
+      <td>Time the flow generator was running (device “on”)</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>8410712</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_TIME_PD_USAGE_TOTAL</code></td>
+      <td>Time therapy was actually delivered (device “in use”)</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>8410716</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_TIME_PD_USAGE_W_HUM</code></td>
+      <td>Usage time with humidifier</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>8410720</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_TIME_PD_USAGE_WO_HUM</code></td>
+      <td>Usage time without humidifier</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>8410744</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_TIME_PD_RAMP_SET</code></td>
+      <td>Programmed ramp duration</td>
+      <td>s</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The distinction between <em>flow generator time</em> and <em>usage time</em> is exactly the “how long the device was on” versus
+“how long the device was in use” pair requested by the clinical side, and both are needed: adherence is based on
+usage time, while the difference between the two is itself informative.</p>
+
+<h5 id="residual-respiratory-events">Residual respiratory events</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Meaning</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8410788</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_AHI</code></td>
+      <td>Apnea-hypopnea index</td>
+      <td>/h</td>
+    </tr>
+    <tr>
+      <td>8410792</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_AHI_TOTAL</code></td>
+      <td>Total AHI</td>
+      <td>/h</td>
+    </tr>
+    <tr>
+      <td>8410800</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_AHI_OBSTRUC</code></td>
+      <td>Obstructive AHI</td>
+      <td>/h</td>
+    </tr>
+    <tr>
+      <td>8410804</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_AHI_CENTRAL</code></td>
+      <td>Central AHI</td>
+      <td>/h</td>
+    </tr>
+    <tr>
+      <td>8410796</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_AHI_UNCLASS</code></td>
+      <td>Unclassified AHI</td>
+      <td>/h</td>
+    </tr>
+    <tr>
+      <td>8410724</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_TIME_PD_SNORING_TOTAL</code></td>
+      <td>Total snoring time</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>8410728</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_TIME_PD_CSR_TOTAL</code></td>
+      <td>Total Cheyne-Stokes respiration time</td>
+      <td>s</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="leak">Leak</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Meaning</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8411040</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK</code></td>
+      <td>Leak</td>
+      <td>L/min</td>
+    </tr>
+    <tr>
+      <td>8411041</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK_MAX</code></td>
+      <td>Maximum leak</td>
+      <td>L/min</td>
+    </tr>
+    <tr>
+      <td>8411042</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK_MIN</code></td>
+      <td>Minimum leak</td>
+      <td>L/min</td>
+    </tr>
+    <tr>
+      <td>8411043</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK_MEAN</code></td>
+      <td>Mean leak</td>
+      <td>L/min</td>
+    </tr>
+    <tr>
+      <td>8411047</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK_P50</code></td>
+      <td>Median leak</td>
+      <td>L/min</td>
+    </tr>
+    <tr>
+      <td>8411049</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK_P90</code></td>
+      <td>90th percentile leak</td>
+      <td>L/min</td>
+    </tr>
+    <tr>
+      <td>8411050</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK_P95</code></td>
+      <td>95th percentile leak</td>
+      <td>L/min</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="pressure">Pressure</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Meaning</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8410944</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS</code></td>
+      <td>Delivered pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410945</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_MAX</code></td>
+      <td>Maximum delivered pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410946</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_MIN</code></td>
+      <td>Minimum delivered pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410947</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_MEAN</code></td>
+      <td>Mean delivered pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410951</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_P50</code></td>
+      <td>Median delivered pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410953</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_P90</code></td>
+      <td>90th percentile delivered pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410954</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_P95</code></td>
+      <td>95th percentile delivered pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410964</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_CPAP_SET</code></td>
+      <td>Programmed CPAP pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410968</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_CPAP_AUTO_MAX_SET</code></td>
+      <td>Programmed APAP maximum pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410972</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_CPAP_AUTO_MIN_SET</code></td>
+      <td>Programmed APAP minimum pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410976</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_IPAP_SET</code></td>
+      <td>Programmed inspiratory pressure (BPAP)</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410980</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_EPAP_SET</code></td>
+      <td>Programmed expiratory pressure (BPAP)</td>
+      <td>cm[H2O]</td>
+    </tr>
+    <tr>
+      <td>8410984</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_RAMP_START_SET</code></td>
+      <td>Programmed ramp start pressure</td>
+      <td>cm[H2O]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <code class="language-plaintext highlighter-rouge">_SET</code> codes carry the programmed settings, which are the values requested for APAP and ASV follow-up; the
+remaining codes carry what the device actually delivered.</p>
+
+<h5 id="further-ventilation-parameters">Further ventilation parameters</h5>
+
+<p>Relevant mainly for BPAP and ASV: <code class="language-plaintext highlighter-rouge">MDC_SABTE_RESP_RATE</code> (8410992), <code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_TIDAL</code> (8411072),
+<code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_MINUTE</code> (8411056) and <code class="language-plaintext highlighter-rouge">MDC_SABTE_RATIO_IE</code> (8411008), each with the same
+<code class="language-plaintext highlighter-rouge">_MAX</code> / <code class="language-plaintext highlighter-rouge">_MIN</code> / <code class="language-plaintext highlighter-rouge">_MEAN</code> / <code class="language-plaintext highlighter-rouge">_P50</code> / <code class="language-plaintext highlighter-rouge">_P90</code> / <code class="language-plaintext highlighter-rouge">_P95</code> statistical variants as leak and pressure.</p>
+
+<hr/>
+
+<h3 id="gap-assessment">Gap Assessment</h3>
+
+<p>The first step requested for this carepath was to assess what is already covered by the PHD IG and where the gaps are.</p>
+
+<p><strong>Covered by PHD and the MDC nomenclature:</strong></p>
+
+<ul>
+  <li>Therapy mode, device specialization, manufacturer, model and serial number.</li>
+  <li>Usage and flow generator time, residual AHI with its obstructive/central/unclassified breakdown, snoring and CSR
+time, leak, delivered and programmed pressures, and the ventilation parameters.</li>
+  <li>The structural pattern for carrying each of these as an <code class="language-plaintext highlighter-rouge">Observation</code> with an MDC code, a UCUM unit, a period and a
+device reference.</li>
+</ul>
+
+<p><strong>Gaps to be resolved in this IG:</strong></p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gap</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No report container</td>
+      <td>PHD defines no <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> profile — it models device-to-server measurement upload, not a clinical report. The therapy report toward the EPD, including the PDF for the patient file and the mutualities, has to be defined here.</td>
+    </tr>
+    <tr>
+      <td>Device identification</td>
+      <td><code class="language-plaintext highlighter-rouge">PhdDevice</code> requires an IEEE EUI-64 System-Id identifier, which comes from the Bluetooth/Continua transport. Data arriving from a manufacturer’s cloud platform rather than from a direct device connection may not carry one. This needs a Belgian decision.</td>
+    </tr>
+    <tr>
+      <td>Mask information</td>
+      <td>The MDC nomenclature has no code for mask type or model — only <code class="language-plaintext highlighter-rouge">MDC_SABTE_MODE_DEV_MASK_FITTING</code> (a device mode) and ventilator mask-leak events. Mask information was explicitly requested, so a representation has to be chosen.</td>
+    </tr>
+    <tr>
+      <td>Vendor semantic variation</td>
+      <td>ResMed and Löwenstein report AHI and leak comparably; Philips is reported to differ, expressing some values as event counts rather than as an index or a flow rate. The exact code and unit per vendor has to be agreed so the EPD receives comparable data.</td>
+    </tr>
+    <tr>
+      <td>Summary period</td>
+      <td>The reporting period for each summary (per night, per week, per reimbursement period) has to be fixed, and expressed consistently in <code class="language-plaintext highlighter-rouge">effectivePeriod</code>.</td>
+    </tr>
+    <tr>
+      <td>Ambiguous MDC codes</td>
+      <td>The MDC expansion contains near-duplicate reference IDs at different code points — for example <code class="language-plaintext highlighter-rouge">MDC_SABTE_VOL_LEAK_MIN</code> appears at both 8411042 and 8411089, and <code class="language-plaintext highlighter-rouge">MDC_SABTE_PRESS_P90</code> at both 8410953 and 8410957. Exact codes must be pinned per data point.</td>
+    </tr>
+    <tr>
+      <td>Clinical interpretation</td>
+      <td>A free-text clinical conclusion by the sleep clinic is part of the requested exchange and has no MDC equivalent; the existing <a href="./StructureDefinition-clinical-note-observation.html">Clinical Note Observation</a> can be reused.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="terminology">Terminology</h3>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Purpose</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Device specialization and measurements</td>
+      <td><code class="language-plaintext highlighter-rouge">urn:iso:std:iso:11073:10101</code> (ISO/IEEE 11073-10101, SABTE block)</td>
+    </tr>
+    <tr>
+      <td>PHD observation category</td>
+      <td><code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories</code></td>
+    </tr>
+    <tr>
+      <td>Units</td>
+      <td><code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code> (UCUM)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>As for the <a href="./carepath-cied.html">ICD / CIED carepath</a>, MDC rather than SNOMED CT is the terminology of choice here:
+the data points are produced by the devices themselves using the ISO/IEEE nomenclature. This is a deliberate exception
+to the general rule described on the <a href="./terminology.html">Terminologies</a> page.</p>
+
+<h3 id="example-references">Example References</h3>
+
+<p>The PHD IG publishes examples of the structural pattern, though not for sleep apnea equipment specifically:</p>
+
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7/phd/en/Bundle-bundle-example-1.html">Bundle: first-time transaction</a> — Patient,
+Device and Observation in one upload.</li>
+  <li><a href="https://build.fhir.org/ig/HL7/phd/en/Observation-temperature-observation.html">Observation: numeric measurement</a> —
+the <code class="language-plaintext highlighter-rouge">PhdNumericObservation</code> pattern.</li>
+  <li><a href="https://build.fhir.org/ig/HL7/phd/en/Device-phd-711000FEFF5F49B0.B0495F001071.html">Device: PHD system information</a></li>
+</ul>
+
+<p>Belgian examples for PAP therapy are to be added once the gaps above are resolved.</p>
+
+<h3 id="open-items">Open Items</h3>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dependency</td>
+      <td>Add <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.phd</code> to this IG’s dependencies once Belgian profiles or examples referencing PHD are introduced.</td>
+    </tr>
+    <tr>
+      <td>Minimum data set</td>
+      <td>Confirm the minimum set of MDC codes per therapy mode with the sleep clinics and the PAP vendors.</td>
+    </tr>
+    <tr>
+      <td>Vendor alignment</td>
+      <td>Validate the mapping against ResMed, Philips and Löwenstein platform exports.</td>
+    </tr>
+    <tr>
+      <td>Reimbursement reporting</td>
+      <td>Determine whether the adherence data reported to the mutualities can be derived from the same observations.</td>
+    </tr>
+    <tr>
+      <td>HCP involvement</td>
+      <td>Review the minimum data set and the alerting thresholds with the treating pneumologists.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">HL7 Belgium</a>.  
+          Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-22 07:17:00 +0000">
+    2026-09-22
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+              <!-- HL7 Belgium -->
+  <!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7belgium.org/fhir/patient-monitoring/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a>
+  <!-- no fitting stylesheet found (status/publisher) -->
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

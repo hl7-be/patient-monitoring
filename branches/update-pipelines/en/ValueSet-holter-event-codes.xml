@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="holter-event-codes"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet holter-event-codes</b></p><a name="holter-event-codes"> </a><a name="hcholter-event-codes"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 301120008 (ECG: presence findings)</li></ul></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/ValueSet/holter-event-codes"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.54.48.1"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="HolterEventCodes"/>
+  <title value="Holter Event Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-05-18T09:41:30+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used to classify Holter-detected rhythm events"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="301120008"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

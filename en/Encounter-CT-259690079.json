@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "CT-259690079",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter CT-259690079</b></p><a name=\"CT-259690079\"> </a><a name=\"hcCT-259690079\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>period</b>: 2025-07-11 13:09:50+0200 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p></div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "AMB",
+    "display" : "ambulatory"
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-123"
+  },
+  "period" : {
+    "start" : "2025-07-11T13:09:50+02:00"
+  },
+  "serviceProvider" : {
+    "reference" : "Organization/Organization-UZL"
+  }
+}

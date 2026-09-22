@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="Encounter-3441"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter Encounter-3441</b></p><a name="Encounter-3441"> </a><a name="hcEncounter-3441"> </a><p><b>status</b>: finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">ActCode: HH</a> (home health)</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}">primary performer</span></td><td>John Doe rizivnr</td></tr></table><p><b>period</b>: 2025-11-19 11:07:52+0000 --&gt; (ongoing)</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 18629005}, {http://snomed.info/sct 276844002}">subcutane inspuiting</span></p><p><b>serviceProvider</b>: Wit-Gele Kruis Vlaams-Brabant</p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="HH"/>
+    <display value="home health"/>
+  </class>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <display value="John Doe rizivnr"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2025-11-19T11:07:52+00:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="18629005"/>
+      <display value="Administration of drug or medicament (procedure)"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="276844002"/>
+      <display value="Injection to subcutaneous drug delivery port (procedure)"/>
+    </coding>
+    <text value="subcutane inspuiting"/>
+  </reasonCode>
+  <serviceProvider>
+    <display value="Wit-Gele Kruis Vlaams-Brabant"/>
+  </serviceProvider>
+</Encounter>

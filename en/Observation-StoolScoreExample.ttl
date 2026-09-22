@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/StoolScoreExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "StoolScoreExample"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation StoolScoreExample</b></p><a name=\"StoolScoreExample\"> </a><a name=\"hcStoolScoreExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 443172007}\">Bristol stool form score</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: 2</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:443172007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "443172007" ] ;
+       fhir:Coding.display [ fhir:value "Bristol stool form score" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2025-10-08T10:00:00Z"^^xsd:dateTime] ;
+  fhir:Observation.valueInteger [ fhir:value "2"^^xsd:integer] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/StoolScoreExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/PainInCalvesExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "PainInCalvesExample"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PainInCalvesExample</b></p><a name=\"PainInCalvesExample\"> </a><a name=\"hcPainInCalvesExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1264028004}\">Myalgia of lower leg</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-15 09:56:00+0000 --&gt; 2024-11-15 09:57:00+0000</p><p><b>performer</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes (qualifier value)</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:1264028004 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "1264028004" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ;
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2024-11-15T09:56:00+00:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2024-11-15T09:57:00+00:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Observation.performer [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:373066001 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "373066001" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/PainInCalvesExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

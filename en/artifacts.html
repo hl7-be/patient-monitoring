@@ -1,0 +1,2067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+<link href="assets/css/tables.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"21"}
+    h3,h4,h5,h6{--heading-prefix:"21.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img alt="Belgium flag" src="../assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidelines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recommendations.html">General Recommendations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Carepaths
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="carepath-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="carepath-heartfailure.html">Heart failure</a>
+      </li>
+      <li>
+        <a href="carepath-ews.html">NEWS</a>
+      </li>
+      <li>
+        <a href="carepath-totem.html">TOTeM</a>
+      </li>
+      <li>
+        <a href="carepath-opat.html">OPAT</a>
+      </li>
+      <li>
+        <a href="carepath-holter.html">Holter Monitoring</a>
+      </li>
+      <li>
+        <a href="carepath-antitumoral.html">Antitumoral</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html">Diabetes</a>
+      </li>
+      <li>
+        <a href="carepath-perioperative-abdominal.html">Perioperative Care - abdominal</a>
+      </li>
+      <li>
+        <a href="carepath-overview-loinc.html">Overview LOINC</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Caresets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="careset-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="legal-guidelines-home-hospitalization.html">Special careset - home hospitalization</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-opat.html">Home hosp - OPAT</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-antitumoral.html">Home hosp - Antitumoral Therapy</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-mappingtable.html">Home hosp - Mappingtables</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li>
+        <a href="artifacts.html#1">Logical Models</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">History</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://hl7.org/fhir/R4/">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/">Transversal Clinical Core</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="copyrights.html">Copyrights</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/patient-monitoring/tree/main'>https://github.com/hl7-be/patient-monitoring/tree/main</a> and changes regularly. See the <a href='http://hl7belgium.org/fhir/patient-monitoring/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-be/patient-monitoring/commit/f96bf7f2436eb28d6578f3e365c613f64bd82644"><code>f96bf7f2</code></a>.</span></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc"
+     data-fhir="generated">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Questionnaires</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     data-fhir="generated">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-encounter-lm.html"
+                  title="StructureDefinition/homehosp-encounter-lm">
+                  <span title="StructureDefinition/homehosp-encounter-lm">Home Hospitalization Encounter Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the FHIR Encounter resource as used in the OPAT and ONCO home hospitalization caresets. The Encounter serves two purposes: (1) recording whether the home visit took place and whether the patient was home, and (2) communicating the status of each ordered care activity back to the hospital. Only orders given by the hospital should be communicated back via this Encounter; other nursing activities are excluded.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-questionnaire-response-lm.html"
+                  title="StructureDefinition/homehosp-questionnaire-response-lm">
+                  <span title="StructureDefinition/homehosp-questionnaire-response-lm">Home Hospitalization QuestionnaireResponse Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the FHIR QuestionnaireResponse resource as used in the OPAT and ONCO home hospitalization caresets. Each home nurse visit produces exactly one QuestionnaireResponse if the visit was not cancelled, which corresponds to a single Encounter. The QuestionnaireResponse references the canonical Questionnaire URL and contains the nurse’s answers. It can be used as-is for clinical review or as input to an SDC Definition-based extraction pipeline that generates discrete FHIR Observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onco-azacitidine-questionnaire.html"
+                  title="StructureDefinition/onco-azacitidine-questionnaire">
+                  <span title="StructureDefinition/onco-azacitidine-questionnaire">ONCO Azacitidine Questionnaire Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Azacitidine. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes oxygen saturation (conditional, only when cough or shortness of breath), contraindications focused on GI symptoms and general deterioration, and a medication dissolution check.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onco-bortezomib-questionnaire.html"
+                  title="StructureDefinition/onco-bortezomib-questionnaire">
+                  <span title="StructureDefinition/onco-bortezomib-questionnaire">ONCO Bortezomib Questionnaire Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Bortezomib. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes neuropathy-focused contraindications (severe sensory and motor neuropathy) and symptom burden items for peripheral neuropathy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onco-daratumumab-questionnaire.html"
+                  title="StructureDefinition/onco-daratumumab-questionnaire">
+                  <span title="StructureDefinition/onco-daratumumab-questionnaire">ONCO Daratumumab Questionnaire Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Daratumumab. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes pre-medication intake verification and aftercare reaction monitoring.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onco-fulvestrant-questionnaire.html"
+                  title="StructureDefinition/onco-fulvestrant-questionnaire">
+                  <span title="StructureDefinition/onco-fulvestrant-questionnaire">ONCO Fulvestrant Questionnaire Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Fulvestrant. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: simplified contraindications checklist (fever/chills/unwell only), and includes muscle/joint pain in side effects.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onco-trastuzumab-questionnaire.html"
+                  title="StructureDefinition/onco-trastuzumab-questionnaire">
+                  <span title="StructureDefinition/onco-trastuzumab-questionnaire">ONCO Trastuzumab Questionnaire Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Trastuzumab. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes body weight, aftercare/reaction monitoring, and cardiac-focused contraindication checklist.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-opat-continuous-infusion-questionnaire.html"
+                  title="StructureDefinition/opat-continuous-infusion-questionnaire">
+                  <span title="StructureDefinition/opat-continuous-infusion-questionnaire">OPAT Continuous Infusion Questionnaire Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the nursing assessment questionnaire for OPAT home hospitalization patients receiving continuous infusion. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-opat-short-iv-questionnaire.html"
+                  title="StructureDefinition/opat-short-iv-questionnaire">
+                  <span title="StructureDefinition/opat-short-iv-questionnaire">OPAT Short IV Questionnaire Logical Model
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logical model representing the nursing assessment questionnaire for OPAT home hospitalization patients receiving short IV administration. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Compared to the continuous infusion questionnaire, this model does not include infusor weight measurements.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-azacitidine.html"
+                  title="Questionnaire/homehosp-azacitidine">
+                  <span title="Questionnaire/homehosp-azacitidine">Questionnaire: Azacitidine Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Questionnaire containing the necessary information for the home hospitalization of a patient treated with Azacitidine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-bortezomib.html"
+                  title="Questionnaire/homehosp-bortezomib">
+                  <span title="Questionnaire/homehosp-bortezomib">Questionnaire: Bortezomib Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Questionnaire containing the necessary information for the home hospitalization of a patient treated with Bortezomib (Velcade®).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-daratumumab.html"
+                  title="Questionnaire/homehosp-daratumumab">
+                  <span title="Questionnaire/homehosp-daratumumab">Questionnaire: Daratumumab Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Questionnaire containing the necessary information for the home hospitalization of a patient treated with Daratumumab (Darzalex®).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-fulvestrant.html"
+                  title="Questionnaire/homehosp-fulvestrant">
+                  <span title="Questionnaire/homehosp-fulvestrant">Questionnaire: Fulvestrant Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Questionnaire containing the necessary information for the home hospitalization of a patient treated with Fulvestrant (Faslodex®).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-opat-continuous-infusion.html"
+                  title="Questionnaire/homehosp-opat-continuous-infusion">
+                  <span title="Questionnaire/homehosp-opat-continuous-infusion">Questionnaire: OPAT Continuous Infusion Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Questionnaire containing the necessary information for the home hospitalization of a patient treated with a continuous infusion in the context of an OPAT treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-opat-short-iv.html"
+                  title="Questionnaire/homehosp-opat-short-iv">
+                  <span title="Questionnaire/homehosp-opat-short-iv">Questionnaire: OPAT Short IV Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Questionnaire containing the necessary information for the home hospitalization of a patient treated with a short-duration IV administration in the context of an OPAT treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-trastuzumab.html"
+                  title="Questionnaire/homehosp-trastuzumab">
+                  <span title="Questionnaire/homehosp-trastuzumab">Questionnaire: Trastuzumab Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Questionnaire containing the necessary information for the home hospitalization of a patient treated with Trastuzumab (Herceptin®).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-appetite-observation.html"
+                  title="StructureDefinition/appetite-observation">
+                  <span title="StructureDefinition/appetite-observation">Appetite Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation of how well or poor the appetite of a patient is.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-bladder-continence-observation.html"
+                  title="StructureDefinition/bladder-continence-observation">
+                  <span title="StructureDefinition/bladder-continence-observation">Bladder Continence Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation of bladder continence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-clinical-note-observation.html"
+                  title="StructureDefinition/clinical-note-observation">
+                  <span title="StructureDefinition/clinical-note-observation">Clinical Note Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>A clinical note</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-drain-fluid-observation.html"
+                  title="StructureDefinition/drain-fluid-observation">
+                  <span title="StructureDefinition/drain-fluid-observation">Drain Fluid Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation drain fluid observations. Drain fluid is measured in mL per 24h</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-holter-diagnostic-report.html"
+                  title="StructureDefinition/holter-diagnostic-report">
+                  <span title="StructureDefinition/holter-diagnostic-report">Holter Diagnostic Report
+</span>
+               </a>
+            </td>
+            <td>
+<p>A profile for ambulatory cardiac rhythm monitoring reports (Holter)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-holter-observation.html"
+                  title="StructureDefinition/holter-observation">
+                  <span title="StructureDefinition/holter-observation">Holter Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation for rhythm events detected in Holter recordings</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-encounter.html"
+                  title="StructureDefinition/homehosp-encounter">
+                  <span title="StructureDefinition/homehosp-encounter">Home Hospitalization Careset Encounter
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on the FHIR Encounter resource for use in OPAT and ONCO home hospitalization caresets. The Encounter records whether the home visit took place and the status of each ordered care activity. Only hospital-ordered procedures should be reported back via this Encounter. See logical model: <a href="StructureDefinition-homehosp-encounter-lm.html">CarestEncounter</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-questionnaire-response.html"
+                  title="StructureDefinition/homehosp-questionnaire-response">
+                  <span title="StructureDefinition/homehosp-questionnaire-response">Home Hospitalization Careset Questionnaire Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on QuestionnaireResponse for OPAT and ONCO home hospitalization caresets. Links the filled-in nursing observation to the originating Encounter and the canonical Questionnaire. See logical model: <a href="StructureDefinition-homehosp-questionnaire-response-lm.html">CarestQuestionnaireResponse</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-nausea-observation.html"
+                  title="StructureDefinition/nausea-observation">
+                  <span title="StructureDefinition/nausea-observation">Nausea Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation of how well or poor the nausea of a patient is.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-onco-azacitidine.html"
+                  title="StructureDefinition/homehosp-onco-azacitidine">
+                  <span title="StructureDefinition/homehosp-onco-azacitidine">ONCO Azacitidine Nursing Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on Questionnaire for the ONCO Azacitidine (Vidaza®) nursing observation form. Captures vital signs (including conditional SpO2), medication dissolution check, GI/pulmonary contraindications and side-effect monitoring. See logical model: <a href="StructureDefinition-onco-azacitidine-questionnaire.html">ONCOAzacitidineQuestionnaire</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-onco-bortezomib.html"
+                  title="StructureDefinition/homehosp-onco-bortezomib">
+                  <span title="StructureDefinition/homehosp-onco-bortezomib">ONCO Bortezomib Nursing Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on Questionnaire for the ONCO Bortezomib (Velcade®) nursing observation form. Captures vital signs, medication checks, sensory/motor neuropathy contraindication assessment and post-administration side-effect monitoring. See logical model: <a href="StructureDefinition-onco-bortezomib-questionnaire.html">ONCOBortezomibQuestionnaire</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-onco-daratumumab.html"
+                  title="StructureDefinition/homehosp-onco-daratumumab">
+                  <span title="StructureDefinition/homehosp-onco-daratumumab">ONCO Daratumumab Nursing Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on Questionnaire for the ONCO Daratumumab (Darzalex®) nursing observation form. Captures pre-medication intake (dexamethasone, H1 antihistamine, paracetamol), medication checks, vital signs, administration, contraindications and side effects. See logical model: <a href="StructureDefinition-onco-daratumumab-questionnaire.html">ONCODaratumumabQuestionnaire</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-onco-fulvestrant.html"
+                  title="StructureDefinition/homehosp-onco-fulvestrant">
+                  <span title="StructureDefinition/homehosp-onco-fulvestrant">ONCO Fulvestrant Nursing Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on Questionnaire for the ONCO Fulvestrant (Faslodex®) nursing observation form. Captures vital signs, contraindication check, administration (bilateral IM injections) and muscle/joint pain side-effect follow-up. See logical model: <a href="StructureDefinition-onco-fulvestrant-questionnaire.html">ONCOFulvestrantQuestionnaire</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-onco-base.html"
+                  title="StructureDefinition/homehosp-onco-base">
+                  <span title="StructureDefinition/homehosp-onco-base">ONCO Home Hospitalization Base Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Base profile for all ONCO home hospitalization nursing questionnaires. Defines the mandatory top-level group structure (NursingAssessment, Assignment, QualityMonitoring) and sub-groups common across all ONCO medications: MedicationStorage, ObservationParameters, Contraindications, and MedicationAdministration. Medication-specific sub-groups and questions are added by child profiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-onco-trastuzumab.html"
+                  title="StructureDefinition/homehosp-onco-trastuzumab">
+                  <span title="StructureDefinition/homehosp-onco-trastuzumab">ONCO Trastuzumab Nursing Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on Questionnaire for the ONCO Trastuzumab (Herceptin®) nursing observation form. Captures body weight check, aftercare protocol, cardiac contraindications (LVEF, respiratory symptoms, oedema), vital signs and CTCAE-graded side effects. See logical model: <a href="StructureDefinition-onco-trastuzumab-questionnaire.html">ONCOTrastuzumabQuestionnaire</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-opat-continuous-infusion.html"
+                  title="StructureDefinition/homehosp-opat-continuous-infusion">
+                  <span title="StructureDefinition/homehosp-opat-continuous-infusion">OPAT Continuous Infusion Nursing Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on Questionnaire for the OPAT continuous-infusion (elastomeric pump / infusor) nursing observation form. Captures medication storage, infusor weights, administration, vitals, dressing/insertion-site/catheter observations, side effects and quality follow-up. See logical model: <a href="StructureDefinition-opat-continuous-infusion-questionnaire.html">OPATContinuousInfusionQuestionnaire</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-opat-base.html"
+                  title="StructureDefinition/homehosp-opat-base">
+                  <span title="StructureDefinition/homehosp-opat-base">OPAT Home Hospitalization Base Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Base profile for all OPAT home hospitalization nursing questionnaires. Defines the mandatory top-level group structure (NursingAssessment, QualityMonitoring) and all eight sub-groups common to both OPAT questionnaires: MedicationStorage, MedicationPreparation, MedicationAdministration, VitalParameters, DressingInsertionSite, InsertionSite, Catheter, and SideEffects.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-homehosp-opat-short-iv.html"
+                  title="StructureDefinition/homehosp-opat-short-iv">
+                  <span title="StructureDefinition/homehosp-opat-short-iv">OPAT Short-Duration IV Nursing Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile on Questionnaire for the OPAT short-duration IV administration nursing observation form. Captures medication storage, administration, vitals, dressing/insertion-site/catheter observations, side effects and quality follow-up (no infusor weight fields). See logical model: <a href="StructureDefinition-opat-short-iv-questionnaire.html">OPATShortIVQuestionnaire</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-painkiller-usage-observation.html"
+                  title="StructureDefinition/painkiller-usage-observation">
+                  <span title="StructureDefinition/painkiller-usage-observation">Painkiller Usage Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation if the patient uses pain killers or not</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-stool-observation.html"
+                  title="StructureDefinition/stool-observation">
+                  <span title="StructureDefinition/stool-observation">Stool Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation of stool according to the Bristol stool scale</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-surgical-wound-pain-observation.html"
+                  title="StructureDefinition/surgical-wound-pain-observation">
+                  <span title="StructureDefinition/surgical-wound-pain-observation">Surgical Wound Pain Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>An observation of the pain reported by the patient in a surgical wound.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-wexner-ccis-score-observation.html"
+                  title="StructureDefinition/wexner-ccis-score-observation">
+                  <span title="StructureDefinition/wexner-ccis-score-observation">Wexner/CCIS Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Wexner/CCIS score observation</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-well-poor-scale.html" title="ValueSet/well-poor-scale">
+                  <span title="ValueSet/well-poor-scale">0-10 scale, 0.5 increments, Very well to Very poor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Scale going from 0 to 10 in increments of 0.5. Indicating values very well to very port (see https://loinc.org/LL3092-5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-lumen-color.html" title="ValueSet/lumen-color">
+                  <span title="ValueSet/lumen-color">Catheter Lumen Color
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes for the color label of a catheter lumen, used in OPAT home-hospitalization questionnaires to distinguish multi-lumen catheters.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-catheter-patency.html" title="ValueSet/catheter-patency">
+                  <span title="ValueSet/catheter-patency">Catheter Patency Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes representing the ease of blood aspiration or infusion through a vascular catheter, used in OPAT home-hospitalization questionnaires.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-catheter-type.html" title="ValueSet/catheter-type">
+                  <span title="ValueSet/catheter-type">Catheter Type
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes identifying the type of vascular catheter in place, used in OPAT home-hospitalization questionnaires.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-continence-level.html" title="ValueSet/continence-level">
+                  <span title="ValueSet/continence-level">Continence Level
+</span>
+               </a>
+            </td>
+            <td>
+<p>LOINC codes to represent the level of continence reported</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FluidDrainVS.html" title="ValueSet/FluidDrainVS">
+                  <span title="ValueSet/FluidDrainVS">Fluid Drain Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<p>Valid UCUM units for drain fluid measurement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-heart-failure-symptoms.html"
+                  title="ValueSet/heart-failure-symptoms">
+                  <span title="ValueSet/heart-failure-symptoms">Heart Failure Symptom Codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes representing common patient-reported symptoms in heart failure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-holter-event-codes.html"
+                  title="ValueSet/holter-event-codes">
+                  <span title="ValueSet/holter-event-codes">Holter Event Codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Codes used to classify Holter-detected rhythm events</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-holter-event-component-codes.html"
+                  title="ValueSet/holter-event-component-codes">
+                  <span title="ValueSet/holter-event-component-codes">Holter Observation Component Codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>LOINC codes for component observations in Holter events (e.g., heart rate)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-holter-report-code.html"
+                  title="ValueSet/holter-report-code">
+                  <span title="ValueSet/holter-report-code">Holter Report Code
+</span>
+               </a>
+            </td>
+            <td>
+<p>Ambulatory cardiac rhythm monitor report (Holter)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-homehosp-side-effect-severity.html"
+                  title="ValueSet/homehosp-side-effect-severity">
+                  <span title="ValueSet/homehosp-side-effect-severity">Home Hospitalization Side Effect Severity Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes representing the severity of side effects in OPAT home-hospitalization questionnaires: Absent, Mild, Moderate and Severe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-decision.html" title="ValueSet/decision">
+                  <span title="ValueSet/decision">Medication Administration Decision
+</span>
+               </a>
+            </td>
+            <td>
+<p>Codes for the nurse’s decision after contraindication assessment — whether to administer, withhold, or take another action following consultation with the hospital care team.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-medication-storage.html"
+                  title="ValueSet/medication-storage">
+                  <span title="ValueSet/medication-storage">Medication Storage Status
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes representing whether the home medication storage of a patient is appropriate or has issues, used in OPAT and ONCO home-hospitalization questionnaires.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-normal-abnormal.html" title="ValueSet/normal-abnormal">
+                  <span title="ValueSet/normal-abnormal">Normal / Abnormal Finding
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes to represent a binary normal vs. abnormal clinical finding, used for dressing, insertion-site, and catheter observation items in OPAT home-hospitalization questionnaires.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onco-symptom-grade.html"
+                  title="ValueSet/onco-symptom-grade">
+                  <span title="ValueSet/onco-symptom-grade">ONCO Symptom Grade Scale (CTCAE 0–3)
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes representing the Common Terminology Criteria for Adverse Events (CTCAE) grade scale 0 to 3, used to score symptom severity in ONCO home-hospitalization questionnaires.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-pain-scale.html" title="ValueSet/pain-scale">
+                  <span title="ValueSet/pain-scale">Pain severity - 0-10 verbal numeric rating
+</span>
+               </a>
+            </td>
+            <td>
+<p>Pain severity scale, where 0 is no pain and 10 is the worst pain imaginable. See https://loinc.org/72514-3</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-symptom-severity.html" title="ValueSet/symptom-severity">
+                  <span title="ValueSet/symptom-severity">Symptom Severity Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes to represent severity of patient-reported symptoms</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-true-false.html" title="ValueSet/true-false">
+                  <span title="ValueSet/true-false">True / False Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes for a simple true or false answer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-YesNoVS.html" title="ValueSet/YesNoVS">
+                  <span title="ValueSet/YesNoVS">Yes / No Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<p>SNOMED CT codes for a simple yes or no answer, used across all home-hospitalization questionnaires.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-decision-cs.html" title="CodeSystem/decision-cs">
+                  <span title="CodeSystem/decision-cs">Medication Administration Decision Codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Local codes for the nurse’s decision following contraindication assessment in ONCO home-hospitalization questionnaires.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-Appointment-testapp.html"
+                  title="Appointment/Appointment-testapp">
+                  <span title="Appointment/Appointment-testapp">Appointment: OPAT Hospital Follow-up
+</span>
+               </a>
+            </td>
+            <td>
+<p>Future hospital appointment at UZL for the OPAT patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CareTeam-CareTeam-Katheter.html"
+                  title="CareTeam/CareTeam-Katheter">
+                  <span title="CareTeam/CareTeam-Katheter">CareTeam: Catheter
+</span>
+               </a>
+            </td>
+            <td>
+<p>Catheter team with contact details</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CareTeam-CareTeam-Spoed.html" title="CareTeam/CareTeam-Spoed">
+                  <span title="CareTeam/CareTeam-Spoed">CareTeam: Emergency
+</span>
+               </a>
+            </td>
+            <td>
+<p>Emergency reception with contact details</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CareTeam-CareTeam-F-7766077.html"
+                  title="CareTeam/CareTeam-F-7766077">
+                  <span title="CareTeam/CareTeam-F-7766077">CareTeam: Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Containing OPAT team, catheter team and emergency reception as participants</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CareTeam-CareTeam-OPAT.html" title="CareTeam/CareTeam-OPAT">
+                  <span title="CareTeam/CareTeam-OPAT">CareTeam: OPAT
+</span>
+               </a>
+            </td>
+            <td>
+<p>OPAT team with contact details</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-MED-medischeVG.html"
+                  title="ClinicalImpression/ClinicalImpression-MED-medischeVG">
+                  <span title="ClinicalImpression/ClinicalImpression-MED-medischeVG">ClinicalImpression: Relevant Medical History
+</span>
+               </a>
+            </td>
+            <td>
+<p>Relevant medical history (OPAT 3.0 template field MED_medischeVG)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Blaren.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Blaren">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Blaren">ClinicalImpression: Symptom - Blisters
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: blisters</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Candidiase.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Candidiase">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Candidiase">ClinicalImpression: Symptom - Candidiasis
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: candidiasis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Rillingen.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Rillingen">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Rillingen">ClinicalImpression: Symptom - Chills
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: chills</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Obstipatie.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Obstipatie">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Obstipatie">ClinicalImpression: Symptom - Constipation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: constipation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Diarree.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Diarree">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Diarree">ClinicalImpression: Symptom - Diarrhea
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: diarrhea</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Moe.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Moe">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Moe">ClinicalImpression: Symptom - Fatigue
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: fatigue</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Jeuk.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Jeuk">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Jeuk">ClinicalImpression: Symptom - Itching
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: itching</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Gewrichtspijn.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn">ClinicalImpression: Symptom - Joint Pain
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: joint pain</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Misselijkheid.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Misselijkheid">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Misselijkheid">ClinicalImpression: Symptom - Nausea
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: nausea</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Andere.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Andere">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Andere">ClinicalImpression: Symptom - Other
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: other symptom</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Observatie-andere-specifieer.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer">ClinicalImpression: Symptom - Other (Specify)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: other observation (free text)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Pijn.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Pijn">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Pijn">ClinicalImpression: Symptom - Pain
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: pain</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Huiduitslag.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Huiduitslag">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Huiduitslag">ClinicalImpression: Symptom - Rash
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: rash</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Verminderdeeetlust.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust">ClinicalImpression: Symptom - Reduced Appetite
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: reduced appetite</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Ademhalingsproblemen.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen">ClinicalImpression: Symptom - Respiratory Problems
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: respiratory problems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Zwelling.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Zwelling">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Zwelling">ClinicalImpression: Symptom - Swelling
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: swelling</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClinicalImpression-ClinicalImpression-OBS-Braken.html"
+                  title="ClinicalImpression/ClinicalImpression-OBS-Braken">
+                  <span title="ClinicalImpression/ClinicalImpression-OBS-Braken">ClinicalImpression: Symptom - Vomiting
+</span>
+               </a>
+            </td>
+            <td>
+<p>Side effect assessment during OPAT home hospitalization: vomiting</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-OPAT-Document.html" title="Composition/OPAT-Document">
+                  <span title="Composition/OPAT-Document">Composition: OPAT Document
+</span>
+               </a>
+            </td>
+            <td>
+<p>FHIR document containing necessary information for an OPAT treatment at home</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-example-holter-diagnosticreport.html"
+                  title="DiagnosticReport/example-holter-diagnosticreport">
+                  <span title="DiagnosticReport/example-holter-diagnosticreport">DiagnosticReport: Holter
+</span>
+               </a>
+            </td>
+            <td>
+<p>This diagnostic report summarizes Holter rhythm findings including AFib and a supraventricular episode.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Encounter-3441.html" title="Encounter/Encounter-3441">
+                  <span title="Encounter/Encounter-3441">Encounter: Home Hospitalization (Subcutaneous Injection)
+</span>
+               </a>
+            </td>
+            <td>
+<p>First line encounter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-CT-259690079.html" title="Encounter/CT-259690079">
+                  <span title="Encounter/CT-259690079">Encounter: OPAT Consultation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Hospital consultation encounter for the OPAT patient at UZ Leuven</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-testloc.html" title="Location/testloc">
+                  <span title="Location/testloc">Location: UZL Consultation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example hospital consultation location at UZ Leuven for the OPAT appointment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-AbdominalPainExample.html"
+                  title="Observation/AbdominalPainExample">
+                  <span title="Observation/AbdominalPainExample">Observation: Abdominal Pain
+</span>
+               </a>
+            </td>
+            <td>
+<p>Pain scale is used as answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-AppetiteExample.html"
+                  title="Observation/AppetiteExample">
+                  <span title="Observation/AppetiteExample">Observation: Appetite
+</span>
+               </a>
+            </td>
+            <td>
+<p>Answer scaled 0 to 10 with steps of 0.5. 0 being being very poor, 10 being very well.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BladderContinenceExample.html"
+                  title="Observation/BladderContinenceExample">
+                  <span title="Observation/BladderContinenceExample">Observation: Bladder Continence
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example observation of a patient’s bladder continence level.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BloodPressureExample.html"
+                  title="Observation/BloodPressureExample">
+                  <span title="Observation/BloodPressureExample">Observation: Blood Pressure
+</span>
+               </a>
+            </td>
+            <td>
+<p>Blood pressure vital sign observation with device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BloodPressureExample2.html"
+                  title="Observation/BloodPressureExample2">
+                  <span title="Observation/BloodPressureExample2">Observation: Blood Pressure (Without Device)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Blood Pressure example without device and with bodysite</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BodyTemperatureExample.html"
+                  title="Observation/BodyTemperatureExample">
+                  <span title="Observation/BodyTemperatureExample">Observation: Body Temperature
+</span>
+               </a>
+            </td>
+            <td>
+<p>Body temperature vital sign observation with device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-Temperatuur.html"
+                  title="Observation/Observation-Temperatuur">
+                  <span title="Observation/Observation-Temperatuur">Observation: Body Temperature (OPAT Document)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Temperature vital sign observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BodyTemperatureExample2.html"
+                  title="Observation/BodyTemperatureExample2">
+                  <span title="Observation/BodyTemperatureExample2">Observation: Body Temperature (Without Device)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Temperature example without device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BodyWeightExample.html"
+                  title="Observation/BodyWeightExample">
+                  <span title="Observation/BodyWeightExample">Observation: Body Weight
+</span>
+               </a>
+            </td>
+            <td>
+<p>Body weight vital sign observation with device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BodyWeightExample2.html"
+                  title="Observation/BodyWeightExample2">
+                  <span title="Observation/BodyWeightExample2">Observation: Body Weight (Registered by Patient)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Body weight vital sign observation registered by the patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-StoolScoreExample.html"
+                  title="Observation/StoolScoreExample">
+                  <span title="Observation/StoolScoreExample">Observation: Bristol Stool Form Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Score from 1 to 7</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation-Katheter-7938866.html"
+                  title="Observation/Observation-Katheter-7938866">
+                  <span title="Observation/Observation-Katheter-7938866">Observation: Catheter (OPAT Document)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Home hospitalization catheter observation example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CatheterMovedOrRemovedExample.html"
+                  title="Observation/CatheterMovedOrRemovedExample">
+                  <span title="Observation/CatheterMovedOrRemovedExample">Observation: Catheter Moved or Removed
+</span>
+               </a>
+            </td>
+            <td>
+<p>NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ClinicalNoteExample.html"
+                  title="Observation/ClinicalNoteExample">
+                  <span title="Observation/ClinicalNoteExample">Observation: Clinical Note
+</span>
+               </a>
+            </td>
+            <td>
+<p>Free text clinical note</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-DiarrheaExample.html"
+                  title="Observation/DiarrheaExample">
+                  <span title="Observation/DiarrheaExample">Observation: Diarrhea
+</span>
+               </a>
+            </td>
+            <td>
+<p>Possible answers are absent, mild, moderate, severe</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-DistendedAbdomenExample.html"
+                  title="Observation/DistendedAbdomenExample">
+                  <span title="Observation/DistendedAbdomenExample">Observation: Distended Abdomen
+</span>
+               </a>
+            </td>
+            <td>
+<p>Answer options are none, mild, moderate, severe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-DrainFluidExample.html"
+                  title="Observation/DrainFluidExample">
+                  <span title="Observation/DrainFluidExample">Observation: Drain Fluid Output
+</span>
+               </a>
+            </td>
+            <td>
+<p>Drain fluid volume measured in mL per day</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HeartRateExample.html"
+                  title="Observation/HeartRateExample">
+                  <span title="Observation/HeartRateExample">Observation: Heart Rate
+</span>
+               </a>
+            </td>
+            <td>
+<p>Heart rate vital sign observation with device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HeartRateExample2.html"
+                  title="Observation/HeartRateExample2">
+                  <span title="Observation/HeartRateExample2">Observation: Heart Rate (Registered by Patient)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Heart Rate example registered by patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-holter-afib.html"
+                  title="Observation/example-holter-afib">
+                  <span title="Observation/example-holter-afib">Observation: Holter AFib Episode
+</span>
+               </a>
+            </td>
+            <td>
+<p>Detected AFib event</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-holter-sv.html"
+                  title="Observation/example-holter-sv">
+                  <span title="Observation/example-holter-sv">Observation: Holter Supraventricular Event
+</span>
+               </a>
+            </td>
+            <td>
+<p>Supraventricular arrhythmia</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-LeakageCatheterExample.html"
+                  title="Observation/LeakageCatheterExample">
+                  <span title="Observation/LeakageCatheterExample">Observation: Leakage Catheter
+</span>
+               </a>
+            </td>
+            <td>
+<p>NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-LevelOfResponsivenessExample.html"
+                  title="Observation/LevelOfResponsivenessExample">
+                  <span title="Observation/LevelOfResponsivenessExample">Observation: Level of Responsiveness
+</span>
+               </a>
+            </td>
+            <td>
+<p>Level of responsiveness (ACVPU scale)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-NationalEarlyWarningScoreExample.html"
+                  title="Observation/NationalEarlyWarningScoreExample">
+                  <span title="Observation/NationalEarlyWarningScoreExample">Observation: National Early Warning Score (NEWS)
+</span>
+               </a>
+            </td>
+            <td>
+<p>National Early Warning Score (NEWS)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-NauseaExample.html" title="Observation/NauseaExample">
+                  <span title="Observation/NauseaExample">Observation: Nausea
+</span>
+               </a>
+            </td>
+            <td>
+<p>Answer options are none, mild, moderate, severe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-NauseaExample2.html"
+                  title="Observation/NauseaExample2">
+                  <span title="Observation/NauseaExample2">Observation: Nausea (2)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Answers 0-10 scale, 0.5 increments, Very well to Very poor</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-OrthopneuExample.html"
+                  title="Observation/OrthopneuExample">
+                  <span title="Observation/OrthopneuExample">Observation: Orthopnea
+</span>
+               </a>
+            </td>
+            <td>
+<p>Possible answers are absent, mild, moderate, severe</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-OxygenSaturationExample.html"
+                  title="Observation/OxygenSaturationExample">
+                  <span title="Observation/OxygenSaturationExample">Observation: Oxygen Saturation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Oxygen saturation vital sign observation with device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-OxygenSaturationExample2.html"
+                  title="Observation/OxygenSaturationExample2">
+                  <span title="Observation/OxygenSaturationExample2">Observation: Oxygen Saturation (Registered by Patient)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Oxygen saturation example registered by patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PainDuringUrinationExample.html"
+                  title="Observation/PainDuringUrinationExample">
+                  <span title="Observation/PainDuringUrinationExample">Observation: Pain During Urination
+</span>
+               </a>
+            </td>
+            <td>
+<p>Possible answers are yes and no</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PainInfectionSiteExample.html"
+                  title="Observation/PainInfectionSiteExample">
+                  <span title="Observation/PainInfectionSiteExample">Observation: Pain at Infection Site
+</span>
+               </a>
+            </td>
+            <td>
+<p>NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PainPunctureWoundsExample.html"
+                  title="Observation/PainPunctureWoundsExample">
+                  <span title="Observation/PainPunctureWoundsExample">Observation: Pain at Puncture Wounds
+</span>
+               </a>
+            </td>
+            <td>
+<p>NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PainSurgicalWoundsExample.html"
+                  title="Observation/PainSurgicalWoundsExample">
+                  <span title="Observation/PainSurgicalWoundsExample">Observation: Pain at Surgical Wounds
+</span>
+               </a>
+            </td>
+            <td>
+<p>NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PainSurgicalWoundsExample2.html"
+                  title="Observation/PainSurgicalWoundsExample2">
+                  <span title="Observation/PainSurgicalWoundsExample2">Observation: Pain at Surgical Wounds (2)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Pain score related to the surgical wound</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PainInCalvesExample.html"
+                  title="Observation/PainInCalvesExample">
+                  <span title="Observation/PainInCalvesExample">Observation: Pain in Calves
+</span>
+               </a>
+            </td>
+            <td>
+<p>Possible answers are yes and no</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PainKillerExample.html"
+                  title="Observation/PainKillerExample">
+                  <span title="Observation/PainKillerExample">Observation: Painkiller Usage
+</span>
+               </a>
+            </td>
+            <td>
+<p>Did the patient take any painkillers (Yes/No)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RednessPunctureWoundsExample.html"
+                  title="Observation/RednessPunctureWoundsExample">
+                  <span title="Observation/RednessPunctureWoundsExample">Observation: Redness at Puncture Wounds
+</span>
+               </a>
+            </td>
+            <td>
+<p>NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ReducedAppetiteExample.html"
+                  title="Observation/ReducedAppetiteExample">
+                  <span title="Observation/ReducedAppetiteExample">Observation: Reduced Appetite
+</span>
+               </a>
+            </td>
+            <td>
+<p>Answer options are absent / mild / moderate / severe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RespiratoryRateExample.html"
+                  title="Observation/RespiratoryRateExample">
+                  <span title="Observation/RespiratoryRateExample">Observation: Respiratory Rate
+</span>
+               </a>
+            </td>
+            <td>
+<p>Respiratory rate vital sign observation with device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RespiratoryRateExample2.html"
+                  title="Observation/RespiratoryRateExample2">
+                  <span title="Observation/RespiratoryRateExample2">Observation: Respiratory Rate (Registered by Patient)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Respiration example registered by patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ShortnessOfBreathExample.html"
+                  title="Observation/ShortnessOfBreathExample">
+                  <span title="Observation/ShortnessOfBreathExample">Observation: Shortness of Breath
+</span>
+               </a>
+            </td>
+            <td>
+<p>Possible answers are yes and no</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ShoulderPainExample.html"
+                  title="Observation/ShoulderPainExample">
+                  <span title="Observation/ShoulderPainExample">Observation: Shoulder Pain
+</span>
+               </a>
+            </td>
+            <td>
+<p>Pain scale is used as answer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-IncontinenceScoreExample.html"
+                  title="Observation/IncontinenceScoreExample">
+                  <span title="Observation/IncontinenceScoreExample">Observation: Wexner/CCIS Incontinence Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Score from 0 to 20</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Organization-UZL.html"
+                  title="Organization/Organization-UZL">
+                  <span title="Organization/Organization-UZL">Organization: UZ Leuven
+</span>
+               </a>
+            </td>
+            <td>
+<p>UZ Leuven - authoring and custodian organization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient-123.html" title="Patient/Patient-123">
+                  <span title="Patient/Patient-123">Patient: OPAT Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example patient for the OPAT document</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-PractitionerRole-16500.html"
+                  title="PractitionerRole/PractitionerRole-16500">
+                  <span title="PractitionerRole/PractitionerRole-16500">PractitionerRole: General Practitioner
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example general practitioner (huisarts) for the OPAT patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-q-onco-definitions.html"
+                  title="Questionnaire/homehosp-q-onco-definitions">
+                  <span title="Questionnaire/homehosp-q-onco-definitions">Questionnaire: ONCO SDC Questionnaire with Extraction Definitions (Trastuzumab)
+</span>
+               </a>
+            </td>
+            <td>
+<p>The ONCO Trastuzumab Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-homehosp-q-opat-definitions.html"
+                  title="Questionnaire/homehosp-q-opat-definitions">
+                  <span title="Questionnaire/homehosp-q-opat-definitions">Questionnaire: OPAT SDC Questionnaire with Extraction Definitions
+</span>
+               </a>
+            </td>
+            <td>
+<p>The OPAT continuous infusion Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-HomehospAzacitidineQuestionnaireResponseExample.html"
+                  title="QuestionnaireResponse/HomehospAzacitidineQuestionnaireResponseExample">
+                  <span title="QuestionnaireResponse/HomehospAzacitidineQuestionnaireResponseExample">QuestionnaireResponse: Azacitidine Home Hospitalization
+</span>
+               </a>
+            </td>
+            <td>
+<p>Response to questionnaire containing the necessary information for the home hospitalization of a patient treated with Azacitidine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-HomehospOpatContinuousInfusionQuestionnaireResponseExample.html"
+                  title="QuestionnaireResponse/HomehospOpatContinuousInfusionQuestionnaireResponseExample">
+                  <span title="QuestionnaireResponse/HomehospOpatContinuousInfusionQuestionnaireResponseExample">QuestionnaireResponse: OPAT Home Hospitalization - continuous infusion
+</span>
+               </a>
+            </td>
+            <td>
+<p>Response to questionnaire containing the necessary information for the home hospitalization of a patient treated with a continuous infusion in the context of an OPAT treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-HomehospOpatContinuousInfusionQRMultiLumenExample.html"
+                  title="QuestionnaireResponse/HomehospOpatContinuousInfusionQRMultiLumenExample">
+                  <span title="QuestionnaireResponse/HomehospOpatContinuousInfusionQRMultiLumenExample">QuestionnaireResponse: OPAT continuous infusion QR - 2-lumen tunneled catheter
+</span>
+               </a>
+            </td>
+            <td>
+<p>QuestionnaireResponse for OPAT home hospitalization (continuous infusion) demonstrating per-lumen catheter observation with a 2-lumen tunneled catheter. Lumen 2 (white) shows difficult blood aspiration, triggering an Abnormal catheter observation. Uses the SDC definitions questionnaire which carries a repeating G_Lumen group.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-HomehospOpatShortIVQRMultiLumenExample.html"
+                  title="QuestionnaireResponse/HomehospOpatShortIVQRMultiLumenExample">
+                  <span title="QuestionnaireResponse/HomehospOpatShortIVQRMultiLumenExample">QuestionnaireResponse: OPAT short IV QR - 3-lumen tunneled catheter
+</span>
+               </a>
+            </td>
+            <td>
+<p>QuestionnaireResponse for OPAT home hospitalization (short IV) with a 3-lumen tunneled catheter, demonstrating per-lumen catheter observation. The red lumen (lumen 3) is completely obstructed — blood aspiration and infusion both impossible. Administration was completed via the gray lumen (lumen 1) after telephone consultation with the hospital team. Uses the homehosp-opat-short-iv questionnaire, which carries a repeating G_Lumen group.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">HL7 Belgium</a>.  
+          Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-22 07:37:00 +0000">
+    2026-07-22
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- HL7 Belgium -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

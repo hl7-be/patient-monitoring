@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Observation-Katheter-7938866"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Observation-Katheter-7938866</b></p><a name="Observation-Katheter-7938866"> </a><a name="hcObservation-Katheter-7938866"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1156071007}">Catheter observable (observable entity)</span></p><p><b>subject</b>: <a href="Patient-Patient-123.html">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 246138005}">Type of catheter (attribute)</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 1344705000}">Midline catheter (physical object)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 448439004}">Catheter stabilization device (physical object)</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 84756000}">Adhesive tape, device (physical object)</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1156071007"/>
+      <display value="Catheter observable (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-123"/>
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="246138005"/>
+        <display value="Type of catheter (attribute)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1344705000"/>
+        <display value="Midline catheter (physical object)"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="448439004"/>
+        <display value="Catheter stabilization device (physical object)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="84756000"/>
+        <display value="Adhesive tape, device (physical object)"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ValueSet/continence-level> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "continence-level"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet continence-level</b></p><a name=\"continence-level\"> </a><a name=\"hccontinence-level\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA126-5/\">LA126-5</a></td><td>CONTINENT</td></tr><tr><td><a href=\"https://loinc.org/LA127-3/\">LA127-3</a></td><td>USUALLY CONTINENT</td></tr><tr><td><a href=\"https://loinc.org/LA128-1/\">LA128-1</a></td><td>OCCASIONALLY INCONTINENT</td></tr><tr><td><a href=\"https://loinc.org/LA129-9/\">LA129-9</a></td><td>FREQUENTLY INCONTINENT</td></tr><tr><td><a href=\"https://loinc.org/LA130-7/\">LA130-7</a></td><td>INCONTINENT</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7belgium.org/fhir/patient-monitoring/ValueSet/continence-level"^^xsd:anyURI ;
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/ValueSet/continence-level>
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:l <urn:ietf:rfc:3986>
+     ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.40.54.48.7" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ContinenceLevel"] ; # 
+  fhir:title [ fhir:v "Continence level"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-19T06:47:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "LOINC codes to represent the level of continence reported"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA126-5" ] ;
+         fhir:display [ fhir:v "CONTINENT" ]
+       ] [
+         fhir:code [ fhir:v "LA127-3" ] ;
+         fhir:display [ fhir:v "USUALLY CONTINENT" ]
+       ] [
+         fhir:code [ fhir:v "LA128-1" ] ;
+         fhir:display [ fhir:v "OCCASIONALLY INCONTINENT" ]
+       ] [
+         fhir:code [ fhir:v "LA129-9" ] ;
+         fhir:display [ fhir:v "FREQUENTLY INCONTINENT" ]
+       ] [
+         fhir:code [ fhir:v "LA130-7" ] ;
+         fhir:display [ fhir:v "INCONTINENT" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

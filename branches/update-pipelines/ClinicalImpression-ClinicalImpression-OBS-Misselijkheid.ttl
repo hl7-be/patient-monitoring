@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Misselijkheid> a fhir:ClinicalImpression ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ClinicalImpression-OBS-Misselijkheid"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression ClinicalImpression-OBS-Misselijkheid</b></p><a name=\"ClinicalImpression-OBS-Misselijkheid\"> </a><a name=\"hcClinicalImpression-OBS-Misselijkheid\"> </a><p><b>status</b>: Completed</p><p><b>description</b>: OPAT 3.0</p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-CT-259690079.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-07-11 13:09:50+0200 --&gt; (ongoing)</a></p><p><b>date</b>: 2025-07-11 13:09:50+0200</p><p><b>summary</b>: no</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:description [ fhir:v "OPAT 3.0"] ; # 
+  fhir:subject [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:reference [ fhir:v "Patient/Patient-123" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Encounter/CT-259690079> ;
+     fhir:reference [ fhir:v "Encounter/CT-259690079" ]
+  ] ; # 
+  fhir:date [ fhir:v "2025-07-11T13:09:50+02:00"^^xsd:dateTime] ; # 
+  fhir:summary [ fhir:v "no"] . # 
+
+# -------------------------------------------------------------------------------------
+

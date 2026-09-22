@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CareTeam xmlns="http://hl7.org/fhir">
+  <id value="CareTeam-Spoed"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CareTeam CareTeam-Spoed</b></p><a name="CareTeam-Spoed"> </a><a name="hcCareTeam-Spoed"> </a><p><b>status</b>: Active</p><p><b>name</b>: Emergency reception</p><p><b>telecom</b>: ph: 016/34 39 00</p></div>
+  </text>
+  <status value="active"/>
+  <name value="Emergency reception"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="016/34 39 00"/>
+    <rank value="11"/>
+  </telecom>
+</CareTeam>

@@ -1,0 +1,11 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "DecisionCS",
+    "title" : "Medication Administration Decision Codes",
+    "description" : "Local codes for the nurse's decision following contraindication assessment in ONCO home-hospitalization questionnaires.",
+    "oids" : ["2.16.840.1.113883.4.642.40.54.16.1"]
+  }]
+}

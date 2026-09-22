@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Observation-Temperatuur"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Observation-Temperatuur</b></p><a name="Observation-Temperatuur"> </a><a name="hcObservation-Temperatuur"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8310-5}">Body temperature</span></p><p><b>subject</b>: <a href="Patient-Patient-123.html">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>effective</b>: 2025-11-21 11:49:11+0100</p><p><b>value</b>: 36.1 °C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8310-5"/>
+      <display value="Body temperature"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-123"/>
+  </subject>
+  <effectiveDateTime value="2025-11-21T11:49:11+01:00"/>
+  <valueQuantity>
+    <value value="36.1"/>
+    <unit value="°C"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="Cel"/>
+  </valueQuantity>
+</Observation>

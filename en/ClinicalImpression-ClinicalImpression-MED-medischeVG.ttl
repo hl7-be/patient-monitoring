@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-MED-medischeVG> a fhir:ClinicalImpression ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ClinicalImpression-MED-medischeVG"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression ClinicalImpression-MED-medischeVG</b></p><a name=\"ClinicalImpression-MED-medischeVG\"> </a><a name=\"hcClinicalImpression-MED-medischeVG\"> </a><p><b>status</b>: Completed</p><p><b>description</b>: Relevant medical history recorded in the OPAT home hospitalization document</p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-CT-259690079.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-07-11 13:09:50+0200 --&gt; (ongoing)</a></p><p><b>date</b>: 2025-07-11 13:09:50+0200</p><p><b>summary</b>: TEST KWS</p></div>"
+  ] ;
+  fhir:ClinicalImpression.status [ fhir:value "completed"] ;
+  fhir:ClinicalImpression.description [ fhir:value "Relevant medical history recorded in the OPAT home hospitalization document"] ;
+  fhir:ClinicalImpression.subject [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-123" ]
+  ] ;
+  fhir:ClinicalImpression.encounter [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Encounter/CT-259690079> ;
+     fhir:Reference.reference [ fhir:value "Encounter/CT-259690079" ]
+  ] ;
+  fhir:ClinicalImpression.date [ fhir:value "2025-07-11T13:09:50+02:00"^^xsd:dateTime] ;
+  fhir:ClinicalImpression.summary [ fhir:value "TEST KWS"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-MED-medischeVG.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

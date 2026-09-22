@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/PainSurgicalWoundsExample2> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "PainSurgicalWoundsExample2"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PainSurgicalWoundsExample2</b></p><a name=\"PainSurgicalWoundsExample2\"> </a><a name=\"hcPainSurgicalWoundsExample2\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 72514-3}\">Pain severity - 0-10 verbal numeric rating [Score] - Reported</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>focus</b>: <a href=\"#hcPainSurgicalWoundsExample2/surgicalWound\">Condition Surgical wound</a></p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA10138-8}\">6</span></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Condition #surgicalWound</b></p><a name=\"PainSurgicalWoundsExample2/surgicalWound\"> </a><a name=\"hcPainSurgicalWoundsExample2/surgicalWound\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 112633009}\">Surgical wound</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Condition ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "surgicalWound" ] ;
+     fhir:Condition.clinicalStatus [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+         fhir:Coding.code [ fhir:value "active" ]
+       ]
+     ] ;
+     fhir:Condition.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:112633009 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "112633009" ] ;
+         fhir:Coding.display [ fhir:value "Surgical wound" ]
+       ]
+     ] ;
+     fhir:Condition.subject [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+         fhir:Identifier.value [ fhir:value "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+       ]
+     ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:72514-3 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "72514-3" ] ;
+       fhir:Coding.display [ fhir:value "Pain severity - 0-10 verbal numeric rating [Score] - Reported" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ;
+  fhir:Observation.focus [
+     fhir:index 0 ;
+     fhir:Reference.reference [ fhir:value "#surgicalWound" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2025-10-08T10:00:00Z"^^xsd:dateTime] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:LA10138-8 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "LA10138-8" ] ;
+       fhir:Coding.display [ fhir:value "6" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/PainSurgicalWoundsExample2.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

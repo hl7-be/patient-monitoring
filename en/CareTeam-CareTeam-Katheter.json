@@ -1,0 +1,16 @@
+{
+  "resourceType" : "CareTeam",
+  "id" : "CareTeam-Katheter",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-Katheter</b></p><a name=\"CareTeam-Katheter\"> </a><a name=\"hcCareTeam-Katheter\"> </a><p><b>status</b>: Active</p><p><b>name</b>: Catheter team</p><p><b>telecom</b>: ph: 016/34 08 64</p></div>"
+  },
+  "status" : "active",
+  "name" : "Catheter team",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "016/34 08 64",
+    "rank" : 10
+  }]
+}

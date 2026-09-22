@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Carepath Holter Monitoring - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+<link href="assets/css/tables.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <span title="">BE</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidelines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recommendations.html">General Recommendations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Carepaths
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="carepath-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="carepath-heartfailure.html">Heart failure</a>
+      </li>
+      <li>
+        <a href="carepath-ews.html">NEWS</a>
+      </li>
+      <li>
+        <a href="carepath-totem.html">TOTeM</a>
+      </li>
+      <li>
+        <a href="carepath-opat.html">OPAT</a>
+      </li>
+      <li>
+        <a href="carepath-holter.html">Holter Monitoring</a>
+      </li>
+      <li>
+        <a href="carepath-antitumoral.html">Antitumoral</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html">Diabetes</a>
+      </li>
+      <li>
+        <a href="carepath-perioperative-abdominal.html">Perioperative Care - abdominal</a>
+      </li>
+      <li>
+        <a href="carepath-overview-loinc.html">Overview LOINC</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Caresets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="careset-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="legal-guidelines-home-hospitalization.html">Special careset - home hospitalization</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-opat.html">Home hosp - OPAT</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-antitumoral.html">Home hosp - Antitumoral Therapy</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-mappingtable.html">Home hosp - Mappingtables</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li>
+        <a href="artifacts.html#1">Logical Models</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">History</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://hl7.org/fhir/R4/">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/">Transversal Clinical Core</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="copyrights.html">Copyrights</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Carepath Holter Monitoring</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/patient-monitoring/tree/70/merge'>https://github.com/hl7-be/patient-monitoring/tree/70/merge</a> and changes regularly. See the <a href='http://hl7belgium.org/fhir/patient-monitoring/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-be/patient-monitoring/commit/795f21f9ea93d02ed55339c8aaf6b7cc088b04e7"><code>795f21f9</code></a>. &nbsp; Branch: <a href="https://github.com/hl7-be/patient-monitoring/tree/update-pipelines"><code>update-pipelines</code></a>.</span></p><!--EndReleaseHeader-->
+  <h2>Carepath Holter Monitoring</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#care-pathway-overview" id="markdown-toc-care-pathway-overview">Care Pathway Overview</a></li>
+  <li><a href="#process--workflow" id="markdown-toc-process--workflow">Process &amp; Workflow</a></li>
+  <li><a href="#alarm--escalation" id="markdown-toc-alarm--escalation">Alarm &amp; Escalation</a></li>
+  <li><a href="#-outcome--pdf" id="markdown-toc--outcome--pdf">📄 Outcome : PDF</a></li>
+  <li><a href="#-outcome--fhir" id="markdown-toc--outcome--fhir">🧬 Outcome : FHIR</a></li>
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a></li>
+  <li><a href="#example-references" id="markdown-toc-example-references">Example References</a></li>
+</ul>
+
+</div>
+<blockquote>
+  <p>⚠️ <strong>Draft Notice</strong><br />
+This FHIR implementation content is currently under development and may be subject to significant changes.<br />
+Use this information with caution, as it may not yet reflect finalized or fully validated guidance.<br />
+Always verify details before relying on them for production use.</p>
+</blockquote>
+
+<p><strong>DRAFT: 2025-07-14</strong></p>
+
+<p><strong>Carepath Identifier</strong>: https://hl7belgium.org/fhir/patient-monitoring/carepath/holter-monitoring</p>
+
+<p><strong>Carepath Version</strong>: 1.0.0</p>
+
+<hr />
+
+<h3 id="care-pathway-overview">Care Pathway Overview</h3>
+
+<ul>
+  <li><strong>Monitoring Duration</strong>: 24–72 hours</li>
+  <li><strong>Facility Type</strong>: Hospital or diagnostic center</li>
+  <li><strong>Device Type</strong>: Holter ECG (1–3 lead, continuous)</li>
+  <li><strong>Data Review</strong>: By cardiologist or certified ECG analyst</li>
+</ul>
+
+<h4 id="patient-eligibility">Patient Eligibility</h4>
+
+<ul>
+  <li><strong>Indications</strong>: Suspected arrhythmias (e.g., palpitations, syncope, bradycardia)</li>
+  <li><strong>Consent</strong>: Signed informed consent prior to monitoring</li>
+  <li><strong>Referral</strong>: Required from physician (GP or specialist)</li>
+</ul>
+
+<hr />
+
+<h3 id="process--workflow">Process &amp; Workflow</h3>
+
+<h4 id="start-up">Start-Up</h4>
+
+<ul>
+  <li><strong>Device Placement</strong>: On-site or outpatient setting</li>
+  <li><strong>Instructions</strong>: Provided on wearing and returning the device</li>
+</ul>
+
+<h4 id="data-collection">Data Collection</h4>
+
+<ul>
+  <li><strong>Recording</strong>: Locally on Holter device</li>
+  <li><strong>Upload &amp; Analysis</strong>: Uploaded securely and interpreted using CE-certified tools</li>
+  <li><strong>Validation</strong>: All abnormal events confirmed by a reviewer</li>
+</ul>
+
+<hr />
+
+<h3 id="alarm--escalation">Alarm &amp; Escalation</h3>
+
+<ul>
+  <li><strong>Thresholds</strong>: System flags critical findings (e.g. AFib, VT, pauses)</li>
+  <li><strong>Human Review</strong>: All flagged findings are clinically reviewed</li>
+</ul>
+
+<hr />
+
+<h3 id="-outcome--pdf">📄 Outcome : PDF</h3>
+
+<ul>
+  <li><strong>Generated After Review</strong></li>
+  <li><strong>Contents</strong>: Summary, rhythm findings, annotated ECG strips</li>
+  <li><strong>File Size</strong>: ±1–5MB depending on duration and findings</li>
+</ul>
+
+<hr />
+
+<h3 id="-outcome--fhir">🧬 Outcome : FHIR</h3>
+
+<p>This Implementation Guide defines two core profiles for representing structured Holter ECG monitoring results:</p>
+
+<h4 id="-holter-diagnostic-report">📄 <a href="./StructureDefinition-holter-diagnostic-report.html">Holter Diagnostic Report</a></h4>
+
+<p>The <strong>Holter Diagnostic Report</strong> is a profile based on the FHIR <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> resource. It serves as the <strong>container</strong> for a complete ambulatory cardiac rhythm analysis, such as a 24- or 48-hour Holter ECG report.</p>
+
+<p><strong>Key elements:</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">status</code>: The lifecycle status of the report (e.g., final, amended)</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code>: Fixed to <strong>LOINC <code class="language-plaintext highlighter-rouge">18754-2</code></strong>, identifying this as a Holter rhythm report</li>
+  <li><code class="language-plaintext highlighter-rouge">effectivePeriod</code>: The time range over which ECG monitoring was performed</li>
+  <li><code class="language-plaintext highlighter-rouge">result</code>: References to one or more <code class="language-plaintext highlighter-rouge">HolterObservation</code> resources, each representing a specific rhythm event or episode</li>
+  <li><code class="language-plaintext highlighter-rouge">conclusion</code>: An optional free-text summary by the reporting clinician or algorithm</li>
+</ul>
+
+<blockquote>
+  <p>📌 This report acts as the entry point for interpreting a Holter study and links to all rhythm-related findings detected during the monitoring period.</p>
+</blockquote>
+
+<h4 id="-holter-observation">📈 <a href="./StructureDefinition-holter-observation.html">Holter Observation</a></h4>
+
+<p>The <strong>Holter Observation</strong> profile is based on the FHIR <code class="language-plaintext highlighter-rouge">Observation</code> resource and represents an <strong>individual rhythm event</strong> or episode detected during the Holter recording, such as an atrial fibrillation episode, ventricular tachycardia, pause, or supraventricular run.</p>
+
+<p><strong>Each observation includes:</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">status</code>: Typically <code class="language-plaintext highlighter-rouge">final</code> once confirmed</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code>: A SNOMED CT code identifying the arrhythmia type (e.g., atrial fibrillation)</li>
+  <li><code class="language-plaintext highlighter-rouge">valueCodeableConcept</code>: Also constrained to SNOMED CT, representing the same event type as <code class="language-plaintext highlighter-rouge">code</code></li>
+  <li><code class="language-plaintext highlighter-rouge">effectivePeriod</code>: The <strong>start and end time</strong> of the arrhythmia episode</li>
+  <li><code class="language-plaintext highlighter-rouge">component</code> <em>(optional)</em>:
+    <ul>
+      <li><strong>Average heart rate</strong>, using <code class="language-plaintext highlighter-rouge">LOINC:8867-4</code> (expressed in beats per minute)</li>
+      <li>Additional metrics like burden, duration, or RR intervals may be included in the future</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>🫀 Each <code class="language-plaintext highlighter-rouge">HolterObservation</code> provides structured, time-specific detail about one episode — for example, “an atrial fibrillation episode from 14:03 to 14:07 with an average HR of 79 bpm”.</p>
+</blockquote>
+
+<h4 id="-relationship-between-report-and-observations">🧩 Relationship between Report and Observations</h4>
+
+<ul>
+  <li>The <strong><code class="language-plaintext highlighter-rouge">HolterDiagnosticReport</code></strong> references one or more <strong><code class="language-plaintext highlighter-rouge">HolterObservation</code></strong> entries.</li>
+  <li>This design enables systems to access both a <strong>summary report</strong> and a complete list of <strong>structured, time-stamped rhythm events</strong>.</li>
+  <li>This supports:
+    <ul>
+      <li>Visualization of arrhythmia timelines</li>
+      <li>Quantitative reporting (e.g., total burden)</li>
+      <li>Decision support and auditability</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="terminology">Terminology</h3>
+
+<ul>
+  <li><a href="./ValueSet-holter-report-code.html">Holter Report Code</a></li>
+  <li><a href="./ValueSet-holter-event-codes.html">Holter Event Codes</a></li>
+  <li><a href="./ValueSet-holter-event-component-codes.html">Holter Event Component Codes</a></li>
+</ul>
+
+<h3 id="example-references">Example References</h3>
+
+<ul>
+  <li><a href="./DiagnosticReport-example-holter-diagnosticreport.html">Holter Diagnostic Report</a></li>
+</ul>
+
+<hr />
+
+<p>These FHIR resources are designed to support structured, interoperable Holter Report data exchange. Each finding is encoded using HL7 Belgium and standard terminologies to promote clarity and consistency in digital health environments.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">HL7 Belgium</a>.  
+          Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-05-18 09:41:00 +0000">
+    2026-05-18
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- HL7 Belgium -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
