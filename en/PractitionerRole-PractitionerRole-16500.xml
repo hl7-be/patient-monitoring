@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="PractitionerRole-16500"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole PractitionerRole-16500</b></p><a name="PractitionerRole-16500"> </a><a name="hcPractitionerRole-16500"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-practitionerrole.html">BePractitionerRole</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">(no practitioner): Physician (https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id#16500)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Roles which this practitioner is authorized to perform for the organization">Role:</td><td colspan="3"><span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persphysician}">Physician</span></td></tr><tr><td style="background-color: #f3f5da" title="The specialties of the practitioner in this role">Specialty:</td><td colspan="3"><span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty drgeneralphysician}">General Physician</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id"/>
+    <value value="16500"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+      <code value="persphysician"/>
+      <display value="Physician"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+      <code value="drgeneralphysician"/>
+      <display value="General Physician"/>
+    </coding>
+  </specialty>
+</PractitionerRole>

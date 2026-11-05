@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/DiagnosticReport/example-holter-diagnosticreport> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-holter-diagnosticreport"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport example-holter-diagnosticreport</b></p><a name=\"example-holter-diagnosticreport\"> </a><a name=\"hcexample-holter-diagnosticreport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-holter-diagnostic-report.html\">Holter Diagnostic Report</a></p></div><h2><span title=\"Codes:{http://loinc.org 18754-2}\">Holter monitor study</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 EC}\">Electrocardiac (e.g., EKG,  EEC, Holter)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Relevant Time</td><td>2025-07-15 08:00:00+0200 --&gt; 2025-07-15 12:00:00+0200</td></tr><tr><td>Reported</td><td>2025-07-15 12:00:00+0200</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td></tr><tr><td><a href=\"Observation-example-holter-afib.html\"><span title=\"Codes:{http://snomed.info/sct 164889003}\">ECG: atrial fibrillation</span></a></td><td/><td>Final</td><td>2025-07-14 13:24:00+0200 --&gt; 2025-07-14 13:26:00+0200</td></tr><tr><td><a href=\"Observation-example-holter-sv.html\"><span title=\"Codes:{http://snomed.info/sct 164887001}\">ECG: supraventricular arrhythmia</span></a></td><td/><td>Final</td><td>2025-07-14 14:42:00+0200 --&gt; 2025-07-14 14:45:00+0200</td></tr></table></div>"
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ] ;
+       fhir:Coding.code [ fhir:value "EC" ] ;
+       fhir:Coding.display [ fhir:value "Electrocardiac (e.g., EKG,  EEC, Holter)" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:18754-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "18754-2" ] ;
+       fhir:Coding.display [ fhir:value "Holter monitor study" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.effectivePeriod [
+     fhir:Period.start [ fhir:value "2025-07-15T08:00:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2025-07-15T12:00:00+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:DiagnosticReport.issued [ fhir:value "2025-07-15T12:00:00+02:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.result [
+     fhir:index 0 ;
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/example-holter-afib> ;
+     fhir:Reference.reference [ fhir:value "Observation/example-holter-afib" ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/example-holter-sv> ;
+     fhir:Reference.reference [ fhir:value "Observation/example-holter-sv" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/DiagnosticReport/example-holter-diagnosticreport.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

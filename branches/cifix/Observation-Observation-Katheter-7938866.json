@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Observation-Katheter-7938866",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observation-Katheter-7938866</b></p><a name=\"Observation-Katheter-7938866\"> </a><a name=\"hcObservation-Katheter-7938866\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1156071007}\">Catheter observable (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999\u00a0(use:\u00a0usual,\u00a0))</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 246138005}\">Type of catheter (attribute)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 1344705000}\">Midline catheter (physical object)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 448439004}\">Catheter stabilization device (physical object)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 84756000}\">Adhesive tape, device (physical object)</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1156071007",
+      "display" : "Catheter observable (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-123"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "246138005",
+        "display" : "Type of catheter (attribute)"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "1344705000",
+        "display" : "Midline catheter (physical object)"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "448439004",
+        "display" : "Catheter stabilization device (physical object)"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "84756000",
+        "display" : "Adhesive tape, device (physical object)"
+      }]
+    }
+  }]
+}

@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/PractitionerRole/PractitionerRole-16500> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PractitionerRole-16500"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PractitionerRole-16500</b></p><a name=\"PractitionerRole-16500\"> </a><a name=\"hcPractitionerRole-16500\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-practitionerrole.html\">BePractitionerRole</a></p></div><p><b>identifier</b>: <code>https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id</code>/16500</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persphysician}\">Physician</span></p><p><b>specialty</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty drgeneralphysician}\">General Physician</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id"^^xsd:anyURI ;
+       fhir:l <https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/huisarts/id>
+     ] ;
+     fhir:value [ fhir:v "16500" ]
+  ] ) ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty>
+       ] ;
+       fhir:code [ fhir:v "persphysician" ] ;
+       fhir:display [ fhir:v "Physician" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty>
+       ] ;
+       fhir:code [ fhir:v "drgeneralphysician" ] ;
+       fhir:display [ fhir:v "General Physician" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

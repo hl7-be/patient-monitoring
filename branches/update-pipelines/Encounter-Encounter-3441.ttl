@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Encounter/Encounter-3441> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Encounter-3441"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter Encounter-3441</b></p><a name=\"Encounter-3441\"> </a><a name=\"hcEncounter-3441\"> </a><p><b>status</b>: finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode: HH</a> (home health)</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">primary performer</span></td><td>John Doe rizivnr</td></tr></table><p><b>period</b>: 2025-11-19 11:07:52+0000 --&gt; (ongoing)</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 18629005}, {http://snomed.info/sct 276844002}\">subcutane inspuiting</span></p><p><b>serviceProvider</b>: Wit-Gele Kruis Vlaams-Brabant</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [
+       fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+       fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+     ] ;
+     fhir:code [ fhir:v "HH" ] ;
+     fhir:display [ fhir:v "home health" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+         ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:display [ fhir:v "John Doe rizivnr" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-11-19T11:07:52+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:18629005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "18629005" ] ;
+       fhir:display [ fhir:v "Administration of drug or medicament (procedure)" ]
+     ] [
+       a sct:276844002 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "276844002" ] ;
+       fhir:display [ fhir:v "Injection to subcutaneous drug delivery port (procedure)" ]
+     ] ) ;
+     fhir:text [ fhir:v "subcutane inspuiting" ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:display [ fhir:v "Wit-Gele Kruis Vlaams-Brabant" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

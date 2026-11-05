@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="testloc"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location testloc</b></p><a name="testloc"> </a><a name="hctestloc"> </a><p><b>status</b>: Active</p><p><b>name</b>: UZ Leuven - Consultation</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span></p></div>
+  </text>
+  <status value="active"/>
+  <name value="UZ Leuven - Consultation"/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+    </coding>
+  </type>
+</Location>

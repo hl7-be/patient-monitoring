@@ -1,0 +1,313 @@
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "HomehospAzacitidineQuestionnaireResponseExample",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: QuestionnaireResponse HomehospAzacitidineQuestionnaireResponseExample</b></p><a name=\"HomehospAzacitidineQuestionnaireResponseExample\"> </a><a name=\"hcHomehospAzacitidineQuestionnaireResponseExample\"> </a><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder1\"><tr class=\"xhtRowBorder2\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Definition</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Answer</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> HomehospAzacitidineQuestionnaireResponseExample</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Questionnaire:<a href=\"Questionnaire-homehosp-azacitidine.html\">Azacitidine</a></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / </span>NursingAssessment</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Verpleegkundig assessment</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / </span>MedicationStorage</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">MedicationStorage</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / MedicationStorage / </span>A1_MedicationStorage</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Zijn er opmerkingen of bezorgdheden omtrent de (correcte) thuisbewaring van de medicatie?</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/710977001\">SNOMED CT: 710977001</a> (Safe storage and management of medication)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / </span>ObservationParameters</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Observatie parameters</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / ObservationParameters / </span>B1_BodyTemperature</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Lichaamstemperatuur:</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">36</td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / ObservationParameters / </span>B2_HeartRate</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Pols:</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">66</td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / ObservationParameters / </span>B3_SystolicBloodPressure</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Bloeddruk systolisch:</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">120</td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / ObservationParameters / </span>B4_DiastolicBloodPressure</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Bloeddruk diastolisch:</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">71</td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / ObservationParameters / </span>B5_OxygenSaturation</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Zuurstofsaturatie (enkel uitvoeren bij hoest en kortademigheid)</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">98</td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / </span>Contraindications</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Contraindications</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / Contraindications / </span>C1_ContraindicationPresent</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Zijn er tegenindicaties voor toediening?</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373067005\">SNOMED CT: 373067005</a> (No)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / Contraindications / </span>C3_FeverChills</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Koorts , koude rillingen, zich ziek voelen</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373067005\">SNOMED CT: 373067005</a> (No)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / Contraindications / </span>C4_OralIntake</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Geen orale intake (tgv verminderde eetlust of smaakverandering)</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373067005\">SNOMED CT: 373067005</a> (No)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / Contraindications / </span>C5_SevereNausea</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Ernstige misselijkheid (dwz misselijkheid met onvoldoende orale intake)</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373067005\">SNOMED CT: 373067005</a> (No)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / Contraindications / </span>C6_SevereDyspnea</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Toegenomen kortademigheid en/of ernstige kortademigheid (dwz kortademigheid in rust/zonder inspanning en/of kortademigheid die hindert bij de dagelijkse activiteiten) (Trastuzumab, Azacitidine)</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373067005\">SNOMED CT: 373067005</a> (No)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / Contraindications / </span>C7_NewCoughDyspnea</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Nieuwe of toegenomen productieve of droge hoest, met of zonder dyspnoe</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373067005\">SNOMED CT: 373067005</a> (No)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / Contraindications / </span>C8_GeneralDecline</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Algemene achteruitgang</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373067005\">SNOMED CT: 373067005</a> (No)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck101.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / </span>SymptomBurden</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">SymptomBurden</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D1_Nausea</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Misselijkheid</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444456001\">SNOMED CT: 444456001</a> (Grade 1 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D2_Vomiting</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Braken</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444431007\">SNOMED CT: 444431007</a> (Grade 0 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D3_DecreasedAppetite</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Verminderde eetlust of smaakverandering</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444431007\">SNOMED CT: 444431007</a> (Grade 0 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D4_Diarrhea</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Buikloop</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444431007\">SNOMED CT: 444431007</a> (Grade 0 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D5_Constipation</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Verstopping</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444456001\">SNOMED CT: 444456001</a> (Grade 1 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D6_Fatigue</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Vermoeidheid/futloosheid</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444456001\">SNOMED CT: 444456001</a> (Grade 1 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D7_Pain</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Pijn</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444431007\">SNOMED CT: 444431007</a> (Grade 0 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D8_SkinRash</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Huiduitslag</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444456001\">SNOMED CT: 444456001</a> (Grade 1 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D9_PsychosocialBurden</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Psychosociale belasting</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444431007\">SNOMED CT: 444431007</a> (Grade 0 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D10_Dyspnea</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Kortademigheid</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444431007\">SNOMED CT: 444431007</a> (Grade 0 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1000.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / NursingAssessment / SymptomBurden / </span>D11_Cough</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Hoest</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/444431007\">SNOMED CT: 444431007</a> (Grade 0 on a scale of 0 to 3)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck01.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / </span>Assignment</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Assignment</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck011.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / Assignment / </span>MedicationPreparation</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Voorbereiding medicatietoediening</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck0100.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / Assignment / MedicationPreparation / </span>E1_PreparationCorrect</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Kon de medicatie worden bereid volgens de procedure?</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373066001\">SNOMED CT: 373066001</a> (Yes)</span></span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck001.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / Assignment / </span>MedicationAdministration</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">MedicationAdministration</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck0000.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HomehospAzacitidineQuestionnaireResponseExample / Assignment / MedicationAdministration / </span>E3_AdministrationCorrect</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Kon de medicatie exact volgens de procedure worden toegediend (er waren geen afwijkingen)?</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><span><span><a href=\"http://snomed.info/id/373066001\">SNOMED CT: 373066001</a> (Yes)</span></span></td></tr>\r\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "questionnaire" : "http://hl7belgium.org/fhir/patient-monitoring/Questionnaire/homehosp-azacitidine",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/Patient-123"
+  },
+  "authored" : "2025-11-19T11:08:00.5813903+01:00",
+  "item" : [{
+    "linkId" : "NursingAssessment",
+    "text" : "Verpleegkundig assessment",
+    "item" : [{
+      "linkId" : "MedicationStorage",
+      "text" : "MedicationStorage",
+      "item" : [{
+        "linkId" : "A1_MedicationStorage",
+        "text" : "Zijn er opmerkingen of bezorgdheden omtrent de (correcte) thuisbewaring van de medicatie?",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "710977001",
+            "display" : "Safe storage and management of medication"
+          }
+        }]
+      }]
+    },
+    {
+      "linkId" : "ObservationParameters",
+      "text" : "Observatie parameters",
+      "item" : [{
+        "linkId" : "B1_BodyTemperature",
+        "text" : "Lichaamstemperatuur:",
+        "answer" : [{
+          "valueDecimal" : 36
+        }]
+      },
+      {
+        "linkId" : "B2_HeartRate",
+        "text" : "Pols:",
+        "answer" : [{
+          "valueDecimal" : 66
+        }]
+      },
+      {
+        "linkId" : "B3_SystolicBloodPressure",
+        "text" : "Bloeddruk systolisch:",
+        "answer" : [{
+          "valueDecimal" : 120
+        }]
+      },
+      {
+        "linkId" : "B4_DiastolicBloodPressure",
+        "text" : "Bloeddruk diastolisch:",
+        "answer" : [{
+          "valueDecimal" : 71
+        }]
+      },
+      {
+        "linkId" : "B5_OxygenSaturation",
+        "text" : "Zuurstofsaturatie (enkel uitvoeren bij hoest en kortademigheid)",
+        "answer" : [{
+          "valueDecimal" : 98
+        }]
+      }]
+    },
+    {
+      "linkId" : "Contraindications",
+      "text" : "Contraindications",
+      "item" : [{
+        "linkId" : "C1_ContraindicationPresent",
+        "text" : "Zijn er tegenindicaties voor toediening?",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C3_FeverChills",
+        "text" : "Koorts , koude rillingen, zich ziek voelen",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C4_OralIntake",
+        "text" : "Geen orale intake (tgv verminderde eetlust of smaakverandering)",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C5_SevereNausea",
+        "text" : "Ernstige misselijkheid (dwz misselijkheid met onvoldoende orale intake)",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C6_SevereDyspnea",
+        "text" : "Toegenomen kortademigheid en/of ernstige kortademigheid (dwz kortademigheid in rust/zonder inspanning en/of kortademigheid die hindert bij de dagelijkse activiteiten) (Trastuzumab, Azacitidine)",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C7_NewCoughDyspnea",
+        "text" : "Nieuwe of toegenomen productieve of droge hoest, met of zonder dyspnoe",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "C8_GeneralDecline",
+        "text" : "Algemene achteruitgang",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }
+        }]
+      }]
+    },
+    {
+      "linkId" : "SymptomBurden",
+      "text" : "SymptomBurden",
+      "item" : [{
+        "linkId" : "D1_Nausea",
+        "text" : "Misselijkheid",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D2_Vomiting",
+        "text" : "Braken",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D3_DecreasedAppetite",
+        "text" : "Verminderde eetlust of smaakverandering",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D4_Diarrhea",
+        "text" : "Buikloop",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D5_Constipation",
+        "text" : "Verstopping",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D6_Fatigue",
+        "text" : "Vermoeidheid/futloosheid",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D7_Pain",
+        "text" : "Pijn",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D8_SkinRash",
+        "text" : "Huiduitslag",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444456001",
+            "display" : "Grade 1 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D9_PsychosocialBurden",
+        "text" : "Psychosociale belasting",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D10_Dyspnea",
+        "text" : "Kortademigheid",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        }]
+      },
+      {
+        "linkId" : "D11_Cough",
+        "text" : "Hoest",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "444431007",
+            "display" : "Grade 0 on a scale of 0 to 3"
+          }
+        }]
+      }]
+    }]
+  },
+  {
+    "linkId" : "Assignment",
+    "text" : "Assignment",
+    "item" : [{
+      "linkId" : "MedicationPreparation",
+      "text" : "Voorbereiding medicatietoediening",
+      "item" : [{
+        "linkId" : "E1_PreparationCorrect",
+        "text" : "Kon de medicatie worden bereid volgens de procedure?",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }
+        }]
+      }]
+    },
+    {
+      "linkId" : "MedicationAdministration",
+      "text" : "MedicationAdministration",
+      "item" : [{
+        "linkId" : "E3_AdministrationCorrect",
+        "text" : "Kon de medicatie exact volgens de procedure worden toegediend (er waren geen afwijkingen)?",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }
+        }]
+      }]
+    }]
+  }]
+}

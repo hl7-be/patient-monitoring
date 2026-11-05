@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-F-7766077> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CareTeam-F-7766077"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-F-7766077</b></p><a name=\"CareTeam-F-7766077\"> </a><a name=\"hcCareTeam-F-7766077\"> </a><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org LA27977-0}\">Episode of care-focused care team</span></p><p><b>name</b>: Zorgteam thuishospitalisatie</p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"CareTeam-CareTeam-OPAT.html\">CareTeam OPAT team</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"CareTeam-CareTeam-Katheter.html\">CareTeam Katheterteam</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"CareTeam-CareTeam-Spoed.html\">CareTeam Receptie spoed</a></p></blockquote><p><b>managingOrganization</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:LA27977-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "LA27977-0" ] ;
+       fhir:display [ fhir:v "Episode of care-focused care team" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Zorgteam thuishospitalisatie"] ; # 
+  fhir:subject [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:reference [ fhir:v "Patient/Patient-123" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:member [
+       fhir:l <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-OPAT> ;
+       fhir:reference [ fhir:v "CareTeam/CareTeam-OPAT" ]
+     ]
+  ] [
+     fhir:member [
+       fhir:l <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Katheter> ;
+       fhir:reference [ fhir:v "CareTeam/CareTeam-Katheter" ]
+     ]
+  ] [
+     fhir:member [
+       fhir:l <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Spoed> ;
+       fhir:reference [ fhir:v "CareTeam/CareTeam-Spoed" ]
+     ]
+  ] ) ; # 
+  fhir:managingOrganization ( [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+     fhir:reference [ fhir:v "Organization/Organization-UZL" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

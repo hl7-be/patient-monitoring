@@ -1,0 +1,9 @@
+{
+  "resourceType" : "Organization",
+  "id" : "Organization-UZL",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organization-UZL</b></p><a name=\"Organization-UZL\"> </a><a name=\"hcOrganization-UZL\"> </a><p><b>name</b>: UZ Leuven</p></div>"
+  },
+  "name" : "UZ Leuven"
+}

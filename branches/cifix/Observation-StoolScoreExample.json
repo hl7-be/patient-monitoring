@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Observation",
+  "id" : "StoolScoreExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation StoolScoreExample</b></p><a name=\"StoolScoreExample\"> </a><a name=\"hcStoolScoreExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 443172007}\">Bristol stool form score</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: 2</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "443172007",
+      "display" : "Bristol stool form score"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://www.telemonitoring-prescription.com/FHIR/patient",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectiveDateTime" : "2025-10-08T10:00:00Z",
+  "valueInteger" : 2
+}

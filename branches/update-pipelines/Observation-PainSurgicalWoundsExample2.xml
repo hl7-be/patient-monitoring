@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PainSurgicalWoundsExample2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation PainSurgicalWoundsExample2</b></p><a name="PainSurgicalWoundsExample2"> </a><a name="hcPainSurgicalWoundsExample2"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 72514-3}">Pain severity - 0-10 verbal numeric rating [Score] - Reported</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>focus</b>: <a href="#hcPainSurgicalWoundsExample2/surgicalWound">Condition Surgical wound</a></p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://loinc.org LA10138-8}">6</span></p><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Condition #surgicalWound</b></p><a name="PainSurgicalWoundsExample2/surgicalWound"> </a><a name="hcPainSurgicalWoundsExample2/surgicalWound"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 112633009}">Surgical wound</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p></blockquote></div>
+  </text>
+  <contained>
+    <Condition>
+      <id value="surgicalWound"/>
+      <clinicalStatus>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+          <code value="active"/>
+        </coding>
+      </clinicalStatus>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="112633009"/>
+          <display value="Surgical wound"/>
+        </coding>
+      </code>
+      <subject>
+        <identifier>
+          <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+          <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+        </identifier>
+      </subject>
+    </Condition>
+  </contained>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="72514-3"/>
+      <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <focus>
+    <reference value="#surgicalWound"/>
+  </focus>
+  <effectiveDateTime value="2025-10-08T10:00:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA10138-8"/>
+      <display value="6"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

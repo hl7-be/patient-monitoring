@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organization-UZL"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Organization-UZL</b></p><a name="Organization-UZL"> </a><a name="hcOrganization-UZL"> </a><p><b>name</b>: UZ Leuven</p></div>
+  </text>
+  <name value="UZ Leuven"/>
+</Organization>

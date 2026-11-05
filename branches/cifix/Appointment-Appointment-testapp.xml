@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="Appointment-testapp"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment Appointment-testapp</b></p><a name="Appointment-testapp"> </a><a name="hcAppointment-testapp"> </a><p><b>identifier</b>: <code>https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr</code>/123456 (use: usual, )</p><p><b>status</b>: Fulfilled</p><p><b>start</b>: 2025-08-11 09:15:00+0200</p><p><b>end</b>: 2025-08-11 09:25:00+0200</p><p><b>minutesDuration</b>: 10</p><p><b>created</b>: 2025-08-06 13:16:41+0200</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Location-testloc.html">Location UZ Leuven - Raadpleging</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Patient-Patient-123.html">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>status</b>: Accepted</p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/bifrost/afsprakenBoek/slotNr"/>
+    <value value="123456"/>
+  </identifier>
+  <status value="fulfilled"/>
+  <start value="2025-08-11T09:15:00.000+02:00"/>
+  <end value="2025-08-11T09:25:00.000+02:00"/>
+  <minutesDuration value="10"/>
+  <created value="2025-08-06T13:16:41+02:00"/>
+  <participant>
+    <actor>
+      <reference value="Location/testloc"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="Patient/Patient-123"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+</Appointment>

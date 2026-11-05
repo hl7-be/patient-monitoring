@@ -1,0 +1,15 @@
+{
+  "resourceType" : "CareTeam",
+  "id" : "CareTeam-Spoed",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-Spoed</b></p><a name=\"CareTeam-Spoed\"> </a><a name=\"hcCareTeam-Spoed\"> </a><p><b>status</b>: Active</p><p><b>name</b>: Emergency reception</p><p><b>telecom</b>: ph: 016/34 39 00</p></div>"
+  },
+  "status" : "active",
+  "name" : "Emergency reception",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "016/34 39 00",
+    "rank" : 11
+  }]
+}

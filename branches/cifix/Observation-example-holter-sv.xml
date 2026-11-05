@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-holter-sv"/>
+  <meta>
+    <profile value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-holter-sv</b></p><a name="example-holter-sv"> </a><a name="hcexample-holter-sv"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-holter-observation.html">Holter Observation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 164887001}">ECG: supraventricular arrhythmia</span></p><p><b>effective</b>: 2025-07-14 14:42:00+0200 --&gt; 2025-07-14 14:45:00+0200</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="164887001"/>
+      <display value="ECG: supraventricular arrhythmia"/>
+    </coding>
+  </code>
+  <effectivePeriod>
+    <start value="2025-07-14T14:42:00+02:00"/>
+    <end value="2025-07-14T14:45:00+02:00"/>
+  </effectivePeriod>
+</Observation>
