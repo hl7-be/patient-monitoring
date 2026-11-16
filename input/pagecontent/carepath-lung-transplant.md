@@ -16,15 +16,22 @@ of a decline in graft function. That decline can be caused by acute rejection, i
 **chronic lung allograft dysfunction (CLAD)**, the main limit on long-term survival after lung transplantation. Daily
 home spirometry detects a decline in FEV1 earlier than the scheduled outpatient pulmonary function tests.
 
-Blood pressure and body weight are monitored alongside spirometry. Calcineurin inhibitors (tacrolimus, ciclosporin)
-often cause hypertension and nephrotoxicity, and body weight reflects nutritional status, corticosteroid side effects
-and fluid balance.
+The other parameters complete the picture:
+
+- **Oxygen saturation and symptoms**: desaturation, dyspnea, cough or reduced exercise tolerance can accompany a fall
+  in FEV1, and help distinguish a real decline from a poorly performed measurement.
+- **Body temperature**: lung transplant recipients are immunosuppressed and at high risk of respiratory infections.
+  Fever is an early sign of infection, and infection itself is a risk factor for rejection.
+- **Blood pressure**: calcineurin inhibitors (tacrolimus, ciclosporin) often cause hypertension and nephrotoxicity.
+- **Body weight**: reflects nutritional status, corticosteroid side effects and fluid balance.
+- **Gastro-intestinal and neurological symptoms**: diarrhea and vomiting can be caused by infection or medication, and
+  change immunosuppressant blood levels. Tremor is a typical sign of calcineurin inhibitor toxicity.
 
 - **Monitoring Duration**: Long-term, starting after discharge following transplantation. Follow-up is most intensive
   in the first year.
 - **Central Care Facility**: Lung transplant centre with a dedicated follow-up team.
-- **Data Source**: A home spirometer, a connected or manually read blood pressure monitor and a connected or manually
-  read scale.
+- **Data Source**: A home spirometer, a pulse oximeter, a thermometer, a blood pressure monitor and a scale (connected
+  or read manually), and a symptom questionnaire in the patient application.
 
 #### Patient Eligibility
 
@@ -42,16 +49,22 @@ and fluid balance.
 - **Device Delivery and Training**: The patient receives the home spirometer and is trained by the transplant team.
 - **Parameters Monitored**:
   - Spirometry (FEV1, and depending on the device FVC, FEV1/FVC, PEF and FEF25-75)
+  - Oxygen Saturation (SpO2)
+  - Body Temperature
   - Blood Pressure (BP)
   - Body Weight (BW)
-- **Frequency**: Daily, at a fixed time of day, preferably before medication intake.
+  - Symptoms
+- **Frequency**: Daily, at a fixed time of day, preferably before medication intake. Symptoms are also registered
+  whenever they occur.
 
 #### Data Collection
 
 - Spirometry is performed by the patient and processed by the spirometer or its application. The application selects
   the reported values from the session and grades the session quality according to the ATS/ERS 2019 standard (see
   below).
-- Blood pressure and body weight are collected automatically via connected devices or entered manually.
+- Oxygen saturation, body temperature, blood pressure and body weight are collected automatically via connected devices
+  or entered manually.
+- Symptoms are registered by the patient.
 - Technology is CE-certified, with end-to-end encryption and GDPR compliance.
 
 #### Alarm Management
@@ -64,6 +77,12 @@ and fluid balance.
   10% or more from baseline. CLAD itself is defined as a persistent decline of 20% or more.
 - **Quality**: Sessions graded U or F, or graded E for FEV1, are unreliable and should not trigger an alarm on their
   own. They should lead to a repeat measurement instead.
+- **Oxygen Saturation**: A fall in SpO2 from the patient's usual value should be assessed together with the FEV1 and
+  the symptoms.
+- **Body Temperature**: Fever (typically 38 °C or above) warrants contact with the transplant team, as it may indicate
+  infection.
+- **Symptoms**: New or worsening respiratory symptoms, and hemoptysis in particular, warrant contact with the transplant
+  team, regardless of the spirometry result.
 - **Blood Pressure and Weight**: Thresholds defined by the transplant centre.
 - **Review**: Data is reviewed by the transplant team during working hours.
 
@@ -73,7 +92,7 @@ and fluid balance.
 
 #### Outcome Module - PDF
 
-- **Content**: Overview of the vital parameters and the spirometry trend, including the flow-volume and volume-time
+- **Content**: Overview of the symptoms, the vital parameters and the spirometry trend, including the flow-volume and volume-time
   curves of the reported sessions.
 - **File Size**: ±100KB per PDF, max: 10MB per PDF.
 
@@ -88,10 +107,12 @@ and fluid balance.
 | Description             | FHIR Profile                                                                         |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Spirometry              | [`Spirometry Observation`](./StructureDefinition-spirometry-observation.html)        |
+| Oxygen Saturation (SpO2)| [`Observation-oxygensat`](http://hl7.org/fhir/StructureDefinition/oxygensat)         |
+| Body Temperature        | [`Observation-bodytemp`](http://hl7.org/fhir/StructureDefinition/bodytemp)           |
 | Blood Pressure (BP)     | [`Observation-bp`](http://hl7.org/fhir/StructureDefinition/bp)                       |
 | Body Weight (BW)        | [`Observation-bodyweight`](http://hl7.org/fhir/StructureDefinition/bodyweight)       |
 
-Blood pressure and body weight are exchanged exactly as in the [Heart failure carepath](./carepath-heartfailure.html).
+The vital signs are exchanged with the standard FHIR vital-sign profiles, as in the other carepaths of this IG.
 
 ##### Spirometry
 
@@ -158,10 +179,40 @@ the session, such as a reason for poor quality reported by the patient, go in `O
 | `device`            | The spirometer: a `Device` with `type`, `manufacturer`, `deviceName` and `modelNumber`, and `serialNumber` when known |
 | `method`            | Optional free text, e.g. the grading standard and the reference equation for predicted values    |
 
+##### Symptom Monitoring
+
+- **Frequency**: As frequently as registered by the patient. Average of 1 per day per symptom.
+- **Structure**: One `Observation` per symptom, with `code` taken from the symptom value set and
+  `valueCodeableConcept` taken from the severity scale. This is the same pattern as the symptoms of the
+  [Heart failure carepath](./carepath-heartfailure.html).
+- **FHIR ValueSets**:
+  - [Lung Transplant Symptoms](./ValueSet-lung-transplant-symptoms.html)
+  - [Symptom Severity](./ValueSet-symptom-severity.html)
+
+<div class="table-md"></div>
+
+| Symptom                     | SNOMED CT | Clinical relevance                                     |
+|-----------------------------|-----------|--------------------------------------------------------|
+| Dyspnea                     | 267036007 | Rejection, infection                                   |
+| Cough                       | 49727002  | Rejection, infection                                   |
+| Productive cough            | 28743005  | Infection                                              |
+| Hemoptysis                  | 66857006  | Infection, airway complication; always reported        |
+| Wheezing                    | 56018004  | Airway obstruction, bronchiolitis obliterans           |
+| Chest pain                  | 29857009  | Infection, pleural or cardiac complication             |
+| Impaired exercise tolerance | 267044007 | Decline in graft function                              |
+| Fatigue                     | 84229001  | Non-specific, infection, anemia                        |
+| Diarrhea                    | 62315008  | Infection, drug side effect; affects drug levels       |
+| Nausea                      | 422587007 | Drug side effect                                       |
+| Vomiting                    | 422400008 | Drug side effect; affects drug intake and levels       |
+| Decrease in appetite        | 64379006  | Nutritional status                                     |
+| Tremor                      | 26079004  | Calcineurin inhibitor toxicity                         |
+
 ### Terminology
 
 - [Spirometry Grade (ATS/ERS 2019)](./ValueSet-spirometry-grade.html)
 - [Spirometry Component Codes](./CodeSystem-spirometry-component-codes.html)
+- [Lung Transplant Symptoms](./ValueSet-lung-transplant-symptoms.html)
+- [Symptom Severity](./ValueSet-symptom-severity.html)
 
 Neither LOINC nor SNOMED CT has codes for the ATS/ERS 2019 session grades, so this IG defines them.
 
@@ -171,8 +222,11 @@ For detailed specifications, refer to the
 
 - [Spirometry Example](./Observation-SpirometryExample.html)
 - [Spirometry Example - FEV1-only device, grade U](./Observation-SpirometryExample2.html)
+- [Oxygen Saturation Example](./Observation-OxygenSaturationExample2.html)
+- [Temperature Example](./Observation-BodyTemperatureExample2.html)
 - [Blood Pressure Example](./Observation-BloodPressureExample2.html)
 - [Weight Example](./Observation-BodyWeightExample2.html)
+- [Dyspnea Example](./Observation-DyspneaExample.html)
 
 ### Open Items
 
@@ -182,6 +236,6 @@ For detailed specifications, refer to the
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Baseline and % change | Decide whether the provider also sends the FEV1 baseline and the % change from baseline, or whether the receiving system calculates them. |
 | z-scores and LLN      | Decide whether z-scores and the lower limit of normal are needed next to % predicted, in line with the ATS/ERS 2022 interpretation standard. |
-| Additional parameters | Validate with the transplant centres whether oxygen saturation, temperature and symptoms need to be added to this carepath.    |
+| Symptom list          | Validate the symptom list and the use of the severity scale with the transplant centres.                                       |
 | Order reference       | Define an IG-wide identifier system for the telemonitoring order (`Observation.basedOn`).                                       |
 | HCP involvement       | Review the parameters, the measurement frequency and the alarm thresholds with the Belgian lung transplant centres.             |
