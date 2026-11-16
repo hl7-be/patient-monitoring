@@ -80,19 +80,19 @@ Individual manoeuvres are not exchanged.
 
 * obeys spiro-fev1-grade
 * obeys spiro-fvc-grade
-* obeys spiro-ratio
+* obeys spiro-fvc-required
 
 Invariant: spiro-fev1-grade
 Description: "The ATS/ERS grade of the reported FEV1 SHOULD be reported."
 Severity: #warning
-Expression: "component.where(code.coding.where(code = 'fev1-grade').exists()).exists()"
+Expression: "component.where(code.coding.where(system = 'http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes' and code = 'fev1-grade').exists()).exists()"
 
 Invariant: spiro-fvc-grade
 Description: "If FVC is reported, its ATS/ERS grade SHOULD be reported as well."
 Severity: #warning
-Expression: "component.where(code.coding.where(system = 'http://loinc.org' and code = '19870-5').exists()).exists() implies component.where(code.coding.where(code = 'fvc-grade').exists()).exists()"
+Expression: "component.where(code.coding.where(system = 'http://loinc.org' and code = '19870-5').exists()).exists() implies component.where(code.coding.where(system = 'http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes' and code = 'fvc-grade').exists()).exists()"
 
-Invariant: spiro-ratio
-Description: "FEV1/FVC can only be reported together with FVC."
+Invariant: spiro-fvc-required
+Description: "FEV1/FVC, FEF25-75, FVC % predicted and the FVC grade can only be reported together with FVC."
 Severity: #error
-Expression: "component.where(code.coding.where(system = 'http://loinc.org' and code = '19926-5').exists()).exists() implies component.where(code.coding.where(system = 'http://loinc.org' and code = '19870-5').exists()).exists()"
+Expression: "component.where(code.coding.where((system = 'http://loinc.org' and (code = '19926-5' or code = '19927-3' or code = '19872-1')) or (system = 'http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes' and code = 'fvc-grade')).exists()).exists() implies component.where(code.coding.where(system = 'http://loinc.org' and code = '19870-5').exists()).exists()"

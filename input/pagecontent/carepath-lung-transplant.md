@@ -13,8 +13,8 @@ This FHIR implementation content is currently under development and may be subje
 
 This carepath describes the home follow-up of **lung transplant recipients**. The main purpose is the early detection
 of a decline in graft function. That decline can be caused by acute rejection, infection or the onset of
-**chronic lung allograft dysfunction (CLAD)**, the main limit on long-term survival after lung transplantation. Daily
-home spirometry detects a decline in FEV1 earlier than the scheduled outpatient pulmonary function tests.
+**chronic lung allograft dysfunction (CLAD)**, the main limit on long-term survival after lung transplantation. Home
+spirometry can detect a decline in FEV1 earlier than the scheduled outpatient pulmonary function tests.
 
 The other parameters complete the picture:
 
@@ -54,8 +54,8 @@ The other parameters complete the picture:
   - Blood Pressure (BP)
   - Body Weight (BW)
   - Symptoms
-- **Frequency**: Daily, at a fixed time of day, preferably before medication intake. Symptoms are also registered
-  whenever they occur.
+- **Frequency**: Defined by the transplant centre. Typically daily and at a fixed time of day, because lung function
+  varies over the day. Symptoms are also registered whenever they occur.
 
 #### Data Collection
 
@@ -75,8 +75,10 @@ The other parameters complete the picture:
   different size, age and sex.
 - **Thresholds**: Defined by the transplant centre. A typical home monitoring trigger is a sustained FEV1 decline of
   10% or more from baseline. CLAD itself is defined as a persistent decline of 20% or more.
-- **Quality**: Sessions graded U or F, or graded E for FEV1, are unreliable and should not trigger an alarm on their
-  own. They should lead to a repeat measurement instead.
+- **Quality**: The FEV1 grade tells how far the value can be trusted. Grades A, B and C are reliable, grades D, E and U
+  are interpreted with caution, and grade F is not used. A poorly performed manoeuvre usually underestimates FEV1, so
+  a low value with a poor grade leads to a repeat measurement. It is not ignored: a decline that persists when the
+  measurement is repeated is handled as a real decline.
 - **Oxygen Saturation**: A fall in SpO2 from the patient's usual value should be assessed together with the FEV1 and
   the symptoms.
 - **Body Temperature**: Fever (typically 38 °C or above) warrants contact with the transplant team, as it may indicate
@@ -92,8 +94,8 @@ The other parameters complete the picture:
 
 #### Outcome Module - PDF
 
-- **Content**: Overview of the symptoms, the vital parameters and the spirometry trend, including the flow-volume and volume-time
-  curves of the reported sessions.
+- **Content**: Overview of the symptoms, the vital parameters and the spirometry trend, including the flow-volume and
+  volume-time curves of the reported sessions.
 - **File Size**: ±100KB per PDF, max: 10MB per PDF.
 
 #### Outcome Module - FHIR Integration
@@ -134,21 +136,24 @@ manoeuvres and curves are not exchanged as structured data; the curves are part 
 
 <div class="table-md"></div>
 
-| Component                | LOINC code | `code.text` | Unit (UCUM) | Cardinality |
-|--------------------------|------------|-------------|-------------|-------------|
-| FEV1                     | 20150-9    | FEV1        | `L`         | 1..1        |
-| FVC                      | 19870-5    | FVC         | `L`         | 0..1        |
-| FEV1/FVC                 | 19926-5    | FEV1/FVC    | `%`         | 0..1        |
-| PEF                      | 33452-4    | PEF         | `L/s`       | 0..1        |
-| FEF25-75                 | 19927-3    | FEF25-75    | `L/s`       | 0..1        |
-| FEV1 % predicted         | 20152-5    | FEV1 %pred  | `%`         | 0..1        |
-| FVC % predicted          | 19872-1    | FVC %pred   | `%`         | 0..1        |
+| Component                | LOINC code (required) | SNOMED CT (optional) | `code.text` | Unit (UCUM) | Cardinality |
+|--------------------------|-----------------------|----------------------|-------------|-------------|-------------|
+| FEV1                     | 20150-9               | 59328004             | FEV1        | `L`         | 1..1        |
+| FVC                      | 19870-5               | 50834005             | FVC         | `L`         | 0..1        |
+| FEV1/FVC                 | 19926-5               | 313222007            | FEV1/FVC    | `%`         | 0..1        |
+| PEF                      | 33452-4               | 18491006             | PEF         | `L/s`       | 0..1        |
+| FEF25-75                 | 19927-3               | 251932003            | FEF25-75    | `L/s`       | 0..1        |
+| FEV1 % predicted         | 20152-5               | 313223002            | FEV1 %pred  | `%`         | 0..1        |
+| FVC % predicted          | 19872-1               | 445210000            | FVC %pred   | `%`         | 0..1        |
 
-`coding.display` holds the official LOINC display name. A short label for clinicians may be given in `code.text`.
-
-FEV1 is the only mandatory value, so handheld FEV1/PEF meters that do not measure FVC can also be used. FEV1/FVC is
-only allowed when FVC is reported. When predicted values are sent, the reference equation used (GLI-2012 recommended)
-should be stated in `Observation.method.text`.
+- The LOINC coding is required. The SNOMED CT code may be added as a second coding in the same `code`.
+- `coding.display` holds the official display name of the code system. A short label for clinicians may be given in
+  `code.text`.
+- FEV1 is the only mandatory value, so handheld FEV1/PEF meters that do not measure FVC can also be used.
+- FEV1/FVC, FEF25-75, FVC % predicted and the FVC grade are only allowed when FVC is reported.
+- The units are fixed. A device that reports PEF in L/min converts it to L/s.
+- When predicted values are sent, the reference equation used (for example GLI-2012 or GLI Global 2022) should be
+  stated in `Observation.method.text`.
 
 **Quality**
 
@@ -197,7 +202,7 @@ the session, such as a reason for poor quality reported by the patient, go in `O
 | Cough                       | 49727002  | Rejection, infection                                   |
 | Productive cough            | 28743005  | Infection                                              |
 | Hemoptysis                  | 66857006  | Infection, airway complication; always reported        |
-| Wheezing                    | 56018004  | Airway obstruction, bronchiolitis obliterans           |
+| Wheezing                    | 56018004  | Airway obstruction, bronchial stenosis                 |
 | Chest pain                  | 29857009  | Infection, pleural or cardiac complication             |
 | Impaired exercise tolerance | 267044007 | Decline in graft function                              |
 | Fatigue                     | 84229001  | Non-specific, infection, anemia                        |
@@ -214,7 +219,14 @@ the session, such as a reason for poor quality reported by the patient, go in `O
 - [Lung Transplant Symptoms](./ValueSet-lung-transplant-symptoms.html)
 - [Symptom Severity](./ValueSet-symptom-severity.html)
 
-Neither LOINC nor SNOMED CT has codes for the ATS/ERS 2019 session grades, so this IG defines them.
+**LOINC for the measurements.** SNOMED CT is the first choice in Belgium (see [Terminologies](./terminology.html)).
+The spirometry values are an exception, like the vital signs: LOINC is what spirometers and their applications
+produce, so the LOINC coding is required and the SNOMED CT code may be added next to it.
+
+**Local codes for the grades.** SNOMED CT has no codes for the ATS/ERS 2019 session grades. LOINC has
+`64593-7` *FEV1 quality attribute [PhenX]* and `64592-9` *FVC quality attribute [PhenX]*, but these belong to the PhenX
+research protocol, are in trial status, and their answer list (A to F) has no grade U. This IG therefore defines its
+own codes. A sender may add the LOINC PhenX code as a second coding on the grade component.
 
 ### Specification
 
@@ -237,5 +249,6 @@ For detailed specifications, refer to the
 | Baseline and % change | Decide whether the provider also sends the FEV1 baseline and the % change from baseline, or whether the receiving system calculates them. |
 | z-scores and LLN      | Decide whether z-scores and the lower limit of normal are needed next to % predicted, in line with the ATS/ERS 2022 interpretation standard. |
 | Symptom list          | Validate the symptom list and the use of the severity scale with the transplant centres.                                       |
+| Grade codes           | Ask LOINC for codes for the ATS/ERS 2019 session grades, so that the local codes can be replaced.                              |
 | Order reference       | Define an IG-wide identifier system for the telemonitoring order (`Observation.basedOn`).                                       |
 | HCP involvement       | Review the parameters, the measurement frequency and the alarm thresholds with the Belgian lung transplant centres.             |
