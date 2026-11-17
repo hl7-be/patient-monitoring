@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/DrainFluidExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DrainFluidExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation DrainFluidExample</b></p><a name=\"DrainFluidExample\"> </a><a name=\"hcDrainFluidExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251843005}\">Fluid output from drain</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: 35.29 mL/d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL/d = 'mL/d')</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:251843005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "251843005" ] ;
+       fhir:display [ fhir:v "Fluid output from drain" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "https://www.telemonitoring-prescription.com/FHIR/patient"^^xsd:anyURI ;
+         fhir:l <https://www.telemonitoring-prescription.com/FHIR/patient>
+       ] ;
+       fhir:value [ fhir:v "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-10-08T10:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 35.29 ] ;
+     fhir:unit [ fhir:v "mL/d" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "mL/d" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

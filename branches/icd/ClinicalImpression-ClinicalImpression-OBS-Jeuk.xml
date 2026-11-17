@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="ClinicalImpression-OBS-Jeuk"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ClinicalImpression ClinicalImpression-OBS-Jeuk</b></p><a name="ClinicalImpression-OBS-Jeuk"> </a><a name="hcClinicalImpression-OBS-Jeuk"> </a><p><b>status</b>: Completed</p><p><b>description</b>: Side effect assessment during OPAT home hospitalization: itching</p><p><b>subject</b>: <a href="Patient-Patient-123.html">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>encounter</b>: <a href="Encounter-CT-259690079.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-07-11 13:09:50+0200 --&gt; (ongoing)</a></p><p><b>date</b>: 2025-07-11 13:09:50+0200</p><p><b>summary</b>: yes</p></div>
+  </text>
+  <status value="completed"/>
+  <description value="Side effect assessment during OPAT home hospitalization: itching"/>
+  <subject>
+    <reference value="Patient/Patient-123"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/CT-259690079"/>
+  </encounter>
+  <date value="2025-07-11T13:09:50+02:00"/>
+  <summary value="yes"/>
+</ClinicalImpression>

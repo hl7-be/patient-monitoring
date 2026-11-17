@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/PainKillerExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PainKillerExample"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PainKillerExample</b></p><a name=\"PainKillerExample\"> </a><a name=\"hcPainKillerExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 52685006}\">Administration of analgesic</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:52685006 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "52685006" ] ;
+       fhir:display [ fhir:v "Administration of analgesic" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "https://www.telemonitoring-prescription.com/FHIR/patient"^^xsd:anyURI ;
+         fhir:l <https://www.telemonitoring-prescription.com/FHIR/patient>
+       ] ;
+       fhir:value [ fhir:v "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-10-08T10:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:373066001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "373066001" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

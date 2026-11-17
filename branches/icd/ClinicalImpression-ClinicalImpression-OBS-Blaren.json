@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ClinicalImpression",
+  "id" : "ClinicalImpression-OBS-Blaren",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression ClinicalImpression-OBS-Blaren</b></p><a name=\"ClinicalImpression-OBS-Blaren\"> </a><a name=\"hcClinicalImpression-OBS-Blaren\"> </a><p><b>status</b>: Completed</p><p><b>description</b>: Side effect assessment during OPAT home hospitalization: blisters</p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>encounter</b>: <a href=\"Encounter-CT-259690079.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-07-11 13:09:50+0200 --&gt; (ongoing)</a></p><p><b>date</b>: 2025-07-11 13:09:50+0200</p><p><b>summary</b>: no</p></div>"
+  },
+  "status" : "completed",
+  "description" : "Side effect assessment during OPAT home hospitalization: blisters",
+  "subject" : {
+    "reference" : "Patient/Patient-123"
+  },
+  "encounter" : {
+    "reference" : "Encounter/CT-259690079"
+  },
+  "date" : "2025-07-11T13:09:50+02:00",
+  "summary" : "no"
+}

@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Carepath ICD / CIED - Patient Monitoring Outcome FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/hl7-be.css"/>
+  <!-- Placeholder for child template CSS declarations -->
+  <!-- HL7 Belgium -->
+  <!-- draft -->
+
+<link rel="stylesheet" href="assets/css/colors.css"/>
+
+<link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/tables.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+        
+  <!-- HL7 Belgium -->
+  <!-- draft -->
+
+<div id="ig-nav">
+  <a no-external="true" id="hl7-logo" href="https://hl7belgium.org">
+    <img src="assets/images/hl7be-logo-header.png" alt="HL7 Belgium" height="65"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+</div>
+<div id="ig-search">
+  <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Patient Monitoring Outcome FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - STU1
+
+
+
+  <img src="../assets/images/bel.svg" alt="Belgium flag" title="Belgium" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidelines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recommendations.html">General Recommendations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Carepaths
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="carepath-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="carepath-heartfailure.html">Heart failure</a>
+      </li>
+      <li>
+        <a href="carepath-ews.html">NEWS</a>
+      </li>
+      <li>
+        <a href="carepath-totem.html">TOTeM</a>
+      </li>
+      <li>
+        <a href="carepath-opat.html">OPAT</a>
+      </li>
+      <li>
+        <a href="carepath-holter.html">Holter Monitoring</a>
+      </li>
+      <li>
+        <a href="carepath-cied.html">ICD / CIED</a>
+      </li>
+      <li>
+        <a href="carepath-cpap.html">CPAP / PAP therapy</a>
+      </li>
+      <li>
+        <a href="carepath-antitumoral.html">Antitumoral</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html">Diabetes</a>
+      </li>
+      <li>
+        <a href="carepath-perioperative-abdominal.html">Perioperative Care - abdominal</a>
+      </li>
+      <li>
+        <a href="carepath-overview-loinc.html">Overview LOINC</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Caresets
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="careset-overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="legal-guidelines-home-hospitalization.html">Special careset - home hospitalization</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-opat.html">Home hosp - OPAT</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-antitumoral.html">Home hosp - Antitumoral Therapy</a>
+      </li>
+      <li>
+        <a href="home-hospitalization-mappingtable.html">Home hosp - Mappingtables</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li><a name="l357">​</a>
+        <a href="artifacts.html#1">Logical Models</a>
+      </li>
+      <li><a name="l363">​</a>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li><a name="l369">​</a>
+        <a href="artifacts.html#4">Value Sets</a>
+      </li>
+      <li><a name="l375">​</a>
+        <a href="artifacts.html#6">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">History</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://hl7.org/fhir/R4/">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/hl7-be/core-clinical/">Transversal Clinical Core</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="copyrights.html">Copyrights</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Carepath ICD / CIED</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Patient Monitoring Outcome FHIR Implementation Guide, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/patient-monitoring/tree/81/merge">https://github.com/hl7-be/patient-monitoring/tree/81/merge</a> and changes regularly. See the <a href="http://hl7belgium.org/fhir/patient-monitoring/history.html">Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-be/patient-monitoring/commit/f4b6962d10021dc187728836582134160aee64c7"><code>f4b6962d</code></a>. &nbsp; Branch: <a href="https://github.com/hl7-be/patient-monitoring/tree/icd"><code>icd</code></a>.</span></p>  <!-- EndReleaseHeader -->
+  <h2>Carepath ICD / CIED</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#telemonitoring-hub-identifier" id="markdown-toc-telemonitoring-hub-identifier">Telemonitoring Hub Identifier</a></li>
+  <li><a href="#care-pathway-overview" id="markdown-toc-care-pathway-overview">Care Pathway Overview</a></li>
+  <li><a href="#process-and-workflow-description" id="markdown-toc-process-and-workflow-description">Process and Workflow Description</a></li>
+  <li><a href="#reference-implementation-guide" id="markdown-toc-reference-implementation-guide">Reference Implementation Guide</a></li>
+  <li><a href="#integration-modules-for-epd" id="markdown-toc-integration-modules-for-epd">Integration Modules for EPD</a></li>
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a></li>
+  <li><a href="#example-references" id="markdown-toc-example-references">Example References</a></li>
+  <li><a href="#open-items" id="markdown-toc-open-items">Open Items</a></li>
+</ul>
+
+</div>
+<div class="stu-note">
+This FHIR implementation content is currently under development and may be subject to significant changes. Use this information with caution, as it may not yet reflect finalized or fully validated guidance. Always verify details before relying on them for production use.
+</div>
+
+<p><strong>DRAFT: 2026-09-21</strong></p>
+
+<h3 id="telemonitoring-hub-identifier">Telemonitoring Hub Identifier</h3>
+
+<ul>
+  <li><strong>Carepath Identifier</strong>: https://hl7belgium.org/fhir/patient-monitoring/carepath/cied</li>
+  <li><strong>Carepath Version</strong>: 1.0.0</li>
+</ul>
+
+<h3 id="care-pathway-overview">Care Pathway Overview</h3>
+
+<p>This carepath describes the remote follow-up of patients carrying a <strong>Cardiac Implantable Electronic Device (CIED)</strong>.
+The term CIED covers the full family of implanted cardiac devices; the <strong>ICD</strong> (implantable cardioverter defibrillator)
+is the most frequent device in a telemonitoring setting, but the carepath applies to all types listed below.</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device type</th>
+      <th>Abbreviation</th>
+      <th>Primary purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Implantable pulse generator (pacemaker)</td>
+      <td>IPG</td>
+      <td>Bradycardia pacing</td>
+    </tr>
+    <tr>
+      <td>Implantable cardioverter defibrillator</td>
+      <td>ICD</td>
+      <td>Detection and termination of ventricular tachyarrhythmia</td>
+    </tr>
+    <tr>
+      <td>Cardiac resynchronisation therapy defibrillator</td>
+      <td>CRT-D</td>
+      <td>Resynchronisation combined with defibrillation</td>
+    </tr>
+    <tr>
+      <td>Cardiac resynchronisation therapy pacemaker</td>
+      <td>CRT-P</td>
+      <td>Resynchronisation pacing</td>
+    </tr>
+    <tr>
+      <td>Insertable/implantable cardiac monitor</td>
+      <td>ICM</td>
+      <td>Long-term rhythm monitoring without therapy</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>Monitoring Duration</strong>: Continuous, for the entire service life of the device (typically 5–15 years).</li>
+  <li><strong>Central Care Facility</strong>: Cardiology department with a device clinic and a dedicated CIED follow-up team.</li>
+  <li><strong>Data Source</strong>: The implanted device, read out by a bedside monitor, a mobile app or an in-clinic programmer,
+and forwarded by the manufacturer’s remote monitoring platform.</li>
+  <li><strong>Accessibility</strong>: Device clinic reachable during office hours; alert triage on working days.</li>
+</ul>
+
+<h4 id="patient-eligibility">Patient Eligibility</h4>
+
+<ul>
+  <li><strong>Indications</strong>: Any patient carrying a CIED who is enrolled in remote follow-up after implantation or device replacement.</li>
+  <li><strong>Consent</strong>: Signed informed consent for remote monitoring prior to enrolment.</li>
+  <li><strong>Enrolment</strong>: The patient is paired with a monitor/transmitter and registered on the manufacturer’s remote monitoring platform.</li>
+</ul>
+
+<hr/>
+
+<h3 id="process-and-workflow-description">Process and Workflow Description</h3>
+
+<h4 id="start-up">Start-Up</h4>
+
+<ul>
+  <li><strong>Device association</strong>: The implanted device, its leads and the monitor are associated with the patient on the remote
+monitoring platform. Until this association is complete, no interrogation data can be exchanged.</li>
+  <li><strong>Informed consent</strong>: Collected and securely stored.</li>
+  <li><strong>Baseline interrogation</strong>: A full in-clinic interrogation is performed at implantation and serves as the reference
+for later remote transmissions.</li>
+  <li><strong>Patient instructions</strong>: Provided on the placement of the bedside monitor or the use of the mobile app.</li>
+</ul>
+
+<h4 id="data-collection">Data Collection</h4>
+
+<p>Three transmission types occur in this carepath:</p>
+
+<ol>
+  <li><strong>Scheduled remote interrogation</strong> — a periodic, complete device read-out (typically every 3 to 12 months,
+depending on device type and national reimbursement rules).</li>
+  <li><strong>Alert-triggered transmission</strong> — an unscheduled transmission sent automatically when the device detects a
+programmed alert condition (arrhythmia episode, delivered therapy, lead or battery problem).</li>
+  <li><strong>In-clinic interrogation</strong> — a read-out through a programmer during a physical consultation, producing the same
+data set as a remote interrogation.</li>
+</ol>
+
+<p>Each interrogation produces a <strong>report</strong> (a document for the patient record) and a <strong>set of discrete, computable
+findings</strong> (measurements, programmed settings, episode summaries, delivered therapy). This carepath specifies how the
+discrete findings are sent to the EPD as <code class="language-plaintext highlighter-rouge">Observation</code> resources so they can be used for trending, decision support
+and registry use, rather than only being archived as a PDF.</p>
+
+<h4 id="alarm-management">Alarm Management</h4>
+
+<ul>
+  <li><strong>Thresholds</strong>: Alert thresholds are programmed in the device and mirrored on the remote monitoring platform
+(e.g. lead impedance out of range, low battery / RRT reached, AT/AF burden above threshold, delivered shock).</li>
+  <li><strong>Severity</strong>: The platform classifies alerts as red (immediate action) or yellow (review at next working day).</li>
+  <li><strong>Triage</strong>: All transmissions are reviewed by the CIED follow-up team during working hours.</li>
+  <li><strong>Notification</strong>: The treating cardiologist is informed for red alerts; the general practitioner is informed
+according to local agreements.</li>
+  <li><strong>Connectivity loss</strong>: A device that stops transmitting is itself an actionable event and is reported separately
+(see <em>Connectivity status</em> below).</li>
+</ul>
+
+<hr/>
+
+<h3 id="reference-implementation-guide">Reference Implementation Guide</h3>
+
+<p>This carepath does <strong>not</strong> define its own profiles. The data model for cardiac implantable electronic devices is
+already specified by HL7 International in:</p>
+
+<blockquote>
+  <p><strong>CardX - Cardiac Implantable Electronic Devices (CardX - CIED)</strong>
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/">https://build.fhir.org/ig/HL7/CardX-CIED/en/</a>
+Canonical base: <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/uv/cardx-cied</code></p>
+</blockquote>
+
+<p>CardX - CIED builds on the <strong>IDCO</strong> (Implantable Device Cardiac Observation) profile, in use by the CIED industry since
+2006, and re-expresses it as FHIR. Belgian implementers of this carepath are expected to follow the CardX - CIED
+profiles as-is; this page only describes <strong>which</strong> artefacts are used, <strong>when</strong> they are exchanged and <strong>which</strong>
+elements the Belgian EPD expects to receive.</p>
+
+<div class="stu-note">
+<b>Open item — FHIR version.</b> CardX - CIED v2.0.0 is published against FHIR R5, while this Implementation Guide is
+published against FHIR R4 (4.0.1). An R4 sender therefore cannot literally claim conformance to the CardX - CIED
+StructureDefinitions. Until a cross-version alignment is agreed, the expectation for this draft carepath is that R4
+senders reproduce the CardX - CIED content model (codes, components, cardinalities) on the equivalent R4 resources.
+The main differences to be resolved are <code>DeviceAssociation</code> (R5 only; in R4 the device/patient and
+device/lead relationships are expressed through <code>Device.patient</code> and <code>Device.parent</code>) and
+<code>Device.type</code> (0..* in R5, 0..1 in R4). This item is to be taken up with the FHIR validation team.
+</div>
+
+<hr/>
+
+<h3 id="integration-modules-for-epd">Integration Modules for EPD</h3>
+
+<h4 id="outcome-module---pdf">Outcome Module - PDF</h4>
+
+<ul>
+  <li><strong>Frequency</strong>: One report per interrogation (scheduled, alert-triggered or in-clinic).</li>
+  <li><strong>Content</strong>: Full device interrogation report as produced by the manufacturer’s platform, including intracardiac
+electrograms of the reported episodes.</li>
+  <li><strong>File Size</strong>: ±0.5–5MB per report, depending on the number of episodes and electrogram strips.</li>
+  <li><strong>FHIR</strong>: Attached to the interrogation report as <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code>.</li>
+</ul>
+
+<h4 id="outcome-module---fhir-integration">Outcome Module - FHIR Integration</h4>
+
+<h5 id="general">General</h5>
+
+<ul>
+  <li><strong>Frequency</strong>: 1 transmission per scheduled interval (3–12 months) plus alert-triggered transmissions;
+on average a few transmissions per patient per year. Connectivity status is refreshed daily by the platform.</li>
+  <li><strong>Transport</strong>: The complete result of one interrogation is sent as a single <strong>IDCO Bundle</strong> (a <code class="language-plaintext highlighter-rouge">collection</code>
+Bundle). The EPD can also subscribe to individual observations through the IDCO Observation Subscription Topic.</li>
+</ul>
+
+<h5 id="profiles">Profiles</h5>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>FHIR Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interrogation result (discrete findings)</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-IdcoObservation.html"><code class="language-plaintext highlighter-rouge">IdcoObservation</code></a></td>
+    </tr>
+    <tr>
+      <td>Connectivity status of the monitoring chain</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-connectivity-status.html"><code class="language-plaintext highlighter-rouge">Observation - CIED Connectivity</code></a></td>
+    </tr>
+    <tr>
+      <td>Interrogation report (container)</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-diagnostic-report.html"><code class="language-plaintext highlighter-rouge">CIED Diagnostic Report</code></a></td>
+    </tr>
+    <tr>
+      <td>Interrogation session</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-interrogation-procedure.html"><code class="language-plaintext highlighter-rouge">CIED Interrogation Procedure</code></a></td>
+    </tr>
+    <tr>
+      <td>Implanted device</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-device.html"><code class="language-plaintext highlighter-rouge">Device - CIED</code></a></td>
+    </tr>
+    <tr>
+      <td>Implanted lead</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-device-lead.html"><code class="language-plaintext highlighter-rouge">Device - CIED Lead</code></a></td>
+    </tr>
+    <tr>
+      <td>Bedside monitor / transmitter</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-monitor.html"><code class="language-plaintext highlighter-rouge">Device - CIED Monitor</code></a></td>
+    </tr>
+    <tr>
+      <td>Device ↔ patient and device ↔ lead association</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-device-association.html"><code class="language-plaintext highlighter-rouge">Device Association - CIED</code></a></td>
+    </tr>
+    <tr>
+      <td>Transmission container</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-idco-bundle.html"><code class="language-plaintext highlighter-rouge">IDCO Bundle</code></a></td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-patient.html"><code class="language-plaintext highlighter-rouge">Patient - CIED</code></a></td>
+    </tr>
+    <tr>
+      <td>Reporting clinician</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-practioner.html"><code class="language-plaintext highlighter-rouge">CIED Practitioner</code></a></td>
+    </tr>
+    <tr>
+      <td>Device clinic / monitoring organisation</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-organization.html"><code class="language-plaintext highlighter-rouge">Organization - CIED</code></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Supporting extensions:</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>FHIR Extension</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Groups repeated elements (lead channel, zone, episode)</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-instance-idco.html"><code class="language-plaintext highlighter-rouge">Instance of Repeatable Element</code></a></td>
+    </tr>
+    <tr>
+      <td>Points to the device an observation originates from</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-device-extension.html"><code class="language-plaintext highlighter-rouge">CIED Device</code></a></td>
+    </tr>
+    <tr>
+      <td>State of a device/patient or device/lead association</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-association-status-extension.html"><code class="language-plaintext highlighter-rouge">Association Status</code></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="how-the-observation-is-structured">How the Observation is structured</h5>
+
+<p>The IDCO model differs from the other carepaths in this IG. Instead of one <code class="language-plaintext highlighter-rouge">Observation</code> per measurement, <strong>one
+<code class="language-plaintext highlighter-rouge">Observation</code> carries the complete interrogation</strong> and every individual data point is a <code class="language-plaintext highlighter-rouge">component</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Observation.code</code> identifies the nomenclature context and is fixed to
+<code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED#IDCO</code> <em>(Implantable Device Cardiac Observation)</em>.</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation.component.code</code> carries the individual data point, coded with <strong>ISO/IEEE 11073-10103 (MDC IDC)</strong> in
+code system <code class="language-plaintext highlighter-rouge">urn:iso:std:iso:11073:10101</code>. The code is the numeric MDC term code; the reference ID
+(<code class="language-plaintext highlighter-rouge">MDC_IDC_...</code>) is used as display.</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation.component.value[x]</code> carries the value, typed per data point (<code class="language-plaintext highlighter-rouge">Quantity</code> with a UCUM unit,
+<code class="language-plaintext highlighter-rouge">CodeableConcept</code> with an MDC enumeration code, <code class="language-plaintext highlighter-rouge">dateTime</code>, <code class="language-plaintext highlighter-rouge">string</code>, …).</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation.component.interpretation</code> carries the abnormal flag, bound to
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/ValueSet-idco-abnormal-flags.html"><code class="language-plaintext highlighter-rouge">Abnormal Flags</code></a>.</li>
+  <li>The <em>Instance of Repeatable Element</em> extension on <code class="language-plaintext highlighter-rouge">component</code> groups the components that describe the same
+occurrence — for example the components of one lead channel, of one therapy zone or of one episode.</li>
+</ul>
+
+<p>Because a single interrogation can contain several hundred data points, the set below is what the Belgian EPD expects
+<strong>at a minimum</strong> per transmission. The full nomenclature is available through the CardX value set
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/ValueSet-IDCvalues.html"><code class="language-plaintext highlighter-rouge">MDC IDC</code></a> and the narrative page
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/device-observations.html">Device Observations</a>.</p>
+
+<p><strong>Battery and capacitor</strong></p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Value type</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>721216</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_BATTERY_DTM</code></td>
+      <td>dateTime</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>721280</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_BATTERY_STATUS</code></td>
+      <td>CodeableConcept (MDC)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>721344</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_BATTERY_VOLTAGE</code></td>
+      <td>Quantity</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>721408</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_BATTERY_IMPEDANCE</code></td>
+      <td>Quantity</td>
+      <td>Ohm</td>
+    </tr>
+    <tr>
+      <td>721472</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_BATTERY_REMAINING_LONGEVITY</code></td>
+      <td>Quantity</td>
+      <td>mo</td>
+    </tr>
+    <tr>
+      <td>721536</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_BATTERY_REMAINING_PERCENTAGE</code></td>
+      <td>Quantity</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>721728</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_CAP_CHARGE_TIME</code></td>
+      <td>Quantity</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>721792</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_CAP_CHARGE_ENERGY</code></td>
+      <td>Quantity</td>
+      <td>J</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Lead channel</strong> — the codes below are those of the right atrial (RA) channel; equivalent codes exist per channel
+(RV, LV, …). One instance number is used per lead channel.</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Value type</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>721984</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_LEADCHNL_RA_LEAD_CHANNEL_STATUS</code></td>
+      <td>CodeableConcept (MDC)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>722051</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MEAN</code></td>
+      <td>Quantity</td>
+      <td>mV</td>
+    </tr>
+    <tr>
+      <td>722176</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_AMPLITUDE</code></td>
+      <td>Quantity</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>722240</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_PULSEWIDTH</code></td>
+      <td>Quantity</td>
+      <td>ms</td>
+    </tr>
+    <tr>
+      <td>722432</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_LEADCHNL_RA_IMPEDANCE_VALUE</code></td>
+      <td>Quantity</td>
+      <td>Ohm</td>
+    </tr>
+    <tr>
+      <td>722496</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_MSMT_LEADCHNL_RA_IMPEDANCE_POLARITY</code></td>
+      <td>CodeableConcept (MDC)</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Programmed therapy zones</strong> — one instance number per zone; the trailing digit of the reference ID identifies the
+therapy step within the zone.</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Value type</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>732097</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_SET_ZONE_TYPE_ATP_1</code></td>
+      <td>CodeableConcept (MDC)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>732161</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_SET_ZONE_NUM_ATP_SEQS_1</code></td>
+      <td>Quantity</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>732225</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_SET_ZONE_SHOCK_ENERGY_1</code></td>
+      <td>Quantity</td>
+      <td>J</td>
+    </tr>
+    <tr>
+      <td>732289</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_SET_ZONE_NUM_SHOCKS_1</code></td>
+      <td>Quantity</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="device-identification">Device identification</h5>
+
+<p>The implanted device is identified through <code class="language-plaintext highlighter-rouge">Device.manufacturer</code>, <code class="language-plaintext highlighter-rouge">Device.modelNumber</code> and <code class="language-plaintext highlighter-rouge">Device.serialNumber</code>, and
+typed with an MDC device type from
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/ValueSet-MDCIDCDeviceTypes.html"><code class="language-plaintext highlighter-rouge">MDC IDC Device Types</code></a>:</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>MDC code</th>
+      <th>Reference ID</th>
+      <th>Device type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>753665</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_ENUM_DEV_TYPE_IPG</code></td>
+      <td>Pacemaker</td>
+    </tr>
+    <tr>
+      <td>753666</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_ENUM_DEV_TYPE_ICD</code></td>
+      <td>Implantable cardioverter defibrillator</td>
+    </tr>
+    <tr>
+      <td>753667</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_ENUM_DEV_TYPE_CRT_D</code></td>
+      <td>Resynchronisation therapy defibrillator</td>
+    </tr>
+    <tr>
+      <td>753668</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_ENUM_DEV_TYPE_CRT_P</code></td>
+      <td>Resynchronisation therapy pacemaker</td>
+    </tr>
+    <tr>
+      <td>753669</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_ENUM_DEV_TYPE_Monitor</code></td>
+      <td>Insertable cardiac monitor</td>
+    </tr>
+    <tr>
+      <td>753670</td>
+      <td><code class="language-plaintext highlighter-rouge">MDC_IDC_ENUM_DEV_TYPE_Other</code></td>
+      <td>Other implantable cardiac device</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="connectivity-status">Connectivity status</h5>
+
+<p>A CIED that no longer transmits silently stops being monitored, so the state of the monitoring chain is exchanged as
+an observation of its own, conforming to
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/StructureDefinition-cied-connectivity-status.html"><code class="language-plaintext highlighter-rouge">Observation - CIED Connectivity</code></a>.
+Its components use the CardX code system
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/CodeSystem-CardXCIED.html"><code class="language-plaintext highlighter-rouge">CardXCIED</code></a>:</p>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component code</th>
+      <th>Meaning</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">connectivity-status</code></td>
+      <td>Overall status of the monitoring chain</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/ValueSet-cied-connectivity-state-vs.html"><code class="language-plaintext highlighter-rouge">CIED Connectivity Status</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">connectivity-modifier</code></td>
+      <td>Manufacturer-specific refinement of the status</td>
+      <td><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/ValueSet-cied-connectivity-state-modifier-vs.html"><code class="language-plaintext highlighter-rouge">CIED Connectivity Status Modifier</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">last-cied-connectivity-time</code></td>
+      <td>Most recent communication between device and monitor</td>
+      <td>dateTime</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">last-monitor-connectivity-time</code></td>
+      <td>Most recent communication between monitor and platform</td>
+      <td>dateTime</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">next-cied-connectivity-date</code></td>
+      <td>Next expected communication between device and monitor</td>
+      <td>dateTime</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">last-interrogation-date</code></td>
+      <td>Date of the most recent remote interrogation</td>
+      <td>dateTime</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">next-interrogation-date</code></td>
+      <td>Date of the next scheduled remote interrogation</td>
+      <td>dateTime</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status-reason</code></td>
+      <td>Why the patient is at this status</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status-guidance</code></td>
+      <td>Steps needed to return the patient to a connected status</td>
+      <td>string</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The main statuses are <code class="language-plaintext highlighter-rouge">connected</code>, <code class="language-plaintext highlighter-rouge">disconnected</code>, <code class="language-plaintext highlighter-rouge">suspended</code>, <code class="language-plaintext highlighter-rouge">inactive</code>, <code class="language-plaintext highlighter-rouge">unenrolled</code>, <code class="language-plaintext highlighter-rouge">transferred</code> and
+<code class="language-plaintext highlighter-rouge">not-applicable</code>. For this carepath, a transition to <code class="language-plaintext highlighter-rouge">disconnected</code> is treated as a yellow alert and triggers patient
+contact by the device clinic.</p>
+
+<h5 id="subscription">Subscription</h5>
+
+<p>Rather than polling, an EPD can be notified of new interrogation data through the
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/SubscriptionTopic-IDCOObservationSubscriptionTopic.html">IDCO Observation Subscription Topic</a>.
+The capabilities expected from a sending remote monitoring platform are described in the
+<a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/CapabilityStatement-cied-data-sender.html">CardX CIED Connectivity Server Capability Statement</a>.</p>
+
+<hr/>
+
+<h3 id="terminology">Terminology</h3>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Purpose</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Individual interrogation data points</td>
+      <td><code class="language-plaintext highlighter-rouge">urn:iso:std:iso:11073:10101</code> (ISO/IEEE 11073-10103, MDC IDC)</td>
+    </tr>
+    <tr>
+      <td>Observation type, connectivity, flags</td>
+      <td><code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED</code></td>
+    </tr>
+    <tr>
+      <td>Interrogation report code</td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org#10191-5</code> <em>(Cardiac electrophysiology procedure note)</em></td>
+    </tr>
+    <tr>
+      <td>Units</td>
+      <td><code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code> (UCUM)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note that MDC, and not SNOMED CT, is the terminology of choice for this carepath. The device data points are produced
+by the devices themselves using the ISO/IEEE nomenclature, and there is no SNOMED CT equivalent for the large majority
+of them. This is a deliberate exception to the general rule described on the <a href="./terminology.html">Terminologies</a> page.</p>
+
+<h3 id="example-references">Example References</h3>
+
+<p>The CardX - CIED IG publishes a complete worked example of one transmission:</p>
+
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/Bundle-uc1ACMEBundle.html">Bundle: IDCO transmission</a> — patient, device,
+lead, associations, report, observation, organisation and practitioner in one collection.</li>
+  <li><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/Observation-IDCOExample2.html">Observation: IDCO interrogation result</a> —
+battery, capacitor, lead channel and therapy zone components.</li>
+  <li><a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/Observation-uc1ConnectivityACME.html">Observation: CIED connectivity</a> —
+a disconnected device.</li>
+</ul>
+
+<h3 id="open-items">Open Items</h3>
+
+<div class="table-md"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FHIR version</td>
+      <td>Alignment between CardX - CIED (R5) and this IG (R4) — see the note above.</td>
+    </tr>
+    <tr>
+      <td>Belgian examples</td>
+      <td>Belgian example instances are to be added once the R4/R5 alignment is settled.</td>
+    </tr>
+    <tr>
+      <td>Minimum data set</td>
+      <td>The minimum set of MDC codes per device type is to be confirmed with the Belgian device clinics and the CIED manufacturers.</td>
+    </tr>
+    <tr>
+      <td>Patient identification</td>
+      <td>Use of the Belgian patient identifier (SSIN) in place of the CardX <a href="https://build.fhir.org/ig/HL7/CardX-CIED/en/ValueSet-cied-patient-identifier.html"><code class="language-plaintext highlighter-rouge">CIED Patient Identifier</code></a> value set.</td>
+    </tr>
+    <tr>
+      <td>Alert severity</td>
+      <td>Mapping of manufacturer red/yellow alert levels onto <code class="language-plaintext highlighter-rouge">Observation.component.interpretation</code> abnormal flags.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">HL7 Belgium</a>.  
+          Package hl7.fhir.be.patient-monitoring#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-22 07:17:00 +0000">
+    2026-09-22
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+              <!-- HL7 Belgium -->
+  <!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7belgium.org/fhir/patient-monitoring/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a>
+  <!-- no fitting stylesheet found (status/publisher) -->
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

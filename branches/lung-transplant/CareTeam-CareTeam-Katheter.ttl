@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Katheter> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CareTeam-Katheter"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-Katheter</b></p><a name=\"CareTeam-Katheter\"> </a><a name=\"hcCareTeam-Katheter\"> </a><p><b>status</b>: Active</p><p><b>name</b>: Catheter team</p><p><b>telecom</b>: ph: 016/34 08 64</p></div>"
+  ] ;
+  fhir:CareTeam.status [ fhir:value "active"] ;
+  fhir:CareTeam.name [ fhir:value "Catheter team"] ;
+  fhir:CareTeam.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "016/34 08 64" ] ;
+     fhir:ContactPoint.rank [ fhir:value "10"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Katheter.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

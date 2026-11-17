@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Patient-123"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient Patient-123</b></p><a name="Patient-123"> </a><a name="hcPatient-123"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td>false</td></tr><tr><td style="background-color: #f3f5da" title="Known multipleBirth status of Patient">Multiple Birth:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">Medical record number/15 (use: usual, )</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 02/1234567</li><li><a href="mailto:test.test@1234.betestann">test.test@1234.betestann</a></li><li><a href="mailto:ditistest@testface.com">ditistest@testface.com</a></li><li><a href="mailto:face@tkklkljklklmlks.com">face@tkklkljklklmlks.com</a></li><li>ITALIESTRAAT 171 B Helecine 1357 (home)</li><li>AAA X DEN HAAG 4544 NL NL (home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Languages spoken">Languages:</td><td colspan="3"><ul><li><span title="Codes:{urn:ietf:bcp:47 fr}">French</span> (preferred)</li><li><span title="Codes:{urn:ietf:bcp:47 nl}">Dutch</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Teacher (occupation)">Teacher (occupation):</td><td colspan="3"><ul><li>+3212345678</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Companion (occupation)">Companion (occupation):</td><td colspan="3"><ul><li><a href="tel:+32473444444">+32473444444</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Child (person)">Child (person):</td><td colspan="3"><ul><li><a href="tel:+3216622552">+3216622552</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: <a href="PractitionerRole-PractitionerRole-16500.html">PractitionerRole Physician</a></li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+    </type>
+    <system value="https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/eadnr"/>
+    <value value="15"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+    </type>
+    <system value="https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/emdnr"/>
+    <value value="310419V999"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="KWS-TESTPATIENT"/>
+    <given value="NUMMER 15"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="02/1234567"/>
+    <rank value="9"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="test.test@1234.betestann"/>
+    <rank value="9"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="ditistest@testface.com"/>
+    <rank value="1"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="face@tkklkljklklmlks.com"/>
+    <rank value="9"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1931-04-19"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <line value="ITALIESTRAAT 171 B"/>
+    <city value="Helecine"/>
+    <postalCode value="1357"/>
+    <period>
+      <start value="2006-03-07"/>
+      <end value="2020-10-15"/>
+    </period>
+  </address>
+  <address>
+    <use value="home"/>
+    <line value="AAA X"/>
+    <city value="DEN HAAG"/>
+    <postalCode value="4544 NL"/>
+    <country value="NL"/>
+    <period>
+      <start value="2020-10-16"/>
+    </period>
+  </address>
+  <multipleBirthBoolean value="false"/>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="106304008"/>
+        <display value="Teacher (occupation)"/>
+      </coding>
+    </relationship>
+    <telecom>
+      <system value="sms"/>
+      <value value="+3212345678"/>
+      <rank value="9"/>
+    </telecom>
+  </contact>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="62071000"/>
+        <display value="Companion (occupation)"/>
+      </coding>
+    </relationship>
+    <telecom>
+      <system value="phone"/>
+      <value value="+32473444444"/>
+      <rank value="9"/>
+    </telecom>
+  </contact>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="67822003"/>
+        <display value="Child (person)"/>
+      </coding>
+    </relationship>
+    <telecom>
+      <system value="phone"/>
+      <value value="+3216622552"/>
+      <rank value="9"/>
+    </telecom>
+  </contact>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="fr"/>
+      </coding>
+    </language>
+    <preferred value="true"/>
+  </communication>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="nl"/>
+      </coding>
+    </language>
+  </communication>
+  <generalPractitioner>
+    <reference value="PractitionerRole/PractitionerRole-16500"/>
+  </generalPractitioner>
+</Patient>

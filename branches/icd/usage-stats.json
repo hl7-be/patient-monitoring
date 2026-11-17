@@ -1,0 +1,150 @@
+{
+  "package": "hl7.fhir.be.patient-monitoring",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BE",
+  "extensions": [],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/nausea-observation",
+        "title": "Nausea Observation"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/painkiller-usage-observation",
+        "title": "Painkiller Usage Observation"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/stool-observation",
+        "title": "Stool Observation"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/surgical-wound-pain-observation",
+        "title": "Surgical Wound Pain Observation"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/wexner-ccis-score-observation",
+        "title": "Wexner/CCIS Score Observation"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report",
+        "title": "Holter Diagnostic Report"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-encounter",
+        "title": "Home Hospitalization Careset Encounter"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-azacitidine",
+        "title": "ONCO Azacitidine Nursing Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-base",
+        "title": "ONCO Home Hospitalization Base Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-bortezomib",
+        "title": "ONCO Bortezomib Nursing Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-daratumumab",
+        "title": "ONCO Daratumumab Nursing Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-fulvestrant",
+        "title": "ONCO Fulvestrant Nursing Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-trastuzumab",
+        "title": "ONCO Trastuzumab Nursing Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-base",
+        "title": "OPAT Home Hospitalization Base Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-continuous-infusion",
+        "title": "OPAT Continuous Infusion Nursing Questionnaire"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-short-iv",
+        "title": "OPAT Short-Duration IV Nursing Questionnaire"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-questionnaire-response",
+        "title": "Home Hospitalization Careset Questionnaire Response"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.wgk.com/StructureDefinition/wgk-ext-helptext": [
+      "Questionnaire.item.item.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
+      "Questionnaire.item.item.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/logical-target": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract": [
+      "Questionnaire.item",
+      "Questionnaire.item.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue": [
+      "Questionnaire.item",
+      "Questionnaire.item.item",
+      "Questionnaire.item.item.item"
+    ]
+  }
+}

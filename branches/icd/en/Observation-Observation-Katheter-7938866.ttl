@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/Observation-Katheter-7938866> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Observation-Katheter-7938866"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observation-Katheter-7938866</b></p><a name=\"Observation-Katheter-7938866\"> </a><a name=\"hcObservation-Katheter-7938866\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1156071007}\">Catheter observable (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 246138005}\">Type of catheter (attribute)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 1344705000}\">Midline catheter (physical object)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 448439004}\">Catheter stabilization device (physical object)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 84756000}\">Adhesive tape, device (physical object)</span></p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:1156071007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "1156071007" ] ;
+       fhir:Coding.display [ fhir:value "Catheter observable (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-123" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a sct:246138005 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "246138005" ] ;
+         fhir:Coding.display [ fhir:value "Type of catheter (attribute)" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a sct:1344705000 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "1344705000" ] ;
+         fhir:Coding.display [ fhir:value "Midline catheter (physical object)" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a sct:448439004 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "448439004" ] ;
+         fhir:Coding.display [ fhir:value "Catheter stabilization device (physical object)" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a sct:84756000 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "84756000" ] ;
+         fhir:Coding.display [ fhir:value "Adhesive tape, device (physical object)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/Observation-Katheter-7938866.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

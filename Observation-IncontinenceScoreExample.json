@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Observation",
+  "id" : "IncontinenceScoreExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation IncontinenceScoreExample</b></p><a name=\"IncontinenceScoreExample\"> </a><a name=\"hcIncontinenceScoreExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Wexner Continence Score</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: 5</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "text" : "Wexner Continence Score"
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://www.telemonitoring-prescription.com/FHIR/patient",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectiveDateTime" : "2025-10-08T10:00:00Z",
+  "valueInteger" : 5
+}
