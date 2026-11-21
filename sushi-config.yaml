@@ -139,6 +139,10 @@ pages:
     title: Carepath Heart failure
   carepath-holter.md:
     title: Carepath Holter Monitoring
+  carepath-cied.md:
+    title: Carepath ICD / CIED
+  carepath-cpap.md:
+    title: Carepath CPAP / PAP therapy
   carepath-ews.md:
     title: Carepath NEWS (National Early Warning Score)
   carepath-totem.md:
@@ -201,6 +205,8 @@ menu:
     TOTeM: carepath-totem.html
     OPAT: carepath-opat.html
     Holter Monitoring: carepath-holter.html
+    ICD / CIED: carepath-cied.html
+    CPAP / PAP therapy: carepath-cpap.html
     Antitumoral: carepath-antitumoral.html
     Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
     Perioperative Care - abdominal: carepath-perioperative-abdominal.html
