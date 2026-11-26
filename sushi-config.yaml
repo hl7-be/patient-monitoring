@@ -151,6 +151,8 @@ pages:
     title: Carepath Perioperative care - abdominal
   carepath-lung-transplant.md:
     title: Carepath Lung Transplant
+  carepath-cpap.md:
+    title: Carepath CPAP / PAP therapy
   carepath-overview-loinc.md:
     title: Overview carepath LOINC
   careset-overview.md:
@@ -207,6 +209,7 @@ menu:
     Diabetes: https://build.fhir.org/ig/hl7-be/core-clinical/branches/issue-48/StructureDefinition-be-observation-diabetes.html
     Perioperative Care - abdominal: carepath-perioperative-abdominal.html
     Lung Transplant: carepath-lung-transplant.html
+    CPAP / PAP therapy: carepath-cpap.html
     Overview LOINC: carepath-overview-loinc.html
   Caresets:
     Overview: careset-overview.html
