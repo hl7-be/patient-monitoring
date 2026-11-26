@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/Observation-Temperatuur> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Observation-Temperatuur"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observation-Temperatuur</b></p><a name=\"Observation-Temperatuur\"> </a><a name=\"hcObservation-Temperatuur\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><p><b>effective</b>: 2025-11-21 11:49:11+0100</p><p><b>value</b>: 36.1 °C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "8310-5" ] ;
+       fhir:display [ fhir:v "Body temperature" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:reference [ fhir:v "Patient/Patient-123" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-11-21T11:49:11+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 36.1 ] ;
+     fhir:unit [ fhir:v "°C" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

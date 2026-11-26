@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SpirometryExample2"/>
+  <meta>
+    <profile value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/spirometry-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation SpirometryExample2</b></p><a name="SpirometryExample2"> </a><a name="hcSpirometryExample2"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-spirometry-observation.html">Spirometry Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 81459-0}">Home spirometry session</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2026-10-06 08:52:00+0200 --&gt; 2026-10-06 08:55:10+0200</p><p><b>issued</b>: 2026-10-06 08:55:15+0200</p><p><b>performer</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>note</b>: </p><blockquote><div><p>Patient reported coughing during the manoeuvres.</p>
+</div></blockquote><p><b>device</b>: <a href="#hcSpirometryExample2/home-peakflow-fev1-meter">Device: manufacturer = Example Medical; modelNumber = PF-10; type = Spirometer</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 20150-9}">FEV1</span></p><p><b>value</b>: 2.11 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 33452-4}">PEF</span></p><p><b>value</b>: 6.1 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes fev1-grade}">FEV1 grade</span></p><p><b>value</b>: <span title="Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade U}">Grade U</span></p></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Device #home-peakflow-fev1-meter</b></p><a name="SpirometryExample2/home-peakflow-fev1-meter"> </a><a name="hcSpirometryExample2/home-peakflow-fev1-meter"> </a><p><b>manufacturer</b>: Example Medical</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Pocket FEV1 Meter</td><td>Model name</td></tr></table><p><b>modelNumber</b>: PF-10</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 303501006}">Spirometer</span></p></blockquote></div>
+  </text>
+  <contained>
+    <Device>
+      <id value="home-peakflow-fev1-meter"/>
+      <manufacturer value="Example Medical"/>
+      <deviceName>
+        <name value="Pocket FEV1 Meter"/>
+        <type value="model-name"/>
+      </deviceName>
+      <modelNumber value="PF-10"/>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="303501006"/>
+          <display value="Spirometer"/>
+        </coding>
+      </type>
+    </Device>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+      <display value="Procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="81459-0"/>
+      <display value="Spirometry panel"/>
+    </coding>
+    <text value="Home spirometry session"/>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+    </identifier>
+  </subject>
+  <effectivePeriod>
+    <start value="2026-10-06T08:52:00+02:00"/>
+    <end value="2026-10-06T08:55:10+02:00"/>
+  </effectivePeriod>
+  <issued value="2026-10-06T08:55:15+02:00"/>
+  <performer>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+    </identifier>
+  </performer>
+  <note>
+    <text value="Patient reported coughing during the manoeuvres."/>
+  </note>
+  <device>
+    <reference value="#home-peakflow-fev1-meter"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="20150-9"/>
+        <display value="FEV1"/>
+      </coding>
+      <text value="FEV1"/>
+    </code>
+    <valueQuantity>
+      <value value="2.11"/>
+      <unit value="L"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="33452-4"/>
+        <display value="Maximum expiratory gas flow Respiratory system airway"/>
+      </coding>
+      <text value="PEF"/>
+    </code>
+    <valueQuantity>
+      <value value="6.1"/>
+      <unit value="L/s"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L/s"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes"/>
+        <code value="fev1-grade"/>
+        <display value="FEV1 grade"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade"/>
+        <code value="U"/>
+        <display value="Grade U"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

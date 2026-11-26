@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="DyspneaExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation DyspneaExample</b></p><a name="DyspneaExample"> </a><a name="hcDyspneaExample"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 267036007}">Dyspnea</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2026-10-06 09:02:00+0200</p><p><b>performer</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 255604002}">Mild</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+      <display value="Survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="267036007"/>
+      <display value="Dyspnea"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2026-10-06T09:02:00+02:00"/>
+  <performer>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+    </identifier>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="255604002"/>
+      <display value="Mild"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

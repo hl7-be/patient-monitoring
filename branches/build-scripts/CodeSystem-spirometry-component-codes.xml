@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="spirometry-component-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem spirometry-component-codes</b></p><a name="spirometry-component-codes"> </a><a name="hcspirometry-component-codes"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">fev1-grade<a name="spirometry-component-codes-fev1-grade"> </a></td><td>FEV1 grade</td><td>Quality grade of the FEV1 reported for a spirometry session, according to the ATS/ERS 2019 grading system.</td></tr><tr><td style="white-space:nowrap">fvc-grade<a name="spirometry-component-codes-fvc-grade"> </a></td><td>FVC grade</td><td>Quality grade of the FVC reported for a spirometry session, according to the ATS/ERS 2019 grading system.</td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.54.16.2"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="SpirometryComponentCS"/>
+  <title value="Spirometry Component Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-26T09:49:21+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local codes for spirometry session quality components that have no LOINC or SNOMED CT equivalent. Used as `Observation.component.code` in the Spirometry Observation profile."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="fev1-grade"/>
+    <display value="FEV1 grade"/>
+    <definition value="Quality grade of the FEV1 reported for a spirometry session, according to the ATS/ERS 2019 grading system."/>
+  </concept>
+  <concept>
+    <code value="fvc-grade"/>
+    <display value="FVC grade"/>
+    <definition value="Quality grade of the FVC reported for a spirometry session, according to the ATS/ERS 2019 grading system."/>
+  </concept>
+</CodeSystem>

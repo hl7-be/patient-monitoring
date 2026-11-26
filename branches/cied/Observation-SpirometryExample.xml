@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SpirometryExample"/>
+  <meta>
+    <profile value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/spirometry-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation SpirometryExample</b></p><a name="SpirometryExample"> </a><a name="hcSpirometryExample"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-spirometry-observation.html">Spirometry Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 81459-0}">Home spirometry session</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2026-10-05 09:14:00+0200 --&gt; 2026-10-05 09:19:40+0200</p><p><b>issued</b>: 2026-10-05 09:19:52+0200</p><p><b>performer</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>method</b>: <span title="Codes:">Home spirometry, graded against the ATS/ERS 2019 standard; predicted values according to GLI-2012</span></p><p><b>device</b>: <a href="#hcSpirometryExample/home-spirometer">Device: manufacturer = Example Medical; serialNumber = HSX200-0042871; modelNumber = HSX-200; type = Spirometer</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 20150-9}">FEV1</span></p><p><b>value</b>: 2.48 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19870-5}">FVC</span></p><p><b>value</b>: 3.2 L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19926-5}">FEV1/FVC</span></p><p><b>value</b>: 78 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 33452-4}">PEF</span></p><p><b>value</b>: 7.02 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19927-3}">FEF25-75</span></p><p><b>value</b>: 2.21 L/s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 20152-5}">FEV1 %pred</span></p><p><b>value</b>: 74 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19872-1}">FVC %pred</span></p><p><b>value</b>: 81 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes fev1-grade}">FEV1 grade</span></p><p><b>value</b>: <span title="Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade A}">Grade A</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes fvc-grade}">FVC grade</span></p><p><b>value</b>: <span title="Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade B}">Grade B</span></p></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Device #home-spirometer</b></p><a name="SpirometryExample/home-spirometer"> </a><a name="hcSpirometryExample/home-spirometer"> </a><p><b>manufacturer</b>: Example Medical</p><p><b>serialNumber</b>: HSX200-0042871</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Home Spirometer X</td><td>Model name</td></tr></table><p><b>modelNumber</b>: HSX-200</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 303501006}">Spirometer</span></p></blockquote></div>
+  </text>
+  <contained>
+    <Device>
+      <id value="home-spirometer"/>
+      <manufacturer value="Example Medical"/>
+      <serialNumber value="HSX200-0042871"/>
+      <deviceName>
+        <name value="Home Spirometer X"/>
+        <type value="model-name"/>
+      </deviceName>
+      <modelNumber value="HSX-200"/>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="303501006"/>
+          <display value="Spirometer"/>
+        </coding>
+      </type>
+    </Device>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+      <display value="Procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="81459-0"/>
+      <display value="Spirometry panel"/>
+    </coding>
+    <text value="Home spirometry session"/>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+    </identifier>
+  </subject>
+  <effectivePeriod>
+    <start value="2026-10-05T09:14:00+02:00"/>
+    <end value="2026-10-05T09:19:40+02:00"/>
+  </effectivePeriod>
+  <issued value="2026-10-05T09:19:52+02:00"/>
+  <performer>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="EFD5E060-9522-48BE-9ECC-3BFA54EA3666"/>
+    </identifier>
+  </performer>
+  <method>
+    <text value="Home spirometry, graded against the ATS/ERS 2019 standard; predicted values according to GLI-2012"/>
+  </method>
+  <device>
+    <reference value="#home-spirometer"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="20150-9"/>
+        <display value="FEV1"/>
+      </coding>
+      <text value="FEV1"/>
+    </code>
+    <valueQuantity>
+      <value value="2.48"/>
+      <unit value="L"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19870-5"/>
+        <display value="Forced vital capacity [Volume] Respiratory system"/>
+      </coding>
+      <text value="FVC"/>
+    </code>
+    <valueQuantity>
+      <value value="3.2"/>
+      <unit value="L"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19926-5"/>
+        <display value="FEV1/FVC"/>
+      </coding>
+      <text value="FEV1/FVC"/>
+    </code>
+    <valueQuantity>
+      <value value="78"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="33452-4"/>
+        <display value="Maximum expiratory gas flow Respiratory system airway"/>
+      </coding>
+      <text value="PEF"/>
+    </code>
+    <valueQuantity>
+      <value value="7.02"/>
+      <unit value="L/s"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L/s"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19927-3"/>
+        <display value="Gas flow FEV 25%-75%"/>
+      </coding>
+      <text value="FEF25-75"/>
+    </code>
+    <valueQuantity>
+      <value value="2.21"/>
+      <unit value="L/s"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L/s"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="20152-5"/>
+        <display value="FEV1 measured/predicted"/>
+      </coding>
+      <text value="FEV1 %pred"/>
+    </code>
+    <valueQuantity>
+      <value value="74"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19872-1"/>
+        <display value="FVC measured/predicted"/>
+      </coding>
+      <text value="FVC %pred"/>
+    </code>
+    <valueQuantity>
+      <value value="81"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes"/>
+        <code value="fev1-grade"/>
+        <display value="FEV1 grade"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade"/>
+        <code value="A"/>
+        <display value="Grade A"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes"/>
+        <code value="fvc-grade"/>
+        <display value="FVC grade"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade"/>
+        <code value="B"/>
+        <display value="Grade B"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

@@ -1,0 +1,29 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/decision-cs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "DecisionCS",
+    "title" : "Medication Administration Decision Codes",
+    "description" : "Local codes for the nurse's decision following contraindication assessment in ONCO home-hospitalization questionnaires.",
+    "oids" : ["2.16.840.1.113883.4.642.40.54.16.1"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SpirometryComponentCS",
+    "title" : "Spirometry Component Codes",
+    "description" : "Local codes for spirometry session quality components that have no LOINC or SNOMED CT equivalent. Used as `Observation.component.code` in the Spirometry Observation profile.",
+    "oids" : ["2.16.840.1.113883.4.642.40.54.16.2"]
+  },
+  {
+    "url" : "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SpirometryGradeCS",
+    "title" : "Spirometry Grade Codes (ATS/ERS 2019)",
+    "description" : "Session-level quality grades for FEV1 and FVC as defined in Table 10 of the ATS/ERS 2019 technical standard\n(Graham BL et al., Standardization of Spirometry 2019 Update, Am J Respir Crit Care Med 2019;200(8):e70-e88).\nThe repeatability thresholds below apply to patients older than 6 years. FEV1 and FVC are graded independently.",
+    "oids" : ["2.16.840.1.113883.4.642.40.54.16.3"]
+  }]
+}

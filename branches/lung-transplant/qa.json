@@ -1,0 +1,21 @@
+{
+  "url" : "http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring",
+  "name" : "Patient-Monitoring-Outcome",
+  "title" : "Patient Monitoring Outcome FHIR Implementation Guide",
+  "description" : "Patient Monitoring Outcome FHIR Implementation Guide.",
+  "ig-date" : "2024-11-20",
+  "status" : "draft",
+  "package-id" : "hl7.fhir.be.patient-monitoring",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 17 Nov, 2026 07:47:25 +0000",
+  "dateISO8601" : "2026-11-17T07:47:25+00:00",
+  "errs" : 12,
+  "warnings" : 133,
+  "hints" : 42,
+  "broken-links" : 2,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 2746603664
+}

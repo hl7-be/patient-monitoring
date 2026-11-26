@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-F-7766077> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CareTeam-F-7766077"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CareTeam CareTeam-F-7766077</b></p><a name=\"CareTeam-F-7766077\"> </a><a name=\"hcCareTeam-F-7766077\"> </a><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org LA27977-0}\">Episode of care-focused care team</span></p><p><b>name</b>: Home hospitalization care team</p><p><b>subject</b>: <a href=\"Patient-Patient-123.html\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</a></p><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"CareTeam-CareTeam-OPAT.html\">CareTeam OPAT team</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"CareTeam-CareTeam-Katheter.html\">CareTeam Catheter team</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"CareTeam-CareTeam-Spoed.html\">CareTeam Emergency reception</a></p></blockquote><p><b>managingOrganization</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p></div>"
+  ] ;
+  fhir:CareTeam.status [ fhir:value "active"] ;
+  fhir:CareTeam.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:LA27977-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "LA27977-0" ] ;
+       fhir:Coding.display [ fhir:value "Episode of care-focused care team" ]
+     ]
+  ] ;
+  fhir:CareTeam.name [ fhir:value "Home hospitalization care team"] ;
+  fhir:CareTeam.subject [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-123" ]
+  ] ;
+  fhir:CareTeam.participant [
+     fhir:index 0 ;
+     fhir:CareTeam.participant.member [
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-OPAT> ;
+       fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-OPAT" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CareTeam.participant.member [
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Katheter> ;
+       fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-Katheter" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CareTeam.participant.member [
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-Spoed> ;
+       fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-Spoed" ]
+     ]
+  ] ;
+  fhir:CareTeam.managingOrganization [
+     fhir:index 0 ;
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-F-7766077.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

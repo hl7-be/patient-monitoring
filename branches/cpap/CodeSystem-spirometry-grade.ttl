@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "spirometry-grade"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem spirometry-grade</b></p><a name=\"spirometry-grade\"> </a><a name=\"hcspirometry-grade\"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"spirometry-grade-A\"> </a></td><td>Grade A</td><td>3 or more acceptable manoeuvres, with the two largest values within 0.150 L of each other.</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"spirometry-grade-B\"> </a></td><td>Grade B</td><td>2 acceptable manoeuvres, with the two largest values within 0.150 L of each other.</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"spirometry-grade-C\"> </a></td><td>Grade C</td><td>2 or more acceptable manoeuvres, with the two largest values within 0.200 L of each other.</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"spirometry-grade-D\"> </a></td><td>Grade D</td><td>2 or more acceptable manoeuvres, with the two largest values within 0.250 L of each other.</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"spirometry-grade-E\"> </a></td><td>Grade E</td><td>2 or more acceptable manoeuvres with the two largest values more than 0.250 L apart, or only 1 acceptable manoeuvre.</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"spirometry-grade-U\"> </a></td><td>Grade U</td><td>No acceptable manoeuvres, but at least 1 usable manoeuvre.</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"spirometry-grade-F\"> </a></td><td>Grade F</td><td>No acceptable and no usable manoeuvres.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113883.4.642.40.54.16.3" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "SpirometryGradeCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Spirometry Grade Codes (ATS/ERS 2019)"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-26T09:35:57+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Belgium"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Belgium" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Bob Smith" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Session-level quality grades for FEV1 and FVC as defined in Table 10 of the ATS/ERS 2019 technical standard\n(Graham BL et al., Standardization of Spirometry 2019 Update, Am J Respir Crit Care Med 2019;200(8):e70-e88).\nThe repeatability thresholds below apply to patients older than 6 years. FEV1 and FVC are graded independently."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade A" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "3 or more acceptable manoeuvres, with the two largest values within 0.150 L of each other." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade B" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2 acceptable manoeuvres, with the two largest values within 0.150 L of each other." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "C" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade C" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2 or more acceptable manoeuvres, with the two largest values within 0.200 L of each other." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "D" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade D" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2 or more acceptable manoeuvres, with the two largest values within 0.250 L of each other." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "E" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade E" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2 or more acceptable manoeuvres with the two largest values more than 0.250 L apart, or only 1 acceptable manoeuvre." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "U" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade U" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "No acceptable manoeuvres, but at least 1 usable manoeuvre." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "F" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade F" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "No acceptable and no usable manoeuvres." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

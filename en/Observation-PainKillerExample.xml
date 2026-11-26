@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PainKillerExample"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation PainKillerExample</b></p><a name="PainKillerExample"> </a><a name="hcPainKillerExample"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 52685006}">Administration of analgesic</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 373066001}">Yes</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="52685006"/>
+      <display value="Administration of analgesic"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2025-10-08T10:00:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="373066001"/>
+      <display value="Yes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

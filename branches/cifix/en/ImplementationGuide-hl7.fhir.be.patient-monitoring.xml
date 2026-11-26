@@ -1,0 +1,2126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.be.patient-monitoring"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.patient-monitoring</b></p><a name="hl7.fhir.be.patient-monitoring"> </a><a name="hchl7.fhir.be.patient-monitoring"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>PatientMonitoringOutcome</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring</pre><div><p>Patient Monitoring Outcome FHIR Implementation Guide.</p>
+</div></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/ImplementationGuide/hl7.fhir.be.patient-monitoring"/>
+  <version value="0.1.0"/>
+  <name value="PatientMonitoringOutcome"/>
+  <title value="Patient Monitoring Outcome FHIR Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2024-11-20"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Patient Monitoring Outcome FHIR Implementation Guide."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.be.patient-monitoring"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_be_core">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core"/>
+    <packageId value="hl7.fhir.be.core"/>
+    <version value="2.1.2"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_be_core_clinical">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ImplementationGuide/hl7.fhir.be.core-clinical"/>
+    <packageId value="hl7.fhir.be.core-clinical"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_sdc">
+    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+    <packageId value="hl7.fhir.uv.sdc"/>
+    <version value="4.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2024+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.16.840.1.113883.4.642.40.54"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="validation"/>
+      </extension>
+      <extension url="value">
+        <valueString value="allow-any-extensions"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7belgium.org/fhir/patient-monitoring/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2024+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.16.840.1.113883.4.642.40.54"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="validation"/>
+      </extension>
+      <extension url="value">
+        <valueString value="allow-any-extensions"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7belgium.org/fhir/patient-monitoring/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/well-poor-scale"/>
+      </reference>
+      <name value="0-10 scale, 0.5 increments, Very well to Very poor"/>
+      <description value="Scale going from 0 to 10 in increments of 0.5. Indicating values very well to very port (see https://loinc.org/LL3092-5)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AbdominalPainExample"/>
+      </reference>
+      <name value="Abdominal pain example"/>
+      <description value="Pain scale is used as answer"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AppetiteExample"/>
+      </reference>
+      <name value="Appetite example"/>
+      <description value="Answer scaled 0 to 10 with steps of 0.5. 0 being being very poor, 10 being very well."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/appetite-observation"/>
+      </reference>
+      <name value="Appetite Observation"/>
+      <description value="An observation of how well or poor the appetite of a patient is."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/AzacitidineV1"/>
+      </reference>
+      <name value="Azacitidine questionnaire home hospitalization"/>
+      <description value="Questionnaire containing the necessary information for the home hospitalization of a patient treated with Azacitidine."/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-azacitidine"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/AzacitidineV1response"/>
+      </reference>
+      <name value="Azacitidine questionnairesponse home hospitalization"/>
+      <description value="Response to questionnaire containing the necessary information for the home hospitalization of a patient treated with Azacitidine."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BladderContinenceExample"/>
+      </reference>
+      <name value="Bladder Continence"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/bladder-continence-observation"/>
+      </reference>
+      <name value="Bladder continence Observation"/>
+      <description value="An observation of bladder continence."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BloodPressureExample"/>
+      </reference>
+      <name value="BloodPressureExample"/>
+      <description value="Blood Pressure example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BloodPressureExample2"/>
+      </reference>
+      <name value="BloodPressureExample2"/>
+      <description value="Blood Pressure example without device and with bodysite"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BodyTemperatureExample"/>
+      </reference>
+      <name value="BodyTemperatureExample"/>
+      <description value="Temperature example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BodyTemperatureExample2"/>
+      </reference>
+      <name value="BodyTemperatureExample2"/>
+      <description value="Temperature example without device"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BodyWeightExample"/>
+      </reference>
+      <name value="BodyWeightExample"/>
+      <description value="Body Weight example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BodyWeightExample2"/>
+      </reference>
+      <name value="BodyWeightExample2"/>
+      <description value="Body Weight example registered by patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/BortezomibV1"/>
+      </reference>
+      <name value="Bortezomib questionnaire home hospitalization"/>
+      <description value="Questionnaire containing the necessary information for the home hospitalization of a patient treated with Bortezomib (Velcade®)."/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-bortezomib"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/CareTeam-Katheter"/>
+      </reference>
+      <name value="CareTeam Katheter"/>
+      <description value="Catheter team with contact details"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/CareTeam-OPAT"/>
+      </reference>
+      <name value="CareTeam OPAT"/>
+      <description value="OPAT team with contact details"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/CareTeam-Spoed"/>
+      </reference>
+      <name value="CareTeam Spoed"/>
+      <description value="Emergency reception with contact details"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CatheterMovedOrRemovedExample"/>
+      </reference>
+      <name value="Catheter moved or removed example"/>
+      <description value="NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation-Katheter-7938866"/>
+      </reference>
+      <name value="Catheter observation for OPAT patient"/>
+      <description value="Home hospitalization catheter observation example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ClinicalNoteExample"/>
+      </reference>
+      <name value="Clinical note"/>
+      <description value="Free text clinical note"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/clinical-note-observation"/>
+      </reference>
+      <name value="CLinical note Observation"/>
+      <description value="A clinical note"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/continence-level"/>
+      </reference>
+      <name value="Continence level"/>
+      <description value="LOINC codes to represent the level of continence reported"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/DaratumumabV1"/>
+      </reference>
+      <name value="Daratumumab questionnaire home hospitalization"/>
+      <description value="Questionnaire containing the necessary information for the home hospitalization of a patient treated with Daratumumab (Darzalex®)."/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-daratumumab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DiarrheaExample"/>
+      </reference>
+      <name value="Diarrhea example"/>
+      <description value="Possible answers are absent, mild, moderate, severe"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DistendedAbdomenExample"/>
+      </reference>
+      <name value="Distended abdomen example"/>
+      <description value="Answer options are none, mild, moderate, severe."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/drain-fluid-observation"/>
+      </reference>
+      <name value="Drain fluid Observation"/>
+      <description value="An observation drain fluid observations. Drain fluid is measured in mL per 24h"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DrainFluidExample"/>
+      </reference>
+      <name value="Drain fluid output example"/>
+      <description value="Drain fluid volume measured in mL per day"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FluidDrainVS"/>
+      </reference>
+      <name value="Fluid Drain Value Set"/>
+      <description value="Valid UCUM units for drain fluid measurement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/FulvestrantV1"/>
+      </reference>
+      <name value="Fulvestrant questionnaire home hospitalization"/>
+      <description value="Questionnaire containing the necessary information for the home hospitalization of a patient treated with Fulvestrant (Faslodex®)."/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-fulvestrant"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRole-16500"/>
+      </reference>
+      <name value="General practitioner example"/>
+      <description value="Example general practitioner (huisarts) for the OPAT patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/heart-failure-symptoms"/>
+      </reference>
+      <name value="Heart Failure Symptom Codes"/>
+      <description value="SNOMED CT codes representing common patient-reported symptoms in heart failure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HeartRateExample"/>
+      </reference>
+      <name value="HeartRateExample"/>
+      <description value="Heart Rate example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HeartRateExample2"/>
+      </reference>
+      <name value="HeartRateExample2"/>
+      <description value="Heart Rate example registered by patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-holter-afib"/>
+      </reference>
+      <name value="Holter AFib Episode"/>
+      <description value="Detected AFib event"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/holter-diagnostic-report"/>
+      </reference>
+      <name value="Holter Diagnostic Report"/>
+      <description value="A profile for ambulatory cardiac rhythm monitoring reports (Holter)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/example-holter-diagnosticreport"/>
+      </reference>
+      <name value="Holter DiagnosticReport Example"/>
+      <description value="This diagnostic report summarizes Holter rhythm findings including AFib and a supraventricular episode."/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/holter-event-codes"/>
+      </reference>
+      <name value="Holter Event Codes"/>
+      <description value="Codes used to classify Holter-detected rhythm events"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/holter-observation"/>
+      </reference>
+      <name value="Holter Observation"/>
+      <description value="An observation for rhythm events detected in Holter recordings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/holter-event-component-codes"/>
+      </reference>
+      <name value="Holter Observation Component Codes"/>
+      <description value="LOINC codes for component observations in Holter events (e.g., heart rate)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/holter-report-code"/>
+      </reference>
+      <name value="Holter Report Code"/>
+      <description value="Ambulatory cardiac rhythm monitor report (Holter)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-holter-sv"/>
+      </reference>
+      <name value="Holter Supraventricular Event"/>
+      <description value="Supraventricular arrhythmia"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-encounter"/>
+      </reference>
+      <name value="Home Hospitalization Careset Encounter"/>
+      <description value="Profile on the FHIR Encounter resource for use in OPAT and ONCO home hospitalization caresets. The Encounter records whether the home visit took place and the status of each ordered care activity. Only hospital-ordered procedures should be reported back via this Encounter. See logical model: [CarestEncounter](StructureDefinition-homehosp-encounter-lm.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-questionnaire-response"/>
+      </reference>
+      <name value="Home Hospitalization Careset Questionnaire Response"/>
+      <description value="Profile on QuestionnaireResponse for OPAT and ONCO home hospitalization caresets. Links the filled-in nursing observation to the originating Encounter and the canonical Questionnaire. See logical model: [CarestQuestionnaireResponse](StructureDefinition-homehosp-questionnaire-response-lm.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter-3441"/>
+      </reference>
+      <name value="Home hospitalization encounter for subcutaneous injection"/>
+      <description value="First line encounter"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-encounter-lm"/>
+      </reference>
+      <name value="Home Hospitalization Encounter Logical Model"/>
+      <description value="Logical model representing the FHIR Encounter resource as used in the OPAT and ONCO home hospitalization caresets. The Encounter serves two purposes: (1) recording whether the home visit took place and whether the patient was home, and (2) communicating the status of each ordered care activity back to the hospital. Only orders given by the hospital should be communicated back via this Encounter; other nursing activities are excluded."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-questionnaire-response-lm"/>
+      </reference>
+      <name value="Home Hospitalization QuestionnaireResponse Logical Model"/>
+      <description value="Logical model representing the FHIR QuestionnaireResponse resource as used in the OPAT and ONCO home hospitalization caresets. Each home nurse visit produces exactly one QuestionnaireResponse if the visit was not cancelled, which corresponds to a single Encounter. The QuestionnaireResponse references the canonical Questionnaire URL and contains the nurse's answers. It can be used as-is for clinical review or as input to an SDC Definition-based extraction pipeline that generates discrete FHIR Observations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/IncontinenceScoreExample"/>
+      </reference>
+      <name value="incontinence assessment using the wexner/CCIS score"/>
+      <description value="Score from 0 to 20"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LeakageCatheterExample"/>
+      </reference>
+      <name value="Leakage catheter example"/>
+      <description value="NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LevelOfResponsivenessExample"/>
+      </reference>
+      <name value="Level of responsiveness example"/>
+      <description value="Level of responsiveness (ACVPU scale)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/NationalEarlyWarningScoreExample"/>
+      </reference>
+      <name value="National Early Warning Score example"/>
+      <description value="National Early Warning Score (NEWS)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/NauseaExample"/>
+      </reference>
+      <name value="Nausea example"/>
+      <description value="Answer options are none, mild, moderate, severe."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/NauseaExample2"/>
+      </reference>
+      <name value="Nausea example 2"/>
+      <description value="Answers 0-10 scale, 0.5 increments, Very well to Very poor"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nausea-observation"/>
+      </reference>
+      <name value="Nausea Observation"/>
+      <description value="An observation of how well or poor the nausea of a patient is."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-onco-azacitidine"/>
+      </reference>
+      <name value="ONCO Azacitidine Nursing Questionnaire"/>
+      <description value="Profile on Questionnaire for the ONCO Azacitidine (Vidaza®) nursing observation form. Captures vital signs (including conditional SpO2), medication dissolution check, GI/pulmonary contraindications and side-effect monitoring. See logical model: [ONCOAzacitidineQuestionnaire](StructureDefinition-onco-azacitidine-questionnaire.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-azacitidine-questionnaire"/>
+      </reference>
+      <name value="ONCO Azacitidine Questionnaire Logical Model"/>
+      <description value="Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Azacitidine. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes oxygen saturation (conditional, only when cough or shortness of breath), contraindications focused on GI symptoms and general deterioration, and a medication dissolution check."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-onco-bortezomib"/>
+      </reference>
+      <name value="ONCO Bortezomib Nursing Questionnaire"/>
+      <description value="Profile on Questionnaire for the ONCO Bortezomib (Velcade®) nursing observation form. Captures vital signs, medication checks, sensory/motor neuropathy contraindication assessment and post-administration side-effect monitoring. See logical model: [ONCOBortezomibQuestionnaire](StructureDefinition-onco-bortezomib-questionnaire.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-bortezomib-questionnaire"/>
+      </reference>
+      <name value="ONCO Bortezomib Questionnaire Logical Model"/>
+      <description value="Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Bortezomib. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes neuropathy-focused contraindications (severe sensory and motor neuropathy) and symptom burden items for peripheral neuropathy."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-onco-daratumumab"/>
+      </reference>
+      <name value="ONCO Daratumumab Nursing Questionnaire"/>
+      <description value="Profile on Questionnaire for the ONCO Daratumumab (Darzalex®) nursing observation form. Captures pre-medication intake (dexamethasone, H1 antihistamine, paracetamol), medication checks, vital signs, administration, contraindications and side effects. See logical model: [ONCODaratumumabQuestionnaire](StructureDefinition-onco-daratumumab-questionnaire.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-daratumumab-questionnaire"/>
+      </reference>
+      <name value="ONCO Daratumumab Questionnaire Logical Model"/>
+      <description value="Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Daratumumab. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes pre-medication intake verification (dexamethasone, H1-antihistamine, paracetamol) and aftercare reaction monitoring."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-onco-fulvestrant"/>
+      </reference>
+      <name value="ONCO Fulvestrant Nursing Questionnaire"/>
+      <description value="Profile on Questionnaire for the ONCO Fulvestrant (Faslodex®) nursing observation form. Captures vital signs, contraindication check, administration (bilateral IM injections) and muscle/joint pain side-effect follow-up. See logical model: [ONCOFulvestrantQuestionnaire](StructureDefinition-onco-fulvestrant-questionnaire.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-fulvestrant-questionnaire"/>
+      </reference>
+      <name value="ONCO Fulvestrant Questionnaire Logical Model"/>
+      <description value="Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Fulvestrant. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: simplified contraindications checklist (fever/chills/unwell only), and includes muscle/joint pain in side effects. No preparation check required."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/homehosp-q-onco-definitions"/>
+      </reference>
+      <name value="ONCO SDC Questionnaire with Extraction Definitions (Trastuzumab)"/>
+      <description value="The ONCO Trastuzumab Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-onco-trastuzumab"/>
+      </reference>
+      <name value="ONCO Trastuzumab Nursing Questionnaire"/>
+      <description value="Profile on Questionnaire for the ONCO Trastuzumab (Herceptin®) nursing observation form. Captures body weight check, aftercare protocol, cardiac contraindications (LVEF, respiratory symptoms, oedema), vital signs and CTCAE-graded side effects. See logical model: [ONCOTrastuzumabQuestionnaire](StructureDefinition-onco-trastuzumab-questionnaire.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-trastuzumab-questionnaire"/>
+      </reference>
+      <name value="ONCO Trastuzumab Questionnaire Logical Model"/>
+      <description value="Logical model representing the nursing assessment questionnaire for home hospitalization patients receiving Trastuzumab. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Specific features: includes body weight, aftercare/reaction monitoring, and cardiac-focused contraindication checklist."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/Appointment-testapp"/>
+      </reference>
+      <name value="OPAT appointment example"/>
+      <description value="Future hospital appointment at UZL for the OPAT patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/CT-259690079"/>
+      </reference>
+      <name value="OPAT consultation encounter example"/>
+      <description value="Hospital consultation encounter for the OPAT patient at UZ Leuven"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-opat-continuous-infusion"/>
+      </reference>
+      <name value="OPAT Continuous Infusion Nursing Questionnaire"/>
+      <description value="Profile on Questionnaire for the OPAT continuous-infusion (elastomeric pump / infusor) nursing observation form. Captures medication storage, infusor weights, administration, vitals, dressing/insertion-site/catheter observations, side effects and quality follow-up. See logical model: [OPATContinuousInfusionQuestionnaire](StructureDefinition-opat-continuous-infusion-questionnaire.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/opat-continuous-infusion-questionnaire"/>
+      </reference>
+      <name value="OPAT Continuous Infusion Questionnaire Logical Model"/>
+      <description value="Logical model representing the nursing assessment questionnaire for OPAT home hospitalization patients receiving continuous infusion. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/OPAT-Document"/>
+      </reference>
+      <name value="OPAT document example (composition)"/>
+      <description value="FHIR document containing necessary information for an OPAT treatment at home"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-123"/>
+      </reference>
+      <name value="OPAT patient example"/>
+      <description value="Example patient for the OPAT document"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/OPATContinuInfuusV1"/>
+      </reference>
+      <name value="OPAT questionnaire home hospitalization"/>
+      <description value="Questionnaire containing the necessary information for the home hospitalization of a patient treated with a continuous infusion in the context of an OPAT treatment"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-continuous-infusion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/OPATContinuInfuusV1response"/>
+      </reference>
+      <name value="OPAT questionnaireresponse home hospitalization"/>
+      <description value="Response to questionnaire containing the necessary information for the home hospitalization of a patient treated with a continuous infusion in the context of an OPAT treatment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/homehosp-q-opat-definitions"/>
+      </reference>
+      <name value="OPAT SDC Questionnaire with Extraction Definitions"/>
+      <description value="The OPAT continuous infusion Questionnaire enriched with SDC item.definition fields, enabling definition-based extraction of a QuestionnaireResponse into discrete FHIR Observations."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/OPATKortIVV1"/>
+      </reference>
+      <name value="OPAT short IV questionnaire home hospitalization"/>
+      <description value="Questionnaire containing the necessary information for the home hospitalization of a patient treated with a short-duration IV administration in the context of an OPAT treatment"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-opat-short-iv"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/opat-short-iv-questionnaire"/>
+      </reference>
+      <name value="OPAT Short IV Questionnaire Logical Model"/>
+      <description value="Logical model representing the nursing assessment questionnaire for OPAT home hospitalization patients receiving short IV administration. This questionnaire is filled in by the home nurse during each visit and exchanged as a FHIR QuestionnaireResponse with the hospital. Compared to the continuous infusion questionnaire, this model does not include infusor weight measurements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/homehosp-opat-short-iv"/>
+      </reference>
+      <name value="OPAT Short-Duration IV Nursing Questionnaire"/>
+      <description value="Profile on Questionnaire for the OPAT short-duration IV administration nursing observation form. Captures medication storage, administration, vitals, dressing/insertion-site/catheter observations, side effects and quality follow-up (no infusor weight fields). See logical model: [OPATShortIVQuestionnaire](StructureDefinition-opat-short-iv-questionnaire.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organization-UZL"/>
+      </reference>
+      <name value="Organization example for OPAT document"/>
+      <description value="UZ Leuven - authoring and custodian organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/OrthopneuExample"/>
+      </reference>
+      <name value="Orthopneu example"/>
+      <description value="Possible answers are absent, mild, moderate, severe"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/CareTeam-F-7766077"/>
+      </reference>
+      <name value="Overarching CareTeam Home Hospitalization"/>
+      <description value="Containing OPAT team, catheter team and emergency reception as participants"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/OxygenSaturationExample"/>
+      </reference>
+      <name value="OxygenSaturationExample"/>
+      <description value="Oxygen saturation example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/OxygenSaturationExample2"/>
+      </reference>
+      <name value="OxygenSaturationExample2"/>
+      <description value="Oxygen saturation example registered by patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PainDuringUrinationExample"/>
+      </reference>
+      <name value="Pain during urination example"/>
+      <description value="Possible answers are yes and no"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PainInCalvesExample"/>
+      </reference>
+      <name value="Pain in calves example"/>
+      <description value="Possible answers are yes and no"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PainInfectionSiteExample"/>
+      </reference>
+      <name value="Pain infection site example"/>
+      <description value="NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PainPunctureWoundsExample"/>
+      </reference>
+      <name value="Pain puncture wounds example"/>
+      <description value="NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pain-scale"/>
+      </reference>
+      <name value="Pain severity - 0-10 verbal numeric rating"/>
+      <description value="Pain severity scale, where 0 is no pain and 10 is the worst pain imaginable. See https://loinc.org/72514-3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PainSurgicalWoundsExample"/>
+      </reference>
+      <name value="Pain surgical wounds example"/>
+      <description value="NO LOINC OR SNOMED CODE FOR SYMPTOM. Pain scale is used as answer."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PainSurgicalWoundsExample2"/>
+      </reference>
+      <name value="Pain surgical wounds example 2"/>
+      <description value="Pain score related to the surgical wound"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/painkiller-usage-observation"/>
+      </reference>
+      <name value="Painkiller usage Observation"/>
+      <description value="An observation if the patient uses pain killers or not"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RednessPunctureWoundsExample"/>
+      </reference>
+      <name value="Redness puncture wounds example"/>
+      <description value="NO LOINC OR SNOMED CODE FOR SYMPTOM. Answer options to be determined."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ReducedAppetiteExample"/>
+      </reference>
+      <name value="Reduced appetite example"/>
+      <description value="Answer options are absent / mild / moderate / severe."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-MED-medischeVG"/>
+      </reference>
+      <name value="Relevante medische voorgeschiedenis"/>
+      <description value="Relevant medical history (OPAT 3.0 template field MED_medischeVG)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RespiratoryRateExample"/>
+      </reference>
+      <name value="RespiratoryRateExample"/>
+      <description value="Respiration example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RespiratoryRateExample2"/>
+      </reference>
+      <name value="RespiratoryRateExample2"/>
+      <description value="Respiration example registered by patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ShortnessOfBreathExample"/>
+      </reference>
+      <name value="Shortness of breath example"/>
+      <description value="Possible answers are yes and no"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ShoulderPainExample"/>
+      </reference>
+      <name value="Shoulder pain example"/>
+      <description value="Pain scale is used as answer."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/StoolScoreExample"/>
+      </reference>
+      <name value="Stool assessment using the bristol stool form score"/>
+      <description value="Score from 1 to 7"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/stool-observation"/>
+      </reference>
+      <name value="Stool Observation"/>
+      <description value="An observation of stool according to the Bristol stool scale"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/surgical-wound-pain-observation"/>
+      </reference>
+      <name value="Surgical wound pain observation"/>
+      <description value="An observation of the pain reported by the patient in a surgical wound."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/symptom-severity"/>
+      </reference>
+      <name value="Symptom Severity Scale"/>
+      <description value="SNOMED CT codes to represent severity of patient-reported symptoms"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen"/>
+      </reference>
+      <name value="Symptoom: Ademhalingsproblemen"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Andere"/>
+      </reference>
+      <name value="Symptoom: Andere"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Blaren"/>
+      </reference>
+      <name value="Symptoom: Blaren"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Braken"/>
+      </reference>
+      <name value="Symptoom: Braken"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Candidiase"/>
+      </reference>
+      <name value="Symptoom: Candidiase"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Diarree"/>
+      </reference>
+      <name value="Symptoom: Diarree"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn"/>
+      </reference>
+      <name value="Symptoom: Gewrichtspijn"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Huiduitslag"/>
+      </reference>
+      <name value="Symptoom: Huiduitslag"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Jeuk"/>
+      </reference>
+      <name value="Symptoom: Jeuk"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Misselijkheid"/>
+      </reference>
+      <name value="Symptoom: Misselijkheid"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Moe"/>
+      </reference>
+      <name value="Symptoom: Moe"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer"/>
+      </reference>
+      <name value="Symptoom: Observatie andere - specifieer"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Obstipatie"/>
+      </reference>
+      <name value="Symptoom: Obstipatie"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Pijn"/>
+      </reference>
+      <name value="Symptoom: Pijn"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Rillingen"/>
+      </reference>
+      <name value="Symptoom: Rillingen"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust"/>
+      </reference>
+      <name value="Symptoom: Verminderde eetlust"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/ClinicalImpression-OBS-Zwelling"/>
+      </reference>
+      <name value="Symptoom: Zwelling"/>
+      <description value="OPAT 3.0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation-Temperatuur"/>
+      </reference>
+      <name value="Temperature observation for OPAT patient"/>
+      <description value="Temperature vital sign observation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/TrastuzumabV1"/>
+      </reference>
+      <name value="Trastuzumab questionnaire home hospitalization"/>
+      <description value="Questionnaire containing the necessary information for the home hospitalization of a patient treated with Trastuzumab (Herceptin®)."/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/homehosp-onco-trastuzumab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PainKillerExample"/>
+      </reference>
+      <name value="Usage of pain killers"/>
+      <description value="Did the patient take any painkillers (Yes/No)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/testloc"/>
+      </reference>
+      <name value="UZL consultation location example"/>
+      <description value="Example hospital consultation location at UZ Leuven for the OPAT appointment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/wexner-ccis-score-observation"/>
+      </reference>
+      <name value="Wexner/CCIS score Observation"/>
+      <description value="Wexner/CCIS score observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/YesNoVS"/>
+      </reference>
+      <name value="Yes/No Value Set"/>
+      <description value="Simple yes or no answer value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Patient Monitoring Outcome Home Page"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="recommendations.html"/>
+        </extension>
+        <nameUrl value="recommendations.html"/>
+        <title value="General Recommendations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="terminology.html"/>
+        </extension>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminologies"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-overview.html"/>
+        </extension>
+        <nameUrl value="carepath-overview.html"/>
+        <title value="Overview Carepaths"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-heartfailure.html"/>
+        </extension>
+        <nameUrl value="carepath-heartfailure.html"/>
+        <title value="Carepath Heart failure"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-holter.html"/>
+        </extension>
+        <nameUrl value="carepath-holter.html"/>
+        <title value="Carepath Holter Monitoring"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-ews.html"/>
+        </extension>
+        <nameUrl value="carepath-ews.html"/>
+        <title value="Carepath NEWS (National Early Warning Score)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-totem.html"/>
+        </extension>
+        <nameUrl value="carepath-totem.html"/>
+        <title value="Carepath TOTeM"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-opat.html"/>
+        </extension>
+        <nameUrl value="carepath-opat.html"/>
+        <title value="Carepath OPAT"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-antitumoral.html"/>
+        </extension>
+        <nameUrl value="carepath-antitumoral.html"/>
+        <title value="Carepath Antitumoral therapy"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-perioperative-abdominal.html"/>
+        </extension>
+        <nameUrl value="carepath-perioperative-abdominal.html"/>
+        <title value="Carepath Perioperative care - abdominal"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="carepath-overview-loinc.html"/>
+        </extension>
+        <nameUrl value="carepath-overview-loinc.html"/>
+        <title value="Overview carepath LOINC"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="careset-overview.html"/>
+        </extension>
+        <nameUrl value="careset-overview.html"/>
+        <title value="Overview caresets"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="legal-guidelines-home-hospitalization.html"/>
+        </extension>
+        <nameUrl value="legal-guidelines-home-hospitalization.html"/>
+        <title value="Special careset - home hospitalization"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="home-hospitalization-opat.html"/>
+        </extension>
+        <nameUrl value="home-hospitalization-opat.html"/>
+        <title value="Home hosp - OPAT"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="home-hospitalization-antitumoral.html"/>
+        </extension>
+        <nameUrl value="home-hospitalization-antitumoral.html"/>
+        <title value="Home hosp - Antitumoral therapy"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="home-hospitalization-mappingtable.html"/>
+        </extension>
+        <nameUrl value="home-hospitalization-mappingtable.html"/>
+        <title value="Home hosp - Mappingtables"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="copyrights.html"/>
+        </extension>
+        <nameUrl value="copyrights.html"/>
+        <title value="Acknowledgments, licenses and copyrights"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/assets"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

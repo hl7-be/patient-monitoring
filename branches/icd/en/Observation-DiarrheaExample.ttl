@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/DiarrheaExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DiarrheaExample"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation DiarrheaExample</b></p><a name=\"DiarrheaExample\"> </a><a name=\"hcDiarrheaExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 62315008}\">Diarrhea</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2024-11-18 09:38:52+0000 --&gt; 2024-11-18 09:38:52+0000</p><p><b>performer</b>: <a href=\"#hcDiarrheaExample/nurse\">PractitionerRole Nurse</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 2667000}\">Absent</span></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #nurse</b></p><a name=\"DiarrheaExample/nurse\"> </a><a name=\"hcDiarrheaExample/nurse\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-practitionerrole.html\">BePractitionerRole</a></p></div><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persnurse}\">Nurse</span></p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:PractitionerRole ;
+     fhir:index -1 ;
+     fhir:Resource.id [ fhir:value "nurse" ] ;
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole" ;
+         fhir:index -1 ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole>
+       ]
+     ] ;
+     fhir:PractitionerRole.code [
+       fhir:index -1 ;
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty" ] ;
+         fhir:Coding.code [ fhir:value "persnurse" ] ;
+         fhir:Coding.display [ fhir:value "Nurse" ]
+       ]
+     ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:62315008 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "62315008" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "D358D4B4-6007-4C3E-A33B-056773F45DC9" ]
+     ]
+  ] ;
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2024-11-18T09:38:52+00:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2024-11-18T09:38:52+00:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Observation.performer [
+     fhir:index -1 ;
+     fhir:Reference.reference [ fhir:value "#nurse" ]
+  ] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:2667000 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "2667000" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/DiarrheaExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

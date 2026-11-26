@@ -1,0 +1,258 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Composition/OPAT-Document> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "OPAT-Document"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition OPAT-Document</b></p><a name=\"OPAT-Document\"> </a><a name=\"hcOPAT-Document\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:\">OPAT</span></p><p><b>date</b>: 2025-08-11 16:31:20+0200</p><p><b>author</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p><p><b>title</b>: Outpatient Parenteral Antimicrobial Therapy (OPAT)</p><p><b>custodian</b>: <a href=\"Organization-Organization-UZL.html\">Organization UZ Leuven</a></p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.text [ fhir:value "OPAT" ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-123" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2025-08-11T16:31:20+02:00"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index -1 ;
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Outpatient Parenteral Antimicrobial Therapy (OPAT)"] ;
+  fhir:Composition.custodian [
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+  ] ;
+  fhir:Composition.section [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Patient data" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> ;
+       fhir:Reference.reference [ fhir:value "Patient/Patient-123" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Care team contact details" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/CareTeam/CareTeam-F-7766077> ;
+       fhir:Reference.reference [ fhir:value "CareTeam/CareTeam-F-7766077" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Relevant medical history" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-MED-medischeVG> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-MED-medischeVG" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Upcoming hospital appointments at UZL" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Appointment/Appointment-testapp> ;
+       fhir:Reference.reference [ fhir:value "Appointment/Appointment-testapp" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Blood pressure" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "empty" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">No data available</div>"
+     ] ;
+     fhir:Composition.section.emptyReason [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/list-empty-reason" ] ;
+         fhir:Coding.code [ fhir:value "nilknown" ] ;
+         fhir:Coding.display [ fhir:value "Nil Known" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Heart rate" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "empty" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">No data available</div>"
+     ] ;
+     fhir:Composition.section.emptyReason [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/list-empty-reason" ] ;
+         fhir:Coding.code [ fhir:value "nilknown" ] ;
+         fhir:Coding.display [ fhir:value "Nil Known" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Temperature" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/Observation-Temperatuur> ;
+       fhir:Reference.reference [ fhir:value "Observation/Observation-Temperatuur" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Weight" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "empty" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">No data available</div>"
+     ] ;
+     fhir:Composition.section.emptyReason [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/list-empty-reason" ] ;
+         fhir:Coding.code [ fhir:value "nilknown" ] ;
+         fhir:Coding.display [ fhir:value "Nil Known" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Side effects / symptom burden" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Obstipatie> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Obstipatie" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Gewrichtspijn" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Rillingen> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Rillingen" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Verminderdeeetlust" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Pijn> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Pijn" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Jeuk> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Jeuk" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Andere> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Andere" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Observatie-andere-specifieer" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Huiduitslag> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Huiduitslag" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Moe> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Moe" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Ademhalingsproblemen" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Zwelling> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Zwelling" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Braken> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Braken" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Misselijkheid> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Misselijkheid" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Blaren> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Blaren" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Diarree> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Diarree" ]
+     ], [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/ClinicalImpression/ClinicalImpression-OBS-Candidiase> ;
+       fhir:Reference.reference [ fhir:value "ClinicalImpression/ClinicalImpression-OBS-Candidiase" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Catheter type" ] ;
+     fhir:Composition.section.author [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Organization/Organization-UZL> ;
+       fhir:Reference.reference [ fhir:value "Organization/Organization-UZL" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/Observation/Observation-Katheter-7938866> ;
+       fhir:Reference.reference [ fhir:value "Observation/Observation-Katheter-7938866" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Composition/OPAT-Document.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

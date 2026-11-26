@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/SpirometryExample2> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SpirometryExample2"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/spirometry-observation" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/spirometry-observation>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation SpirometryExample2</b></p><a name=\"SpirometryExample2\"> </a><a name=\"hcSpirometryExample2\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-spirometry-observation.html\">Spirometry Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81459-0}\">Home spirometry session</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2026-10-06 08:52:00+0200 --&gt; 2026-10-06 08:55:10+0200</p><p><b>issued</b>: 2026-10-06 08:55:15+0200</p><p><b>performer</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>note</b>: </p><blockquote><div><p>Patient reported coughing during the manoeuvres.</p>\n</div></blockquote><p><b>device</b>: <a href=\"#hcSpirometryExample2/home-peakflow-fev1-meter\">Device: manufacturer = Example Medical; modelNumber = PF-10; type = Spirometer</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 20150-9}\">FEV1</span></p><p><b>value</b>: 2.11 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33452-4}\">PEF</span></p><p><b>value</b>: 6.1 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes fev1-grade}\">FEV1 grade</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade U}\">Grade U</span></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Device #home-peakflow-fev1-meter</b></p><a name=\"SpirometryExample2/home-peakflow-fev1-meter\"> </a><a name=\"hcSpirometryExample2/home-peakflow-fev1-meter\"> </a><p><b>manufacturer</b>: Example Medical</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Pocket FEV1 Meter</td><td>Model name</td></tr></table><p><b>modelNumber</b>: PF-10</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 303501006}\">Spirometer</span></p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Device ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "home-peakflow-fev1-meter" ] ;
+     fhir:Device.manufacturer [ fhir:value "Example Medical" ] ;
+     fhir:Device.deviceName [
+       fhir:index 0 ;
+       fhir:Device.deviceName.name [ fhir:value "Pocket FEV1 Meter" ] ;
+       fhir:Device.deviceName.type [ fhir:value "model-name" ]
+     ] ;
+     fhir:Device.modelNumber [ fhir:value "PF-10" ] ;
+     fhir:Device.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:303501006 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "303501006" ] ;
+         fhir:Coding.display [ fhir:value "Spirometer" ]
+       ]
+     ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "procedure" ] ;
+       fhir:Coding.display [ fhir:value "Procedure" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:81459-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "81459-0" ] ;
+       fhir:Coding.display [ fhir:value "Spirometry panel" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Home spirometry session" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "EFD5E060-9522-48BE-9ECC-3BFA54EA3666" ]
+     ]
+  ] ;
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2026-10-06T08:52:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-10-06T08:55:10+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Observation.issued [ fhir:value "2026-10-06T08:55:15+02:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "EFD5E060-9522-48BE-9ECC-3BFA54EA3666" ]
+     ]
+  ] ;
+  fhir:Observation.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Patient reported coughing during the manoeuvres." ]
+  ] ;
+  fhir:Observation.device [
+     fhir:Reference.reference [ fhir:value "#home-peakflow-fev1-meter" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:20150-9 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "20150-9" ] ;
+         fhir:Coding.display [ fhir:value "FEV1" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "FEV1" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "2.11"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "L" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "L" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:33452-4 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "33452-4" ] ;
+         fhir:Coding.display [ fhir:value "Maximum expiratory gas flow Respiratory system airway" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "PEF" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "6.1"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "L/s" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "L/s" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes" ] ;
+         fhir:Coding.code [ fhir:value "fev1-grade" ] ;
+         fhir:Coding.display [ fhir:value "FEV1 grade" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade" ] ;
+         fhir:Coding.code [ fhir:value "U" ] ;
+         fhir:Coding.display [ fhir:value "Grade U" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/SpirometryExample2.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

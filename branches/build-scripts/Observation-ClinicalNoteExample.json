@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ClinicalNoteExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ClinicalNoteExample</b></p><a name=\"ClinicalNoteExample\"> </a><a name=\"hcClinicalNoteExample\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 107903-7}\">Clinical note</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: Example clinical note</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "107903-7",
+      "display" : "Clinical note"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://www.telemonitoring-prescription.com/FHIR/patient",
+      "value" : "D358D4B4-6007-4C3E-A33B-056773F45DC9"
+    }
+  },
+  "effectiveDateTime" : "2025-10-08T10:00:00Z",
+  "valueString" : "Example clinical note"
+}

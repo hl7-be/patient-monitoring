@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BladderContinenceExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation BladderContinenceExample</b></p><a name="BladderContinenceExample"> </a><a name="hcBladderContinenceExample"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 45619-4}">Bladder continence [Minimum Data Set]</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/D358D4B4-6007-4C3E-A33B-056773F45DC9</p><p><b>effective</b>: 2025-10-08 10:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://loinc.org LA127-3}">USUALLY CONTINENT-BLADDER, incontinent episodes once a week or less; BOWEL, less than weekly</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="45619-4"/>
+      <display value="Bladder continence [Minimum Data Set]"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2025-10-08T10:00:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA127-3"/>
+      <display value="USUALLY CONTINENT-BLADDER, incontinent episodes once a week or less; BOWEL, less than weekly"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,261 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/SpirometryExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SpirometryExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/spirometry-observation" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/spirometry-observation>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation SpirometryExample</b></p><a name=\"SpirometryExample\"> </a><a name=\"hcSpirometryExample\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-spirometry-observation.html\">Spirometry Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81459-0}\">Home spirometry session</span></p><p><b>subject</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>effective</b>: 2026-10-05 09:14:00+0200 --&gt; 2026-10-05 09:19:40+0200</p><p><b>issued</b>: 2026-10-05 09:19:52+0200</p><p><b>performer</b>: Identifier: <code>https://www.telemonitoring-prescription.com/FHIR/patient</code>/EFD5E060-9522-48BE-9ECC-3BFA54EA3666</p><p><b>method</b>: <span title=\"Codes:\">Home spirometry, graded against the ATS/ERS 2019 standard; predicted values according to GLI-2012</span></p><p><b>device</b>: <a href=\"#hcSpirometryExample/home-spirometer\">Device: manufacturer = Example Medical; serialNumber = HSX200-0042871; modelNumber = HSX-200; type = Spirometer</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 20150-9}\">FEV1</span></p><p><b>value</b>: 2.48 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19870-5}\">FVC</span></p><p><b>value</b>: 3.2 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19926-5}\">FEV1/FVC</span></p><p><b>value</b>: 78 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33452-4}\">PEF</span></p><p><b>value</b>: 7.02 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19927-3}\">FEF25-75</span></p><p><b>value</b>: 2.21 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 20152-5}\">FEV1 %pred</span></p><p><b>value</b>: 74 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19872-1}\">FVC %pred</span></p><p><b>value</b>: 81 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes fev1-grade}\">FEV1 grade</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade A}\">Grade A</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes fvc-grade}\">FVC grade</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade B}\">Grade B</span></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Device #home-spirometer</b></p><a name=\"SpirometryExample/home-spirometer\"> </a><a name=\"hcSpirometryExample/home-spirometer\"> </a><p><b>manufacturer</b>: Example Medical</p><p><b>serialNumber</b>: HSX200-0042871</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Home Spirometer X</td><td>Model name</td></tr></table><p><b>modelNumber</b>: HSX-200</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 303501006}\">Spirometer</span></p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Device ;
+     fhir:index -1 ;
+     fhir:Resource.id [ fhir:value "home-spirometer" ] ;
+     fhir:Device.manufacturer [ fhir:value "Example Medical" ] ;
+     fhir:Device.serialNumber [ fhir:value "HSX200-0042871" ] ;
+     fhir:Device.deviceName [
+       fhir:index -1 ;
+       fhir:Device.deviceName.name [ fhir:value "Home Spirometer X" ] ;
+       fhir:Device.deviceName.type [ fhir:value "model-name" ]
+     ] ;
+     fhir:Device.modelNumber [ fhir:value "HSX-200" ] ;
+     fhir:Device.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a sct:303501006 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "303501006" ] ;
+         fhir:Coding.display [ fhir:value "Spirometer" ]
+       ]
+     ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "procedure" ] ;
+       fhir:Coding.display [ fhir:value "Procedure" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a loinc:81459-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "81459-0" ] ;
+       fhir:Coding.display [ fhir:value "Spirometry panel" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Home spirometry session" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "EFD5E060-9522-48BE-9ECC-3BFA54EA3666" ]
+     ]
+  ] ;
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2026-10-05T09:14:00+02:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-10-05T09:19:40+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Observation.issued [ fhir:value "2026-10-05T09:19:52+02:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.telemonitoring-prescription.com/FHIR/patient" ] ;
+       fhir:Identifier.value [ fhir:value "EFD5E060-9522-48BE-9ECC-3BFA54EA3666" ]
+     ]
+  ] ;
+  fhir:Observation.method [
+     fhir:CodeableConcept.text [ fhir:value "Home spirometry, graded against the ATS/ERS 2019 standard; predicted values according to GLI-2012" ]
+  ] ;
+  fhir:Observation.device [
+     fhir:Reference.reference [ fhir:value "#home-spirometer" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:20150-9 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "20150-9" ] ;
+         fhir:Coding.display [ fhir:value "FEV1" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "FEV1" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "2.48"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "L" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "L" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:19870-5 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "19870-5" ] ;
+         fhir:Coding.display [ fhir:value "Forced vital capacity [Volume] Respiratory system" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "FVC" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "3.2"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "L" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "L" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:19926-5 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "19926-5" ] ;
+         fhir:Coding.display [ fhir:value "FEV1/FVC" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "FEV1/FVC" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "78"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "%" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "%" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:33452-4 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "33452-4" ] ;
+         fhir:Coding.display [ fhir:value "Maximum expiratory gas flow Respiratory system airway" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "PEF" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "7.02"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "L/s" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "L/s" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:19927-3 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "19927-3" ] ;
+         fhir:Coding.display [ fhir:value "Gas flow FEV 25%-75%" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "FEF25-75" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "2.21"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "L/s" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "L/s" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:20152-5 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "20152-5" ] ;
+         fhir:Coding.display [ fhir:value "FEV1 measured/predicted" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "FEV1 %pred" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "74"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "%" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "%" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:19872-1 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "19872-1" ] ;
+         fhir:Coding.display [ fhir:value "FVC measured/predicted" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "FVC %pred" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "81"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "%" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "%" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes" ] ;
+         fhir:Coding.code [ fhir:value "fev1-grade" ] ;
+         fhir:Coding.display [ fhir:value "FEV1 grade" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade" ] ;
+         fhir:Coding.code [ fhir:value "A" ] ;
+         fhir:Coding.display [ fhir:value "Grade A" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-component-codes" ] ;
+         fhir:Coding.code [ fhir:value "fvc-grade" ] ;
+         fhir:Coding.display [ fhir:value "FVC grade" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade" ] ;
+         fhir:Coding.code [ fhir:value "B" ] ;
+         fhir:Coding.display [ fhir:value "Grade B" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Observation/SpirometryExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

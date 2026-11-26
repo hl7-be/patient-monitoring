@@ -1,0 +1,192 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Patient-123"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient-123</b></p><a name=\"Patient-123\"> </a><a name=\"hcPatient-123\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">NUMMER 15 KWS-TESTPATIENT (official) Female, DoB: 1931-04-19 ( Medical record number: 310419V999 (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Medical record number/15 (use: usual, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 02/1234567</li><li><a href=\"mailto:test.test@1234.betestann\">test.test@1234.betestann</a></li><li><a href=\"mailto:ditistest@testface.com\">ditistest@testface.com</a></li><li><a href=\"mailto:face@tkklkljklklmlks.com\">face@tkklkljklklmlks.com</a></li><li>ITALIESTRAAT 171 B Helecine 1357 (home)</li><li>AAA X DEN HAAG 4544 NL NL (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Languages:</td><td colspan=\"3\"><ul><li><span title=\"Codes:{urn:ietf:bcp:47 fr}\">French</span> (preferred)</li><li><span title=\"Codes:{urn:ietf:bcp:47 nl}\">Dutch</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Teacher (occupation)\">Teacher (occupation):</td><td colspan=\"3\"><ul><li>+3212345678</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Companion (occupation)\">Companion (occupation):</td><td colspan=\"3\"><ul><li><a href=\"tel:+32473444444\">+32473444444</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Child (person)\">Child (person):</td><td colspan=\"3\"><ul><li><a href=\"tel:+3216622552\">+3216622552</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"PractitionerRole-PractitionerRole-16500.html\">PractitionerRole Physician</a></li></ul></td></tr></table></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "MR" ] ;
+         fhir:Coding.display [ fhir:value "Medical record number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/eadnr" ] ;
+     fhir:Identifier.value [ fhir:value "15" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "MR" ] ;
+         fhir:Coding.display [ fhir:value "Medical record number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir.nexuzhealth.com/standards/fhir/NamingSystem/kws/pm/patient/emdnr" ] ;
+     fhir:Identifier.value [ fhir:value "310419V999" ]
+  ] ;
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "KWS-TESTPATIENT" ] ;
+     fhir:HumanName.given [
+       fhir:value "NUMMER 15" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "02/1234567" ] ;
+     fhir:ContactPoint.rank [ fhir:value "9"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "test.test@1234.betestann" ] ;
+     fhir:ContactPoint.rank [ fhir:value "9"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "ditistest@testface.com" ] ;
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 3 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "face@tkklkljklklmlks.com" ] ;
+     fhir:ContactPoint.rank [ fhir:value "9"^^xsd:positiveInteger ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1931-04-19"^^xsd:date] ;
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.line [
+       fhir:value "ITALIESTRAAT 171 B" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Helecine" ] ;
+     fhir:Address.postalCode [ fhir:value "1357" ] ;
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "2006-03-07"^^xsd:date ] ;
+       fhir:Period.end [ fhir:value "2020-10-15"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.line [
+       fhir:value "AAA X" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "DEN HAAG" ] ;
+     fhir:Address.postalCode [ fhir:value "4544 NL" ] ;
+     fhir:Address.country [ fhir:value "NL" ] ;
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "2020-10-16"^^xsd:date ]
+     ]
+  ] ;
+  fhir:Patient.multipleBirthBoolean [ fhir:value "false"^^xsd:boolean] ;
+  fhir:Patient.contact [
+     fhir:index 0 ;
+     fhir:Patient.contact.relationship [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:106304008 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "106304008" ] ;
+         fhir:Coding.display [ fhir:value "Teacher (occupation)" ]
+       ]
+     ] ;
+     fhir:Patient.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "sms" ] ;
+       fhir:ContactPoint.value [ fhir:value "+3212345678" ] ;
+       fhir:ContactPoint.rank [ fhir:value "9"^^xsd:positiveInteger ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Patient.contact.relationship [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:62071000 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "62071000" ] ;
+         fhir:Coding.display [ fhir:value "Companion (occupation)" ]
+       ]
+     ] ;
+     fhir:Patient.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "+32473444444" ] ;
+       fhir:ContactPoint.rank [ fhir:value "9"^^xsd:positiveInteger ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Patient.contact.relationship [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:67822003 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "67822003" ] ;
+         fhir:Coding.display [ fhir:value "Child (person)" ]
+       ]
+     ] ;
+     fhir:Patient.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "+3216622552" ] ;
+       fhir:ContactPoint.rank [ fhir:value "9"^^xsd:positiveInteger ]
+     ]
+  ] ;
+  fhir:Patient.communication [
+     fhir:index 0 ;
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ] ;
+         fhir:Coding.code [ fhir:value "fr" ]
+       ]
+     ] ;
+     fhir:Patient.communication.preferred [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1 ;
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ] ;
+         fhir:Coding.code [ fhir:value "nl" ]
+       ]
+     ]
+  ] ;
+  fhir:Patient.generalPractitioner [
+     fhir:index 0 ;
+     fhir:link <http://hl7belgium.org/fhir/patient-monitoring/PractitionerRole/PractitionerRole-16500> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/PractitionerRole-16500" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7belgium.org/fhir/patient-monitoring/Patient/Patient-123.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

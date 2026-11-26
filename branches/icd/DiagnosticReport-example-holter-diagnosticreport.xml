@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="example-holter-diagnosticreport"/>
+  <meta>
+    <profile value="http://hl7belgium.org/fhir/patient-monitoring/StructureDefinition/holter-diagnostic-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport example-holter-diagnosticreport</b></p><a name="example-holter-diagnosticreport"> </a><a name="hcexample-holter-diagnosticreport"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-holter-diagnostic-report.html">Holter Diagnostic Report</a></p></div><h2><span title="Codes:{http://loinc.org 18754-2}">Holter monitor study</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 EC}">Electrocardiac (e.g., EKG,  EEC, Holter)</span>) </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Relevant Time</td><td>2025-07-15 08:00:00+0200 --&gt; 2025-07-15 12:00:00+0200</td></tr><tr><td>Reported</td><td>2025-07-15 12:00:00+0200</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td></tr><tr><td><a href="Observation-example-holter-afib.html"><span title="Codes:{http://snomed.info/sct 164889003}">ECG: atrial fibrillation</span></a></td><td/><td>Final</td><td>2025-07-14 13:24:00+0200 --&gt; 2025-07-14 13:26:00+0200</td></tr><tr><td><a href="Observation-example-holter-sv.html"><span title="Codes:{http://snomed.info/sct 164887001}">ECG: supraventricular arrhythmia</span></a></td><td/><td>Final</td><td>2025-07-14 14:42:00+0200 --&gt; 2025-07-14 14:45:00+0200</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="EC"/>
+      <display value="Electrocardiac (e.g., EKG,  EEC, Holter)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18754-2"/>
+      <display value="Holter monitor study"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.telemonitoring-prescription.com/FHIR/patient"/>
+      <value value="D358D4B4-6007-4C3E-A33B-056773F45DC9"/>
+    </identifier>
+  </subject>
+  <effectivePeriod>
+    <start value="2025-07-15T08:00:00+02:00"/>
+    <end value="2025-07-15T12:00:00+02:00"/>
+  </effectivePeriod>
+  <issued value="2025-07-15T12:00:00+02:00"/>
+  <result>
+    <reference value="Observation/example-holter-afib"/>
+  </result>
+  <result>
+    <reference value="Observation/example-holter-sv"/>
+  </result>
+</DiagnosticReport>

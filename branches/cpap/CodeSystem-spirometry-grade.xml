@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="spirometry-grade"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem spirometry-grade</b></p><a name="spirometry-grade"> </a><a name="hcspirometry-grade"> </a><p>This case-sensitive code system <code>http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">A<a name="spirometry-grade-A"> </a></td><td>Grade A</td><td>3 or more acceptable manoeuvres, with the two largest values within 0.150 L of each other.</td></tr><tr><td style="white-space:nowrap">B<a name="spirometry-grade-B"> </a></td><td>Grade B</td><td>2 acceptable manoeuvres, with the two largest values within 0.150 L of each other.</td></tr><tr><td style="white-space:nowrap">C<a name="spirometry-grade-C"> </a></td><td>Grade C</td><td>2 or more acceptable manoeuvres, with the two largest values within 0.200 L of each other.</td></tr><tr><td style="white-space:nowrap">D<a name="spirometry-grade-D"> </a></td><td>Grade D</td><td>2 or more acceptable manoeuvres, with the two largest values within 0.250 L of each other.</td></tr><tr><td style="white-space:nowrap">E<a name="spirometry-grade-E"> </a></td><td>Grade E</td><td>2 or more acceptable manoeuvres with the two largest values more than 0.250 L apart, or only 1 acceptable manoeuvre.</td></tr><tr><td style="white-space:nowrap">U<a name="spirometry-grade-U"> </a></td><td>Grade U</td><td>No acceptable manoeuvres, but at least 1 usable manoeuvre.</td></tr><tr><td style="white-space:nowrap">F<a name="spirometry-grade-F"> </a></td><td>Grade F</td><td>No acceptable and no usable manoeuvres.</td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/patient-monitoring/CodeSystem/spirometry-grade"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.54.16.3"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="SpirometryGradeCS"/>
+  <title value="Spirometry Grade Codes (ATS/ERS 2019)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-26T09:35:57+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Session-level quality grades for FEV1 and FVC as defined in Table 10 of the ATS/ERS 2019 technical standard&#xA;(Graham BL et al., Standardization of Spirometry 2019 Update, Am J Respir Crit Care Med 2019;200(8):e70-e88).&#xA;The repeatability thresholds below apply to patients older than 6 years. FEV1 and FVC are graded independently."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="A"/>
+    <display value="Grade A"/>
+    <definition value="3 or more acceptable manoeuvres, with the two largest values within 0.150 L of each other."/>
+  </concept>
+  <concept>
+    <code value="B"/>
+    <display value="Grade B"/>
+    <definition value="2 acceptable manoeuvres, with the two largest values within 0.150 L of each other."/>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <display value="Grade C"/>
+    <definition value="2 or more acceptable manoeuvres, with the two largest values within 0.200 L of each other."/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="Grade D"/>
+    <definition value="2 or more acceptable manoeuvres, with the two largest values within 0.250 L of each other."/>
+  </concept>
+  <concept>
+    <code value="E"/>
+    <display value="Grade E"/>
+    <definition value="2 or more acceptable manoeuvres with the two largest values more than 0.250 L apart, or only 1 acceptable manoeuvre."/>
+  </concept>
+  <concept>
+    <code value="U"/>
+    <display value="Grade U"/>
+    <definition value="No acceptable manoeuvres, but at least 1 usable manoeuvre."/>
+  </concept>
+  <concept>
+    <code value="F"/>
+    <display value="Grade F"/>
+    <definition value="No acceptable and no usable manoeuvres."/>
+  </concept>
+</CodeSystem>
